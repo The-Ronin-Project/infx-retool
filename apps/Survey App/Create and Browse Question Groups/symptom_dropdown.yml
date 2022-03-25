@@ -1,0 +1,38 @@
+id: symptom_dropdown
+type: widget
+subtype: SelectWidget
+template:
+  ordered:
+    - enableClientSideMatching: true
+    - values: '{{load_symptoms.data.symptom_uuid}}'
+    - allowOutOfRangeValues: false
+    - enableFuzzyMatching: true
+    - searchValue: ''
+    - showFetchingIndicator: true
+    - enableCaseSensitivity: false
+    - validationMessage: ''
+    - displayValue: ''
+    - tooltipText: ''
+    - value: ''
+    - maxResults: 50
+    - placeholder: Select a value
+    - label: Symptoms
+    - clearValueOnFocus: true
+    - labelMaxWidth: ''
+    - labelPlacedOnLeft: false
+    - validationState: ''
+    - onSelect: ''
+    - allowCustomValues: false
+    - disabled: ''
+    - hideClearButton: false
+    - required: false
+    - labels: '{{load_symptoms.data.provider_label}}'
+style:
+  ordered: []
+position2:
+  position2:
+    container: form1
+    row: 2
+    height: 1
+    width: 12
+createdAt: 2021-08-31T20:42:15.007Z
