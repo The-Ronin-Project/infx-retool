@@ -1,0 +1,195 @@
+id: question_list
+type: widget
+subtype: TableWidget
+template:
+  ordered:
+    - showCustomButton: false
+    - sortMappedValue:
+        ordered: []
+    - _filteredSortedRenderedDataWithTypes: null
+    - normalizedData: null
+    - saveChangesDisabled: ''
+    - columnTypeProperties:
+        ordered: []
+    - columnWidths:
+        - object:
+            id: question_text
+            value: 586
+    - disableRowSelectInteraction: false
+    - columnWidthsMobile: []
+    - hasNextAfterCursor: ''
+    - columnTypeSpecificExtras:
+        ordered: []
+    - onRowAdded: ''
+    - columnHeaderNames:
+        ordered:
+          - Custom Column 1: In Survey
+    - alwaysShowPaginator: false
+    - columnColors:
+        ordered:
+          - survey_uuid: ''
+          - symptom_uuids: ''
+          - future_question: ''
+          - specific_answer_uuids: ''
+          - question_text: ''
+          - question_characteristic_uuid: ''
+          - position: ''
+          - slug: ''
+          - provider_sees: ''
+          - question_uuid: ''
+          - requires_question: ''
+          - last_modified_user: ''
+          - last_modified_date: ''
+          - historical_question: ''
+          - present_most_severe_first: ''
+          - historical_question_display: ''
+          - not_expected_reason: ''
+    - columnFrozenAlignments:
+        ordered: []
+    - allowMultiRowSelect: false
+    - columnFormats:
+        ordered: []
+    - columnRestrictedEditing:
+        ordered: []
+    - showFilterButton: true
+    - _columnSummaryTypes:
+        ordered: []
+    - showAddRowButton: false
+    - nextBeforeCursor: ''
+    - columnVisibility:
+        ordered:
+          - survey_uuid: true
+          - symptom_uuids: false
+          - future_question: true
+          - specific_answer_uuids: false
+          - question_text: true
+          - question_characteristic_uuid: false
+          - position: true
+          - name: true
+          - slug: false
+          - sales: true
+          - provider_sees: true
+          - question_uuid: false
+          - Custom Column 1: true
+          - requires_question: false
+          - last_modified_user: false
+          - id: true
+          - last_modified_date: false
+          - historical_question: false
+          - email: true
+          - present_most_severe_first: false
+          - historical_question_display: false
+          - not_expected_reason: false
+    - selectedPageIndex: '0'
+    - rowColor:
+        array: []
+    - actionButtonColumnName: Actions
+    - filterStackType: and
+    - downloadRawData: false
+    - showFetchingIndicator: true
+    - serverPaginated: false
+    - data: '{{ load_all_questions.data}}'
+    - displayedData: null
+    - actionButtons: []
+    - actionButtonSelectsRow: true
+    - selectRowByDefault: true
+    - defaultSortByColumn: ''
+    - paginationOffset: 0
+    - columnAlignment:
+        ordered: []
+    - columnSummaries:
+        object: {}
+    - sortedDesc: false
+    - customButtonName: ''
+    - columnMappersRenderAsHTML:
+        ordered: []
+    - showRefreshButton: true
+    - pageSize: 48
+    - useDynamicColumnSettings: false
+    - actionButtonPosition: right
+    - dynamicRowHeights: false
+    - bulkUpdateAction: ''
+    - afterCursor: ''
+    - onCustomButtonPressQueryName: ''
+    - changeSet:
+        object: {}
+    - sortedColumn: ''
+    - _columnSummaryValues:
+        ordered: []
+    - _compatibilityMode: true
+    - showColumnBorders: true
+    - _renderedDataWithTypes: null
+    - columnAllowOverflow:
+        ordered: []
+    - beforeCursor: ''
+    - serverPaginationType: limitOffsetBased
+    - onRowSelect: ''
+    - showDownloadButton: true
+    - selectedIndex: ''
+    - defaultSortDescending: false
+    - _sortedDisplayedDataIndices: null
+    - dynamicColumnSettings: null
+    - totalRowCount: ''
+    - recordUpdates:
+        array: []
+    - newRow: null
+    - emptyMessage: No rows found
+    - columnEditable:
+        ordered: []
+    - filters:
+        array: []
+    - displayedDataIndices: null
+    - disableSorting:
+        ordered: []
+    - columnMappers:
+        ordered:
+          - Custom Column 1: >-
+              {{load_survey_questions.data.question_uuid.includes(currentRow.question_uuid)}}
+          - symptom_uuids: ''
+    - showClearSelection: false
+    - overflowType: pagination
+    - _reverseSortedDisplayedDataIndices: null
+    - selectedCell:
+        object:
+          index: null
+          data: null
+          columnName: null
+    - columns:
+        - question_text
+        - question_uuid
+        - last_modified_date
+        - last_modified_user
+        - historical_question
+        - historical_question_display
+        - not_expected_reason
+        - present_most_severe_first
+        - provider_sees
+        - question_characteristic_uuid
+        - requires_question
+        - slug
+        - specific_answer_uuids
+        - symptom_uuids
+        - future_question
+        - Custom Column 1
+    - defaultSelectedRow: first
+    - freezeActionButtonColumns: false
+    - sort: null
+    - sortByRawValue:
+        ordered: []
+    - calculatedColumns:
+        - Custom Column 1
+    - selectedRow:
+        object:
+          index: null
+          data: null
+    - showPaginationOnTop: false
+    - nextAfterCursor: ''
+    - useCompactMode: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabbedcontainer1
+    height: 53
+    width: 12
+createdAt: 2021-07-30T23:55:37.952Z

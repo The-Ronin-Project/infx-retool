@@ -1,0 +1,43 @@
+id: button1
+type: widget
+subtype: ButtonWidget
+template:
+  ordered:
+    - valueToCopy: ''
+    - internalUrlHashParams: ''
+    - exportFileType: csv
+    - buttonType: action
+    - exportTemplate: null
+    - url: ''
+    - newWindow: false
+    - value: Reload Survey
+    - style:
+        ordered:
+          - accent-background: '#6a6a6a'
+    - exportQuery: ''
+    - action: ''
+    - internalUrlQuery: ''
+    - internalUrlPath: ''
+    - events:
+        - ordered:
+            - event: click
+            - type: datasource
+            - method: trigger
+            - pluginId: load_survey_questions
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - exportFileName: ''
+    - loading: ''
+    - disabled: ''
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabbedcontainer1
+    col: 10
+    height: 1
+    width: 2
+    tabNum: 2
+createdAt: 2021-07-30T23:32:52.223Z

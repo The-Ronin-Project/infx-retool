@@ -1,0 +1,48 @@
+id: search_field
+type: widget
+subtype: TextInputWidget
+template:
+  ordered:
+    - validationMaxlengthValue: ''
+    - readonly: ''
+    - disabledKeyCodes: ''
+    - showNumberCommas: false
+    - validationMaxValue: ''
+    - onBlur: ''
+    - currencyType: USD
+    - leftIconName: ''
+    - initialValue: ''
+    - validationMessage: ''
+    - tooltipText: 'Search by question text, or by symptom provider label/patient label '
+    - value: ''
+    - suffix: ''
+    - validationMinlengthValue: ''
+    - validationLengthValue: ''
+    - placeholder: Enter query
+    - validationType: ''
+    - label: Search
+    - currencyMajorOnly: false
+    - formattedValue: ''
+    - allowedInputsRegex: ''
+    - labelMaxWidth: ''
+    - enableValidationType: false
+    - labelPlacedOnLeft: false
+    - onSubmit: ''
+    - validationMinValue: ''
+    - lastSubmittedAt: ''
+    - validationState:
+        object:
+          required: ''
+          validationType: ''
+    - type: text
+    - allowedRegex: ''
+    - required: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabbedcontainer1
+    height: 1
+    width: 4
+    tabNum: 3
+createdAt: 2021-07-30T23:42:28.889Z

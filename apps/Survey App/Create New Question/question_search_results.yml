@@ -1,0 +1,234 @@
+id: question_search_results
+type: widget
+subtype: TableWidget
+template:
+  ordered:
+    - showCustomButton: false
+    - sortMappedValue:
+        ordered:
+          - question_characteristic: true
+          - slug: true
+    - _filteredSortedRenderedDataWithTypes: null
+    - normalizedData: null
+    - saveChangesDisabled: ''
+    - columnTypeProperties:
+        ordered: []
+    - columnWidths:
+        - object:
+            id: requires_question
+            value: 206.546875
+        - object:
+            id: slug
+            value: 157.109375
+        - object:
+            id: symptoms
+            value: 184.1875
+        - object:
+            id: historical_question
+            value: 58
+        - object:
+            id: question_text
+            value: 423.796875
+    - disableRowSelectInteraction: false
+    - columnWidthsMobile: []
+    - hasNextAfterCursor: ''
+    - columnTypeSpecificExtras:
+        ordered: []
+    - onRowAdded: ''
+    - columnHeaderNames:
+        ordered:
+          - question_characteristic: QC Order
+          - symptoms: symptom
+          - historical_question: Active
+          - Custom Column 1: In survey
+    - alwaysShowPaginator: false
+    - columnColors:
+        ordered:
+          - symptom_uuids: ''
+          - future_question: ''
+          - specific_answer_uuids: ''
+          - question_text: ''
+          - question_characteristic_uuid: ''
+          - symptoms: ''
+          - slug: ''
+          - provider_sees: ''
+          - question_uuid: ''
+          - question_characteristic: ''
+          - requires_question: ''
+          - last_modified_user: ''
+          - last_modified_date: ''
+          - historical_question: ''
+          - present_most_severe_first: ''
+          - historical_question_display: ''
+          - not_expected_reason: ''
+    - columnFrozenAlignments:
+        ordered: []
+    - allowMultiRowSelect: false
+    - columnFormats:
+        ordered: []
+    - columnRestrictedEditing:
+        ordered: []
+    - showFilterButton: true
+    - _columnSummaryTypes:
+        ordered: []
+    - showAddRowButton: false
+    - nextBeforeCursor: ''
+    - columnVisibility:
+        ordered:
+          - symptom_uuids: false
+          - future_question: false
+          - specific_answer_uuids: false
+          - question_text: true
+          - question_characteristic_uuid: false
+          - symptoms: true
+          - name: true
+          - slug: true
+          - sales: true
+          - provider_sees: false
+          - question_uuid: false
+          - question_characteristic: true
+          - Custom Column 1: true
+          - requires_question: true
+          - last_modified_user: false
+          - id: true
+          - last_modified_date: false
+          - historical_question: true
+          - email: true
+          - present_most_severe_first: false
+          - historical_question_display: false
+          - not_expected_reason: false
+    - selectedPageIndex: '0'
+    - rowColor:
+        array: []
+    - actionButtonColumnName: Actions
+    - filterStackType: and
+    - downloadRawData: false
+    - showFetchingIndicator: true
+    - serverPaginated: true
+    - data: '{{question_search.data.hits.hits.map(hit => hit[''_source''])}}'
+    - displayedData: null
+    - actionButtons:
+        - ordered:
+            - actionButtonText: Add to survey
+            - actionButtonType: runQuery
+            - actionButtonQuery: add_question_to_survey_from_search
+            - actionButtonInternalUrlPath: ''
+            - actionButtonInternalUrlQuery: ''
+            - actionButtonUrl: ''
+            - actionButtonNewWindow: false
+            - actionButtonDisabled: >-
+                {{load_survey_questions.data.question_uuid.includes(currentRow.question_uuid)}}
+    - actionButtonSelectsRow: true
+    - selectRowByDefault: true
+    - defaultSortByColumn: ''
+    - paginationOffset: 0
+    - columnAlignment:
+        ordered: []
+    - columnSummaries:
+        object: {}
+    - sortedDesc: false
+    - customButtonName: ''
+    - columnMappersRenderAsHTML:
+        ordered: []
+    - showRefreshButton: true
+    - pageSize: 47
+    - useDynamicColumnSettings: false
+    - actionButtonPosition: right
+    - dynamicRowHeights: false
+    - bulkUpdateAction: ''
+    - afterCursor: ''
+    - onCustomButtonPressQueryName: ''
+    - changeSet:
+        object: {}
+    - sortedColumn: ''
+    - _columnSummaryValues:
+        ordered: []
+    - _compatibilityMode: true
+    - showColumnBorders: true
+    - _renderedDataWithTypes: null
+    - columnAllowOverflow:
+        ordered:
+          - requires_question: true
+          - slug: true
+          - question_text: true
+    - beforeCursor: ''
+    - serverPaginationType: limitOffsetBased
+    - onRowSelect: ''
+    - showDownloadButton: true
+    - selectedIndex: ''
+    - defaultSortDescending: false
+    - _sortedDisplayedDataIndices: null
+    - dynamicColumnSettings: null
+    - events: []
+    - totalRowCount: '{{question_search.data.hits.total.value}}'
+    - recordUpdates:
+        array: []
+    - newRow: null
+    - emptyMessage: No rows found
+    - columnEditable:
+        ordered:
+          - slug: false
+    - filters:
+        array: []
+    - displayedDataIndices: null
+    - disableSorting:
+        ordered: []
+    - columnMappers:
+        ordered:
+          - requires_question: '{{self.question_text}}'
+          - question_characteristic: '{{self.question_characteristic_order}}'
+          - symptoms: '{{self.map(x => x.provider_label)}}'
+          - historical_question: '{{!currentRow.historical_question && !currentRow.future_question}}'
+          - Custom Column 1: >-
+              {{load_survey_questions.data.question_uuid.includes(currentRow.question_uuid)}}
+    - showClearSelection: false
+    - overflowType: pagination
+    - _reverseSortedDisplayedDataIndices: null
+    - selectedCell:
+        object:
+          index: null
+          data: null
+          columnName: null
+    - columns:
+        - question_text
+        - historical_question
+        - historical_question_display
+        - not_expected_reason
+        - present_most_severe_first
+        - provider_sees
+        - question_characteristic_uuid
+        - question_uuid
+        - slug
+        - requires_question
+        - specific_answer_uuids
+        - symptom_uuids
+        - last_modified_date
+        - last_modified_user
+        - symptoms
+        - question_characteristic
+        - future_question
+        - Custom Column 1
+    - defaultSelectedRow: first
+    - freezeActionButtonColumns: false
+    - sort: null
+    - sortByRawValue:
+        ordered: []
+    - calculatedColumns:
+        - Custom Column 1
+    - selectedRow:
+        object:
+          index: null
+          data: null
+    - showPaginationOnTop: false
+    - nextAfterCursor: ''
+    - useCompactMode: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabbedcontainer1
+    row: 1
+    height: 52
+    width: 12
+    tabNum: 3
+createdAt: 2021-07-30T23:18:13.851Z

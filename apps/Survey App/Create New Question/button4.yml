@@ -1,0 +1,44 @@
+id: button4
+type: widget
+subtype: ButtonWidget
+template:
+  ordered:
+    - valueToCopy: ''
+    - internalUrlHashParams: ''
+    - exportFileType: csv
+    - buttonType: action
+    - exportTemplate: null
+    - url: ''
+    - newWindow: false
+    - value: Create New Question Characteristic
+    - exportQuery: ''
+    - action: ''
+    - internalUrlQuery: ''
+    - internalUrlPath: ''
+    - events:
+        - ordered:
+            - event: click
+            - type: util
+            - method: openApp
+            - pluginId: ''
+            - params:
+                ordered:
+                  - uuid: 30462a6e-f0ae-11eb-8650-4bef0f3f58cf
+                  - options:
+                      ordered:
+                        - newTab: true
+            - waitType: debounce
+            - waitMs: '0'
+    - exportFileName: ''
+    - loading: ''
+    - disabled: ''
+style:
+  ordered: []
+position2:
+  position2:
+    container: wizard1
+    col: 9
+    height: 1
+    width: 3
+    tabNum: jXZWSpNW_
+createdAt: 2021-08-12T17:58:45.725Z

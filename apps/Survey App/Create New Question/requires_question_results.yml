@@ -1,0 +1,213 @@
+id: requires_question_results
+type: widget
+subtype: TableWidget
+template:
+  ordered:
+    - showCustomButton: false
+    - sortMappedValue:
+        ordered: []
+    - _filteredSortedRenderedDataWithTypes: null
+    - normalizedData: null
+    - saveChangesDisabled: ''
+    - columnTypeProperties:
+        ordered: []
+    - columnWidths: []
+    - disableRowSelectInteraction: false
+    - columnWidthsMobile: []
+    - hasNextAfterCursor: ''
+    - columnTypeSpecificExtras:
+        ordered: []
+    - onRowAdded: ''
+    - columnHeaderNames:
+        ordered: []
+    - alwaysShowPaginator: false
+    - columnColors:
+        ordered:
+          - symptom_uuids: ''
+          - future_question: ''
+          - specific_answer_uuids: ''
+          - question_text: >-
+              {{load_new_question.data.requires_question.includes(currentRow.question_uuid)
+              ? 'green':'white'}}
+          - question_characteristic_uuid: ''
+          - provider_label: ''
+          - symptoms: ''
+          - slug: ''
+          - provider_sees: ''
+          - symptom_uuid: ''
+          - symptom_id: ''
+          - question_uuid: ''
+          - question_characteristic: ''
+          - requires_question: ''
+          - patient_label: ''
+          - historical_question: ''
+          - present_most_severe_first: ''
+          - historical_question_display: ''
+          - not_expected_reason: ''
+    - columnFrozenAlignments:
+        ordered: []
+    - allowMultiRowSelect: false
+    - columnFormats:
+        ordered: []
+    - columnRestrictedEditing:
+        ordered: []
+    - showFilterButton: true
+    - _columnSummaryTypes:
+        ordered: []
+    - showAddRowButton: false
+    - nextBeforeCursor: ''
+    - columnVisibility:
+        ordered:
+          - symptom_uuids: false
+          - future_question: true
+          - specific_answer_uuids: false
+          - question_text: true
+          - question_characteristic_uuid: false
+          - provider_label: true
+          - symptoms: false
+          - name: true
+          - slug: true
+          - sales: true
+          - provider_sees: false
+          - symptom_uuid: true
+          - symptom_id: true
+          - question_uuid: false
+          - question_characteristic: false
+          - requires_question: false
+          - patient_label: true
+          - id: true
+          - historical_question: false
+          - email: true
+          - present_most_severe_first: false
+          - historical_question_display: false
+          - not_expected_reason: false
+    - selectedPageIndex: '0'
+    - rowColor:
+        array: []
+    - actionButtonColumnName: Actions
+    - filterStackType: and
+    - downloadRawData: false
+    - showFetchingIndicator: true
+    - serverPaginated: false
+    - data: '{{requires_question_search.data.hits.hits.map(hit => hit[''_source''])}}'
+    - displayedData: null
+    - actionButtons:
+        - ordered:
+            - actionButtonText: Select
+            - actionButtonType: runQuery
+            - actionButtonQuery: assign_requires_question
+            - actionButtonInternalUrlPath: ''
+            - actionButtonInternalUrlQuery: ''
+            - actionButtonUrl: ''
+            - actionButtonNewWindow: false
+            - actionButtonDisabled: >-
+                {{load_new_question.data.requires_question.includes(currentRow.question_uuid)}}
+        - ordered:
+            - actionButtonText: Remove
+            - actionButtonType: runQuery
+            - actionButtonQuery: remove_requires_question
+            - actionButtonInternalUrlPath: ''
+            - actionButtonInternalUrlQuery: ''
+            - actionButtonUrl: ''
+            - actionButtonNewWindow: false
+            - actionButtonDisabled: >-
+                {{!load_new_question.data.requires_question.includes(currentRow.question_uuid)}}
+    - actionButtonSelectsRow: true
+    - selectRowByDefault: true
+    - defaultSortByColumn: ''
+    - paginationOffset: 0
+    - columnAlignment:
+        ordered: []
+    - columnSummaries:
+        object: {}
+    - sortedDesc: false
+    - customButtonName: ''
+    - columnMappersRenderAsHTML:
+        ordered: []
+    - showRefreshButton: true
+    - pageSize: 11
+    - useDynamicColumnSettings: false
+    - actionButtonPosition: right
+    - dynamicRowHeights: false
+    - bulkUpdateAction: ''
+    - afterCursor: ''
+    - onCustomButtonPressQueryName: ''
+    - changeSet:
+        object: {}
+    - sortedColumn: ''
+    - _columnSummaryValues:
+        ordered: []
+    - _compatibilityMode: true
+    - showColumnBorders: true
+    - _renderedDataWithTypes: null
+    - columnAllowOverflow:
+        ordered: []
+    - beforeCursor: ''
+    - serverPaginationType: limitOffsetBased
+    - onRowSelect: ''
+    - showDownloadButton: true
+    - selectedIndex: ''
+    - defaultSortDescending: false
+    - _sortedDisplayedDataIndices: null
+    - dynamicColumnSettings: null
+    - totalRowCount: ''
+    - recordUpdates:
+        array: []
+    - newRow: null
+    - emptyMessage: No rows found
+    - columnEditable:
+        ordered: []
+    - filters:
+        array: []
+    - displayedDataIndices: null
+    - disableSorting:
+        ordered: []
+    - columnMappers:
+        ordered: []
+    - showClearSelection: false
+    - overflowType: pagination
+    - _reverseSortedDisplayedDataIndices: null
+    - selectedCell:
+        object:
+          index: null
+          data: null
+          columnName: null
+    - columns:
+        - question_text
+        - historical_question
+        - future_question
+        - historical_question_display
+        - not_expected_reason
+        - present_most_severe_first
+        - provider_sees
+        - question_characteristic_uuid
+        - question_characteristic
+        - question_uuid
+        - requires_question
+        - slug
+        - specific_answer_uuids
+        - symptom_uuids
+        - symptoms
+    - defaultSelectedRow: first
+    - freezeActionButtonColumns: false
+    - sort: null
+    - sortByRawValue:
+        ordered: []
+    - calculatedColumns: []
+    - selectedRow:
+        object:
+          index: null
+          data: null
+    - showPaginationOnTop: false
+    - nextAfterCursor: ''
+    - useCompactMode: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: wizard1
+    row: 2
+    height: 15
+    width: 12
+    tabNum: IKXRcoND7
+createdAt: 2021-08-10T20:53:51.504Z

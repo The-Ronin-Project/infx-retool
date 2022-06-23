@@ -1,0 +1,49 @@
+id: requires_question_search_input
+type: widget
+subtype: TextInputWidget
+template:
+  ordered:
+    - validationMaxlengthValue: ''
+    - readonly: ''
+    - disabledKeyCodes: ''
+    - showNumberCommas: false
+    - validationMaxValue: ''
+    - onBlur: ''
+    - currencyType: USD
+    - leftIconName: ''
+    - initialValue: ''
+    - validationMessage: ''
+    - tooltipText: Search by question text
+    - value: ''
+    - suffix: ''
+    - validationMinlengthValue: ''
+    - validationLengthValue: ''
+    - placeholder: Enter value
+    - validationType: ''
+    - label: Search Questions
+    - currencyMajorOnly: false
+    - formattedValue: ''
+    - allowedInputsRegex: ''
+    - labelMaxWidth: ''
+    - enableValidationType: false
+    - labelPlacedOnLeft: false
+    - onSubmit: ''
+    - validationMinValue: ''
+    - lastSubmittedAt: ''
+    - validationState:
+        object:
+          required: ''
+          validationType: ''
+    - type: text
+    - allowedRegex: ''
+    - required: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: wizard1
+    row: 1
+    height: 1
+    width: 9
+    tabNum: IKXRcoND7
+createdAt: 2021-08-10T20:52:20.402Z

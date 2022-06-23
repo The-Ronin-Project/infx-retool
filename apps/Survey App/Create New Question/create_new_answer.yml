@@ -1,0 +1,114 @@
+id: create_new_answer
+type: datasource
+subtype: SqlQueryUnified
+resourceName: dc8029bc-3980-4836-841e-776c64eeca49
+resourceDisplayName: Clinical Content PostgresSQL DB
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - records: ''
+    - lastReceivedFromResourceAt: null
+    - databasePasswordOverride: ''
+    - queryDisabledMessage: ''
+    - successMessage: ''
+    - queryDisabled: ''
+    - playgroundQuerySaveId: 22
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: false
+    - showFailureToaster: true
+    - query: ''
+    - playgroundQueryUuid: be9170c8-ca3b-4ff5-9db3-032da499c1ee
+    - playgroundQueryId: 17
+    - privateParams: []
+    - triggersOnSuccess:
+        - add_new_answer_to_new_question
+    - runWhenPageLoadsDelay: ''
+    - data: null
+    - recordId: ''
+    - retoolVersion: 2.70.21
+    - importedQueryInputs:
+        ordered:
+          - sa_uuid: '{{new_answer_uuid.value}}'
+          - sa_label: '{{textinput7.value}}'
+          - answer_display: '{{textinput8.value}}'
+          - clinical_severity_order: '{{textinput9.value}}'
+          - alert_tier: '{{alert_tier_select.value}}'
+          - last_modified_user: '{{current_user.fullName}}'
+          - expected: '{{checkbox3.value}}'
+          - next_question_slug: 'null'
+    - showSuccessConfetti: false
+    - isImported: true
+    - showSuccessToaster: true
+    - dataArray: []
+    - cacheKeyTtl: ''
+    - filterBy: ''
+    - databaseHostOverride: ''
+    - metadata: null
+    - editorMode: gui
+    - actionType: INSERT
+    - triggersOnFailure: []
+    - changesetObject: ''
+    - shouldUseLegacySql: false
+    - errorTransformer: >-
+        // The variable 'data' allows you to reference the request's data in the
+        transformer. 
+
+        // example: return data.find(element => element.isError)
+
+        return data.error
+    - databaseNameOverride: ''
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: >-
+        [{"key":"specific_answer_uuid","value":"{{ sa_uuid
+        }}"},{"key":"specific_answer_label","value":"{{ sa_label
+        }}"},{"key":"generic_answer_display","value":"{{ answer_display
+        }}"},{"key":"clinical_severity_order","value":"{{
+        clinical_severity_order }}"},{"key":"alert_tier","value":"{{ alert_tier
+        }}"},{"key":"last_modified_date","value":"now()"},{"key":"last_modified_user","value":"{{
+        last_modified_user }}"},{"key":"expected","value":"{{ expected
+        }}"},{"key":"next_question_slug","value":"{{next_question_slug}}"}]
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - watchedParams: []
+    - enableErrorTransformer: false
+    - enableBulkUpdates: false
+    - showLatestVersionUpdatedWarning: true
+    - timestamp: 0
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: false
+    - bulkUpdatePrimaryKey: ''
+    - runWhenPageLoads: false
+    - transformer: >-
+        // type your code here
+
+        // example: return formatDataAsArray(data).filter(row => row.quantity >
+        20)
+
+        return data
+    - events:
+        - ordered:
+            - event: success
+            - type: datasource
+            - method: trigger
+            - pluginId: add_new_answer_to_new_question
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - tableName: surveys.specific_answer
+    - queryTimeout: '10000'
+    - requireConfirmation: false
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups: []
+    - databaseUsernameOverride: ''
+    - shouldEnableBatchQuerying: false
+    - doNotThrowOnNoOp: false
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: true
+    - notificationDuration: ''
+createdAt: 2021-08-10T23:27:30.801Z
