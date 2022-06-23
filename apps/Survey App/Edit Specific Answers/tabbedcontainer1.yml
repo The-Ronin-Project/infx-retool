@@ -1,0 +1,22 @@
+id: tabbedcontainer1
+type: widget
+subtype: TabbedContainerWidget
+template:
+  ordered:
+    - heightType: fixed
+    - spinWhenChildrenAreFetching: true
+    - unmountInactiveTabs: false
+    - tabNames: '["View Specific Answers", "Add New Specific Answers"]'
+    - selectedTabIndex: 0
+    - selectedTab: '"0"'
+    - showTabBar: true
+    - disableAnimation: false
+    - overflowType: hidden
+    - disabled: ''
+style:
+  ordered: []
+position2:
+  position2:
+    height: 18
+    width: 12
+createdAt: 2021-07-29T20:19:54.851Z
