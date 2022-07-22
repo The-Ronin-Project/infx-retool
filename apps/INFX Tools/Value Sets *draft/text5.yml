@@ -1,0 +1,28 @@
+id: text5
+type: widget
+subtype: TextWidget2
+resourceName: null
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - tooltipText: ''
+    - value: 'Tab 5 ?Do w want the value set info & versions tool incorporated her? '
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: container1
+    subcontainer: ef7a2
+    row: 0.6
+    col: 9
+    height: 0.6
+    width: 3
+createdAt: 2022-07-14T23:41:30.956Z

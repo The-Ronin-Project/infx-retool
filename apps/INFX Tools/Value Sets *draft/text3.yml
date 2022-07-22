@@ -1,0 +1,28 @@
+id: text3
+type: widget
+subtype: TextWidget2
+resourceName: null
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - tooltipText: ''
+    - value: 'Tab 3: Value Set Duplication via api endpoint'
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: container1
+    subcontainer: ef7a2
+    row: 0.6000000000000001
+    col: 4
+    height: 0.6
+    width: 2
+createdAt: 2022-07-14T23:32:01.392Z
