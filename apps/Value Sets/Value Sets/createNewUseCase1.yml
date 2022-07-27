@@ -1,0 +1,21 @@
+id: createNewUseCase1
+type: widget
+subtype: GlobalWidget
+resourceName: null
+template:
+  ordered:
+    - showFetchingIndicator: false
+    - name: Create New Use Case
+    - pageUuid: fa9e5600-f257-11ec-8df9-e7ba5d67baf9
+    - childNamespace: createNewUseCase1
+    - on_submit: select_use_case_name
+style:
+  ordered: []
+position2:
+  position2:
+    container: container1
+    subcontainer: ef7a7
+    row: 6.661338147750939e-16
+    height: 9.200000000000001
+    width: 12
+createdAt: 2022-06-22T21:27:08.497Z

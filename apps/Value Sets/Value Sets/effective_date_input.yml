@@ -1,0 +1,55 @@
+id: effective_date_input
+type: widget
+subtype: DateRangeWidget
+resourceName: null
+template:
+  ordered:
+    - minDate: ''
+    - readOnly: false
+    - iconAfter: bold/interface-calendar
+    - dateFormat: mm/dd/yyyy
+    - hidden: null
+    - customValidation: ''
+    - hideValidationMessage: false
+    - textBefore: ''
+    - validationMessage: ''
+    - textAfter: ''
+    - showInEditor: null
+    - showClear: false
+    - tooltipText: ''
+    - labelAlign: right
+    - formDataKey: '{{ self.id }}'
+    - value:
+        ordered:
+          - start: ''
+          - end: null
+    - startPlaceholder: ''
+    - labelCaption: ''
+    - maxDate: ''
+    - labelWidth: '33'
+    - label: Effective Dates
+    - formattedValue: ''
+    - _validate: false
+    - labelWidthUnit: '%'
+    - invalid: false
+    - iconBefore: ''
+    - endPlaceholder: ''
+    - events:
+        ordered: []
+    - textBetween: '~'
+    - loading: false
+    - disabled: ''
+    - labelPosition: left
+    - labelWrap: true
+    - maintainSpaceWhenHidden: null
+    - required: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabbedcontainer1
+    row: 20.6
+    height: 1
+    width: 12
+    tabNum: 2
+createdAt: 2022-01-25T22:37:21.731Z

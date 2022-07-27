@@ -1,0 +1,79 @@
+id: version_select
+type: widget
+subtype: SelectWidget2
+resourceName: null
+template:
+  ordered:
+    - _disabledByIndex: []
+    - showSelectionIndicator: true
+    - _values: []
+    - values: '{{ item }}'
+    - readOnly: false
+    - iconAfter: ''
+    - inputValue: ''
+    - hidden: false
+    - customValidation: ''
+    - data: '{{load_versions_of_selected_value_set.data.uuid}}'
+    - searchMode: fuzzy
+    - hideValidationMessage: false
+    - textBefore: ''
+    - selectedItem: null
+    - validationMessage: ''
+    - textAfter: ''
+    - showInEditor: false
+    - showClear: false
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: null
+    - hiddenByIndex:
+        array: []
+    - allowSearch: true
+    - labelCaption: ''
+    - labelWidth: '33'
+    - deprecatedLabels: '{{load_versions_of_selected_value_set.data.version}}'
+    - _hiddenByIndex: []
+    - placeholder: Select an option
+    - _captionByIndex: []
+    - label: Select a specific version to duplicate
+    - _hasMigratedNestedItems: true
+    - captionByIndex:
+        array: []
+    - _validate: false
+    - itemMode: dynamic
+    - labelWidthUnit: '%'
+    - allowCustomValue: false
+    - invalid: false
+    - selectedIndex: null
+    - _tooltipByIndex: []
+    - tooltipByIndex:
+        array: []
+    - iconBefore: ''
+    - selectedLabel: ''
+    - events:
+        ordered: []
+    - _ids: []
+    - emptyMessage: ''
+    - overlayMaxHeight: null
+    - loading: false
+    - disabled: false
+    - labelPosition: left
+    - _labels: []
+    - labelWrap: false
+    - disabledValues:
+        array: []
+    - disabledByIndex:
+        array: []
+    - maintainSpaceWhenHidden: false
+    - required: false
+    - labels: '{{ self.deprecatedLabels[i] }}'
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabbedcontainer1
+    row: 1.6
+    height: 1
+    width: 12
+    tabNum: 2
+createdAt: 2022-01-25T22:16:56.753Z
