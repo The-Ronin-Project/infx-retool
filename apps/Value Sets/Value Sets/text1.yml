@@ -1,0 +1,28 @@
+id: text1
+type: widget
+subtype: TextWidget2
+resourceName: null
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - tooltipText: ''
+    - value: >-
+        This form allows you to create a new value set by copying an existing
+        value set and renaming it.
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabbedcontainer1
+    height: 0.6
+    width: 12
+    tabNum: 2
+createdAt: 2022-01-25T22:15:01.886Z

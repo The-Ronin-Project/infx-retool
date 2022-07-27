@@ -1,0 +1,26 @@
+id: tabbedcontainer1
+type: widget
+subtype: TabbedContainerWidget
+resourceName: null
+template:
+  ordered:
+    - heightType: fixed
+    - spinWhenChildrenAreFetching: true
+    - unmountInactiveTabs: false
+    - tabNames: >-
+        ["Browse Value Sets", "Create New Value Set", "Duplicate Existing Value
+        Set"]
+    - selectedTabIndex: 0
+    - selectedTab: '"0"'
+    - showTabBar: true
+    - disableAnimation: false
+    - overflowType: hidden
+    - disabled: ''
+style:
+  ordered: []
+position2:
+  position2:
+    row: -9.992007221626409e-16
+    height: 31.4
+    width: 12
+createdAt: 2021-10-01T16:33:49.853Z

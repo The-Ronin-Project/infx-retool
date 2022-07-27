@@ -1,0 +1,27 @@
+id: containerTitle1
+type: widget
+subtype: TextWidget2
+resourceName: null
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - tooltipText: ''
+    - value: '#### Create New Use Case'
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: container1
+    rowGroup: header
+    row: 0.20000000000000034
+    height: 0.6
+    width: 6
+createdAt: 2022-06-22T21:29:40.890Z

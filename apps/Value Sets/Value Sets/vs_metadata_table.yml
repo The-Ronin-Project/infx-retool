@@ -1,0 +1,236 @@
+id: vs_metadata_table
+type: widget
+subtype: TableWidget
+resourceName: null
+template:
+  ordered:
+    - showCustomButton: false
+    - sortMappedValue:
+        ordered: []
+    - _filteredSortedRenderedDataWithTypes: null
+    - normalizedData: null
+    - saveChangesDisabled: ''
+    - columnTypeProperties:
+        ordered: []
+    - columnWidths:
+        - object:
+            id: contact
+            value: 77
+        - object:
+            id: description
+            value: 271.09375
+        - object:
+            id: immutable
+            value: 95
+        - object:
+            id: experimental
+            value: 108.75
+        - object:
+            id: name
+            value: 272.40625
+        - object:
+            id: __retool__action_list
+            value: 329.09375
+    - disableRowSelectInteraction: false
+    - columnWidthsMobile: []
+    - hasNextAfterCursor: ''
+    - columnTypeSpecificExtras:
+        ordered: []
+    - onRowAdded: ''
+    - columnHeaderNames:
+        ordered: []
+    - alwaysShowPaginator: false
+    - columnColors:
+        ordered:
+          - contact: ''
+          - immutable: ''
+          - use_case_name: ''
+          - hyperlink: ''
+          - experimental: ''
+          - use_case: ''
+          - identifier: ''
+          - name: ''
+          - url: ''
+          - use_case_link: ''
+          - use_case_uuid: ''
+          - title: ''
+          - type: ''
+          - uuid: ''
+          - publisher: ''
+          - description: ''
+          - purpose: ''
+    - columnFrozenAlignments:
+        ordered: []
+    - allowMultiRowSelect: false
+    - columnFormats:
+        ordered: []
+    - columnRestrictedEditing:
+        ordered: []
+    - showFilterButton: true
+    - _columnSummaryTypes:
+        ordered: []
+    - showAddRowButton: false
+    - nextBeforeCursor: ''
+    - columnVisibility:
+        ordered:
+          - contact: false
+          - immutable: false
+          - use_case_name: false
+          - hyperlink: true
+          - experimental: false
+          - use_case: false
+          - identifier: false
+          - name: false
+          - sales: true
+          - url: false
+          - use_case_link: false
+          - use_case_uuid: false
+          - title: true
+          - type: false
+          - id: true
+          - uuid: false
+          - publisher: false
+          - email: true
+          - description: true
+          - purpose: false
+    - selectedPageIndex: '0'
+    - rowColor:
+        array: []
+    - actionButtonColumnName: Actions
+    - filterStackType: and
+    - downloadRawData: false
+    - showFetchingIndicator: true
+    - serverPaginated: false
+    - data: '{{load_value_sets.data}}'
+    - displayedData: null
+    - actionButtons:
+        - ordered:
+            - actionButtonText: View/Edit
+            - actionButtonType: openInternalUrl
+            - actionButtonQuery: ''
+            - actionButtonInternalUrlPath: 4f31f1c8-2228-11ec-90d7-a387d41c775c
+            - actionButtonInternalUrlQuery: >-
+                "[{\"key\":\"uuid\",\"value\":\"{{vs_metadata_table.selectedRow.data.uuid}}\"}]"
+            - actionButtonUrl: ''
+            - actionButtonNewWindow: true
+            - actionButtonDisabled: ''
+    - actionButtonSelectsRow: true
+    - selectRowByDefault: true
+    - defaultSortByColumn: ''
+    - paginationOffset: 0
+    - columnAlignment:
+        ordered: []
+    - columnSummaries:
+        object: {}
+    - sortedDesc: false
+    - customButtonName: ''
+    - columnMappersRenderAsHTML:
+        ordered: []
+    - showRefreshButton: true
+    - pageSize: 15
+    - useDynamicColumnSettings: false
+    - actionButtonPosition: right
+    - dynamicRowHeights: false
+    - bulkUpdateAction: ''
+    - afterCursor: ''
+    - onCustomButtonPressQueryName: ''
+    - changeSet:
+        object: {}
+    - sortedColumn: ''
+    - _columnSummaryValues:
+        ordered: []
+    - _compatibilityMode: true
+    - showColumnBorders: true
+    - _renderedDataWithTypes: null
+    - columnAllowOverflow:
+        ordered: []
+    - beforeCursor: ''
+    - serverPaginationType: limitOffsetBased
+    - onRowSelect: ''
+    - showDownloadButton: true
+    - selectedIndex: ''
+    - defaultSortDescending: false
+    - _sortedDisplayedDataIndices: null
+    - dynamicColumnSettings: null
+    - events:
+        - ordered:
+            - event: saveChanges
+            - type: datasource
+            - method: trigger
+            - pluginId: tableBulkUpdateActionTrigger
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - totalRowCount: ''
+    - recordUpdates:
+        array: []
+    - newRow: null
+    - emptyMessage: No rows found
+    - columnEditable:
+        ordered:
+          - name: false
+          - contact: true
+          - description: true
+          - immutable: true
+          - experimental: true
+          - purpose: true
+          - type: true
+    - filters:
+        array: []
+    - displayedDataIndices: null
+    - disableSorting:
+        ordered: []
+    - columnMappers:
+        ordered: []
+    - showClearSelection: false
+    - overflowType: scroll
+    - _reverseSortedDisplayedDataIndices: null
+    - selectedCell:
+        object:
+          index: null
+          data: null
+          columnName: null
+    - columns:
+        - id
+        - name
+        - email
+        - sales
+        - uuid
+        - url
+        - identifier
+        - title
+        - publisher
+        - contact
+        - description
+        - immutable
+        - experimental
+        - purpose
+        - type
+        - use_case_uuid
+        - use_case_name
+        - hyperlink
+        - use_case
+        - use_case_link
+    - defaultSelectedRow: first
+    - freezeActionButtonColumns: false
+    - sort: null
+    - sortByRawValue:
+        ordered: []
+    - calculatedColumns: []
+    - selectedRow:
+        object:
+          index: null
+          data: null
+    - showPaginationOnTop: false
+    - nextAfterCursor: ''
+    - useCompactMode: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabbedcontainer1
+    row: 1
+    height: 18.400000000000002
+    width: 8
+createdAt: 2021-10-01T16:34:17.643Z

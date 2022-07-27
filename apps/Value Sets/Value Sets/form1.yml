@@ -1,0 +1,42 @@
+id: form1
+type: widget
+subtype: FormWidget
+resourceName: null
+template:
+  ordered:
+    - heightType: fixed
+    - spinWhenChildrenAreFetching: true
+    - clearFormAfterSubmit: false
+    - requireValidFormForSubmit: true
+    - showBorder: true
+    - data: ''
+    - showDropShadow: true
+    - submitButtonFullWidth: false
+    - scroll: true
+    - submitDisabled: ''
+    - submitButtonText: Submit
+    - onSubmit: create_new_value_set
+    - requiredFormControls: []
+    - events:
+        - ordered:
+            - event: submit
+            - type: datasource
+            - method: trigger
+            - pluginId: create_new_value_set
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - hideSubmit: false
+    - loading: ''
+    - overflowType: hidden
+    - disabled: ''
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabbedcontainer1
+    height: 26.799999999999997
+    width: 12
+    tabNum: 1
+createdAt: 2021-10-11T18:28:16.438Z
