@@ -11,7 +11,7 @@ template:
     - showInEditor: false
     - verticalAlign: center
     - tooltipText: ''
-    - value: '**Value Set**'
+    - value: '**New Value Set**'
     - disableMarkdown: false
     - overflowType: scroll
     - maintainSpaceWhenHidden: false
