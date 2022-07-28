@@ -1,45 +1,39 @@
-id: create_new_value_set
+id: create_value_set_and_version_one
 type: datasource
-subtype: SqlQueryUnified
-resourceName: dc8029bc-3980-4836-841e-776c64eeca49
-resourceDisplayName: Clinical Content PostgresSQL DB
+subtype: RESTQuery
+resourceName: a00335cd-bd3b-4d98-8af4-7ff590ce95e8
+resourceDisplayName: INFX Internal Tools API
 template:
   ordered:
     - queryRefreshTime: ''
-    - records: ''
+    - paginationLimit: ''
+    - body: >-
+        [{"key":"name","value":"{{name_input.value}}"},{"key":"title","value":"{{title_input.value}}"},{"key":"publisher","value":"{{textinput6.value}}"},{"key":"contact","value":"{{textinput4.value}}"},{"key":"value_set_description","value":"{{textinput7.value}}"},{"key":"immutable","value":"false"},{"key":"experimental","value":"{{checkbox1.value}}"},{"key":"purpose","value":"{{textinput2.value}}"},{"key":"type","value":"{{type_dropdown.value}}"},{"key":"effective_start","value":"{{dateRange1.value.start}}"},{"key":"effective_end","value":"{{dateRange1.value.end}}"},{"key":"version_description","value":"{{version_description_input.value}}"}]
     - lastReceivedFromResourceAt: null
-    - databasePasswordOverride: ''
     - queryDisabledMessage: ''
     - successMessage: ''
     - queryDisabled: ''
     - playgroundQuerySaveId: latest
     - resourceNameOverride: ''
     - runWhenModelUpdates: false
+    - paginationPaginationField: ''
+    - headers: ''
     - showFailureToaster: true
-    - query: ''
+    - paginationEnabled: false
+    - query: ValueSets/
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - privateParams: []
-    - triggersOnSuccess:
-        - load_value_sets
     - runWhenPageLoadsDelay: ''
     - data: null
-    - recordId: ''
     - importedQueryInputs:
         ordered: []
-    - showSuccessConfetti: false
     - isImported: false
     - showSuccessToaster: true
-    - dataArray: []
     - cacheKeyTtl: ''
-    - filterBy: ''
-    - databaseHostOverride: ''
+    - cookies: ''
     - metadata: null
-    - editorMode: gui
-    - actionType: INSERT
-    - triggersOnFailure: []
     - changesetObject: ''
-    - shouldUseLegacySql: false
     - errorTransformer: >-
         // The variable 'data' allows you to reference the request's data in the
         transformer. 
@@ -47,23 +41,20 @@ template:
         // example: return data.find(element => element.isError)
 
         return data.error
-    - databaseNameOverride: ''
     - confirmationMessage: null
     - isFetching: false
-    - changeset: >-
-        [{"key":"title","value":"{{title_input.value}}"},{"key":"purpose","value":"{{textinput2.value}}"},{"key":"experimental","value":"{{checkbox1.value}}"},{"key":"type","value":"{{type_dropdown.value}}"},{"key":"immutable","value":"false"},{"key":"contact","value":"{{textinput4.value}}"},{"key":"uuid","value":"{{uuid.v4()}}"},{"key":"publisher","value":"{{textinput6.value}}"},{"key":"description","value":"{{textinput7.value}}"},{"key":"name","value":"{{name_input.value}}"},{"key":"use_case_uuid","value":"{{select_use.value}}"}]
+    - changeset: ''
     - rawData: null
     - queryTriggerDelay: '0'
     - watchedParams: []
     - enableErrorTransformer: false
-    - enableBulkUpdates: false
     - showLatestVersionUpdatedWarning: false
+    - paginationDataField: ''
     - timestamp: 0
     - importedQueryDefaults:
         ordered: []
     - enableTransformer: false
-    - showUpdateSetValueDynamicallyToggle: false
-    - bulkUpdatePrimaryKey: ''
+    - showUpdateSetValueDynamicallyToggle: true
     - runWhenPageLoads: false
     - transformer: >-
         // type your code here
@@ -75,24 +66,32 @@ template:
     - events:
         - ordered:
             - event: success
-            - type: datasource
-            - method: trigger
-            - pluginId: load_value_sets
+            - type: script
+            - method: run
+            - pluginId: ''
+            - targetId: null
             - params:
-                ordered: []
+                ordered:
+                  - src: |
+                      name_input.clearValue
+                      title_input.clearValue
+                      textinput6.clearValue
+                      textinput4.clearValue
+                      textinput7.clearValue
+                      checkbox1.clearValue
+                      textinput2.clearValue
+                      dateRange1.clearValue
             - waitType: debounce
             - waitMs: '0'
-    - tableName: value_sets.value_set
     - queryTimeout: '10000'
     - requireConfirmation: false
+    - type: POST
     - queryFailureConditions: ''
     - changesetIsObject: false
     - enableCaching: false
     - allowedGroups: []
-    - databaseUsernameOverride: ''
-    - shouldEnableBatchQuerying: false
-    - doNotThrowOnNoOp: false
+    - bodyType: json
     - queryThrottleTime: '750'
-    - updateSetValueDynamically: true
+    - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2021-10-11T18:56:32.006Z
+createdAt: 2022-07-27T21:36:03.801Z

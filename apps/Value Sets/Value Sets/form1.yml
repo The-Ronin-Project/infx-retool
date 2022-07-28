@@ -15,14 +15,14 @@ template:
     - scroll: true
     - submitDisabled: ''
     - submitButtonText: Submit
-    - onSubmit: create_new_value_set
+    - onSubmit: ''
     - requiredFormControls: []
     - events:
         - ordered:
             - event: submit
             - type: datasource
             - method: trigger
-            - pluginId: create_new_value_set
+            - pluginId: create_value_set_and_version_one
             - params:
                 ordered: []
             - waitType: debounce
@@ -36,7 +36,7 @@ style:
 position2:
   position2:
     container: tabbedcontainer1
-    height: 26.799999999999997
+    height: 26.599999999999994
     width: 12
     tabNum: 1
 createdAt: 2021-10-11T18:28:16.438Z
