@@ -1,4 +1,4 @@
-id: description_input
+id: dup_purpose_input
 type: widget
 subtype: TextInputWidget2
 resourceName: null
@@ -28,7 +28,7 @@ template:
     - labelWidth: '33'
     - autoFill: ''
     - placeholder: Enter value
-    - label: Description (clinical explanation of value set contents)
+    - label: Purpose (business reason for value set)
     - _validate: false
     - labelWidthUnit: '%'
     - invalid: false
@@ -49,8 +49,8 @@ style:
 position2:
   position2:
     container: tabbedcontainer1
-    row: 15.600000000000001
+    row: 20
     height: 1
     width: 12
     tabNum: 2
-createdAt: 2022-01-25T22:35:35.105Z
+createdAt: 2022-01-25T22:35:47.468Z

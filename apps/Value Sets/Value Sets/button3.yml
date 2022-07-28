@@ -1,4 +1,4 @@
-id: dup_version
+id: button3
 type: widget
 subtype: ButtonWidget2
 resourceName: null
@@ -9,7 +9,7 @@ template:
     - iconAfter: ''
     - submitTargetId: null
     - hidden: false
-    - text: Step 2 Duplicate Version
+    - text: Duplicate
     - showInEditor: false
     - tooltipText: ''
     - styleVariant: solid
@@ -20,7 +20,7 @@ template:
             - event: click
             - type: datasource
             - method: trigger
-            - pluginId: duplicate_version
+            - pluginId: duplication_api
             - targetId: null
             - params:
                 ordered: []
@@ -35,9 +35,9 @@ style:
 position2:
   position2:
     container: tabbedcontainer1
-    row: 24.999999999999996
-    col: 9
+    row: 26.6
+    col: 7
     height: 1
-    width: 3
+    width: 5
     tabNum: 2
-createdAt: 2022-06-14T19:55:21.353Z
+createdAt: 2022-07-28T17:31:32.732Z

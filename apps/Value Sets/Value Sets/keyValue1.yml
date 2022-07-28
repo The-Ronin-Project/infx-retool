@@ -1,22 +1,18 @@
-id: selected_vs_metadata
+id: keyValue1
 type: widget
 subtype: KeyValueMapWidget
 resourceName: null
 template:
   ordered:
     - rowHeaderNames:
-        ordered:
-          - vs_description: Value Set Description
-          - vsv_description: Version Description
-    - rowFormats:
-        ordered:
-          - type: default
-    - valueTitle: Value
-    - data: |-
-        {{load_vs_metadata.data
-        }}
-    - prevRowMappers:
         ordered: []
+    - rowFormats:
+        ordered: []
+    - valueTitle: Value
+    - data: '{{load_vs_metadata.data}}'
+    - prevRowMappers:
+        ordered:
+          - effective_start: ''
     - rowMappersRenderAsHTML:
         ordered: []
     - rowVisibility:
@@ -27,34 +23,35 @@ template:
           - immutable: true
           - c: true
           - effective_end: true
-          - created_date: false
-          - value_set_uuid: false
+          - created_date: true
+          - value_set_uuid: true
+          - message: true
           - experimental: true
+          - error: true
+          - position: true
           - effective_start: true
-          - name: false
+          - name: true
           - use_case_uuid: true
           - status: true
           - comments: true
-          - vsv_description: true
-          - version: false
-          - title: false
-          - vs_description: true
+          - version: true
+          - title: true
           - type: true
-          - uuid: false
-          - publisher: false
-          - description: false
+          - source: true
+          - uuid: true
+          - publisher: true
+          - description: true
           - purpose: true
+          - queryExecutionMetadata: true
     - prevRowFormats:
-        ordered:
-          - type: default
-    - rowMappers:
         ordered: []
+    - rowMappers:
+        ordered:
+          - effective_start: ''
     - rows:
         - a
         - b
         - c
-        - vs_description
-        - vsv_description
         - uuid
         - effective_start
         - effective_end
@@ -64,13 +61,18 @@ template:
         - created_date
         - version
         - comments
-        - title
+        - error
+        - message
+        - position
+        - queryExecutionMetadata
+        - source
         - name
+        - title
         - publisher
-        - purpose
         - contact
         - immutable
         - experimental
+        - purpose
         - type
         - use_case_uuid
     - keyTitle: Key
@@ -79,9 +81,9 @@ style:
 position2:
   position2:
     container: tabbedcontainer1
-    row: 2.6
-    col: 4
-    height: 10.2
-    width: 8
+    row: 3.0000000000000004
+    col: 2
+    height: 13.199999999999998
+    width: 10
     tabNum: 2
-createdAt: 2022-01-25T22:27:29.984Z
+createdAt: 2022-07-28T17:10:42.579Z
