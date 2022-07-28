@@ -16,12 +16,13 @@ template:
     - resourceNameOverride: ''
     - runWhenModelUpdates: true
     - showFailureToaster: true
-    - query: |-
-        select vs.description vs_description, vsv.description vsv_description, *
-        from value_sets.value_set_version vsv
-        join value_sets.value_set vs
-        on vsv.value_set_uuid = vs.uuid
-        where vsv.uuid={{version_select.value}}
+    - query: >-
+        select * from value_sets.value_set as vs
+
+        join (select * from value_sets.value_set_version) as vsv on vs.uuid =
+        vsv.value_set_uuid
+
+        where vs.uuid = {{value_set_select.value}}
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - privateParams: []

@@ -1,53 +1,39 @@
-id: duplicate_rules
+id: duplication_api
 type: datasource
-subtype: SqlQueryUnified
-resourceName: dc8029bc-3980-4836-841e-776c64eeca49
-resourceDisplayName: Clinical Content PostgresSQL DB
+subtype: RESTQuery
+resourceName: a00335cd-bd3b-4d98-8af4-7ff590ce95e8
+resourceDisplayName: INFX Internal Tools API
 template:
   ordered:
     - queryRefreshTime: ''
-    - records: ''
+    - paginationLimit: ''
+    - body: >-
+        [{"key":"name","value":"{{name_input_dup.value}}"},{"key":"title","value":"{{title_input_dup.value}}"},{"key":"contact","value":"{{dup_contact_input.value}}"},{"key":"value_set_description","value":"{{dup_description_input.value}}"},{"key":"purpose","value":"{{dup_purpose_input.value}}"},{"key":"effective_start","value":"{{dup_daterange.value.start}}"},{"key":"effective_end","value":"{{dup_daterange.value.end}}"},{"key":"version_description","value":"{{dup_version_description.value}}"}]
     - lastReceivedFromResourceAt: null
-    - databasePasswordOverride: ''
     - queryDisabledMessage: ''
     - successMessage: ''
     - queryDisabled: ''
     - playgroundQuerySaveId: latest
     - resourceNameOverride: ''
     - runWhenModelUpdates: false
+    - paginationPaginationField: ''
+    - headers: ''
     - showFailureToaster: true
-    - query: >-
-        insert into value_sets.value_set_rule
-
-        (uuid, value_set_version, property, description, include,
-        terminology_version, operator, value, rule_group)
-
-        select uuid_generate_v4(), {{new_version_uuid.value}}, property,
-        description, include, terminology_version, operator, value, rule_group
-
-        from value_sets.value_set_rule
-
-        where value_set_version={{version_select.value}}
+    - paginationEnabled: false
+    - query: /ValueSets/{{value_set_select.value}}/duplicate
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - privateParams: []
     - runWhenPageLoadsDelay: ''
-    - warningCodes: []
     - data: null
-    - recordId: ''
     - importedQueryInputs:
         ordered: []
     - isImported: false
     - showSuccessToaster: true
-    - dataArray: []
     - cacheKeyTtl: ''
-    - filterBy: ''
-    - databaseHostOverride: ''
+    - cookies: ''
     - metadata: null
-    - editorMode: sql
-    - actionType: ''
     - changesetObject: ''
-    - shouldUseLegacySql: false
     - errorTransformer: >-
         // The variable 'data' allows you to reference the request's data in the
         transformer. 
@@ -55,7 +41,6 @@ template:
         // example: return data.find(element => element.isError)
 
         return data.error
-    - databaseNameOverride: ''
     - confirmationMessage: null
     - isFetching: false
     - changeset: ''
@@ -63,14 +48,13 @@ template:
     - queryTriggerDelay: '0'
     - watchedParams: []
     - enableErrorTransformer: false
-    - enableBulkUpdates: false
     - showLatestVersionUpdatedWarning: false
+    - paginationDataField: ''
     - timestamp: 0
     - importedQueryDefaults:
         ordered: []
     - enableTransformer: false
     - showUpdateSetValueDynamicallyToggle: true
-    - bulkUpdatePrimaryKey: ''
     - runWhenPageLoads: false
     - transformer: >-
         // type your code here
@@ -82,6 +66,24 @@ template:
     - events:
         - ordered:
             - event: success
+            - type: script
+            - method: run
+            - pluginId: ''
+            - targetId: null
+            - params:
+                ordered:
+                  - src: |-
+                      name_input_dup.clearValue
+                      title_input_dup.clearValue
+                      dup_contact_input.clearValue
+                      dup_description_input.clearValue
+                      dup_purpose_input.clearValue
+                      dup_daterange.clearValue
+                      dup_version_description.clearValue
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: success
             - type: util
             - method: showNotification
             - pluginId: ''
@@ -90,32 +92,20 @@ template:
                 ordered:
                   - options:
                       ordered:
-                        - notificationType: info
-                        - title: Rules duplication success
-                        - description: Duplication complete!
+                        - notificationType: success
+                        - title: Success
+                        - description: New value set and version created
             - waitType: debounce
             - waitMs: '0'
-        - ordered:
-            - event: success
-            - type: util
-            - method: confetti
-            - pluginId: ''
-            - targetId: null
-            - params:
-                ordered: []
-            - waitType: debounce
-            - waitMs: '0'
-    - tableName: ''
     - queryTimeout: '10000'
     - requireConfirmation: false
+    - type: POST
     - queryFailureConditions: ''
     - changesetIsObject: false
     - enableCaching: false
     - allowedGroups: []
-    - databaseUsernameOverride: ''
-    - shouldEnableBatchQuerying: false
-    - doNotThrowOnNoOp: false
+    - bodyType: json
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2022-01-25T22:41:41.010Z
+createdAt: 2022-07-28T16:15:08.669Z

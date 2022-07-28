@@ -1,4 +1,4 @@
-id: effective_date_input
+id: dup_daterange
 type: widget
 subtype: DateRangeWidget
 resourceName: null
@@ -6,24 +6,24 @@ template:
   ordered:
     - minDate: ''
     - readOnly: false
-    - iconAfter: bold/interface-calendar
-    - dateFormat: mm/dd/yyyy
-    - hidden: null
+    - iconAfter: ''
+    - dateFormat: MMM d, yyyy
+    - hidden: false
     - customValidation: ''
     - hideValidationMessage: false
     - textBefore: ''
     - validationMessage: ''
     - textAfter: ''
-    - showInEditor: null
+    - showInEditor: false
     - showClear: false
     - tooltipText: ''
-    - labelAlign: right
+    - labelAlign: left
     - formDataKey: '{{ self.id }}'
     - value:
         ordered:
           - start: ''
-          - end: null
-    - startPlaceholder: ''
+          - end: ''
+    - startPlaceholder: ' Effective Start date'
     - labelCaption: ''
     - maxDate: ''
     - labelWidth: '33'
@@ -32,24 +32,24 @@ template:
     - _validate: false
     - labelWidthUnit: '%'
     - invalid: false
-    - iconBefore: ''
-    - endPlaceholder: ''
+    - iconBefore: calendar
+    - endPlaceholder: Effective End date
     - events:
         ordered: []
-    - textBetween: '~'
+    - textBetween: '-'
     - loading: false
-    - disabled: ''
+    - disabled: false
     - labelPosition: left
-    - labelWrap: true
-    - maintainSpaceWhenHidden: null
+    - labelWrap: false
+    - maintainSpaceWhenHidden: false
     - required: false
 style:
   ordered: []
 position2:
   position2:
     container: tabbedcontainer1
-    row: 20.6
+    row: 23
     height: 1
     width: 12
     tabNum: 2
-createdAt: 2022-01-25T22:37:21.731Z
+createdAt: 2022-07-28T16:58:13.581Z

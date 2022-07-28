@@ -29,7 +29,7 @@ template:
     - hiddenByIndex:
         array: []
     - allowSearch: true
-    - labelCaption: ''
+    - labelCaption: '*the most recenct active version will be duplicated'
     - labelWidth: '33'
     - deprecatedLabels: '{{load_all_value_sets.data.name}}'
     - _hiddenByIndex: []
@@ -72,7 +72,7 @@ style:
 position2:
   position2:
     container: tabbedcontainer1
-    row: 0.5999999999999996
+    row: 1.1999999999999997
     height: 1
     width: 12
     tabNum: 2

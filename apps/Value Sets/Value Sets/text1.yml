@@ -12,8 +12,8 @@ template:
     - verticalAlign: center
     - tooltipText: ''
     - value: >-
-        This form allows you to create a new value set by copying an existing
-        value set and renaming it.
+        **This form allows you to create a new value set by copying an existing
+        value set and renaming it.**
     - disableMarkdown: false
     - overflowType: scroll
     - maintainSpaceWhenHidden: false
