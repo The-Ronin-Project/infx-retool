@@ -1,0 +1,92 @@
+id: load_target_concept_table
+type: datasource
+subtype: ElasticSearchQuery
+resourceName: 3e68115b-9776-4956-86b4-f468d2d1f836
+resourceDisplayName: ElasticSearch
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - method: indices.get
+    - lastReceivedFromResourceAt: null
+    - queryDisabledMessage: ''
+    - successMessage: ''
+    - queryDisabled: ''
+    - playgroundQuerySaveId: latest
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: false
+    - showFailureToaster: true
+    - query: |-
+        {
+          body: {
+            query: {
+              bool: {
+                must: [
+                  {
+                    multi_match: {
+                      type: {{search_type.value == 'Prefix' ? "bool_prefix" : "best_fields"}},
+                      fields: {{related_names.value ? ["component", "related_names"] : ["component"]}},
+                      query: {{component_search.value}}
+                    }
+                  }
+                ],
+                filter: [
+                  { "term":  { "terminology_version_uuid.keyword": {{loinc_version_select.value}} }},
+                ]
+              }
+            }
+          },
+          size: 500,
+          index: "fhir_codes"
+        }
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - privateParams: []
+    - runWhenPageLoadsDelay: ''
+    - data: null
+    - importedQueryInputs:
+        ordered: []
+    - isImported: false
+    - showSuccessToaster: true
+    - cacheKeyTtl: ''
+    - metadata: null
+    - changesetObject: ''
+    - errorTransformer: >-
+        // The variable 'data' allows you to reference the request's data in the
+        transformer. 
+
+        // example: return data.find(element => element.isError)
+
+        return data.error
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - watchedParams: []
+    - enableErrorTransformer: false
+    - showLatestVersionUpdatedWarning: false
+    - timestamp: 0
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - runWhenPageLoads: false
+    - transformer: >-
+        // type your code here
+
+        // example: return formatDataAsArray(data).filter(row => row.quantity >
+        20)
+
+        return data
+    - events: []
+    - queryTimeout: '10000'
+    - requireConfirmation: false
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups: []
+    - collection: ''
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+createdAt: 2022-03-17T01:37:30.275Z

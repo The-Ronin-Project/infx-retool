@@ -1,0 +1,28 @@
+id: tabbedContainer1
+type: widget
+subtype: TabbedContainerWidget
+resourceName: null
+template:
+  ordered:
+    - heightType: fixed
+    - spinWhenChildrenAreFetching: true
+    - unmountInactiveTabs: false
+    - tabNames: >-
+        ["FHIR", "SNOMED CT", "RxNorm", "LOINC", "ICD-10 CM", "ICD-10 PCS",
+        "CPT", "HCPCS"]
+    - selectedTabIndex: 0
+    - selectedTab: '"0"'
+    - showTabBar: true
+    - disableAnimation: false
+    - overflowType: hidden
+    - disabled: ''
+style:
+  ordered: []
+position2:
+  position2:
+    container: mapper
+    row: 4.600000000000061
+    col: 5
+    height: 42.99999999999999
+    width: 7
+createdAt: 2022-04-11T19:35:41.866Z

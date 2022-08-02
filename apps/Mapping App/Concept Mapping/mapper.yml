@@ -1,0 +1,24 @@
+id: mapper
+type: widget
+subtype: ContainerWidget
+resourceName: null
+template:
+  ordered:
+    - title: >-
+        Currently mapping concepts for the
+        {{load_concept_map_metadata.data.title[0]}} Version
+        {{load_concept_map_metadata.data.version}} Concept Map
+    - disabled: ''
+    - spinWhenChildrenAreFetching: true
+    - showBorder: true
+    - showDropShadow: true
+    - heightType: fixed
+    - overflowType: scroll
+style:
+  ordered: []
+position2:
+  position2:
+    row: 1.2000000000000735
+    height: 45.00000000000001
+    width: 12
+createdAt: 2022-02-03T02:28:10.016Z
