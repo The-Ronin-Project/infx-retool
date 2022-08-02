@@ -1,4 +1,4 @@
-id: is_standard
+id: is_fhir
 type: widget
 subtype: CheckboxWidget2
 resourceName: null
@@ -14,7 +14,7 @@ template:
     - formDataKey: '{{ self.id }}'
     - value: false
     - labelCaption: ''
-    - label: Standard Terminology
+    - label: FHIR Terminology
     - _validate: false
     - invalid: false
     - events:
@@ -29,9 +29,9 @@ style:
 position2:
   position2:
     container: tabs
-    row: 6.2
-    col: 2
+    row: 6.199999999999999
+    col: 5
     height: 0.6
     width: 2
     tabNum: 1
-createdAt: 2022-08-02T19:58:13.615Z
+createdAt: 2022-08-02T19:58:48.706Z

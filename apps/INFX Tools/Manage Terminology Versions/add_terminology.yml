@@ -1,4 +1,4 @@
-id: add_terminology_button
+id: add_terminology
 type: datasource
 subtype: SqlQueryUnified
 resourceName: dc8029bc-3980-4836-841e-776c64eeca49
@@ -47,7 +47,7 @@ template:
     - confirmationMessage: null
     - isFetching: false
     - changeset: >-
-        [{"key":"uuid","value":"{{uuid.v4()}}"},{"key":"terminology","value":"{{select_terminology.value}}"},{"key":"version","value":"{{version.value}}"},{"key":"effective_start","value":"{{effective_start.value}}"},{"key":"effective_end","value":"{{effective_end.value}}"},{"key":"fhir_uri","value":"{{fhir_uri.value}}"},{"key":"is_standard","value":"{{is_standard.value}}"}]
+        [{"key":"uuid","value":"{{uuid.v4}}"},{"key":"terminology","value":"{{select_terminology.value}}"},{"key":"version","value":"{{version.value}}"},{"key":"effective_start","value":"{{dateRange1.value.start}}"},{"key":"effective_end","value":"{{dateRange1.value.end}}"},{"key":"fhir_uri","value":"{{fhir_uri.value}}"},{"key":"is_standard","value":"{{is_standard.value}}"},{"key":"fhir_terminology","value":"{{is_fhir.value}}"}]
     - rawData: null
     - queryTriggerDelay: '0'
     - watchedParams: []
@@ -71,12 +71,34 @@ template:
     - events:
         - ordered:
             - event: success
-            - type: datasource
-            - method: trigger
-            - pluginId: load_terminologies
+            - type: script
+            - method: run
+            - pluginId: ''
             - targetId: null
             - params:
-                ordered: []
+                ordered:
+                  - src: |-
+                      select_terminology.clearValue
+                      version.clearValue
+                      dateRange1.clearValue
+                      fhir_uri.clearValue
+                      is_standard.clearValue
+                      is_fhir.clearValue
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: success
+            - type: util
+            - method: showNotification
+            - pluginId: ''
+            - targetId: null
+            - params:
+                ordered:
+                  - options:
+                      ordered:
+                        - notificationType: success
+                        - title: Success
+                        - description: New terminology has been created.
             - waitType: debounce
             - waitMs: '0'
     - tableName: terminology_versions
@@ -92,4 +114,4 @@ template:
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2022-03-25T20:46:47.416Z
+createdAt: 2022-08-02T20:02:38.008Z
