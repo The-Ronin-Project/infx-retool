@@ -34,6 +34,7 @@ template:
           - effective_end: ''
           - fhir_uri: ''
           - is_standard: ''
+          - fhir_terminology: ''
     - columnFrozenAlignments:
         ordered: []
     - allowMultiRowSelect: false
@@ -55,6 +56,7 @@ template:
           - effective_end: true
           - fhir_uri: true
           - is_standard: true
+          - fhir_terminology: true
     - selectedPageIndex: '0'
     - rowColor:
         array: []
@@ -134,6 +136,7 @@ template:
         - fhir_uri
         - is_standard
         - uuid
+        - fhir_terminology
     - defaultSelectedRow: first
     - freezeActionButtonColumns: false
     - sort: null

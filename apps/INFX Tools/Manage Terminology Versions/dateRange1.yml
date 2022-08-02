@@ -1,13 +1,12 @@
-id: effective_end
+id: dateRange1
 type: widget
-subtype: DateWidget
+subtype: DateRangeWidget
 resourceName: null
 template:
   ordered:
     - minDate: ''
     - readOnly: false
     - iconAfter: ''
-    - datePlaceholder: '{{ self.dateFormat.toUpperCase() }}'
     - dateFormat: MMM d, yyyy
     - hidden: false
     - customValidation: ''
@@ -20,18 +19,24 @@ template:
     - tooltipText: ''
     - labelAlign: left
     - formDataKey: '{{ self.id }}'
-    - value: '{{ new Date() }}'
+    - value:
+        ordered:
+          - start: ''
+          - end: ''
+    - startPlaceholder: Effective Start date
     - labelCaption: ''
     - maxDate: ''
     - labelWidth: '33'
-    - label: Effective End
+    - label: Effective Dates
     - formattedValue: ''
     - _validate: false
     - labelWidthUnit: '%'
     - invalid: false
     - iconBefore: calendar
+    - endPlaceholder: Effective End date
     - events:
         ordered: []
+    - textBetween: '-'
     - loading: false
     - disabled: false
     - labelPosition: left
@@ -43,9 +48,9 @@ style:
 position2:
   position2:
     container: tabs
-    row: 4.4
+    row: 3
     col: 2
     height: 1
     width: 5
     tabNum: 1
-createdAt: 2022-03-25T18:37:34.233Z
+createdAt: 2022-08-02T19:56:27.176Z
