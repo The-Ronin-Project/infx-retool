@@ -16,7 +16,9 @@ template:
     - resourceNameOverride: ''
     - runWhenModelUpdates: true
     - showFailureToaster: true
-    - query: select distinct system_url from fhir_defined_terminologies.code_systems
+    - query: |-
+        select distinct fhir_uri from public.terminology_versions
+        where fhir_terminology = true
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - privateParams: []

@@ -13,7 +13,7 @@ template:
     - inputValue: ''
     - hidden: false
     - customValidation: ''
-    - data: '{{ load_fhir_terminologies.data.system_url}}'
+    - data: '{{ load_fhir_terminologies.data.fhir_uri}}'
     - searchMode: fuzzy
     - hideValidationMessage: false
     - textBefore: ''

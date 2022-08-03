@@ -17,9 +17,12 @@ template:
     - runWhenModelUpdates: true
     - showFailureToaster: true
     - query: |-
-        select * from fhir_defined_terminologies.code_systems
-        where system_url={{fhir_system_select.value}}
-        and version={{fhir_version_select.value}}
+        select * from fhir_defined_terminologies.code_systems_new
+        where terminology_version_uuid in
+        (select uuid
+        from public.terminology_versions
+        where fhir_uri={{fhir_system_select.value}}
+        and version={{fhir_version_select.value}})
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - privateParams: []
