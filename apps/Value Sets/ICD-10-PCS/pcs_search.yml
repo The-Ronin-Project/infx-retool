@@ -1,0 +1,20 @@
+id: pcs_search
+type: widget
+subtype: ContainerWidget
+template:
+  ordered:
+    - title: ICD-10 PCS
+    - disabled: ''
+    - spinWhenChildrenAreFetching: true
+    - showBorder: true
+    - showDropShadow: true
+    - heightType: fixed
+    - overflowType: hidden
+style:
+  ordered: []
+position2:
+  position2:
+    row: 0.9999999999999964
+    height: 38.00000000000001
+    width: 12
+createdAt: 2022-03-08T00:57:56.609Z

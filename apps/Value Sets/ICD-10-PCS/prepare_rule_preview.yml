@@ -1,0 +1,78 @@
+id: prepare_rule_preview
+type: datasource
+subtype: JavascriptQuery
+resourceName: JavascriptQuery
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - lastReceivedFromResourceAt: null
+    - queryDisabledMessage: ''
+    - successMessage: ''
+    - queryDisabled: ''
+    - playgroundQuerySaveId: latest
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: false
+    - showFailureToaster: true
+    - query: "var requestBody = []\nif (pcs_section.value) {\n  requestBody.push({\n        \"property\": \"code\",\n        \"operator\": \"in-section\",\n        \"value\": pcs_section.value,\n        \"include\": true,\n        \"terminology_version\": version_select.value\n    })\n}\nif (body_system.value) {\n  requestBody.push({\n        \"property\": \"code\",\n        \"operator\": \"has-body-system\",\n        \"value\": body_system.value,\n        \"include\": true,\n        \"terminology_version\": version_select.value\n    })\n}\nif (root_operation.value) {\n  requestBody.push({\n    \t\t\"property\": \"code\",\n        \"operator\": \"has-root-operation\",\n        \"value\": root_operation.value,\n        \"include\": true,\n        \"terminology_version\": version_select.value\n  })\n}\nif (body_part.value) {\n  requestBody.push({\n    \t\t\"property\": \"code\",\n        \"operator\": \"has-body-part\",\n        \"value\": body_part.value,\n        \"include\": true,\n        \"terminology_version\": version_select.value\n  })\n}\nif (approach_select.value){\n  requestBody.push({\n    \t  \"property\": \"code\",\n        \"operator\": \"has-approach\",\n        \"value\": approach_select.value,\n        \"include\": true,\n        \"terminology_version\": version_select.value\n  })\n}\nif (device_select.value){\n  requestBody.push({\n    \t  \"property\": \"code\",\n        \"operator\": \"has-device\",\n        \"value\": device_select.value,\n        \"include\": true,\n        \"terminology_version\": version_select.value\n  })\n}\nif(qualifier_select.value){\n  requestBody.push({\n    \t  \"property\": \"code\",\n        \"operator\": \"has-qualifier\",\n        \"value\": qualifier_select.value,\n        \"include\": true,\n        \"terminology_version\": version_select.value\n  }\n );\n}\nif (exclusions_code.value != \"\") {\n  requestBody.push({\n    \"property\": \"code\",\n    \"operator\": \"in\",\n    \"value\": exclusions_code.value.split(\",\"),\n    \"include\": false,\n    \"terminology_version\": version_select.value\n  })\n}\nreturn requestBody;"
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - privateParams: []
+    - runWhenPageLoadsDelay: ''
+    - data: null
+    - importedQueryInputs:
+        ordered: []
+    - isImported: false
+    - showSuccessToaster: true
+    - cacheKeyTtl: ''
+    - metadata: null
+    - changesetObject: ''
+    - errorTransformer: >-
+        // The variable 'data' allows you to reference the request's data in the
+        transformer. 
+
+        // example: return data.find(element => element.isError)
+
+        return data.error
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - resourceTypeOverride: null
+    - watchedParams: []
+    - enableErrorTransformer: false
+    - showLatestVersionUpdatedWarning: false
+    - timestamp: 0
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - runWhenPageLoads: false
+    - transformer: >-
+        // type your code here
+
+        // example: return formatDataAsArray(data).filter(row => row.quantity >
+        20)
+
+        return data
+    - events:
+        - ordered:
+            - event: success
+            - type: datasource
+            - method: trigger
+            - pluginId: populate_rule_preview
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - queryTimeout: '10000'
+    - requireConfirmation: false
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups: []
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+createdAt: 2022-05-13T17:52:34.242Z
