@@ -1,0 +1,20 @@
+id: container1
+type: widget
+subtype: ContainerWidget
+template:
+  ordered:
+    - title: Select codes by range
+    - disabled: ''
+    - spinWhenChildrenAreFetching: true
+    - showBorder: true
+    - showDropShadow: true
+    - heightType: fixed
+    - overflowType: hidden
+style:
+  ordered: []
+position2:
+  position2:
+    row: 1.0000000000000002
+    height: 20.599999999999998
+    width: 7
+createdAt: 2022-02-01T20:17:35.023Z

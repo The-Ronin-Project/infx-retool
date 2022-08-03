@@ -1,0 +1,30 @@
+id: alert1
+type: widget
+subtype: AlertWidget
+template:
+  ordered:
+    - valueToCopy: ''
+    - internalUrlHashParams: ''
+    - hidden: '{{keyword_search.data.hits.total.value < 999}}'
+    - exportFileType: csv
+    - buttonType: action
+    - url: ''
+    - newWindow: false
+    - exportQuery: ''
+    - action: ''
+    - internalUrlQuery: ''
+    - internalUrlPath: ''
+    - title: Too Many Results
+    - type: warning
+    - exportFileName: ''
+    - description: Keyword search matched 1,000+ items, please be more specific
+    - buttonText: ''
+style:
+  ordered: []
+position2:
+  position2:
+    container: additional_filters
+    row: 1.6
+    height: 1
+    width: 12
+createdAt: 2022-02-10T19:43:53.883Z
