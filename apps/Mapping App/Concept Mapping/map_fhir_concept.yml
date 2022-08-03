@@ -65,6 +65,7 @@ template:
     - changeset: ''
     - rawData: null
     - queryTriggerDelay: '0'
+    - resourceTypeOverride: null
     - watchedParams: []
     - enableErrorTransformer: false
     - enableBulkUpdates: false

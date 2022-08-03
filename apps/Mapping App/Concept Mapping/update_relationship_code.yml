@@ -54,6 +54,7 @@ template:
         [{"key":"relationship_code_uuid","value":"{{mapped_targets.recordUpdates[0].relationship_code_uuid}}"}]
     - rawData: null
     - queryTriggerDelay: '0'
+    - resourceTypeOverride: null
     - watchedParams: []
     - enableErrorTransformer: false
     - enableBulkUpdates: false

@@ -1,13 +1,13 @@
 id: snomed_result_table
 type: widget
 subtype: TableWidget
-resourceName: null
 template:
   ordered:
     - showCustomButton: false
     - sortMappedValue:
         ordered: []
     - _filteredSortedRenderedDataWithTypes: null
+    - heightType: fixed
     - normalizedData: null
     - saveChangesDisabled: ''
     - columnTypeProperties:
@@ -19,6 +19,7 @@ template:
         - object:
             id: Custom Column 1
             value: 97.34375
+    - showSummaryFooter: false
     - disableRowSelectInteraction: false
     - columnWidthsMobile: []
     - hasNextAfterCursor: ''
@@ -69,9 +70,40 @@ template:
     - columnRestrictedEditing:
         ordered: []
     - showFilterButton: true
+    - _columnVisibility:
+        ordered:
+          - fsn: true
+          - associationTargets: false
+          - conceptId: true
+          - pt: false
+          - languageCode: false
+          - definitionStatus: false
+          - active: false
+          - moduleId: false
+          - concept: true
+          - name: true
+          - term: true
+          - sales: true
+          - module: false
+          - gciAxioms: false
+          - idAndFsnTerm: false
+          - inactivationIndicator: false
+          - effectiveTime: false
+          - Custom Column 1: true
+          - releasedEffectiveTime: false
+          - descriptions: false
+          - id: false
+          - relationships: false
+          - classAxioms: false
+          - email: true
+          - validationResults: false
+          - released: false
     - _columnSummaryTypes:
         ordered: []
+    - _columnsWithLegacyBackgroundColor:
+        set: []
     - showAddRowButton: false
+    - _unfilteredSelectedIndex: null
     - nextBeforeCursor: ''
     - columnVisibility:
         ordered:
@@ -102,9 +134,11 @@ template:
           - validationResults: false
           - released: false
     - selectedPageIndex: '0'
+    - applyDynamicSettingsToColumnOrder: false
     - rowColor:
         array: []
     - actionButtonColumnName: Actions
+    - resetAfterSave: true
     - filterStackType: and
     - downloadRawData: false
     - showFetchingIndicator: true
@@ -121,6 +155,7 @@ template:
           - Custom Column 1: left
     - columnSummaries:
         object: {}
+    - showBoxShadow: true
     - sortedDesc: false
     - customButtonName: ''
     - columnMappersRenderAsHTML:
@@ -138,8 +173,10 @@ template:
     - sortedColumn: ''
     - _columnSummaryValues:
         ordered: []
+    - checkboxRowSelect: true
     - _compatibilityMode: true
     - showColumnBorders: false
+    - clearSelectionLabel: Clear selection
     - _renderedDataWithTypes: null
     - columnAllowOverflow:
         ordered:
@@ -164,6 +201,8 @@ template:
           - validationResults: false
           - concept: false
           - Custom Column 1: false
+    - _viewerColumnSummaryTypes:
+        object: {}
     - filters:
         array: []
     - displayedDataIndices: null
@@ -176,6 +215,7 @@ template:
           - fsn: '{{self.term}}'
           - Custom Column 1: Map
     - showClearSelection: false
+    - doubleClickToEdit: false
     - overflowType: pagination
     - _reverseSortedDisplayedDataIndices: null
     - selectedCell:
@@ -197,6 +237,17 @@ template:
     - defaultSelectedRow: first
     - freezeActionButtonColumns: false
     - sort: null
+    - _columns:
+        - active
+        - fsn
+        - Custom Column 1
+        - conceptId
+        - pt
+        - effectiveTime
+        - moduleId
+        - definitionStatus
+        - id
+        - idAndFsnTerm
     - sortByRawValue:
         ordered: []
     - calculatedColumns:
@@ -206,6 +257,7 @@ template:
           index: null
           data: null
     - showPaginationOnTop: false
+    - _reverseDisplayedDataIndices: null
     - nextAfterCursor: ''
     - useCompactMode: false
 style:

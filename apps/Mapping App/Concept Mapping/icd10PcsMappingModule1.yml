@@ -1,0 +1,23 @@
+id: icd10PcsMappingModule1
+type: widget
+subtype: GlobalWidget
+template:
+  ordered:
+    - heightType: auto
+    - cm_version: ''
+    - source_concept: ''
+    - showFetchingIndicator: boolean
+    - pageUuid: d6067b40-136f-11ed-b624-0b942afa711f
+    - name: ICD-10-PCS mapping module
+    - relationship: ''
+    - map_comment: ''
+    - childNamespace: icd10PcsMappingModule1
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabbedContainer1
+    height: 7.8
+    width: 12
+    tabNum: 5
+createdAt: 2022-08-03T22:10:06.744Z

@@ -55,6 +55,7 @@ template:
         [{"key":"map_status","value":"{{source_concepts.recordUpdates[0].map_status}}"}]
     - rawData: null
     - queryTriggerDelay: '0'
+    - resourceTypeOverride: null
     - watchedParams: []
     - enableErrorTransformer: false
     - enableBulkUpdates: false
