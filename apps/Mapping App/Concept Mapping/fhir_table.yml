@@ -51,6 +51,8 @@ template:
           - status: ''
           - definition: ''
           - comments: ''
+          - Custom Column 1: ''
+          - Custom Column 2: ''
           - version: ''
           - id: ''
           - system_name: ''

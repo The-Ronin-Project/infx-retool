@@ -1,10 +1,10 @@
 id: icd10CmSearchModule1
 type: widget
 subtype: GlobalWidget
-resourceName: null
 template:
   ordered:
     - showFetchingIndicator: false
+    - heightType: fixed
     - name: ICD-10-CM Search Module
     - pageUuid: 5bde7e00-b9e5-11ec-9271-3bb1f2b8f804
     - childNamespace: icd10CmSearchModule1
