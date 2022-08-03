@@ -1,0 +1,59 @@
+id: source_concept_additional_information
+type: widget
+subtype: KeyValueMapWidget
+resourceName: null
+template:
+  ordered:
+    - rowHeaderNames:
+        ordered: []
+    - rowFormats:
+        ordered: []
+    - valueTitle: Value
+    - data: '{{source_concepts.selectedRow.data}}'
+    - prevRowMappers:
+        ordered: []
+    - rowMappersRenderAsHTML:
+        ordered: []
+    - rowVisibility:
+        ordered:
+          - a: true
+          - b: true
+          - display: true
+          - c: true
+          - code: true
+          - system: true
+          - assigned_mapper: true
+          - comments: true
+          - assigned_reviewer: true
+          - additional_context: true
+          - review_status: true
+          - uuid: true
+          - concept_map_version_uuid: true
+    - prevRowFormats:
+        ordered: []
+    - rowMappers:
+        ordered: []
+    - rows:
+        - a
+        - b
+        - c
+        - uuid
+        - code
+        - display
+        - system
+        - comments
+        - additional_context
+        - review_status
+        - concept_map_version_uuid
+        - assigned_mapper
+        - assigned_reviewer
+    - keyTitle: Key
+style:
+  ordered: []
+position2:
+  position2:
+    container: source_concepts
+    subcontainer: Custom Column 1
+    height: 9.8
+    width: 12
+createdAt: 2022-04-14T19:38:36.853Z
