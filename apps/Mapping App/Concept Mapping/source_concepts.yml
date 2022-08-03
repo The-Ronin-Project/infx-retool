@@ -1,13 +1,13 @@
 id: source_concepts
 type: widget
 subtype: TableWidget
-resourceName: null
 template:
   ordered:
     - showCustomButton: false
     - sortMappedValue:
         ordered: []
     - _filteredSortedRenderedDataWithTypes: null
+    - heightType: fixed
     - normalizedData: null
     - saveChangesDisabled: ''
     - columnTypeProperties:
@@ -31,6 +31,7 @@ template:
         - object:
             id: map_status
             value: 193.62498474121094
+    - showSummaryFooter: false
     - disableRowSelectInteraction: false
     - columnWidthsMobile: []
     - hasNextAfterCursor: ''
@@ -77,9 +78,30 @@ template:
     - columnRestrictedEditing:
         ordered: []
     - showFilterButton: true
+    - _columnVisibility:
+        ordered:
+          - display: true
+          - name: true
+          - sales: false
+          - code: false
+          - system: false
+          - assigned_mapper: false
+          - comments: false
+          - map_status: true
+          - assigned_reviewer: false
+          - Custom Column 1: true
+          - additional_context: false
+          - review_status: true
+          - id: true
+          - uuid: false
+          - concept_map_version_uuid: false
+          - email: false
     - _columnSummaryTypes:
         ordered: []
+    - _columnsWithLegacyBackgroundColor:
+        set: []
     - showAddRowButton: false
+    - _unfilteredSelectedIndex: ''
     - nextBeforeCursor: ''
     - columnVisibility:
         ordered:
@@ -100,9 +122,11 @@ template:
           - concept_map_version_uuid: false
           - email: false
     - selectedPageIndex: '0'
+    - applyDynamicSettingsToColumnOrder: false
     - rowColor:
         array: []
     - actionButtonColumnName: Actions
+    - resetAfterSave: true
     - filterStackType: and
     - downloadRawData: false
     - showFetchingIndicator: true
@@ -121,6 +145,7 @@ template:
           - map_status: left
     - columnSummaries:
         object: {}
+    - showBoxShadow: true
     - sortedDesc: false
     - customButtonName: status
     - columnMappersRenderAsHTML:
@@ -138,8 +163,10 @@ template:
     - sortedColumn: ''
     - _columnSummaryValues:
         ordered: []
+    - checkboxRowSelect: true
     - _compatibilityMode: true
     - showColumnBorders: true
+    - clearSelectionLabel: Clear selection
     - _renderedDataWithTypes: null
     - columnAllowOverflow:
         ordered:
@@ -148,7 +175,7 @@ template:
     - serverPaginationType: limitOffsetBased
     - onRowSelect: ''
     - showDownloadButton: true
-    - selectedIndex: ''
+    - selectedIndex: null
     - defaultSortDescending: false
     - _sortedDisplayedDataIndices: null
     - dynamicColumnSettings: null
@@ -173,6 +200,8 @@ template:
           - review_status: true
           - Custom Column 1: false
           - map_status: true
+    - _viewerColumnSummaryTypes:
+        object: {}
     - filters:
         array: []
     - displayedDataIndices: null
@@ -184,6 +213,7 @@ template:
           - Custom Column 1: More Info
           - map_status: ''
     - showClearSelection: false
+    - doubleClickToEdit: false
     - overflowType: scroll
     - _reverseSortedDisplayedDataIndices: null
     - selectedCell:
@@ -206,6 +236,18 @@ template:
     - defaultSelectedRow: first
     - freezeActionButtonColumns: false
     - sort: null
+    - _columns:
+        - map_status
+        - display
+        - code
+        - uuid
+        - system
+        - comments
+        - additional_context
+        - concept_map_version_uuid
+        - assigned_mapper
+        - assigned_reviewer
+        - Custom Column 1
     - sortByRawValue:
         ordered: []
     - calculatedColumns:
@@ -215,6 +257,7 @@ template:
           index: null
           data: null
     - showPaginationOnTop: false
+    - _reverseDisplayedDataIndices: null
     - nextAfterCursor: ''
     - useCompactMode: false
 style:

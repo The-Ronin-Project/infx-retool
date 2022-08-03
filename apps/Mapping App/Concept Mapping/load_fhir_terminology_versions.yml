@@ -17,8 +17,8 @@ template:
     - runWhenModelUpdates: true
     - showFailureToaster: true
     - query: |-
-        select distinct version from public.terminology_versions
-        where fhir_uri={{fhir_system_select.value}}
+        select distinct version from fhir_defined_terminologies.code_systems
+        where system_url={{fhir_system_select.value}}
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - privateParams: []
@@ -52,6 +52,7 @@ template:
     - changeset: ''
     - rawData: null
     - queryTriggerDelay: '0'
+    - resourceTypeOverride: null
     - watchedParams: []
     - enableErrorTransformer: false
     - enableBulkUpdates: false
