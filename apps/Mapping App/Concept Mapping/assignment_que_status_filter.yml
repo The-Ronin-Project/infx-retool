@@ -1,15 +1,19 @@
 id: assignment_que_status_filter
 type: widget
 subtype: MultiselectWidget2
-resourceName: null
 template:
   ordered:
+    - imageByIndex:
+        array: []
     - _disabledByIndex: []
     - showSelectionIndicator: true
     - _values: []
+    - iconByIndex:
+        array: []
     - values: '{{ item }}'
     - readOnly: false
     - iconAfter: ''
+    - _iconByIndex: []
     - wrapTags: true
     - selectedIndexes:
         array: []
@@ -22,8 +26,13 @@ template:
     - maxCount: null
     - searchMode: fuzzy
     - hideValidationMessage: false
+    - fallbackTextByIndex:
+        array: []
     - textBefore: ''
+    - _fallbackTextByIndex: []
     - validationMessage: ''
+    - automaticItemColors: false
+    - itemAdornmentShape: circle
     - textAfter: ''
     - showInEditor: false
     - showClear: false
@@ -40,6 +49,7 @@ template:
     - _hiddenByIndex: []
     - placeholder: Select an option
     - _captionByIndex: []
+    - itemAdornmentSize: auto
     - label: 'Filter que by status:'
     - _hasMigratedNestedItems: true
     - captionByIndex:
@@ -50,9 +60,12 @@ template:
     - allowCustomValue: false
     - invalid: false
     - _tooltipByIndex: []
+    - _colorByIndex: []
     - tooltipByIndex:
         array: []
     - iconBefore: ''
+    - colorByIndex:
+        array: []
     - events:
         - ordered:
             - event: change
@@ -79,6 +92,7 @@ template:
     - disabledByIndex:
         array: []
     - maintainSpaceWhenHidden: false
+    - _imageByIndex: []
     - required: false
     - labels: ''
 style:

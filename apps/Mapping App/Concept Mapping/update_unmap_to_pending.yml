@@ -50,6 +50,7 @@ template:
     - changeset: '[{"key":"map_status","value":"pending"}]'
     - rawData: null
     - queryTriggerDelay: '0'
+    - resourceTypeOverride: null
     - watchedParams: []
     - enableErrorTransformer: false
     - enableBulkUpdates: false

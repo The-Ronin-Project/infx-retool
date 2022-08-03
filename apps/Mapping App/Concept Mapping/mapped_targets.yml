@@ -1,13 +1,13 @@
 id: mapped_targets
 type: widget
 subtype: TableWidget
-resourceName: null
 template:
   ordered:
     - showCustomButton: false
     - sortMappedValue:
         ordered: []
     - _filteredSortedRenderedDataWithTypes: null
+    - heightType: fixed
     - normalizedData: null
     - saveChangesDisabled: ''
     - columnTypeProperties:
@@ -37,6 +37,7 @@ template:
         - object:
             id: target_concept_system
             value: 136.3125
+    - showSummaryFooter: false
     - disableRowSelectInteraction: false
     - columnWidthsMobile: []
     - hasNextAfterCursor: ''
@@ -107,9 +108,43 @@ template:
     - columnRestrictedEditing:
         ordered: []
     - showFilterButton: true
+    - _columnVisibility:
+        ordered:
+          - special_use: false
+          - display: true
+          - relationship_system_uuid: false
+          - mapping_comments: false
+          - created_date: false
+          - relationship_code_uuid: false
+          - rc_uuid: false
+          - cr_uuid: false
+          - author: false
+          - target_concept_system_version_uuid: false
+          - code: false
+          - system: false
+          - target_concept_code: true
+          - assigned_mapper: false
+          - target_concept_system: true
+          - rc_display: true
+          - comments: true
+          - map_status: true
+          - source_concept_uuid: false
+          - reviewed_date: false
+          - assigned_reviewer: false
+          - Custom Column 1: false
+          - additional_context: false
+          - Custom Column 2: true
+          - relationship: true
+          - review_status: false
+          - uuid: false
+          - concept_map_version_uuid: false
+          - target_concept_display: true
     - _columnSummaryTypes:
         ordered: []
+    - _columnsWithLegacyBackgroundColor:
+        set: []
     - showAddRowButton: false
+    - _unfilteredSelectedIndex: null
     - nextBeforeCursor: ''
     - columnVisibility:
         ordered:
@@ -143,9 +178,11 @@ template:
           - concept_map_version_uuid: false
           - target_concept_display: true
     - selectedPageIndex: '0'
+    - applyDynamicSettingsToColumnOrder: false
     - rowColor:
         array: []
     - actionButtonColumnName: Actions
+    - resetAfterSave: true
     - filterStackType: and
     - downloadRawData: false
     - showFetchingIndicator: true
@@ -164,6 +201,7 @@ template:
           - relationship: left
     - columnSummaries:
         object: {}
+    - showBoxShadow: true
     - sortedDesc: false
     - customButtonName: ''
     - columnMappersRenderAsHTML:
@@ -181,8 +219,10 @@ template:
     - sortedColumn: ''
     - _columnSummaryValues:
         ordered: []
+    - checkboxRowSelect: true
     - _compatibilityMode: true
     - showColumnBorders: false
+    - clearSelectionLabel: Clear selection
     - _renderedDataWithTypes: null
     - columnAllowOverflow:
         ordered:
@@ -220,6 +260,8 @@ template:
           - Custom Column 2: false
           - Custom Column 3: false
           - relationship: true
+    - _viewerColumnSummaryTypes:
+        object: {}
     - filters:
         array: []
     - displayedDataIndices: null
@@ -232,6 +274,7 @@ template:
           - Custom Column 3: '{{load_relationship_code.data.display}}'
           - relationship: ''
     - showClearSelection: false
+    - doubleClickToEdit: false
     - overflowType: pagination
     - _reverseSortedDisplayedDataIndices: null
     - selectedCell:
@@ -269,6 +312,33 @@ template:
     - defaultSelectedRow: first
     - freezeActionButtonColumns: false
     - sort: null
+    - _columns:
+        - display
+        - uuid
+        - review_status
+        - concept_map_version_uuid
+        - relationship_code_uuid
+        - relationship
+        - target_concept_display
+        - Custom Column 1
+        - mapping_comments
+        - author
+        - target_concept_code
+        - created_date
+        - reviewed_date
+        - source_concept_uuid
+        - target_concept_system_version_uuid
+        - Custom Column 2
+        - rc_uuid
+        - code
+        - system
+        - comments
+        - additional_context
+        - assigned_mapper
+        - assigned_reviewer
+        - target_concept_system
+        - cr_uuid
+        - map_status
     - sortByRawValue:
         ordered: []
     - calculatedColumns:
@@ -279,6 +349,7 @@ template:
           index: null
           data: null
     - showPaginationOnTop: false
+    - _reverseDisplayedDataIndices: null
     - nextAfterCursor: ''
     - useCompactMode: false
 style:
