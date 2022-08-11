@@ -10,7 +10,7 @@ template:
     - _values: []
     - iconByIndex:
         array: []
-    - values: ''
+    - values: '{{item.uuid}}'
     - readOnly: false
     - iconAfter: ''
     - _iconByIndex: []
@@ -18,7 +18,7 @@ template:
     - inputValue: ''
     - hidden: false
     - customValidation: ''
-    - data: '{{ load_fhir_terminology_versions.data.version}}'
+    - data: '{{ load_fhir_terminology_versions.data}}'
     - searchMode: fuzzy
     - hideValidationMessage: false
     - fallbackTextByIndex:
@@ -81,8 +81,7 @@ template:
     - maintainSpaceWhenHidden: false
     - _imageByIndex: []
     - required: false
-    - labels:
-        array: []
+    - labels: '{{item.version}}'
 style:
   ordered: []
 position2:
