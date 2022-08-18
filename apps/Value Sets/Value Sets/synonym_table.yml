@@ -1,13 +1,13 @@
 id: synonym_table
 type: widget
 subtype: TableWidget
-resourceName: null
 template:
   ordered:
     - showCustomButton: false
     - sortMappedValue:
         ordered: []
     - _filteredSortedRenderedDataWithTypes: null
+    - heightType: fixed
     - normalizedData: null
     - saveChangesDisabled: ''
     - columnTypeProperties:
@@ -19,6 +19,7 @@ template:
         - object:
             id: synonym
             value: 268.5625
+    - showSummaryFooter: false
     - disableRowSelectInteraction: false
     - columnWidthsMobile: []
     - hasNextAfterCursor: ''
@@ -50,9 +51,26 @@ template:
     - columnRestrictedEditing:
         ordered: []
     - showFilterButton: true
+    - _columnVisibility:
+        ordered:
+          - contact: true
+          - immutable: true
+          - experimental: true
+          - name: true
+          - context: true
+          - title: true
+          - type: true
+          - uuid: false
+          - synonym: true
+          - publisher: true
+          - description: true
+          - purpose: true
     - _columnSummaryTypes:
         ordered: []
+    - _columnsWithLegacyBackgroundColor:
+        set: []
     - showAddRowButton: false
+    - _unfilteredSelectedIndex: ''
     - nextBeforeCursor: ''
     - columnVisibility:
         ordered:
@@ -69,9 +87,11 @@ template:
           - description: true
           - purpose: true
     - selectedPageIndex: '0'
+    - applyDynamicSettingsToColumnOrder: false
     - rowColor:
         array: []
     - actionButtonColumnName: Actions
+    - resetAfterSave: true
     - filterStackType: and
     - downloadRawData: false
     - showFetchingIndicator: true
@@ -96,6 +116,7 @@ template:
         ordered: []
     - columnSummaries:
         object: {}
+    - showBoxShadow: true
     - sortedDesc: false
     - customButtonName: ''
     - columnMappersRenderAsHTML:
@@ -113,8 +134,10 @@ template:
     - sortedColumn: ''
     - _columnSummaryValues:
         ordered: []
+    - checkboxRowSelect: true
     - _compatibilityMode: true
     - showColumnBorders: true
+    - clearSelectionLabel: Clear selection
     - _renderedDataWithTypes: null
     - columnAllowOverflow:
         ordered: []
@@ -122,7 +145,7 @@ template:
     - serverPaginationType: limitOffsetBased
     - onRowSelect: ''
     - showDownloadButton: true
-    - selectedIndex: ''
+    - selectedIndex: null
     - defaultSortDescending: false
     - _sortedDisplayedDataIndices: null
     - dynamicColumnSettings: null
@@ -133,6 +156,8 @@ template:
     - emptyMessage: No rows found
     - columnEditable:
         ordered: []
+    - _viewerColumnSummaryTypes:
+        object: {}
     - filters:
         array: []
     - displayedDataIndices: null
@@ -141,6 +166,7 @@ template:
     - columnMappers:
         ordered: []
     - showClearSelection: false
+    - doubleClickToEdit: false
     - overflowType: scroll
     - _reverseSortedDisplayedDataIndices: null
     - selectedCell:
@@ -164,6 +190,19 @@ template:
     - defaultSelectedRow: first
     - freezeActionButtonColumns: false
     - sort: null
+    - _columns:
+        - uuid
+        - name
+        - title
+        - publisher
+        - contact
+        - description
+        - immutable
+        - experimental
+        - purpose
+        - type
+        - context
+        - synonym
     - sortByRawValue:
         ordered: []
     - calculatedColumns: []
@@ -172,6 +211,7 @@ template:
           index: null
           data: null
     - showPaginationOnTop: false
+    - _reverseDisplayedDataIndices: null
     - nextAfterCursor: ''
     - useCompactMode: false
 style:

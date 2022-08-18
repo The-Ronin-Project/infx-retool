@@ -1,13 +1,13 @@
 id: vs_metadata_table
 type: widget
 subtype: TableWidget
-resourceName: null
 template:
   ordered:
     - showCustomButton: false
     - sortMappedValue:
         ordered: []
     - _filteredSortedRenderedDataWithTypes: null
+    - heightType: fixed
     - normalizedData: null
     - saveChangesDisabled: ''
     - columnTypeProperties:
@@ -31,6 +31,7 @@ template:
         - object:
             id: __retool__action_list
             value: 329.09375
+    - showSummaryFooter: false
     - disableRowSelectInteraction: false
     - columnWidthsMobile: []
     - hasNextAfterCursor: ''
@@ -67,9 +68,34 @@ template:
     - columnRestrictedEditing:
         ordered: []
     - showFilterButton: true
+    - _columnVisibility:
+        ordered:
+          - contact: false
+          - immutable: false
+          - use_case_name: false
+          - hyperlink: true
+          - experimental: false
+          - use_case: false
+          - identifier: false
+          - name: false
+          - sales: true
+          - url: false
+          - use_case_link: false
+          - use_case_uuid: false
+          - title: true
+          - type: false
+          - id: true
+          - uuid: false
+          - publisher: false
+          - email: true
+          - description: true
+          - purpose: false
     - _columnSummaryTypes:
         ordered: []
+    - _columnsWithLegacyBackgroundColor:
+        set: []
     - showAddRowButton: false
+    - _unfilteredSelectedIndex: ''
     - nextBeforeCursor: ''
     - columnVisibility:
         ordered:
@@ -94,9 +120,11 @@ template:
           - description: true
           - purpose: false
     - selectedPageIndex: '0'
+    - applyDynamicSettingsToColumnOrder: false
     - rowColor:
         array: []
     - actionButtonColumnName: Actions
+    - resetAfterSave: true
     - filterStackType: and
     - downloadRawData: false
     - showFetchingIndicator: true
@@ -122,6 +150,7 @@ template:
         ordered: []
     - columnSummaries:
         object: {}
+    - showBoxShadow: true
     - sortedDesc: false
     - customButtonName: ''
     - columnMappersRenderAsHTML:
@@ -139,8 +168,10 @@ template:
     - sortedColumn: ''
     - _columnSummaryValues:
         ordered: []
+    - checkboxRowSelect: true
     - _compatibilityMode: true
     - showColumnBorders: true
+    - clearSelectionLabel: Clear selection
     - _renderedDataWithTypes: null
     - columnAllowOverflow:
         ordered: []
@@ -148,7 +179,7 @@ template:
     - serverPaginationType: limitOffsetBased
     - onRowSelect: ''
     - showDownloadButton: true
-    - selectedIndex: ''
+    - selectedIndex: null
     - defaultSortDescending: false
     - _sortedDisplayedDataIndices: null
     - dynamicColumnSettings: null
@@ -176,6 +207,8 @@ template:
           - experimental: true
           - purpose: true
           - type: true
+    - _viewerColumnSummaryTypes:
+        object: {}
     - filters:
         array: []
     - displayedDataIndices: null
@@ -184,6 +217,7 @@ template:
     - columnMappers:
         ordered: []
     - showClearSelection: false
+    - doubleClickToEdit: false
     - overflowType: scroll
     - _reverseSortedDisplayedDataIndices: null
     - selectedCell:
@@ -215,6 +249,27 @@ template:
     - defaultSelectedRow: first
     - freezeActionButtonColumns: false
     - sort: null
+    - _columns:
+        - id
+        - name
+        - email
+        - sales
+        - uuid
+        - url
+        - identifier
+        - title
+        - publisher
+        - contact
+        - description
+        - immutable
+        - experimental
+        - purpose
+        - type
+        - use_case_uuid
+        - use_case_name
+        - hyperlink
+        - use_case
+        - use_case_link
     - sortByRawValue:
         ordered: []
     - calculatedColumns: []
@@ -223,6 +278,7 @@ template:
           index: null
           data: null
     - showPaginationOnTop: false
+    - _reverseDisplayedDataIndices: null
     - nextAfterCursor: ''
     - useCompactMode: false
 style:
