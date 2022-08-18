@@ -1,7 +1,6 @@
 id: version_description_input
 type: widget
 subtype: TextInputWidget2
-resourceName: null
 template:
   ordered:
     - spellCheck: false
@@ -39,11 +38,11 @@ template:
         ordered: []
     - autoCapitalize: none
     - loading: false
-    - disabled: false
+    - disabled: ''
     - labelPosition: left
     - labelWrap: false
     - maintainSpaceWhenHidden: false
-    - required: false
+    - required: true
 style:
   ordered: []
 position2:

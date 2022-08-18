@@ -1,10 +1,10 @@
 id: createNewUseCase1
 type: widget
 subtype: GlobalWidget
-resourceName: null
 template:
   ordered:
     - showFetchingIndicator: false
+    - heightType: fixed
     - name: Create New Use Case
     - pageUuid: fa9e5600-f257-11ec-8df9-e7ba5d67baf9
     - childNamespace: createNewUseCase1
