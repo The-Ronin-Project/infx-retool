@@ -1,0 +1,44 @@
+id: button3
+type: widget
+subtype: ButtonWidget2
+template:
+  ordered:
+    - horizontalAlign: stretch
+    - clickable: false
+    - iconAfter: ''
+    - submitTargetId: null
+    - hidden: null
+    - text: Generate New Expansion
+    - showInEditor: null
+    - tooltipText: ''
+    - style:
+        ordered:
+          - background: '#6a6a6a'
+    - submit: false
+    - iconBefore: ''
+    - events:
+        - ordered:
+            - event: click
+            - type: datasource
+            - method: trigger
+            - pluginId: generate_expansion
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - loading: ''
+    - loaderPosition: auto
+    - disabled: >-
+        {{ ['active', 'obsolete',
+        'retired'].includes(version_metadata.data.status[0])}}
+    - maintainSpaceWhenHidden: null
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabbedcontainer1
+    col: 9
+    height: 1
+    width: 3
+    tabNum: 2
+createdAt: 2021-11-12T18:51:32.626Z
