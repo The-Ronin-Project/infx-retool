@@ -1,0 +1,27 @@
+id: create_new_use_case_modal
+type: widget
+subtype: ModalWidget
+template:
+  ordered:
+    - opened: false
+    - modalOverflowType: scroll
+    - onModalClose: ''
+    - modalHeightType: fixed
+    - tooltipText: ''
+    - modalHeight: ''
+    - onModalOpen: ''
+    - modalWidth: ''
+    - closeOnOutsideClick: false
+    - loading: ''
+    - disabled: ''
+    - buttonText: Create New Use Case
+style:
+  ordered: []
+position2:
+  position2:
+    container: form1
+    row: 8.6
+    col: 10
+    height: 1
+    width: 2
+createdAt: 2022-08-24T15:57:23.736Z

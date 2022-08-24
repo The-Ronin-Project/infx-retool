@@ -22,11 +22,11 @@ template:
     - tooltipText: ''
     - labelAlign: left
     - formDataKey: '{{ self.id }}'
-    - value: ''
+    - value: Initial version
     - labelCaption: ''
     - labelWidth: '33'
     - autoFill: ''
-    - placeholder: Enter VERSION description
+    - placeholder: Enter a description for the initial version
     - label: ''
     - _validate: false
     - labelWidthUnit: '%'
