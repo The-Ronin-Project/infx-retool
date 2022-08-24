@@ -47,9 +47,10 @@ template:
     - confirmationMessage: null
     - isFetching: false
     - changeset: >-
-        [{"key":"uuid","value":"{{uuid.v4}}"},{"key":"terminology","value":"{{select_terminology.value}}"},{"key":"version","value":"{{version.value}}"},{"key":"effective_start","value":"{{dateRange1.value.start}}"},{"key":"effective_end","value":"{{dateRange1.value.end}}"},{"key":"fhir_uri","value":"{{fhir_uri.value}}"},{"key":"is_standard","value":"{{is_standard.value}}"},{"key":"fhir_terminology","value":"{{is_fhir.value}}"}]
+        [{"key":"uuid","value":"{{uuid.v4()}}"},{"key":"terminology","value":"{{new_name.value}}"},{"key":"version","value":"{{version.value}}"},{"key":"effective_start","value":"{{date_range.value.start}}"},{"key":"effective_end","value":"{{date_range.value.end}}"},{"key":"fhir_uri","value":"{{fhir_uri.value}}"},{"key":"is_standard","value":"{{is_standard.value}}"},{"key":"fhir_terminology","value":"{{is_fhir.value}}"}]
     - rawData: null
     - queryTriggerDelay: '0'
+    - resourceTypeOverride: null
     - watchedParams: []
     - enableErrorTransformer: false
     - enableBulkUpdates: false
@@ -80,7 +81,7 @@ template:
                   - src: |-
                       select_terminology.clearValue
                       version.clearValue
-                      dateRange1.clearValue
+                      date_range.clearValue
                       fhir_uri.clearValue
                       is_standard.clearValue
                       is_fhir.clearValue
@@ -88,17 +89,12 @@ template:
             - waitMs: '0'
         - ordered:
             - event: success
-            - type: util
-            - method: showNotification
-            - pluginId: ''
+            - type: datasource
+            - method: trigger
+            - pluginId: load_terminologies
             - targetId: null
             - params:
-                ordered:
-                  - options:
-                      ordered:
-                        - notificationType: success
-                        - title: Success
-                        - description: New terminology has been created.
+                ordered: []
             - waitType: debounce
             - waitMs: '0'
     - tableName: terminology_versions

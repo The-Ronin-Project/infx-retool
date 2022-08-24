@@ -16,10 +16,12 @@ template:
     - resourceNameOverride: ''
     - runWhenModelUpdates: true
     - showFailureToaster: true
-    - query: |-
+    - query: >
         select * from public.terminology_versions
-        where terminology = {{terminology_select.value}}
-        or {{!terminology_select.value}}
+
+        WHERE ({{!search.value}} or lower (terminology) like '%' ||
+        {{search.value.toLowerCase()}} || '%')
+
         order by terminology
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
@@ -54,6 +56,7 @@ template:
     - changeset: ''
     - rawData: null
     - queryTriggerDelay: '0'
+    - resourceTypeOverride: null
     - watchedParams: []
     - enableErrorTransformer: false
     - enableBulkUpdates: false
@@ -73,7 +76,7 @@ template:
 
         return data
     - events: []
-    - tableName: ''
+    - tableName: terminology_versions
     - queryTimeout: '10000'
     - requireConfirmation: false
     - queryFailureConditions: ''

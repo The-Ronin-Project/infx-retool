@@ -1,13 +1,11 @@
-id: edited_end_date
+id: version_dates
 type: widget
-subtype: DateWidget
-resourceName: null
+subtype: DateRangeWidget
 template:
   ordered:
     - minDate: ''
     - readOnly: false
     - iconAfter: ''
-    - datePlaceholder: '{{ self.dateFormat.toUpperCase() }}'
     - dateFormat: MMM d, yyyy
     - hidden: false
     - customValidation: ''
@@ -20,18 +18,24 @@ template:
     - tooltipText: ''
     - labelAlign: left
     - formDataKey: '{{ self.id }}'
-    - value: '{{ new Date() }}'
+    - value:
+        ordered:
+          - start: ''
+          - end: ''
+    - startPlaceholder: Start date
     - labelCaption: ''
     - maxDate: ''
     - labelWidth: '33'
-    - label: Change Effective End Date
+    - label: 'Effective '
     - formattedValue: ''
     - _validate: false
     - labelWidthUnit: '%'
     - invalid: false
-    - iconBefore: calendar
+    - iconBefore: bold/interface-calendar-remove
+    - endPlaceholder: End date
     - events:
         ordered: []
+    - textBetween: '-'
     - loading: false
     - disabled: false
     - labelPosition: left
@@ -42,10 +46,8 @@ style:
   ordered: []
 position2:
   position2:
-    container: tabs
-    row: 4.4
-    col: 5
+    container: form1
+    row: 2.6
     height: 1
-    width: 5
-    tabNum: 2
-createdAt: 2022-03-25T22:30:02.464Z
+    width: 12
+createdAt: 2022-08-24T19:09:37.195Z

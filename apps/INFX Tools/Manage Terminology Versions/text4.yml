@@ -1,4 +1,4 @@
-id: text1
+id: text4
 type: widget
 subtype: TextWidget2
 template:
@@ -10,10 +10,9 @@ template:
     - showInEditor: false
     - verticalAlign: center
     - tooltipText: ''
-    - value: 'New version of: '
-    - style:
-        ordered:
-          - background: rgba(165, 157, 157, 0)
+    - value: >-
+        * *Note: version of currently selected row is {{
+        terminologies.selectedRow.data.version}}*
     - disableMarkdown: false
     - overflowType: scroll
     - maintainSpaceWhenHidden: false
@@ -22,6 +21,7 @@ style:
 position2:
   position2:
     container: form1
+    row: 1.6
     height: 0.6
-    width: 4
-createdAt: 2022-08-24T18:47:54.350Z
+    width: 12
+createdAt: 2022-08-24T21:03:19.284Z

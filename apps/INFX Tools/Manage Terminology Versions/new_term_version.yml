@@ -1,4 +1,4 @@
-id: edit_existing_version_button
+id: new_term_version
 type: datasource
 subtype: SqlQueryUnified
 resourceName: dc8029bc-3980-4836-841e-776c64eeca49
@@ -29,12 +29,11 @@ template:
     - showSuccessToaster: true
     - dataArray: []
     - cacheKeyTtl: ''
-    - filterBy: >-
-        [{"key":"terminology","value":"{{existing_terminology.value}}","operation":"="},{"key":"version","value":"{{existing_version.value}}","operation":"="}]
+    - filterBy: ''
     - databaseHostOverride: ''
     - metadata: null
     - editorMode: gui
-    - actionType: UPDATE_BY
+    - actionType: INSERT
     - changesetObject: ''
     - shouldUseLegacySql: false
     - errorTransformer: >-
@@ -48,9 +47,10 @@ template:
     - confirmationMessage: null
     - isFetching: false
     - changeset: >-
-        [{"key":"effective_start","value":"{{edited_start_date.value}}"},{"key":"effective_end","value":"{{edited_end_date.value}}"}]
+        [{"key":"uuid","value":"{{uuid.v4()}}"},{"key":"terminology","value":"{{terminologies.selectedRow.data.terminology}}"},{"key":"version","value":"{{new_version.value}}"},{"key":"effective_start","value":"{{version_dates.value.start}}"},{"key":"effective_end","value":"{{version_dates.value.end}}"},{"key":"fhir_uri","value":"{{terminologies.selectedRow.data.fhir_uri}}"},{"key":"is_standard","value":"{{terminologies.selectedRow.data.is_standard}}"},{"key":"fhir_terminology","value":"{{terminologies.selectedRow.data.fhir_terminology}}"}]
     - rawData: null
     - queryTriggerDelay: '0'
+    - resourceTypeOverride: null
     - watchedParams: []
     - enableErrorTransformer: false
     - enableBulkUpdates: false
@@ -83,4 +83,4 @@ template:
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2022-03-28T22:47:57.025Z
+createdAt: 2022-08-24T20:51:19.521Z
