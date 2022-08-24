@@ -1,4 +1,4 @@
-id: text1
+id: containerTitle1
 type: widget
 subtype: TextWidget2
 template:
@@ -10,10 +10,7 @@ template:
     - showInEditor: false
     - verticalAlign: center
     - tooltipText: ''
-    - value: 'New version of: '
-    - style:
-        ordered:
-          - background: rgba(165, 157, 157, 0)
+    - value: '#### Create New Terminology or Code System'
     - disableMarkdown: false
     - overflowType: scroll
     - maintainSpaceWhenHidden: false
@@ -21,7 +18,8 @@ style:
   ordered: []
 position2:
   position2:
-    container: form1
+    container: container1
+    rowGroup: header
     height: 0.6
-    width: 4
-createdAt: 2022-08-24T18:47:54.350Z
+    width: 12
+createdAt: 2022-08-23T19:56:27.509Z

@@ -1,7 +1,6 @@
 id: fhir_uri
 type: widget
 subtype: TextInputWidget2
-resourceName: null
 template:
   ordered:
     - spellCheck: false
@@ -48,10 +47,9 @@ style:
   ordered: []
 position2:
   position2:
-    container: tabs
-    row: 4.4
-    col: 2
+    container: container1
+    rowGroup: header
+    row: 3.5999999999999996
     height: 1
-    width: 5
-    tabNum: 1
+    width: 12
 createdAt: 2022-03-25T18:52:20.529Z

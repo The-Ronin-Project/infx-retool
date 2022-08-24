@@ -1,56 +1,55 @@
-id: version
+id: date_range
 type: widget
-subtype: TextInputWidget2
+subtype: DateRangeWidget
 template:
   ordered:
-    - spellCheck: false
+    - minDate: ''
     - readOnly: false
     - iconAfter: ''
-    - showCharacterCount: false
-    - autoComplete: false
-    - maxLength: null
+    - dateFormat: MMM d, yyyy
     - hidden: false
     - customValidation: ''
-    - patternType: ''
     - hideValidationMessage: false
     - textBefore: ''
     - validationMessage: ''
     - textAfter: ''
     - showInEditor: false
     - showClear: false
-    - pattern: ''
     - tooltipText: ''
     - labelAlign: left
     - formDataKey: '{{ self.id }}'
-    - value: '1.0'
+    - value:
+        ordered:
+          - start: ''
+          - end: ''
+    - startPlaceholder: Effective Start
     - labelCaption: ''
     - hideLabel: false
+    - maxDate: ''
     - labelWidth: '33'
-    - autoFill: ''
-    - placeholder: Enter New Version
-    - label: Version
+    - label: Effective Dates
+    - formattedValue: ''
     - _validate: false
     - labelWidthUnit: '%'
     - invalid: false
-    - iconBefore: ''
-    - minLength: null
-    - inputTooltip: ''
+    - iconBefore: bold/interface-calendar-remove
+    - endPlaceholder: Effective End
     - events:
         ordered: []
-    - autoCapitalize: none
+    - textBetween: '-'
     - loading: false
     - disabled: false
     - labelPosition: left
     - labelWrap: false
     - maintainSpaceWhenHidden: false
-    - required: true
+    - required: false
 style:
   ordered: []
 position2:
   position2:
     container: container1
     rowGroup: header
-    row: 1.6
+    row: 2.5999999999999996
     height: 1
     width: 12
-createdAt: 2022-03-28T23:15:52.104Z
+createdAt: 2022-08-23T19:48:16.059Z

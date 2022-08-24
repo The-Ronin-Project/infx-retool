@@ -1,21 +1,36 @@
-id: table1
+id: terminologies
 type: widget
 subtype: TableWidget
-resourceName: null
 template:
   ordered:
     - showCustomButton: false
     - sortMappedValue:
         ordered: []
     - _filteredSortedRenderedDataWithTypes: null
+    - heightType: fixed
     - normalizedData: null
     - saveChangesDisabled: ''
     - columnTypeProperties:
-        ordered: []
+        ordered:
+          - Custom Column 1:
+              ordered: []
+          - effective_end:
+              ordered:
+                - dateFormat: MMM d, yyyy
     - columnWidths:
         - object:
+            id: uuid
+            value: 290
+        - object:
+            id: effective_end
+            value: 130
+        - object:
+            id: version
+            value: 122.578125
+        - object:
             id: terminology
-            value: 220.28125
+            value: 269
+    - showSummaryFooter: false
     - disableRowSelectInteraction: false
     - columnWidthsMobile: []
     - hasNextAfterCursor: ''
@@ -23,49 +38,61 @@ template:
         ordered: []
     - onRowAdded: ''
     - columnHeaderNames:
-        ordered: []
+        ordered:
+          - fhir_terminology: fhir_terminology
+          - Custom Column 1: add
     - alwaysShowPaginator: false
     - columnColors:
         ordered:
-          - uuid: ''
-          - terminology: ''
-          - version: ''
-          - effective_start: ''
           - effective_end: ''
-          - fhir_uri: ''
+          - effective_start: ''
           - is_standard: ''
+          - terminology: ''
+          - Custom Column 1: ''
+          - fhir_uri: ''
+          - version: ''
+          - uuid: ''
           - fhir_terminology: ''
     - columnFrozenAlignments:
         ordered: []
     - allowMultiRowSelect: false
     - columnFormats:
-        ordered: []
+        ordered:
+          - Custom Column 1: ModalDataCell
+          - effective_end: DateDataCell
     - columnRestrictedEditing:
         ordered: []
     - showFilterButton: true
-    - _columnSummaryTypes:
-        ordered: []
-    - showAddRowButton: false
-    - nextBeforeCursor: ''
-    - columnVisibility:
+    - _columnVisibility:
         ordered:
-          - uuid: true
-          - terminology: true
-          - version: true
           - effective_start: true
           - effective_end: true
-          - fhir_uri: true
-          - is_standard: true
           - fhir_terminology: true
+          - fhir_uri: false
+          - is_standard: true
+          - uuid: false
+    - _columnSummaryTypes:
+        ordered:
+          - Custom Column 1: ''
+          - effective_end: ''
+    - _columnsWithLegacyBackgroundColor:
+        set: []
+    - showAddRowButton: false
+    - _unfilteredSelectedIndex: null
+    - nextBeforeCursor: ''
+    - columnVisibility:
+        ordered: []
     - selectedPageIndex: '0'
+    - applyDynamicSettingsToColumnOrder: true
     - rowColor:
         array: []
-    - actionButtonColumnName: Actions
+    - actionButtonColumnName: ''''''
+    - resetAfterSave: true
     - filterStackType: and
     - downloadRawData: false
     - showFetchingIndicator: true
     - serverPaginated: false
-    - data: '{{ load_terminologies.data }}'
+    - data: '{{load_terminologies.data}}'
     - displayedData: null
     - actionButtons: []
     - actionButtonSelectsRow: true
@@ -73,15 +100,18 @@ template:
     - defaultSortByColumn: ''
     - paginationOffset: 0
     - columnAlignment:
-        ordered: []
+        ordered:
+          - Custom Column 1: left
+          - effective_end: left
     - columnSummaries:
         object: {}
+    - showBoxShadow: false
     - sortedDesc: false
     - customButtonName: ''
     - columnMappersRenderAsHTML:
         ordered: []
     - showRefreshButton: true
-    - pageSize: 10
+    - pageSize: '20'
     - useDynamicColumnSettings: false
     - actionButtonPosition: left
     - dynamicRowHeights: false
@@ -92,9 +122,13 @@ template:
         object: {}
     - sortedColumn: ''
     - _columnSummaryValues:
-        ordered: []
-    - _compatibilityMode: true
-    - showColumnBorders: true
+        ordered:
+          - Custom Column 1: ''
+          - effective_end: ''
+    - checkboxRowSelect: true
+    - _compatibilityMode: false
+    - showColumnBorders: false
+    - clearSelectionLabel: Clear selection
     - _renderedDataWithTypes: null
     - columnAllowOverflow:
         ordered: []
@@ -102,60 +136,80 @@ template:
     - serverPaginationType: limitOffsetBased
     - onRowSelect: ''
     - showDownloadButton: true
-    - selectedIndex: ''
+    - selectedIndex: null
     - defaultSortDescending: false
     - _sortedDisplayedDataIndices: null
     - dynamicColumnSettings: null
+    - events:
+        - ordered:
+            - event: saveChanges
+            - type: datasource
+            - method: trigger
+            - pluginId: edit_end_date
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
     - totalRowCount: ''
     - recordUpdates:
         array: []
     - newRow: null
     - emptyMessage: No rows found
     - columnEditable:
-        ordered: []
+        ordered:
+          - Custom Column 1: false
+          - effective_end: true
+    - _viewerColumnSummaryTypes:
+        object: {}
     - filters:
         array: []
     - displayedDataIndices: null
     - disableSorting:
         ordered: []
     - columnMappers:
-        ordered: []
+        ordered:
+          - Custom Column 1: New Version
     - showClearSelection: false
-    - overflowType: scroll
+    - doubleClickToEdit: true
+    - overflowType: pagination
     - _reverseSortedDisplayedDataIndices: null
     - selectedCell:
         object:
           index: null
           data: null
           columnName: null
-    - columns:
+    - columns: []
+    - defaultSelectedRow: first
+    - freezeActionButtonColumns: false
+    - sort: null
+    - _columns:
         - terminology
+        - uuid
         - version
         - effective_start
         - effective_end
         - fhir_uri
         - is_standard
-        - uuid
         - fhir_terminology
-    - defaultSelectedRow: first
-    - freezeActionButtonColumns: false
-    - sort: null
+        - Custom Column 1
     - sortByRawValue:
         ordered: []
-    - calculatedColumns: []
+    - calculatedColumns:
+        - Custom Column 1
     - selectedRow:
         object:
           index: null
           data: null
-    - showPaginationOnTop: false
+    - showPaginationOnTop: true
+    - _reverseDisplayedDataIndices: null
     - nextAfterCursor: ''
     - useCompactMode: false
 style:
   ordered: []
 position2:
   position2:
-    container: tabs
-    row: 1.2000000000000002
-    height: 13.200000000000001
+    row: 1.2
+    height: 15.399999999999997
     width: 12
-createdAt: 2022-03-23T17:23:21.137Z
+createdAt: 2022-08-23T20:25:00.999Z

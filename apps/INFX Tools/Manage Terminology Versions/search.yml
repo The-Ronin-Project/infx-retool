@@ -1,37 +1,43 @@
-id: edited_start_date
+id: search
 type: widget
-subtype: DateWidget
-resourceName: null
+subtype: TextInputWidget2
 template:
   ordered:
-    - minDate: ''
+    - spellCheck: false
     - readOnly: false
     - iconAfter: ''
-    - datePlaceholder: '{{ self.dateFormat.toUpperCase() }}'
-    - dateFormat: MMM d, yyyy
+    - showCharacterCount: false
+    - autoComplete: false
+    - maxLength: null
     - hidden: false
     - customValidation: ''
+    - patternType: ''
     - hideValidationMessage: false
     - textBefore: ''
     - validationMessage: ''
     - textAfter: ''
     - showInEditor: false
-    - showClear: false
+    - showClear: true
+    - pattern: ''
     - tooltipText: ''
     - labelAlign: left
     - formDataKey: '{{ self.id }}'
-    - value: '{{ new Date() }}'
+    - value: ''
     - labelCaption: ''
-    - maxDate: ''
+    - hideLabel: false
     - labelWidth: '33'
-    - label: Change Effective Start Date
-    - formattedValue: ''
+    - autoFill: ''
+    - placeholder: Enter term
+    - label: Search Terminologies
     - _validate: false
     - labelWidthUnit: '%'
     - invalid: false
-    - iconBefore: calendar
+    - iconBefore: ''
+    - minLength: null
+    - inputTooltip: ''
     - events:
         ordered: []
+    - autoCapitalize: none
     - loading: false
     - disabled: false
     - labelPosition: left
@@ -42,10 +48,6 @@ style:
   ordered: []
 position2:
   position2:
-    container: tabs
-    row: 3.0000000000000004
-    col: 5
     height: 1
-    width: 5
-    tabNum: 2
-createdAt: 2022-03-25T22:29:50.907Z
+    width: 6
+createdAt: 2022-08-24T00:50:50.301Z

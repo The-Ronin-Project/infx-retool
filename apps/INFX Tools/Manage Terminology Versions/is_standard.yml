@@ -1,7 +1,6 @@
 id: is_standard
 type: widget
 subtype: CheckboxWidget2
-resourceName: null
 template:
   ordered:
     - hidden: false
@@ -28,10 +27,9 @@ style:
   ordered: []
 position2:
   position2:
-    container: tabs
-    row: 6.2
-    col: 2
+    container: container1
+    rowGroup: header
+    row: 5.000000000000001
     height: 0.6
-    width: 2
-    tabNum: 1
+    width: 5
 createdAt: 2022-08-02T19:58:13.615Z

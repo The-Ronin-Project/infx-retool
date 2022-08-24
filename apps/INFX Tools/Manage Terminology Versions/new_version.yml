@@ -1,4 +1,4 @@
-id: version
+id: new_version
 type: widget
 subtype: TextInputWidget2
 template:
@@ -22,12 +22,11 @@ template:
     - tooltipText: ''
     - labelAlign: left
     - formDataKey: '{{ self.id }}'
-    - value: '1.0'
+    - value: ''
     - labelCaption: ''
-    - hideLabel: false
     - labelWidth: '33'
     - autoFill: ''
-    - placeholder: Enter New Version
+    - placeholder: Enter value
     - label: Version
     - _validate: false
     - labelWidthUnit: '%'
@@ -43,14 +42,13 @@ template:
     - labelPosition: left
     - labelWrap: false
     - maintainSpaceWhenHidden: false
-    - required: true
+    - required: false
 style:
   ordered: []
 position2:
   position2:
-    container: container1
-    rowGroup: header
-    row: 1.6
+    container: form1
+    row: 0.6
     height: 1
     width: 12
-createdAt: 2022-03-28T23:15:52.104Z
+createdAt: 2022-08-24T18:48:39.551Z

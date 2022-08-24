@@ -1,56 +1,56 @@
-id: dateRange1
+id: new_name
 type: widget
-subtype: DateRangeWidget
-resourceName: null
+subtype: TextInputWidget2
 template:
   ordered:
-    - minDate: ''
+    - spellCheck: false
     - readOnly: false
     - iconAfter: ''
-    - dateFormat: MMM d, yyyy
+    - showCharacterCount: false
+    - autoComplete: false
+    - maxLength: null
     - hidden: false
     - customValidation: ''
+    - patternType: ''
     - hideValidationMessage: false
     - textBefore: ''
     - validationMessage: ''
     - textAfter: ''
     - showInEditor: false
-    - showClear: false
+    - showClear: true
+    - pattern: ''
     - tooltipText: ''
     - labelAlign: left
     - formDataKey: '{{ self.id }}'
-    - value:
-        ordered:
-          - start: ''
-          - end: ''
-    - startPlaceholder: Effective Start date
+    - value: ''
     - labelCaption: ''
-    - maxDate: ''
+    - hideLabel: false
     - labelWidth: '33'
-    - label: Effective Dates
-    - formattedValue: ''
+    - autoFill: ''
+    - placeholder: Enter Name
+    - label: Terminology
     - _validate: false
     - labelWidthUnit: '%'
     - invalid: false
-    - iconBefore: calendar
-    - endPlaceholder: Effective End date
+    - iconBefore: ''
+    - minLength: null
+    - inputTooltip: ''
     - events:
         ordered: []
-    - textBetween: '-'
+    - autoCapitalize: none
     - loading: false
     - disabled: false
     - labelPosition: left
     - labelWrap: false
     - maintainSpaceWhenHidden: false
-    - required: false
+    - required: true
 style:
   ordered: []
 position2:
   position2:
-    container: tabs
-    row: 3
-    col: 2
+    container: container1
+    rowGroup: header
+    row: 0.6000000000000001
     height: 1
-    width: 5
-    tabNum: 1
-createdAt: 2022-08-02T19:56:27.176Z
+    width: 12
+createdAt: 2022-08-24T17:59:39.717Z
