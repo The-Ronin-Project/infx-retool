@@ -1,7 +1,6 @@
 id: name_input
 type: widget
 subtype: TextInputWidget2
-resourceName: null
 template:
   ordered:
     - spellCheck: false
@@ -23,7 +22,7 @@ template:
     - tooltipText: ''
     - labelAlign: right
     - formDataKey: '{{ self.id }}'
-    - value: '{{title_input.value.replace(/[^\w]+/g, '''')}}'
+    - value: '{{title_input.value.toLowerCase().replace(/[^\w]+/g, '''')}}'
     - labelCaption: ''
     - labelWidth: '33'
     - autoFill: ''

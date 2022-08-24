@@ -1,7 +1,6 @@
 id: tabbedcontainer1
 type: widget
 subtype: TabbedContainerWidget
-resourceName: null
 template:
   ordered:
     - heightType: fixed
@@ -20,7 +19,7 @@ style:
   ordered: []
 position2:
   position2:
-    row: -9.992007221626409e-16
-    height: 31.4
+    row: -1.1102230246251565e-15
+    height: 28.999999999999996
     width: 12
 createdAt: 2021-10-01T16:33:49.853Z
