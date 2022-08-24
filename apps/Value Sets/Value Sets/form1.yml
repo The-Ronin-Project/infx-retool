@@ -1,7 +1,6 @@
 id: form1
 type: widget
 subtype: FormWidget
-resourceName: null
 template:
   ordered:
     - heightType: fixed
@@ -14,20 +13,11 @@ template:
     - submitButtonFullWidth: false
     - scroll: true
     - submitDisabled: ''
-    - submitButtonText: Submit
+    - submitButtonText: ''
     - onSubmit: ''
     - requiredFormControls: []
-    - events:
-        - ordered:
-            - event: submit
-            - type: datasource
-            - method: trigger
-            - pluginId: create_value_set_and_version_one
-            - params:
-                ordered: []
-            - waitType: debounce
-            - waitMs: '0'
-    - hideSubmit: false
+    - events: []
+    - hideSubmit: true
     - loading: ''
     - overflowType: hidden
     - disabled: ''
@@ -36,7 +26,8 @@ style:
 position2:
   position2:
     container: tabbedcontainer1
-    height: 26.599999999999994
+    row: 0.2
+    height: 26.799999999999994
     width: 12
     tabNum: 1
 createdAt: 2021-10-11T18:28:16.438Z
