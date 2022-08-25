@@ -35,12 +35,17 @@ template:
     - columnWidthsMobile: []
     - hasNextAfterCursor: ''
     - columnTypeSpecificExtras:
-        ordered: []
+        ordered:
+          - Custom Column 2:
+              ordered:
+                - buttonType: copy-to-clipboard
+                - valueToCopy: '{{terminologies.selectedRow.data.uuid}}'
     - onRowAdded: ''
     - columnHeaderNames:
         ordered:
           - fhir_terminology: fhir_terminology
           - Custom Column 1: add
+          - Custom Column 2: copy UUID
     - alwaysShowPaginator: false
     - columnColors:
         ordered:
@@ -60,6 +65,7 @@ template:
         ordered:
           - Custom Column 1: ModalDataCell
           - effective_end: DateDataCell
+          - Custom Column 2: button
     - columnRestrictedEditing:
         ordered: []
     - showFilterButton: true
@@ -103,6 +109,7 @@ template:
         ordered:
           - Custom Column 1: left
           - effective_end: left
+          - Custom Column 2: left
     - columnSummaries:
         object: {}
     - showBoxShadow: false
@@ -160,6 +167,7 @@ template:
         ordered:
           - Custom Column 1: false
           - effective_end: true
+          - Custom Column 2: false
     - _viewerColumnSummaryTypes:
         object: {}
     - filters:
@@ -170,6 +178,7 @@ template:
     - columnMappers:
         ordered:
           - Custom Column 1: New Version
+          - Custom Column 2: Copy UUID
     - showClearSelection: false
     - doubleClickToEdit: true
     - overflowType: pagination
@@ -193,10 +202,12 @@ template:
         - is_standard
         - fhir_terminology
         - Custom Column 1
+        - Custom Column 2
     - sortByRawValue:
         ordered: []
     - calculatedColumns:
         - Custom Column 1
+        - Custom Column 2
     - selectedRow:
         object:
           index: null
