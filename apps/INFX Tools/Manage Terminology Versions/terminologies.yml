@@ -54,6 +54,7 @@ template:
           - is_standard: ''
           - terminology: ''
           - Custom Column 1: ''
+          - Custom Column 2: ''
           - fhir_uri: ''
           - version: ''
           - uuid: ''
