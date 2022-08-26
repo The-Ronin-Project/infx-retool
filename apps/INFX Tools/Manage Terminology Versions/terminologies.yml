@@ -22,14 +22,26 @@ template:
             id: uuid
             value: 290
         - object:
-            id: effective_end
-            value: 130
-        - object:
-            id: version
-            value: 122.578125
-        - object:
             id: terminology
             value: 269
+        - object:
+            id: version
+            value: 93.578125
+        - object:
+            id: effective_start
+            value: 108.40625
+        - object:
+            id: effective_end
+            value: 117
+        - object:
+            id: fhir_uri
+            value: 306
+        - object:
+            id: is_standard
+            value: 92
+        - object:
+            id: Custom Column 1
+            value: 96.3359375
     - showSummaryFooter: false
     - disableRowSelectInteraction: false
     - columnWidthsMobile: []
@@ -75,7 +87,7 @@ template:
           - effective_start: true
           - effective_end: true
           - fhir_terminology: true
-          - fhir_uri: false
+          - fhir_uri: true
           - is_standard: true
           - uuid: false
     - _columnSummaryTypes:
