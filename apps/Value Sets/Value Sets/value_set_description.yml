@@ -1,7 +1,6 @@
-id: textinput4
+id: value_set_description
 type: widget
 subtype: TextInputWidget2
-resourceName: null
 template:
   ordered:
     - spellCheck: false
@@ -23,12 +22,12 @@ template:
     - tooltipText: ''
     - labelAlign: right
     - formDataKey: '{{ self.id }}'
-    - value: '{{current_user.firstName}} {{current_user.lastName}}'
+    - value: ''
     - labelCaption: ''
     - labelWidth: '33'
     - autoFill: ''
-    - placeholder: ''
-    - label: contact
+    - placeholder: What content will be in this value set?
+    - label: Description
     - _validate: false
     - labelWidthUnit: '%'
     - invalid: false
@@ -49,7 +48,7 @@ style:
 position2:
   position2:
     container: form1
-    row: 5.6
+    row: 2.6
     height: 1
     width: 12
-createdAt: 2021-10-11T18:56:31.574Z
+createdAt: 2021-10-11T18:56:31.894Z

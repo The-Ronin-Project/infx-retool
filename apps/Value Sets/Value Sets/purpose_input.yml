@@ -1,7 +1,6 @@
-id: textinput7
+id: purpose_input
 type: widget
 subtype: TextInputWidget2
-resourceName: null
 template:
   ordered:
     - spellCheck: false
@@ -27,8 +26,8 @@ template:
     - labelCaption: ''
     - labelWidth: '33'
     - autoFill: ''
-    - placeholder: What content will be in this value set?
-    - label: description
+    - placeholder: What is the use case for this value set?
+    - label: Purpose
     - _validate: false
     - labelWidthUnit: '%'
     - invalid: false
@@ -49,7 +48,7 @@ style:
 position2:
   position2:
     container: form1
-    row: 2.6
+    row: 3.6
     height: 1
     width: 12
-createdAt: 2021-10-11T18:56:31.894Z
+createdAt: 2021-10-11T18:56:31.150Z

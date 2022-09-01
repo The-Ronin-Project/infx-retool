@@ -202,7 +202,7 @@ template:
         ordered:
           - name: false
           - contact: true
-          - description: true
+          - description: false
           - immutable: true
           - experimental: true
           - purpose: true

@@ -1,7 +1,6 @@
-id: checkbox1
+id: experimental_checkbox
 type: widget
 subtype: CheckboxWidget
-resourceName: null
 template:
   ordered:
     - label: Experimental (Not For Production)

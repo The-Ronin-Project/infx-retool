@@ -24,10 +24,11 @@ template:
     - formDataKey: '{{ self.id }}'
     - value: Initial version
     - labelCaption: ''
+    - hideLabel: false
     - labelWidth: '33'
     - autoFill: ''
     - placeholder: Enter a description for the initial version
-    - label: ''
+    - label: Version Description
     - _validate: false
     - labelWidthUnit: '%'
     - invalid: false

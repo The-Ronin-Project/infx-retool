@@ -1,7 +1,6 @@
 id: title_input
 type: widget
 subtype: TextInputWidget2
-resourceName: null
 template:
   ordered:
     - spellCheck: false
@@ -24,11 +23,11 @@ template:
     - labelAlign: right
     - formDataKey: '{{ self.id }}'
     - value: ''
-    - labelCaption: ''
+    - labelCaption: (human-readable)
     - labelWidth: '33'
     - autoFill: ''
     - placeholder: Enter a value
-    - label: title (human-readable)
+    - label: Title
     - _validate: false
     - labelWidthUnit: '%'
     - invalid: false

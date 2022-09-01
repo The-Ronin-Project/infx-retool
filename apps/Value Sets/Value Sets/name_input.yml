@@ -23,11 +23,11 @@ template:
     - labelAlign: right
     - formDataKey: '{{ self.id }}'
     - value: '{{title_input.value.toLowerCase().replace(/[^\w]+/g, '''')}}'
-    - labelCaption: ''
+    - labelCaption: (machine-readable)
     - labelWidth: '33'
     - autoFill: ''
     - placeholder: Enter value
-    - label: name (machine-readable)
+    - label: Name
     - _validate: false
     - labelWidthUnit: '%'
     - invalid: false
