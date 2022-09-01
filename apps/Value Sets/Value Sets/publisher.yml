@@ -1,11 +1,10 @@
-id: textinput2
+id: publisher
 type: widget
 subtype: TextInputWidget2
-resourceName: null
 template:
   ordered:
     - spellCheck: false
-    - readOnly: false
+    - readOnly: ''
     - iconAfter: ''
     - showCharacterCount: false
     - autoComplete: false
@@ -23,12 +22,12 @@ template:
     - tooltipText: ''
     - labelAlign: right
     - formDataKey: '{{ self.id }}'
-    - value: ''
+    - value: Project Ronin
     - labelCaption: ''
     - labelWidth: '33'
     - autoFill: ''
-    - placeholder: What is the use case for this value set?
-    - label: purpose
+    - placeholder: Enter a value
+    - label: Publisher
     - _validate: false
     - labelWidthUnit: '%'
     - invalid: false
@@ -39,17 +38,17 @@ template:
         ordered: []
     - autoCapitalize: none
     - loading: false
-    - disabled: ''
+    - disabled: 'true'
     - labelPosition: left
     - labelWrap: true
     - maintainSpaceWhenHidden: null
-    - required: true
+    - required: false
 style:
   ordered: []
 position2:
   position2:
     container: form1
-    row: 3.6
+    row: 7.6
     height: 1
     width: 12
-createdAt: 2021-10-11T18:56:31.150Z
+createdAt: 2021-10-11T18:56:31.773Z

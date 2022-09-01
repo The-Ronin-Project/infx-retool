@@ -1,7 +1,6 @@
 id: type_dropdown
 type: widget
 subtype: SelectWidget
-resourceName: null
 template:
   ordered:
     - enableClientSideMatching: true
@@ -17,7 +16,7 @@ template:
     - value: '''intensional'''
     - maxResults: 50
     - placeholder: Select a value
-    - label: type
+    - label: Type
     - clearValueOnFocus: true
     - labelMaxWidth: ''
     - labelPlacedOnLeft: false

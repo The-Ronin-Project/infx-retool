@@ -1,7 +1,6 @@
-id: dateRange1
+id: version_date_range
 type: widget
 subtype: DateRangeWidget
-resourceName: null
 template:
   ordered:
     - minDate: ''
@@ -25,9 +24,10 @@ template:
           - end: ''
     - startPlaceholder: ' Effective Start date'
     - labelCaption: ''
+    - hideLabel: false
     - maxDate: ''
     - labelWidth: '33'
-    - label: ''
+    - label: Effective Dates
     - formattedValue: ''
     - _validate: false
     - labelWidthUnit: '%'

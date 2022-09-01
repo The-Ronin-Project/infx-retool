@@ -8,7 +8,7 @@ template:
     - queryRefreshTime: ''
     - paginationLimit: ''
     - body: >-
-        [{"key":"name","value":"{{name_input.value}}"},{"key":"title","value":"{{title_input.value}}"},{"key":"publisher","value":"{{textinput6.value}}"},{"key":"contact","value":"{{textinput4.value}}"},{"key":"value_set_description","value":"{{textinput7.value}}"},{"key":"immutable","value":"false"},{"key":"experimental","value":"{{checkbox1.value}}"},{"key":"purpose","value":"{{textinput2.value}}"},{"key":"type","value":"{{type_dropdown.value}}"},{"key":"effective_start","value":"{{dateRange1.value.start}}"},{"key":"effective_end","value":"{{dateRange1.value.end}}"},{"key":"version_description","value":"{{version_description_input.value}}"}]
+        [{"key":"name","value":"{{name_input.value}}"},{"key":"title","value":"{{title_input.value}}"},{"key":"publisher","value":"{{publisher.value}}"},{"key":"contact","value":"{{contact_input.value}}"},{"key":"value_set_description","value":"{{value_set_description.value}}"},{"key":"immutable","value":"false"},{"key":"experimental","value":"{{experimental_checkbox.value}}"},{"key":"purpose","value":"{{purpose_input.value}}"},{"key":"type","value":"{{type_dropdown.value}}"},{"key":"effective_start","value":"{{version_date_range.value.start}}"},{"key":"effective_end","value":"{{version_date_range.value.end}}"},{"key":"version_description","value":"{{version_description_input.value}}"}]
     - lastReceivedFromResourceAt: null
     - queryDisabledMessage: ''
     - successMessage: ''
@@ -76,12 +76,13 @@ template:
                   - src: |
                       name_input.clearValue
                       title_input.clearValue
-                      textinput6.clearValue
-                      textinput4.clearValue
-                      textinput7.clearValue
-                      checkbox1.clearValue
-                      textinput2.clearValue
-                      dateRange1.clearValue
+                      purpose_input.clearValue
+                      value_set_description.clearValue
+                      experimental_checkbox.clearValue
+                      purpose_input.clearValue
+                      select_use.clearValue
+                      version_description_input.clearValuevalue
+                      version_date_range.clearValue
             - waitType: debounce
             - waitMs: '0'
     - queryTimeout: '10000'
