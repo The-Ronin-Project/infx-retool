@@ -1,0 +1,66 @@
+id: concept_map_details
+type: widget
+subtype: KeyValueMapWidget
+template:
+  ordered:
+    - rowHeaderNames:
+        ordered: []
+    - rowFormats:
+        ordered: []
+    - valueTitle: Value
+    - data: '{{concept_map_metadata_table.selectedRow.data}}'
+    - prevRowMappers:
+        ordered: []
+    - rowMappersRenderAsHTML:
+        ordered: []
+    - rowVisibility:
+        ordered:
+          - contact: true
+          - a: true
+          - b: true
+          - immutable: true
+          - c: true
+          - created_date: true
+          - experimental: true
+          - identifier: true
+          - author: true
+          - name: true
+          - url: false
+          - title: true
+          - type: true
+          - uuid: true
+          - publisher: true
+          - description: true
+          - purpose: true
+    - prevRowFormats:
+        ordered: []
+    - rowMappers:
+        ordered: []
+    - rows:
+        - a
+        - b
+        - c
+        - title
+        - name
+        - description
+        - purpose
+        - identifier
+        - url
+        - publisher
+        - contact
+        - immutable
+        - experimental
+        - type
+        - uuid
+        - author
+        - created_date
+    - keyTitle: Key
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabbedcontainer1
+    col: 8
+    height: 16.200000000000003
+    width: 4
+createdAt: 2021-10-29T22:08:24.166Z

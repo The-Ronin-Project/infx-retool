@@ -1,0 +1,24 @@
+id: tabbedcontainer1
+type: widget
+subtype: TabbedContainerWidget
+template:
+  ordered:
+    - heightType: fixed
+    - spinWhenChildrenAreFetching: true
+    - unmountInactiveTabs: false
+    - tabNames: >-
+        ["Browse Existing Concept Maps", "Create A New Concept Map", "Duplicate
+        Existing Concept Map"]
+    - selectedTabIndex: 0
+    - selectedTab: '"0"'
+    - showTabBar: true
+    - disableAnimation: false
+    - overflowType: hidden
+    - disabled: ''
+style:
+  ordered: []
+position2:
+  position2:
+    height: 25.8
+    width: 12
+createdAt: 2021-10-01T16:33:49.853Z

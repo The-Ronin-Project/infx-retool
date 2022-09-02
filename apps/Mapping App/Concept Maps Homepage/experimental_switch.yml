@@ -1,0 +1,36 @@
+id: experimental_switch
+type: widget
+subtype: SwitchWidget2
+template:
+  ordered:
+    - hidden: false
+    - customValidation: ''
+    - hideValidationMessage: false
+    - validationMessage: ''
+    - showInEditor: false
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: 'false'
+    - labelCaption: ''
+    - hideLabel: false
+    - label: Experimental (Not For Production)
+    - _validate: false
+    - invalid: false
+    - events:
+        ordered: []
+    - disabled: false
+    - labelPosition: right
+    - labelWrap: true
+    - maintainSpaceWhenHidden: false
+    - required: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: form1
+    row: 6
+    col: 4
+    height: 1
+    width: 8
+createdAt: 2021-10-11T18:56:31.270Z

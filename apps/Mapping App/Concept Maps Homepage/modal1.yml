@@ -1,0 +1,30 @@
+id: modal1
+type: widget
+subtype: ModalWidget
+template:
+  ordered:
+    - opened: false
+    - modalOverflowType: scroll
+    - onModalClose: ''
+    - modalHeightType: fixed
+    - tooltipText: ''
+    - style:
+        ordered:
+          - accent-background: '#6a6a6a'
+    - modalHeight: ''
+    - onModalOpen: ''
+    - modalWidth: ''
+    - closeOnOutsideClick: false
+    - loading: ''
+    - disabled: ''
+    - buttonText: Add New Synonym
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabbedcontainer1
+    row: 22.8
+    col: 9
+    height: 1
+    width: 3
+createdAt: 2022-02-17T19:02:04.242Z

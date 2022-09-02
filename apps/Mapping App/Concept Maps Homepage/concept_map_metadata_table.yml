@@ -1,0 +1,286 @@
+id: concept_map_metadata_table
+type: widget
+subtype: TableWidget
+template:
+  ordered:
+    - showCustomButton: false
+    - sortMappedValue:
+        ordered: []
+    - _filteredSortedRenderedDataWithTypes: null
+    - heightType: fixed
+    - normalizedData: null
+    - saveChangesDisabled: ''
+    - columnTypeProperties:
+        ordered: []
+    - columnWidths:
+        - object:
+            id: contact
+            value: 77
+        - object:
+            id: immutable
+            value: 95
+        - object:
+            id: experimental
+            value: 108.75
+        - object:
+            id: name
+            value: 272.40625
+        - object:
+            id: __retool__action_list
+            value: 329.09375
+        - object:
+            id: title
+            value: 356.71875
+        - object:
+            id: description
+            value: 337.09375
+        - object:
+            id: created_date
+            value: 150
+        - object:
+            id: author
+            value: 152.765625
+    - showSummaryFooter: false
+    - disableRowSelectInteraction: false
+    - columnWidthsMobile: []
+    - hasNextAfterCursor: ''
+    - columnTypeSpecificExtras:
+        ordered: []
+    - onRowAdded: ''
+    - columnHeaderNames:
+        ordered: []
+    - alwaysShowPaginator: false
+    - columnColors:
+        ordered:
+          - contact: ''
+          - immutable: ''
+          - created_date: ''
+          - experimental: ''
+          - identifier: ''
+          - author: ''
+          - name: ''
+          - url: ''
+          - title: ''
+          - type: ''
+          - uuid: ''
+          - publisher: ''
+          - description: ''
+          - purpose: ''
+    - columnFrozenAlignments:
+        ordered: []
+    - allowMultiRowSelect: false
+    - columnFormats:
+        ordered: []
+    - columnRestrictedEditing:
+        ordered: []
+    - showFilterButton: true
+    - _columnVisibility:
+        ordered:
+          - contact: false
+          - immutable: false
+          - created_date: true
+          - experimental: false
+          - identifier: false
+          - author: true
+          - name: false
+          - sales: true
+          - url: false
+          - title: true
+          - type: false
+          - id: true
+          - uuid: false
+          - publisher: false
+          - email: true
+          - description: false
+          - purpose: false
+    - _columnSummaryTypes:
+        ordered: []
+    - _columnsWithLegacyBackgroundColor:
+        set: []
+    - showAddRowButton: false
+    - _unfilteredSelectedIndex: ''
+    - nextBeforeCursor: ''
+    - columnVisibility:
+        ordered:
+          - contact: false
+          - immutable: false
+          - created_date: true
+          - experimental: false
+          - identifier: false
+          - author: true
+          - name: false
+          - sales: true
+          - url: false
+          - title: true
+          - type: false
+          - id: true
+          - uuid: false
+          - publisher: false
+          - email: true
+          - description: false
+          - purpose: false
+    - selectedPageIndex: '0'
+    - applyDynamicSettingsToColumnOrder: false
+    - rowColor:
+        array: []
+    - actionButtonColumnName: Actions
+    - resetAfterSave: true
+    - filterStackType: and
+    - downloadRawData: false
+    - showFetchingIndicator: true
+    - serverPaginated: false
+    - data: '{{load_concept_maps.data}}'
+    - displayedData: null
+    - actionButtons:
+        - ordered:
+            - actionButtonText: View/Edit
+            - actionButtonType: openInternalUrl
+            - actionButtonQuery: ''
+            - actionButtonInternalUrlPath: cdc1d7c0-9027-11ec-b0c3-ab01646c36a6
+            - actionButtonInternalUrlQuery: >-
+                "[{\"key\":\"uuid\",\"value\":\"{{concept_map_metadata_table.selectedRow.data.uuid}}\"}]"
+            - actionButtonUrl: ''
+            - actionButtonNewWindow: true
+            - actionButtonDisabled: ''
+    - actionButtonSelectsRow: true
+    - selectRowByDefault: true
+    - defaultSortByColumn: ''
+    - paginationOffset: 0
+    - columnAlignment:
+        ordered: []
+    - columnSummaries:
+        object: {}
+    - showBoxShadow: true
+    - sortedDesc: false
+    - customButtonName: ''
+    - columnMappersRenderAsHTML:
+        ordered: []
+    - showRefreshButton: true
+    - pageSize: 19
+    - useDynamicColumnSettings: false
+    - actionButtonPosition: right
+    - dynamicRowHeights: false
+    - bulkUpdateAction: ''
+    - afterCursor: ''
+    - onCustomButtonPressQueryName: ''
+    - changeSet:
+        object: {}
+    - sortedColumn: ''
+    - _columnSummaryValues:
+        ordered: []
+    - checkboxRowSelect: true
+    - _compatibilityMode: true
+    - showColumnBorders: true
+    - clearSelectionLabel: Clear selection
+    - _renderedDataWithTypes: null
+    - columnAllowOverflow:
+        ordered: []
+    - beforeCursor: ''
+    - serverPaginationType: limitOffsetBased
+    - onRowSelect: ''
+    - showDownloadButton: true
+    - selectedIndex: null
+    - defaultSortDescending: false
+    - _sortedDisplayedDataIndices: null
+    - dynamicColumnSettings: null
+    - events:
+        - ordered:
+            - event: saveChanges
+            - type: datasource
+            - method: trigger
+            - pluginId: tableBulkUpdateActionTrigger
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - totalRowCount: ''
+    - recordUpdates:
+        array: []
+    - newRow: null
+    - emptyMessage: No rows found
+    - columnEditable:
+        ordered:
+          - name: false
+          - contact: true
+          - description: true
+          - immutable: true
+          - experimental: true
+          - purpose: true
+          - type: true
+    - _viewerColumnSummaryTypes:
+        object: {}
+    - filters:
+        array: []
+    - displayedDataIndices: null
+    - disableSorting:
+        ordered: []
+    - columnMappers:
+        ordered: []
+    - showClearSelection: false
+    - doubleClickToEdit: false
+    - overflowType: scroll
+    - _reverseSortedDisplayedDataIndices: null
+    - selectedCell:
+        object:
+          index: null
+          data: null
+          columnName: null
+    - columns:
+        - id
+        - name
+        - email
+        - sales
+        - uuid
+        - url
+        - identifier
+        - title
+        - publisher
+        - contact
+        - description
+        - immutable
+        - experimental
+        - purpose
+        - type
+        - author
+        - created_date
+    - defaultSelectedRow: first
+    - freezeActionButtonColumns: false
+    - sort: null
+    - _columns:
+        - id
+        - name
+        - email
+        - sales
+        - uuid
+        - url
+        - identifier
+        - title
+        - publisher
+        - contact
+        - description
+        - immutable
+        - experimental
+        - purpose
+        - type
+        - author
+        - created_date
+    - sortByRawValue:
+        ordered: []
+    - calculatedColumns: []
+    - selectedRow:
+        object:
+          index: null
+          data: null
+    - showPaginationOnTop: false
+    - _reverseDisplayedDataIndices: null
+    - nextAfterCursor: ''
+    - useCompactMode: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabbedcontainer1
+    row: 1
+    height: 22.8
+    width: 8
+createdAt: 2021-10-01T16:34:17.643Z
