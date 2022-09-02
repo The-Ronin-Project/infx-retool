@@ -1,0 +1,55 @@
+id: name_input_dup
+type: widget
+subtype: TextInputWidget2
+template:
+  ordered:
+    - spellCheck: false
+    - readOnly: false
+    - iconAfter: ''
+    - showCharacterCount: true
+    - autoComplete: false
+    - maxLength: '254'
+    - hidden: false
+    - customValidation: ''
+    - patternType: regex
+    - hideValidationMessage: false
+    - textBefore: ''
+    - validationMessage: ''
+    - textAfter: ''
+    - showInEditor: false
+    - showClear: false
+    - pattern: ^\w+$
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: '{{title_input_dup.value.replace(/[^\w]+/g, '''')}}'
+    - labelCaption: ''
+    - labelWidth: '33'
+    - autoFill: ''
+    - placeholder: Enter value
+    - label: Name
+    - _validate: false
+    - labelWidthUnit: '%'
+    - invalid: false
+    - iconBefore: ''
+    - minLength: null
+    - inputTooltip: ''
+    - events:
+        ordered: []
+    - autoCapitalize: none
+    - loading: false
+    - disabled: false
+    - labelPosition: left
+    - labelWrap: false
+    - maintainSpaceWhenHidden: false
+    - required: true
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabbedcontainer1
+    row: 14.600000000000001
+    height: 1
+    width: 12
+    tabNum: 2
+createdAt: 2022-01-25T22:25:49.993Z

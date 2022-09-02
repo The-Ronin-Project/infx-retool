@@ -1,0 +1,36 @@
+id: experimental_input
+type: widget
+subtype: CheckboxWidget2
+template:
+  ordered:
+    - hidden: false
+    - customValidation: ''
+    - hideValidationMessage: false
+    - validationMessage: ''
+    - showInEditor: false
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: false
+    - labelCaption: ''
+    - label: Experimental
+    - _validate: false
+    - invalid: false
+    - events:
+        ordered: []
+    - disabled: false
+    - labelPosition: right
+    - labelWrap: false
+    - maintainSpaceWhenHidden: false
+    - required: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabbedcontainer1
+    row: 19.6
+    col: 4
+    height: 0.6
+    width: 8
+    tabNum: 2
+createdAt: 2022-01-25T22:39:04.956Z
