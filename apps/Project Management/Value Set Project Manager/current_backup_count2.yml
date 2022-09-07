@@ -1,0 +1,27 @@
+id: current_backup_count2
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - tooltipText: ''
+    - value: 'Current Review Count: {{reviewer_table_count.data.count[0]}}'
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabbedContainer1
+    subcontainer: 7578c
+    row: 5.2
+    col: 9
+    height: 0.6
+    width: 3
+createdAt: 2022-08-29T19:19:54.212Z
