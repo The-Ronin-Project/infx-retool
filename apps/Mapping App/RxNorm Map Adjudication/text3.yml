@@ -1,0 +1,24 @@
+id: text3
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - tooltipText: ''
+    - value: '### {{suggestion_table.data.source_display[0]}}'
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    row: 1.6
+    height: 0.6
+    width: 8
+createdAt: 2022-09-08T17:03:02.131Z

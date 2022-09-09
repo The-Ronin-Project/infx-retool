@@ -1,0 +1,26 @@
+id: total_number
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - tooltipText: ''
+    - value: >-
+        **{{total_number_left.data.count_left}}** total source concepts left to
+        review 
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    row: 14.399999999999999
+    height: 0.6
+    width: 3
+createdAt: 2022-09-08T16:53:04.618Z
