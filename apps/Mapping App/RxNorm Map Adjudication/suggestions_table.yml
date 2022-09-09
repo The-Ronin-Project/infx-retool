@@ -1,0 +1,285 @@
+id: suggestions_table
+type: widget
+subtype: TableWidget
+template:
+  ordered:
+    - showCustomButton: false
+    - sortMappedValue:
+        ordered: []
+    - _filteredSortedRenderedDataWithTypes: null
+    - heightType: fixed
+    - normalizedData: null
+    - saveChangesDisabled: ''
+    - columnTypeProperties:
+        ordered:
+          - code:
+              ordered: []
+    - columnWidths:
+        - object:
+            id: email
+            value: 360.734375
+        - object:
+            id: name
+            value: 144.3984375
+        - object:
+            id: id
+            value: 237.3984375
+        - object:
+            id: source_concept_uuid
+            value: 227.5
+        - object:
+            id: display
+            value: 392.109375
+        - object:
+            id: code
+            value: 130.7265625
+        - object:
+            id: source_display
+            value: 682.4453125
+        - object:
+            id: Custom Column 2
+            value: 158.0625
+        - object:
+            id: Custom Column 1
+            value: 98.109375
+        - object:
+            id: suggestion_display
+            value: 590.90625
+    - showSummaryFooter: false
+    - disableRowSelectInteraction: false
+    - columnWidthsMobile: []
+    - hasNextAfterCursor: ''
+    - columnTypeSpecificExtras:
+        ordered:
+          - Custom Column 1:
+              ordered:
+                - buttonType: action
+                - action: accept_suggest
+    - onRowAdded: ''
+    - columnHeaderNames:
+        ordered:
+          - name: relationship
+          - sales: rxnorm code
+          - code: RxCUI
+          - Custom Column 1: Term Type
+          - Custom Column 2: Dose Form
+          - Custom Column 3: Route
+          - Custom Column 4: Strength
+          - Custom Column 5: Ingredient
+          - id: 'source concept '
+          - email: rxnorm display
+    - alwaysShowPaginator: false
+    - columnColors:
+        ordered:
+          - display: ''
+          - additional_info: ''
+          - suggestion_display: ''
+          - accepted: ''
+          - confidence: ''
+          - name: ''
+          - sales: ''
+          - terminology_version: ''
+          - code: ''
+          - system: ''
+          - assigned_mapper: ''
+          - comments: ''
+          - map_status: ''
+          - source_concept_uuid: ''
+          - suggestion_uuid: ''
+          - timestamp: ''
+          - assigned_reviewer: ''
+          - Custom Column 1: ''
+          - suggestion_source: ''
+          - additional_context: ''
+          - Custom Column 2: ''
+          - Custom Column 3: ''
+          - Custom Column 4: ''
+          - Custom Column 5: ''
+          - id: ''
+          - uuid: ''
+          - concept_map_version_uuid: ''
+          - email: ''
+          - source_display: ''
+    - columnFrozenAlignments:
+        ordered: []
+    - allowMultiRowSelect: false
+    - columnFormats:
+        ordered:
+          - Custom Column 1: default
+          - code: TextDataCell
+    - columnRestrictedEditing:
+        ordered: []
+    - showFilterButton: true
+    - _columnVisibility:
+        ordered:
+          - additional_info: false
+          - confidence: false
+          - name: false
+          - terminology_version: false
+          - code: true
+          - system: false
+          - assigned_mapper: false
+          - source_concept_uuid: false
+          - suggestion_uuid: false
+          - timestamp: false
+          - assigned_reviewer: false
+          - suggestion_source: false
+          - additional_context: false
+          - uuid: false
+          - concept_map_version_uuid: false
+          - source_display: false
+    - _columnSummaryTypes:
+        ordered:
+          - code: ''
+    - _columnsWithLegacyBackgroundColor:
+        set: []
+    - showAddRowButton: false
+    - _unfilteredSelectedIndex: null
+    - nextBeforeCursor: ''
+    - columnVisibility:
+        ordered: []
+    - selectedPageIndex: '0'
+    - applyDynamicSettingsToColumnOrder: true
+    - rowColor:
+        array: []
+    - actionButtonColumnName: Actions
+    - resetAfterSave: true
+    - filterStackType: and
+    - downloadRawData: false
+    - showFetchingIndicator: true
+    - serverPaginated: false
+    - data: '{{suggestion_table.data}}'
+    - displayedData: null
+    - actionButtons:
+        - ordered:
+            - actionButtonText: Accept
+            - actionButtonType: runQuery
+            - actionButtonQuery: save_mapping
+            - actionButtonInternalUrlPath: ''
+            - actionButtonInternalUrlQuery: ''
+            - actionButtonUrl: ''
+            - actionButtonNewWindow: false
+            - actionButtonDisabled: ''
+    - actionButtonSelectsRow: true
+    - selectRowByDefault: true
+    - defaultSortByColumn: ''
+    - paginationOffset: 0
+    - columnAlignment:
+        ordered:
+          - Custom Column 1: left
+          - code: left
+    - columnSummaries:
+        object: {}
+    - showBoxShadow: false
+    - sortedDesc: false
+    - customButtonName: ''
+    - columnMappersRenderAsHTML:
+        ordered: []
+    - showRefreshButton: true
+    - pageSize: '20'
+    - useDynamicColumnSettings: false
+    - actionButtonPosition: right
+    - dynamicRowHeights: false
+    - bulkUpdateAction: ''
+    - afterCursor: ''
+    - onCustomButtonPressQueryName: ''
+    - changeSet:
+        object: {}
+    - sortedColumn: ''
+    - _columnSummaryValues:
+        ordered:
+          - code: ''
+    - checkboxRowSelect: true
+    - _compatibilityMode: false
+    - showColumnBorders: false
+    - clearSelectionLabel: Clear selection
+    - _renderedDataWithTypes: null
+    - columnAllowOverflow:
+        ordered: []
+    - beforeCursor: ''
+    - serverPaginationType: limitOffsetBased
+    - onRowSelect: ''
+    - showDownloadButton: true
+    - selectedIndex: null
+    - defaultSortDescending: false
+    - _sortedDisplayedDataIndices: null
+    - dynamicColumnSettings: null
+    - totalRowCount: ''
+    - recordUpdates:
+        array: []
+    - newRow: null
+    - emptyMessage: No rows found
+    - columnEditable:
+        ordered:
+          - suggestion_display: false
+          - uuid: false
+          - code: false
+          - source_display: false
+          - Custom Column 1: false
+          - Custom Column 2: false
+          - Custom Column 3: false
+          - Custom Column 4: false
+          - Custom Column 5: false
+    - _viewerColumnSummaryTypes:
+        object: {}
+    - filters:
+        array: []
+    - displayedDataIndices: null
+    - disableSorting:
+        ordered: []
+    - columnMappers:
+        ordered:
+          - Custom Column 1: '{{currentRow.additional_info.termType}}'
+          - Custom Column 2: '{{currentRow.additional_info.rxnormDoseForm}}'
+          - Custom Column 3: '{{currentRow.additional_info.route}}'
+          - Custom Column 4: '{{currentRow.additional_info.strength}}'
+          - Custom Column 5: '{{currentRow.additional_info.ingredient}}'
+    - showClearSelection: false
+    - doubleClickToEdit: true
+    - overflowType: pagination
+    - _reverseSortedDisplayedDataIndices: null
+    - selectedCell:
+        object:
+          index: null
+          data: null
+          columnName: null
+    - columns: []
+    - defaultSelectedRow: first
+    - freezeActionButtonColumns: false
+    - sort: null
+    - _columns:
+        - source_display
+        - code
+        - suggestion_display
+        - source_concept_uuid
+        - suggestion_uuid
+        - additional_info
+        - Custom Column 5
+        - Custom Column 4
+        - Custom Column 3
+        - Custom Column 2
+        - Custom Column 1
+    - sortByRawValue:
+        ordered: []
+    - calculatedColumns:
+        - Custom Column 1
+        - Custom Column 2
+        - Custom Column 3
+        - Custom Column 4
+        - Custom Column 5
+    - selectedRow:
+        object:
+          index: null
+          data: null
+    - showPaginationOnTop: false
+    - _reverseDisplayedDataIndices: null
+    - nextAfterCursor: ''
+    - useCompactMode: false
+style:
+  ordered: []
+position2:
+  position2:
+    row: 2.8000000000000003
+    height: 11.6
+    width: 12
+createdAt: 2022-09-06T21:14:46.358Z

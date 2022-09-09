@@ -1,0 +1,26 @@
+id: user_number
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - tooltipText: ''
+    - value: >-
+        **{{user_number_left.data.count_left}}** source concepts left to review
+        for {{select_user.selectedLabel}}
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    row: 15.6
+    height: 0.6
+    width: 3
+createdAt: 2022-09-08T20:27:25.599Z
