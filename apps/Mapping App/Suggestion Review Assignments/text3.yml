@@ -1,0 +1,26 @@
+id: text3
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - tooltipText: ''
+    - value: |-
+        **{{assigned_count.data.assigned_count}}** concepts assigned. 
+        **{{unassigned_count.data.unassigned_count}}** unassigned.
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    row: 1.2
+    height: 0.6
+    width: 3
+createdAt: 2022-09-12T19:10:21.648Z
