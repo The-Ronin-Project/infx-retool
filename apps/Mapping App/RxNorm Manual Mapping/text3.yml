@@ -1,0 +1,27 @@
+id: text3
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - tooltipText: ''
+    - value: '{{getRxCUIbyString.data}} | {{getProperties.data.properties.name}}'
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabbedContainer1
+    rowGroup: header
+    row: 4.996003610813204e-16
+    col: 5
+    height: 0.6
+    width: 7
+createdAt: 2022-09-09T21:57:44.896Z
