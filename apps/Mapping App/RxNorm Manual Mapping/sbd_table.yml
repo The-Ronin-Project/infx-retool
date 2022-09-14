@@ -18,6 +18,9 @@ template:
         - object:
             id: rxcui
             value: 143.3359375
+        - object:
+            id: __retool__action_list
+            value: 122.99996948242188
     - showSummaryFooter: false
     - disableRowSelectInteraction: false
     - columnWidthsMobile: []
@@ -75,7 +78,16 @@ template:
     - serverPaginated: false
     - data: '{{getSBD.data}}'
     - displayedData: null
-    - actionButtons: []
+    - actionButtons:
+        - ordered:
+            - actionButtonText: Map It
+            - actionButtonType: runQuery
+            - actionButtonQuery: map_it
+            - actionButtonInternalUrlPath: ''
+            - actionButtonInternalUrlQuery: ''
+            - actionButtonUrl: ''
+            - actionButtonNewWindow: false
+            - actionButtonDisabled: ''
     - actionButtonSelectsRow: true
     - selectRowByDefault: true
     - defaultSortByColumn: ''
