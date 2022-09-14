@@ -8,8 +8,7 @@ template:
     - queryRefreshTime: ''
     - paginationLimit: ''
     - body: >-
-        [{"key":"source_concept_uuid","value":"{{mapping_queue.selectedRow.data.uuid}}"},{"key":"relationship_code_uuid","value":"f2a20235-bd9d-4f6a-8e78-b3f41f97d07f"},{"key":"target_concept_code","value":"{{detailView.data.rxcui}}"},{"key":"target_concept_display","value":"{{detailView.data.fullName}}"},{"key":"target_concept_terminology_version_uuid","value":"3dae1d22-06a1-4e60-98e7-42a2a241bf9d"},{"key":"author","value":"{{user_select.selectedLabel}}"},{"key":"mapping_comments","value":"Manually
-        Mapped"}]
+        [{"key":"source_concept_uuid","value":"{{mapping_queue.selectedRow.data.uuid}}"},{"key":"relationship_code_uuid","value":"f2a20235-bd9d-4f6a-8e78-b3f41f97d07f"},{"key":"target_concept_code","value":"{{detailView.data.rxcui}}"},{"key":"target_concept_display","value":"{{detailView.data.fullName}}"},{"key":"target_concept_terminology_version_uuid","value":"3dae1d22-06a1-4e60-98e7-42a2a241bf9d"},{"key":"author","value":"{{user_select.selectedLabel}}"},{"key":"mapping_comments","value":"{{mapping_comments.value}}"}]
     - lastReceivedFromResourceAt: null
     - queryDisabledMessage: ''
     - successMessage: ''
@@ -65,7 +64,17 @@ template:
         20)
 
         return data
-    - events: []
+    - events:
+        - ordered:
+            - event: success
+            - type: datasource
+            - method: trigger
+            - pluginId: load_queue
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
     - queryTimeout: '10000'
     - requireConfirmation: false
     - type: POST
