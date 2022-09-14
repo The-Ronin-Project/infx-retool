@@ -1,0 +1,27 @@
+id: text5
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - tooltipText: ''
+    - value: >-
+        ##### **Can't find it in our search?** [Check RxNav
+        Manually](https://mor.nlm.nih.gov/RxNav/search)
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    row: 4.400000000000002
+    col: 4
+    height: 0.6
+    width: 4
+createdAt: 2022-09-09T22:56:21.738Z
