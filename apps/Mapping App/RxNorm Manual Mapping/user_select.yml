@@ -44,7 +44,7 @@ template:
     - tooltipText: ''
     - labelAlign: left
     - formDataKey: '{{ self.id }}'
-    - value: '{{getUserMatch.data.first_last_name[0]}}'
+    - value: '{{getUserMatch.data.uuid[0]}}'
     - hiddenByIndex: ''
     - labelCaption: ''
     - labelWidth: '33'
@@ -54,7 +54,7 @@ template:
         - ''
         - ''
         - ''
-    - placeholder: ''
+    - placeholder: Select User
     - _captionByIndex:
         - ''
         - ''
