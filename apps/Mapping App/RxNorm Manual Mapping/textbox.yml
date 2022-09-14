@@ -10,7 +10,7 @@ template:
     - showInEditor: false
     - verticalAlign: center
     - tooltipText: ''
-    - value: '#### **No Map**'
+    - value: '##### **No Map:**'
     - disableMarkdown: false
     - overflowType: scroll
     - maintainSpaceWhenHidden: false
@@ -18,7 +18,7 @@ style:
   ordered: []
 position2:
   position2:
-    row: 28.400000000000002
+    row: 28.000000000000004
     col: 9
     height: 0.6
     width: 1
