@@ -10,7 +10,7 @@ template:
     - showInEditor: false
     - verticalAlign: center
     - tooltipText: ''
-    - value: '#### {{mapping_queue.selectedRow.data.id}}'
+    - value: '#### {{mapping_queue.selectedRow.data.display}}'
     - disableMarkdown: false
     - overflowType: scroll
     - maintainSpaceWhenHidden: false
