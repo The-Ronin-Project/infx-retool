@@ -23,6 +23,7 @@ template:
         and uuid not in (
           select distinct source_concept_uuid from concept_maps.concept_relationship
         )
+        and no_map is not true
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - privateParams: []
@@ -75,7 +76,18 @@ template:
         20)
 
         return data
-    - events: []
+    - events:
+        - ordered:
+            - event: success
+            - type: widget
+            - method: setValue
+            - pluginId: search_text_input
+            - targetId: null
+            - params:
+                ordered:
+                  - value: '{{mapping_queue.selectedRow.data.display}}'
+            - waitType: debounce
+            - waitMs: '0'
     - tableName: ''
     - queryTimeout: '10000'
     - requireConfirmation: false

@@ -29,7 +29,8 @@ template:
     - showSuccessToaster: true
     - dataArray: []
     - cacheKeyTtl: ''
-    - filterBy: '[{"key":"uuid","value":"","operation":"="}]'
+    - filterBy: >-
+        [{"key":"uuid","value":"{{mapping_queue.selectedRow.data.uuid}}","operation":"="}]
     - databaseHostOverride: ''
     - metadata: null
     - editorMode: gui
