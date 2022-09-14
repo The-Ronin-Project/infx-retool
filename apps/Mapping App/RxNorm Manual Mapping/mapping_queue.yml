@@ -26,10 +26,22 @@ template:
     - alwaysShowPaginator: false
     - columnColors:
         ordered:
-          - id: ''
+          - display: ''
           - name: ''
-          - email: ''
           - sales: ''
+          - code: ''
+          - system: ''
+          - reason_for_no_map: ''
+          - assigned_mapper: ''
+          - comments: ''
+          - map_status: ''
+          - assigned_reviewer: ''
+          - additional_context: ''
+          - id: ''
+          - uuid: ''
+          - concept_map_version_uuid: ''
+          - email: ''
+          - no_map: ''
     - columnFrozenAlignments:
         ordered: []
     - allowMultiRowSelect: false
@@ -41,8 +53,19 @@ template:
     - _columnVisibility:
         ordered:
           - name: false
-          - email: false
           - sales: false
+          - code: false
+          - system: false
+          - reason_for_no_map: false
+          - assigned_mapper: false
+          - comments: false
+          - map_status: false
+          - assigned_reviewer: false
+          - additional_context: false
+          - uuid: false
+          - concept_map_version_uuid: false
+          - email: false
+          - no_map: false
     - _columnSummaryTypes:
         ordered: []
     - _columnsWithLegacyBackgroundColor:
@@ -62,33 +85,7 @@ template:
     - downloadRawData: false
     - showFetchingIndicator: true
     - serverPaginated: false
-    - data: |-
-        [{
-          "id": "acetaminophen 325mg tablet",
-          "name": "Hanson Deck",
-          "email": "hanson@deck.com",
-          "sales": 37
-        }, {
-          "id": "{11 (varenicline 0.5 MG Oral Tablet) / 42 (varenicline 1 MG Oral Tablet) } Pack",
-          "name": "Sue Shei",
-          "email": "sueshei@example.com",
-          "sales": 550
-        }, {
-          "id": "{12 (Ethinyl Estradiol 0.035 MG / Norethindrone 0.5 MG Oral Tablet) / 9 (Ethinyl Estradiol 0.035 MG / Norethindrone 1 MG Oral Tablet) / 7 (Inert Ingredients 1 MG Oral Tablet) } Pack [Leena 28 Day]",
-          "name": "Jason Response",
-          "email": "jason@response.com",
-          "sales": 55
-        }, {
-          "id": "fluoxetine 20 MG Oral Capsule [Prozac]",
-          "name": "Cher Actor",
-          "email": "cher@example.com",
-          "sales": 424
-        }, {
-          "id": "amLODIPine 10 MG",
-          "name": "Erica Widget",
-          "email": "erica@widget.org",
-          "sales": 243
-        }]
+    - data: '{{load_queue.data}}'
     - displayedData: null
     - actionButtons: []
     - actionButtonSelectsRow: true
@@ -141,7 +138,7 @@ template:
             - targetId: null
             - params:
                 ordered:
-                  - value: '{{mapping_queue.selectedRow.data.id}}'
+                  - value: '{{mapping_queue.selectedRow.data.display}}'
             - waitType: debounce
             - waitMs: '0'
     - totalRowCount: ''
