@@ -1,4 +1,4 @@
-id: button1
+id: map_details
 type: widget
 subtype: ButtonWidget2
 template:
@@ -15,7 +15,16 @@ template:
     - submit: false
     - iconBefore: ''
     - events:
-        ordered: []
+        - ordered:
+            - event: click
+            - type: datasource
+            - method: trigger
+            - pluginId: map_from_detail_view
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
     - loading: false
     - loaderPosition: auto
     - disabled: false

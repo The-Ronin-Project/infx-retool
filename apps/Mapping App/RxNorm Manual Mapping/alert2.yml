@@ -17,9 +17,7 @@ template:
     - title: No Match Found
     - type: warning
     - exportFileName: ''
-    - description: >-
-        Try formatting your query as Ingredient + Strength + Dose Form (ex.
-        "Fluoxetine 4 MG/ML Oral Solution")
+    - description: Try cutting-down your search to Ingredient only or just a Brand Name.
     - buttonText: ''
 style:
   ordered: []

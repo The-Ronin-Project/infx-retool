@@ -82,7 +82,7 @@ template:
         - ordered:
             - actionButtonText: Map It
             - actionButtonType: runQuery
-            - actionButtonQuery: map_it
+            - actionButtonQuery: map_branded_drug
             - actionButtonInternalUrlPath: ''
             - actionButtonInternalUrlQuery: ''
             - actionButtonUrl: ''
