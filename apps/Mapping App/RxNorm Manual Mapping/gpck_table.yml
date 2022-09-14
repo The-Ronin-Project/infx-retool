@@ -74,7 +74,16 @@ template:
     - serverPaginated: false
     - data: '{{getGPCK.data}}'
     - displayedData: null
-    - actionButtons: []
+    - actionButtons:
+        - ordered:
+            - actionButtonText: Map It
+            - actionButtonType: runQuery
+            - actionButtonQuery: map_it
+            - actionButtonInternalUrlPath: ''
+            - actionButtonInternalUrlQuery: ''
+            - actionButtonUrl: ''
+            - actionButtonNewWindow: false
+            - actionButtonDisabled: ''
     - actionButtonSelectsRow: true
     - selectRowByDefault: true
     - defaultSortByColumn: ''
