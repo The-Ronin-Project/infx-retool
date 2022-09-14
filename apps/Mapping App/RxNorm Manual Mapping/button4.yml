@@ -1,4 +1,4 @@
-id: button3
+id: button4
 type: widget
 subtype: ButtonWidget2
 template:
@@ -8,9 +8,12 @@ template:
     - iconAfter: ''
     - submitTargetId: null
     - hidden: false
-    - text: Model It
+    - text: Make a mistake? Fix in Recently Mapped View
     - showInEditor: false
     - tooltipText: ''
+    - style:
+        ordered:
+          - background: canvas
     - styleVariant: solid
     - submit: false
     - iconBefore: ''
@@ -23,10 +26,14 @@ template:
             - targetId: null
             - params:
                 ordered:
+                  - uuid: f6114ba0-3475-11ed-85a1-178db876f5ba
                   - options:
                       ordered:
+                        - queryParams:
+                            - ordered:
+                                - key: concept_map_version_uuid
+                                - value: '{{urlparams.concept_map_version}}'
                         - newTab: true
-                  - uuid: bd569640-32f8-11ed-ae74-3345d7be0315
             - waitType: debounce
             - waitMs: '0'
     - loading: false
@@ -37,8 +44,8 @@ style:
   ordered: []
 position2:
   position2:
-    row: 29.999999999999996
+    row: 25.8
     col: 4
     height: 1
     width: 3
-createdAt: 2022-09-09T22:54:29.416Z
+createdAt: 2022-09-14T22:39:49.465Z
