@@ -1,4 +1,4 @@
-id: map_it
+id: map_generic_pack
 type: datasource
 subtype: RESTQuery
 resourceName: a00335cd-bd3b-4d98-8af4-7ff590ce95e8
@@ -8,7 +8,7 @@ template:
     - queryRefreshTime: ''
     - paginationLimit: ''
     - body: >-
-        [{"key":"source_concept_uuid","value":"{{mapping_queue.selectedRow.data.uuid}}"},{"key":"relationship_code_uuid","value":"f2a20235-bd9d-4f6a-8e78-b3f41f97d07f"},{"key":"target_concept_code","value":"{{scd_table.selectedRow.data.rxcui}}"},{"key":"target_concept_display","value":"{{scd_table.selectedRow.data.name}}"},{"key":"target_concept_terminology_version_uuid","value":"3dae1d22-06a1-4e60-98e7-42a2a241bf9d"},{"key":"author","value":"{{user_select.selectedLabel}}"},{"key":"mapping_comments","value":"Manually
+        [{"key":"source_concept_uuid","value":"{{mapping_queue.selectedRow.data.uuid}}"},{"key":"relationship_code_uuid","value":"f2a20235-bd9d-4f6a-8e78-b3f41f97d07f"},{"key":"target_concept_code","value":"{{gpck_table.selectedRow.data.rxcui}}"},{"key":"target_concept_display","value":"{{gpck_table.selectedRow.data.name}}"},{"key":"target_concept_terminology_version_uuid","value":"3dae1d22-06a1-4e60-98e7-42a2a241bf9d"},{"key":"author","value":"{{user_select.selectedLabel}}"},{"key":"mapping_comments","value":"Manually
         Mapped"}]
     - lastReceivedFromResourceAt: null
     - queryDisabledMessage: ''
@@ -77,4 +77,4 @@ template:
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2022-09-13T19:06:35.497Z
+createdAt: 2022-09-14T18:44:20.618Z

@@ -54,7 +54,7 @@ template:
         - ''
         - ''
         - ''
-    - placeholder: Select User
+    - placeholder: ''
     - _captionByIndex:
         - ''
         - ''

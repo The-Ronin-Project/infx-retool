@@ -78,7 +78,7 @@ template:
         - ordered:
             - actionButtonText: Map It
             - actionButtonType: runQuery
-            - actionButtonQuery: map_it
+            - actionButtonQuery: map_generic_pack
             - actionButtonInternalUrlPath: ''
             - actionButtonInternalUrlQuery: ''
             - actionButtonUrl: ''
