@@ -8,6 +8,7 @@ template:
     - rowFormats:
         ordered: []
     - valueTitle: Value
+    - hidden: '{{rxcui_input.value == ""}}'
     - data: '{{getInfoBeforeMapping.data}}'
     - prevRowMappers:
         ordered: []
