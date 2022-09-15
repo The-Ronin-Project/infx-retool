@@ -27,7 +27,7 @@ template:
         on project_management.user.uuid = source_concept.assigned_mapper
 
         where
-        source_concept.concept_map_version_uuid={{urlparams.concept_map_version}}
+        source_concept.concept_map_version_uuid={{urlparams.concept_map_version_uuid}}
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - privateParams: []

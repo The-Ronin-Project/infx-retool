@@ -18,6 +18,7 @@ template:
     - type: warning
     - exportFileName: ''
     - description: Try cutting-down your search to Ingredient only or just a Brand Name.
+    - maintainSpaceWhenHidden: true
     - buttonText: ''
 style:
   ordered: []

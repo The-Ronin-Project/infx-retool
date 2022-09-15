@@ -13,12 +13,12 @@ template:
     - value: '**Can''t Find it in RxNav?**'
     - disableMarkdown: false
     - overflowType: scroll
-    - maintainSpaceWhenHidden: false
+    - maintainSpaceWhenHidden: true
 style:
   ordered: []
 position2:
   position2:
-    row: 28.799999999999986
+    row: 6.199999999999989
     col: 4
     height: 0.6
     width: 3
