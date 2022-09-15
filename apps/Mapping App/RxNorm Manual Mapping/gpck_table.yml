@@ -157,7 +157,7 @@ template:
         ordered: []
     - showClearSelection: false
     - doubleClickToEdit: true
-    - overflowType: pagination
+    - overflowType: scroll
     - _reverseSortedDisplayedDataIndices: null
     - selectedCell:
         object:
