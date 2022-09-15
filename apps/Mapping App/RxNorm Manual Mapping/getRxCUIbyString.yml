@@ -62,6 +62,11 @@ template:
         // example: return formatDataAsArray(data).filter(row => row.quantity >
         20)
 
+        if (!isNaN({{ search_text_input.value }}) && !isNaN(parseFloat({{
+        search_text_input.value }}))) {
+          return {{ search_text_input.value }}
+        }
+
         let idGroup = data['idGroup']
 
         if (!idGroup.hasOwnProperty('rxnormId')) {
