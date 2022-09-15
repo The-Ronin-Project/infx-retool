@@ -58,6 +58,7 @@ template:
     - actionButtonColumnName: Actions
     - resetAfterSave: true
     - filterStackType: and
+    - hidden: '{{rxcui_input.value == ""}}'
     - downloadRawData: false
     - showFetchingIndicator: true
     - serverPaginated: false
