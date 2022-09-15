@@ -11,9 +11,11 @@ template:
     - hidden: '{{rxcui_input.value == ""}}'
     - data: '{{getInfoBeforeMapping.data}}'
     - prevRowMappers:
-        ordered: []
+        ordered:
+          - rxcui: <strong>{{self}}</strong>
     - rowMappersRenderAsHTML:
-        ordered: []
+        ordered:
+          - rxcui: true
     - rowVisibility:
         ordered:
           - queryRefreshTime: true
@@ -96,7 +98,8 @@ template:
     - prevRowFormats:
         ordered: []
     - rowMappers:
-        ordered: []
+        ordered:
+          - rxcui: <strong>{{self}}</strong>
     - rows:
         - a
         - b
@@ -160,6 +163,7 @@ template:
         - data
         - servedFromCache
         - rxtermsProperties
+        - rxcui
         - fullName
         - fullGenericName
         - brandName
@@ -169,7 +173,6 @@ template:
         - rxtermsDoseForm
         - route
         - termType
-        - rxcui
         - genericRxcui
         - rxnormDoseForm
         - suppress
@@ -180,7 +183,7 @@ style:
   ordered: []
 position2:
   position2:
-    row: 14.200000000000003
-    height: 10.6
+    row: 14.800000000000002
+    height: 10.4
     width: 4
 createdAt: 2022-09-09T22:22:02.011Z

@@ -30,6 +30,7 @@ template:
           - name: ''
           - sales: ''
           - code: ''
+          - mapping_group: ''
           - system: ''
           - reason_for_no_map: ''
           - assigned_mapper: ''
@@ -55,6 +56,7 @@ template:
           - name: false
           - sales: false
           - code: false
+          - mapping_group: false
           - system: false
           - reason_for_no_map: false
           - assigned_mapper: false
@@ -186,7 +188,7 @@ style:
   ordered: []
 position2:
   position2:
-    row: 2
+    row: 2.6
     height: 11.000000000000002
     width: 4
 createdAt: 2022-09-08T21:21:14.896Z
