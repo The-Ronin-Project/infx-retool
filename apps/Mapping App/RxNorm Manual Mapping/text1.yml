@@ -10,7 +10,7 @@ template:
     - showInEditor: false
     - verticalAlign: center
     - tooltipText: ''
-    - value: '#### Mapping Queue'
+    - value: '**Mapping Queue**'
     - disableMarkdown: false
     - overflowType: scroll
     - maintainSpaceWhenHidden: false

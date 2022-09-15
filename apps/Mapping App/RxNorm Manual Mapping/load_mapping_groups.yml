@@ -1,4 +1,4 @@
-id: load_queue
+id: load_mapping_groups
 type: datasource
 subtype: SqlQueryUnified
 resourceName: dc8029bc-3980-4836-841e-776c64eeca49
@@ -16,21 +16,10 @@ template:
     - resourceNameOverride: ''
     - runWhenModelUpdates: true
     - showFailureToaster: true
-    - query: >-
-        select * from concept_maps.source_concept
-
+    - query: |-
+        select distinct mapping_group 
+        from concept_maps.source_concept
         where assigned_mapper={{user_select.value}}
-
-        and concept_map_version_uuid={{urlparams.concept_map_version_uuid}}
-
-        and uuid not in (
-          select distinct source_concept_uuid from concept_maps.concept_relationship
-        )
-
-        and no_map is not true
-
-        and (mapping_group={{mapping_group_select.value}} or
-        {{mapping_group_select.value == null}})
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - privateParams: []
@@ -83,18 +72,7 @@ template:
         20)
 
         return data
-    - events:
-        - ordered:
-            - event: success
-            - type: widget
-            - method: setValue
-            - pluginId: search_text_input
-            - targetId: null
-            - params:
-                ordered:
-                  - value: '{{mapping_queue.selectedRow.data.display}}'
-            - waitType: debounce
-            - waitMs: '0'
+    - events: []
     - tableName: ''
     - queryTimeout: '10000'
     - requireConfirmation: false
@@ -108,4 +86,4 @@ template:
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2022-09-14T16:48:30.182Z
+createdAt: 2022-09-15T22:15:36.332Z

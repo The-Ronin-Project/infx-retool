@@ -9,7 +9,7 @@ template:
     - showCharacterCount: false
     - autoComplete: false
     - maxLength: null
-    - hidden: false
+    - hidden: 'true'
     - customValidation: ''
     - patternType: ''
     - hideValidationMessage: false
@@ -47,7 +47,7 @@ style:
   ordered: []
 position2:
   position2:
-    row: 13.200000000000001
+    row: 13.8
     height: 1
     width: 4
 createdAt: 2022-09-09T22:22:09.231Z
