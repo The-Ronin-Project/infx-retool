@@ -8,12 +8,14 @@ template:
         - ''
         - ''
         - false
+        - false
     - showSelectionIndicator: true
     - horizontalAlign: stretch
     - iconByIndex:
         array: []
     - clickable: false
     - _iconByIndex:
+        - ''
         - ''
         - ''
         - ''
@@ -31,7 +33,9 @@ template:
         - ''
         - ''
         - false
+        - false
     - _captionByIndex:
+        - ''
         - ''
         - ''
         - ''
@@ -43,6 +47,7 @@ template:
     - itemMode: static
     - selectedIndex: 0
     - _tooltipByIndex:
+        - ''
         - ''
         - ''
         - ''
@@ -96,6 +101,7 @@ template:
         - 0bd43
         - b7644
         - e85eb
+        - '20e16'
     - overlayMaxHeight: 375
     - loading: false
     - disabled: false
@@ -104,6 +110,7 @@ template:
         - 'missing form '
         - doesn't exist in RxNorm
         - not enough information
+        - Save for discusion
     - disabledByIndex:
         array: []
     - maintainSpaceWhenHidden: false
