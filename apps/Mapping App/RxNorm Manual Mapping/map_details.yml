@@ -7,7 +7,7 @@ template:
     - clickable: false
     - iconAfter: ''
     - submitTargetId: null
-    - hidden: false
+    - hidden: '{{rxcui_input.value == ""}}'
     - text: Map It!
     - showInEditor: false
     - tooltipText: ''
@@ -33,7 +33,7 @@ style:
   ordered: []
 position2:
   position2:
-    row: 29.4
+    row: 30.399999999999995
     height: 1
     width: 4
 createdAt: 2022-09-09T22:30:36.320Z

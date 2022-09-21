@@ -1,4 +1,4 @@
-id: tabbedContainer1
+id: rxnorm_search_results_container
 type: widget
 subtype: ContainerWidget2
 template:
@@ -69,10 +69,10 @@ template:
     - overflowType: scroll
     - disabled: false
     - _labels:
-        - Clinical Drug ({{getSCD.data.length}})
-        - Branded Drug ({{getSBD.data.length}})
-        - Generic Pack ({{getGPCK.data.length}})
-        - Branded Pack ({{getBPCK.data.length}})
+        - Clinical Drug ({{search_rxnorm.data.results.SCD.length}})
+        - Branded Drug ({{search_rxnorm.data.results.SBD.length}})
+        - Generic Pack ({{search_rxnorm.data.results.GPCK.length}})
+        - Branded Pack ({{search_rxnorm.data.results.BPCK.length}})
     - disabledByIndex:
         array: []
     - maintainSpaceWhenHidden: false
@@ -83,7 +83,7 @@ style:
   ordered: []
 position2:
   position2:
-    row: 4.200000000000003
+    row: 3.200000000000003
     col: 4
     height: 0.2
     width: 8

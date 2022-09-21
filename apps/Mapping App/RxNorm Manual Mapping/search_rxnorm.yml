@@ -1,0 +1,142 @@
+id: search_rxnorm
+type: datasource
+subtype: RESTQuery
+resourceName: a00335cd-bd3b-4d98-8af4-7ff590ce95e8
+resourceDisplayName: INFX Internal Tools API
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - paginationLimit: ''
+    - body: ''
+    - lastReceivedFromResourceAt: null
+    - queryDisabledMessage: ''
+    - successMessage: ''
+    - queryDisabled: ''
+    - playgroundQuerySaveId: latest
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: true
+    - paginationPaginationField: ''
+    - headers: ''
+    - showFailureToaster: true
+    - paginationEnabled: false
+    - query: rxnorm_search?query_string={{search_text_input.value}}
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - privateParams: []
+    - runWhenPageLoadsDelay: ''
+    - data: null
+    - importedQueryInputs:
+        ordered: []
+    - isImported: false
+    - showSuccessToaster: true
+    - cacheKeyTtl: ''
+    - cookies: ''
+    - metadata: null
+    - changesetObject: ''
+    - errorTransformer: >-
+        // The variable 'data' allows you to reference the request's data in the
+        transformer. 
+
+        // example: return data.find(element => element.isError)
+
+        return data.error
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - resourceTypeOverride: null
+    - watchedParams: []
+    - enableErrorTransformer: false
+    - showLatestVersionUpdatedWarning: false
+    - paginationDataField: ''
+    - timestamp: 0
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - runWhenPageLoads: false
+    - transformer: >-
+        // type your code here
+
+        // example: return formatDataAsArray(data).filter(row => row.quantity >
+        20)
+
+        return data
+    - events:
+        - ordered:
+            - method: setCurrentViewIndex
+            - enabled: >-
+                {{search_rxnorm.data.results.SCD !== undefined &&
+                search_rxnorm.data.results.SCD !== null &&
+                search_rxnorm.data.results.SCD.map(x =>
+                x.rxcui).includes(search_rxnorm.data.top_rxcui)}}
+            - params:
+                ordered:
+                  - viewIndex: '0'
+            - targetId: null
+            - pluginId: rxnorm_search_results_container
+            - waitType: debounce
+            - event: success
+            - type: widget
+            - waitMs: '0'
+        - ordered:
+            - method: setCurrentViewIndex
+            - enabled: >-
+                {{search_rxnorm.data.results.SBD !== undefined &&
+                search_rxnorm.data.results.SBD !== undefined &&
+                search_rxnorm.data.results.SBD.map(x =>
+                x.rxcui).includes(search_rxnorm.data.top_rxcui)}}
+            - params:
+                ordered:
+                  - viewIndex: '1'
+            - targetId: null
+            - pluginId: rxnorm_search_results_container
+            - waitType: debounce
+            - event: success
+            - type: widget
+            - waitMs: '0'
+        - ordered:
+            - method: setCurrentViewIndex
+            - enabled: >-
+                {{search_rxnorm.data.results.GPCK !== undefined &&
+                search_rxnorm.data.results.GPCK !== null &&
+                search_rxnorm.data.results.GPCK.map(x =>
+                x.rxcui).includes(search_rxnorm.data.top_rxcui)}}
+            - params:
+                ordered:
+                  - viewIndex: '2'
+            - targetId: null
+            - pluginId: rxnorm_search_results_container
+            - waitType: debounce
+            - event: success
+            - type: widget
+            - waitMs: '0'
+        - ordered:
+            - method: setCurrentViewIndex
+            - enabled: >-
+                {{search_rxnorm.data.results.BPCK !== undefined &&
+                search_rxnorm.data.results.BPCK !== null &&
+                search_rxnorm.data.results.BPCK.map(x =>
+                x.rxcui).includes(search_rxnorm.data.top_rxcui)}}
+            - params:
+                ordered:
+                  - viewIndex: '3'
+            - targetId: null
+            - pluginId: rxnorm_search_results_container
+            - waitType: debounce
+            - event: success
+            - type: widget
+            - waitMs: '0'
+    - queryTimeout: '10000'
+    - requireConfirmation: false
+    - type: GET
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups: []
+    - bodyType: json
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+createdAt: 2022-09-20T20:43:09.999Z

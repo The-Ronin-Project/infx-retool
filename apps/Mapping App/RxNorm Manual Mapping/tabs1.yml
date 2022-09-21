@@ -23,7 +23,7 @@ template:
     - hidden: false
     - data:
         array: []
-    - targetContainerId: tabbedContainer1
+    - targetContainerId: rxnorm_search_results_container
     - selectedItem: null
     - showInEditor: false
     - navigateContainer: true
@@ -71,7 +71,7 @@ style:
   ordered: []
 position2:
   position2:
-    container: tabbedContainer1
+    container: rxnorm_search_results_container
     rowGroup: header
     row: 0.6000000000000001
     height: 0.8

@@ -33,13 +33,23 @@ template:
     - alwaysShowPaginator: false
     - columnColors:
         ordered:
-          - rxcui: ''
+          - strength: ''
+          - rxtermsDoseForm: ''
+          - rxnormDoseForm: ''
+          - termType: ''
+          - route: ''
           - name: ''
-          - synonym: ''
-          - tty: ''
-          - language: ''
+          - displayName: ''
+          - rxcui: '{{search_rxnorm.data.top_rxcui == self ? ''#C1E1C1'' : ''white''}}'
+          - brandName: ''
+          - fullGenericName: ''
           - suppress: ''
+          - language: ''
           - umlscui: ''
+          - tty: ''
+          - fullName: ''
+          - genericRxcui: ''
+          - synonym: ''
     - columnFrozenAlignments:
         ordered: []
     - allowMultiRowSelect: false
@@ -51,11 +61,21 @@ template:
     - showFilterButton: true
     - _columnVisibility:
         ordered:
-          - synonym: false
-          - tty: false
-          - language: false
+          - strength: false
+          - rxtermsDoseForm: false
+          - rxnormDoseForm: false
+          - termType: false
+          - route: false
+          - displayName: false
+          - brandName: false
+          - fullGenericName: false
           - suppress: false
+          - language: false
           - umlscui: false
+          - tty: false
+          - fullName: false
+          - genericRxcui: false
+          - synonym: false
     - _columnSummaryTypes:
         ordered:
           - rxcui: ''
@@ -76,7 +96,7 @@ template:
     - downloadRawData: false
     - showFetchingIndicator: true
     - serverPaginated: false
-    - data: '{{getSBD.data}}'
+    - data: '{{ search_rxnorm.data.results.SBD }}'
     - displayedData: null
     - actionButtons:
         - ordered:
@@ -172,7 +192,20 @@ template:
     - defaultSelectedRow: first
     - freezeActionButtonColumns: false
     - sort: null
-    - _columns: []
+    - _columns:
+        - rxcui
+        - brandName
+        - displayName
+        - fullGenericName
+        - fullName
+        - genericRxcui
+        - route
+        - rxnormDoseForm
+        - rxtermsDoseForm
+        - strength
+        - suppress
+        - synonym
+        - termType
     - sortByRawValue:
         ordered: []
     - calculatedColumns: []
@@ -188,7 +221,7 @@ style:
   ordered: []
 position2:
   position2:
-    container: tabbedContainer1
+    container: rxnorm_search_results_container
     subcontainer: 7ae2f
     height: 18.6
     width: 12
