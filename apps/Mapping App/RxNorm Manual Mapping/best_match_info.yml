@@ -1,4 +1,4 @@
-id: text9
+id: best_match_info
 type: widget
 subtype: TextWidget2
 template:
@@ -10,7 +10,9 @@ template:
     - showInEditor: false
     - verticalAlign: center
     - tooltipText: ''
-    - value: '[What was the reason?](https://www.youtube.com/watch?v=_cF377eW0nU)'
+    - value: >-
+        {{search_rxnorm.data.top_rxcui}} |
+        {{top_rxcui_name.data.properties.name}}
     - disableMarkdown: false
     - overflowType: scroll
     - maintainSpaceWhenHidden: false
@@ -18,8 +20,10 @@ style:
   ordered: []
 position2:
   position2:
-    row: 5.599999999999991
-    col: 10
+    container: rxnorm_search_results_container
+    rowGroup: header
+    row: 4.996003610813204e-16
+    col: 5
     height: 0.6
-    width: 2
-createdAt: 2022-09-14T17:50:54.459Z
+    width: 7
+createdAt: 2022-09-09T21:57:44.896Z

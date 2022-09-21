@@ -4,13 +4,13 @@ subtype: TextWidget2
 template:
   ordered:
     - heightType: auto
-    - horizontalAlign: left
+    - horizontalAlign: right
     - hidden: false
     - imageWidth: fit
     - showInEditor: false
     - verticalAlign: center
     - tooltipText: ''
-    - value: '##### **No Map:**'
+    - value: '**No Map Reason**'
     - disableMarkdown: false
     - overflowType: scroll
     - maintainSpaceWhenHidden: false
@@ -18,8 +18,7 @@ style:
   ordered: []
 position2:
   position2:
-    row: 5.599999999999994
-    col: 9
+    row: 13.799999999999992
     height: 0.6
     width: 1
 createdAt: 2022-09-14T17:32:20.920Z

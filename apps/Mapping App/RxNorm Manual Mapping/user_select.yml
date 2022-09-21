@@ -60,7 +60,7 @@ template:
         - ''
         - ''
     - itemAdornmentSize: auto
-    - label: ''
+    - label: User
     - _hasMigratedNestedItems: true
     - captionByIndex: ''
     - _validate: false

@@ -33,13 +33,23 @@ template:
     - alwaysShowPaginator: false
     - columnColors:
         ordered:
-          - rxcui: ''
+          - strength: ''
+          - rxtermsDoseForm: ''
+          - rxnormDoseForm: ''
+          - termType: ''
+          - route: ''
           - name: ''
-          - synonym: ''
-          - tty: ''
-          - language: ''
+          - displayName: ''
+          - rxcui: '{{search_rxnorm.data.top_rxcui == self ? ''#C1E1C1'' : ''white''}}'
+          - brandName: ''
+          - fullGenericName: ''
           - suppress: ''
+          - language: ''
           - umlscui: ''
+          - tty: ''
+          - fullName: ''
+          - genericRxcui: ''
+          - synonym: ''
     - columnFrozenAlignments:
         ordered: []
     - allowMultiRowSelect: false
@@ -51,10 +61,20 @@ template:
     - showFilterButton: true
     - _columnVisibility:
         ordered:
+          - strength: false
+          - rxtermsDoseForm: false
+          - rxnormDoseForm: false
+          - termType: false
+          - route: false
+          - displayName: false
+          - brandName: false
+          - fullGenericName: false
           - suppress: false
-          - umlscui: false
           - language: false
+          - umlscui: false
           - tty: false
+          - fullName: false
+          - genericRxcui: false
           - synonym: false
     - _columnSummaryTypes:
         ordered:
@@ -76,7 +96,7 @@ template:
     - downloadRawData: false
     - showFetchingIndicator: true
     - serverPaginated: false
-    - data: '{{getSCD.data}}'
+    - data: '{{search_rxnorm.data.results.SCD}}'
     - displayedData: null
     - actionButtons:
         - ordered:
@@ -158,7 +178,8 @@ template:
     - disableSorting:
         ordered: []
     - columnMappers:
-        ordered: []
+        ordered:
+          - rxcui: ''
     - showClearSelection: false
     - doubleClickToEdit: true
     - overflowType: scroll
@@ -172,7 +193,14 @@ template:
     - defaultSelectedRow: first
     - freezeActionButtonColumns: false
     - sort: null
-    - _columns: []
+    - _columns:
+        - language
+        - rxcui
+        - name
+        - suppress
+        - synonym
+        - tty
+        - umlscui
     - sortByRawValue:
         ordered: []
     - calculatedColumns: []
@@ -188,7 +216,7 @@ style:
   ordered: []
 position2:
   position2:
-    container: tabbedContainer1
+    container: rxnorm_search_results_container
     subcontainer: b667b
     row: -8.881784197001252e-16
     height: 17.2

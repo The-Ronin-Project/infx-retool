@@ -46,7 +46,7 @@ template:
     - placeholder: Select an option
     - _captionByIndex: []
     - itemAdornmentSize: auto
-    - label: ''
+    - label: Queue
     - _hasMigratedNestedItems: true
     - captionByIndex:
         array: []

@@ -12,7 +12,10 @@ template:
     - saveChangesDisabled: ''
     - columnTypeProperties:
         ordered: []
-    - columnWidths: []
+    - columnWidths:
+        - object:
+            id: display
+            value: 402.6640625
     - showSummaryFooter: false
     - disableRowSelectInteraction: false
     - columnWidthsMobile: []
@@ -47,7 +50,8 @@ template:
         ordered: []
     - allowMultiRowSelect: false
     - columnFormats:
-        ordered: []
+        ordered:
+          - Custom Column 1: button
     - columnRestrictedEditing:
         ordered: []
     - showFilterButton: true
@@ -89,13 +93,23 @@ template:
     - serverPaginated: false
     - data: '{{load_queue.data}}'
     - displayedData: null
-    - actionButtons: []
+    - actionButtons:
+        - ordered:
+            - actionButtonText: No Map
+            - actionButtonType: runQuery
+            - actionButtonQuery: no_map_it
+            - actionButtonInternalUrlPath: ''
+            - actionButtonInternalUrlQuery: ''
+            - actionButtonUrl: ''
+            - actionButtonNewWindow: false
+            - actionButtonDisabled: ''
     - actionButtonSelectsRow: true
     - selectRowByDefault: true
     - defaultSortByColumn: ''
     - paginationOffset: 0
     - columnAlignment:
-        ordered: []
+        ordered:
+          - Custom Column 1: left
     - columnSummaries:
         object: {}
     - showBoxShadow: false
@@ -106,7 +120,7 @@ template:
     - showRefreshButton: true
     - pageSize: '20'
     - useDynamicColumnSettings: false
-    - actionButtonPosition: left
+    - actionButtonPosition: right
     - dynamicRowHeights: false
     - bulkUpdateAction: ''
     - afterCursor: ''
@@ -172,7 +186,20 @@ template:
     - defaultSelectedRow: none
     - freezeActionButtonColumns: false
     - sort: null
-    - _columns: []
+    - _columns:
+        - uuid
+        - code
+        - display
+        - system
+        - comments
+        - additional_context
+        - map_status
+        - concept_map_version_uuid
+        - assigned_mapper
+        - assigned_reviewer
+        - no_map
+        - reason_for_no_map
+        - mapping_group
     - sortByRawValue:
         ordered: []
     - calculatedColumns: []
