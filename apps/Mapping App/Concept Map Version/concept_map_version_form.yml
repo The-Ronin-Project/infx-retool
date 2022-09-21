@@ -1,0 +1,40 @@
+id: concept_map_version_form
+type: widget
+subtype: FormWidget
+template:
+  ordered:
+    - heightType: fixed
+    - spinWhenChildrenAreFetching: true
+    - clearFormAfterSubmit: false
+    - requireValidFormForSubmit: true
+    - showBorder: true
+    - data: ''
+    - showDropShadow: true
+    - submitButtonFullWidth: false
+    - submitDisabled: ''
+    - submitButtonText: Submit
+    - onSubmit: new_value_set_version
+    - requiredFormControls: []
+    - events:
+        - ordered:
+            - event: submit
+            - type: datasource
+            - method: trigger
+            - pluginId: new_version_submission
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - hideSubmit: false
+    - loading: ''
+    - overflowType: hidden
+    - disabled: ''
+style:
+  ordered: []
+position2:
+  position2:
+    container: concept_maps_version
+    subcontainer: '3'
+    height: 18
+    width: 12
+createdAt: 2022-03-04T20:18:04.582Z

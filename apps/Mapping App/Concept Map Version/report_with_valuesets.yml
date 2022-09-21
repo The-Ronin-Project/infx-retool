@@ -1,0 +1,123 @@
+id: report_with_valuesets
+type: datasource
+subtype: SqlQueryUnified
+resourceName: dc8029bc-3980-4836-841e-776c64eeca49
+resourceDisplayName: Clinical Content PostgresSQL DB
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - records: ''
+    - lastReceivedFromResourceAt: null
+    - databasePasswordOverride: ''
+    - queryDisabledMessage: ''
+    - successMessage: ''
+    - queryDisabled: ''
+    - playgroundQuerySaveId: latest
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: false
+    - showFailureToaster: true
+    - query: >-
+        select * from concept_maps.concept_relationship as cr
+
+        join(select code as sc_code, display as sc_display,
+        concept_map_version_uuid as cmv_uuid from concept_maps.source_concept)
+        as sc on cr.concept_map_version_uuid = sc.cmv_uuid
+
+        join(select code as em_code, expansion_uuid as em_ex_uuid from
+        value_sets.expansion_member) as em on cr.target_concept_code =
+        em.em_code
+
+        join(select uuid as ex_uuid, vs_version_uuid as ex_vsv_uuid from
+        value_sets.expansion) as ex on em.em_ex_uuid = ex.ex_uuid
+
+        join(select uuid as vsv_uuid, value_set_uuid as vs_uuid from
+        value_sets.value_set_version) as vsv on ex.ex_vsv_uuid = vsv.vsv_uuid
+
+        join(select uuid as vs_uuid, value_set.title as vs_title from
+        value_sets.value_set) as vs on vsv.vs_uuid = vs.vs_uuid
+
+        where cr.concept_map_version_uuid =
+        {{versions_table.selectedRow.data.uuid}}
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - privateParams: []
+    - runWhenPageLoadsDelay: ''
+    - warningCodes: []
+    - data: null
+    - recordId: ''
+    - importedQueryInputs:
+        ordered: []
+    - isImported: false
+    - showSuccessToaster: true
+    - dataArray: []
+    - cacheKeyTtl: ''
+    - filterBy: ''
+    - databaseHostOverride: ''
+    - metadata: null
+    - editorMode: sql
+    - actionType: ''
+    - changesetObject: ''
+    - shouldUseLegacySql: false
+    - errorTransformer: >-
+        // The variable 'data' allows you to reference the request's data in the
+        transformer. 
+
+        // example: return data.find(element => element.isError)
+
+        return data.error
+    - databaseNameOverride: ''
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - resourceTypeOverride: null
+    - watchedParams: []
+    - enableErrorTransformer: false
+    - enableBulkUpdates: false
+    - showLatestVersionUpdatedWarning: false
+    - timestamp: 0
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - bulkUpdatePrimaryKey: ''
+    - runWhenPageLoads: false
+    - transformer: >-
+        return formatDataAsArray(data).map(row => ({source_code:row.sc_code,
+        source_display:row.sc_display, target_code: row.target_concept_code,
+        target_display: row.target_concept_display, title: row.vs_title,
+        comments: row.mapping_comments}))
+    - events:
+        - ordered:
+            - event: success
+            - type: util
+            - method: exportData
+            - pluginId: ''
+            - targetId: null
+            - params:
+                ordered:
+                  - fileType: xlsx
+                  - fileName: >-
+                      {{metadata_key_table.data.title}} Version
+                      {{versions_table.selectedRow.data.version}}
+                  - data: '{{report_with_valuesets.data}}'
+                  - options:
+                      ordered:
+                        - sheetName: Concept Map
+            - waitType: debounce
+            - waitMs: '0'
+    - tableName: ''
+    - queryTimeout: '100000'
+    - requireConfirmation: false
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups: []
+    - databaseUsernameOverride: ''
+    - shouldEnableBatchQuerying: false
+    - doNotThrowOnNoOp: false
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+createdAt: 2022-04-28T21:43:22.209Z
