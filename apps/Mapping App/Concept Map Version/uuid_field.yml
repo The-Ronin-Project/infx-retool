@@ -1,0 +1,53 @@
+id: uuid_field
+type: widget
+subtype: TextInputWidget2
+template:
+  ordered:
+    - spellCheck: false
+    - readOnly: false
+    - iconAfter: ''
+    - showCharacterCount: false
+    - autoComplete: false
+    - maxLength: null
+    - hidden: null
+    - customValidation: ''
+    - patternType: ''
+    - hideValidationMessage: false
+    - textBefore: ''
+    - validationMessage: ''
+    - textAfter: ''
+    - showInEditor: null
+    - showClear: true
+    - pattern: ''
+    - tooltipText: ''
+    - labelAlign: right
+    - formDataKey: '{{ self.id }}'
+    - value: generated upon submission
+    - labelCaption: ''
+    - labelWidth: '33'
+    - autoFill: ''
+    - placeholder: ''
+    - label: uuid
+    - _validate: false
+    - labelWidthUnit: '%'
+    - invalid: false
+    - iconBefore: ''
+    - minLength: null
+    - inputTooltip: ''
+    - events:
+        ordered: []
+    - autoCapitalize: none
+    - loading: false
+    - disabled: '{{true}}'
+    - labelPosition: left
+    - labelWrap: true
+    - maintainSpaceWhenHidden: null
+    - required: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: concept_map_version_form
+    height: 1
+    width: 12
+createdAt: 2022-03-04T20:18:04.739Z

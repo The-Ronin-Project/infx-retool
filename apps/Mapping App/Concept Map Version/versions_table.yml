@@ -1,0 +1,349 @@
+id: versions_table
+type: widget
+subtype: TableWidget
+template:
+  ordered:
+    - showCustomButton: false
+    - sortMappedValue:
+        ordered:
+          - Custom Column 1: true
+    - _filteredSortedRenderedDataWithTypes: null
+    - heightType: fixed
+    - normalizedData: null
+    - saveChangesDisabled: ''
+    - columnTypeProperties:
+        ordered:
+          - status:
+              ordered:
+                - optionData: |-
+                    {
+                      value: {{get_statuses.data.display}},
+                      label: []
+                    }
+                - colorMode: none
+                - allowCustomValue: false
+                - optionLabels: '{{ item.label }}'
+                - optionColors: []
+                - optionValues: '{{ item.value }}'
+          - Custom Column 1:
+              ordered: []
+          - Custom Column 2:
+              ordered: []
+    - columnWidths:
+        - object:
+            id: effective_start
+            value: 113
+        - object:
+            id: concept_map_uuid
+            value: 133.9375
+        - object:
+            id: description
+            value: 103.125
+        - object:
+            id: created_date
+            value: 123.28125
+        - object:
+            id: comments
+            value: 261.453125
+        - object:
+            id: effective_end
+            value: 131.203125
+        - object:
+            id: version
+            value: 125.953125
+        - object:
+            id: status
+            value: 153.609375
+        - object:
+            id: Custom Column 1
+            value: 153.625
+        - object:
+            id: Custom Column 2
+            value: 11
+    - showSummaryFooter: false
+    - disableRowSelectInteraction: false
+    - columnWidthsMobile: []
+    - hasNextAfterCursor: ''
+    - columnTypeSpecificExtras:
+        ordered:
+          - status:
+              ordered:
+                - dropdownValues: '{{get_statuses.data.display}}'
+    - onRowAdded: ''
+    - columnHeaderNames:
+        ordered:
+          - Custom Column 1: More Info
+          - Custom Column 2: Download...
+    - alwaysShowPaginator: false
+    - columnColors:
+        ordered:
+          - effective_end: ''
+          - created_date: ''
+          - value_set_uuid: ''
+          - effective_start: ''
+          - status: ''
+          - comments: ''
+          - concept_map_uuid: ''
+          - Custom Column 1: ''
+          - Custom Column 2: ''
+          - version: ''
+          - uuid: ''
+          - description: ''
+          - publish_date: ''
+    - columnFrozenAlignments:
+        ordered: []
+    - allowMultiRowSelect: false
+    - columnFormats:
+        ordered:
+          - status: SingleTagDataCell
+          - Custom Column 1: ModalDataCell
+          - Custom Column 2: ModalDataCell
+    - columnRestrictedEditing:
+        ordered: []
+    - showFilterButton: true
+    - _columnVisibility:
+        ordered:
+          - effective_end: true
+          - created_date: false
+          - value_set_uuid: false
+          - effective_start: true
+          - name: true
+          - sales: true
+          - status: true
+          - comments: false
+          - concept_map_uuid: false
+          - Custom Column 1: true
+          - version: true
+          - id: true
+          - uuid: false
+          - email: true
+          - description: false
+          - Custom Column 2: true
+    - _columnSummaryTypes:
+        ordered: []
+    - _columnsWithLegacyBackgroundColor:
+        set: []
+    - showAddRowButton: false
+    - _unfilteredSelectedIndex: ''
+    - nextBeforeCursor: ''
+    - columnVisibility:
+        ordered:
+          - effective_end: true
+          - created_date: false
+          - value_set_uuid: false
+          - effective_start: true
+          - name: true
+          - sales: true
+          - status: true
+          - comments: false
+          - concept_map_uuid: false
+          - Custom Column 1: true
+          - version: true
+          - id: true
+          - uuid: false
+          - email: true
+          - description: false
+          - Custom Column 2: true
+    - selectedPageIndex: '0'
+    - applyDynamicSettingsToColumnOrder: false
+    - rowColor:
+        array: []
+    - actionButtonColumnName: Actions
+    - resetAfterSave: true
+    - filterStackType: and
+    - downloadRawData: false
+    - showFetchingIndicator: true
+    - serverPaginated: false
+    - data: '{{ select_concept_map_version.data }}'
+    - displayedData: null
+    - actionButtons:
+        - ordered:
+            - actionButtonText: Map Concepts
+            - actionButtonType: openInternalUrl
+            - actionButtonQuery: ''
+            - actionButtonInternalUrlPath: cdc6dc60-8498-11ec-a030-1bc6e29b29ca
+            - actionButtonInternalUrlQuery: >-
+                "[{\"key\":\"uuid\",\"value\":\"{{versions_table.selectedRow.data.uuid}}\"}]"
+            - actionButtonUrl: ''
+            - actionButtonNewWindow: false
+            - actionButtonDisabled: ''
+        - ordered:
+            - actionButtonText: Review Mappings
+            - actionButtonType: openInternalUrl
+            - actionButtonQuery: ''
+            - actionButtonInternalUrlPath: bce32b40-a56f-11ec-b018-27b84d9f6b2f
+            - actionButtonInternalUrlQuery: >-
+                "[{\"key\":\"uuid\",\"value\":\"{{versions_table.selectedRow.data.uuid}}\"}]"
+            - actionButtonUrl: ''
+            - actionButtonNewWindow: true
+            - actionButtonDisabled: ''
+        - ordered:
+            - actionButtonText: Manage Project
+            - actionButtonType: openInternalUrl
+            - actionButtonQuery: ''
+            - actionButtonInternalUrlPath: 085bc160-8494-11ec-8c4c-affe5e2b3f95
+            - actionButtonInternalUrlQuery: >-
+                "[{\"key\":\"uuid\",\"value\":\"{{versions_table.selectedRow.data.uuid}}\"}]"
+            - actionButtonUrl: ''
+            - actionButtonNewWindow: false
+            - actionButtonDisabled: ''
+            - actionButtonInternalUrlHashParams: '"[]"'
+        - ordered:
+            - actionButtonText: Adjudicate Suggestions
+            - actionButtonType: openInternalUrl
+            - actionButtonQuery: ''
+            - actionButtonInternalUrlPath: b0416a40-2e28-11ed-bac5-9b536c8b4280
+            - actionButtonInternalUrlQuery: ''
+            - actionButtonUrl: ''
+            - actionButtonNewWindow: false
+            - actionButtonDisabled: ''
+    - actionButtonSelectsRow: true
+    - selectRowByDefault: true
+    - defaultSortByColumn: ''
+    - paginationOffset: 0
+    - columnAlignment:
+        ordered:
+          - status: left
+          - Custom Column 1: left
+          - Custom Column 2: left
+    - columnSummaries:
+        object: {}
+    - showBoxShadow: true
+    - sortedDesc: false
+    - customButtonName: ''
+    - columnMappersRenderAsHTML:
+        ordered: []
+    - showRefreshButton: true
+    - pageSize: 10
+    - useDynamicColumnSettings: false
+    - actionButtonPosition: right
+    - dynamicRowHeights: false
+    - bulkUpdateAction: ''
+    - afterCursor: ''
+    - onCustomButtonPressQueryName: ''
+    - changeSet:
+        object: {}
+    - sortedColumn: ''
+    - _columnSummaryValues:
+        ordered: []
+    - checkboxRowSelect: true
+    - _compatibilityMode: false
+    - showColumnBorders: true
+    - clearSelectionLabel: Clear selection
+    - _renderedDataWithTypes: null
+    - columnAllowOverflow:
+        ordered: []
+    - beforeCursor: ''
+    - serverPaginationType: limitOffsetBased
+    - onRowSelect: ''
+    - showDownloadButton: true
+    - selectedIndex: null
+    - defaultSortDescending: false
+    - _sortedDisplayedDataIndices: null
+    - dynamicColumnSettings: null
+    - events:
+        - ordered:
+            - event: saveChanges
+            - type: datasource
+            - method: trigger
+            - pluginId: save_versions_table_changes
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - totalRowCount: ''
+    - recordUpdates:
+        array: []
+    - newRow: null
+    - emptyMessage: No rows found
+    - columnEditable:
+        ordered:
+          - effective_start: true
+          - effective_end: true
+          - version: false
+          - status: true
+          - description: true
+          - Custom Column 1: false
+          - Custom Column 2: true
+    - _viewerColumnSummaryTypes:
+        object: {}
+    - filters:
+        array: []
+    - displayedDataIndices: null
+    - disableSorting:
+        ordered: []
+    - columnMappers:
+        ordered:
+          - status: '{{self}}'
+          - Custom Column 1: Show More Info
+          - Custom Column 2: Download Report....
+    - showClearSelection: false
+    - doubleClickToEdit: false
+    - overflowType: pagination
+    - _reverseSortedDisplayedDataIndices: null
+    - selectedCell:
+        object:
+          index: null
+          data: null
+          columnName: null
+    - columns:
+        - id
+        - name
+        - email
+        - sales
+        - uuid
+        - effective_start
+        - effective_end
+        - version
+        - value_set_uuid
+        - status
+        - description
+        - created_date
+        - comments
+        - concept_map_uuid
+        - Custom Column 1
+        - Custom Column 2
+    - defaultSelectedRow: first
+    - freezeActionButtonColumns: false
+    - sort: null
+    - _columns:
+        - id
+        - name
+        - email
+        - sales
+        - uuid
+        - effective_start
+        - effective_end
+        - version
+        - value_set_uuid
+        - status
+        - description
+        - created_date
+        - comments
+        - concept_map_uuid
+        - Custom Column 1
+        - Custom Column 2
+    - sortByRawValue:
+        ordered:
+          - Custom Column 1: false
+    - calculatedColumns:
+        - Custom Column 1
+        - Custom Column 2
+    - selectedRow:
+        object:
+          index: null
+          data: null
+    - showPaginationOnTop: false
+    - _reverseDisplayedDataIndices: null
+    - nextAfterCursor: ''
+    - useCompactMode: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: concept_maps_version
+    rowGroup: header
+    row: 1.4000000000000012
+    height: 13
+    width: 12
+createdAt: 2022-03-04T20:18:04.515Z

@@ -1,0 +1,38 @@
+id: status
+type: widget
+subtype: SelectWidget
+template:
+  ordered:
+    - enableClientSideMatching: true
+    - values: '{{get_statuses.data.display}}'
+    - allowOutOfRangeValues: false
+    - enableFuzzyMatching: true
+    - searchValue: ''
+    - showFetchingIndicator: true
+    - enableCaseSensitivity: false
+    - validationMessage: ''
+    - displayValue: ''
+    - tooltipText: ''
+    - value: draft
+    - maxResults: 50
+    - placeholder: Select a value
+    - label: status
+    - clearValueOnFocus: true
+    - labelMaxWidth: ''
+    - labelPlacedOnLeft: false
+    - validationState: ''
+    - onSelect: ''
+    - allowCustomValues: false
+    - disabled: ''
+    - hideClearButton: false
+    - required: false
+    - labels: '{{get_statuses.data.display}}'
+style:
+  ordered: []
+position2:
+  position2:
+    container: concept_map_version_form
+    row: 4
+    height: 1
+    width: 12
+createdAt: 2022-03-04T20:18:04.782Z

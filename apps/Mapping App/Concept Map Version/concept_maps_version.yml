@@ -1,0 +1,87 @@
+id: concept_maps_version
+type: widget
+subtype: ContainerWidget2
+template:
+  ordered:
+    - _disabledByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+    - heightType: fixed
+    - currentViewKey: 0
+    - iconByIndex:
+        array: []
+    - clickable: false
+    - _iconByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+    - hidden: null
+    - showHeader: true
+    - hoistFetching: true
+    - views:
+        array: []
+    - showInEditor: null
+    - tooltipText: ''
+    - hiddenByIndex:
+        array: []
+    - _hiddenByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+    - currentViewIndex: 0
+    - _hasMigratedNestedItems: true
+    - transition: slide
+    - itemMode: static
+    - _tooltipByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+    - tooltipByIndex:
+        array: []
+    - showFooter: false
+    - _viewKeys:
+        - 0
+        - 1
+        - 2
+        - 3
+    - events: []
+    - _ids:
+        - '0'
+        - '1'
+        - '2'
+        - '3'
+    - viewKeys:
+        array: []
+    - iconPositionByIndex:
+        array: []
+    - _iconPositionByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+    - loading: false
+    - overflowType: hidden
+    - disabled: ''
+    - _labels:
+        - Versions
+        - Metadata
+        - Edit Metadata
+        - Create New Version
+    - disabledByIndex:
+        array: []
+    - maintainSpaceWhenHidden: null
+    - showBody: true
+    - labels:
+        array: []
+style:
+  ordered: []
+position2:
+  position2:
+    height: 42
+    width: 12
+createdAt: 2022-03-04T20:18:04.387Z
