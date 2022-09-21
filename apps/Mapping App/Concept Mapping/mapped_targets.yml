@@ -79,7 +79,9 @@ template:
           - author: ''
           - target_concept_system_version_uuid: ''
           - code: ''
+          - mapping_group: ''
           - system: ''
+          - reason_for_no_map: ''
           - target_concept_code: ''
           - assigned_mapper: ''
           - target_concept_system: ''
@@ -97,6 +99,7 @@ template:
           - uuid: ''
           - concept_map_version_uuid: ''
           - target_concept_display: ''
+          - no_map: ''
     - columnFrozenAlignments:
         ordered: []
     - allowMultiRowSelect: false

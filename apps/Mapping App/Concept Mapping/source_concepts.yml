@@ -55,7 +55,9 @@ template:
           - name: ''
           - sales: ''
           - code: ''
+          - mapping_group: ''
           - system: ''
+          - reason_for_no_map: ''
           - assigned_mapper: ''
           - comments: ''
           - map_status: ''
@@ -67,6 +69,7 @@ template:
           - uuid: ''
           - concept_map_version_uuid: ''
           - email: ''
+          - no_map: ''
     - columnFrozenAlignments:
         ordered: []
     - allowMultiRowSelect: false
