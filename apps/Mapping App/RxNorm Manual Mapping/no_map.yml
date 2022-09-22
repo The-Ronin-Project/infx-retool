@@ -61,6 +61,16 @@ template:
             - type: datasource
             - method: trigger
             - pluginId: no_map_it
+            - targetId: '20e16'
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: click
+            - type: datasource
+            - method: trigger
+            - pluginId: no_map_it
             - targetId: e85eb
             - params:
                 ordered: []
