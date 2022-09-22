@@ -100,7 +100,7 @@ template:
     - displayedData: null
     - actionButtons:
         - ordered:
-            - actionButtonText: Map It
+            - actionButtonText: Map Equivalent
             - actionButtonType: runQuery
             - actionButtonQuery: map_clinical_drug
             - actionButtonInternalUrlPath: ''
