@@ -1,0 +1,25 @@
+id: scd_display
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - tooltipText: ''
+    - value: 'Full Name: Ingredient + Strength + Dose Form '
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    row: 12.600000000000001
+    col: 4
+    height: 0.6
+    width: 6
+createdAt: 2022-09-13T17:50:27.166Z
