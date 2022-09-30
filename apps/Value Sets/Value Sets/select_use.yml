@@ -38,7 +38,7 @@ template:
     - value: null
     - hiddenByIndex:
         array: []
-    - labelCaption: (create new below if needed)
+    - labelCaption: ''
     - labelWidth: '33'
     - deprecatedLabels:
         array: []
