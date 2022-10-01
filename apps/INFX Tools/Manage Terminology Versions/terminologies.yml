@@ -17,6 +17,8 @@ template:
           - effective_end:
               ordered:
                 - dateFormat: MMM d, yyyy
+          - version:
+              ordered: []
     - columnWidths:
         - object:
             id: uuid
@@ -79,6 +81,7 @@ template:
           - Custom Column 1: ModalDataCell
           - effective_end: DateDataCell
           - Custom Column 2: button
+          - version: TextDataCell
     - columnRestrictedEditing:
         ordered: []
     - showFilterButton: true
@@ -94,6 +97,7 @@ template:
         ordered:
           - Custom Column 1: ''
           - effective_end: ''
+          - version: ''
     - _columnsWithLegacyBackgroundColor:
         set: []
     - showAddRowButton: false
@@ -123,6 +127,7 @@ template:
           - Custom Column 1: left
           - effective_end: left
           - Custom Column 2: left
+          - version: left
     - columnSummaries:
         object: {}
     - showBoxShadow: false
@@ -145,6 +150,7 @@ template:
         ordered:
           - Custom Column 1: ''
           - effective_end: ''
+          - version: ''
     - checkboxRowSelect: true
     - _compatibilityMode: false
     - showColumnBorders: false
