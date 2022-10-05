@@ -1,4 +1,4 @@
-id: delete_mapping
+id: load_custom_terminologies
 type: datasource
 subtype: SqlQueryUnified
 resourceName: dc8029bc-3980-4836-841e-776c64eeca49
@@ -14,12 +14,12 @@ template:
     - queryDisabled: ''
     - playgroundQuerySaveId: latest
     - resourceNameOverride: ''
-    - runWhenModelUpdates: false
+    - runWhenModelUpdates: true
     - showFailureToaster: true
     - query: |-
-        delete from concept_maps.concept_relationship
-        where uuid={{mapped_targets.selectedRow.data.cr_uuid}} AND
-        concept_map_version_uuid = {{urlparams.uuid}}
+        select * 
+        from public.terminology_versions
+        where is_standard = 'false'
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - privateParams: []
@@ -72,37 +72,7 @@ template:
         20)
 
         return data
-    - events:
-        - ordered:
-            - event: success
-            - type: datasource
-            - method: trigger
-            - pluginId: update_unmap_to_pending
-            - targetId: null
-            - params:
-                ordered: []
-            - waitType: debounce
-            - waitMs: '0'
-        - ordered:
-            - event: success
-            - type: datasource
-            - method: trigger
-            - pluginId: load_source_concepts
-            - targetId: null
-            - params:
-                ordered: []
-            - waitType: debounce
-            - waitMs: '0'
-        - ordered:
-            - event: success
-            - type: datasource
-            - method: trigger
-            - pluginId: load_mapped_targets
-            - targetId: null
-            - params:
-                ordered: []
-            - waitType: debounce
-            - waitMs: '0'
+    - events: []
     - tableName: ''
     - queryTimeout: '10000'
     - requireConfirmation: false
@@ -116,4 +86,4 @@ template:
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2022-04-13T19:14:31.533Z
+createdAt: 2022-09-30T22:52:53.461Z

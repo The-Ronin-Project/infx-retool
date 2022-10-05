@@ -265,8 +265,8 @@ style:
 position2:
   position2:
     container: tabbedContainer1
+    subcontainer: '1'
     row: 1.8000000000000003
     height: 21.400000000000002
     width: 12
-    tabNum: 1
 createdAt: 2022-04-12T18:48:45.237Z

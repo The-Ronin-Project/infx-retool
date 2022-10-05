@@ -28,6 +28,9 @@ template:
         cr.source_concept_uuid
 
         where source_concept_uuid = {{source_concepts.selectedRow.data.uuid}}
+        AND
+
+        cr.concept_map_version_uuid = {{urlparams.uuid}}
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - privateParams: []

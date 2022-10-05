@@ -1,4 +1,4 @@
-id: text1
+id: containerTitle1
 type: widget
 subtype: TextWidget2
 template:
@@ -10,7 +10,10 @@ template:
     - showInEditor: false
     - verticalAlign: center
     - tooltipText: ''
-    - value: search bar, table for results
+    - value: >-
+        <div style="text-transform: uppercase; font-weight: 500;">Currently
+        mapping concepts for the {{load_concept_map_metadata.data.title[0]}}
+        Version {{load_concept_map_metadata.data.version}} Concept Map</div>
     - disableMarkdown: false
     - overflowType: scroll
     - maintainSpaceWhenHidden: false
@@ -18,10 +21,8 @@ style:
   ordered: []
 position2:
   position2:
-    container: tabbedContainer1
-    subcontainer: '6'
-    row: 1
-    col: 7
+    container: mapper
+    rowGroup: header
     height: 0.6
-    width: 3
-createdAt: 2022-08-02T19:13:56.863Z
+    width: 12
+createdAt: 2022-09-30T23:24:12.239Z

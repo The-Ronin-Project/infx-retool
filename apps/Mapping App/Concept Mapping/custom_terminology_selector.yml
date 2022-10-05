@@ -1,4 +1,4 @@
-id: fhir_system_select
+id: custom_terminology_selector
 type: widget
 subtype: SelectWidget2
 template:
@@ -18,7 +18,7 @@ template:
     - inputValue: ''
     - hidden: false
     - customValidation: ''
-    - data: '{{ load_fhir_terminologies.data.terminology}}'
+    - data: '{{ load_custom_terminologies.data.terminology}}'
     - searchMode: fuzzy
     - hideValidationMessage: false
     - fallbackTextByIndex:
@@ -46,7 +46,7 @@ template:
     - placeholder: Select an option
     - _captionByIndex: []
     - itemAdornmentSize: auto
-    - label: FHIR System
+    - label: Custom Terminology
     - _hasMigratedNestedItems: true
     - captionByIndex:
         array: []
@@ -88,7 +88,7 @@ style:
 position2:
   position2:
     container: tabbedContainer1
-    subcontainer: '0'
+    subcontainer: '8'
     height: 1
     width: 12
-createdAt: 2022-04-11T19:39:15.849Z
+createdAt: 2022-09-30T22:49:29.880Z

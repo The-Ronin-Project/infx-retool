@@ -17,7 +17,7 @@ style:
 position2:
   position2:
     container: tabbedContainer1
+    subcontainer: '3'
     height: 10.4
     width: 12
-    tabNum: 3
 createdAt: 2022-08-06T05:25:23.326Z

@@ -11,14 +11,27 @@ template:
     - normalizedData: null
     - saveChangesDisabled: ''
     - columnTypeProperties:
-        ordered: []
+        ordered:
+          - Custom Column 1:
+              ordered: []
+          - relationship:
+              ordered:
+                - optionData: |-
+                    {
+                      value: {{load_relationships.data.uuid}},
+                      label: {{load_relationships.data.display}}
+                    }
+                - colorMode: none
+                - allowCustomValue: false
+                - optionLabels: '{{ item.label }}'
+                - optionColors: []
+                - optionValues: '{{ item.value }}'
+          - target_concept_code:
+              ordered: []
     - columnWidths:
         - object:
             id: relationship_code_uuid
             value: 150
-        - object:
-            id: uuid
-            value: 88
         - object:
             id: assigned_mapper
             value: 157
@@ -26,17 +39,29 @@ template:
             id: Custom Column 2
             value: 101
         - object:
-            id: target_concept_display
-            value: 106.921875
-        - object:
-            id: display
-            value: 103.984375
-        - object:
             id: relationship
             value: 118
         - object:
             id: target_concept_system
             value: 136.3125
+        - object:
+            id: display
+            value: 136.984375
+        - object:
+            id: target_concept_display
+            value: 373.921875
+        - object:
+            id: reason_for_no_map
+            value: 143
+        - object:
+            id: uuid
+            value: 213
+        - object:
+            id: target_concept_code
+            value: 294
+        - object:
+            id: source_concept_uuid
+            value: 199
     - showSummaryFooter: false
     - disableRowSelectInteraction: false
     - columnWidthsMobile: []
@@ -105,9 +130,10 @@ template:
     - allowMultiRowSelect: false
     - columnFormats:
         ordered:
-          - Custom Column 1: modal
+          - Custom Column 1: ModalDataCell
           - Custom Column 2: button
-          - relationship: dropdown
+          - relationship: SingleTagDataCell
+          - target_concept_code: default
     - columnRestrictedEditing:
         ordered: []
     - showFilterButton: true
@@ -118,7 +144,7 @@ template:
           - relationship_system_uuid: false
           - mapping_comments: false
           - created_date: false
-          - relationship_code_uuid: false
+          - relationship_code_uuid: true
           - rc_uuid: false
           - cr_uuid: false
           - author: false
@@ -131,19 +157,20 @@ template:
           - rc_display: true
           - comments: true
           - map_status: true
-          - source_concept_uuid: false
+          - source_concept_uuid: true
           - reviewed_date: false
           - assigned_reviewer: false
           - Custom Column 1: false
           - additional_context: false
           - Custom Column 2: true
           - relationship: true
-          - review_status: false
-          - uuid: false
-          - concept_map_version_uuid: false
+          - review_status: true
+          - uuid: true
+          - concept_map_version_uuid: true
           - target_concept_display: true
     - _columnSummaryTypes:
-        ordered: []
+        ordered:
+          - target_concept_code: ''
     - _columnsWithLegacyBackgroundColor:
         set: []
     - showAddRowButton: false
@@ -202,6 +229,7 @@ template:
           - Custom Column 1: left
           - Custom Column 2: left
           - relationship: left
+          - target_concept_code: left
     - columnSummaries:
         object: {}
     - showBoxShadow: true
@@ -221,9 +249,10 @@ template:
         object: {}
     - sortedColumn: ''
     - _columnSummaryValues:
-        ordered: []
+        ordered:
+          - target_concept_code: ''
     - checkboxRowSelect: true
-    - _compatibilityMode: true
+    - _compatibilityMode: false
     - showColumnBorders: false
     - clearSelectionLabel: Clear selection
     - _renderedDataWithTypes: null
@@ -263,6 +292,7 @@ template:
           - Custom Column 2: false
           - Custom Column 3: false
           - relationship: true
+          - display: false
     - _viewerColumnSummaryTypes:
         object: {}
     - filters:
@@ -317,16 +347,16 @@ template:
     - sort: null
     - _columns:
         - display
-        - uuid
         - review_status
         - concept_map_version_uuid
         - relationship_code_uuid
         - relationship
-        - target_concept_display
+        - uuid
         - Custom Column 1
         - mapping_comments
         - author
         - target_concept_code
+        - target_concept_display
         - created_date
         - reviewed_date
         - source_concept_uuid
@@ -342,6 +372,9 @@ template:
         - target_concept_system
         - cr_uuid
         - map_status
+        - no_map
+        - reason_for_no_map
+        - mapping_group
     - sortByRawValue:
         ordered: []
     - calculatedColumns:
