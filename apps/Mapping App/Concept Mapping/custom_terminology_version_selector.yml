@@ -1,4 +1,4 @@
-id: fhir_system_select
+id: custom_terminology_version_selector
 type: widget
 subtype: SelectWidget2
 template:
@@ -10,7 +10,7 @@ template:
     - _values: []
     - iconByIndex:
         array: []
-    - values: ''
+    - values: '{{item.uuid}}'
     - readOnly: false
     - iconAfter: ''
     - _iconByIndex: []
@@ -18,7 +18,7 @@ template:
     - inputValue: ''
     - hidden: false
     - customValidation: ''
-    - data: '{{ load_fhir_terminologies.data.terminology}}'
+    - data: '{{ load_custom_terminology_versions.data}}'
     - searchMode: fuzzy
     - hideValidationMessage: false
     - fallbackTextByIndex:
@@ -35,7 +35,7 @@ template:
     - tooltipText: ''
     - labelAlign: left
     - formDataKey: '{{ self.id }}'
-    - value: null
+    - value: '{{ load_fhir_terminology_versions.data.version[0] }}'
     - hiddenByIndex:
         array: []
     - labelCaption: ''
@@ -46,7 +46,7 @@ template:
     - placeholder: Select an option
     - _captionByIndex: []
     - itemAdornmentSize: auto
-    - label: FHIR System
+    - label: Version
     - _hasMigratedNestedItems: true
     - captionByIndex:
         array: []
@@ -81,14 +81,14 @@ template:
     - maintainSpaceWhenHidden: false
     - _imageByIndex: []
     - required: false
-    - labels:
-        array: []
+    - labels: '{{item.version}}'
 style:
   ordered: []
 position2:
   position2:
     container: tabbedContainer1
-    subcontainer: '0'
+    subcontainer: '8'
+    row: 1
     height: 1
     width: 12
-createdAt: 2022-04-11T19:39:15.849Z
+createdAt: 2022-09-30T22:49:39.319Z

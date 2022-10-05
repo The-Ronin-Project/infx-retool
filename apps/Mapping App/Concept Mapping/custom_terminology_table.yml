@@ -1,4 +1,4 @@
-id: fhir_table
+id: custom_terminology_table
 type: widget
 subtype: TableWidget
 template:
@@ -12,17 +12,32 @@ template:
     - normalizedData: null
     - saveChangesDisabled: ''
     - columnTypeProperties:
-        ordered: []
+        ordered:
+          - Custom Column 1:
+              ordered: []
+          - display:
+              ordered: []
+          - code:
+              ordered:
+                - showSeparators: true
+                - padDecimal: true
+          - terminology_version:
+              ordered:
+                - showSeparators: true
+                - padDecimal: true
     - columnWidths:
-        - object:
-            id: display
-            value: 104.828125
         - object:
             id: definition
             value: 558.671875
         - object:
             id: Custom Column 1
             value: 119
+        - object:
+            id: Custom Column 2
+            value: 119
+        - object:
+            id: display
+            value: 110.828125
     - showSummaryFooter: false
     - disableRowSelectInteraction: false
     - columnWidthsMobile: []
@@ -32,7 +47,7 @@ template:
           - Custom Column 2:
               ordered:
                 - buttonType: action
-                - action: map_fhir_concept
+                - action: map_custom_terminology_concept
     - onRowAdded: ''
     - columnHeaderNames:
         ordered:
@@ -46,6 +61,7 @@ template:
           - system_title: ''
           - name: ''
           - sales: ''
+          - terminology_version: ''
           - code: ''
           - terminology_version_uuid: ''
           - status: ''
@@ -64,8 +80,11 @@ template:
     - allowMultiRowSelect: false
     - columnFormats:
         ordered:
-          - Custom Column 1: modal
+          - Custom Column 1: ModalDataCell
           - Custom Column 2: button
+          - display: default
+          - code: default
+          - terminology_version: default
     - columnRestrictedEditing:
         ordered: []
     - showFilterButton: true
@@ -76,21 +95,24 @@ template:
           - system_title: false
           - name: true
           - sales: true
-          - code: false
+          - code: true
           - terminology_version_uuid: false
           - status: false
           - definition: true
           - comments: false
+          - Custom Column 1: true
+          - Custom Column 2: true
           - version: false
           - id: true
           - system_name: false
           - uuid: false
           - email: true
           - system_url: false
-          - Custom Column 1: true
-          - Custom Column 2: true
     - _columnSummaryTypes:
-        ordered: []
+        ordered:
+          - display: ''
+          - code: ''
+          - terminology_version: ''
     - _columnsWithLegacyBackgroundColor:
         set: []
     - showAddRowButton: false
@@ -126,24 +148,28 @@ template:
     - downloadRawData: false
     - showFetchingIndicator: true
     - serverPaginated: false
-    - data: '{{load_fhir_target_concepts.data}}'
+    - data: '{{load_custom_terminology_target_concepts.data}}'
     - displayedData: null
     - actionButtons: []
     - actionButtonSelectsRow: true
     - selectRowByDefault: true
-    - defaultSortByColumn: ''
+    - defaultSortByColumn: display
     - paginationOffset: 0
     - columnAlignment:
         ordered:
           - Custom Column 1: left
           - Custom Column 2: left
+          - display: left
+          - code: right
+          - terminology_version: right
     - columnSummaries:
         object: {}
     - showBoxShadow: true
     - sortedDesc: false
     - customButtonName: More Information
     - columnMappersRenderAsHTML:
-        ordered: []
+        ordered:
+          - Custom Column 2: false
     - showRefreshButton: true
     - pageSize: 16
     - useDynamicColumnSettings: false
@@ -156,9 +182,12 @@ template:
         object: {}
     - sortedColumn: ''
     - _columnSummaryValues:
-        ordered: []
+        ordered:
+          - display: ''
+          - code: ''
+          - terminology_version: ''
     - checkboxRowSelect: true
-    - _compatibilityMode: true
+    - _compatibilityMode: false
     - showColumnBorders: false
     - clearSelectionLabel: Clear selection
     - _renderedDataWithTypes: null
@@ -178,9 +207,7 @@ template:
     - newRow: null
     - emptyMessage: No rows found
     - columnEditable:
-        ordered:
-          - Custom Column 1: false
-          - Custom Column 2: false
+        ordered: []
     - _viewerColumnSummaryTypes:
         object: {}
     - filters:
@@ -223,19 +250,14 @@ template:
         - uuid
         - code
         - Custom Column 1
-        - display
         - Custom Column 2
+        - display
         - definition
-        - version
-        - system_name
-        - system_url
-        - system_title
-        - level
         - comments
-        - status
         - terminology_version_uuid
     - sortByRawValue:
-        ordered: []
+        ordered:
+          - Custom Column 1: true
     - calculatedColumns:
         - Custom Column 1
         - Custom Column 2
@@ -252,8 +274,8 @@ style:
 position2:
   position2:
     container: tabbedContainer1
-    subcontainer: '0'
-    row: 2.200000000000032
-    height: 19.4
+    subcontainer: '8'
+    row: 3.200000000000001
+    height: 30.6
     width: 12
-createdAt: 2022-04-11T19:40:30.635Z
+createdAt: 2022-09-30T23:01:56.951Z

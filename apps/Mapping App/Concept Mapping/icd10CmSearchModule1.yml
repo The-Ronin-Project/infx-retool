@@ -13,8 +13,8 @@ style:
 position2:
   position2:
     container: tabbedContainer1
+    subcontainer: '4'
     row: 0.2
     height: 8.2
     width: 12
-    tabNum: 4
 createdAt: 2022-04-11T23:02:15.671Z

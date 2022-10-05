@@ -20,9 +20,6 @@ template:
             id: comments
             value: 122
         - object:
-            id: code
-            value: 59.546875
-        - object:
             id: review_status
             value: 136.5411834716797
         - object:
@@ -30,7 +27,10 @@ template:
             value: 144.5582275390625
         - object:
             id: map_status
-            value: 193.62498474121094
+            value: 114.609375
+        - object:
+            id: code
+            value: 287.546875
     - showSummaryFooter: false
     - disableRowSelectInteraction: false
     - columnWidthsMobile: []
@@ -86,7 +86,7 @@ template:
           - display: true
           - name: true
           - sales: false
-          - code: false
+          - code: true
           - system: false
           - assigned_mapper: false
           - comments: false

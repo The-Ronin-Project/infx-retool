@@ -87,6 +87,7 @@ style:
 position2:
   position2:
     container: tabbedContainer1
+    subcontainer: '0'
     row: 1.0000000000000002
     height: 1
     width: 12

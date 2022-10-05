@@ -30,7 +30,7 @@ template:
         {{mapcomments.value}}, {{source_concepts.selectedRow.data.uuid}},
         {{relationship_selection.value}}, {{fhir_table.selectedRow.data.code}},
         {{fhir_table.selectedRow.data.display}}, {{fhir_system_select.value}},
-        {{fhir_terminology_version_check.uuid}}, now(),
+        {{fhir_terminology_version_check.data.uuid[0]}}, now(),
         {{current_user.fullName}})
     - playgroundQueryUuid: ''
     - playgroundQueryId: null

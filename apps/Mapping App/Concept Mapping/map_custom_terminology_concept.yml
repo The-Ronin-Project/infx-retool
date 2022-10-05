@@ -1,4 +1,4 @@
-id: delete_mapping
+id: map_custom_terminology_concept
 type: datasource
 subtype: SqlQueryUnified
 resourceName: dc8029bc-3980-4836-841e-776c64eeca49
@@ -17,9 +17,31 @@ template:
     - runWhenModelUpdates: false
     - showFailureToaster: true
     - query: |-
-        delete from concept_maps.concept_relationship
-        where uuid={{mapped_targets.selectedRow.data.cr_uuid}} AND
-        concept_map_version_uuid = {{urlparams.uuid}}
+        insert into concept_maps.concept_relationship
+          (uuid, 
+           concept_map_version_uuid, 
+           review_status, 
+           mapping_comments, 
+           source_concept_uuid, 
+           relationship_code_uuid, 
+           target_concept_code, 
+           target_concept_display, 
+           target_concept_system, 
+           target_concept_system_version_uuid, 
+           created_date, author)
+        values
+          ({{uuid.v4()}}, 
+           {{urlparams.uuid}}, 
+           'ready for review', 
+           {{mapcomments.value}}, 
+           {{source_concepts.selectedRow.data.uuid}}, 
+           {{relationship_selection.value}}, 
+           {{custom_terminology_table.selectedRow.data.code}},
+           {{custom_terminology_table.selectedRow.data.display}},
+           {{custom_terminology_selector.value}},
+           {{custom_terminology_table.selectedRow.data.terminology_version}}, 
+           now(),
+           {{current_user.fullName}})
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - privateParams: []
@@ -37,7 +59,7 @@ template:
     - databaseHostOverride: ''
     - metadata: null
     - editorMode: sql
-    - actionType: ''
+    - actionType: INSERT
     - changesetObject: ''
     - shouldUseLegacySql: false
     - errorTransformer: >-
@@ -50,7 +72,10 @@ template:
     - databaseNameOverride: ''
     - confirmationMessage: null
     - isFetching: false
-    - changeset: ''
+    - changeset: >-
+        [{"key":"uuid","value":"{{uuid.v4()}}"},{"key":"concept_map_version_uuid","value":"{{urlparams.uuid}}"},{"key":"review_status","value":"ready
+        for
+        review"},{"key":"source_concept_uuid","value":"{{source_concepts.selectedRow.data.uuid}}"},{"key":"relationship_code_uuid","value":"{{relationship_selection.value}}"},{"key":"target_concept_code","value":"{{custom_terminology_table.selectedRow.data.code}}"},{"key":"target_concept_display","value":"{{custom_terminology_table.selectedRow.data.display}}"},{"key":"target_concept_system","value":"{{custom_terminology_selector.value}}"},{"key":"target_concept_system_version_uuid","value":"{{custom_terminology_table.selectedRow.data.terminology_version}}"},{"key":"author","value":"{{map_assignee.value}}"},{"key":"mapping_comments","value":"{{mapcomments.value}}"}]
     - rawData: null
     - queryTriggerDelay: '0'
     - resourceTypeOverride: null
@@ -77,33 +102,13 @@ template:
             - event: success
             - type: datasource
             - method: trigger
-            - pluginId: update_unmap_to_pending
-            - targetId: null
-            - params:
-                ordered: []
-            - waitType: debounce
-            - waitMs: '0'
-        - ordered:
-            - event: success
-            - type: datasource
-            - method: trigger
-            - pluginId: load_source_concepts
-            - targetId: null
-            - params:
-                ordered: []
-            - waitType: debounce
-            - waitMs: '0'
-        - ordered:
-            - event: success
-            - type: datasource
-            - method: trigger
             - pluginId: load_mapped_targets
             - targetId: null
             - params:
                 ordered: []
             - waitType: debounce
             - waitMs: '0'
-    - tableName: ''
+    - tableName: concept_maps.concept_relationship
     - queryTimeout: '10000'
     - requireConfirmation: false
     - queryFailureConditions: ''
@@ -116,4 +121,4 @@ template:
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2022-04-13T19:14:31.533Z
+createdAt: 2022-09-30T23:12:02.812Z
