@@ -1,5 +1,7 @@
 version: 43.0.9
 pageUuid: 459ad360-8f46-11ec-a113-2bd5a66f872d
 appTemplate:
+  folders:
+    - concept_maps_queries
   rootScreen: null
   version: 2.95.3

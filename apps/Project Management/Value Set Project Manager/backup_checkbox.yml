@@ -11,7 +11,7 @@ template:
     - tooltipText: ''
     - labelAlign: left
     - formDataKey: '{{ self.id }}'
-    - value: false
+    - value: 'true'
     - labelCaption: ''
     - label: Backup Assignment
     - _validate: false

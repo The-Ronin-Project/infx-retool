@@ -6,12 +6,14 @@ template:
     - _disabledByIndex:
         - ''
         - ''
+        - false
     - heightType: auto
     - currentViewKey: '{{ self.viewKeys[0] }}'
     - iconByIndex:
         array: []
     - clickable: false
     - _iconByIndex:
+        - ''
         - ''
         - ''
     - hidden: false
@@ -26,11 +28,13 @@ template:
     - _hiddenByIndex:
         - ''
         - ''
+        - false
     - currentViewIndex: null
     - _hasMigratedNestedItems: true
     - transition: none
     - itemMode: static
     - _tooltipByIndex:
+        - ''
         - ''
         - ''
     - tooltipByIndex:
@@ -39,11 +43,13 @@ template:
     - _viewKeys:
         - Value Set Assignment Que
         - Create and Update Assignments
+        - Concept Map Assignments
     - events:
         ordered: []
     - _ids:
         - 6343b
         - 7578c
+        - 0315c
     - viewKeys:
         array: []
     - iconPositionByIndex:
@@ -51,10 +57,12 @@ template:
     - _iconPositionByIndex:
         - ''
         - ''
+        - left
     - loading: false
     - overflowType: scroll
     - disabled: false
     - _labels:
+        - ''
         - ''
         - ''
     - disabledByIndex:
