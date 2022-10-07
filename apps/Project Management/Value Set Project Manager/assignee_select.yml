@@ -10,7 +10,7 @@ template:
     - _values: []
     - iconByIndex:
         array: []
-    - values: '{{item.uuid}}'
+    - values: '{{item.user_uuid}}'
     - readOnly: false
     - iconAfter: ''
     - _iconByIndex: []
@@ -18,7 +18,7 @@ template:
     - inputValue: ''
     - hidden: false
     - customValidation: ''
-    - data: '{{assignee_search.data}}'
+    - data: '{{ user_query.data }}'
     - searchMode: fuzzy
     - hideValidationMessage: false
     - fallbackTextByIndex:
@@ -35,7 +35,7 @@ template:
     - tooltipText: ''
     - labelAlign: left
     - formDataKey: '{{ self.id }}'
-    - value: null
+    - value: '{{current_user_match.data.uuid[0]}}'
     - hiddenByIndex:
         array: []
     - labelCaption: ''

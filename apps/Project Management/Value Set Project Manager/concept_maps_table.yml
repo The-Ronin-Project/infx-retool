@@ -1,0 +1,288 @@
+id: concept_maps_table
+type: widget
+subtype: TableWidget
+template:
+  ordered:
+    - showCustomButton: false
+    - sortMappedValue:
+        ordered: []
+    - _filteredSortedRenderedDataWithTypes: null
+    - heightType: fixed
+    - normalizedData: null
+    - saveChangesDisabled: ''
+    - columnTypeProperties:
+        ordered: []
+    - columnWidths:
+        - object:
+            id: __retool__action_list
+            value: 459.796875
+        - object:
+            id: purpose
+            value: 149.71875
+        - object:
+            id: Custom Column 2
+            value: 144.71875
+        - object:
+            id: Custom Column 3
+            value: 145.359375
+        - object:
+            id: Custom Column 1
+            value: 143.0546875
+    - showSummaryFooter: false
+    - disableRowSelectInteraction: false
+    - columnWidthsMobile: []
+    - hasNextAfterCursor: ''
+    - columnTypeSpecificExtras:
+        ordered: []
+    - onRowAdded: ''
+    - columnHeaderNames:
+        ordered:
+          - Custom Column 1: Mapping Count Here
+          - Custom Column 2: Review Count Here
+          - Custom Column 3: Adjudication Count
+    - alwaysShowPaginator: false
+    - columnColors:
+        ordered:
+          - display: ''
+          - effective_end: ''
+          - created_date: ''
+          - experimental: ''
+          - effective_start: ''
+          - author: ''
+          - name: ''
+          - sales: ''
+          - code: ''
+          - mapping_group: ''
+          - system: ''
+          - reason_for_no_map: ''
+          - assigned_mapper: ''
+          - status: ''
+          - comments: ''
+          - map_status: ''
+          - concept_map_uuid: ''
+          - assigned_reviewer: ''
+          - Custom Column 1: ''
+          - additional_context: ''
+          - Custom Column 2: ''
+          - version: ''
+          - title: ''
+          - id: ''
+          - uuid: ''
+          - concept_map_version_uuid: ''
+          - publisher: ''
+          - email: ''
+          - description: ''
+          - purpose: ''
+          - no_map: ''
+    - columnFrozenAlignments:
+        ordered: []
+    - allowMultiRowSelect: false
+    - columnFormats:
+        ordered: []
+    - columnRestrictedEditing:
+        ordered: []
+    - showFilterButton: true
+    - _columnVisibility:
+        ordered:
+          - display: false
+          - effective_end: false
+          - created_date: false
+          - experimental: false
+          - effective_start: false
+          - author: false
+          - name: false
+          - code: false
+          - mapping_group: false
+          - system: false
+          - reason_for_no_map: false
+          - assigned_mapper: false
+          - status: false
+          - comments: false
+          - map_status: false
+          - concept_map_uuid: false
+          - assigned_reviewer: false
+          - additional_context: false
+          - version: false
+          - title: true
+          - uuid: false
+          - concept_map_version_uuid: false
+          - publisher: false
+          - description: false
+          - no_map: false
+    - _columnSummaryTypes:
+        ordered: []
+    - _columnsWithLegacyBackgroundColor:
+        set: []
+    - showAddRowButton: false
+    - _unfilteredSelectedIndex: null
+    - nextBeforeCursor: ''
+    - columnVisibility:
+        ordered: []
+    - selectedPageIndex: '0'
+    - applyDynamicSettingsToColumnOrder: true
+    - rowColor:
+        array: []
+    - actionButtonColumnName: Actions
+    - resetAfterSave: true
+    - filterStackType: and
+    - downloadRawData: false
+    - showFetchingIndicator: true
+    - serverPaginated: false
+    - data: '{{load_concept_maps.data}}'
+    - displayedData: null
+    - actionButtons:
+        - ordered:
+            - actionButtonText: Map Concepts
+            - actionButtonType: runQuery
+            - actionButtonQuery: ''
+            - actionButtonInternalUrlPath: ''
+            - actionButtonInternalUrlQuery: ''
+            - actionButtonUrl: ''
+            - actionButtonNewWindow: false
+            - actionButtonDisabled: ''
+        - ordered:
+            - actionButtonText: Review Mappings
+            - actionButtonType: runQuery
+            - actionButtonQuery: ''
+            - actionButtonInternalUrlPath: ''
+            - actionButtonInternalUrlQuery: ''
+            - actionButtonUrl: ''
+            - actionButtonNewWindow: false
+            - actionButtonDisabled: ''
+        - ordered:
+            - actionButtonText: Adjudicate Suggestions
+            - actionButtonType: runQuery
+            - actionButtonQuery: ''
+            - actionButtonInternalUrlPath: ''
+            - actionButtonInternalUrlQuery: ''
+            - actionButtonUrl: ''
+            - actionButtonNewWindow: false
+            - actionButtonDisabled: ''
+    - actionButtonSelectsRow: true
+    - selectRowByDefault: true
+    - defaultSortByColumn: ''
+    - paginationOffset: 0
+    - columnAlignment:
+        ordered: []
+    - columnSummaries:
+        object: {}
+    - showBoxShadow: false
+    - sortedDesc: false
+    - customButtonName: ''
+    - columnMappersRenderAsHTML:
+        ordered: []
+    - showRefreshButton: true
+    - pageSize: '20'
+    - useDynamicColumnSettings: false
+    - actionButtonPosition: left
+    - dynamicRowHeights: false
+    - bulkUpdateAction: ''
+    - afterCursor: ''
+    - onCustomButtonPressQueryName: ''
+    - changeSet:
+        object: {}
+    - sortedColumn: ''
+    - _columnSummaryValues:
+        ordered: []
+    - checkboxRowSelect: true
+    - _compatibilityMode: false
+    - showColumnBorders: false
+    - clearSelectionLabel: Clear selection
+    - _renderedDataWithTypes: null
+    - columnAllowOverflow:
+        ordered: []
+    - beforeCursor: ''
+    - serverPaginationType: limitOffsetBased
+    - onRowSelect: ''
+    - showDownloadButton: true
+    - selectedIndex: null
+    - defaultSortDescending: false
+    - _sortedDisplayedDataIndices: null
+    - dynamicColumnSettings: null
+    - totalRowCount: ''
+    - recordUpdates:
+        array: []
+    - newRow: null
+    - emptyMessage: No rows found
+    - columnEditable:
+        ordered:
+          - uuid: false
+          - Custom Column 1: false
+          - Custom Column 2: false
+          - Custom Column 3: false
+    - _viewerColumnSummaryTypes:
+        object: {}
+    - filters:
+        array: []
+    - displayedDataIndices: null
+    - disableSorting:
+        ordered: []
+    - columnMappers:
+        ordered: []
+    - showClearSelection: false
+    - doubleClickToEdit: true
+    - overflowType: pagination
+    - _reverseSortedDisplayedDataIndices: null
+    - selectedCell:
+        object:
+          index: null
+          data: null
+          columnName: null
+    - columns: []
+    - defaultSelectedRow: first
+    - freezeActionButtonColumns: false
+    - sort: null
+    - _columns:
+        - uuid
+        - name
+        - title
+        - publisher
+        - author
+        - purpose
+        - description
+        - created_date
+        - experimental
+        - Custom Column 1
+        - Custom Column 2
+        - concept_map_uuid
+        - comments
+        - status
+        - effective_start
+        - effective_end
+        - version
+        - code
+        - display
+        - system
+        - additional_context
+        - map_status
+        - concept_map_version_uuid
+        - assigned_mapper
+        - assigned_reviewer
+        - no_map
+        - reason_for_no_map
+        - mapping_group
+        - Custom Column 3
+    - sortByRawValue:
+        ordered: []
+    - calculatedColumns:
+        - Custom Column 1
+        - Custom Column 2
+        - Custom Column 3
+    - selectedRow:
+        object:
+          index: null
+          data: null
+    - showPaginationOnTop: false
+    - _reverseDisplayedDataIndices: null
+    - nextAfterCursor: ''
+    - useCompactMode: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabbedContainer1
+    subcontainer: 0315c
+    row: 0.4
+    height: 10
+    width: 12
+createdAt: 2022-09-20T17:46:40.686Z
