@@ -1,26 +1,29 @@
 id: form1
 type: widget
-subtype: FormWidget
+subtype: FormWidget2
 template:
   ordered:
+    - disableSubmit: ''
     - heightType: fixed
-    - spinWhenChildrenAreFetching: true
-    - clearFormAfterSubmit: false
-    - requireValidFormForSubmit: true
-    - showBorder: true
-    - data: ''
-    - showDropShadow: true
-    - submitButtonFullWidth: false
-    - scroll: true
-    - submitDisabled: ''
-    - submitButtonText: ''
-    - onSubmit: ''
-    - requiredFormControls: []
+    - resetAfterSubmit: false
+    - submitting: false
+    - hidden: null
+    - data:
+        object: {}
+    - showHeader: false
+    - hoistFetching: true
+    - initialData: null
+    - showInEditor: null
+    - tooltipText: ''
+    - invalid: false
+    - showFooter: false
     - events: []
-    - hideSubmit: true
     - loading: ''
     - overflowType: hidden
     - disabled: ''
+    - requireValidation: true
+    - maintainSpaceWhenHidden: null
+    - showBody: true
 style:
   ordered: []
 position2:

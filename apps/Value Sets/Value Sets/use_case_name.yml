@@ -1,4 +1,4 @@
-id: select_use_case_name
+id: use_case_name
 type: datasource
 subtype: SqlQueryUnified
 resourceName: dc8029bc-3980-4836-841e-776c64eeca49

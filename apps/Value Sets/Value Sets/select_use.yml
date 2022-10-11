@@ -18,7 +18,7 @@ template:
     - inputValue: ''
     - hidden: false
     - customValidation: ''
-    - data: '{{ select_use_case_name.data }}'
+    - data: '{{ use_case_name.data }}'
     - searchMode: fuzzy
     - hideValidationMessage: false
     - fallbackTextByIndex:
