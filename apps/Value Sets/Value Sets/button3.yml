@@ -1,7 +1,6 @@
 id: button3
 type: widget
 subtype: ButtonWidget2
-resourceName: null
 template:
   ordered:
     - horizontalAlign: stretch
@@ -35,7 +34,7 @@ style:
 position2:
   position2:
     container: tabbedcontainer1
-    row: 26.6
+    row: 24.6
     col: 7
     height: 1
     width: 5
