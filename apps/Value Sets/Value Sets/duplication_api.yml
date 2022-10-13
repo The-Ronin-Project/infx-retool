@@ -8,7 +8,7 @@ template:
     - queryRefreshTime: ''
     - paginationLimit: ''
     - body: >-
-        [{"key":"name","value":"{{name_input_dup.value}}"},{"key":"title","value":"{{title_input_dup.value}}"},{"key":"contact","value":"{{dup_contact_input.value}}"},{"key":"value_set_description","value":"{{dup_description_input.value}}"},{"key":"purpose","value":"{{dup_purpose_input.value}}"},{"key":"effective_start","value":"{{dup_daterange.value.start}}"},{"key":"effective_end","value":"{{dup_daterange.value.end}}"},{"key":"version_description","value":"{{dup_version_description.value}}"}]
+        [{"key":"name","value":"{{name_input_dup.value}}"},{"key":"title","value":"{{title_input_dup.value}}"},{"key":"contact","value":"{{dup_contact_input.value}}"},{"key":"value_set_description","value":"{{dup_description_input.value}}"},{"key":"purpose","value":"{{dup_purpose_input.value}}"},{"key":"version_description","value":"{{dup_version_description.value}}"}]
     - lastReceivedFromResourceAt: null
     - queryDisabledMessage: ''
     - successMessage: ''
