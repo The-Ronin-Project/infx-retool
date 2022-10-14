@@ -31,7 +31,9 @@ template:
             - waitMs: '0'
     - loading: false
     - loaderPosition: auto
-    - disabled: false
+    - disabled: >-
+        {{load_metadata.data.status == 'active' || load_metadata.data.status ==
+        'retired' }}
     - maintainSpaceWhenHidden: false
 style:
   ordered: []
