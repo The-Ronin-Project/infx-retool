@@ -102,7 +102,9 @@ template:
             - actionButtonInternalUrlQuery: ''
             - actionButtonUrl: ''
             - actionButtonNewWindow: false
-            - actionButtonDisabled: ''
+            - actionButtonDisabled: >-
+                {{load_metadata.data.status == 'active' ||
+                load_metadata.data.status == 'retired' }}
     - actionButtonSelectsRow: true
     - selectRowByDefault: true
     - defaultSortByColumn: ''

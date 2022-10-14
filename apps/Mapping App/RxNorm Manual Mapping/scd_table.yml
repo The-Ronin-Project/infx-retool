@@ -20,7 +20,7 @@ template:
             value: 108.890625
         - object:
             id: __retool__action_list
-            value: 106.890625
+            value: 124.890625
     - showSummaryFooter: false
     - disableRowSelectInteraction: false
     - columnWidthsMobile: []
@@ -107,7 +107,9 @@ template:
             - actionButtonInternalUrlQuery: ''
             - actionButtonUrl: ''
             - actionButtonNewWindow: false
-            - actionButtonDisabled: ''
+            - actionButtonDisabled: >-
+                {{load_metadata.data.status == 'active' ||
+                load_metadata.data.status == 'retired' }}
     - actionButtonSelectsRow: true
     - selectRowByDefault: true
     - defaultSortByColumn: ''

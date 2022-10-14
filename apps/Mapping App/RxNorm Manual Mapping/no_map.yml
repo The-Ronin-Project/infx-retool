@@ -114,7 +114,9 @@ template:
         - '20e16'
     - overlayMaxHeight: 375
     - loading: false
-    - disabled: false
+    - disabled: >-
+        {{load_metadata.data.status == 'active' || load_metadata.data.status ==
+        'retired' }}
     - _labels:
         - missing dose
         - 'missing form '
