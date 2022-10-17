@@ -1,0 +1,24 @@
+id: text1
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - tooltipText: ''
+    - value: '**Add FHIR Code System to Value Set**'
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    subcontainer: header
+    height: 1
+    width: 10
+createdAt: 2022-08-31T18:19:10.013Z
