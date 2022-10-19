@@ -24,7 +24,35 @@ template:
         ordered: []
     - alwaysShowPaginator: false
     - columnColors:
-        ordered: []
+        ordered:
+          - display: ''
+          - mapping_comments: ''
+          - created_date: ''
+          - relationship_code_uuid: ''
+          - rc_uuid: ''
+          - cr_uuid: ''
+          - author: ''
+          - target_concept_system_version_uuid: ''
+          - code: ''
+          - mapping_group: ''
+          - system: ''
+          - reason_for_no_map: ''
+          - target_concept_code: ''
+          - assigned_mapper: ''
+          - target_concept_system: ''
+          - comments: ''
+          - map_status: ''
+          - source_concept_uuid: ''
+          - reviewed_date: ''
+          - assigned_reviewer: ''
+          - additional_context: ''
+          - review_comment: ''
+          - relationship: ''
+          - review_status: ''
+          - uuid: ''
+          - concept_map_version_uuid: ''
+          - target_concept_display: ''
+          - no_map: ''
     - columnFrozenAlignments:
         ordered: []
     - allowMultiRowSelect: false
@@ -54,7 +82,7 @@ template:
     - downloadRawData: false
     - showFetchingIndicator: true
     - serverPaginated: false
-    - data: ''
+    - data: '{{load_mapped_targets.data}}'
     - displayedData: null
     - actionButtons: []
     - actionButtonSelectsRow: true
