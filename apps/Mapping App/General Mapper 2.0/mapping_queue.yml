@@ -1,0 +1,223 @@
+id: mapping_queue
+type: widget
+subtype: TableWidget
+template:
+  ordered:
+    - showCustomButton: false
+    - sortMappedValue:
+        ordered: []
+    - _filteredSortedRenderedDataWithTypes: null
+    - heightType: fixed
+    - normalizedData: null
+    - saveChangesDisabled: ''
+    - columnTypeProperties:
+        ordered: []
+    - columnWidths:
+        - object:
+            id: display
+            value: 402.6640625
+    - showSummaryFooter: false
+    - disableRowSelectInteraction: false
+    - columnWidthsMobile: []
+    - hasNextAfterCursor: ''
+    - columnTypeSpecificExtras:
+        ordered: []
+    - onRowAdded: ''
+    - columnHeaderNames:
+        ordered:
+          - id: mda display
+    - alwaysShowPaginator: false
+    - columnColors:
+        ordered:
+          - display: ''
+          - name: ''
+          - sales: ''
+          - code: ''
+          - mapping_group: ''
+          - system: ''
+          - reason_for_no_map: ''
+          - assigned_mapper: ''
+          - comments: ''
+          - map_status: ''
+          - assigned_reviewer: ''
+          - additional_context: ''
+          - id: ''
+          - uuid: ''
+          - concept_map_version_uuid: ''
+          - email: ''
+          - no_map: ''
+    - columnFrozenAlignments:
+        ordered: []
+    - allowMultiRowSelect: false
+    - columnFormats:
+        ordered:
+          - Custom Column 1: button
+    - columnRestrictedEditing:
+        ordered: []
+    - showFilterButton: true
+    - _columnVisibility:
+        ordered:
+          - name: false
+          - sales: false
+          - code: false
+          - mapping_group: false
+          - system: false
+          - reason_for_no_map: false
+          - assigned_mapper: false
+          - comments: false
+          - map_status: false
+          - assigned_reviewer: false
+          - additional_context: false
+          - uuid: false
+          - concept_map_version_uuid: false
+          - email: false
+          - no_map: false
+    - _columnSummaryTypes:
+        ordered: []
+    - _columnsWithLegacyBackgroundColor:
+        set: []
+    - showAddRowButton: false
+    - _unfilteredSelectedIndex: null
+    - nextBeforeCursor: ''
+    - columnVisibility:
+        ordered: []
+    - selectedPageIndex: '0'
+    - applyDynamicSettingsToColumnOrder: true
+    - rowColor:
+        array: []
+    - actionButtonColumnName: Actions
+    - resetAfterSave: true
+    - filterStackType: and
+    - downloadRawData: false
+    - showFetchingIndicator: true
+    - serverPaginated: false
+    - data: '{{load_queue.data}}'
+    - displayedData: null
+    - actionButtons:
+        - ordered:
+            - actionButtonText: No Map
+            - actionButtonType: runQuery
+            - actionButtonQuery: no_map_it
+            - actionButtonInternalUrlPath: ''
+            - actionButtonInternalUrlQuery: ''
+            - actionButtonUrl: ''
+            - actionButtonNewWindow: false
+            - actionButtonDisabled: >-
+                {{load_metadata.data.status == 'active' ||
+                load_metadata.data.status == 'retired' }}
+    - actionButtonSelectsRow: true
+    - selectRowByDefault: true
+    - defaultSortByColumn: ''
+    - paginationOffset: 0
+    - columnAlignment:
+        ordered:
+          - Custom Column 1: left
+    - columnSummaries:
+        object: {}
+    - showBoxShadow: false
+    - sortedDesc: false
+    - customButtonName: ''
+    - columnMappersRenderAsHTML:
+        ordered: []
+    - showRefreshButton: true
+    - pageSize: '20'
+    - useDynamicColumnSettings: false
+    - actionButtonPosition: right
+    - dynamicRowHeights: false
+    - bulkUpdateAction: ''
+    - afterCursor: ''
+    - onCustomButtonPressQueryName: ''
+    - changeSet:
+        object: {}
+    - sortedColumn: ''
+    - _columnSummaryValues:
+        ordered: []
+    - checkboxRowSelect: true
+    - _compatibilityMode: false
+    - showColumnBorders: false
+    - clearSelectionLabel: Clear selection
+    - _renderedDataWithTypes: null
+    - columnAllowOverflow:
+        ordered: []
+    - beforeCursor: ''
+    - serverPaginationType: limitOffsetBased
+    - onRowSelect: ''
+    - showDownloadButton: true
+    - selectedIndex: null
+    - defaultSortDescending: false
+    - _sortedDisplayedDataIndices: null
+    - dynamicColumnSettings: null
+    - events:
+        - ordered:
+            - event: rowSelectChange
+            - type: widget
+            - method: setValue
+            - pluginId: search_text_input
+            - targetId: null
+            - params:
+                ordered:
+                  - value: '{{mapping_queue.selectedRow.data.display}}'
+            - waitType: debounce
+            - waitMs: '0'
+    - totalRowCount: ''
+    - recordUpdates:
+        array: []
+    - newRow: null
+    - emptyMessage: No rows found
+    - columnEditable:
+        ordered: []
+    - _viewerColumnSummaryTypes:
+        object: {}
+    - filters:
+        array: []
+    - displayedDataIndices: null
+    - disableSorting:
+        ordered: []
+    - columnMappers:
+        ordered: []
+    - showClearSelection: false
+    - doubleClickToEdit: true
+    - overflowType: pagination
+    - _reverseSortedDisplayedDataIndices: null
+    - selectedCell:
+        object:
+          index: null
+          data: null
+          columnName: null
+    - columns: []
+    - defaultSelectedRow: none
+    - freezeActionButtonColumns: false
+    - sort: null
+    - _columns:
+        - uuid
+        - code
+        - display
+        - system
+        - comments
+        - additional_context
+        - map_status
+        - concept_map_version_uuid
+        - assigned_mapper
+        - assigned_reviewer
+        - no_map
+        - reason_for_no_map
+        - mapping_group
+    - sortByRawValue:
+        ordered: []
+    - calculatedColumns: []
+    - selectedRow:
+        object:
+          index: null
+          data: null
+    - showPaginationOnTop: false
+    - _reverseDisplayedDataIndices: null
+    - nextAfterCursor: ''
+    - useCompactMode: false
+style:
+  ordered: []
+position2:
+  position2:
+    row: 2.6
+    height: 11.000000000000002
+    width: 4
+createdAt: 2022-09-08T21:21:14.896Z
