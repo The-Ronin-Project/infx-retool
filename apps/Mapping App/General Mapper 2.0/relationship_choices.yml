@@ -1,39 +1,42 @@
-id: map_it
+id: relationship_choices
 type: datasource
-subtype: RESTQuery
-resourceName: a00335cd-bd3b-4d98-8af4-7ff590ce95e8
-resourceDisplayName: INFX Internal Tools API
+subtype: SqlQueryUnified
+resourceName: dc8029bc-3980-4836-841e-776c64eeca49
+resourceDisplayName: Clinical Content PostgresSQL DB
 template:
   ordered:
     - queryRefreshTime: ''
-    - paginationLimit: ''
-    - body: >-
-        [{"key":"source_concept_uuid","value":"{{mapping_queue.selectedRow.data.uuid}}"},{"key":"relationship_code_uuid","value":"{{select_rel.value}}"},{"key":"target_concept_code","value":"{{search_results_table.selectedRow.data.code}}"},{"key":"target_concept_display","value":"{{search_results_table.selectedRow.data.display}}"},{"key":"target_concept_terminology_version_uuid","value":"{{load_metadata.data.target_value_set_version_uuid[0]}}"},{"key":"mapping_comments","value":"{{mapping_comments.value}}"},{"key":"author","value":"{{user_select.selectedLabel}}"}]
+    - records: ''
     - lastReceivedFromResourceAt: null
+    - databasePasswordOverride: ''
     - queryDisabledMessage: ''
     - successMessage: ''
     - queryDisabled: ''
     - playgroundQuerySaveId: latest
     - resourceNameOverride: ''
-    - runWhenModelUpdates: false
-    - paginationPaginationField: ''
-    - headers: ''
+    - runWhenModelUpdates: true
     - showFailureToaster: true
-    - paginationEnabled: false
-    - query: mappings/
+    - query: SELECT * FROM concept_maps.relationship_codes
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - privateParams: []
     - runWhenPageLoadsDelay: ''
+    - warningCodes: []
     - data: null
+    - recordId: ''
     - importedQueryInputs:
         ordered: []
     - isImported: false
     - showSuccessToaster: true
+    - dataArray: []
     - cacheKeyTtl: ''
-    - cookies: ''
+    - filterBy: ''
+    - databaseHostOverride: ''
     - metadata: null
+    - editorMode: sql
+    - actionType: ''
     - changesetObject: ''
+    - shouldUseLegacySql: false
     - errorTransformer: >-
         // The variable 'data' allows you to reference the request's data in the
         transformer. 
@@ -41,6 +44,7 @@ template:
         // example: return data.find(element => element.isError)
 
         return data.error
+    - databaseNameOverride: ''
     - confirmationMessage: null
     - isFetching: false
     - changeset: ''
@@ -49,13 +53,14 @@ template:
     - resourceTypeOverride: null
     - watchedParams: []
     - enableErrorTransformer: false
+    - enableBulkUpdates: false
     - showLatestVersionUpdatedWarning: false
-    - paginationDataField: ''
     - timestamp: 0
     - importedQueryDefaults:
         ordered: []
     - enableTransformer: false
     - showUpdateSetValueDynamicallyToggle: true
+    - bulkUpdatePrimaryKey: ''
     - runWhenPageLoads: false
     - transformer: >-
         // type your code here
@@ -64,36 +69,18 @@ template:
         20)
 
         return data
-    - events:
-        - ordered:
-            - event: success
-            - type: datasource
-            - method: trigger
-            - pluginId: load_queue
-            - targetId: null
-            - params:
-                ordered: []
-            - waitType: debounce
-            - waitMs: '0'
-        - ordered:
-            - event: success
-            - type: widget
-            - method: clearValue
-            - pluginId: mapping_comments
-            - targetId: null
-            - params:
-                ordered: []
-            - waitType: debounce
-            - waitMs: '0'
+    - events: []
+    - tableName: ''
     - queryTimeout: '10000'
     - requireConfirmation: false
-    - type: POST
     - queryFailureConditions: ''
     - changesetIsObject: false
     - enableCaching: false
     - allowedGroups: []
-    - bodyType: json
+    - databaseUsernameOverride: ''
+    - shouldEnableBatchQuerying: false
+    - doNotThrowOnNoOp: false
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2022-10-19T18:02:36.341Z
+createdAt: 2022-10-19T18:52:36.248Z

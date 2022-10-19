@@ -3,8 +3,7 @@ type: widget
 subtype: SelectWidget2
 template:
   ordered:
-    - imageByIndex:
-        array: []
+    - imageByIndex: ''
     - _disabledByIndex:
         - ''
         - ''
@@ -14,10 +13,8 @@ template:
         - Equivalent
         - Broader
         - Narrower
-    - iconByIndex:
-        array: []
-    - values:
-        array: []
+    - iconByIndex: ''
+    - values: '{{ item.uuid }}'
     - readOnly: false
     - iconAfter: ''
     - _iconByIndex:
@@ -28,12 +25,10 @@ template:
     - inputValue: ''
     - hidden: false
     - customValidation: ''
-    - data:
-        array: []
+    - data: '{{ relationship_choices.data }}'
     - searchMode: fuzzy
     - hideValidationMessage: false
-    - fallbackTextByIndex:
-        array: []
+    - fallbackTextByIndex: ''
     - textBefore: ''
     - _fallbackTextByIndex:
         - ''
@@ -50,8 +45,7 @@ template:
     - labelAlign: left
     - formDataKey: '{{ self.id }}'
     - value: null
-    - hiddenByIndex:
-        array: []
+    - hiddenByIndex: ''
     - labelCaption: ''
     - labelWidth: '33'
     - deprecatedLabels:
@@ -68,10 +62,9 @@ template:
     - itemAdornmentSize: auto
     - label: Select Relationship
     - _hasMigratedNestedItems: true
-    - captionByIndex:
-        array: []
+    - captionByIndex: ''
     - _validate: false
-    - itemMode: static
+    - itemMode: dynamic
     - labelWidthUnit: '%'
     - allowCustomValue: false
     - invalid: false
@@ -84,11 +77,9 @@ template:
         - ''
         - ''
         - ''
-    - tooltipByIndex:
-        array: []
+    - tooltipByIndex: ''
     - iconBefore: ''
-    - colorByIndex:
-        array: []
+    - colorByIndex: ''
     - selectedLabel: ''
     - events:
         ordered: []
@@ -108,16 +99,14 @@ template:
     - labelWrap: false
     - disabledValues:
         array: []
-    - disabledByIndex:
-        array: []
+    - disabledByIndex: ''
     - maintainSpaceWhenHidden: false
     - _imageByIndex:
         - ''
         - ''
         - ''
     - required: false
-    - labels:
-        array: []
+    - labels: '{{ item.display }}'
 style:
   ordered: []
 position2:

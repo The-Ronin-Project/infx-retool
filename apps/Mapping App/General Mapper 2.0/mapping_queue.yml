@@ -147,18 +147,7 @@ template:
     - defaultSortDescending: false
     - _sortedDisplayedDataIndices: null
     - dynamicColumnSettings: null
-    - events:
-        - ordered:
-            - event: rowSelectChange
-            - type: widget
-            - method: setValue
-            - pluginId: search_text_input
-            - targetId: null
-            - params:
-                ordered:
-                  - value: '{{mapping_queue.selectedRow.data.display}}'
-            - waitType: debounce
-            - waitMs: '0'
+    - events: []
     - totalRowCount: ''
     - recordUpdates:
         array: []

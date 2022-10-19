@@ -107,7 +107,7 @@ template:
         - ordered:
             - actionButtonText: Map
             - actionButtonType: runQuery
-            - actionButtonQuery: map_branded_pack
+            - actionButtonQuery: map_it
             - actionButtonInternalUrlPath: ''
             - actionButtonInternalUrlQuery: ''
             - actionButtonUrl: ''
