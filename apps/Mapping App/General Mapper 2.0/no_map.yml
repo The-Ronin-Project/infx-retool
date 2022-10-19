@@ -1,0 +1,118 @@
+id: no_map
+type: widget
+subtype: SplitButtonWidget
+template:
+  ordered:
+    - _disabledByIndex:
+        - false
+        - false
+    - showSelectionIndicator: true
+    - horizontalAlign: stretch
+    - iconByIndex:
+        array: []
+    - clickable: false
+    - _iconByIndex:
+        - ''
+        - ''
+    - hidden: false
+    - data:
+        array: []
+    - selectedItem: null
+    - showInEditor: false
+    - tooltipText: ''
+    - hiddenByIndex:
+        array: []
+    - _hiddenByIndex:
+        - false
+        - false
+    - _captionByIndex:
+        - ''
+        - ''
+    - styleVariant: solid
+    - _hasMigratedNestedItems: true
+    - captionByIndex:
+        array: []
+    - itemMode: static
+    - selectedIndex: 0
+    - _tooltipByIndex:
+        - ''
+        - ''
+    - tooltipByIndex:
+        array: []
+    - selectedLabel: ''
+    - events:
+        - ordered:
+            - event: click
+            - type: datasource
+            - method: trigger
+            - pluginId: no_map_it
+            - targetId: '20e16'
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: click
+            - type: datasource
+            - method: trigger
+            - pluginId: no_map_it
+            - targetId: e85eb
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: click
+            - type: datasource
+            - method: trigger
+            - pluginId: no_map_it
+            - targetId: b7644
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: click
+            - type: datasource
+            - method: trigger
+            - pluginId: no_map_it
+            - targetId: 0bd43
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: click
+            - type: datasource
+            - method: trigger
+            - pluginId: no_map_it
+            - targetId: ac651
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - _ids:
+        - e85eb
+        - '20e16'
+    - overlayMaxHeight: 375
+    - loading: false
+    - disabled: >-
+        {{load_metadata.data.status == 'active' || load_metadata.data.status ==
+        'retired' }}
+    - _labels:
+        - not enough information
+        - Save for discusion
+    - disabledByIndex:
+        array: []
+    - maintainSpaceWhenHidden: false
+    - labels:
+        array: []
+style:
+  ordered: []
+position2:
+  position2:
+    row: 13.599999999999987
+    col: 1
+    height: 1
+    width: 3
+createdAt: 2022-09-14T17:26:20.591Z
