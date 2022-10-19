@@ -6,12 +6,14 @@ template:
     - _disabledByIndex:
         - false
         - false
+        - false
     - showSelectionIndicator: true
     - horizontalAlign: stretch
     - iconByIndex:
         array: []
     - clickable: false
     - _iconByIndex:
+        - ''
         - ''
         - ''
     - hidden: false
@@ -25,7 +27,9 @@ template:
     - _hiddenByIndex:
         - false
         - false
+        - false
     - _captionByIndex:
+        - ''
         - ''
         - ''
     - styleVariant: solid
@@ -37,10 +41,21 @@ template:
     - _tooltipByIndex:
         - ''
         - ''
+        - ''
     - tooltipByIndex:
         array: []
     - selectedLabel: ''
     - events:
+        - ordered:
+            - event: click
+            - type: datasource
+            - method: trigger
+            - pluginId: no_map_it
+            - targetId: 8404d
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
         - ordered:
             - event: click
             - type: datasource
@@ -94,14 +109,16 @@ template:
     - _ids:
         - e85eb
         - '20e16'
+        - 8404d
     - overlayMaxHeight: 375
     - loading: false
     - disabled: >-
         {{load_metadata.data.status == 'active' || load_metadata.data.status ==
         'retired' }}
     - _labels:
-        - not enough information
+        - Not enough information
         - Save for discusion
+        - No map
     - disabledByIndex:
         array: []
     - maintainSpaceWhenHidden: false
