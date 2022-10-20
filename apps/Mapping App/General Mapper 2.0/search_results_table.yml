@@ -72,6 +72,7 @@ template:
           - route: false
           - code: false
           - displayName: false
+          - terminology_version_uuid: false
           - brandName: false
           - fullGenericName: false
           - suppress: false
