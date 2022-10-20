@@ -62,7 +62,7 @@ template:
     - timestamp: 0
     - importedQueryDefaults:
         ordered: []
-    - enableTransformer: false
+    - enableTransformer: true
     - showUpdateSetValueDynamicallyToggle: true
     - bulkUpdatePrimaryKey: ''
     - runWhenPageLoads: false
@@ -72,7 +72,11 @@ template:
         // example: return formatDataAsArray(data).filter(row => row.quantity >
         20)
 
-        return data
+        let finalResults = data
+
+        finalResults.mapping_group.push('rejected')
+
+        return finalResults
     - events: []
     - tableName: ''
     - queryTimeout: '10000'
