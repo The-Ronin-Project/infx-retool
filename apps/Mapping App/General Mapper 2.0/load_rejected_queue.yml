@@ -1,4 +1,4 @@
-id: load_mapped_targets
+id: load_rejected_queue
 type: datasource
 subtype: SqlQueryUnified
 resourceName: dc8029bc-3980-4836-841e-776c64eeca49
@@ -6,9 +6,6 @@ resourceDisplayName: Clinical Content PostgresSQL DB
 template:
   ordered:
     - queryRefreshTime: ''
-    - paginationLimit: ''
-    - body: >-
-        [{"key":"source_concept_uuid","value":"{{mapping_queue.selectedRow.data.uuid}}"},{"key":"relationship_code_uuid","value":"{{select_rel.value}}"},{"key":"target_concept_code","value":"{{search_results_table.selectedRow.data.code}}"},{"key":"target_concept_display","value":"{{search_results_table.selectedRow.data.display}}"},{"key":"target_concept_terminology_version_uuid","value":"{{search_results_table.selectedRow.data.terminology_version_uuid}}"},{"key":"mapping_comments","value":"{{mapping_comments.value}}"},{"key":"author","value":"{{user_select.selectedLabel}}"}]
     - records: ''
     - lastReceivedFromResourceAt: null
     - databasePasswordOverride: ''
@@ -20,17 +17,20 @@ template:
     - runWhenModelUpdates: true
     - showFailureToaster: true
     - query: >-
-        select cr.uuid as cr_uuid, * from concept_maps.concept_relationship as
-        cr
+        select source_concept.* from concept_maps.source_concept
 
-        join (select uuid as rc_uuid, display as Relationship from
-        concept_maps.relationship_codes) as rc on
-        rc.rc_uuid=cr.relationship_code_uuid
+        join concept_maps.concept_relationship
 
-        join concept_maps.source_concept on source_concept.uuid =
-        cr.source_concept_uuid
+        on concept_relationship.source_concept_uuid = source_concept.uuid
 
-        where source_concept_uuid = {{mapping_queue.selectedRow.data.uuid}}
+        where assigned_mapper={{user_select.value}}
+
+        and
+        source_concept.concept_map_version_uuid={{urlparams.concept_map_version_uuid}}
+
+        and no_map is not true
+
+        and concept_relationship.review_status = 'rejected'
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - privateParams: []
@@ -97,4 +97,4 @@ template:
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2022-10-19T20:45:55.350Z
+createdAt: 2022-10-20T23:18:34.652Z

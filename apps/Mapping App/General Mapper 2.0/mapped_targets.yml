@@ -62,7 +62,25 @@ template:
         ordered: []
     - showFilterButton: true
     - _columnVisibility:
-        ordered: []
+        ordered:
+          - created_date: false
+          - relationship_code_uuid: false
+          - rc_uuid: false
+          - cr_uuid: false
+          - target_concept_system_version_uuid: false
+          - mapping_group: false
+          - system: false
+          - reason_for_no_map: false
+          - assigned_mapper: false
+          - target_concept_system: false
+          - map_status: false
+          - source_concept_uuid: false
+          - reviewed_date: false
+          - assigned_reviewer: false
+          - additional_context: false
+          - uuid: false
+          - concept_map_version_uuid: false
+          - no_map: false
     - _columnSummaryTypes:
         ordered: []
     - _columnsWithLegacyBackgroundColor:
@@ -84,7 +102,16 @@ template:
     - serverPaginated: false
     - data: '{{load_mapped_targets.data}}'
     - displayedData: null
-    - actionButtons: []
+    - actionButtons:
+        - ordered:
+            - actionButtonText: Delete
+            - actionButtonType: runQuery
+            - actionButtonQuery: ''
+            - actionButtonInternalUrlPath: ''
+            - actionButtonInternalUrlQuery: ''
+            - actionButtonUrl: ''
+            - actionButtonNewWindow: false
+            - actionButtonDisabled: ''
     - actionButtonSelectsRow: true
     - selectRowByDefault: true
     - defaultSortByColumn: ''
@@ -101,7 +128,7 @@ template:
     - showRefreshButton: true
     - pageSize: '20'
     - useDynamicColumnSettings: false
-    - actionButtonPosition: left
+    - actionButtonPosition: right
     - dynamicRowHeights: false
     - bulkUpdateAction: ''
     - afterCursor: ''
@@ -155,7 +182,35 @@ template:
     - defaultSelectedRow: first
     - freezeActionButtonColumns: false
     - sort: null
-    - _columns: []
+    - _columns:
+        - cr_uuid
+        - concept_map_version_uuid
+        - display
+        - relationship
+        - target_concept_code
+        - target_concept_display
+        - mapping_comments
+        - review_status
+        - uuid
+        - target_concept_system
+        - created_date
+        - reviewed_date
+        - author
+        - source_concept_uuid
+        - relationship_code_uuid
+        - target_concept_system_version_uuid
+        - review_comment
+        - rc_uuid
+        - code
+        - system
+        - comments
+        - additional_context
+        - map_status
+        - assigned_mapper
+        - assigned_reviewer
+        - no_map
+        - reason_for_no_map
+        - mapping_group
     - sortByRawValue:
         ordered: []
     - calculatedColumns: []
