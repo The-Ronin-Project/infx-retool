@@ -106,9 +106,9 @@ template:
     - displayedData: null
     - actionButtons:
         - ordered:
-            - actionButtonText: Map
+            - actionButtonText: 'Map {{select_rel.selectedLabel}} '
             - actionButtonType: runQuery
-            - actionButtonQuery: map_it
+            - actionButtonQuery: map_branded_pack
             - actionButtonInternalUrlPath: ''
             - actionButtonInternalUrlQuery: ''
             - actionButtonUrl: ''
