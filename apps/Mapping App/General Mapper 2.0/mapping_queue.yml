@@ -11,7 +11,18 @@ template:
     - normalizedData: null
     - saveChangesDisabled: ''
     - columnTypeProperties:
-        ordered: []
+        ordered:
+          - Custom Column 2:
+              ordered:
+                - optionData: '{{ currentColumn }}'
+                - colorMode: auto
+                - allowCustomValue: true
+                - optionLabels:
+                    array: []
+                - optionColors:
+                    array: []
+                - optionValues:
+                    array: []
     - columnWidths:
         - object:
             id: display
@@ -52,6 +63,7 @@ template:
     - columnFormats:
         ordered:
           - Custom Column 1: button
+          - Custom Column 2: SingleTagDataCell
     - columnRestrictedEditing:
         ordered: []
     - showFilterButton: true
@@ -73,7 +85,8 @@ template:
           - email: false
           - no_map: false
     - _columnSummaryTypes:
-        ordered: []
+        ordered:
+          - Custom Column 2: ''
     - _columnsWithLegacyBackgroundColor:
         set: []
     - showAddRowButton: false
@@ -112,6 +125,7 @@ template:
     - columnAlignment:
         ordered:
           - Custom Column 1: left
+          - Custom Column 2: left
     - columnSummaries:
         object: {}
     - showBoxShadow: false
@@ -131,7 +145,8 @@ template:
         object: {}
     - sortedColumn: ''
     - _columnSummaryValues:
-        ordered: []
+        ordered:
+          - Custom Column 2: ''
     - checkboxRowSelect: true
     - _compatibilityMode: false
     - showColumnBorders: false
@@ -163,7 +178,8 @@ template:
     - disableSorting:
         ordered: []
     - columnMappers:
-        ordered: []
+        ordered:
+          - Custom Column 2: ''
     - showClearSelection: false
     - doubleClickToEdit: true
     - overflowType: pagination

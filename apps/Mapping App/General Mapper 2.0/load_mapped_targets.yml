@@ -6,6 +6,9 @@ resourceDisplayName: Clinical Content PostgresSQL DB
 template:
   ordered:
     - queryRefreshTime: ''
+    - paginationLimit: ''
+    - body: >-
+        [{"key":"source_concept_uuid","value":"{{mapping_queue.selectedRow.data.uuid}}"},{"key":"relationship_code_uuid","value":"{{select_rel.value}}"},{"key":"target_concept_code","value":"{{search_results_table.selectedRow.data.code}}"},{"key":"target_concept_display","value":"{{search_results_table.selectedRow.data.display}}"},{"key":"target_concept_terminology_version_uuid","value":"{{search_results_table.selectedRow.data.terminology_version_uuid}}"},{"key":"mapping_comments","value":"{{mapping_comments.value}}"},{"key":"author","value":"{{user_select.selectedLabel}}"}]
     - records: ''
     - lastReceivedFromResourceAt: null
     - databasePasswordOverride: ''

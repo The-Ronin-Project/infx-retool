@@ -42,6 +42,7 @@ template:
           - name: ''
           - code: ''
           - displayName: ''
+          - terminology_version_uuid: ''
           - rxcui: '{{search_rxnorm.data.top_rxcui == self ? ''#C1E1C1'' : ''white''}}'
           - brandName: ''
           - fullGenericName: ''
@@ -71,6 +72,7 @@ template:
           - route: false
           - code: false
           - displayName: false
+          - terminology_version_uuid: false
           - brandName: false
           - fullGenericName: false
           - suppress: false
@@ -112,7 +114,7 @@ template:
             - actionButtonInternalUrlQuery: ''
             - actionButtonUrl: ''
             - actionButtonNewWindow: false
-            - actionButtonDisabled: ''
+            - actionButtonDisabled: '{{select_rel.value == null}}'
     - actionButtonSelectsRow: true
     - selectRowByDefault: true
     - defaultSortByColumn: ''
