@@ -83,18 +83,7 @@ template:
         20)
 
         return data
-    - events:
-        - ordered:
-            - event: success
-            - type: widget
-            - method: setValue
-            - pluginId: search_text_input
-            - targetId: null
-            - params:
-                ordered:
-                  - value: '{{mapping_queue.selectedRow.data.display}}'
-            - waitType: debounce
-            - waitMs: '0'
+    - events: []
     - tableName: ''
     - queryTimeout: '10000'
     - requireConfirmation: false

@@ -16,11 +16,11 @@ template:
               ordered: []
     - columnWidths:
         - object:
-            id: __retool__action_list
-            value: 133.890625
-        - object:
             id: rxcui
             value: 93.390625
+        - object:
+            id: __retool__action_list
+            value: 246.88278198242188
     - showSummaryFooter: false
     - disableRowSelectInteraction: false
     - columnWidthsMobile: []
@@ -109,7 +109,7 @@ template:
         - ordered:
             - actionButtonText: 'Map {{select_rel.selectedLabel}} '
             - actionButtonType: runQuery
-            - actionButtonQuery: map_branded_pack
+            - actionButtonQuery: map_it
             - actionButtonInternalUrlPath: ''
             - actionButtonInternalUrlQuery: ''
             - actionButtonUrl: ''
@@ -132,6 +132,11 @@ template:
     - showRefreshButton: true
     - pageSize: '20'
     - useDynamicColumnSettings: false
+    - style:
+        ordered:
+          - alternateRowBackground: rgba(255, 255, 255, 1)
+          - background: surfacePrimary
+          - summaryBackground: surfacePrimary
     - actionButtonPosition: left
     - dynamicRowHeights: false
     - bulkUpdateAction: ''

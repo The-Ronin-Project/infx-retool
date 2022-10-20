@@ -1,10 +1,13 @@
-id: aggregate_search
+id: map_it
 type: datasource
-subtype: JavascriptQuery
-resourceName: JavascriptQuery
+subtype: RESTQuery
+resourceName: a00335cd-bd3b-4d98-8af4-7ff590ce95e8
+resourceDisplayName: INFX Internal Tools API
 template:
   ordered:
     - queryRefreshTime: ''
+    - paginationLimit: ''
+    - body: ''
     - lastReceivedFromResourceAt: null
     - queryDisabledMessage: ''
     - successMessage: ''
@@ -12,13 +15,12 @@ template:
     - playgroundQuerySaveId: latest
     - resourceNameOverride: ''
     - runWhenModelUpdates: false
+    - paginationPaginationField: ''
+    - headers: >-
+        [{"key":"source_concept_uuid","value":"{{mapping_queue.selectedRow.data.uuid}}"},{"key":"relationship_code_uuid","value":"{{select_rel.value}}"},{"key":"target_concept_code","value":"{{search_results_table.selectedRow.data.code}}"},{"key":"target_concept_display","value":"{{search_results_table.selectedRow.data.display}}"},{"key":"target_concept_terminology_version_uuid","value":"{{search_results_table.selectedRow.data.terminology_version_uuid}}"},{"key":"author","value":"{{current_user.fullName}}"},{"key":"mapping_comments","value":"{{mapping_comments.value}}"}]
     - showFailureToaster: true
-    - query: |-
-        if (search_text_input.value == "") {
-          return search_match_all.data
-        } else {
-          return search.data
-        }
+    - paginationEnabled: false
+    - query: mapping/
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - privateParams: []
@@ -27,8 +29,9 @@ template:
     - importedQueryInputs:
         ordered: []
     - isImported: false
-    - showSuccessToaster: false
+    - showSuccessToaster: true
     - cacheKeyTtl: ''
+    - cookies: ''
     - metadata: null
     - changesetObject: ''
     - errorTransformer: >-
@@ -47,12 +50,13 @@ template:
     - watchedParams: []
     - enableErrorTransformer: false
     - showLatestVersionUpdatedWarning: false
+    - paginationDataField: ''
     - timestamp: 0
     - importedQueryDefaults:
         ordered: []
     - enableTransformer: false
     - showUpdateSetValueDynamicallyToggle: true
-    - runWhenPageLoads: true
+    - runWhenPageLoads: false
     - transformer: >-
         // type your code here
 
@@ -63,11 +67,13 @@ template:
     - events: []
     - queryTimeout: '10000'
     - requireConfirmation: false
+    - type: POST
     - queryFailureConditions: ''
     - changesetIsObject: false
     - enableCaching: false
     - allowedGroups: []
+    - bodyType: json
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2022-10-18T20:53:46.874Z
+createdAt: 2022-10-20T20:41:24.975Z
