@@ -91,16 +91,6 @@ template:
                 ordered: []
             - waitType: debounce
             - waitMs: '0'
-        - ordered:
-            - event: success
-            - type: widget
-            - method: clearValue
-            - pluginId: rxcui_input
-            - targetId: null
-            - params:
-                ordered: []
-            - waitType: debounce
-            - waitMs: '0'
     - tableName: concept_maps.source_concept
     - queryTimeout: '10000'
     - requireConfirmation: false

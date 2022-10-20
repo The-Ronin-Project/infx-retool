@@ -67,7 +67,17 @@ template:
         20)
 
         return data
-    - events: []
+    - events:
+        - ordered:
+            - event: success
+            - type: datasource
+            - method: trigger
+            - pluginId: aggregate_search
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
     - queryTimeout: '10000'
     - requireConfirmation: false
     - queryFailureConditions: ''
