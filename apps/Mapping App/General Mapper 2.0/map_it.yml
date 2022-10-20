@@ -7,7 +7,8 @@ template:
   ordered:
     - queryRefreshTime: ''
     - paginationLimit: ''
-    - body: ''
+    - body: >-
+        [{"key":"source_concept_uuid","value":"{{mapping_queue.selectedRow.data.uuid}}"},{"key":"relationship_code_uuid","value":"{{select_rel.value}}"},{"key":"target_concept_code","value":"{{search_results_table.selectedRow.data.code}}"},{"key":"target_concept_display","value":"{{search_results_table.selectedRow.data.display}}"},{"key":"target_concept_terminology_version_uuid","value":"{{search_results_table.selectedRow.data.terminology_version_uuid}}"},{"key":"author","value":"{{current_user.fullName}}"},{"key":"mapping_comments","value":"{{mapping_comments.value}}"}]
     - lastReceivedFromResourceAt: null
     - queryDisabledMessage: ''
     - successMessage: ''
@@ -16,11 +17,10 @@ template:
     - resourceNameOverride: ''
     - runWhenModelUpdates: false
     - paginationPaginationField: ''
-    - headers: >-
-        [{"key":"source_concept_uuid","value":"{{mapping_queue.selectedRow.data.uuid}}"},{"key":"relationship_code_uuid","value":"{{select_rel.value}}"},{"key":"target_concept_code","value":"{{search_results_table.selectedRow.data.code}}"},{"key":"target_concept_display","value":"{{search_results_table.selectedRow.data.display}}"},{"key":"target_concept_terminology_version_uuid","value":"{{search_results_table.selectedRow.data.terminology_version_uuid}}"},{"key":"author","value":"{{current_user.fullName}}"},{"key":"mapping_comments","value":"{{mapping_comments.value}}"}]
+    - headers: '[]'
     - showFailureToaster: true
     - paginationEnabled: false
-    - query: mapping/
+    - query: mappings/
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - privateParams: []
@@ -64,7 +64,17 @@ template:
         20)
 
         return data
-    - events: []
+    - events:
+        - ordered:
+            - event: success
+            - type: datasource
+            - method: trigger
+            - pluginId: load_queue
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
     - queryTimeout: '10000'
     - requireConfirmation: false
     - type: POST

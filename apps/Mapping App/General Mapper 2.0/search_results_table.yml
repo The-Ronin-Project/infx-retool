@@ -163,18 +163,7 @@ template:
     - defaultSortDescending: false
     - _sortedDisplayedDataIndices: null
     - dynamicColumnSettings: null
-    - events:
-        - ordered:
-            - event: rowClick
-            - type: widget
-            - method: setValue
-            - pluginId: rxcui_input
-            - targetId: null
-            - params:
-                ordered:
-                  - value: '{{search_results_table.selectedRow.data.rxcui}}'
-            - waitType: debounce
-            - waitMs: '0'
+    - events: []
     - totalRowCount: ''
     - recordUpdates:
         array: []
