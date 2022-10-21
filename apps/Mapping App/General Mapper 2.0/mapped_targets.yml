@@ -106,7 +106,7 @@ template:
         - ordered:
             - actionButtonText: Delete
             - actionButtonType: runQuery
-            - actionButtonQuery: ''
+            - actionButtonQuery: delete_mapping
             - actionButtonInternalUrlPath: ''
             - actionButtonInternalUrlQuery: ''
             - actionButtonUrl: ''
