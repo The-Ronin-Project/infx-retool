@@ -7,12 +7,14 @@ template:
         - false
         - false
         - false
+        - ''
     - showSelectionIndicator: true
     - horizontalAlign: stretch
     - iconByIndex:
         array: []
     - clickable: false
     - _iconByIndex:
+        - ''
         - ''
         - ''
         - ''
@@ -28,7 +30,9 @@ template:
         - false
         - false
         - false
+        - false
     - _captionByIndex:
+        - ''
         - ''
         - ''
         - ''
@@ -42,10 +46,38 @@ template:
         - ''
         - ''
         - ''
+        - ''
     - tooltipByIndex:
         array: []
     - selectedLabel: ''
     - events:
+        - ordered:
+            - method: trigger
+            - enabled: '{{no_map_reason_input.value != ''''}}'
+            - params:
+                ordered: []
+            - targetId: 82bbe
+            - pluginId: no_map_it
+            - waitType: debounce
+            - event: click
+            - type: datasource
+            - waitMs: '0'
+        - ordered:
+            - method: showNotification
+            - enabled: '{{no_map_reason_input.value == ''''}}'
+            - params:
+                ordered:
+                  - options:
+                      ordered:
+                        - notificationType: info
+                        - title: Must Give Reason
+                        - description: If Other is selected, you must type a reason
+            - targetId: 82bbe
+            - pluginId: ''
+            - waitType: debounce
+            - event: click
+            - type: util
+            - waitMs: '0'
         - ordered:
             - event: click
             - type: datasource
@@ -110,6 +142,7 @@ template:
         - e85eb
         - '20e16'
         - 8404d
+        - 82bbe
     - overlayMaxHeight: 375
     - loading: false
     - disabled: >-
@@ -119,6 +152,7 @@ template:
         - Not enough information
         - Save for discusion
         - No map
+        - Other
     - disabledByIndex:
         array: []
     - maintainSpaceWhenHidden: false

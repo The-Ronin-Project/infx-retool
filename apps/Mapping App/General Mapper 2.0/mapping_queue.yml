@@ -119,7 +119,9 @@ template:
             - actionButtonNewWindow: false
             - actionButtonDisabled: >-
                 {{load_metadata.data.status == 'active' ||
-                load_metadata.data.status == 'retired' }}
+                load_metadata.data.status == 'retired'  ||
+                (no_map.selectedItem.label == 'Other' &&
+                no_map_reason_input.value == '')}}
     - actionButtonSelectsRow: true
     - selectRowByDefault: true
     - defaultSortByColumn: ''

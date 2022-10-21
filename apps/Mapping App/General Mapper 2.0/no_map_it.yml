@@ -48,7 +48,8 @@ template:
     - confirmationMessage: null
     - isFetching: false
     - changeset: >-
-        [{"key":"no_map","value":"true"},{"key":"reason_for_no_map","value":"{{no_map.selectedItem.label}}"}]
+        [{"key":"no_map","value":"true"},{"key":"reason_for_no_map","value":"{{no_map.selectedItem.label
+        == 'Other' ? no_map_reason_input.value : no_map.selectedItem.label}}"}]
     - rawData: null
     - queryTriggerDelay: '0'
     - resourceTypeOverride: null
