@@ -68,6 +68,7 @@ template:
           - rc_uuid: false
           - cr_uuid: false
           - target_concept_system_version_uuid: false
+          - code: false
           - mapping_group: false
           - system: false
           - reason_for_no_map: false
