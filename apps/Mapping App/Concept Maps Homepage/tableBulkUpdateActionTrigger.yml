@@ -19,6 +19,7 @@ template:
     - query: ''
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
+    - error: null
     - privateParams: []
     - triggersOnSuccess:
         - load_value_sets

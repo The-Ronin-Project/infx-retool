@@ -1,28 +1,25 @@
-id: concept_map_drop_down_select
+id: use_case
 type: widget
 subtype: SelectWidget2
 template:
   ordered:
-    - imageByIndex:
-        array: []
+    - imageByIndex: ''
     - _disabledByIndex: []
     - showSelectionIndicator: true
     - _values: []
-    - iconByIndex:
-        array: []
-    - values: '{{ item }}'
+    - iconByIndex: ''
+    - values: '{{ item.uuid }}'
     - readOnly: false
     - iconAfter: ''
     - _iconByIndex: []
-    - allowDeselect: true
+    - allowDeselect: false
     - inputValue: ''
     - hidden: false
     - customValidation: ''
-    - data: '{{load_concept_maps.data.uuid}}'
+    - data: '{{ use_case_select.data }}'
     - searchMode: fuzzy
     - hideValidationMessage: false
-    - fallbackTextByIndex:
-        array: []
+    - fallbackTextByIndex: ''
     - textBefore: ''
     - _fallbackTextByIndex: []
     - selectedItem: null
@@ -36,20 +33,18 @@ template:
     - labelAlign: left
     - formDataKey: '{{ self.id }}'
     - value: null
-    - hiddenByIndex:
-        array: []
-    - allowSearch: true
+    - hiddenByIndex: ''
     - labelCaption: ''
     - labelWidth: '33'
-    - deprecatedLabels: '{{load_concept_maps.data.title}}'
+    - deprecatedLabels:
+        array: []
     - _hiddenByIndex: []
     - placeholder: Select an option
     - _captionByIndex: []
     - itemAdornmentSize: auto
-    - label: Select an existing value set to duplicate
+    - label: Use Case
     - _hasMigratedNestedItems: true
-    - captionByIndex:
-        array: []
+    - captionByIndex: ''
     - _validate: false
     - itemMode: dynamic
     - labelWidthUnit: '%'
@@ -58,17 +53,15 @@ template:
     - selectedIndex: null
     - _tooltipByIndex: []
     - _colorByIndex: []
-    - tooltipByIndex:
-        array: []
+    - tooltipByIndex: ''
     - iconBefore: ''
-    - colorByIndex:
-        array: []
+    - colorByIndex: ''
     - selectedLabel: ''
     - events:
         ordered: []
     - _ids: []
     - emptyMessage: ''
-    - overlayMaxHeight: null
+    - overlayMaxHeight: 375
     - loading: false
     - disabled: false
     - labelPosition: left
@@ -76,19 +69,18 @@ template:
     - labelWrap: false
     - disabledValues:
         array: []
-    - disabledByIndex:
-        array: []
+    - disabledByIndex: ''
     - maintainSpaceWhenHidden: false
     - _imageByIndex: []
-    - required: false
-    - labels: '{{ self.deprecatedLabels[i] }}'
+    - required: true
+    - labels: '{{ item.name }}'
 style:
   ordered: []
 position2:
   position2:
-    container: tabbedcontainer1
-    subcontainer: '2'
-    row: 0.5999999999999996
+    container: form1
+    row: 3.8000000000000003
+    col: 3
     height: 1
-    width: 12
-createdAt: 2022-01-25T22:16:09.290Z
+    width: 9
+createdAt: 2022-10-06T22:25:18.249Z

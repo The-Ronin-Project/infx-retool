@@ -9,6 +9,7 @@ template:
     - _filteredSortedRenderedDataWithTypes: null
     - heightType: fixed
     - normalizedData: null
+    - rowHeight: standard
     - saveChangesDisabled: ''
     - columnTypeProperties:
         ordered: []
@@ -29,9 +30,6 @@ template:
             id: __retool__action_list
             value: 329.09375
         - object:
-            id: title
-            value: 356.71875
-        - object:
             id: description
             value: 337.09375
         - object:
@@ -40,6 +38,9 @@ template:
         - object:
             id: author
             value: 152.765625
+        - object:
+            id: title
+            value: 479.71875
     - showSummaryFooter: false
     - disableRowSelectInteraction: false
     - columnWidthsMobile: []
@@ -53,13 +54,17 @@ template:
     - columnColors:
         ordered:
           - contact: ''
+          - include_self_map: ''
           - immutable: ''
           - created_date: ''
           - experimental: ''
           - identifier: ''
+          - source_value_set_uuid: ''
           - author: ''
           - name: ''
           - url: ''
+          - use_case_uuid: ''
+          - target_value_set_uuid: ''
           - title: ''
           - type: ''
           - uuid: ''
@@ -220,6 +225,7 @@ template:
     - doubleClickToEdit: false
     - overflowType: scroll
     - _reverseSortedDisplayedDataIndices: null
+    - showTableBorder: true
     - selectedCell:
         object:
           index: null
@@ -280,6 +286,7 @@ style:
 position2:
   position2:
     container: tabbedcontainer1
+    subcontainer: '0'
     row: 1
     height: 22.8
     width: 8

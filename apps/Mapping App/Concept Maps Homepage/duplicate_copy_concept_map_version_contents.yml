@@ -30,6 +30,7 @@ template:
         --where value_set_version={{version_select.value}}
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
+    - error: null
     - privateParams: []
     - runWhenPageLoadsDelay: ''
     - warningCodes: []

@@ -19,6 +19,7 @@ template:
     - query: ''
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
+    - error: null
     - privateParams: []
     - triggersOnSuccess:
         - load_value_sets
@@ -51,7 +52,7 @@ template:
     - confirmationMessage: null
     - isFetching: false
     - changeset: >-
-        [{"key":"title","value":"{{title_input.value}}"},{"key":"purpose","value":"{{purpose_text_input.value}}"},{"key":"experimental","value":"{{experimental_switch.value}}"},{"key":"type","value":"{{type_dropdown.value}}"},{"key":"immutable","value":"false"},{"key":"contact","value":"{{contact_text_input.value}}"},{"key":"uuid","value":"{{uuid.v1()}}"},{"key":"publisher","value":"{{publisher_text_input.value}}"},{"key":"description","value":"{{description_text_input.value}}"},{"key":"name","value":"{{name_input.value}}"}]
+        [{"key":"title","value":"{{title_input.value}}"},{"key":"purpose","value":"{{purpose_text_input.value}}"},{"key":"experimental","value":"{{experimental_check_box.value}}"},{"key":"type","value":"{{type_dropdown.value}}"},{"key":"immutable","value":"false"},{"key":"contact","value":"{{author_text.value}}"},{"key":"uuid","value":"{{uuid.v1()}}"},{"key":"publisher","value":"{{publisher_text_input.value}}"},{"key":"description","value":"{{description_text_input.value}}"},{"key":"name","value":"{{name_input.value}}"}]
     - rawData: null
     - queryTriggerDelay: '0'
     - resourceTypeOverride: null

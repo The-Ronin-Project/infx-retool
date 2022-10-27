@@ -21,6 +21,7 @@ template:
         {{concept_map_drop_down_select.value}}
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
+    - error: null
     - privateParams: []
     - runWhenPageLoadsDelay: ''
     - warningCodes: []

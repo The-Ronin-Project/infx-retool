@@ -23,6 +23,7 @@ style:
 position2:
   position2:
     container: tabbedcontainer1
+    subcontainer: '0'
     row: 22.8
     col: 9
     height: 1

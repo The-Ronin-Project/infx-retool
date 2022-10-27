@@ -24,6 +24,7 @@ template:
         where vsv.uuid={{version_select.value}}
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
+    - error: null
     - privateParams: []
     - runWhenPageLoadsDelay: ''
     - warningCodes: []

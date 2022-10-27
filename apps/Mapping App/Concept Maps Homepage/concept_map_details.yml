@@ -16,6 +16,7 @@ template:
     - rowVisibility:
         ordered:
           - contact: true
+          - include_self_map: true
           - a: true
           - b: true
           - immutable: true
@@ -23,9 +24,12 @@ template:
           - created_date: true
           - experimental: true
           - identifier: true
+          - source_value_set_uuid: true
           - author: true
           - name: true
           - url: false
+          - use_case_uuid: true
+          - target_value_set_uuid: true
           - title: true
           - type: true
           - uuid: true
@@ -54,12 +58,17 @@ template:
         - uuid
         - author
         - created_date
+        - include_self_map
+        - source_value_set_uuid
+        - target_value_set_uuid
+        - use_case_uuid
     - keyTitle: Key
 style:
   ordered: []
 position2:
   position2:
     container: tabbedcontainer1
+    subcontainer: '0'
     col: 8
     height: 16.200000000000003
     width: 4
