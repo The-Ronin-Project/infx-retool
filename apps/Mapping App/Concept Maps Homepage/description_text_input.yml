@@ -26,8 +26,8 @@ template:
     - labelCaption: ''
     - labelWidth: '33'
     - autoFill: ''
-    - placeholder: What content will be in this value set?
-    - label: description
+    - placeholder: What content will be in this concept map?
+    - label: Description
     - _validate: false
     - labelWidthUnit: '%'
     - invalid: false
@@ -48,7 +48,7 @@ style:
 position2:
   position2:
     container: form1
-    row: 2
+    row: 2.8
     height: 1
     width: 12
 createdAt: 2021-10-11T18:56:31.894Z

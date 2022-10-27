@@ -1,28 +1,25 @@
-id: concept_map_drop_down_select
+id: target_terminology_version
 type: widget
 subtype: SelectWidget2
 template:
   ordered:
-    - imageByIndex:
-        array: []
+    - imageByIndex: ''
     - _disabledByIndex: []
     - showSelectionIndicator: true
     - _values: []
-    - iconByIndex:
-        array: []
-    - values: '{{ item }}'
+    - iconByIndex: ''
+    - values: '{{ item.uuid }}'
     - readOnly: false
     - iconAfter: ''
     - _iconByIndex: []
-    - allowDeselect: true
+    - allowDeselect: false
     - inputValue: ''
     - hidden: false
     - customValidation: ''
-    - data: '{{load_concept_maps.data.uuid}}'
+    - data: '{{ target_version.data }}'
     - searchMode: fuzzy
-    - hideValidationMessage: false
-    - fallbackTextByIndex:
-        array: []
+    - hideValidationMessage: true
+    - fallbackTextByIndex: ''
     - textBefore: ''
     - _fallbackTextByIndex: []
     - selectedItem: null
@@ -35,21 +32,20 @@ template:
     - tooltipText: ''
     - labelAlign: left
     - formDataKey: '{{ self.id }}'
-    - value: null
-    - hiddenByIndex:
-        array: []
-    - allowSearch: true
+    - value: '{{target_version.data.uuid[0]}}'
+    - hiddenByIndex: ''
     - labelCaption: ''
+    - hideLabel: true
     - labelWidth: '33'
-    - deprecatedLabels: '{{load_concept_maps.data.title}}'
+    - deprecatedLabels:
+        array: []
     - _hiddenByIndex: []
-    - placeholder: Select an option
+    - placeholder: Select version
     - _captionByIndex: []
     - itemAdornmentSize: auto
-    - label: Select an existing value set to duplicate
+    - label: Label
     - _hasMigratedNestedItems: true
-    - captionByIndex:
-        array: []
+    - captionByIndex: ''
     - _validate: false
     - itemMode: dynamic
     - labelWidthUnit: '%'
@@ -58,17 +54,15 @@ template:
     - selectedIndex: null
     - _tooltipByIndex: []
     - _colorByIndex: []
-    - tooltipByIndex:
-        array: []
+    - tooltipByIndex: ''
     - iconBefore: ''
-    - colorByIndex:
-        array: []
+    - colorByIndex: ''
     - selectedLabel: ''
     - events:
         ordered: []
     - _ids: []
     - emptyMessage: ''
-    - overlayMaxHeight: null
+    - overlayMaxHeight: 375
     - loading: false
     - disabled: false
     - labelPosition: left
@@ -76,19 +70,18 @@ template:
     - labelWrap: false
     - disabledValues:
         array: []
-    - disabledByIndex:
-        array: []
+    - disabledByIndex: ''
     - maintainSpaceWhenHidden: false
     - _imageByIndex: []
-    - required: false
-    - labels: '{{ self.deprecatedLabels[i] }}'
+    - required: true
+    - labels: '{{ item.version }}'
 style:
   ordered: []
 position2:
   position2:
-    container: tabbedcontainer1
-    subcontainer: '2'
-    row: 0.5999999999999996
+    container: form1
+    row: 10
+    col: 9
     height: 1
-    width: 12
-createdAt: 2022-01-25T22:16:09.290Z
+    width: 3
+createdAt: 2022-10-06T22:21:07.942Z

@@ -29,6 +29,7 @@ template:
         '', 'Initial version', 1, 'draft', now())
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
+    - error: null
     - privateParams: []
     - runWhenPageLoadsDelay: ''
     - warningCodes: []

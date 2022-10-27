@@ -1,6 +1,6 @@
-id: experimental_switch
+id: experimental_check_box
 type: widget
-subtype: SwitchWidget2
+subtype: CheckboxWidget2
 template:
   ordered:
     - hidden: false
@@ -12,9 +12,8 @@ template:
     - labelAlign: left
     - formDataKey: '{{ self.id }}'
     - value: 'false'
-    - labelCaption: ''
-    - hideLabel: false
-    - label: Experimental (Not For Production)
+    - labelCaption: (Not For Production)
+    - label: Experimental
     - _validate: false
     - invalid: false
     - events:
@@ -29,8 +28,8 @@ style:
 position2:
   position2:
     container: form1
-    row: 6
-    col: 4
+    row: 6.399999999999999
+    col: 3
     height: 1
-    width: 8
+    width: 2
 createdAt: 2021-10-11T18:56:31.270Z

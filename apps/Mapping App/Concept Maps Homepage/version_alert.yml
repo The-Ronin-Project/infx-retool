@@ -1,0 +1,33 @@
+id: version_alert
+type: widget
+subtype: AlertWidget
+template:
+  ordered:
+    - valueToCopy: ''
+    - internalUrlHashParams: ''
+    - hidden: '{{source_terminology_version.value!=undefined}}'
+    - exportFileType: csv
+    - buttonType: action
+    - showInEditor: false
+    - url: ''
+    - newWindow: false
+    - exportQuery: ''
+    - action: ''
+    - internalUrlQuery: ''
+    - internalUrlPath: ''
+    - title: NOT ACTIVE
+    - type: error
+    - exportFileName: ''
+    - description: STOP! no active version
+    - maintainSpaceWhenHidden: true
+    - buttonText: ''
+style:
+  ordered: []
+position2:
+  position2:
+    container: form1
+    row: 6.800000000000001
+    col: 9
+    height: 1
+    width: 3
+createdAt: 2022-10-27T20:11:44.853Z

@@ -1,4 +1,4 @@
-id: duplicate_create_vs
+id: target_version
 type: datasource
 subtype: SqlQueryUnified
 resourceName: dc8029bc-3980-4836-841e-776c64eeca49
@@ -14,20 +14,13 @@ template:
     - queryDisabled: ''
     - playgroundQuerySaveId: latest
     - resourceNameOverride: ''
-    - runWhenModelUpdates: false
+    - runWhenModelUpdates: true
     - showFailureToaster: true
-    - query: >-
-        insert into value_sets.value_set 
-
-        (title, name, purpose, experimental, type, immutable, contact, uuid,
-        publisher, description)
-
-        VALUES
-
-        ({{title_input_dup.value}}, {{name_input_dup.value}},
-        {{purpose_input.value}}, {{experimental_input.value}}, 'intensional',
-        false, {{contact_input.value}}, {{new_concept_map_uuid.value}}, 'Project
-        Ronin', {{description_input.value}})
+    - query: |-
+        select uuid, version from value_sets.value_set_version 
+        where value_set_uuid = {{target_terminology.value}}
+        and status = 'active'
+        order by version DESC
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
@@ -95,5 +88,5 @@ template:
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2022-01-25T22:41:00.380Z
-folder: valueset_queries
+createdAt: 2022-10-26T22:10:23.582Z
+folder: concept_map_queries

@@ -1,80 +1,78 @@
-id: tabbedcontainer1
+id: tabs1
 type: widget
-subtype: ContainerWidget2
+subtype: TabsWidget2
 template:
   ordered:
     - _disabledByIndex:
         - ''
         - ''
         - ''
-    - heightType: fixed
-    - currentViewKey: 0
+    - _values:
+        - Tab 1
+        - Tab 2
+        - Tab 3
     - iconByIndex:
         array: []
-    - clickable: false
+    - values:
+        array: []
+    - alignment: left
     - _iconByIndex:
         - ''
         - ''
         - ''
-    - hidden: null
-    - showHeader: true
-    - hoistFetching: true
-    - views:
+    - hidden: false
+    - data:
         array: []
-    - showInEditor: null
-    - tooltipText: ''
+    - targetContainerId: tabbedcontainer1
+    - selectedItem: null
+    - showInEditor: false
+    - navigateContainer: true
+    - value: '{{ self.values[0] }}'
     - hiddenByIndex:
         array: []
     - _hiddenByIndex:
         - ''
         - ''
         - ''
-    - currentViewIndex: 0
     - _hasMigratedNestedItems: true
-    - transition: slide
     - itemMode: static
+    - selectedIndex: null
     - _tooltipByIndex:
         - ''
         - ''
         - ''
     - tooltipByIndex:
         array: []
-    - showFooter: false
-    - _viewKeys:
-        - 0
-        - 1
-        - 2
+    - selectedLabel: ''
     - events:
         ordered: []
     - _ids:
-        - '0'
-        - '1'
-        - '2'
-    - viewKeys:
-        array: []
+        - 4b8d1
+        - 9f555
+        - 0fa44
     - iconPositionByIndex:
         array: []
     - _iconPositionByIndex:
         - ''
         - ''
         - ''
-    - loading: false
-    - overflowType: hidden
-    - disabled: ''
+    - disabled: false
+    - linePosition: bottom
     - _labels:
-        - Browse Existing Concept Maps
-        - Create A New Concept Map
-        - Duplicate Existing Concept Map
+        - ''
+        - ''
+        - ''
     - disabledByIndex:
         array: []
-    - maintainSpaceWhenHidden: null
-    - showBody: true
+    - maintainSpaceWhenHidden: false
     - labels:
         array: []
 style:
   ordered: []
 position2:
   position2:
-    height: 25.8
+    container: tabbedcontainer1
+    rowGroup: header
+    height: 0.8
     width: 12
-createdAt: 2021-10-01T16:33:49.853Z
+createdAt: 2022-10-27T19:34:23.482Z

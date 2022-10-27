@@ -22,12 +22,12 @@ template:
     - tooltipText: ''
     - labelAlign: right
     - formDataKey: '{{ self.id }}'
-    - value: '{{title_input.value.replace(/[^\w]+/g, '''')}}'
-    - labelCaption: ''
+    - value: '{{title_input.value.toLowerCase().replace(/[^\w]+/g, '''')}}'
+    - labelCaption: machine-readable
     - labelWidth: '33'
     - autoFill: ''
     - placeholder: Enter value
-    - label: name (machine-readable)
+    - label: 'Name '
     - _validate: false
     - labelWidthUnit: '%'
     - invalid: false
@@ -48,7 +48,7 @@ style:
 position2:
   position2:
     container: form1
-    row: 1
+    row: 1.8
     height: 1
     width: 12
 createdAt: 2022-02-17T18:12:00.145Z
