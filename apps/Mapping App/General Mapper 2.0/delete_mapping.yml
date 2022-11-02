@@ -21,6 +21,7 @@ template:
         where uuid={{mapped_targets.selectedRow.data.cr_uuid}}
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
+    - error: null
     - privateParams: []
     - runWhenPageLoadsDelay: ''
     - warningCodes: []

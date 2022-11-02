@@ -16,9 +16,14 @@ template:
     - resourceNameOverride: ''
     - runWhenModelUpdates: true
     - showFailureToaster: true
-    - query: SELECT * FROM concept_maps.relationship_codes
+    - query: >-
+        SELECT * FROM concept_maps.relationship_codes
+
+        where display in ('Equivalent', 'Source Is Broader Than Target','Source
+        Is Narrower Than Target')
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
+    - error: null
     - privateParams: []
     - runWhenPageLoadsDelay: ''
     - warningCodes: []
