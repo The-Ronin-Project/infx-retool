@@ -33,6 +33,7 @@ template:
         and concept_relationship.review_status = 'rejected'
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
+    - error: null
     - privateParams: []
     - runWhenPageLoadsDelay: ''
     - warningCodes: []

@@ -33,6 +33,7 @@ template:
         where source_concept_uuid = {{mapping_queue.selectedRow.data.uuid}}
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
+    - error: null
     - privateParams: []
     - runWhenPageLoadsDelay: ''
     - warningCodes: []

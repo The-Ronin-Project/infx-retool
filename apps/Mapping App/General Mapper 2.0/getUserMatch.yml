@@ -21,6 +21,7 @@ template:
         (first_last_name) = {{ variable0 }}
     - playgroundQueryUuid: 82055517-d633-47dc-b73f-d51cbbcf3b92
     - playgroundQueryId: 57
+    - error: null
     - privateParams: []
     - runWhenPageLoadsDelay: ''
     - warningCodes: []

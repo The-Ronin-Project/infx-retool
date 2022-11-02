@@ -33,6 +33,7 @@ template:
         {{mapping_group_select.value == null}})
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
+    - error: null
     - privateParams: []
     - runWhenPageLoadsDelay: ''
     - warningCodes: []
