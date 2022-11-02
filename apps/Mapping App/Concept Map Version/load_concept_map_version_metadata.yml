@@ -19,6 +19,7 @@ template:
     - query: select * from concept_maps.concept_map where uuid = {{urlparams.uuid}}
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
+    - error: null
     - privateParams: []
     - runWhenPageLoadsDelay: ''
     - warningCodes: []
