@@ -19,6 +19,7 @@ template:
     - query: "--select * from concept_maps.source_concept WHERE\nselect code, display from value_sets.expansion_member where expansion_uuid in \n\t(select uuid from value_sets.expansion where vs_version_uuid in \n\t(select uuid from value_sets.value_set_version where uuid = {{urlparams.uuid}}\n\t))"
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
+    - error: null
     - privateParams: []
     - runWhenPageLoadsDelay: ''
     - warningCodes: []
