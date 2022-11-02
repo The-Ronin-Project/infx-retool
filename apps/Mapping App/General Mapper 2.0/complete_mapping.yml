@@ -1,4 +1,4 @@
-id: load_queue
+id: complete_mapping
 type: datasource
 subtype: SqlQueryUnified
 resourceName: dc8029bc-3980-4836-841e-776c64eeca49
@@ -14,21 +14,12 @@ template:
     - queryDisabled: ''
     - playgroundQuerySaveId: latest
     - resourceNameOverride: ''
-    - runWhenModelUpdates: true
+    - runWhenModelUpdates: false
     - showFailureToaster: true
-    - query: >-
-        select * from concept_maps.source_concept
-
-        where assigned_mapper={{user_select.value}}
-
-        and concept_map_version_uuid={{urlparams.concept_map_version_uuid}}
-
-        and map_status = 'pending'
-
-        and no_map is not true
-
-        and (mapping_group={{mapping_group_select.value}} or
-        {{mapping_group_select.value == null}})
+    - query: |-
+        update concept_maps.source_concept
+        set map_status='ready for review'
+        where uuid={{mapping_queue.selectedRow.data.uuid}}
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
@@ -82,7 +73,17 @@ template:
         20)
 
         return data
-    - events: []
+    - events:
+        - ordered:
+            - event: success
+            - type: datasource
+            - method: trigger
+            - pluginId: load_queue
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
     - tableName: ''
     - queryTimeout: '10000'
     - requireConfirmation: false
@@ -96,4 +97,4 @@ template:
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2022-09-14T16:48:30.182Z
+createdAt: 2022-11-02T23:12:42.247Z

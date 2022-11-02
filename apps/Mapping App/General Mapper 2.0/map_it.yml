@@ -67,14 +67,26 @@ template:
         return data
     - events:
         - ordered:
-            - event: success
-            - type: datasource
             - method: trigger
-            - pluginId: load_queue
-            - targetId: null
+            - enabled: '{{!load_settings.data.auto_advance_mapping[0]}}'
             - params:
                 ordered: []
+            - targetId: null
+            - pluginId: load_queue
             - waitType: debounce
+            - event: success
+            - type: datasource
+            - waitMs: '0'
+        - ordered:
+            - method: trigger
+            - enabled: '{{load_settings.data.auto_advance_mapping[0]}}'
+            - params:
+                ordered: []
+            - targetId: null
+            - pluginId: complete_mapping
+            - waitType: debounce
+            - event: success
+            - type: datasource
             - waitMs: '0'
     - queryTimeout: '10000'
     - requireConfirmation: false
