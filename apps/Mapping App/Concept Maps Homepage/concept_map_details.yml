@@ -18,6 +18,7 @@ template:
           - contact: true
           - include_self_map: true
           - a: true
+          - auto_advance_mapping: true
           - b: true
           - immutable: true
           - c: true
@@ -30,7 +31,9 @@ template:
           - url: false
           - use_case_uuid: true
           - target_value_set_uuid: true
+          - auto_fill_search: true
           - title: true
+          - show_target_codes: true
           - type: true
           - uuid: true
           - publisher: true
@@ -62,6 +65,9 @@ template:
         - source_value_set_uuid
         - target_value_set_uuid
         - use_case_uuid
+        - auto_advance_mapping
+        - auto_fill_search
+        - show_target_codes
     - keyTitle: Key
 style:
   ordered: []

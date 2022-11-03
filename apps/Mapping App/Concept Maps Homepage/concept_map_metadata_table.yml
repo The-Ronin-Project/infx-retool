@@ -55,6 +55,7 @@ template:
         ordered:
           - contact: ''
           - include_self_map: ''
+          - auto_advance_mapping: ''
           - immutable: ''
           - created_date: ''
           - experimental: ''
@@ -65,7 +66,9 @@ template:
           - url: ''
           - use_case_uuid: ''
           - target_value_set_uuid: ''
+          - auto_fill_search: ''
           - title: ''
+          - show_target_codes: ''
           - type: ''
           - uuid: ''
           - publisher: ''
@@ -82,15 +85,20 @@ template:
     - _columnVisibility:
         ordered:
           - contact: false
+          - include_self_map: false
+          - auto_advance_mapping: false
           - immutable: false
-          - created_date: true
+          - created_date: false
           - experimental: false
           - identifier: false
           - author: true
           - name: false
           - sales: true
           - url: false
+          - use_case_uuid: false
+          - auto_fill_search: false
           - title: true
+          - show_target_codes: false
           - type: false
           - id: true
           - uuid: false
