@@ -1,0 +1,28 @@
+id: text1
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - tooltipText: ''
+    - value: >
+        This workflow is intended to capture all drug members of a specified
+        class. To better understand the drug classification sources and
+        relationships within each classification source, refer to
+        https://lhncbc.nlm.nih.gov/RxNav/APIs/api-RxClass.getClassMembers.html. 
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: rule_input_container
+    height: 0.6
+    width: 12
+createdAt: 2022-04-05T18:47:29.674Z
