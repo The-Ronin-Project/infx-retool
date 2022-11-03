@@ -123,6 +123,15 @@ template:
                 load_metadata.data.status == 'retired'  ||
                 (no_map.selectedItem.label == 'Other' &&
                 no_map_reason_input.value == '')}}
+        - ordered:
+            - actionButtonText: Complete
+            - actionButtonType: runQuery
+            - actionButtonQuery: ''
+            - actionButtonInternalUrlPath: ''
+            - actionButtonInternalUrlQuery: ''
+            - actionButtonUrl: ''
+            - actionButtonNewWindow: false
+            - actionButtonDisabled: ''
     - actionButtonSelectsRow: true
     - selectRowByDefault: true
     - defaultSortByColumn: ''
@@ -167,7 +176,19 @@ template:
     - defaultSortDescending: false
     - _sortedDisplayedDataIndices: null
     - dynamicColumnSettings: null
-    - events: []
+    - events:
+        - ordered:
+            - method: setValue
+            - enabled: '{{load_settings.data.auto_fill_search[0]}}'
+            - params:
+                ordered:
+                  - value: '{{mapping_queue.selectedRow.data.display}}'
+            - targetId: null
+            - pluginId: search_text_input
+            - waitType: debounce
+            - event: rowSelectChange
+            - type: widget
+            - waitMs: '0'
     - totalRowCount: ''
     - recordUpdates:
         array: []

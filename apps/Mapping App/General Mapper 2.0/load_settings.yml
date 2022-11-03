@@ -1,4 +1,4 @@
-id: load_queue
+id: load_settings
 type: datasource
 subtype: SqlQueryUnified
 resourceName: dc8029bc-3980-4836-841e-776c64eeca49
@@ -14,21 +14,13 @@ template:
     - queryDisabled: ''
     - playgroundQuerySaveId: latest
     - resourceNameOverride: ''
-    - runWhenModelUpdates: true
+    - runWhenModelUpdates: false
     - showFailureToaster: true
-    - query: >-
-        select * from concept_maps.source_concept
-
-        where assigned_mapper={{user_select.value}}
-
-        and concept_map_version_uuid={{urlparams.concept_map_version_uuid}}
-
-        and map_status = 'pending'
-
-        and no_map is not true
-
-        and (mapping_group={{mapping_group_select.value}} or
-        {{mapping_group_select.value == null}})
+    - query: |-
+        select * from concept_maps.concept_map
+        where uuid in 
+        (select concept_map_uuid from concept_maps.concept_map_version
+        where uuid = {{urlparams.concept_map_version_uuid}})
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
@@ -74,7 +66,7 @@ template:
     - enableTransformer: false
     - showUpdateSetValueDynamicallyToggle: true
     - bulkUpdatePrimaryKey: ''
-    - runWhenPageLoads: false
+    - runWhenPageLoads: true
     - transformer: >-
         // type your code here
 
@@ -96,4 +88,4 @@ template:
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2022-09-14T16:48:30.182Z
+createdAt: 2022-11-02T22:25:07.377Z

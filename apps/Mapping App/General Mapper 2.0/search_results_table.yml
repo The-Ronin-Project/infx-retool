@@ -22,6 +22,9 @@ template:
         - object:
             id: __retool__action_list
             value: 246.88278198242188
+        - object:
+            id: code
+            value: 125.5625
     - showSummaryFooter: false
     - disableRowSelectInteraction: false
     - columnWidthsMobile: []
@@ -71,7 +74,7 @@ template:
           - rxnormDoseForm: false
           - termType: false
           - route: false
-          - code: false
+          - code: '{{load_settings.data.show_target_codes[0]}}'
           - displayName: false
           - terminology_version_uuid: false
           - brandName: false
