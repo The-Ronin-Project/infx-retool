@@ -19,7 +19,7 @@ template:
             - event: click
             - type: datasource
             - method: trigger
-            - pluginId: add_terminology
+            - pluginId: add_new_terminology
             - targetId: null
             - params:
                 ordered: []

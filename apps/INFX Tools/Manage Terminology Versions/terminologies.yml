@@ -9,6 +9,7 @@ template:
     - _filteredSortedRenderedDataWithTypes: null
     - heightType: fixed
     - normalizedData: null
+    - rowHeight: standard
     - saveChangesDisabled: ''
     - columnTypeProperties:
         ordered:
@@ -117,7 +118,17 @@ template:
     - serverPaginated: false
     - data: '{{load_terminologies.data}}'
     - displayedData: null
-    - actionButtons: []
+    - actionButtons:
+        - ordered:
+            - actionButtonText: View/Edit
+            - actionButtonType: openInternalUrl
+            - actionButtonQuery: ''
+            - actionButtonInternalUrlPath: 2667f3c0-5961-11ed-8ca3-fb218bd3bd11
+            - actionButtonInternalUrlQuery: >-
+                "[{\"key\":\"uuid\",\"value\":\"{{terminologies.selectedRow.data.uuid}}\"}]"
+            - actionButtonUrl: ''
+            - actionButtonNewWindow: true
+            - actionButtonDisabled: ''
     - actionButtonSelectsRow: true
     - selectRowByDefault: true
     - defaultSortByColumn: ''
@@ -138,7 +149,7 @@ template:
     - showRefreshButton: true
     - pageSize: '20'
     - useDynamicColumnSettings: false
-    - actionButtonPosition: left
+    - actionButtonPosition: right
     - dynamicRowHeights: false
     - bulkUpdateAction: ''
     - afterCursor: ''
@@ -202,6 +213,7 @@ template:
     - doubleClickToEdit: true
     - overflowType: pagination
     - _reverseSortedDisplayedDataIndices: null
+    - showTableBorder: true
     - selectedCell:
         object:
           index: null

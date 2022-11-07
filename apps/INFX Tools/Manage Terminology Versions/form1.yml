@@ -22,7 +22,7 @@ template:
             - event: submit
             - type: datasource
             - method: trigger
-            - pluginId: new_term_version
+            - pluginId: add_new_version
             - targetId: null
             - params:
                 ordered: []
