@@ -69,7 +69,7 @@ template:
                         - queryParams:
                             - ordered:
                                 - key: concept_map_version_uuid
-                                - value: '{{select_concept_map_version.data.uuid}}'
+                                - value: '{{versions_table.selectedRow.data.uuid}}'
             - targetId: null
             - pluginId: ''
             - waitType: debounce
@@ -87,7 +87,7 @@ template:
                         - queryParams:
                             - ordered:
                                 - key: concept_map_version_uuid
-                                - value: '{{select_concept_map_version.data.uuid}}'
+                                - value: '{{versions_table.selectedRow.data.uuid}}'
                   - uuid: 184659c0-4e4f-11ed-8a53-4f14117ffdcc
             - targetId: null
             - pluginId: ''
