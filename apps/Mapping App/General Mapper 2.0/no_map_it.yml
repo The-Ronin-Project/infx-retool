@@ -87,7 +87,7 @@ template:
             - event: success
             - type: widget
             - method: clearValue
-            - pluginId: mapping_comments
+            - pluginId: no_map_reason_input
             - targetId: null
             - params:
                 ordered: []

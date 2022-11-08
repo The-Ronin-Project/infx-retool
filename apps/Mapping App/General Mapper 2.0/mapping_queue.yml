@@ -130,12 +130,12 @@ template:
         - ordered:
             - actionButtonText: Complete
             - actionButtonType: runQuery
-            - actionButtonQuery: ''
+            - actionButtonQuery: complete_mapping
             - actionButtonInternalUrlPath: ''
             - actionButtonInternalUrlQuery: ''
             - actionButtonUrl: ''
             - actionButtonNewWindow: false
-            - actionButtonDisabled: ''
+            - actionButtonDisabled: '{{load_settings.data.auto_advance_mapping == true}}'
     - actionButtonSelectsRow: true
     - selectRowByDefault: true
     - defaultSortByColumn: ''
