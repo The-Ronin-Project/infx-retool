@@ -91,11 +91,13 @@ template:
           - created_date: false
           - experimental: false
           - identifier: false
+          - source_value_set_uuid: false
           - author: true
           - name: false
           - sales: true
           - url: false
           - use_case_uuid: false
+          - target_value_set_uuid: false
           - auto_fill_search: false
           - title: true
           - show_target_codes: false
