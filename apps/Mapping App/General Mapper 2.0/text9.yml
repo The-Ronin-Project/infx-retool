@@ -1,4 +1,4 @@
-id: text8
+id: text9
 type: widget
 subtype: TextWidget2
 template:
@@ -10,7 +10,7 @@ template:
     - showInEditor: false
     - verticalAlign: center
     - tooltipText: ''
-    - value: '**Currently Mapping**'
+    - value: '##### {{mapping_queue.selectedRow.data.code}}'
     - disableMarkdown: false
     - overflowType: scroll
     - maintainSpaceWhenHidden: false
@@ -18,8 +18,8 @@ style:
   ordered: []
 position2:
   position2:
-    row: 2
+    row: 2.6
     col: 6
     height: 0.6
     width: 3
-createdAt: 2022-09-09T23:07:38.108Z
+createdAt: 2022-11-07T23:34:35.098Z
