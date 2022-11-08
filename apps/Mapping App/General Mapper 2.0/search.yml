@@ -27,14 +27,16 @@ template:
                 }
               },
               must:{
-                match_bool_prefix: {
-                  display: {{ search_text_input.value }}
+                multi_match: {
+                  query: {{ search_text_input.value }},
+                  fields: ["code", "display"],
+                  type: "bool_prefix"
                   }
-                }
+              },
             }
-             
            }
-         } 
+         },
+           size: 50
         }
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
