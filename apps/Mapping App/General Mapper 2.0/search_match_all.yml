@@ -24,7 +24,8 @@ template:
                   "concept_map_version_uuid.keyword": {{urlparams.concept_map_version_uuid}}
               }
             }
-          } 
+          },
+          size: 50
         }
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
