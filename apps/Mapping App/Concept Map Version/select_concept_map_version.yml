@@ -31,6 +31,8 @@ template:
         join value_sets.value_set vs2 on vsv.value_set_uuid=vs2.uuid
 
         where cmv.concept_map_uuid = {{urlparams.uuid}}
+
+        order by version DESC
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null

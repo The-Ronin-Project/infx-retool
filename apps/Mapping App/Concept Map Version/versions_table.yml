@@ -54,26 +54,26 @@ template:
             id: version
             value: 78.953125
         - object:
-            id: Custom Column 1
-            value: 119.625
-        - object:
             id: status
             value: 107.609375
         - object:
             id: __retool__action_list
             value: 602.203125
         - object:
-            id: published_date
-            value: 254.203125
-        - object:
-            id: Custom Column 2
-            value: 127
-        - object:
             id: source_title
             value: 273
         - object:
             id: target_title
             value: 275.203125
+        - object:
+            id: Custom Column 1
+            value: 167.625
+        - object:
+            id: Custom Column 2
+            value: 247
+        - object:
+            id: published_date
+            value: 237.203125
     - showSummaryFooter: false
     - disableRowSelectInteraction: false
     - columnWidthsMobile: []
@@ -125,11 +125,13 @@ template:
           - effective_end: true
           - created_date: false
           - value_set_uuid: false
+          - target_title: false
           - effective_start: true
           - name: true
           - sales: true
           - source_value_set_version_uuid: false
           - status: true
+          - source_title: false
           - comments: false
           - concept_map_uuid: false
           - Custom Column 1: true
@@ -218,9 +220,10 @@ template:
     - paginationOffset: 0
     - columnAlignment:
         ordered:
-          - status: left
-          - Custom Column 1: left
-          - Custom Column 2: left
+          - status: center
+          - Custom Column 1: center
+          - Custom Column 2: center
+          - version: center
     - columnSummaries:
         object: {}
     - showBoxShadow: true
