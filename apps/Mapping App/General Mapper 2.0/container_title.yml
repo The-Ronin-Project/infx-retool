@@ -21,6 +21,7 @@ position2:
   position2:
     container: current_mappings
     rowGroup: header
+    row: -2.7755575615628914e-16
     height: 0.6
     width: 12
 createdAt: 2022-10-17T20:58:39.463Z
