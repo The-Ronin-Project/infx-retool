@@ -60,7 +60,7 @@ template:
         - ordered:
             - method: openApp
             - enabled: >-
-                {{load_concept_map_version_metadata.data.target_value_set_uuid=='139b3b16-70c0-443a-86d1-db3dc640d063'}}
+                {{load_concept_map_version_metadata.data.target_value_set_uuid=='835662e6-5379-4801-ba27-01b4481e33ff'}}
             - params:
                 ordered:
                   - uuid: acbbd180-308f-11ed-a0d2-97f043728495
@@ -79,7 +79,7 @@ template:
         - ordered:
             - method: openApp
             - enabled: >-
-                {{!['139b3b16-70c0-443a-86d1-db3dc640d063'].includes(load_concept_map_version_metadata.data.target_value_set_uuid.toString())}}
+                {{!['835662e6-5379-4801-ba27-01b4481e33ff'].includes(load_concept_map_version_metadata.data.target_value_set_uuid.toString())}}
             - params:
                 ordered:
                   - options:
