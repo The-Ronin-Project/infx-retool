@@ -118,7 +118,9 @@ template:
             - actionButtonInternalUrlQuery: ''
             - actionButtonUrl: ''
             - actionButtonNewWindow: false
-            - actionButtonDisabled: '{{select_rel.value == null}}'
+            - actionButtonDisabled: >-
+                {{select_rel.value == null ||
+                load_mapped_targets.data.target_concept_code.includes(currentRow.code)}}
     - actionButtonSelectsRow: true
     - selectRowByDefault: true
     - defaultSortByColumn: ''
