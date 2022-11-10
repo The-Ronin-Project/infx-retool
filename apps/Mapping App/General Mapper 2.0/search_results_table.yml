@@ -120,7 +120,9 @@ template:
             - actionButtonNewWindow: false
             - actionButtonDisabled: >-
                 {{select_rel.value == null ||
-                load_mapped_targets.data.target_concept_code.includes(currentRow.code)}}
+                load_mapped_targets.dataArray.filter(x => x.review_status[0] ===
+                null).map(x =>
+                x.target_concept_code[0]).includes(currentRow.code)}}
     - actionButtonSelectsRow: true
     - selectRowByDefault: true
     - defaultSortByColumn: ''
