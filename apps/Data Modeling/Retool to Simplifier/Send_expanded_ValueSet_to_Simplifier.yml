@@ -1,0 +1,83 @@
+id: Send_expanded_ValueSet_to_Simplifier
+type: widget
+subtype: ContainerWidget2
+template:
+  ordered:
+    - _disabledByIndex:
+        - ''
+        - ''
+        - false
+    - heightType: fixed
+    - currentViewKey: '{{ self.viewKeys[0] }}'
+    - iconByIndex:
+        array: []
+    - clickable: false
+    - _iconByIndex:
+        - ''
+        - ''
+        - ''
+    - hidden: false
+    - showHeader: true
+    - hoistFetching: true
+    - views:
+        array: []
+    - showInEditor: false
+    - tooltipText: ''
+    - hiddenByIndex:
+        array: []
+    - _hiddenByIndex:
+        - ''
+        - ''
+        - false
+    - currentViewIndex: null
+    - _hasMigratedNestedItems: true
+    - transition: none
+    - itemMode: static
+    - _tooltipByIndex:
+        - ''
+        - ''
+        - ''
+    - tooltipByIndex:
+        array: []
+    - showFooter: false
+    - _viewKeys:
+        - View 1
+        - View 2
+        - CodeSystem
+    - events:
+        ordered: []
+    - _ids:
+        - e9557
+        - '66107'
+        - 2c508
+    - viewKeys:
+        array: []
+    - iconPositionByIndex:
+        array: []
+    - _iconPositionByIndex:
+        - ''
+        - ''
+        - left
+    - loading: false
+    - overflowType: scroll
+    - disabled: false
+    - _labels:
+        - Expanded valueset
+        - ConceptMap
+        - ''
+    - disabledByIndex:
+        array: []
+    - maintainSpaceWhenHidden: false
+    - showBody: true
+    - labels:
+        array: []
+style:
+  ordered: []
+position2:
+  position2:
+    subcontainer: header
+    row: 3.000000000000001
+    col: 1
+    height: 25
+    width: 11
+createdAt: 2022-08-15T14:42:36.900Z

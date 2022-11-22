@@ -1,0 +1,25 @@
+id: text3
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - tooltipText: ''
+    - value: '{{ValuesetExpansionCall}}'
+    - disableMarkdown: true
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    row: 246.00000000000003
+    col: 5
+    height: 0.6
+    width: 4
+createdAt: 2022-08-12T22:18:18.051Z

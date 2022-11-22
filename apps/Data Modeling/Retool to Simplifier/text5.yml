@@ -1,0 +1,27 @@
+id: text5
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - tooltipText: ''
+    - value: >-
+        👋 **Hello {{ current_user.firstName || 'friend' }}!** Select a Valueset
+        from the dropdown list below
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: Send_expanded_ValueSet_to_Simplifier
+    rowGroup: header
+    height: 0.6
+    width: 4
+createdAt: 2022-09-20T17:21:00.705Z
