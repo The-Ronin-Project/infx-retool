@@ -13,7 +13,10 @@ template:
     - saveChangesDisabled: ''
     - columnTypeProperties:
         ordered: []
-    - columnWidths: []
+    - columnWidths:
+        - object:
+            id: display
+            value: 270
     - showSummaryFooter: false
     - disableRowSelectInteraction: false
     - columnWidthsMobile: []
@@ -108,7 +111,7 @@ template:
         - ordered:
             - actionButtonText: Delete
             - actionButtonType: runQuery
-            - actionButtonQuery: delete_mapping
+            - actionButtonQuery: set_deleted_to_pending
             - actionButtonInternalUrlPath: ''
             - actionButtonInternalUrlQuery: ''
             - actionButtonUrl: ''
