@@ -1,0 +1,70 @@
+id: navigation1
+type: widget
+subtype: NavigationWidget
+template:
+  ordered:
+    - horizontalAlign: left
+    - valueToCopy: ''
+    - menuItems:
+        - ordered:
+            - title: Edit Rules
+            - hidden: ''
+            - clickable:
+                ordered:
+                  - valueToCopy: ''
+                  - internalUrlHashParams: ''
+                  - exportFileType: csv
+                  - buttonType: action
+                  - exportTemplate: null
+                  - url: ''
+                  - newWindow: false
+                  - exportQuery: ''
+                  - action: ''
+                  - internalUrlQuery: ''
+                  - internalUrlPath: ''
+                  - exportFileName: ''
+                  - disabled: ''
+            - menuItems: []
+        - ordered:
+            - title: View All Value Sets Using This Rule Group
+            - clickable:
+                ordered:
+                  - valueToCopy: ''
+                  - internalUrlHashParams: ''
+                  - exportFileType: csv
+                  - buttonType: action
+                  - exportTemplate: null
+                  - url: ''
+                  - newWindow: false
+                  - exportQuery: ''
+                  - action: ''
+                  - internalUrlQuery: ''
+                  - internalUrlPath: ''
+                  - exportFileName: ''
+                  - disabled: ''
+            - hidden: ''
+            - menuItems: []
+    - srcFromUrl: true
+    - internalUrlHashParams: ''
+    - exportFileType: csv
+    - logoImageFile: ''
+    - buttonType: action
+    - exportTemplate: null
+    - url: ''
+    - newWindow: false
+    - logoImageSrc: ''
+    - exportQuery: ''
+    - action: ''
+    - internalUrlQuery: ''
+    - internalUrlPath: ''
+    - exportFileName: ''
+    - disabled: ''
+style:
+  ordered: []
+position2:
+  position2:
+    container: moduleContainer
+    row: 0.6
+    height: 1
+    width: 12
+createdAt: 2022-11-29T19:39:15.460Z
