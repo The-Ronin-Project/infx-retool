@@ -111,7 +111,7 @@ template:
         - ordered:
             - actionButtonText: Delete
             - actionButtonType: runQuery
-            - actionButtonQuery: set_deleted_to_pending
+            - actionButtonQuery: delete_mapping
             - actionButtonInternalUrlPath: ''
             - actionButtonInternalUrlQuery: ''
             - actionButtonUrl: ''
