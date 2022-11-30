@@ -17,7 +17,7 @@ template:
     - validationMessage: ''
     - textAfter: ''
     - showInEditor: false
-    - showClear: false
+    - showClear: true
     - pattern: ''
     - tooltipText: ''
     - labelAlign: left
