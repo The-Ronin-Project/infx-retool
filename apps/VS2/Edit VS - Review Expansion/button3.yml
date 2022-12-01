@@ -1,0 +1,44 @@
+id: button3
+type: widget
+subtype: ButtonWidget
+template:
+  ordered:
+    - valueToCopy: ''
+    - internalUrlHashParams: ''
+    - exportFileType: csv
+    - buttonType: action
+    - exportTemplate: null
+    - url: ''
+    - newWindow: false
+    - value: Generate New Expansion
+    - style:
+        ordered:
+          - accent-background: '#6a6a6a'
+    - exportQuery: ''
+    - action: ''
+    - internalUrlQuery: ''
+    - internalUrlPath: ''
+    - events:
+        - ordered:
+            - event: click
+            - type: datasource
+            - method: trigger
+            - pluginId: generate_expansion
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - exportFileName: ''
+    - loading: ''
+    - disabled: >-
+        {{ ['active', 'obsolete',
+        'retired'].includes(value_set_version_metadata.data.status[0])}}
+style:
+  ordered: []
+position2:
+  position2:
+    row: 0.6000000000000003
+    col: 9
+    height: 1
+    width: 3
+createdAt: 2021-11-12T18:51:32.626Z
