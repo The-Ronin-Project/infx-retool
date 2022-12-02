@@ -1,0 +1,27 @@
+id: text2
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - tooltipText: ''
+    - value: >-
+        #### **This interface will mirror the view of  rule groups in a value
+        set** ####
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    row: 2
+    col: 3
+    height: 0.6
+    width: 8
+createdAt: 2022-12-02T22:08:48.505Z
