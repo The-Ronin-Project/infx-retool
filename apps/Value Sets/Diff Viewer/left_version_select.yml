@@ -1,0 +1,95 @@
+id: left_version_select
+type: widget
+subtype: SelectWidget2
+template:
+  ordered:
+    - imageByIndex: ''
+    - _disabledByIndex:
+        - false
+    - showSelectionIndicator: true
+    - _values:
+        - '1'
+    - iconByIndex: ''
+    - values: ''
+    - readOnly: false
+    - iconAfter: ''
+    - _iconByIndex:
+        - ''
+    - allowDeselect: true
+    - inputValue: ''
+    - hidden: false
+    - customValidation: ''
+    - data: ''
+    - searchMode: fuzzy
+    - hideValidationMessage: false
+    - fallbackTextByIndex: ''
+    - textBefore: ''
+    - _fallbackTextByIndex:
+        - ''
+    - selectedItem: null
+    - validationMessage: ''
+    - automaticItemColors: false
+    - itemAdornmentShape: circle
+    - textAfter: ''
+    - showInEditor: false
+    - showClear: false
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: '{{self.values[1]}}'
+    - hiddenByIndex: ''
+    - allowSearch: true
+    - labelCaption: ''
+    - labelWidth: '33'
+    - deprecatedLabels: '{{left_vs_versions.data.version}}'
+    - _hiddenByIndex:
+        - false
+    - placeholder: Select an option
+    - _captionByIndex:
+        - ''
+    - itemAdornmentSize: auto
+    - label: Version
+    - _hasMigratedNestedItems: true
+    - captionByIndex: ''
+    - _validate: false
+    - itemMode: static
+    - labelWidthUnit: '%'
+    - allowCustomValue: false
+    - invalid: false
+    - selectedIndex: null
+    - _tooltipByIndex:
+        - ''
+    - _colorByIndex:
+        - ''
+    - tooltipByIndex: ''
+    - iconBefore: ''
+    - colorByIndex: ''
+    - selectedLabel: ''
+    - events:
+        ordered: []
+    - _ids:
+        - f27bb
+    - emptyMessage: ''
+    - overlayMaxHeight: null
+    - loading: false
+    - disabled: false
+    - labelPosition: left
+    - _labels:
+        - ''
+    - labelWrap: false
+    - disabledValues:
+        array: []
+    - disabledByIndex: ''
+    - maintainSpaceWhenHidden: false
+    - _imageByIndex:
+        - ''
+    - required: false
+    - labels: ''
+style:
+  ordered: []
+position2:
+  position2:
+    row: 1
+    height: 1
+    width: 6
+createdAt: 2021-12-23T00:50:23.439Z
