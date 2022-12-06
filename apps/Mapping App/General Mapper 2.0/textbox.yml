@@ -10,7 +10,7 @@ template:
     - showInEditor: false
     - verticalAlign: center
     - tooltipText: ''
-    - value: '**No Map Reason**'
+    - value: '**Source Actions**'
     - disableMarkdown: false
     - overflowType: scroll
     - maintainSpaceWhenHidden: false
@@ -18,7 +18,7 @@ style:
   ordered: []
 position2:
   position2:
-    row: 15.799999999999994
+    row: 14.799999999999994
     height: 0.6
     width: 1
 createdAt: 2022-09-14T17:32:20.920Z

@@ -1,4 +1,4 @@
-id: divider1
+id: divider2
 type: widget
 subtype: DividerWidget
 template:
@@ -14,7 +14,7 @@ style:
   ordered: []
 position2:
   position2:
-    row: 17.8
+    row: 16.599999999999998
     height: 0.2
     width: 6
-createdAt: 2022-09-09T22:32:38.653Z
+createdAt: 2022-12-06T17:03:12.948Z
