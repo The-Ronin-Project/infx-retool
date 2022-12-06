@@ -1,0 +1,69 @@
+id: linkList1
+type: widget
+subtype: LinkListWidget
+template:
+  ordered:
+    - _disabledByIndex:
+        - ''
+        - ''
+    - iconByIndex:
+        array: []
+    - clickable: false
+    - _iconByIndex:
+        - bold/interface-content-book-2
+        - bold/interface-add-1
+    - groupLayout: multiColumn
+    - hidden: false
+    - data:
+        array: []
+    - showUnderline: never
+    - showInEditor: false
+    - tooltipText: ''
+    - labelAlign: left
+    - hiddenByIndex:
+        array: []
+    - labelCaption: ''
+    - labelWidth: '33'
+    - _hiddenByIndex:
+        - ''
+        - ''
+    - _captionByIndex:
+        - ''
+        - ''
+    - label: ''
+    - _hasMigratedNestedItems: true
+    - captionByIndex:
+        array: []
+    - itemMode: static
+    - labelWidthUnit: '%'
+    - _tooltipByIndex:
+        - ''
+        - ''
+    - tooltipByIndex:
+        array: []
+    - events:
+        ordered: []
+    - _ids:
+        - c7180
+        - 8e0cf
+    - disabled: false
+    - labelPosition: top
+    - _labels:
+        - Add Rule Group from Library
+        - Create New Rule Group
+    - labelWrap: false
+    - disabledByIndex:
+        array: []
+    - maintainSpaceWhenHidden: false
+    - labels:
+        array: []
+style:
+  ordered: []
+position2:
+  position2:
+    container: container1
+    subcontainer: c2c10
+    row: -2.220446049250313e-16
+    height: 0.6
+    width: 9
+createdAt: 2022-12-01T23:25:38.707Z
