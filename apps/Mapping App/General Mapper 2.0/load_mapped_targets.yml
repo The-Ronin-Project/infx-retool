@@ -20,15 +20,22 @@ template:
     - runWhenModelUpdates: true
     - showFailureToaster: true
     - query: >-
-        select cr.uuid as cr_uuid, * from concept_maps.concept_relationship as
-        cr
+        SELECT cr.uuid as cr_uuid, cr.*, sc.assigned_reviewer, rc.display,
+        u.first_name || ' ' || u.last_name AS reviewer_name
 
-        join (select uuid as rc_uuid, display as Relationship from
-        concept_maps.relationship_codes) as rc on
-        rc.rc_uuid=cr.relationship_code_uuid
+        FROM concept_maps.concept_relationship cr
 
-        join concept_maps.source_concept on source_concept.uuid =
-        cr.source_concept_uuid
+        JOIN concept_maps.source_concept sc
+
+        ON cr.source_concept_uuid = sc.uuid
+
+        JOIN concept_maps.relationship_codes rc
+
+        ON cr.relationship_code_uuid = rc.uuid
+
+        JOIN project_management."user" u
+
+        ON sc.assigned_reviewer = u.uuid
 
         where source_concept_uuid = {{mapping_queue.selectedRow.data.uuid}}
     - playgroundQueryUuid: ''
