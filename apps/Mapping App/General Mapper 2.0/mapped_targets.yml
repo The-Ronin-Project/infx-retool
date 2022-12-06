@@ -30,6 +30,7 @@ template:
     - columnColors:
         ordered:
           - display: ''
+          - reviewer_name: ''
           - mapping_comments: ''
           - created_date: ''
           - relationship_code_uuid: ''
@@ -57,6 +58,7 @@ template:
           - concept_map_version_uuid: ''
           - target_concept_display: ''
           - no_map: ''
+          - user_name: ''
     - columnFrozenAlignments:
         ordered: []
     - allowMultiRowSelect: false
@@ -191,8 +193,8 @@ template:
     - _columns:
         - cr_uuid
         - concept_map_version_uuid
+        - reviewer_name
         - display
-        - relationship
         - target_concept_code
         - target_concept_display
         - mapping_comments
@@ -206,17 +208,7 @@ template:
         - relationship_code_uuid
         - target_concept_system_version_uuid
         - review_comment
-        - rc_uuid
-        - code
-        - system
-        - comments
-        - additional_context
-        - map_status
-        - assigned_mapper
         - assigned_reviewer
-        - no_map
-        - reason_for_no_map
-        - mapping_group
     - sortByRawValue:
         ordered: []
     - calculatedColumns: []
