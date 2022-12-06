@@ -20,7 +20,9 @@ template:
     - labelAlign: left
     - formDataKey: '{{ self.id }}'
     - value: ''
-    - labelCaption: ''
+    - labelCaption: >-
+        Only for use when a target has been selected and a mapping is being
+        created
     - labelWidth: '33'
     - autoFill: ''
     - placeholder: Enter value
@@ -36,7 +38,7 @@ template:
     - maxLines: null
     - loading: false
     - disabled: false
-    - labelPosition: left
+    - labelPosition: top
     - labelWrap: false
     - maintainSpaceWhenHidden: false
     - required: false

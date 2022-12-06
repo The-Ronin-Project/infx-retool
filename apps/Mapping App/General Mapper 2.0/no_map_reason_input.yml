@@ -9,7 +9,7 @@ template:
     - showCharacterCount: false
     - autoComplete: false
     - maxLength: null
-    - hidden: '{{no_map.selectedItem.label != ''Other''}}'
+    - hidden: ''
     - customValidation: ''
     - patternType: ''
     - hideValidationMessage: false
@@ -27,7 +27,7 @@ template:
     - labelWidth: '33'
     - autoFill: ''
     - placeholder: Enter value
-    - label: No Map Reason
+    - label: Additional comments on why you chose this particular action
     - _validate: false
     - labelWidthUnit: '%'
     - invalid: false
@@ -47,7 +47,7 @@ style:
   ordered: []
 position2:
   position2:
-    row: 17.8
+    row: 15.600000000000001
     height: 1
-    width: 4
+    width: 6
 createdAt: 2022-10-21T16:23:52.080Z
