@@ -1,0 +1,23 @@
+id: use_cases
+type: widget
+subtype: TabbedContainerWidget
+template:
+  ordered:
+    - heightType: fixed
+    - spinWhenChildrenAreFetching: true
+    - unmountInactiveTabs: false
+    - tabNames: '["Existing Use Cases", "Create New Use Case", "Assign Use Case"]'
+    - selectedTabIndex: 0
+    - selectedTab: '"0"'
+    - showTabBar: true
+    - disableAnimation: false
+    - overflowType: hidden
+    - disabled: ''
+style:
+  ordered: []
+position2:
+  position2:
+    row: -1.1102230246251565e-15
+    height: 26.800000000000004
+    width: 12
+createdAt: 2022-06-06T15:44:03.080Z

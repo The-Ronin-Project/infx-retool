@@ -1,0 +1,55 @@
+id: keyValue1
+type: widget
+subtype: KeyValueMapWidget
+template:
+  ordered:
+    - rowHeaderNames:
+        ordered: []
+    - rowFormats:
+        ordered: []
+    - valueTitle: Value
+    - data: '{{display_use_cases.selectedRow.data}}'
+    - prevRowMappers:
+        ordered: []
+    - rowMappersRenderAsHTML:
+        ordered: []
+    - rowVisibility:
+        ordered:
+          - a: true
+          - b: true
+          - c: true
+          - point_of_contact_email: true
+          - email_bot: true
+          - point_of_contact: true
+          - name: true
+          - status: true
+          - uuid: true
+          - description: true
+          - jira_ticket: true
+    - prevRowFormats:
+        ordered: []
+    - rowMappers:
+        ordered: []
+    - rows:
+        - a
+        - b
+        - c
+        - uuid
+        - name
+        - description
+        - point_of_contact
+        - status
+        - jira_ticket
+        - email_bot
+        - point_of_contact_email
+    - keyTitle: Key
+style:
+  ordered: []
+position2:
+  position2:
+    container: use_cases
+    row: 1.000000000000001
+    col: 7
+    height: 8.4
+    width: 5
+createdAt: 2022-06-06T22:41:31.343Z

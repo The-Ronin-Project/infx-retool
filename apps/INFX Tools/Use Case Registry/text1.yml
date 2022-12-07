@@ -1,0 +1,26 @@
+id: text1
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - tooltipText: ''
+    - value: Display of Value Sets associated the with selected Use Case
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: use_cases
+    row: 9.600000000000001
+    col: 7
+    height: 0.6
+    width: 4
+createdAt: 2022-06-07T22:26:55.187Z
