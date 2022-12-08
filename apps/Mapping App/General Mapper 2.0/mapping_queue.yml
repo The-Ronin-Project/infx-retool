@@ -26,6 +26,8 @@ template:
                     array: []
           - display:
               ordered: []
+          - code:
+              ordered: []
     - columnWidths:
         - object:
             id: display
@@ -68,6 +70,7 @@ template:
           - Custom Column 1: button
           - Custom Column 2: SingleTagDataCell
           - display: TextMultiDataCell
+          - code: TextDataCell
     - columnRestrictedEditing:
         ordered: []
     - showFilterButton: true
@@ -92,6 +95,7 @@ template:
         ordered:
           - Custom Column 2: ''
           - display: ''
+          - code: ''
     - _columnsWithLegacyBackgroundColor:
         set: []
     - showAddRowButton: false
@@ -145,6 +149,7 @@ template:
           - Custom Column 1: left
           - Custom Column 2: left
           - display: left
+          - code: left
     - columnSummaries:
         object: {}
     - showBoxShadow: false
@@ -167,6 +172,7 @@ template:
         ordered:
           - Custom Column 2: ''
           - display: ''
+          - code: ''
     - checkboxRowSelect: true
     - _compatibilityMode: false
     - showColumnBorders: false
