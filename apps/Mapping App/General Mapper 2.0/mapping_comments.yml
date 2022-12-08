@@ -20,11 +20,13 @@ template:
     - labelAlign: left
     - formDataKey: '{{ self.id }}'
     - value: ''
-    - labelCaption: ''
+    - labelCaption: >-
+        Only for use when a target has been selected and a mapping will be
+        created. This will not comment on sources for no maps.
     - labelWidth: '33'
     - autoFill: ''
     - placeholder: Enter value
-    - label: Mapping Comment
+    - label: Mapping Comments
     - _validate: false
     - labelWidthUnit: '%'
     - invalid: false
@@ -44,7 +46,7 @@ style:
   ordered: []
 position2:
   position2:
-    row: 14.799999999999903
+    row: 16.7999999999999
     height: 1
     width: 6
 createdAt: 2022-09-14T21:09:30.050Z
