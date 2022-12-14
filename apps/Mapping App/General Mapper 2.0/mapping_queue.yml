@@ -113,9 +113,7 @@ template:
     - downloadRawData: false
     - showFetchingIndicator: true
     - serverPaginated: false
-    - data: >-
-        {{ mapping_group_select.value == 'rejected' ? load_rejected_queue.data :
-        load_queue.data }}
+    - data: '{{combined_queue_query.data}}'
     - displayedData: null
     - actionButtons:
         - ordered:

@@ -1,4 +1,4 @@
-id: load_mapping_groups
+id: load_no_map_rejected_queue
 type: datasource
 subtype: SqlQueryUnified
 resourceName: dc8029bc-3980-4836-841e-776c64eeca49
@@ -16,13 +16,17 @@ template:
     - resourceNameOverride: ''
     - runWhenModelUpdates: true
     - showFailureToaster: true
-    - query: |-
-        select distinct mapping_group, count(mapping_group)
-        from concept_maps.source_concept
+    - query: >-
+        select source_concept.* from concept_maps.source_concept
+
         where assigned_mapper={{user_select.value}}
-        and map_status = 'pending'
-        and concept_map_version_uuid = {{urlparams.concept_map_version_uuid}}
-        group by source_concept.mapping_group having count(mapping_group)>0
+
+        and
+        source_concept.concept_map_version_uuid={{urlparams.concept_map_version_uuid}}
+
+        and no_map is not true
+
+        and source_concept.map_status = 'no_nap_rejected'
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
@@ -65,7 +69,7 @@ template:
     - timestamp: 0
     - importedQueryDefaults:
         ordered: []
-    - enableTransformer: true
+    - enableTransformer: false
     - showUpdateSetValueDynamicallyToggle: true
     - bulkUpdatePrimaryKey: ''
     - runWhenPageLoads: false
@@ -75,14 +79,18 @@ template:
         // example: return formatDataAsArray(data).filter(row => row.quantity >
         20)
 
-        let finalResults = data
-
-        finalResults.mapping_group.push('rejected')
-
-        finalResults.mapping_group.push('no_map_rejected')
-
-        return finalResults
-    - events: []
+        return data
+    - events:
+        - ordered:
+            - event: success
+            - type: datasource
+            - method: trigger
+            - pluginId: combined_queue_query
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
     - tableName: ''
     - queryTimeout: '10000'
     - requireConfirmation: false
@@ -96,4 +104,4 @@ template:
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2022-09-15T22:15:36.332Z
+createdAt: 2022-12-14T17:48:39.186Z
