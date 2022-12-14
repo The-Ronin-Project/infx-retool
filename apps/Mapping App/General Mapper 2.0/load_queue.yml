@@ -95,6 +95,16 @@ template:
             - event: success
             - type: widget
             - waitMs: '0'
+        - ordered:
+            - event: success
+            - type: datasource
+            - method: trigger
+            - pluginId: combined_queue_query
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
     - tableName: ''
     - queryTimeout: '10000'
     - requireConfirmation: false
