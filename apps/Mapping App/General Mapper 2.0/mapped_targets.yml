@@ -59,6 +59,7 @@ template:
           - target_concept_display: ''
           - no_map: ''
           - user_name: ''
+          - reviewed_by: ''
     - columnFrozenAlignments:
         ordered: []
     - allowMultiRowSelect: false
