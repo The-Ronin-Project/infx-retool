@@ -31,6 +31,8 @@ template:
         and no_map is not true
 
         and concept_relationship.review_status = 'rejected'
+
+        and source_concept.map_status != 'no_map_rejected'
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null

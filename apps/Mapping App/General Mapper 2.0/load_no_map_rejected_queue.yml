@@ -26,7 +26,7 @@ template:
 
         and no_map is not true
 
-        and source_concept.map_status = 'no_nap_rejected'
+        and source_concept.map_status = 'no_map_rejected'
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
