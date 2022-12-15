@@ -31,7 +31,7 @@ template:
     - importedQueryInputs:
         ordered: []
     - isImported: false
-    - showSuccessToaster: true
+    - showSuccessToaster: false
     - cacheKeyTtl: ''
     - metadata: null
     - changesetObject: ''

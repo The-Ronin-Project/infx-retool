@@ -15,16 +15,27 @@ template:
         ordered:
           - rxcui:
               ordered: []
+          - tags:
+              ordered:
+                - optionData: '{{ currentColumn }}'
+                - colorMode: auto
+                - allowCustomValue: true
+                - optionLabels: ''
+                - optionColors: []
+                - optionValues: []
     - columnWidths:
         - object:
             id: rxcui
             value: 93.390625
         - object:
             id: __retool__action_list
-            value: 246.88278198242188
+            value: 141.875
         - object:
             id: code
-            value: 125.5625
+            value: 88.5625
+        - object:
+            id: display
+            value: 304.78125
     - showSummaryFooter: false
     - disableRowSelectInteraction: false
     - columnWidthsMobile: []
@@ -53,6 +64,7 @@ template:
           - suppress: ''
           - language: ''
           - umlscui: ''
+          - tags: ''
           - tty: ''
           - fullName: ''
           - genericRxcui: ''
@@ -64,6 +76,7 @@ template:
     - columnFormats:
         ordered:
           - rxcui: TextDataCell
+          - tags: SingleTagDataCell
     - columnRestrictedEditing:
         ordered: []
     - showFilterButton: true
@@ -90,6 +103,7 @@ template:
     - _columnSummaryTypes:
         ordered:
           - rxcui: ''
+          - tags: ''
     - _columnsWithLegacyBackgroundColor:
         set: []
     - showAddRowButton: false
@@ -130,6 +144,7 @@ template:
     - columnAlignment:
         ordered:
           - rxcui: left
+          - tags: left
     - columnSummaries:
         object: {}
     - showBoxShadow: false
@@ -156,6 +171,7 @@ template:
     - _columnSummaryValues:
         ordered:
           - rxcui: ''
+          - tags: ''
     - checkboxRowSelect: true
     - _compatibilityMode: false
     - showColumnBorders: false
@@ -178,7 +194,8 @@ template:
     - newRow: null
     - emptyMessage: No rows found
     - columnEditable:
-        ordered: []
+        ordered:
+          - tags: false
     - _viewerColumnSummaryTypes:
         object: {}
     - filters:
@@ -187,7 +204,8 @@ template:
     - disableSorting:
         ordered: []
     - columnMappers:
-        ordered: []
+        ordered:
+          - tags: ''
     - showClearSelection: false
     - doubleClickToEdit: true
     - overflowType: scroll
