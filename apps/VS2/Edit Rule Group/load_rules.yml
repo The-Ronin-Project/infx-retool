@@ -1,0 +1,99 @@
+id: load_rules
+type: datasource
+subtype: JavascriptQuery
+resourceName: JavascriptQuery
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - lastReceivedFromResourceAt: null
+    - queryDisabledMessage: ''
+    - successMessage: ''
+    - queryDisabled: ''
+    - playgroundQuerySaveId: latest
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: false
+    - showFailureToaster: true
+    - query: |-
+        return {
+            title: "Breast Cancer (SNOMED)",
+            description: "SNOMED codes for breast cancer",
+            code_stats: [{
+              terminology: "SNOMED CT 2022-09-01",
+              count: 2456
+            }, {
+              terminology: "LOINC 2.73",
+              count: 323
+            }],
+            include: true,
+            rules: [
+              {
+                description: "Breast cancer",
+                property: "ecl",
+                operator: "=",
+                value: "<64572001 |Disease (disorder)|: {<<116676008 |Associated morphology (attribute)| = <<108369006 |Neoplasm (morphologic abnormality)| AND <<363698007 |Finding site (attribute)| = <<76752008 |Breast structure (body structure)|}",
+                terminology_version: ["SNOMED CT 2022-09-01"],
+                include_exclude: "Includes 6,340 codes"
+              },
+              {
+                description: "Exclude breast implant lymphoma",
+                property: "ecl",
+                operator: "=",
+                value: "<<783541009 |Breast implant–associated anaplastic large-cell lymphoma (disorder)|",
+                terminology_version: ["SNOMED CT 2022-09-01"],
+                include_exclude: "Excludes 345 codes"
+              }
+            ]
+          }
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - error: null
+    - privateParams: []
+    - runWhenPageLoadsDelay: ''
+    - data: null
+    - importedQueryInputs:
+        ordered: []
+    - isImported: false
+    - showSuccessToaster: true
+    - cacheKeyTtl: ''
+    - metadata: null
+    - changesetObject: ''
+    - errorTransformer: >-
+        // The variable 'data' allows you to reference the request's data in the
+        transformer. 
+
+        // example: return data.find(element => element.isError)
+
+        return data.error
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - resourceTypeOverride: ''
+    - watchedParams: []
+    - enableErrorTransformer: false
+    - showLatestVersionUpdatedWarning: false
+    - timestamp: 0
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - runWhenPageLoads: true
+    - transformer: >-
+        // type your code here
+
+        // example: return formatDataAsArray(data).filter(row => row.quantity >
+        20)
+
+        return data
+    - events: []
+    - queryTimeout: '10000'
+    - requireConfirmation: false
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups: []
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+createdAt: 2022-12-06T21:24:18.920Z

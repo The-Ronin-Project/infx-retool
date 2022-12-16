@@ -1,0 +1,54 @@
+id: toggleButton1
+type: widget
+subtype: ToggleButtonWidget
+template:
+  ordered:
+    - horizontalAlign: stretch
+    - iconPosition: left
+    - hidden: false
+    - text: >-
+        {{ self.value ? 'Include contents of this rule group in the value set' :
+        'Exclude contents of this rule group from the value set' }}
+    - showInEditor: false
+    - tooltipText: ''
+    - value: '{{load_rules.data[i].include}}'
+    - iconForFalse: bold/interface-delete-2
+    - styleVariant: outline
+    - events:
+        - ordered:
+            - method: trigger
+            - enabled: '{{ self.value = true}}'
+            - params:
+                ordered: []
+            - targetId: null
+            - pluginId: include_rule_group
+            - waitType: debounce
+            - event: change
+            - type: datasource
+            - waitMs: '0'
+        - ordered:
+            - method: trigger
+            - enabled: '{{self.value = false}}'
+            - params:
+                ordered: []
+            - targetId: null
+            - pluginId: exclude_rule_group
+            - waitType: debounce
+            - event: change
+            - type: datasource
+            - waitMs: '0'
+    - loading: false
+    - loaderPosition: auto
+    - disabled: false
+    - iconForTrue: bold/interface-validation-check
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: container1
+    subcontainer: 2b15a
+    row: 17.400000000000006
+    height: 1
+    width: 5
+createdAt: 2022-12-06T21:24:01.077Z

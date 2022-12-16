@@ -1,0 +1,21 @@
+id: divider4
+type: widget
+subtype: DividerWidget
+template:
+  ordered:
+    - hidden: '{{i==exclude_rules.data.length - 1}}'
+    - maintainSpaceWhenHidden: false
+    - showInEditor: false
+    - tooltipText: ''
+    - horizontalAlign: center
+    - text: ''
+    - textSize: default
+style:
+  ordered: []
+position2:
+  position2:
+    container: listView2
+    row: 0.7999999999999999
+    height: 0.2
+    width: 12
+createdAt: 2022-12-06T22:35:34.595Z
