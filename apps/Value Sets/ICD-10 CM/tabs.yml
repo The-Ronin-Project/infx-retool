@@ -1,0 +1,23 @@
+id: tabs
+type: widget
+subtype: TabbedContainerWidget
+template:
+  ordered:
+    - heightType: fixed
+    - spinWhenChildrenAreFetching: true
+    - unmountInactiveTabs: false
+    - tabNames: '["Version Browser", "Keyword Search"]'
+    - selectedTabIndex: 0
+    - selectedTab: '"0"'
+    - showTabBar: true
+    - disableAnimation: false
+    - overflowType: hidden
+    - disabled: ''
+style:
+  ordered: []
+position2:
+  position2:
+    row: -3.552713678800501e-15
+    height: 29.799999999999997
+    width: 12
+createdAt: 2022-04-01T18:06:19.054Z
