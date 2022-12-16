@@ -1,0 +1,32 @@
+id: text12
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - tooltipText: ''
+    - value: >-
+        Explicitly included codes are codes from propriety (non-standard)
+        terminologies which need to be included in a value set, but cannot be
+        included via a mapping inclusion.
+
+
+        **This functionality should be treated as a last resort and only used
+        when Rules and Mapping Inclusions cannot.**
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabbedcontainer1
+    height: 0.6
+    width: 12
+    tabNum: 2
+createdAt: 2022-07-20T17:12:50.307Z
