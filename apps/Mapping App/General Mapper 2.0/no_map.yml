@@ -83,6 +83,16 @@ template:
     - selectedLabel: ''
     - events:
         - ordered:
+            - event: click
+            - type: datasource
+            - method: trigger
+            - pluginId: no_map_it
+            - targetId: 70dcf
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
             - method: trigger
             - enabled: '{{no_map_reason_input.value != ''''}}'
             - params:
