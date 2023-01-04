@@ -1,0 +1,12 @@
+version: 43.0.9
+pageUuid: 8f71f580-e5be-11ec-97e9-4700b9330c36
+appTemplate:
+  folders:
+    - Concept_map_assignment
+    - value_set_assignment
+  experimentalPerfFeatures:
+    object:
+      batchCommitModelEnabled: false
+  rootScreen: null
+  version: 2.86.11
+  markdownLinkBehavior: auto

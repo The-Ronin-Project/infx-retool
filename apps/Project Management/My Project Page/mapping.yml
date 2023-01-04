@@ -1,0 +1,221 @@
+id: mapping
+type: widget
+subtype: TableWidget
+template:
+  ordered:
+    - showCustomButton: false
+    - sortMappedValue:
+        ordered: []
+    - _filteredSortedRenderedDataWithTypes: null
+    - normalizedData: null
+    - saveChangesDisabled: ''
+    - columnTypeProperties:
+        ordered: []
+    - columnWidths: []
+    - disableRowSelectInteraction: false
+    - columnWidthsMobile: []
+    - hasNextAfterCursor: ''
+    - columnTypeSpecificExtras:
+        ordered: []
+    - onRowAdded: ''
+    - columnHeaderNames:
+        ordered:
+          - email: Mapping Assignment
+          - sales: Due Date
+          - name: Mapping Project
+          - Custom Column 1: Count
+          - Custom Column 2: Due Date
+    - alwaysShowPaginator: false
+    - columnColors:
+        ordered:
+          - effective_end: ''
+          - created_date: ''
+          - cm_description: ''
+          - experimental: ''
+          - cmv_description: ''
+          - effective_start: ''
+          - author: ''
+          - name: ''
+          - sales: ''
+          - status: ''
+          - comments: ''
+          - concept_map_uuid: ''
+          - Custom Column 1: ''
+          - Custom Column 2: ''
+          - version: ''
+          - title: ''
+          - id: ''
+          - uuid: ''
+          - publisher: ''
+          - email: ''
+          - description: ''
+          - purpose: ''
+    - columnFrozenAlignments:
+        ordered: []
+    - allowMultiRowSelect: false
+    - columnFormats:
+        ordered: []
+    - columnRestrictedEditing:
+        ordered: []
+    - showFilterButton: true
+    - _columnSummaryTypes:
+        ordered: []
+    - showAddRowButton: false
+    - nextBeforeCursor: ''
+    - columnVisibility:
+        ordered:
+          - effective_end: true
+          - created_date: true
+          - cm_description: true
+          - experimental: true
+          - cmv_description: true
+          - effective_start: true
+          - author: true
+          - name: true
+          - sales: true
+          - status: true
+          - comments: true
+          - concept_map_uuid: true
+          - Custom Column 1: true
+          - Custom Column 2: true
+          - version: true
+          - title: true
+          - id: false
+          - uuid: true
+          - publisher: true
+          - email: true
+          - description: true
+          - purpose: true
+    - selectedPageIndex: '0'
+    - rowColor:
+        array: []
+    - actionButtonColumnName: Mapping Project Page
+    - filterStackType: and
+    - downloadRawData: false
+    - showFetchingIndicator: true
+    - serverPaginated: false
+    - data: '{{Mapper_count.data}}'
+    - displayedData: null
+    - actionButtons:
+        - ordered:
+            - actionButtonText: Mapping Link
+            - actionButtonType: runQuery
+            - actionButtonQuery: ''
+            - actionButtonInternalUrlPath: ''
+            - actionButtonInternalUrlQuery: ''
+            - actionButtonUrl: ''
+            - actionButtonNewWindow: false
+            - actionButtonDisabled: ''
+    - actionButtonSelectsRow: true
+    - selectRowByDefault: true
+    - defaultSortByColumn: ''
+    - paginationOffset: 0
+    - columnAlignment:
+        ordered: []
+    - columnSummaries:
+        object: {}
+    - sortedDesc: false
+    - customButtonName: ''
+    - columnMappersRenderAsHTML:
+        ordered: []
+    - showRefreshButton: true
+    - pageSize: 16
+    - useDynamicColumnSettings: false
+    - actionButtonPosition: left
+    - dynamicRowHeights: false
+    - bulkUpdateAction: ''
+    - afterCursor: ''
+    - onCustomButtonPressQueryName: ''
+    - changeSet:
+        object: {}
+    - sortedColumn: ''
+    - _columnSummaryValues:
+        ordered: []
+    - _compatibilityMode: true
+    - showColumnBorders: false
+    - _renderedDataWithTypes: null
+    - columnAllowOverflow:
+        ordered: []
+    - beforeCursor: ''
+    - serverPaginationType: limitOffsetBased
+    - onRowSelect: ''
+    - showDownloadButton: true
+    - selectedIndex: null
+    - defaultSortDescending: false
+    - _sortedDisplayedDataIndices: null
+    - dynamicColumnSettings: null
+    - totalRowCount: ''
+    - recordUpdates:
+        array: []
+    - newRow: null
+    - emptyMessage: No rows found
+    - columnEditable:
+        ordered:
+          - id: true
+          - name: true
+          - email: true
+          - sales: true
+          - Custom Column 1: true
+          - Custom Column 2: true
+    - filters:
+        array: []
+    - displayedDataIndices: null
+    - disableSorting:
+        ordered: []
+    - columnMappers:
+        ordered: []
+    - showClearSelection: false
+    - overflowType: pagination
+    - _reverseSortedDisplayedDataIndices: null
+    - selectedCell:
+        object:
+          index: null
+          data: null
+          columnName: null
+    - columns:
+        - id
+        - name
+        - email
+        - sales
+        - Custom Column 1
+        - Custom Column 2
+        - uuid
+        - title
+        - publisher
+        - author
+        - purpose
+        - description
+        - created_date
+        - experimental
+        - cm_description
+        - cmv_description
+        - concept_map_uuid
+        - comments
+        - status
+        - effective_start
+        - effective_end
+        - version
+    - defaultSelectedRow: first
+    - freezeActionButtonColumns: false
+    - sort: null
+    - sortByRawValue:
+        ordered: []
+    - calculatedColumns:
+        - Custom Column 1
+        - Custom Column 2
+    - selectedRow:
+        object:
+          index: null
+          data: null
+    - showPaginationOnTop: false
+    - nextAfterCursor: ''
+    - useCompactMode: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabbedContainer1
+    row: 0.4
+    height: 19.200000000000003
+    width: 12
+createdAt: 2022-06-06T17:35:16.318Z

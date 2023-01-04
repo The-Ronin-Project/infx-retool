@@ -1,0 +1,25 @@
+id: tabbedContainer1
+type: widget
+subtype: TabbedContainerWidget
+template:
+  ordered:
+    - heightType: fixed
+    - spinWhenChildrenAreFetching: true
+    - unmountInactiveTabs: false
+    - tabNames: >-
+        ["Concept Map Assingments", "Value Set Assignments", "Concept Map Review
+        Page","Value Set Review Page","Backup Assignment Page"]
+    - selectedTabIndex: 0
+    - selectedTab: '"0"'
+    - showTabBar: true
+    - disableAnimation: false
+    - overflowType: hidden
+    - disabled: ''
+style:
+  ordered: []
+position2:
+  position2:
+    row: 1.1999999999999997
+    height: 21.599999999999994
+    width: 12
+createdAt: 2022-06-06T17:32:05.551Z
