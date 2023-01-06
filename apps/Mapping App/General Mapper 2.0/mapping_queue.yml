@@ -61,6 +61,7 @@ template:
           - uuid: ''
           - concept_map_version_uuid: ''
           - email: ''
+          - resource_count: ''
           - no_map: ''
     - columnFrozenAlignments:
         ordered: []
