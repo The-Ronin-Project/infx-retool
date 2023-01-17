@@ -1,0 +1,273 @@
+id: mapped_concepts
+type: widget
+subtype: TableWidget
+template:
+  ordered:
+    - showCustomButton: false
+    - sortMappedValue:
+        ordered: []
+    - _filteredSortedRenderedDataWithTypes: null
+    - heightType: fixed
+    - normalizedData: null
+    - rowHeight: standard
+    - saveChangesDisabled: ''
+    - columnTypeProperties:
+        ordered:
+          - target_concept_code:
+              ordered: []
+          - code:
+              ordered: []
+          - source_code:
+              ordered: []
+    - columnWidths:
+        - object:
+            id: code
+            value: 291
+        - object:
+            id: relationship
+            value: 177
+        - object:
+            id: display
+            value: 180
+        - object:
+            id: review_status
+            value: 140.671875
+        - object:
+            id: system
+            value: 261
+        - object:
+            id: target_concept_code
+            value: 142
+        - object:
+            id: target_concept_display
+            value: 386.671875
+        - object:
+            id: source_code
+            value: 202.1171875
+        - object:
+            id: source_display
+            value: 912
+        - object:
+            id: mapping_comments
+            value: 44.421875
+        - object:
+            id: mapping_uuid
+            value: 316
+    - showSummaryFooter: false
+    - disableRowSelectInteraction: false
+    - columnWidthsMobile: []
+    - hasNextAfterCursor: ''
+    - columnTypeSpecificExtras:
+        ordered: []
+    - onRowAdded: ''
+    - columnHeaderNames:
+        ordered:
+          - display: source_display
+          - mapping_comments: mapping comments
+          - code: source_code
+          - source_code: Source Code
+          - target_concept_code: Target Code
+          - actual_mapper: Mapper
+          - actual_reviewer: Reviewer
+          - relationship: Relationship
+          - review_status: Review Status
+          - target_concept_display: Target Display
+          - source_display: Source Display
+    - alwaysShowPaginator: false
+    - columnColors:
+        ordered:
+          - special_use: ''
+          - display: ''
+          - relationship_system_uuid: ''
+          - mapping_comments: ''
+          - created_date: ''
+          - relationship_code_uuid: ''
+          - author: ''
+          - mapping_uuid: ''
+          - target_concept_system_version_uuid: ''
+          - code: ''
+          - system: ''
+          - source_code: ''
+          - target_concept_code: ''
+          - actual_mapper: ''
+          - target_concept_system: ''
+          - map_status: ''
+          - source_concept_uuid: ''
+          - reviewed_date: ''
+          - actual_reviewer: ''
+          - additional_context: ''
+          - relationship: ''
+          - review_status: ''
+          - uuid: ''
+          - concept_map_version_uuid: ''
+          - target_concept_display: ''
+          - source_display: ''
+    - columnFrozenAlignments:
+        ordered: []
+    - allowMultiRowSelect: false
+    - columnFormats:
+        ordered:
+          - target_concept_code: TextDataCell
+          - code: TextDataCell
+          - source_code: TextDataCell
+    - columnRestrictedEditing:
+        ordered: []
+    - showFilterButton: true
+    - _columnVisibility:
+        ordered:
+          - special_use: false
+          - display: false
+          - relationship_system_uuid: false
+          - created_date: false
+          - relationship_code_uuid: false
+          - author: false
+          - mapping_uuid: false
+          - target_concept_system_version_uuid: false
+          - code: false
+          - target_concept_system: false
+          - map_status: false
+          - source_concept_uuid: false
+          - reviewed_date: false
+          - uuid: false
+          - concept_map_version_uuid: false
+    - _columnSummaryTypes:
+        ordered:
+          - target_concept_code: ''
+          - code: ''
+          - source_code: ''
+    - _columnsWithLegacyBackgroundColor:
+        set: []
+    - showAddRowButton: false
+    - _unfilteredSelectedIndex: null
+    - nextBeforeCursor: ''
+    - columnVisibility:
+        ordered: []
+    - selectedPageIndex: '0'
+    - applyDynamicSettingsToColumnOrder: true
+    - rowColor:
+        array: []
+    - actionButtonColumnName: Send Back for Review
+    - resetAfterSave: true
+    - filterStackType: and
+    - downloadRawData: true
+    - showFetchingIndicator: true
+    - serverPaginated: false
+    - data: '{{get_concept_maps.data}}'
+    - displayedData: null
+    - actionButtons:
+        - ordered:
+            - actionButtonText: Reject Mapping
+            - actionButtonType: runQuery
+            - actionButtonQuery: reject_mapping
+            - actionButtonInternalUrlPath: ''
+            - actionButtonInternalUrlQuery: ''
+            - actionButtonUrl: ''
+            - actionButtonNewWindow: false
+            - actionButtonDisabled: ''
+    - actionButtonSelectsRow: true
+    - selectRowByDefault: true
+    - defaultSortByColumn: ''
+    - paginationOffset: 0
+    - columnAlignment:
+        ordered:
+          - target_concept_code: left
+          - code: left
+          - source_code: left
+    - columnSummaries:
+        object: {}
+    - showBoxShadow: false
+    - sortedDesc: false
+    - customButtonName: ''
+    - columnMappersRenderAsHTML:
+        ordered: []
+    - showRefreshButton: true
+    - pageSize: '20'
+    - useDynamicColumnSettings: false
+    - actionButtonPosition: right
+    - dynamicRowHeights: false
+    - bulkUpdateAction: ''
+    - afterCursor: ''
+    - onCustomButtonPressQueryName: ''
+    - changeSet:
+        object: {}
+    - sortedColumn: ''
+    - _columnSummaryValues:
+        ordered:
+          - target_concept_code: ''
+          - code: ''
+          - source_code: ''
+    - checkboxRowSelect: true
+    - _compatibilityMode: false
+    - showColumnBorders: false
+    - clearSelectionLabel: Clear selection
+    - _renderedDataWithTypes: null
+    - columnAllowOverflow:
+        ordered: []
+    - beforeCursor: ''
+    - serverPaginationType: limitOffsetBased
+    - onRowSelect: ''
+    - showDownloadButton: true
+    - selectedIndex: null
+    - defaultSortDescending: false
+    - _sortedDisplayedDataIndices: null
+    - dynamicColumnSettings: null
+    - totalRowCount: ''
+    - recordUpdates:
+        array: []
+    - newRow: null
+    - emptyMessage: No rows found
+    - columnEditable:
+        ordered: []
+    - _viewerColumnSummaryTypes:
+        object: {}
+    - filters:
+        array: []
+    - displayedDataIndices: null
+    - disableSorting:
+        ordered: []
+    - columnMappers:
+        ordered: []
+    - showClearSelection: false
+    - doubleClickToEdit: true
+    - overflowType: scroll
+    - _reverseSortedDisplayedDataIndices: null
+    - showTableBorder: true
+    - selectedCell:
+        object:
+          index: null
+          data: null
+          columnName: null
+    - columns: []
+    - defaultSelectedRow: first
+    - freezeActionButtonColumns: false
+    - sort: null
+    - _columns:
+        - source_code
+        - source_display
+        - relationship
+        - target_concept_code
+        - target_concept_display
+        - review_status
+        - map_status
+        - mapping_comments
+    - sortByRawValue:
+        ordered: []
+    - calculatedColumns: []
+    - selectedRow:
+        object:
+          index: null
+          data: null
+    - showPaginationOnTop: true
+    - _reverseDisplayedDataIndices: null
+    - nextAfterCursor: ''
+    - useCompactMode: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabbedContainer1
+    subcontainer: 8e8d8
+    row: 0.9999999999999999
+    height: 27
+    width: 12
+createdAt: 2022-09-14T19:54:01.252Z
