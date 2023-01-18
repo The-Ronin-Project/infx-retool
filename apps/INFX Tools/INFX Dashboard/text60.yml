@@ -1,0 +1,27 @@
+id: text60
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - tooltipText: ''
+    - value: ' ### **INFX Applications**'
+    - style:
+        ordered:
+          - color: rgb(16, 42, 67)
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    subcontainer: header
+    height: 0.6
+    width: 2
+createdAt: 2023-01-03T22:59:02.310Z

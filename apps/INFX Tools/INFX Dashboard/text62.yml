@@ -1,0 +1,29 @@
+id: text62
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: <p>Browse and create question groups. </p>
+    - style:
+        ordered:
+          - color: rgba(36, 59, 83, 0.9)
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: container30
+    subcontainer: e47d5
+    height: 1.6
+    width: 12
+createdAt: 2023-01-04T19:08:06.928Z

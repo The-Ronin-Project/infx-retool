@@ -1,0 +1,33 @@
+id: text57
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: '#### **Normalization Registry**'
+    - style:
+        ordered:
+          - color: rgb(36, 59, 83)
+          - background: ''
+          - links: ''
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: container28
+    rowGroup: header
+    row: 0.19999999999999996
+    col: 2
+    height: 0.6
+    width: 10
+createdAt: 2023-01-03T18:09:08.790Z
