@@ -1,0 +1,28 @@
+id: reviewer_modal
+type: widget
+subtype: ModalWidget
+template:
+  ordered:
+    - opened: false
+    - modalOverflowType: scroll
+    - onModalClose: ''
+    - modalHeightType: fixed
+    - tooltipText: ''
+    - modalHeight: ''
+    - onModalOpen: ''
+    - modalWidth: ''
+    - closeOnOutsideClick: false
+    - loading: ''
+    - disabled: ''
+    - buttonText: Assign Concepts as Reviewer
+style:
+  ordered: []
+position2:
+  position2:
+    container: concept_map_manager
+    subcontainer: '0'
+    row: 8.399999999999999
+    col: 5
+    height: 1
+    width: 3
+createdAt: 2022-03-16T18:56:23.459Z
