@@ -1,0 +1,8 @@
+id: source_concept
+type: globalwidgetprop
+subtype: GlobalWidgetProp
+template:
+  ordered:
+    - value: ''
+    - defaultValue: '{{source_concepts.selectedRow.data.uuid}}'
+createdAt: 2022-08-03T20:04:27.638Z

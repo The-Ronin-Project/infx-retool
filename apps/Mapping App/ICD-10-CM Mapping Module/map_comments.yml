@@ -1,0 +1,8 @@
+id: map_comments
+type: globalwidgetprop
+subtype: GlobalWidgetProp
+template:
+  ordered:
+    - value: ''
+    - defaultValue: '{{mapcomments.value}}'
+createdAt: 2022-08-03T20:00:15.652Z
