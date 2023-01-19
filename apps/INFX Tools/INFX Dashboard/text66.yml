@@ -1,0 +1,27 @@
+id: text66
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - tooltipText: ''
+    - value: '#### Review WIP per project for all  users'
+    - style:
+        ordered:
+          - color: rgb(51, 78, 104)
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: review_wip_modal
+    height: 0.6
+    width: 8
+createdAt: 2023-01-17T19:27:44.856Z

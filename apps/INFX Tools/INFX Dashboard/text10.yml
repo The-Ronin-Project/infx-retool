@@ -1,0 +1,32 @@
+id: text10
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: >-
+        <p>Browse, create, duplicate concept maps. Navigate to versions, manage
+        assignmnets, map concepts, review mappings. </p>
+    - style:
+        ordered:
+          - color: rgba(36, 59, 83, 0.9)
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: container7
+    subcontainer: e47d5
+    row: 1.6653345369377348e-16
+    height: 0.6
+    width: 10
+createdAt: 2022-04-19T20:47:37.111Z

@@ -1,0 +1,44 @@
+id: link18
+type: widget
+subtype: LinkWidget
+template:
+  ordered:
+    - horizontalAlign: left
+    - clickable: false
+    - iconAfter: bold/interface-arrows-right-alternate
+    - hidden: false
+    - text: Open
+    - showUnderline: never
+    - showInEditor: false
+    - tooltipText: ''
+    - style:
+        ordered:
+          - text: rgb(38, 128, 194)
+    - allowWrap: false
+    - iconBefore: ''
+    - events:
+        - ordered:
+            - event: click
+            - type: util
+            - method: openApp
+            - pluginId: ''
+            - targetId: null
+            - params:
+                ordered:
+                  - uuid: 39347700-aacd-11ec-ae09-57783064a589
+            - waitType: debounce
+            - waitMs: '0'
+    - loading: false
+    - loaderPosition: auto
+    - disabled: false
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: container29
+    subcontainer: e47d5
+    row: 0.6
+    height: 0.6
+    width: 10
+createdAt: 2023-01-03T18:11:59.506Z

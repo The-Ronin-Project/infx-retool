@@ -1,0 +1,28 @@
+id: text55
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: '#### Content Tools'
+    - style:
+        ordered:
+          - color: rgba(98, 125, 152, 0.8)
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    row: 6.799999999999998
+    height: 0.8
+    width: 6
+createdAt: 2023-01-03T18:08:57.621Z

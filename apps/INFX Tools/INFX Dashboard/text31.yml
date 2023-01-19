@@ -1,0 +1,28 @@
+id: text31
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: '#### Data Modeling'
+    - style:
+        ordered:
+          - color: rgba(98, 125, 152, 0.8)
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    row: 20.800000000000004
+    height: 0.8
+    width: 6
+createdAt: 2022-04-19T20:54:56.345Z

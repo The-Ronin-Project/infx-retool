@@ -1,0 +1,28 @@
+id: user
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - tooltipText: ''
+    - value: '**{{ current_user.fullName }}**'
+    - style:
+        ordered:
+          - color: rgb(98, 125, 152)
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    subcontainer: header
+    col: 10
+    height: 0.6
+    width: 2
+createdAt: 2022-12-05T16:53:07.135Z
