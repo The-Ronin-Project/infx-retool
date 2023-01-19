@@ -1,0 +1,27 @@
+id: text2
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - tooltipText: ''
+    - value: >-
+        **Ingredient(s) not found above? Create a new ingredient concept
+        below** 
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    row: 3.8000000000000087
+    col: 4
+    height: 0.6
+    width: 8
+createdAt: 2022-09-13T23:01:16.124Z
