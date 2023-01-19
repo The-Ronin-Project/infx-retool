@@ -1,0 +1,40 @@
+id: alert2
+type: widget
+subtype: AlertWidget
+template:
+  ordered:
+    - valueToCopy: ''
+    - internalUrlHashParams: ''
+    - exportFileType: csv
+    - buttonType: action
+    - url: ''
+    - newWindow: false
+    - exportQuery: ''
+    - action: ''
+    - internalUrlQuery: ''
+    - internalUrlPath: ''
+    - title: ''
+    - events:
+        - ordered:
+            - event: click
+            - type: datasource
+            - method: trigger
+            - pluginId: save_scdc
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - type: info
+    - exportFileName: ''
+    - description: If strength cannot be found in the table below, create a new strength
+    - buttonText: Create New SCD Component
+style:
+  ordered: []
+position2:
+  position2:
+    row: 6.600000000000006
+    col: 4
+    height: 2.4
+    width: 4
+createdAt: 2022-09-28T21:18:26.273Z

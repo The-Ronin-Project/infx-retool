@@ -1,0 +1,51 @@
+id: alert1
+type: widget
+subtype: AlertWidget
+template:
+  ordered:
+    - valueToCopy: ''
+    - internalUrlHashParams: ''
+    - exportFileType: csv
+    - buttonType: action
+    - url: ''
+    - newWindow: false
+    - exportQuery: ''
+    - action: ''
+    - internalUrlQuery: ''
+    - internalUrlPath: ''
+    - title: ''
+    - events:
+        - ordered:
+            - event: click
+            - type: datasource
+            - method: trigger
+            - pluginId: save_in
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: click
+            - type: datasource
+            - method: trigger
+            - pluginId: search_ingredient
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - type: info
+    - exportFileName: ''
+    - description: >-
+        If ingredient cannot be found in the table below, create a new
+        ingredient 
+    - buttonText: Create New Ingredient
+style:
+  ordered: []
+position2:
+  position2:
+    row: 6.600000000000006
+    height: 2.4
+    width: 4
+createdAt: 2022-09-23T17:58:59.847Z
