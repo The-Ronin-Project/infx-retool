@@ -1,0 +1,27 @@
+id: text5
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - tooltipText: ''
+    - value: '**Select an existing question characteristic, or create a new one**'
+    - style:
+        ordered: []
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: wizard1
+    height: 1
+    width: 7
+    tabNum: jXZWSpNW_
+createdAt: 2021-08-12T19:20:50.178Z

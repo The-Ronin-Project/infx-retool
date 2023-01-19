@@ -1,0 +1,51 @@
+id: textinput9
+type: widget
+subtype: TextInputWidget
+template:
+  ordered:
+    - validationMaxlengthValue: ''
+    - readonly: ''
+    - disabledKeyCodes: ''
+    - showNumberCommas: false
+    - validationMaxValue: ''
+    - onBlur: ''
+    - currencyType: USD
+    - leftIconName: ''
+    - initialValue: ''
+    - validationMessage: ''
+    - tooltipText: >
+        A numerical assignment of symptom severity where 1 is the lowest
+        severity. Numbers with decimal places indicate similar clinical severity
+        but are used to order the answers in the app.
+    - value: ''
+    - suffix: ''
+    - validationMinlengthValue: ''
+    - validationLengthValue: ''
+    - placeholder: Enter a value
+    - validationType: integer
+    - label: clinical_severity_order
+    - currencyMajorOnly: false
+    - formattedValue: ''
+    - allowedInputsRegex: ''
+    - labelMaxWidth: ''
+    - enableValidationType: true
+    - labelPlacedOnLeft: false
+    - onSubmit: ''
+    - validationMinValue: ''
+    - lastSubmittedAt: ''
+    - validationState:
+        object:
+          required: ''
+          validationType: ''
+    - type: number
+    - allowedRegex: ''
+    - required: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: form1
+    col: 6
+    height: 1
+    width: 6
+createdAt: 2021-08-10T23:27:29.852Z

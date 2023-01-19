@@ -1,0 +1,40 @@
+id: button2
+type: widget
+subtype: ButtonWidget
+template:
+  ordered:
+    - valueToCopy: ''
+    - internalUrlHashParams: ''
+    - exportFileType: csv
+    - buttonType: action
+    - exportTemplate: null
+    - url: ''
+    - newWindow: false
+    - value: Create Another Question
+    - exportQuery: ''
+    - action: ''
+    - internalUrlQuery: ''
+    - internalUrlPath: ''
+    - events:
+        - ordered:
+            - event: click
+            - type: datasource
+            - method: trigger
+            - pluginId: reset_new_question_form
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - exportFileName: ''
+    - loading: ''
+    - disabled: ''
+style:
+  ordered: []
+position2:
+  position2:
+    container: wizard1
+    row: 1
+    height: 1
+    width: 3
+    tabNum: oiD5B4wFM
+createdAt: 2021-08-11T18:27:42.598Z

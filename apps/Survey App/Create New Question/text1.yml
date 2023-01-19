@@ -1,0 +1,27 @@
+id: text1
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - tooltipText: ''
+    - value: 'Editing Survey: <strong>{{load_survey_data.data.title}}</strong>'
+    - style:
+        ordered: []
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabbedcontainer1
+    height: 1
+    width: 3
+    tabNum: 2
+createdAt: 2021-08-03T16:47:36.407Z

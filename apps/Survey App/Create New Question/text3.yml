@@ -1,0 +1,29 @@
+id: text3
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - tooltipText: ''
+    - value: >-
+        Current symptoms assigned to question:
+        {{load_new_question.data.provider_label}}
+    - style:
+        ordered: []
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: wizard1
+    height: 1
+    width: 9
+    tabNum: Nzux9bLwz
+createdAt: 2021-08-10T20:49:43.906Z

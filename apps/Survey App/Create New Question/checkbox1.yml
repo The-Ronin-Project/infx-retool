@@ -1,0 +1,38 @@
+id: checkbox1
+type: widget
+subtype: CheckboxWidget
+template:
+  ordered:
+    - label: >
+        present_most_severe_first; Indicates how the question answers should be
+        displayed in the mobile app by using clinical severity. Most questions
+        will have this selected (ex: yes/no questions should always display yes
+        first so as not to confuse the patient) but some should present in
+        increasing severity where it wouldn’t make sense to list the most severe
+        outcome first (ex: severity questions list mild first vs very severe
+        first).
+    - value: false
+    - disabled: ''
+    - onCheckQuery: ''
+    - onUncheckQuery: ''
+    - placeholder: Enter a value
+    - events:
+        - ordered:
+            - event: change
+            - type: datasource
+            - method: trigger
+            - pluginId: load_survey_questions
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+style:
+  ordered: []
+position2:
+  position2:
+    container: create_question_form
+    row: 4
+    col: 4
+    height: 5
+    width: 8
+createdAt: 2021-08-10T18:14:45.671Z

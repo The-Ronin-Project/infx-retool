@@ -1,0 +1,51 @@
+id: textinput1
+type: widget
+subtype: TextInputWidget
+template:
+  ordered:
+    - validationMaxlengthValue: ''
+    - readonly: ''
+    - disabledKeyCodes: ''
+    - showNumberCommas: false
+    - validationMaxValue: ''
+    - onBlur: ''
+    - currencyType: USD
+    - leftIconName: ''
+    - initialValue: ''
+    - validationMessage: ''
+    - tooltipText: >+
+        Patient facing response in the app alert screen indicating why the
+        symptom alerted.
+
+    - value: ''
+    - suffix: ''
+    - validationMinlengthValue: ''
+    - validationLengthValue: ''
+    - placeholder: Enter a value
+    - validationType: ''
+    - label: not_expected_reason
+    - currencyMajorOnly: false
+    - formattedValue: ''
+    - allowedInputsRegex: ''
+    - labelMaxWidth: ''
+    - enableValidationType: false
+    - labelPlacedOnLeft: false
+    - onSubmit: ''
+    - validationMinValue: ''
+    - lastSubmittedAt: ''
+    - validationState:
+        object:
+          required: ''
+          validationType: ''
+    - type: text
+    - allowedRegex: ''
+    - required: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: create_question_form
+    row: 3
+    height: 1
+    width: 12
+createdAt: 2021-08-10T18:14:45.502Z

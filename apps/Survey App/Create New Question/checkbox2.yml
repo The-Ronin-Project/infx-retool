@@ -1,0 +1,23 @@
+id: checkbox2
+type: widget
+subtype: CheckboxWidget
+template:
+  ordered:
+    - label: >
+        future_question; A question we want to ask in the future when
+        functionality supports it.
+    - value: false
+    - disabled: ''
+    - onCheckQuery: ''
+    - onUncheckQuery: ''
+    - placeholder: Enter a value
+style:
+  ordered: []
+position2:
+  position2:
+    container: create_question_form
+    row: 9
+    col: 4
+    height: 1
+    width: 8
+createdAt: 2021-08-10T18:14:46.627Z

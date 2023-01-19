@@ -1,0 +1,101 @@
+id: wizard1
+type: widget
+subtype: WizardWidget
+template:
+  ordered:
+    - spinWhenChildrenAreFetching: true
+    - currentStep: VGcbjman1
+    - steps:
+        ordered:
+          - VGcbjman1:
+              ordered:
+                - name: Create Question
+                - navButtons: []
+                - visualizationXCoordinate: 1096
+                - visualizationYCoordinate: 472
+          - Nzux9bLwz:
+              ordered:
+                - name: Pick Symptom
+                - navButtons:
+                    - ordered:
+                        - buttonText: Next
+                        - buttonType: goToStep
+                        - buttonGoToStep: jXZWSpNW_
+                        - buttonEnabled: '{{true}}'
+                        - triggerButtonIf: '{{false}}'
+                - visualizationXCoordinate: 776
+                - visualizationYCoordinate: 600
+                - isVirtual: false
+                - onEnterQuery: ''
+                - hideTitle: false
+          - jXZWSpNW_:
+              ordered:
+                - name: Pick Question Characteristic
+                - navButtons:
+                    - ordered:
+                        - buttonText: Next
+                        - buttonType: goToStep
+                        - buttonGoToStep: IKXRcoND7
+                        - buttonEnabled: '{{true}}'
+                        - triggerButtonIf: '{{false}}'
+                - visualizationXCoordinate: 1000
+                - visualizationYCoordinate: 600
+                - isVirtual: false
+                - onEnterQuery: ''
+                - hideTitle: false
+          - IKXRcoND7:
+              ordered:
+                - name: Requires Question (Optional)
+                - navButtons:
+                    - ordered:
+                        - buttonText: Next
+                        - buttonType: goToStep
+                        - buttonGoToStep: EJL_mwHKy
+                        - buttonEnabled: '{{true}}'
+                        - triggerButtonIf: '{{false}}'
+                - visualizationXCoordinate: 1192
+                - visualizationYCoordinate: 600
+                - isVirtual: false
+                - onEnterQuery: ''
+                - hideTitle: false
+          - EJL_mwHKy:
+              ordered:
+                - name: Create Answers
+                - navButtons:
+                    - ordered:
+                        - buttonText: Finish
+                        - buttonType: goToStep
+                        - buttonGoToStep: oiD5B4wFM
+                        - buttonEnabled: '{{true}}'
+                        - triggerButtonIf: '{{false}}'
+                - visualizationXCoordinate: 1384
+                - visualizationYCoordinate: 600
+                - isVirtual: false
+                - onEnterQuery: ''
+                - hideTitle: false
+          - oiD5B4wFM:
+              ordered:
+                - name: Finished!
+                - navButtons: []
+                - visualizationXCoordinate: 1592
+                - visualizationYCoordinate: 600
+                - isVirtual: false
+                - onEnterQuery: ''
+                - hideTitle: false
+    - stepHistory: []
+    - hidden: false
+    - customInitialStepName: ''
+    - scroll: false
+    - initialStep: VGcbjman1
+    - onReset: ''
+    - onStepChange: index_new_question
+    - hideResetButton: true
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabbedcontainer1
+    height: 22
+    width: 12
+    tabNum: 1
+createdAt: 2021-08-02T19:02:36.762Z

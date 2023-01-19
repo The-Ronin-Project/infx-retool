@@ -1,0 +1,105 @@
+id: index_new_answer
+type: datasource
+subtype: ElasticSearchQuery
+resourceName: 3e68115b-9776-4956-86b4-f468d2d1f836
+resourceDisplayName: ElasticSearch
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - method: create
+    - lastReceivedFromResourceAt: null
+    - queryDisabledMessage: ''
+    - successMessage: ''
+    - queryDisabled: ''
+    - playgroundQuerySaveId: 26
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: false
+    - showFailureToaster: true
+    - query: |-
+        { 
+          body: {
+            "specific_answer_uuid": {{ answer_uuid }},
+            "specific_answer_label": {{ label }},
+            "generic_answer_display": {{ generic_answer_display }},
+            "clinical_severity_order": {{ clinical_severity_order }},
+            "next_question_slug": {{ next_question_slug }},
+            "alert_tier": {{ alert_tier }},
+            "expected": {{expected}}
+          },
+          index: "survey_answer",
+          id: {{ answer_uuid }},
+          type: "_doc"
+        }
+    - playgroundQueryUuid: 390a945f-e42f-41c2-bc1a-3f1256e72b61
+    - playgroundQueryId: 18
+    - privateParams: []
+    - triggersOnSuccess:
+        - reset_answer_form
+    - runWhenPageLoadsDelay: ''
+    - data: null
+    - retoolVersion: 2.70.21
+    - importedQueryInputs:
+        ordered:
+          - answer_uuid: '{{new_answer_uuid.value}}'
+          - label: '{{textinput7.value}}'
+          - generic_answer_display: '{{textinput8.value}}'
+          - clinical_severity_order: '{{textinput9.value}}'
+          - next_question_slug: 'null'
+          - alert_tier: '{{alert_tier_select.value}}'
+          - expected: '{{checkbox3.value}}'
+    - showSuccessConfetti: false
+    - isImported: true
+    - showSuccessToaster: true
+    - cacheKeyTtl: ''
+    - metadata: null
+    - triggersOnFailure: []
+    - changesetObject: ''
+    - errorTransformer: >-
+        // The variable 'data' allows you to reference the request's data in the
+        transformer. 
+
+        // example: return data.find(element => element.isError)
+
+        return data.error
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - watchedParams: []
+    - enableErrorTransformer: false
+    - showLatestVersionUpdatedWarning: true
+    - timestamp: 0
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: false
+    - runWhenPageLoads: false
+    - transformer: >-
+        // type your code here
+
+        // example: return formatDataAsArray(data).filter(row => row.quantity >
+        20)
+
+        return data
+    - events:
+        - ordered:
+            - event: success
+            - type: datasource
+            - method: trigger
+            - pluginId: reset_answer_form
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - queryTimeout: '10000'
+    - requireConfirmation: false
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups: []
+    - collection: ''
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: true
+    - notificationDuration: ''
+createdAt: 2021-08-13T14:42:21.054Z

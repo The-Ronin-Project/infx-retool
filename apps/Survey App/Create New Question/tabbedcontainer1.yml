@@ -1,0 +1,22 @@
+id: tabbedcontainer1
+type: widget
+subtype: TabbedContainerWidget
+template:
+  ordered:
+    - heightType: fixed
+    - spinWhenChildrenAreFetching: true
+    - unmountInactiveTabs: false
+    - tabNames: '["List Questions","Create New Question"]'
+    - selectedTabIndex: 0
+    - selectedTab: '"0"'
+    - showTabBar: true
+    - disableAnimation: false
+    - overflowType: hidden
+    - disabled: ''
+style:
+  ordered: []
+position2:
+  position2:
+    height: 56
+    width: 12
+createdAt: 2021-07-30T23:14:05.722Z
