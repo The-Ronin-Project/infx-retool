@@ -1,0 +1,33 @@
+id: button1
+type: widget
+subtype: ButtonWidget2
+template:
+  ordered:
+    - horizontalAlign: stretch
+    - clickable: false
+    - iconAfter: ''
+    - submitTargetId: null
+    - hidden: false
+    - text: >-
+        Assign {{query_count.data.match_count}} concepts to
+        {{assignee_select.selectedLabel}}
+    - showInEditor: false
+    - tooltipText: ''
+    - styleVariant: solid
+    - submit: false
+    - iconBefore: ''
+    - events:
+        ordered: []
+    - loading: false
+    - loaderPosition: auto
+    - disabled: '{{assignee_select.value == null}}'
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    row: 6.4
+    col: 4
+    height: 1
+    width: 4
+createdAt: 2022-09-12T19:30:56.265Z
