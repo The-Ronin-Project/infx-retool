@@ -1,0 +1,267 @@
+id: rules_table
+type: widget
+subtype: TableWidget
+template:
+  ordered:
+    - showCustomButton: false
+    - sortMappedValue:
+        ordered: []
+    - _filteredSortedRenderedDataWithTypes: null
+    - heightType: fixed
+    - normalizedData: null
+    - saveChangesDisabled: ''
+    - columnTypeProperties:
+        ordered: []
+    - columnWidths:
+        - object:
+            id: position
+            value: 66.5
+        - object:
+            id: description
+            value: 248.640625
+        - object:
+            id: operator
+            value: 109.63351440429688
+        - object:
+            id: value
+            value: 213.47442626953125
+    - showSummaryFooter: false
+    - disableRowSelectInteraction: false
+    - columnWidthsMobile: []
+    - hasNextAfterCursor: ''
+    - columnTypeSpecificExtras:
+        ordered: []
+    - onRowAdded: ''
+    - columnHeaderNames:
+        ordered:
+          - version: Term. Version
+          - terminology: Terminology
+          - rule_group: group
+    - alwaysShowPaginator: false
+    - columnColors:
+        ordered:
+          - effective_end: ''
+          - operator: ''
+          - include: ''
+          - position: ''
+          - effective_start: ''
+          - terminology_version: ''
+          - value_set_version: ''
+          - value: ''
+          - terminology: ''
+          - property: ''
+          - version: ''
+          - uuid: ''
+          - rule_group: ''
+          - description: ''
+          - vs_uuid: ''
+          - group: ''
+    - columnFrozenAlignments:
+        ordered: []
+    - allowMultiRowSelect: false
+    - columnFormats:
+        ordered: []
+    - columnRestrictedEditing:
+        ordered:
+          - value: '{{version_metadata.data.status[0]==''active''}}'
+    - showFilterButton: true
+    - _columnVisibility:
+        ordered:
+          - effective_end: false
+          - operator: true
+          - include: true
+          - position: false
+          - effective_start: false
+          - name: true
+          - sales: true
+          - terminology_version: false
+          - value_set_version: false
+          - value: true
+          - terminology: true
+          - property: true
+          - version: true
+          - id: true
+          - uuid: false
+          - rule_group: true
+          - email: true
+          - description: true
+          - vs_uuid: false
+          - group: true
+    - _columnSummaryTypes:
+        ordered: []
+    - _columnsWithLegacyBackgroundColor:
+        set: []
+    - showAddRowButton: false
+    - _unfilteredSelectedIndex: ''
+    - nextBeforeCursor: ''
+    - columnVisibility:
+        ordered:
+          - effective_end: false
+          - operator: true
+          - include: true
+          - position: false
+          - effective_start: false
+          - name: true
+          - sales: true
+          - terminology_version: false
+          - value_set_version: false
+          - value: true
+          - terminology: true
+          - property: true
+          - version: true
+          - id: true
+          - uuid: false
+          - rule_group: true
+          - email: true
+          - description: true
+          - vs_uuid: false
+          - group: true
+    - selectedPageIndex: '0'
+    - applyDynamicSettingsToColumnOrder: false
+    - rowColor:
+        array: []
+    - actionButtonColumnName: Actions
+    - resetAfterSave: true
+    - filterStackType: and
+    - downloadRawData: false
+    - showFetchingIndicator: true
+    - serverPaginated: false
+    - data: '{{load_rules.data}}'
+    - displayedData: null
+    - actionButtons:
+        - ordered:
+            - actionButtonText: Delete
+            - actionButtonType: runQuery
+            - actionButtonQuery: delete_rule
+            - actionButtonInternalUrlPath: ''
+            - actionButtonInternalUrlQuery: ''
+            - actionButtonUrl: ''
+            - actionButtonNewWindow: false
+            - actionButtonDisabled: '{{ version_metadata.data.status == ''active''}}'
+    - actionButtonSelectsRow: true
+    - selectRowByDefault: true
+    - defaultSortByColumn: ''
+    - paginationOffset: 0
+    - columnAlignment:
+        ordered: []
+    - columnSummaries:
+        object: {}
+    - showBoxShadow: true
+    - sortedDesc: false
+    - customButtonName: ''
+    - columnMappersRenderAsHTML:
+        ordered: []
+    - showRefreshButton: true
+    - pageSize: 12
+    - useDynamicColumnSettings: false
+    - actionButtonPosition: right
+    - dynamicRowHeights: false
+    - bulkUpdateAction: ''
+    - afterCursor: ''
+    - onCustomButtonPressQueryName: ''
+    - changeSet:
+        object: {}
+    - sortedColumn: ''
+    - _columnSummaryValues:
+        ordered: []
+    - checkboxRowSelect: true
+    - _compatibilityMode: true
+    - showColumnBorders: true
+    - clearSelectionLabel: Clear selection
+    - _renderedDataWithTypes: null
+    - columnAllowOverflow:
+        ordered: []
+    - beforeCursor: ''
+    - serverPaginationType: limitOffsetBased
+    - onRowSelect: ''
+    - showDownloadButton: true
+    - selectedIndex: null
+    - defaultSortDescending: false
+    - _sortedDisplayedDataIndices: null
+    - dynamicColumnSettings: null
+    - events:
+        - ordered:
+            - event: saveChanges
+            - type: datasource
+            - method: trigger
+            - pluginId: bulk_update_values
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - totalRowCount: ''
+    - recordUpdates:
+        array: []
+    - newRow: null
+    - emptyMessage: No rows found
+    - columnEditable:
+        ordered:
+          - value: true
+          - rule_group: true
+    - _viewerColumnSummaryTypes:
+        object: {}
+    - filters:
+        array: []
+    - displayedDataIndices: null
+    - disableSorting:
+        ordered: []
+    - columnMappers:
+        ordered: []
+    - showClearSelection: false
+    - doubleClickToEdit: false
+    - overflowType: pagination
+    - _reverseSortedDisplayedDataIndices: null
+    - selectedCell:
+        object:
+          index: null
+          data: null
+          columnName: null
+    - columns:
+        - rule_group
+        - uuid
+        - position
+        - description
+        - property
+        - operator
+        - value
+        - include
+        - value_set_version
+        - terminology_version
+        - terminology
+        - version
+    - defaultSelectedRow: first
+    - freezeActionButtonColumns: false
+    - sort: null
+    - _columns:
+        - rule_group
+        - uuid
+        - position
+        - description
+        - property
+        - operator
+        - value
+        - include
+        - value_set_version
+        - terminology_version
+        - terminology
+        - version
+    - sortByRawValue:
+        ordered: []
+    - calculatedColumns: []
+    - selectedRow:
+        object:
+          index: null
+          data: null
+    - showPaginationOnTop: false
+    - _reverseDisplayedDataIndices: null
+    - nextAfterCursor: ''
+    - useCompactMode: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabbedcontainer1
+    row: 1
+    height: 16
+    width: 12
+createdAt: 2021-10-01T16:32:16.917Z
