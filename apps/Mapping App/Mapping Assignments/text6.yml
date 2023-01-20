@@ -1,0 +1,26 @@
+id: text6
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: '{{i!=0}}'
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - tooltipText: ''
+    - value: '**Outstanding**'
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: user_name
+    row: 0.19999999999999996
+    col: 4
+    height: 0.6
+    width: 3
+createdAt: 2022-12-13T20:46:00.425Z

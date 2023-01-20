@@ -1,0 +1,36 @@
+id: project_counts
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - tooltipText: ''
+    - value: >-
+        **{{total_concepts.data.count}}** Total Concepts
+
+
+        **{{assigned_count.data.assigned_count}}** Assigned
+
+        **{{unassigned_count.data.unassigned_count}}** Unassigned
+
+
+        **{{review_count_query.data.review_count}}** Concepts assigned for
+        Review
+
+        ** **
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    row: 1.199999999999999
+    height: 0.6
+    width: 3
+createdAt: 2022-09-12T19:10:21.648Z
