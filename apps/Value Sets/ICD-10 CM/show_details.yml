@@ -1,0 +1,38 @@
+id: show_details
+type: widget
+subtype: ModalWidget
+template:
+  ordered:
+    - opened: false
+    - modalOverflowType: scroll
+    - onModalClose: ''
+    - modalHeightType: fixed
+    - tooltipText: ''
+    - style:
+        ordered:
+          - border-color: ''
+          - primary-surface: ''
+          - accent-foreground: ''
+          - primary-foreground: ''
+          - accent-background: rgba(130, 132, 135, 1)
+          - border-radius: ''
+          - secondary-surface: ''
+          - primary-text: ''
+          - primary-background: ''
+    - modalHeight: ''
+    - onModalOpen: ''
+    - modalWidth: ''
+    - closeOnOutsideClick: false
+    - loading: ''
+    - disabled: ''
+    - buttonText: Show Code Details
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabs
+    row: 1.200000000000006
+    col: 10
+    height: 1
+    width: 2
+createdAt: 2022-03-25T20:07:00.494Z
