@@ -1,0 +1,26 @@
+id: text4
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - tooltipText: ''
+    - value: '**Assign Reviewer**'
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: assignment_queue
+    subcontainer: Custom Column 2
+    row: 0.6000000000000001
+    height: 0.6
+    width: 6
+createdAt: 2022-11-17T22:44:30.641Z

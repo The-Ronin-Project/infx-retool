@@ -1,0 +1,25 @@
+id: text9
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - tooltipText: ''
+    - value: '{{ mapper_assignment_counts.data.first_last_name[i] }}'
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: user_name
+    row: 1.0000000000000004
+    height: 0.6
+    width: 2
+createdAt: 2022-12-13T20:49:50.655Z

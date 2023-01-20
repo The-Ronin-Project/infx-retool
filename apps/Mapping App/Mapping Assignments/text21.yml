@@ -1,0 +1,26 @@
+id: text21
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - tooltipText: ''
+    - value: >-
+        Note: In the reviewer table , "Outstanding" refers to concepts with
+        map_status 'ready for review'
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    row: 22.4
+    height: 0.6
+    width: 5
+createdAt: 2022-12-14T20:11:59.199Z
