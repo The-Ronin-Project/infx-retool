@@ -1,0 +1,19 @@
+id: vsHeader1
+type: widget
+subtype: GlobalWidget
+template:
+  ordered:
+    - showFetchingIndicator: boolean
+    - heightType: auto
+    - name: VS Header
+    - pageUuid: 3e618a40-6f50-11ed-a2e9-7f87e76fa06c
+    - childNamespace: vsHeader1
+style:
+  ordered: []
+position2:
+  position2:
+    subcontainer: header
+    row: -4.829470157119431e-15
+    height: 2.4
+    width: 12
+createdAt: 2022-11-28T19:14:05.213Z
