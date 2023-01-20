@@ -1,0 +1,27 @@
+id: text3
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - tooltipText: ''
+    - value: >-
+        This will copy the source display to the search bar when a new source is
+        selected for mapping. It is most useful when you expect the source and
+        target displays to have similar wording.
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    row: 4.4
+    height: 0.6
+    width: 4
+createdAt: 2022-11-02T18:32:48.661Z
