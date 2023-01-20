@@ -1,0 +1,31 @@
+id: add_user_modal
+type: widget
+subtype: ModalWidget
+template:
+  ordered:
+    - opened: false
+    - modalOverflowType: scroll
+    - onModalClose: ''
+    - modalHeightType: fixed
+    - tooltipText: ''
+    - style:
+        ordered:
+          - primary-surface: rgb(240, 244, 248)
+          - accent-background: rgb(98, 176, 232)
+          - primary-text: rgb(240, 244, 248)
+    - modalHeight: ''
+    - onModalOpen: ''
+    - modalWidth: ''
+    - closeOnOutsideClick: false
+    - loading: ''
+    - disabled: ''
+    - buttonText: Add a New User
+style:
+  ordered: []
+position2:
+  position2:
+    container: user_management
+    col: 7
+    height: 1
+    width: 3
+createdAt: 2022-02-11T21:46:51.454Z

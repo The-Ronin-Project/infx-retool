@@ -1,0 +1,15 @@
+id: $header
+type: frame
+subtype: Frame
+template:
+  ordered:
+    - type: header
+    - sticky: true
+    - isHiddenOnDesktop: false
+    - isHiddenOnMobile: false
+    - style:
+        ordered:
+          - primary-surface: rgb(217, 226, 236)
+style:
+  ordered: []
+createdAt: 2023-01-04T19:58:10.276Z
