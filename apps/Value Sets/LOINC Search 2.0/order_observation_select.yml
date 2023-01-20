@@ -1,0 +1,135 @@
+id: order_observation_select
+type: widget
+subtype: MultiselectListboxWidget
+template:
+  ordered:
+    - imageByIndex:
+        array: []
+    - _disabledByIndex:
+        - ''
+        - ''
+        - ''
+        - false
+    - showActions: false
+    - showSelectionIndicator: true
+    - _values:
+        - Order
+        - Observation
+        - Both
+        - 'null'
+    - iconByIndex:
+        array: []
+    - values:
+        array: []
+    - _iconByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+    - selectedIndexes:
+        array: []
+    - selectedItems:
+        array: []
+    - hidden: false
+    - customValidation: ''
+    - data:
+        array: []
+    - maxCount: null
+    - searchMode: fuzzy
+    - hideValidationMessage: false
+    - fallbackTextByIndex:
+        array: []
+    - _fallbackTextByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+    - validationMessage: ''
+    - automaticItemColors: false
+    - itemAdornmentShape: circle
+    - showInEditor: false
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: '[''Observation'', ''Both'']'
+    - hiddenByIndex:
+        array: []
+    - labelCaption: ''
+    - labelWidth: '33'
+    - deprecatedLabels:
+        array: []
+    - _hiddenByIndex:
+        - ''
+        - ''
+        - ''
+        - false
+    - _captionByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+    - itemAdornmentSize: auto
+    - searchTerm: ''
+    - label: Order/Observation
+    - _hasMigratedNestedItems: true
+    - captionByIndex:
+        array: []
+    - _validate: false
+    - itemMode: static
+    - labelWidthUnit: '%'
+    - invalid: false
+    - _tooltipByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+    - _colorByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+    - tooltipByIndex:
+        array: []
+    - colorByIndex:
+        array: []
+    - events:
+        ordered: []
+    - _ids:
+        - 9a86c
+        - 369db
+        - 6d484
+        - '22468'
+    - emptyMessage: ''
+    - selectedLabels:
+        array: []
+    - disabled: false
+    - labelPosition: top
+    - minCount: null
+    - _labels:
+        - ''
+        - ''
+        - ''
+        - ''
+    - labelWrap: false
+    - disabledValues:
+        array: []
+    - disabledByIndex:
+        array: []
+    - maintainSpaceWhenHidden: false
+    - _imageByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+    - required: false
+    - labels:
+        array: []
+style:
+  ordered: []
+position2:
+  position2:
+    container: container6
+    subcontainer: c7c20
+    height: 4
+    width: 6
+createdAt: 2022-11-16T20:38:42.112Z
