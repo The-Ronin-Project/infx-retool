@@ -1,0 +1,235 @@
+id: current_rule_groups
+type: widget
+subtype: TableWidget
+template:
+  ordered:
+    - showCustomButton: false
+    - sortMappedValue:
+        ordered: []
+    - _filteredSortedRenderedDataWithTypes: null
+    - heightType: fixed
+    - normalizedData: null
+    - rowHeight: standard
+    - saveChangesDisabled: ''
+    - columnTypeProperties:
+        ordered:
+          - Custom Column 1:
+              ordered: []
+    - columnWidths:
+        - object:
+            id: Include
+            value: 282.1328125
+        - object:
+            id: title
+            value: 424.1328125
+        - object:
+            id: description
+            value: 391.8046875
+        - object:
+            id: terminoloy and version
+            value: 235.796875
+        - object:
+            id: __retool__action_list
+            value: 359.1328125
+    - showSummaryFooter: false
+    - disableRowSelectInteraction: false
+    - columnWidthsMobile: []
+    - hasNextAfterCursor: ''
+    - columnTypeSpecificExtras:
+        ordered: []
+    - onRowAdded: ''
+    - columnHeaderNames:
+        ordered:
+          - Custom Column 1: Info
+    - alwaysShowPaginator: false
+    - columnColors:
+        ordered:
+          - operator: ''
+          - terminoloy and version: ''
+          - Include: ''
+          - include: ''
+          - position: ''
+          - terminology_version: ''
+          - value_set_version: ''
+          - value: ''
+          - 'terminoloy and ': ''
+          - terminology: ''
+          - property: ''
+          - version: ''
+          - title: ''
+          - terminoloy: ''
+          - uuid: ''
+          - rule_group: ''
+          - description: ''
+    - columnFrozenAlignments:
+        ordered: []
+    - allowMultiRowSelect: false
+    - columnFormats:
+        ordered:
+          - Custom Column 1: ModalDataCell
+    - columnRestrictedEditing:
+        ordered: []
+    - showFilterButton: true
+    - _columnVisibility:
+        ordered:
+          - operator: false
+          - include: false
+          - position: false
+          - terminology_version: false
+          - value_set_version: false
+          - value: false
+          - property: false
+          - uuid: false
+          - rule_group: false
+    - _columnSummaryTypes:
+        ordered:
+          - Custom Column 1: ''
+    - _columnsWithLegacyBackgroundColor:
+        set: []
+    - showAddRowButton: false
+    - _unfilteredSelectedIndex: null
+    - nextBeforeCursor: ''
+    - columnVisibility:
+        ordered: []
+    - selectedPageIndex: '0'
+    - applyDynamicSettingsToColumnOrder: true
+    - rowColor:
+        array: []
+    - actionButtonColumnName: Actions
+    - resetAfterSave: true
+    - filterStackType: and
+    - downloadRawData: false
+    - showFetchingIndicator: true
+    - serverPaginated: false
+    - data: >-
+        [{title:"title", description:" description", "terminoloy and version":
+        "LOINC 2.73", "Include":"True"},
+
+        {title:"title", description:" description", "terminoloy and version":
+        "ICD-10-CM", "Include":"True"}]
+    - displayedData: null
+    - actionButtons:
+        - ordered:
+            - actionButtonText: 🗑 Remove Rule Group
+            - actionButtonType: runQuery
+            - actionButtonQuery: ''
+            - actionButtonInternalUrlPath: ''
+            - actionButtonInternalUrlQuery: ''
+            - actionButtonUrl: ''
+            - actionButtonNewWindow: true
+            - actionButtonDisabled: ''
+        - ordered:
+            - actionButtonText: '🖋 View/Edit '
+            - actionButtonType: openInternalUrl
+            - actionButtonQuery: ''
+            - actionButtonInternalUrlPath: e8d323e0-701c-11ed-85b0-9fec2b2c2bf8
+            - actionButtonInternalUrlQuery: ''
+            - actionButtonUrl: ''
+            - actionButtonNewWindow: true
+            - actionButtonDisabled: ''
+    - actionButtonSelectsRow: true
+    - selectRowByDefault: true
+    - defaultSortByColumn: ''
+    - paginationOffset: 0
+    - columnAlignment:
+        ordered:
+          - Custom Column 1: left
+    - columnSummaries:
+        object: {}
+    - showBoxShadow: false
+    - sortedDesc: false
+    - customButtonName: ''
+    - columnMappersRenderAsHTML:
+        ordered: []
+    - showRefreshButton: true
+    - pageSize: '20'
+    - useDynamicColumnSettings: false
+    - actionButtonPosition: left
+    - dynamicRowHeights: false
+    - bulkUpdateAction: ''
+    - afterCursor: ''
+    - onCustomButtonPressQueryName: ''
+    - changeSet:
+        object: {}
+    - sortedColumn: ''
+    - _columnSummaryValues:
+        ordered:
+          - Custom Column 1: ''
+    - checkboxRowSelect: true
+    - _compatibilityMode: false
+    - showColumnBorders: false
+    - clearSelectionLabel: Clear selection
+    - _renderedDataWithTypes: null
+    - columnAllowOverflow:
+        ordered: []
+    - beforeCursor: ''
+    - serverPaginationType: limitOffsetBased
+    - onRowSelect: ''
+    - showDownloadButton: true
+    - selectedIndex: null
+    - defaultSortDescending: false
+    - _sortedDisplayedDataIndices: null
+    - dynamicColumnSettings: null
+    - totalRowCount: ''
+    - recordUpdates:
+        array: []
+    - newRow: null
+    - emptyMessage: No rows found
+    - columnEditable:
+        ordered: []
+    - _viewerColumnSummaryTypes:
+        object: {}
+    - filters:
+        array: []
+    - displayedDataIndices: null
+    - disableSorting:
+        ordered: []
+    - columnMappers:
+        ordered:
+          - Custom Column 1: More info
+    - showClearSelection: false
+    - doubleClickToEdit: true
+    - overflowType: pagination
+    - _reverseSortedDisplayedDataIndices: null
+    - showTableBorder: true
+    - selectedCell:
+        object:
+          index: null
+          data: null
+          columnName: null
+    - columns: []
+    - defaultSelectedRow: first
+    - freezeActionButtonColumns: false
+    - sort: null
+    - _columns:
+        - uuid
+        - rule_group
+        - position
+        - description
+        - property
+        - operator
+        - value
+        - include
+        - value_set_version
+        - terminology_version
+        - terminology
+        - version
+    - sortByRawValue:
+        ordered: []
+    - calculatedColumns: []
+    - selectedRow:
+        object:
+          index: null
+          data: null
+    - showPaginationOnTop: false
+    - _reverseDisplayedDataIndices: null
+    - nextAfterCursor: ''
+    - useCompactMode: false
+style:
+  ordered: []
+position2:
+  position2:
+    row: 2.7999999999999994
+    height: 16.4
+    width: 12
+createdAt: 2022-11-28T20:25:27.924Z
