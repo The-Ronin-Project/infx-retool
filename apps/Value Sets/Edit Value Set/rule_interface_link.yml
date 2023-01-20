@@ -1,0 +1,279 @@
+id: rule_interface_link
+type: widget
+subtype: SelectWidget2
+template:
+  ordered:
+    - imageByIndex:
+        array: []
+    - _disabledByIndex:
+        - false
+        - false
+        - false
+        - false
+        - false
+        - false
+        - false
+    - showSelectionIndicator: true
+    - _values:
+        - Manual
+        - CPT
+        - ICD-10 CM
+        - LOINC
+        - RxNorm
+        - ICD-10 PCS
+        - FHIR
+    - iconByIndex:
+        array: []
+    - values: '{{ item }}'
+    - readOnly: false
+    - iconAfter: ''
+    - _iconByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+    - allowDeselect: true
+    - inputValue: ''
+    - hidden: false
+    - customValidation: ''
+    - data: '[''Manual'', ''CPT'',''ICD-10 CM'', ''LOINC'']'
+    - searchMode: fuzzy
+    - hideValidationMessage: false
+    - fallbackTextByIndex:
+        array: []
+    - textBefore: ''
+    - _fallbackTextByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+    - selectedItem: null
+    - validationMessage: ''
+    - automaticItemColors: false
+    - itemAdornmentShape: circle
+    - textAfter: ''
+    - showInEditor: false
+    - showClear: false
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: '''Manual'''
+    - hiddenByIndex:
+        array: []
+    - allowSearch: true
+    - labelCaption: ''
+    - labelWidth: '33'
+    - deprecatedLabels:
+        array: []
+    - _hiddenByIndex:
+        - false
+        - false
+        - false
+        - false
+        - false
+        - false
+        - false
+    - placeholder: ''
+    - _captionByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+    - itemAdornmentSize: auto
+    - label: Rule Type
+    - _hasMigratedNestedItems: true
+    - captionByIndex:
+        array: []
+    - _validate: false
+    - itemMode: static
+    - labelWidthUnit: '%'
+    - allowCustomValue: false
+    - invalid: false
+    - selectedIndex: null
+    - _tooltipByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+    - _colorByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+    - tooltipByIndex:
+        array: []
+    - iconBefore: ''
+    - colorByIndex:
+        array: []
+    - selectedLabel: ''
+    - events:
+        - ordered:
+            - event: change
+            - type: util
+            - method: openApp
+            - pluginId: ''
+            - params:
+                ordered:
+                  - options:
+                      ordered:
+                        - newTab: true
+                        - queryParams:
+                            - ordered:
+                                - key: vs_version_uuid
+                                - value: '{{urlparams.uuid}}'
+                  - uuid: 7bd3eb40-82ff-11ec-8d5b-372c3492a848
+            - waitType: debounce
+            - waitMs: '0'
+            - enabled: '{{rule_interface_link.value==''LOINC''}}'
+        - ordered:
+            - event: change
+            - type: util
+            - method: openApp
+            - pluginId: ''
+            - params:
+                ordered:
+                  - options:
+                      ordered:
+                        - newTab: true
+                        - queryParams:
+                            - ordered:
+                                - key: vs_version_uuid
+                                - value: '{{urlparams.uuid}}'
+                  - uuid: c887fbc0-839a-11ec-a584-93809bc5e41b
+            - waitType: debounce
+            - waitMs: '0'
+            - enabled: '{{rule_interface_link.value== ''CPT''}}'
+        - ordered:
+            - method: openApp
+            - enabled: '{{rule_interface_link.value== ''ICD-10 CM''}}'
+            - params:
+                ordered:
+                  - uuid: 49aa2020-ab8c-11ec-840f-e3e83a5795f2
+                  - options:
+                      ordered:
+                        - newTab: true
+                        - queryParams:
+                            - ordered:
+                                - key: '''value_set_version'''
+                                - value: '{{urlparams.uuid}}'
+            - targetId: null
+            - pluginId: ''
+            - waitType: debounce
+            - event: change
+            - type: util
+            - waitMs: '0'
+        - ordered:
+            - method: openApp
+            - enabled: '{{rule_interface_link.value== ''RxNorm''}}'
+            - params:
+                ordered:
+                  - uuid: 5593da60-b510-11ec-ac15-97fd20062a3c
+                  - options:
+                      ordered:
+                        - queryParams:
+                            - ordered:
+                                - key: value_set_version
+                                - value: '{{urlparams.uuid}}'
+                        - newTab: true
+            - targetId: null
+            - pluginId: ''
+            - waitType: debounce
+            - event: change
+            - type: util
+            - waitMs: '0'
+        - ordered:
+            - method: openApp
+            - enabled: '{{rule_interface_link.value== ''ICD-10 PCS''}}'
+            - params:
+                ordered:
+                  - uuid: abad41e0-9e7a-11ec-abe4-eface3d2ac5d
+                  - options:
+                      ordered:
+                        - queryParams:
+                            - ordered:
+                                - key: '''value_set_version'''
+                                - value: '{{urlparams.uuid}}'
+            - targetId: null
+            - pluginId: ''
+            - waitType: debounce
+            - event: change
+            - type: util
+            - waitMs: '0'
+        - ordered:
+            - method: openApp
+            - enabled: '{{rule_interface_link.value== ''FHIR''}}'
+            - params:
+                ordered:
+                  - uuid: 0778f280-28d7-11ed-b5ea-173d17b41745
+                  - options:
+                      ordered:
+                        - queryParams:
+                            - ordered:
+                                - key: '''value_set_version'''
+                                - value: '{{urlparams.uuid}}'
+            - targetId: null
+            - pluginId: ''
+            - waitType: debounce
+            - event: change
+            - type: util
+            - waitMs: '0'
+    - _ids:
+        - ce564
+        - c0788
+        - dce87
+        - 8d0cf
+        - 7add0
+        - '1e843'
+        - 1bed9
+    - emptyMessage: ''
+    - overlayMaxHeight: null
+    - loading: false
+    - disabled: false
+    - labelPosition: left
+    - _labels:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - FHIR
+    - labelWrap: false
+    - disabledValues:
+        array: []
+    - disabledByIndex:
+        array: []
+    - maintainSpaceWhenHidden: false
+    - _imageByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+    - required: false
+    - labels: '{{ _.startCase(item) }}'
+style:
+  ordered: []
+position2:
+  position2:
+    container: modal1
+    height: 1
+    width: 12
+createdAt: 2022-02-02T21:46:55.556Z
