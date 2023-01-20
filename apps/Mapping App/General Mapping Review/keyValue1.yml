@@ -1,0 +1,63 @@
+id: keyValue1
+type: widget
+subtype: KeyValueMapWidget
+template:
+  ordered:
+    - rowHeaderNames:
+        ordered: []
+    - rowFormats:
+        ordered: []
+    - valueTitle: Value
+    - data: '{{detailed_source.data}}'
+    - prevRowMappers:
+        ordered: []
+    - rowMappersRenderAsHTML:
+        ordered: []
+    - rowVisibility:
+        ordered:
+          - a: true
+          - b: true
+          - display: true
+          - c: true
+          - code: true
+          - mapping_group: true
+          - system: true
+          - reason_for_no_map: true
+          - assigned_mapper: true
+          - comments: true
+          - map_status: true
+          - assigned_reviewer: true
+          - additional_context: true
+          - uuid: true
+          - concept_map_version_uuid: true
+          - no_map: true
+    - prevRowFormats:
+        ordered: []
+    - rowMappers:
+        ordered: []
+    - rows:
+        - a
+        - b
+        - c
+        - uuid
+        - code
+        - display
+        - system
+        - comments
+        - additional_context
+        - map_status
+        - concept_map_version_uuid
+        - assigned_mapper
+        - assigned_reviewer
+        - no_map
+        - reason_for_no_map
+        - mapping_group
+    - keyTitle: Key
+style:
+  ordered: []
+position2:
+  position2:
+    container: modal1
+    height: 8
+    width: 12
+createdAt: 2022-11-08T23:21:12.564Z
