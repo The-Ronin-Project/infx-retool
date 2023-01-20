@@ -1,0 +1,18 @@
+id: conceptMapHeader1
+type: widget
+subtype: GlobalWidget
+template:
+  ordered:
+    - showFetchingIndicator: boolean
+    - heightType: auto
+    - name: Concept Map Header
+    - pageUuid: 429445c0-352c-11ed-a9cd-dfaacdcaa7fa
+    - childNamespace: conceptMapHeader1
+style:
+  ordered: []
+position2:
+  position2:
+    subcontainer: header
+    height: 2.4
+    width: 12
+createdAt: 2022-09-15T19:34:23.410Z
