@@ -1,0 +1,253 @@
+id: table1
+type: widget
+subtype: TableWidget
+template:
+  ordered:
+    - showCustomButton: false
+    - sortMappedValue:
+        ordered: []
+    - _filteredSortedRenderedDataWithTypes: null
+    - heightType: fixed
+    - normalizedData: null
+    - rowHeight: standard
+    - saveChangesDisabled: ''
+    - columnTypeProperties:
+        ordered: []
+    - columnWidths:
+        - object:
+            id: effective_start
+            value: 113
+        - object:
+            id: effective_end
+            value: 99.203125
+        - object:
+            id: version
+            value: 115.953125
+        - object:
+            id: status
+            value: 89.609375
+        - object:
+            id: description
+            value: 373.125
+    - showSummaryFooter: false
+    - disableRowSelectInteraction: false
+    - columnWidthsMobile: []
+    - hasNextAfterCursor: ''
+    - columnTypeSpecificExtras:
+        ordered: []
+    - onRowAdded: ''
+    - columnHeaderNames:
+        ordered: []
+    - alwaysShowPaginator: false
+    - columnColors:
+        ordered:
+          - effective_end: ''
+          - created_date: ''
+          - value_set_uuid: ''
+          - effective_start: ''
+          - status: ''
+          - comments: ''
+          - version: ''
+          - uuid: ''
+          - description: ''
+    - columnFrozenAlignments:
+        ordered: []
+    - allowMultiRowSelect: false
+    - columnFormats:
+        ordered: []
+    - columnRestrictedEditing:
+        ordered: []
+    - showFilterButton: true
+    - _columnVisibility:
+        ordered:
+          - effective_end: true
+          - created_date: true
+          - value_set_uuid: false
+          - effective_start: true
+          - name: true
+          - sales: true
+          - status: true
+          - comments: true
+          - version: true
+          - id: true
+          - uuid: false
+          - email: true
+          - description: true
+    - _columnSummaryTypes:
+        ordered: []
+    - _columnsWithLegacyBackgroundColor:
+        set: []
+    - showAddRowButton: false
+    - _unfilteredSelectedIndex: ''
+    - nextBeforeCursor: ''
+    - columnVisibility:
+        ordered:
+          - effective_end: true
+          - created_date: true
+          - value_set_uuid: false
+          - effective_start: true
+          - name: true
+          - sales: true
+          - status: true
+          - comments: true
+          - version: true
+          - id: true
+          - uuid: false
+          - email: true
+          - description: true
+    - selectedPageIndex: '0'
+    - applyDynamicSettingsToColumnOrder: false
+    - rowColor:
+        array: []
+    - actionButtonColumnName: Actions
+    - resetAfterSave: true
+    - filterStackType: and
+    - downloadRawData: false
+    - showFetchingIndicator: true
+    - serverPaginated: false
+    - data: '{{ value_set_versions.data }}'
+    - displayedData: null
+    - actionButtons:
+        - ordered:
+            - actionButtonText: View/Edit
+            - actionButtonType: openInternalUrl
+            - actionButtonQuery: ''
+            - actionButtonInternalUrlPath: 9660a5a0-6f4b-11ed-bfef-07284b878bdd
+            - actionButtonInternalUrlQuery: >-
+                "[{\"key\":\"value_set_version_uuid\",\"value\":\"{{table1.selectedRow.data.uuid}}\"}]"
+            - actionButtonUrl: ''
+            - actionButtonNewWindow: false
+            - actionButtonDisabled: ''
+    - actionButtonSelectsRow: true
+    - selectRowByDefault: true
+    - defaultSortByColumn: ''
+    - paginationOffset: 0
+    - columnAlignment:
+        ordered: []
+    - columnSummaries:
+        object: {}
+    - showBoxShadow: true
+    - sortedDesc: false
+    - customButtonName: ''
+    - columnMappersRenderAsHTML:
+        ordered: []
+    - showRefreshButton: true
+    - pageSize: 10
+    - useDynamicColumnSettings: false
+    - actionButtonPosition: right
+    - dynamicRowHeights: false
+    - bulkUpdateAction: ''
+    - afterCursor: ''
+    - onCustomButtonPressQueryName: ''
+    - changeSet:
+        object: {}
+    - sortedColumn: ''
+    - _columnSummaryValues:
+        ordered: []
+    - checkboxRowSelect: true
+    - _compatibilityMode: true
+    - showColumnBorders: true
+    - clearSelectionLabel: Clear selection
+    - _renderedDataWithTypes: null
+    - columnAllowOverflow:
+        ordered: []
+    - beforeCursor: ''
+    - serverPaginationType: limitOffsetBased
+    - onRowSelect: ''
+    - showDownloadButton: true
+    - selectedIndex: null
+    - defaultSortDescending: false
+    - _sortedDisplayedDataIndices: null
+    - dynamicColumnSettings: null
+    - events:
+        - ordered:
+            - event: saveChanges
+            - type: datasource
+            - method: trigger
+            - pluginId: tableBulkUpdateQuery
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - totalRowCount: ''
+    - recordUpdates:
+        array: []
+    - newRow: null
+    - emptyMessage: No rows found
+    - columnEditable:
+        ordered:
+          - effective_start: true
+          - effective_end: true
+          - version: false
+          - status: false
+          - description: true
+          - comments: false
+    - _viewerColumnSummaryTypes:
+        object: {}
+    - filters:
+        array: []
+    - displayedDataIndices: null
+    - disableSorting:
+        ordered: []
+    - columnMappers:
+        ordered: []
+    - showClearSelection: false
+    - doubleClickToEdit: false
+    - overflowType: pagination
+    - _reverseSortedDisplayedDataIndices: null
+    - showTableBorder: true
+    - selectedCell:
+        object:
+          index: null
+          data: null
+          columnName: null
+    - columns:
+        - id
+        - name
+        - email
+        - sales
+        - uuid
+        - effective_start
+        - effective_end
+        - version
+        - value_set_uuid
+        - status
+        - description
+        - created_date
+        - comments
+    - defaultSelectedRow: first
+    - freezeActionButtonColumns: false
+    - sort: null
+    - _columns:
+        - id
+        - name
+        - email
+        - sales
+        - uuid
+        - effective_start
+        - effective_end
+        - version
+        - value_set_uuid
+        - status
+        - description
+        - created_date
+        - comments
+    - sortByRawValue:
+        ordered: []
+    - calculatedColumns: []
+    - selectedRow:
+        object:
+          index: null
+          data: null
+    - showPaginationOnTop: false
+    - _reverseDisplayedDataIndices: null
+    - nextAfterCursor: ''
+    - useCompactMode: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabbedcontainer1
+    height: 13
+    width: 12
+createdAt: 2021-10-01T16:41:43.509Z
