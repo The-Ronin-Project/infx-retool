@@ -1,0 +1,26 @@
+id: text2
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - tooltipText: ''
+    - value: >-
+        ##### Removed since version
+        {{left_version_select.labels[left_version_select.values.indexOf(left_version_select.value)]}}
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    row: 3
+    height: 0.6
+    width: 3
+createdAt: 2022-02-04T22:34:52.714Z
