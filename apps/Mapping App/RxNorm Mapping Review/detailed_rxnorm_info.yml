@@ -1,0 +1,77 @@
+id: detailed_rxnorm_info
+type: widget
+subtype: KeyValueMapWidget
+template:
+  ordered:
+    - rowHeaderNames:
+        ordered: []
+    - rowFormats:
+        ordered: []
+    - valueTitle: Value
+    - data: '{{getInfo.data.rxtermsProperties}}'
+    - prevRowMappers:
+        ordered: []
+    - rowMappersRenderAsHTML:
+        ordered: []
+    - rowVisibility:
+        ordered:
+          - strength: true
+          - a: true
+          - b: true
+          - rxtermsDoseForm: false
+          - c: true
+          - rxnormDoseForm: true
+          - termType: true
+          - message: true
+          - error: true
+          - route: false
+          - data: true
+          - displayName: true
+          - metadata: true
+          - rxcui: true
+          - brandName: true
+          - fullGenericName: false
+          - rxtermsProperties: true
+          - suppress: false
+          - fullName: true
+          - genericRxcui: false
+          - synonym: false
+          - statusCode: true
+    - prevRowFormats:
+        ordered: []
+    - rowMappers:
+        ordered: []
+    - rows:
+        - a
+        - b
+        - c
+        - statusCode
+        - error
+        - message
+        - data
+        - metadata
+        - rxtermsProperties
+        - brandName
+        - synonym
+        - fullName
+        - fullGenericName
+        - displayName
+        - strength
+        - rxnormDoseForm
+        - rxtermsDoseForm
+        - route
+        - termType
+        - rxcui
+        - genericRxcui
+        - suppress
+    - keyTitle: Key
+style:
+  ordered: []
+position2:
+  position2:
+    container: modal1
+    row: 0.6000000000000002
+    col: 1
+    height: 7.000000000000001
+    width: 11
+createdAt: 2022-10-05T21:24:28.191Z

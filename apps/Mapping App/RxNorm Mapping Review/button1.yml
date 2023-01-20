@@ -1,0 +1,35 @@
+id: button1
+type: widget
+subtype: ButtonWidget2
+template:
+  ordered:
+    - horizontalAlign: stretch
+    - clickable: false
+    - iconAfter: ''
+    - submitTargetId: null
+    - hidden: false
+    - text: 'Accept '
+    - showInEditor: false
+    - tooltipText: ''
+    - style:
+        ordered:
+          - background: success
+    - styleVariant: solid
+    - submit: false
+    - iconBefore: ''
+    - events:
+        ordered: []
+    - loading: false
+    - loaderPosition: auto
+    - disabled: false
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: modal1
+    row: 8.599999999999998
+    col: 8
+    height: 1
+    width: 4
+createdAt: 2022-10-05T21:26:07.304Z
