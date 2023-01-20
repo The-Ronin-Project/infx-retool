@@ -1,0 +1,31 @@
+id: progressBar1
+type: widget
+subtype: ProgressBarWidget
+template:
+  ordered:
+    - hideOutput: true
+    - hidden: false
+    - showInEditor: false
+    - tooltipText: ''
+    - labelAlign: right
+    - value: '{{Math.round(count_mapped.data.count / count_total.data.count * 100)}}'
+    - labelCaption: ''
+    - labelWidth: '33'
+    - label: >-
+        {{Math.round(count_mapped.data.count / count_total.data.count * 100)}}%
+        ({{count_mapped.data.count}}) Mapped
+    - labelWidthUnit: '%'
+    - indeterminate: false
+    - labelPosition: left
+    - labelWrap: false
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: moduleContainer
+    row: 0.4
+    col: 7
+    height: 0.4
+    width: 5
+createdAt: 2022-09-16T17:01:22.425Z
