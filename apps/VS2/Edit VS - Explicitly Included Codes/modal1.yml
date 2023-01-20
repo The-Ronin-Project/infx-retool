@@ -1,0 +1,29 @@
+id: modal1
+type: widget
+subtype: ModalWidget
+template:
+  ordered:
+    - opened: false
+    - modalOverflowType: scroll
+    - onModalClose: ''
+    - modalHeightType: fixed
+    - tooltipText: ''
+    - modalHeight: ''
+    - onModalOpen: ''
+    - events: []
+    - modalWidth: ''
+    - closeOnOutsideClick: false
+    - loading: ''
+    - disabled: >-
+        {{ ['active', 'obsolete',
+        'retired'].includes(value_set_version_metadata.data.status[0])}}
+    - buttonText: Add Rule
+style:
+  ordered: []
+position2:
+  position2:
+    row: 5.8
+    col: 9
+    height: 1
+    width: 3
+createdAt: 2021-10-01T16:48:28.030Z
