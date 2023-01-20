@@ -1,0 +1,34 @@
+id: include_switch1
+type: widget
+subtype: SwitchWidget2
+template:
+  ordered:
+    - hidden: false
+    - customValidation: ''
+    - hideValidationMessage: false
+    - validationMessage: ''
+    - showInEditor: false
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: 'True'
+    - labelCaption: ''
+    - label: Include
+    - _validate: false
+    - invalid: false
+    - events:
+        ordered: []
+    - disabled: false
+    - labelPosition: right
+    - labelWrap: false
+    - maintainSpaceWhenHidden: false
+    - required: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: modal1
+    row: 1
+    height: 0.6
+    width: 10
+createdAt: 2022-12-16T21:51:39.321Z

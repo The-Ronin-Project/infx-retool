@@ -1,0 +1,55 @@
+id: editableText1
+type: widget
+subtype: EditableTextWidget2
+template:
+  ordered:
+    - spellCheck: false
+    - readOnly: false
+    - iconAfter: ''
+    - editIcon: bold/interface-edit-write-1
+    - inputValue: ''
+    - autoComplete: false
+    - maxLength: null
+    - hidden: false
+    - customValidation: ''
+    - patternType: ''
+    - hideValidationMessage: false
+    - textBefore: ''
+    - validationMessage: ''
+    - textSize: default
+    - textAfter: ''
+    - showInEditor: false
+    - showClear: false
+    - pattern: ''
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: '{{ include_rules.data[i].description }}'
+    - labelCaption: ''
+    - labelWidth: '33'
+    - autoFill: ''
+    - placeholder: Enter value
+    - label: ''
+    - _validate: false
+    - labelWidthUnit: '%'
+    - invalid: false
+    - iconBefore: ''
+    - minLength: null
+    - inputTooltip: '`Enter` to save, `Esc` to cancel'
+    - events:
+        ordered: []
+    - autoCapitalize: none
+    - loading: false
+    - labelPosition: left
+    - labelWrap: false
+    - maintainSpaceWhenHidden: false
+    - required: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: listView1
+    row: -5.551115123125783e-17
+    height: 0.6
+    width: 3
+createdAt: 2022-12-06T21:25:55.568Z

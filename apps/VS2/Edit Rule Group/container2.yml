@@ -1,0 +1,70 @@
+id: container2
+type: widget
+subtype: ContainerWidget2
+template:
+  ordered:
+    - _disabledByIndex:
+        - ''
+    - heightType: auto
+    - currentViewKey: null
+    - iconByIndex:
+        array: []
+    - clickable: false
+    - _iconByIndex:
+        - ''
+    - hidden: false
+    - showHeader: false
+    - hoistFetching: true
+    - views:
+        array: []
+    - showInEditor: false
+    - tooltipText: ''
+    - style:
+        ordered:
+          - background: surfacePrimary
+    - hiddenByIndex:
+        array: []
+    - _hiddenByIndex:
+        - ''
+    - currentViewIndex: null
+    - _hasMigratedNestedItems: true
+    - transition: none
+    - itemMode: static
+    - _tooltipByIndex:
+        - ''
+    - tooltipByIndex:
+        array: []
+    - showFooter: false
+    - _viewKeys:
+        - View 1
+    - events:
+        ordered: []
+    - _ids:
+        - '726e3'
+    - viewKeys:
+        array: []
+    - iconPositionByIndex:
+        array: []
+    - _iconPositionByIndex:
+        - ''
+    - loading: false
+    - overflowType: scroll
+    - disabled: false
+    - _labels:
+        - ''
+    - disabledByIndex:
+        array: []
+    - maintainSpaceWhenHidden: false
+    - showBody: true
+    - labels:
+        array: []
+style:
+  ordered: []
+position2:
+  position2:
+    container: container1
+    subcontainer: 2b15a
+    row: 2.4000000000000004
+    height: 3.8
+    width: 12
+createdAt: 2022-12-06T21:24:00.571Z

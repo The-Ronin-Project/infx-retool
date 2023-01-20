@@ -1,0 +1,199 @@
+id: table1
+type: widget
+subtype: TableWidget
+template:
+  ordered:
+    - showCustomButton: false
+    - sortMappedValue:
+        ordered: []
+    - _filteredSortedRenderedDataWithTypes: null
+    - heightType: fixed
+    - normalizedData: null
+    - rowHeight: standard
+    - saveChangesDisabled: ''
+    - columnTypeProperties:
+        ordered:
+          - terminology:
+              ordered:
+                - optionData: '{{ currentColumn }}'
+                - colorMode: auto
+                - allowCustomValue: true
+                - optionLabels:
+                    array: []
+                - optionColors:
+                    array: []
+                - optionValues:
+                    array: []
+          - code:
+              ordered: []
+    - columnWidths: []
+    - showSummaryFooter: false
+    - disableRowSelectInteraction: false
+    - columnWidthsMobile: []
+    - hasNextAfterCursor: ''
+    - columnTypeSpecificExtras:
+        ordered: []
+    - onRowAdded: ''
+    - columnHeaderNames:
+        ordered: []
+    - alwaysShowPaginator: false
+    - columnColors:
+        ordered:
+          - code: ''
+          - display: ''
+          - terminology: ''
+    - columnFrozenAlignments:
+        ordered: []
+    - allowMultiRowSelect: false
+    - columnFormats:
+        ordered:
+          - terminology: SingleTagDataCell
+          - code: TextDataCell
+    - columnRestrictedEditing:
+        ordered: []
+    - showFilterButton: true
+    - _columnVisibility:
+        ordered: []
+    - _columnSummaryTypes:
+        ordered:
+          - terminology: ''
+          - code: ''
+    - _columnsWithLegacyBackgroundColor:
+        set: []
+    - showAddRowButton: false
+    - _unfilteredSelectedIndex: null
+    - nextBeforeCursor: ''
+    - columnVisibility:
+        ordered: []
+    - selectedPageIndex: '0'
+    - applyDynamicSettingsToColumnOrder: true
+    - rowColor:
+        array: []
+    - actionButtonColumnName: Actions
+    - resetAfterSave: true
+    - filterStackType: and
+    - downloadRawData: false
+    - showFetchingIndicator: true
+    - serverPaginated: false
+    - data: |-
+        [
+          {
+            "code": 1234,
+            "display": "Sample code 1",
+            "terminology": "SNOMED CT 09-01-2022"
+          },
+          {
+            "code": 1234,
+            "display": "Sample code 1",
+            "terminology": "SNOMED CT 09-01-2022"
+          },
+          {
+            "code": 1234,
+            "display": "Sample code 1",
+            "terminology": "SNOMED CT 09-01-2022"
+          }
+        ]
+    - displayedData: null
+    - actionButtons: []
+    - actionButtonSelectsRow: true
+    - selectRowByDefault: true
+    - defaultSortByColumn: ''
+    - paginationOffset: 0
+    - columnAlignment:
+        ordered:
+          - terminology: left
+          - code: left
+    - columnSummaries:
+        object: {}
+    - showBoxShadow: false
+    - sortedDesc: false
+    - customButtonName: ''
+    - columnMappersRenderAsHTML:
+        ordered: []
+    - showRefreshButton: true
+    - pageSize: '20'
+    - useDynamicColumnSettings: false
+    - style:
+        ordered:
+          - border: rgb(209, 209, 209)
+          - headerBackground: rgba(247, 247, 247, 0)
+    - actionButtonPosition: left
+    - dynamicRowHeights: false
+    - bulkUpdateAction: ''
+    - afterCursor: ''
+    - onCustomButtonPressQueryName: ''
+    - changeSet:
+        object: {}
+    - sortedColumn: ''
+    - _columnSummaryValues:
+        ordered:
+          - terminology: ''
+          - code: ''
+    - checkboxRowSelect: true
+    - _compatibilityMode: false
+    - showColumnBorders: false
+    - clearSelectionLabel: Clear selection
+    - _renderedDataWithTypes: null
+    - columnAllowOverflow:
+        ordered: []
+    - beforeCursor: ''
+    - serverPaginationType: limitOffsetBased
+    - onRowSelect: ''
+    - showDownloadButton: true
+    - selectedIndex: null
+    - defaultSortDescending: false
+    - _sortedDisplayedDataIndices: null
+    - dynamicColumnSettings: null
+    - totalRowCount: ''
+    - recordUpdates:
+        array: []
+    - newRow: null
+    - emptyMessage: No rows found
+    - columnEditable:
+        ordered: []
+    - _viewerColumnSummaryTypes:
+        object: {}
+    - filters:
+        array: []
+    - displayedDataIndices: null
+    - disableSorting:
+        ordered: []
+    - columnMappers:
+        ordered:
+          - terminology: ''
+    - showClearSelection: false
+    - doubleClickToEdit: true
+    - overflowType: pagination
+    - _reverseSortedDisplayedDataIndices: null
+    - showTableBorder: false
+    - selectedCell:
+        object:
+          index: null
+          data: null
+          columnName: null
+    - columns: []
+    - defaultSelectedRow: first
+    - freezeActionButtonColumns: false
+    - sort: null
+    - _columns: []
+    - sortByRawValue:
+        ordered: []
+    - calculatedColumns: []
+    - selectedRow:
+        object:
+          index: null
+          data: null
+    - showPaginationOnTop: false
+    - _reverseDisplayedDataIndices: null
+    - nextAfterCursor: ''
+    - useCompactMode: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabbedContainer1
+    subcontainer: dad28
+    row: 2.1999999999999997
+    height: 8
+    width: 12
+createdAt: 2022-12-06T21:32:22.837Z

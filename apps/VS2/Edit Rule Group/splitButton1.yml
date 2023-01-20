@@ -1,0 +1,253 @@
+id: splitButton1
+type: widget
+subtype: SplitButtonWidget
+template:
+  ordered:
+    - _disabledByIndex:
+        - ''
+        - false
+        - ''
+        - false
+        - ''
+        - false
+        - false
+    - showSelectionIndicator: true
+    - horizontalAlign: stretch
+    - _values:
+        - ''
+        - Action 5
+        - ''
+        - Action 6
+        - ''
+        - Action 4
+        - Action 7
+    - iconByIndex:
+        array: []
+    - clickable: false
+    - _iconByIndex:
+        - bold/interface-add-1
+        - bold/interface-add-1
+        - bold/interface-add-1
+        - bold/interface-add-1
+        - bold/interface-add-1
+        - bold/interface-add-1
+        - bold/interface-add-1
+    - hidden: false
+    - data:
+        array: []
+    - _fallbackTextByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+    - selectedItem: null
+    - showInEditor: false
+    - tooltipText: ''
+    - hiddenByIndex:
+        array: []
+    - _hiddenByIndex:
+        - ''
+        - false
+        - ''
+        - false
+        - ''
+        - false
+        - false
+    - _captionByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+    - styleVariant: solid
+    - _hasMigratedNestedItems: true
+    - captionByIndex:
+        array: []
+    - itemMode: static
+    - selectedIndex: 0
+    - _tooltipByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+    - _colorByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+    - tooltipByIndex:
+        array: []
+    - selectedLabel: ''
+    - events:
+        - ordered:
+            - event: click
+            - type: util
+            - method: openApp
+            - pluginId: ''
+            - targetId: 6d9ea
+            - params:
+                ordered:
+                  - uuid: 0778f280-28d7-11ed-b5ea-173d17b41745
+                  - options:
+                      ordered:
+                        - queryParams:
+                            - ordered:
+                                - key: rule_group_uuid
+                                - value: ''
+                            - ordered:
+                                - key: ''
+                                - value: ''
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: click
+            - type: util
+            - method: openApp
+            - pluginId: ''
+            - targetId: cddff
+            - params:
+                ordered:
+                  - options:
+                      ordered:
+                        - queryParams:
+                            - ordered:
+                                - key: rule_group_uuid
+                                - value: ''
+                  - uuid: abad41e0-9e7a-11ec-abe4-eface3d2ac5d
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: click
+            - type: util
+            - method: openApp
+            - pluginId: ''
+            - targetId: 0d2e6
+            - params:
+                ordered:
+                  - uuid: c887fbc0-839a-11ec-a584-93809bc5e41b
+                  - options:
+                      ordered:
+                        - queryParams:
+                            - ordered:
+                                - key: rule_group_uuid
+                                - value: ''
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: click
+            - type: util
+            - method: openApp
+            - pluginId: ''
+            - targetId: 6c84a
+            - params:
+                ordered:
+                  - uuid: 5593da60-b510-11ec-ac15-97fd20062a3c
+                  - options:
+                      ordered:
+                        - queryParams:
+                            - ordered:
+                                - key: rule_group_uuid
+                                - value: ''
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: click
+            - type: util
+            - method: openApp
+            - pluginId: ''
+            - targetId: '48626'
+            - params:
+                ordered:
+                  - options:
+                      ordered:
+                        - queryParams:
+                            - ordered:
+                                - key: rule_group_uuid
+                                - value: ''
+                            - ordered:
+                                - key: ''
+                                - value: ''
+                  - uuid: 49aa2020-ab8c-11ec-840f-e3e83a5795f2
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: click
+            - type: util
+            - method: openApp
+            - pluginId: ''
+            - targetId: 50d7b
+            - params:
+                ordered:
+                  - uuid: 7bd3eb40-82ff-11ec-8d5b-372c3492a848
+                  - options:
+                      ordered:
+                        - queryParams:
+                            - ordered:
+                                - key: rule_group_uuid
+                                - value: ''
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: click
+            - type: widget
+            - method: open
+            - pluginId: modal1
+            - targetId: '90263'
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - _ids:
+        - '90263'
+        - 50d7b
+        - '48626'
+        - 6c84a
+        - 0d2e6
+        - cddff
+        - 6d9ea
+    - overlayMaxHeight: 375
+    - loading: false
+    - disabled: false
+    - _labels:
+        - Add Rule Manually
+        - Add Loinc Rule
+        - 'Add ICD-10-CM Rule '
+        - Add RxNorm Rule
+        - Add CPT Rule
+        - Add ICD-10-PCS Rule
+        - Add FHIR Code Syetem
+    - disabledByIndex:
+        array: []
+    - maintainSpaceWhenHidden: false
+    - _imageByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+    - labels:
+        array: []
+style:
+  ordered: []
+position2:
+  position2:
+    container: container1
+    subcontainer: 2b15a
+    row: 0.6000000000000001
+    col: 8
+    height: 1
+    width: 4
+createdAt: 2022-12-02T00:57:47.678Z

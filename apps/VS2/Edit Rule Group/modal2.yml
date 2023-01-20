@@ -1,0 +1,29 @@
+id: modal2
+type: widget
+subtype: ModalWidget
+template:
+  ordered:
+    - opened: false
+    - modalOverflowType: scroll
+    - hidden: 'true'
+    - onModalClose: ''
+    - modalHeightType: fixed
+    - tooltipText: ''
+    - modalHeight: 500px
+    - onModalOpen: ''
+    - modalWidth: 80%
+    - closeOnOutsideClick: false
+    - loading: ''
+    - disabled: ''
+    - buttonText: Open Modal
+style:
+  ordered: []
+position2:
+  position2:
+    container: container1
+    subcontainer: 2b15a
+    row: 1.4
+    col: 5
+    height: 1
+    width: 3
+createdAt: 2022-12-16T22:52:07.779Z
