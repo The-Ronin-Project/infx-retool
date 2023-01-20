@@ -1,0 +1,213 @@
+id: history_table
+type: widget
+subtype: TableWidget
+template:
+  ordered:
+    - showCustomButton: false
+    - sortMappedValue:
+        ordered: []
+    - _filteredSortedRenderedDataWithTypes: null
+    - heightType: fixed
+    - normalizedData: null
+    - rowHeight: standard
+    - saveChangesDisabled: ''
+    - columnTypeProperties:
+        ordered:
+          - target_code:
+              ordered: []
+          - source_code:
+              ordered: []
+    - columnWidths:
+        - object:
+            id: target_display
+            value: 617.3359375
+        - object:
+            id: timestamp
+            value: 162
+        - object:
+            id: source_display
+            value: 488
+        - object:
+            id: target_code
+            value: 193.328125
+        - object:
+            id: source_code
+            value: 193
+    - showSummaryFooter: false
+    - disableRowSelectInteraction: false
+    - columnWidthsMobile: []
+    - hasNextAfterCursor: ''
+    - columnTypeSpecificExtras:
+        ordered: []
+    - onRowAdded: ''
+    - columnHeaderNames:
+        ordered:
+          - source_code: Source Code
+          - source_display: Source Display
+          - target_code: Target Code
+          - target_display: Target Display
+          - author: Mapper
+    - alwaysShowPaginator: false
+    - columnColors:
+        ordered:
+          - sc_uuid: ''
+          - author: ''
+          - mapping_uuid: ''
+          - source_code: ''
+          - target_display: ''
+          - timestamp: ''
+          - uuid: ''
+          - target_code: >-
+              {{mapping_uuids.data.mapping_uuid.includes(currentRow.mapping_uuid)
+              ? 'white': '#FF7F7F'}}
+          - source_display: ''
+    - columnFrozenAlignments:
+        ordered: []
+    - allowMultiRowSelect: false
+    - columnFormats:
+        ordered:
+          - target_code: TextDataCell
+          - source_code: TextDataCell
+    - columnRestrictedEditing:
+        ordered: []
+    - showFilterButton: true
+    - _columnVisibility:
+        ordered:
+          - source_code: true
+          - mapping_uuid: false
+          - uuid: false
+          - sc_uuid: false
+    - _columnSummaryTypes:
+        ordered:
+          - target_code: ''
+          - source_code: ''
+    - _columnsWithLegacyBackgroundColor:
+        set: []
+    - showAddRowButton: false
+    - _unfilteredSelectedIndex: null
+    - nextBeforeCursor: ''
+    - columnVisibility:
+        ordered: []
+    - selectedPageIndex: '0'
+    - applyDynamicSettingsToColumnOrder: true
+    - rowColor:
+        array: []
+    - actionButtonColumnName: Actions
+    - resetAfterSave: true
+    - filterStackType: and
+    - downloadRawData: false
+    - showFetchingIndicator: true
+    - serverPaginated: false
+    - data: '{{ load_recent_history.data }}'
+    - displayedData: null
+    - actionButtons:
+        - ordered:
+            - actionButtonText: Delete Mapping
+            - actionButtonType: runQuery
+            - actionButtonQuery: change_map_status_pre_delete
+            - actionButtonInternalUrlPath: ''
+            - actionButtonInternalUrlQuery: ''
+            - actionButtonUrl: ''
+            - actionButtonNewWindow: false
+            - actionButtonDisabled: >-
+                {{cm_version_metadata.data.status == 'active' ||
+                cm_version_metadata.data.status == 'retired' }}
+    - actionButtonSelectsRow: true
+    - selectRowByDefault: true
+    - defaultSortByColumn: ''
+    - paginationOffset: 0
+    - columnAlignment:
+        ordered:
+          - target_code: left
+          - source_code: left
+    - columnSummaries:
+        object: {}
+    - showBoxShadow: false
+    - sortedDesc: false
+    - customButtonName: ''
+    - columnMappersRenderAsHTML:
+        ordered: []
+    - showRefreshButton: true
+    - pageSize: '20'
+    - useDynamicColumnSettings: false
+    - actionButtonPosition: right
+    - dynamicRowHeights: false
+    - bulkUpdateAction: ''
+    - afterCursor: ''
+    - onCustomButtonPressQueryName: ''
+    - changeSet:
+        object: {}
+    - sortedColumn: ''
+    - _columnSummaryValues:
+        ordered:
+          - target_code: ''
+          - source_code: ''
+    - checkboxRowSelect: true
+    - _compatibilityMode: false
+    - showColumnBorders: false
+    - clearSelectionLabel: Clear selection
+    - _renderedDataWithTypes: null
+    - columnAllowOverflow:
+        ordered: []
+    - beforeCursor: ''
+    - serverPaginationType: limitOffsetBased
+    - onRowSelect: ''
+    - showDownloadButton: true
+    - selectedIndex: null
+    - defaultSortDescending: false
+    - _sortedDisplayedDataIndices: null
+    - dynamicColumnSettings: null
+    - totalRowCount: ''
+    - recordUpdates:
+        array: []
+    - newRow: null
+    - emptyMessage: No rows found
+    - columnEditable:
+        ordered: []
+    - _viewerColumnSummaryTypes:
+        object: {}
+    - filters:
+        array: []
+    - displayedDataIndices: null
+    - disableSorting:
+        ordered:
+          - target_display: true
+          - author: true
+          - target_code: true
+          - source_display: true
+    - columnMappers:
+        ordered: []
+    - showClearSelection: false
+    - doubleClickToEdit: true
+    - overflowType: scroll
+    - _reverseSortedDisplayedDataIndices: null
+    - showTableBorder: true
+    - selectedCell:
+        object:
+          index: null
+          data: null
+          columnName: null
+    - columns: []
+    - defaultSelectedRow: first
+    - freezeActionButtonColumns: false
+    - sort: null
+    - _columns: []
+    - sortByRawValue:
+        ordered: []
+    - calculatedColumns: []
+    - selectedRow:
+        object:
+          index: null
+          data: null
+    - showPaginationOnTop: true
+    - _reverseDisplayedDataIndices: null
+    - nextAfterCursor: ''
+    - useCompactMode: false
+style:
+  ordered: []
+position2:
+  position2:
+    row: 2.1999999999999997
+    height: 24.8
+    width: 12
+createdAt: 2022-09-14T22:03:59.626Z
