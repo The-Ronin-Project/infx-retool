@@ -1,0 +1,21 @@
+id: additional_filters
+type: widget
+subtype: ContainerWidget
+template:
+  ordered:
+    - title: Additional Filters
+    - disabled: ''
+    - spinWhenChildrenAreFetching: true
+    - showBorder: true
+    - showDropShadow: true
+    - heightType: fixed
+    - overflowType: hidden
+style:
+  ordered: []
+position2:
+  position2:
+    row: 15.600000000000003
+    col: 7
+    height: 5.200000000000001
+    width: 5
+createdAt: 2022-02-08T20:40:15.464Z
