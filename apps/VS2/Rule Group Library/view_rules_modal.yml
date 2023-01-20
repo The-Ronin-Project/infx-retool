@@ -1,0 +1,28 @@
+id: view_rules_modal
+type: widget
+subtype: ModalWidget
+template:
+  ordered:
+    - opened: false
+    - modalOverflowType: scroll
+    - hidden: 'true'
+    - onModalClose: ''
+    - modalHeightType: fixed
+    - showInEditor: false
+    - tooltipText: ''
+    - modalHeight: 700px
+    - onModalOpen: ''
+    - modalWidth: 90%
+    - closeOnOutsideClick: false
+    - loading: ''
+    - disabled: ''
+    - maintainSpaceWhenHidden: true
+    - buttonText: view
+style:
+  ordered: []
+position2:
+  position2:
+    col: 11
+    height: 1
+    width: 1
+createdAt: 2022-11-30T23:50:01.848Z
