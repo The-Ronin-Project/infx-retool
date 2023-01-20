@@ -1,0 +1,191 @@
+id: concept_map_navigation
+type: widget
+subtype: NavigationWidget
+template:
+  ordered:
+    - horizontalAlign: left
+    - valueToCopy: ''
+    - menuItems:
+        - ordered:
+            - title: Make Assignments
+            - clickable:
+                ordered:
+                  - valueToCopy: ''
+                  - internalUrlHashParams: ''
+                  - exportFileType: csv
+                  - buttonType: internal-url
+                  - exportTemplate: null
+                  - url: ''
+                  - newWindow: false
+                  - exportQuery: ''
+                  - action: ''
+                  - internalUrlQuery: >-
+                      "[{\"key\":\"concept_map_version_uuid\",\"value\":\"{{urlparams.concept_map_version_uuid}}\"}]"
+                  - internalUrlPath: 6634caa0-8161-11ed-a103-6b5287048014
+                  - exportFileName: ''
+                  - disabled: ''
+            - hidden: ''
+            - menuItems: []
+        - ordered:
+            - title: Do Mapping
+            - hidden: ''
+            - clickable:
+                ordered:
+                  - valueToCopy: ''
+                  - internalUrlHashParams: ''
+                  - exportFileType: csv
+                  - buttonType: action
+                  - exportTemplate: null
+                  - url: ''
+                  - newWindow: false
+                  - exportQuery: ''
+                  - action: navigate_to_mapper
+                  - internalUrlQuery: >-
+                      "[{\"key\":\"concept_map_version_uuid\",\"value\":\"{{urlparams.concept_map_version_uuid}}\"}]"
+                  - internalUrlPath: 184659c0-4e4f-11ed-8a53-4f14117ffdcc
+                  - exportFileName: ''
+                  - disabled: ''
+            - menuItems: []
+        - ordered:
+            - title: View Recently Mapped
+            - clickable:
+                ordered:
+                  - valueToCopy: ''
+                  - internalUrlHashParams: ''
+                  - exportFileType: csv
+                  - buttonType: internal-url
+                  - exportTemplate: null
+                  - url: ''
+                  - newWindow: false
+                  - exportQuery: ''
+                  - action: ''
+                  - internalUrlQuery: >-
+                      "[{\"key\":\"concept_map_version_uuid\",\"value\":\"{{urlparams.concept_map_version_uuid}}\"}]"
+                  - internalUrlPath: f6114ba0-3475-11ed-85a1-178db876f5ba
+                  - exportFileName: ''
+                  - disabled: ''
+            - hidden: ''
+            - menuItems: []
+        - ordered:
+            - title: Review Mappings
+            - clickable:
+                ordered:
+                  - valueToCopy: ''
+                  - internalUrlHashParams: ''
+                  - exportFileType: csv
+                  - buttonType: action
+                  - exportTemplate: null
+                  - url: ''
+                  - newWindow: false
+                  - exportQuery: ''
+                  - action: navigate_to_review
+                  - internalUrlQuery: >-
+                      "[{\"key\":\"concept_map_version_uuid\",\"value\":\"{{urlparams.concept_map_version_uuid}}\"}]"
+                  - internalUrlPath: bea37d00-44dd-11ed-908b-eb3e8eafc0fa
+                  - exportFileName: ''
+                  - disabled: ''
+            - hidden: ''
+            - menuItems: []
+        - ordered:
+            - title: View Concept Map
+            - clickable:
+                ordered:
+                  - valueToCopy: ''
+                  - internalUrlHashParams: ''
+                  - exportFileType: csv
+                  - buttonType: internal-url
+                  - exportTemplate: null
+                  - url: ''
+                  - newWindow: false
+                  - exportQuery: ''
+                  - action: ''
+                  - internalUrlQuery: >-
+                      "[{\"key\":\"concept_map_version_uuid\",\"value\":\"{{urlparams.concept_map_version_uuid}}\"}]"
+                  - internalUrlPath: e2f3f220-3466-11ed-8852-83f9a016043a
+                  - exportFileName: ''
+                  - disabled: ''
+            - hidden: ''
+            - menuItems: []
+        - ordered:
+            - title: History
+            - clickable:
+                ordered:
+                  - valueToCopy: ''
+                  - internalUrlHashParams: ''
+                  - exportFileType: csv
+                  - buttonType: internal-url
+                  - exportTemplate: null
+                  - url: ''
+                  - newWindow: false
+                  - exportQuery: ''
+                  - action: ''
+                  - internalUrlQuery: >-
+                      "[{\"key\":\"concept_map_version_uuid\",\"value\":\"{{urlparams.concept_map_version_uuid}}\"}]"
+                  - internalUrlPath: f6114ba0-3475-11ed-85a1-178db876f5ba
+                  - exportFileName: ''
+                  - disabled: ''
+            - hidden: ''
+            - menuItems: []
+        - ordered:
+            - title: Settings
+            - clickable:
+                ordered:
+                  - valueToCopy: ''
+                  - internalUrlHashParams: ''
+                  - exportFileType: csv
+                  - buttonType: internal-url
+                  - exportTemplate: null
+                  - url: ''
+                  - newWindow: false
+                  - exportQuery: ''
+                  - action: ''
+                  - internalUrlQuery: >-
+                      "[{\"key\":\"concept_map_version_uuid\",\"value\":\"{{urlparams.concept_map_version_uuid}}\"}]"
+                  - internalUrlPath: 5c3c15e0-5adc-11ed-9b63-03f79b837ac6
+                  - exportFileName: ''
+                  - disabled: ''
+            - hidden: ''
+            - menuItems: []
+        - ordered:
+            - title: Publish
+            - clickable:
+                ordered:
+                  - valueToCopy: ''
+                  - internalUrlHashParams: ''
+                  - exportFileType: csv
+                  - buttonType: action
+                  - exportTemplate: null
+                  - url: ''
+                  - newWindow: false
+                  - exportQuery: ''
+                  - action: ''
+                  - internalUrlQuery: ''
+                  - internalUrlPath: ''
+                  - exportFileName: ''
+                  - disabled: ''
+            - hidden: ''
+            - menuItems: []
+    - srcFromUrl: true
+    - internalUrlHashParams: ''
+    - exportFileType: csv
+    - logoImageFile: ''
+    - buttonType: action
+    - exportTemplate: null
+    - url: ''
+    - newWindow: false
+    - logoImageSrc: ''
+    - exportQuery: ''
+    - action: ''
+    - internalUrlQuery: ''
+    - internalUrlPath: ''
+    - exportFileName: ''
+    - disabled: ''
+style:
+  ordered: []
+position2:
+  position2:
+    container: moduleContainer
+    row: 2.1999999999999997
+    height: 1
+    width: 12
+createdAt: 2022-09-15T19:26:25.742Z
