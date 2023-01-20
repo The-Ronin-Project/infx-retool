@@ -1,0 +1,8 @@
+version: 43.0.9
+pageUuid: 27ded55a-f0aa-11eb-bbe6-73db106b071e
+appTemplate:
+  experimentalPerfFeatures:
+    object:
+      batchCommitModelEnabled: false
+  rootScreen: null
+  version: 2.86.11

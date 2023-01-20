@@ -1,0 +1,20 @@
+id: checkbox1
+type: widget
+subtype: CheckboxWidget
+template:
+  ordered:
+    - label: QOL symptom
+    - value: false
+    - disabled: ''
+    - onCheckQuery: ''
+    - onUncheckQuery: ''
+style:
+  ordered: []
+position2:
+  position2:
+    container: form1
+    row: 2
+    col: 4
+    height: 1
+    width: 8
+createdAt: 2021-08-17T23:03:55.154Z
