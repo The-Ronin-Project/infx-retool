@@ -16,24 +16,46 @@ template:
     - resourceNameOverride: ''
     - runWhenModelUpdates: true
     - showFailureToaster: true
-    - query: |-
+    - query: >-
         select 
+
         timestamp,
+
         (new_val->>'uuid') mapping_uuid,
+
         sc.code source_code,
+
         sc.uuid as sc_uuid,
+
         sc.display source_display,
+
+        rc.display relationship,
+
         (new_val->>'target_concept_code') target_code,
+
         (new_val->>'target_concept_display') target_display,
+
         (new_val->>'author') author 
+
         from concept_maps.history
+
         left join concept_maps.source_concept sc
+
         on (new_val->>'source_concept_uuid')::uuid = sc.uuid
+
+        join concept_maps.relationship_codes rc on
+        (new_val->>'relationship_code_uuid')::uuid = rc.uuid
+
         where table_name='concept_relationship'
+
         and operation='INSERT'
+
         and sc.concept_map_version_uuid={{urlparams.concept_map_version_uuid}}
+
         and (new_val->>'author') = {{user_select.selectedLabel}}
+
         order by timestamp desc
+
         limit 100
     - playgroundQueryUuid: ''
     - playgroundQueryId: null

@@ -25,14 +25,17 @@ template:
             id: timestamp
             value: 162
         - object:
-            id: source_display
-            value: 488
-        - object:
             id: target_code
             value: 193.328125
         - object:
             id: source_code
             value: 193
+        - object:
+            id: source_display
+            value: 446
+        - object:
+            id: relationship
+            value: 198
     - showSummaryFooter: false
     - disableRowSelectInteraction: false
     - columnWidthsMobile: []
@@ -47,6 +50,7 @@ template:
           - target_code: Target Code
           - target_display: Target Display
           - author: Mapper
+          - relationship: Relationship
     - alwaysShowPaginator: false
     - columnColors:
         ordered:
@@ -56,6 +60,7 @@ template:
           - source_code: ''
           - target_display: ''
           - timestamp: ''
+          - relationship: ''
           - uuid: ''
           - target_code: >-
               {{mapping_uuids.data.mapping_uuid.includes(currentRow.mapping_uuid)
