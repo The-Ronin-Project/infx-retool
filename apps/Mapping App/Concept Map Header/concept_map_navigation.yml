@@ -41,7 +41,7 @@ template:
                   - action: ''
                   - internalUrlQuery: >-
                       "[{\"key\":\"concept_map_version_uuid\",\"value\":\"{{urlparams.concept_map_version_uuid}}\"}]"
-                  - internalUrlPath: a9cc7ea0-3451-11ed-afb6-43e81142ad0a
+                  - internalUrlPath: 6634caa0-8161-11ed-a103-6b5287048014
                   - exportFileName: ''
                   - disabled: ''
             - hidden: ''
