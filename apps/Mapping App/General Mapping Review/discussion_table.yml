@@ -34,9 +34,10 @@ template:
           - first_last_name: Mapper
           - code: Source Code
           - display: Source Display
-          - review_comment: review comment
+          - review_comment: Review Comment
           - target_concept_code: Target Code
           - target_concept_display: Target Display
+          - comments: Comments
     - alwaysShowPaginator: false
     - columnColors:
         ordered:
