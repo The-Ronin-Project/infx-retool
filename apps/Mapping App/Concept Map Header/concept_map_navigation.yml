@@ -7,6 +7,26 @@ template:
     - valueToCopy: ''
     - menuItems:
         - ordered:
+            - title: Metrics
+            - clickable:
+                ordered:
+                  - valueToCopy: ''
+                  - internalUrlHashParams: ''
+                  - exportFileType: csv
+                  - buttonType: internal-url
+                  - exportTemplate: null
+                  - url: ''
+                  - newWindow: false
+                  - exportQuery: ''
+                  - action: ''
+                  - internalUrlQuery: >-
+                      "[{\"key\":\"concept_map_version_uuid\",\"value\":\"{{urlparams.concept_map_version_uuid}}\"}]"
+                  - internalUrlPath: 4f40fa80-9908-11ed-b92d-27dfee9843c6
+                  - exportFileName: ''
+                  - disabled: ''
+            - hidden: ''
+            - menuItems: []
+        - ordered:
             - title: Make Assignments
             - clickable:
                 ordered:
@@ -21,7 +41,7 @@ template:
                   - action: ''
                   - internalUrlQuery: >-
                       "[{\"key\":\"concept_map_version_uuid\",\"value\":\"{{urlparams.concept_map_version_uuid}}\"}]"
-                  - internalUrlPath: 6634caa0-8161-11ed-a103-6b5287048014
+                  - internalUrlPath: a9cc7ea0-3451-11ed-afb6-43e81142ad0a
                   - exportFileName: ''
                   - disabled: ''
             - hidden: ''
