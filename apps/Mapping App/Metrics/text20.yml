@@ -1,0 +1,28 @@
+id: text20
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - tooltipText: ''
+    - value: >-
+        {{reviewed_by_count.data[reviewer_assignment_counts.data.first_last_name[i]]
+        ?? '--'}}
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: reviewers_listView
+    row: 1.0000000000000002
+    col: 9
+    height: 0.6
+    width: 3
+createdAt: 2023-01-20T23:23:08.058Z

@@ -1,0 +1,29 @@
+id: text1
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - tooltipText: ''
+    - value: '### Project Metrics'
+    - style:
+        ordered:
+          - color: rgb(240, 244, 248)
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: container1
+    rowGroup: header
+    row: 0.20000000000000073
+    height: 0.6
+    width: 2
+createdAt: 2023-01-20T21:42:23.678Z

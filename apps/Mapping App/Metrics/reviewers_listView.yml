@@ -1,0 +1,25 @@
+id: reviewers_listView
+type: widget
+subtype: ListViewWidget
+template:
+  ordered:
+    - heightType: auto
+    - showBorder: true
+    - data: ''
+    - showDropShadow: true
+    - formDataKey: '{{ self.id }}'
+    - dynamicHeightsEnabled: true
+    - itemHeight: '3'
+    - overflowType: scroll
+    - instances: '3'
+style:
+  ordered: []
+position2:
+  position2:
+    container: container1
+    subcontainer: 22ec8
+    row: 0.6000000000000001
+    col: 6
+    height: 5
+    width: 5
+createdAt: 2023-01-20T22:40:13.391Z
