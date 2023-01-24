@@ -36,8 +36,6 @@ template:
         {{select_user.value}})
 
         and concept_relationship.review_status is null
-
-        and source_concept.map_status = {{status.value}}
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
