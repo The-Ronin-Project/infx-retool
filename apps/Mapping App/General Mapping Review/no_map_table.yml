@@ -37,14 +37,15 @@ template:
     - onRowAdded: ''
     - columnHeaderNames:
         ordered:
-          - code: Source Code
           - display: Source Display
           - first_last_name: Assigned Mapper
-          - assigned_reviewer_first_last_name: Assigned Reviewer
+          - code: Source Code
+          - reason_for_no_map: No-Map Reason
           - assigned_mapper: Mapper
-          - map_status: map status
-          - no_map: no-map
-          - reason_for_no_map: no-map reason
+          - comments: Comments
+          - map_status: Map Status
+          - assigned_reviewer_first_last_name: Assigned Reviewer
+          - no_map: No-Map
     - alwaysShowPaginator: false
     - columnColors:
         ordered:

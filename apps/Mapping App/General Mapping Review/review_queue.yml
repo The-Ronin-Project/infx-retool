@@ -52,7 +52,7 @@ template:
         ordered:
           - display: source display
           - target_concept_display: Target Concept Display
-          - mapping_comments: mapping comments
+          - mapping_comments: Mapping Comments
           - author: Mapper
           - source_code: Source Code
           - source_display: Source Display
@@ -141,6 +141,7 @@ template:
           - review_status: false
           - uuid: false
           - concept_map_version_uuid: false
+          - resource_count: false
           - no_map: false
           - source_uuid: false
           - reviewed_by: false
@@ -168,16 +169,7 @@ template:
     - serverPaginated: false
     - data: '{{populate_review_queue.data}}'
     - displayedData: null
-    - actionButtons:
-        - ordered:
-            - actionButtonText: Detailed View
-            - actionButtonType: runQuery
-            - actionButtonQuery: detailed_source
-            - actionButtonInternalUrlPath: ''
-            - actionButtonInternalUrlQuery: ''
-            - actionButtonUrl: ''
-            - actionButtonNewWindow: false
-            - actionButtonDisabled: ''
+    - actionButtons: []
     - actionButtonSelectsRow: true
     - selectRowByDefault: true
     - defaultSortByColumn: ''
