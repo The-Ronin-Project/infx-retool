@@ -1,4 +1,4 @@
-id: authored_by
+id: discussion_count
 type: datasource
 subtype: SqlQueryUnified
 resourceName: dc8029bc-3980-4836-841e-776c64eeca49
@@ -17,17 +17,16 @@ template:
     - runWhenModelUpdates: true
     - showFailureToaster: true
     - query: >-
-        select cr.author, count(cr.author) from concept_maps.source_concept sc
+        select count(*)from concept_maps.source_concept sc
 
-        join project_management.user pmu on pmu.uuid=sc.assigned_mapper
+        join concept_maps.concept_relationship cr on
+        sc.uuid=cr.source_concept_uuid
 
-        join concept_maps.concept_relationship cr on sc.uuid =
-        cr.source_concept_uuid
+        where cr.concept_map_version_uuid={{urlparams.concept_map_version_uuid}}
 
-        where sc.concept_map_version_uuid =
-        {{urlparams.concept_map_version_uuid}}
-
-        group by cr.author
+        and (sc.reason_for_no_map = 'Save for discussion' or
+        sc.reason_for_no_map = 'Save for discusion' or cr.review_status = 'hold
+        for discussion')
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
@@ -70,18 +69,17 @@ template:
     - timestamp: 0
     - importedQueryDefaults:
         ordered: []
-    - enableTransformer: true
+    - enableTransformer: false
     - showUpdateSetValueDynamicallyToggle: true
     - bulkUpdatePrimaryKey: ''
     - runWhenPageLoads: false
-    - transformer: |-
-        const input = formatDataAsArray(data);
-        const output = input.reduce((obj, item) => {
-            obj[item.author] = item.count;
-            return obj;
-        }, {});
+    - transformer: >-
+        // type your code here
 
-        return output;
+        // example: return formatDataAsArray(data).filter(row => row.quantity >
+        20)
+
+        return data
     - events: []
     - tableName: ''
     - queryTimeout: '10000'
@@ -96,4 +94,4 @@ template:
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2023-01-22T21:28:37.767Z
+createdAt: 2023-01-24T17:56:08.350Z

@@ -1,19 +1,19 @@
-id: text12
+id: text35
 type: widget
 subtype: TextWidget2
 template:
   ordered:
     - heightType: auto
     - horizontalAlign: left
-    - hidden: '{{i!=0}}'
+    - hidden: false
     - imageWidth: fit
     - showInEditor: false
     - verticalAlign: center
     - tooltipText: ''
-    - value: Mapped
+    - value: '#### Total For Discussion'
     - style:
         ordered:
-          - color: rgb(36, 59, 83)
+          - color: rgb(98, 125, 152)
     - disableMarkdown: false
     - overflowType: scroll
     - maintainSpaceWhenHidden: false
@@ -21,8 +21,10 @@ style:
   ordered: []
 position2:
   position2:
-    container: Mapper_listView2
-    col: 9
+    container: container1
+    rowGroup: header
+    row: 1.5999999999999996
+    col: 10
     height: 0.6
     width: 2
-createdAt: 2023-01-20T22:53:49.235Z
+createdAt: 2023-01-24T17:55:08.005Z

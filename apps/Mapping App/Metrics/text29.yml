@@ -1,16 +1,19 @@
-id: text12
+id: text29
 type: widget
 subtype: TextWidget2
 template:
   ordered:
     - heightType: auto
     - horizontalAlign: left
-    - hidden: '{{i!=0}}'
+    - hidden: false
     - imageWidth: fit
     - showInEditor: false
     - verticalAlign: center
     - tooltipText: ''
-    - value: Mapped
+    - value: >-
+        For mapping this metric counts concepts where map_status = 'pending'.
+        For reviewing this metric counts concepts where map_status='ready for
+        review'.
     - style:
         ordered:
           - color: rgb(36, 59, 83)
@@ -21,8 +24,9 @@ style:
   ordered: []
 position2:
   position2:
-    container: Mapper_listView2
-    col: 9
+    container: modal1
+    row: 2.6
+    col: 3
     height: 0.6
-    width: 2
-createdAt: 2023-01-20T22:53:49.235Z
+    width: 9
+createdAt: 2023-01-24T16:45:24.953Z

@@ -1,4 +1,4 @@
-id: text12
+id: text33
 type: widget
 subtype: TextWidget2
 template:
@@ -10,7 +10,7 @@ template:
     - showInEditor: false
     - verticalAlign: center
     - tooltipText: ''
-    - value: Mapped
+    - value: Rejected
     - style:
         ordered:
           - color: rgb(36, 59, 83)
@@ -22,7 +22,8 @@ style:
 position2:
   position2:
     container: Mapper_listView2
-    col: 9
+    row: -2.1649348980190553e-15
+    col: 7
     height: 0.6
     width: 2
-createdAt: 2023-01-20T22:53:49.235Z
+createdAt: 2023-01-24T17:46:08.028Z
