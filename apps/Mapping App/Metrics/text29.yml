@@ -11,9 +11,10 @@ template:
     - verticalAlign: center
     - tooltipText: ''
     - value: >-
-        For mapping this metric counts concepts where map_status = 'pending'.
-        For reviewing this metric counts concepts where map_status='ready for
-        review'.
+        For mapping, this metric counts concepts where map_status =
+        'pending'(rejected concepts have their map_status reverted to 'pending'
+        so they are captured here).
+         For reviewing, this metric counts concepts where map_status='ready for review'.
     - style:
         ordered:
           - color: rgb(36, 59, 83)
@@ -25,7 +26,7 @@ style:
 position2:
   position2:
     container: modal1
-    row: 2.6
+    row: 2.4
     col: 3
     height: 0.6
     width: 9
