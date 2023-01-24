@@ -42,6 +42,8 @@ template:
     - columnHeaderNames:
         ordered:
           - id: mda display
+          - code: Source Code
+          - display: Source Display
     - alwaysShowPaginator: false
     - columnColors:
         ordered:
@@ -91,6 +93,7 @@ template:
           - uuid: false
           - concept_map_version_uuid: false
           - email: false
+          - resource_count: false
           - no_map: false
     - _columnSummaryTypes:
         ordered:
