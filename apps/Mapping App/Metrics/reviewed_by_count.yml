@@ -28,8 +28,6 @@ template:
         where sc.concept_map_version_uuid =
         {{urlparams.concept_map_version_uuid}}
 
-        and pmu.first_last_name != cr.reviewed_by
-
         group by cr.reviewed_by
     - playgroundQueryUuid: ''
     - playgroundQueryId: null

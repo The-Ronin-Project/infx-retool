@@ -21,8 +21,8 @@ style:
 position2:
   position2:
     container: Mapper_listView2
-    row: 1
+    row: 1.4000000000000001
     col: 9
     height: 0.6
-    width: 3
+    width: 2
 createdAt: 2023-01-20T23:13:20.497Z

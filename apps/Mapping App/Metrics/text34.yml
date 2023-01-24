@@ -1,19 +1,18 @@
-id: text12
+id: text34
 type: widget
 subtype: TextWidget2
 template:
   ordered:
     - heightType: auto
     - horizontalAlign: left
-    - hidden: '{{i!=0}}'
+    - hidden: false
     - imageWidth: fit
     - showInEditor: false
     - verticalAlign: center
     - tooltipText: ''
-    - value: Mapped
-    - style:
-        ordered:
-          - color: rgb(36, 59, 83)
+    - value: >-
+        {{rejected_count.data[mapper_assignment_counts.data.first_last_name[i]]
+        ?? '--'}}
     - disableMarkdown: false
     - overflowType: scroll
     - maintainSpaceWhenHidden: false
@@ -22,7 +21,8 @@ style:
 position2:
   position2:
     container: Mapper_listView2
-    col: 9
+    row: 1.4
+    col: 7
     height: 0.6
     width: 2
-createdAt: 2023-01-20T22:53:49.235Z
+createdAt: 2023-01-24T17:49:12.645Z
