@@ -1,4 +1,4 @@
-id: get_unmapped_concepts
+id: current_draft_all_concepts
 type: datasource
 subtype: SqlQueryUnified
 resourceName: dc8029bc-3980-4836-841e-776c64eeca49
@@ -16,11 +16,18 @@ template:
     - resourceNameOverride: ''
     - runWhenModelUpdates: true
     - showFailureToaster: true
-    - query: |-
-        SELECT * from concept_maps.source_concept 
-        where concept_map_version_uuid={{urlparams.concept_map_version_uuid}}
-        and uuid not in 
-        (select source_concept_uuid from concept_maps.concept_relationship)
+    - query: >-
+        select sc.*, cr.*, rc.display as relationship_display from
+        concept_maps.source_concept sc
+
+        left join concept_maps.concept_relationship cr on
+        sc.uuid=cr.source_concept_uuid
+
+        left join concept_maps.relationship_codes rc on
+        rc.uuid=cr.relationship_code_uuid
+
+        WHERE sc.concept_map_version_uuid =
+        {{urlparams.concept_map_version_uuid}}
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
@@ -88,4 +95,4 @@ template:
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2022-09-20T15:55:13.950Z
+createdAt: 2023-01-23T20:42:50.967Z

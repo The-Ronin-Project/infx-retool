@@ -33,7 +33,11 @@ template:
 
         sc.code as source_code,
 
-        sc.display as source_display, cr.author as actual_mapper,
+        sc.display as source_display,
+
+        sc.no_map,
+
+        cr.author as actual_mapper,
 
         cr.reviewed_by as actual_reviewer
 
@@ -45,10 +49,6 @@ template:
           ON sc.uuid = cr.source_concept_uuid
         WHERE sc.concept_map_version_uuid =
         {{urlparams.concept_map_version_uuid}}
-
-        and cr.review_status is not null
-
-        and cr.review_status != 'hold for discussion'
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
