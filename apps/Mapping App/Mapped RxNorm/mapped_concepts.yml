@@ -62,17 +62,27 @@ template:
     - onRowAdded: ''
     - columnHeaderNames:
         ordered:
-          - display: source_display
-          - mapping_comments: mapping comments
-          - code: source_code
+          - display: Source Display
+          - mapping_comments: Mapping Comments
+          - author: Mapper
+          - code: Source Code
+          - mapping_group: Mapping_Group
+          - reason_for_no_map: No-Map Reason
           - source_code: Source Code
           - target_concept_code: Target Code
           - actual_mapper: Mapper
+          - comments: Comments
+          - map_status: Map Status
           - actual_reviewer: Reviewer
+          - additional_context: Additional Context
+          - review_comment: Review Comment
           - relationship: Relationship
           - review_status: Review Status
+          - relationship_display: Relationship
           - target_concept_display: Target Display
           - source_display: Source Display
+          - no_map: No-Map
+          - reviewed_by: Reviewer
     - alwaysShowPaginator: false
     - columnColors:
         ordered:
@@ -86,22 +96,32 @@ template:
           - mapping_uuid: ''
           - target_concept_system_version_uuid: ''
           - code: ''
+          - mapping_group: ''
           - system: ''
+          - reason_for_no_map: ''
           - source_code: ''
           - target_concept_code: ''
+          - assigned_mapper: ''
           - actual_mapper: ''
           - target_concept_system: ''
+          - comments: ''
           - map_status: ''
           - source_concept_uuid: ''
           - reviewed_date: ''
+          - assigned_reviewer: ''
           - actual_reviewer: ''
           - additional_context: ''
+          - review_comment: ''
           - relationship: ''
           - review_status: ''
+          - relationship_display: ''
           - uuid: ''
           - concept_map_version_uuid: ''
           - target_concept_display: ''
           - source_display: ''
+          - resource_count: ''
+          - no_map: ''
+          - reviewed_by: ''
     - columnFrozenAlignments:
         ordered: []
     - allowMultiRowSelect: false
@@ -116,20 +136,25 @@ template:
     - _columnVisibility:
         ordered:
           - special_use: false
-          - display: false
+          - display: true
           - relationship_system_uuid: false
           - created_date: false
           - relationship_code_uuid: false
-          - author: false
+          - author: true
           - mapping_uuid: false
           - target_concept_system_version_uuid: false
-          - code: false
+          - code: true
+          - system: false
+          - assigned_mapper: false
           - target_concept_system: false
-          - map_status: false
+          - map_status: true
           - source_concept_uuid: false
           - reviewed_date: false
+          - assigned_reviewer: false
           - uuid: false
           - concept_map_version_uuid: false
+          - resource_count: false
+          - reviewed_by: true
     - _columnSummaryTypes:
         ordered:
           - target_concept_code: ''
@@ -149,10 +174,10 @@ template:
     - actionButtonColumnName: Send Back for Review
     - resetAfterSave: true
     - filterStackType: and
-    - downloadRawData: true
+    - downloadRawData: false
     - showFetchingIndicator: true
     - serverPaginated: false
-    - data: '{{get_concept_maps.data}}'
+    - data: '{{current_draft_all_concepts.data}}'
     - displayedData: null
     - actionButtons:
         - ordered:
@@ -206,7 +231,7 @@ template:
     - beforeCursor: ''
     - serverPaginationType: limitOffsetBased
     - onRowSelect: ''
-    - showDownloadButton: true
+    - showDownloadButton: false
     - selectedIndex: null
     - defaultSortDescending: false
     - _sortedDisplayedDataIndices: null
@@ -242,14 +267,34 @@ template:
     - freezeActionButtonColumns: false
     - sort: null
     - _columns:
-        - source_code
-        - source_display
-        - relationship
+        - code
+        - display
+        - relationship_display
         - target_concept_code
         - target_concept_display
         - review_status
         - map_status
         - mapping_comments
+        - uuid
+        - system
+        - comments
+        - additional_context
+        - concept_map_version_uuid
+        - assigned_mapper
+        - assigned_reviewer
+        - no_map
+        - reason_for_no_map
+        - mapping_group
+        - resource_count
+        - target_concept_system
+        - created_date
+        - reviewed_date
+        - author
+        - source_concept_uuid
+        - relationship_code_uuid
+        - target_concept_system_version_uuid
+        - reviewed_by
+        - review_comment
     - sortByRawValue:
         ordered: []
     - calculatedColumns: []
@@ -267,7 +312,7 @@ position2:
   position2:
     container: tabbedContainer1
     subcontainer: 8e8d8
-    row: 0.9999999999999999
+    row: -1.1102230246251565e-16
     height: 27
     width: 12
 createdAt: 2022-09-14T19:54:01.252Z
