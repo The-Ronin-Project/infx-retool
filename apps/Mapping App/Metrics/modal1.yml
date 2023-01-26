@@ -10,15 +10,16 @@ template:
     - tooltipText: ''
     - style:
         ordered:
-          - accent-background: rgb(188, 204, 220)
-          - primary-surface: rgb(217, 226, 236)
+          - accent-background: rgba(188, 204, 220, 0.8)
+          - primary-surface: rgba(217, 226, 236, 0.8)
+          - border-color: rgba(98, 125, 152, 0.7)
     - modalHeight: ''
     - onModalOpen: ''
     - modalWidth: ''
     - closeOnOutsideClick: false
     - loading: ''
     - disabled: ''
-    - buttonText: Count ℹ️
+    - buttonText: ℹ️
 style:
   ordered: []
 position2:
@@ -26,6 +27,6 @@ position2:
     container: container1
     subcontainer: 22ec8
     col: 11
-    height: 1
+    height: 0.8
     width: 1
 createdAt: 2023-01-24T16:24:12.315Z

@@ -10,10 +10,10 @@ template:
     - showInEditor: false
     - verticalAlign: center
     - tooltipText: ''
-    - value: '# {{nomap_count.data.count}}'
+    - value: '## {{nomap_count.data.count}}'
     - style:
         ordered:
-          - color: rgb(240, 244, 248)
+          - color: rgb(36, 59, 83)
     - disableMarkdown: false
     - overflowType: scroll
     - maintainSpaceWhenHidden: false
@@ -23,8 +23,8 @@ position2:
   position2:
     container: container1
     rowGroup: header
-    row: 2.1999999999999993
-    col: 8
+    row: 0.5999999999999994
+    col: 7
     height: 0.6
     width: 2
 createdAt: 2023-01-23T19:53:15.155Z

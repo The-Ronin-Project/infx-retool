@@ -10,10 +10,10 @@ template:
     - showInEditor: false
     - verticalAlign: center
     - tooltipText: ''
-    - value: '# {{assigned_count.data.assigned_count}}'
+    - value: '## {{assigned_count.data.assigned_count}}'
     - style:
         ordered:
-          - color: rgb(240, 244, 248)
+          - color: rgb(36, 59, 83)
     - disableMarkdown: false
     - overflowType: scroll
     - maintainSpaceWhenHidden: false
@@ -23,8 +23,8 @@ position2:
   position2:
     container: container1
     rowGroup: header
-    row: 2.2
-    col: 4
+    row: 0.6000000000000003
+    col: 3
     height: 0.6
     width: 2
 createdAt: 2023-01-20T22:18:04.700Z
