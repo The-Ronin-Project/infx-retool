@@ -20,7 +20,8 @@ template:
         select concept_relationship.uuid as mapping_uuid, rc.display as
         relationship_display,source_concept.uuid as source_code_uuid,
         source_concept.display as source_display, source_concept.code as
-        source_code, source_concept.comments as source_comments, * from
+        source_code, source_concept.system as source_system,
+        source_concept.comments as source_comments, ctc.additional_data, * from
         concept_maps.concept_relationship
 
         join concept_maps.source_concept on source_concept.uuid =
@@ -28,6 +29,12 @@ template:
 
         join concept_maps.relationship_codes rc on
         concept_relationship.relationship_code_uuid=rc.uuid
+
+        left join custom_terminologies.code ctc on source_concept.code=ctc.code
+
+        and source_concept.display = ctc.display
+
+        and cast(source_concept.system as uuid) = ctc.terminology_version_uuid
 
         where source_concept.concept_map_version_uuid =
         {{urlparams.concept_map_version_uuid}}
