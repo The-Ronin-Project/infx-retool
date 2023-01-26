@@ -1,4 +1,4 @@
-id: concepts_to_review_table
+id: value_set_table
 type: widget
 subtype: TableWidget
 template:
@@ -21,14 +21,14 @@ template:
             id: __retool__action_list
             value: 64
         - object:
-            id: title
-            value: 331.8359375
-        - object:
-            id: Custom Column 1
-            value: 86
-        - object:
             id: count
             value: 103.1640625
+        - object:
+            id: title
+            value: 403.8359375
+        - object:
+            id: Custom Column 1
+            value: 110
     - showSummaryFooter: false
     - disableRowSelectInteraction: false
     - columnWidthsMobile: []
@@ -40,20 +40,21 @@ template:
                 - buttonType: internal-url
                 - internalUrlPath: afb4d380-50cb-11ed-b76c-ffbcb400100c
                 - internalUrlQuery: >-
-                    "[{\"key\":\"concept_map_version_uuid\",\"value\":\"{{currentRow.version_uuid}}\"}]"
+                    "[{\"key\":\"value_set_version_uuid\",\"value\":\"{{currentRow.version_uuid}}\"}]"
     - onRowAdded: ''
     - columnHeaderNames:
         ordered:
           - title: Project Title
           - count: Review Count
-          - Custom Column 1: Go Review
+          - Custom Column 1: Pending Version
     - alwaysShowPaginator: false
     - columnColors:
         ordered:
-          - count: ''
           - title: ''
+          - contact: ''
           - version_uuid: ''
           - Custom Column 1: ''
+          - count: ''
           - uuid: ''
     - columnFrozenAlignments:
         ordered: []
@@ -67,6 +68,7 @@ template:
     - _columnVisibility:
         ordered:
           - version_uuid: false
+          - contact: false
     - _columnSummaryTypes:
         ordered:
           - Custom Column 1: ''
@@ -87,7 +89,7 @@ template:
     - downloadRawData: false
     - showFetchingIndicator: true
     - serverPaginated: false
-    - data: '{{ concept_map_reviewer_counts.data }}'
+    - data: '{{value_set_work.data }}'
     - displayedData: null
     - actionButtons: []
     - actionButtonSelectsRow: true
@@ -188,8 +190,8 @@ style:
   ordered: []
 position2:
   position2:
-    row: 1.3999999999999997
-    col: 4
+    row: 1.4
+    col: 8
     height: 5
     width: 4
-createdAt: 2023-01-06T17:31:11.187Z
+createdAt: 2023-01-24T05:29:42.631Z

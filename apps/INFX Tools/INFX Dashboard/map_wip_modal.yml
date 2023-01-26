@@ -11,7 +11,7 @@ template:
     - style:
         ordered:
           - accent-background: rgba(60, 146, 220, 0.7)
-    - modalHeight: ''
+    - modalHeight: 568px
     - onModalOpen: ''
     - modalWidth: 60%
     - closeOnOutsideClick: false
@@ -22,7 +22,7 @@ style:
   ordered: []
 position2:
   position2:
-    col: 10
+    col: 8
     height: 1
     width: 2
 createdAt: 2023-01-06T17:48:47.398Z
