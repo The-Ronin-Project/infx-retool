@@ -21,7 +21,7 @@ template:
     - tooltipText: ''
     - style:
         ordered:
-          - headerBackground: rgb(159, 179, 200)
+          - headerBackground: rgba(182, 210, 232, 1)
           - background: rgb(240, 244, 248)
     - hiddenByIndex:
         array: []
@@ -63,7 +63,7 @@ style:
   ordered: []
 position2:
   position2:
-    row: 0.2
+    row: 4.199999999999999
     height: 0.2
     width: 12
 createdAt: 2023-01-20T22:25:25.702Z
