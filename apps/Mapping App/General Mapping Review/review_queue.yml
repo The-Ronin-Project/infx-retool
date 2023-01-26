@@ -19,6 +19,8 @@ template:
               ordered: []
           - mapping_comments:
               ordered: []
+          - Custom Column 1:
+              ordered: []
     - columnWidths:
         - object:
             id: mapping_comments
@@ -30,17 +32,20 @@ template:
             id: target_concept_display
             value: 551
         - object:
-            id: relationship_display
-            value: 224.171875
-        - object:
-            id: target_concept_code
-            value: 211.1640625
-        - object:
-            id: source_display
-            value: 298.1640625
-        - object:
             id: __retool__action_list
             value: 124
+        - object:
+            id: source_display
+            value: 160.15625
+        - object:
+            id: additional_data
+            value: 257
+        - object:
+            id: relationship_display
+            value: 216.171875
+        - object:
+            id: target_concept_code
+            value: 153.15625
     - showSummaryFooter: false
     - disableRowSelectInteraction: false
     - columnWidthsMobile: []
@@ -51,18 +56,21 @@ template:
     - columnHeaderNames:
         ordered:
           - display: source display
-          - target_concept_display: Target Concept Display
+          - additional_data: additional data (source)
           - mapping_comments: Mapping Comments
           - author: Mapper
           - source_code: Source Code
-          - source_display: Source Display
-          - relationship_display: Relationship
           - target_concept_code: Target Code
+          - Custom Column 1: Additional Data
+          - relationship_display: Relationship
+          - target_concept_display: Target Concept Display
+          - source_display: Source Display
     - alwaysShowPaginator: false
     - columnColors:
         ordered:
           - special_use: ''
           - display: ''
+          - additional_data: ''
           - relationship_system_uuid: ''
           - mapping_comments: ''
           - created_date: ''
@@ -74,12 +82,14 @@ template:
           - sales: ''
           - target_concept_system_version_uuid: ''
           - code: ''
+          - terminology_version_uuid: ''
           - mapping_group: ''
           - system: ''
           - reason_for_no_map: ''
           - source_code: ''
           - target_concept_code: ''
           - assigned_mapper: ''
+          - source_system: ''
           - target_concept_system: ''
           - comments: ''
           - map_status: ''
@@ -109,6 +119,7 @@ template:
           - source_code: TextMultiDataCell
           - source_display: TextMultiDataCell
           - mapping_comments: TextMultiDataCell
+          - Custom Column 1: ModalDataCell
     - columnRestrictedEditing:
         ordered: []
     - showFilterButton: true
@@ -124,11 +135,13 @@ template:
           - mapping_uuid: false
           - target_concept_system_version_uuid: false
           - code: false
+          - terminology_version_uuid: false
           - mapping_group: false
           - system: false
           - reason_for_no_map: false
           - target_concept_code: true
           - assigned_mapper: false
+          - source_system: false
           - target_concept_system: false
           - comments: false
           - map_status: false
@@ -150,6 +163,7 @@ template:
           - source_code: ''
           - source_display: ''
           - mapping_comments: ''
+          - Custom Column 1: ''
     - _columnsWithLegacyBackgroundColor:
         set: []
     - showAddRowButton: false
@@ -179,6 +193,7 @@ template:
           - source_code: left
           - source_display: left
           - mapping_comments: left
+          - Custom Column 1: left
     - columnSummaries:
         object: {}
     - showBoxShadow: false
@@ -202,6 +217,7 @@ template:
           - source_code: ''
           - source_display: ''
           - mapping_comments: ''
+          - Custom Column 1: ''
     - checkboxRowSelect: true
     - _compatibilityMode: false
     - showColumnBorders: false
@@ -217,6 +233,7 @@ template:
     - defaultSortDescending: false
     - _sortedDisplayedDataIndices: null
     - dynamicColumnSettings: null
+    - events: []
     - totalRowCount: ''
     - recordUpdates:
         array: []
@@ -232,7 +249,8 @@ template:
     - disableSorting:
         ordered: []
     - columnMappers:
-        ordered: []
+        ordered:
+          - Custom Column 1: View
     - showClearSelection: false
     - doubleClickToEdit: true
     - overflowType: scroll
@@ -251,6 +269,7 @@ template:
         - concept_map_version_uuid
         - source_code
         - source_display
+        - additional_data
         - display
         - relationship_display
         - target_concept_code
@@ -280,6 +299,11 @@ template:
         - mapping_group
         - mapping_uuid
         - review_comment
+        - source_code_uuid
+        - reviewed_by
+        - resource_count
+        - source_system
+        - terminology_version_uuid
     - sortByRawValue:
         ordered: []
     - calculatedColumns: []
