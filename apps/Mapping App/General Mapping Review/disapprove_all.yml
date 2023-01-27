@@ -37,7 +37,6 @@ position2:
   position2:
     container: tabbedContainer1
     subcontainer: '2e213'
-    row: 4
     col: 10
     height: 1
     width: 2

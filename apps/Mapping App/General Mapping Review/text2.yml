@@ -10,7 +10,7 @@ template:
     - showInEditor: false
     - verticalAlign: center
     - tooltipText: ''
-    - value: '## **Concepts Ready for Review** ##'
+    - value: '#### Concepts Ready for Review'
     - disableMarkdown: false
     - overflowType: scroll
     - maintainSpaceWhenHidden: false
@@ -21,5 +21,5 @@ position2:
     container: tabbedContainer1
     subcontainer: '2e213'
     height: 0.6
-    width: 4
+    width: 3
 createdAt: 2022-12-07T18:39:03.964Z

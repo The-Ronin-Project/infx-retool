@@ -11,8 +11,8 @@ template:
     - verticalAlign: center
     - tooltipText: ''
     - value: >-
-        **{{ready_for_review_but_unassigned.data.count}} concepts without an
-        assigned reviewer**
+        **{{ready_for_review_but_unassigned.data.count}}** concepts without an
+        assigned reviewer
     - disableMarkdown: false
     - overflowType: scroll
     - maintainSpaceWhenHidden: false
