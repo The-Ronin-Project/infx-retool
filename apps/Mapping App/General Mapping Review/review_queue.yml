@@ -35,17 +35,26 @@ template:
             id: __retool__action_list
             value: 124
         - object:
-            id: source_display
-            value: 160.15625
-        - object:
-            id: additional_data
-            value: 257
-        - object:
-            id: relationship_display
-            value: 216.171875
-        - object:
             id: target_concept_code
             value: 153.15625
+        - object:
+            id: additional_data
+            value: 77
+        - object:
+            id: source_display
+            value: 541.15625
+        - object:
+            id: count_of_resources_affected
+            value: 119
+        - object:
+            id: source_code
+            value: 124
+        - object:
+            id: relationship_display
+            value: 218.171875
+        - object:
+            id: author
+            value: 127
     - showSummaryFooter: false
     - disableRowSelectInteraction: false
     - columnWidthsMobile: []
@@ -56,8 +65,9 @@ template:
     - columnHeaderNames:
         ordered:
           - display: source display
-          - additional_data: additional data (source)
+          - additional_data: ℹ️
           - mapping_comments: Mapping Comments
+          - count_of_resources_affected: Resource Count
           - author: Mapper
           - source_code: Source Code
           - target_concept_code: Target Code
@@ -75,6 +85,7 @@ template:
           - mapping_comments: ''
           - created_date: ''
           - relationship_code_uuid: ''
+          - count_of_resources_affected: ''
           - source_code_uuid: ''
           - author: ''
           - name: ''
@@ -127,6 +138,7 @@ template:
         ordered:
           - special_use: false
           - display: false
+          - additional_data: true
           - relationship_system_uuid: false
           - created_date: false
           - relationship_code_uuid: false
@@ -172,7 +184,7 @@ template:
     - columnVisibility:
         ordered: []
     - selectedPageIndex: '0'
-    - applyDynamicSettingsToColumnOrder: true
+    - applyDynamicSettingsToColumnOrder: false
     - rowColor:
         array: []
     - actionButtonColumnName: Actions
@@ -205,7 +217,7 @@ template:
     - pageSize: '20'
     - useDynamicColumnSettings: false
     - actionButtonPosition: right
-    - dynamicRowHeights: true
+    - dynamicRowHeights: false
     - bulkUpdateAction: ''
     - afterCursor: ''
     - onCustomButtonPressQueryName: ''
@@ -232,7 +244,7 @@ template:
     - selectedIndex: null
     - defaultSortDescending: false
     - _sortedDisplayedDataIndices: null
-    - dynamicColumnSettings: null
+    - dynamicColumnSettings: ''
     - events: []
     - totalRowCount: ''
     - recordUpdates:
@@ -251,7 +263,7 @@ template:
     - columnMappers:
         ordered:
           - Custom Column 1: View
-    - showClearSelection: false
+    - showClearSelection: true
     - doubleClickToEdit: true
     - overflowType: scroll
     - _reverseSortedDisplayedDataIndices: null
@@ -321,7 +333,7 @@ position2:
   position2:
     container: tabbedContainer1
     subcontainer: '2e213'
-    row: 5.000000000000022
-    height: 13.2
+    row: 1.6000000000000223
+    height: 16.8
     width: 12
 createdAt: 2022-10-05T18:46:24.842Z

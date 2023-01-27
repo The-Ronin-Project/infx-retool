@@ -1,4 +1,4 @@
-id: populate_review_queue
+id: additional_modal
 type: datasource
 subtype: SqlQueryUnified
 resourceName: dc8029bc-3980-4836-841e-776c64eeca49
@@ -16,40 +16,12 @@ template:
     - resourceNameOverride: ''
     - runWhenModelUpdates: true
     - showFailureToaster: true
-    - query: >-
-        select concept_relationship.uuid as mapping_uuid, rc.display as
-        relationship_display,source_concept.uuid as source_code_uuid,
-        source_concept.display as source_display, source_concept.code as
-        source_code, source_concept.system as source_system,
-        source_concept.comments as source_comments, ctc.additional_data,
-        ctc.additional_data->>'count_of_resources_affected' as
-        count_of_resources_affected, * from concept_maps.concept_relationship
-
-        join concept_maps.source_concept on source_concept.uuid =
-        source_concept_uuid
-
-        join concept_maps.relationship_codes rc on
-        concept_relationship.relationship_code_uuid=rc.uuid
-
-        left join custom_terminologies.code ctc on source_concept.code=ctc.code
-
-        and source_concept.display = ctc.display
-
-        and cast(source_concept.system as uuid) = ctc.terminology_version_uuid
-
-        where source_concept.concept_map_version_uuid =
-        {{urlparams.concept_map_version_uuid}}
-
-        and ({{!select_user.value}} or source_concept.assigned_reviewer =
-        {{select_user.value}})
-
-        and concept_relationship.review_status is null
+    - query: ''
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
     - privateParams: []
     - runWhenPageLoadsDelay: ''
-    - warningCodes: []
     - data: null
     - recordId: ''
     - importedQueryInputs:
@@ -99,7 +71,7 @@ template:
         return data
     - events: []
     - tableName: ''
-    - queryTimeout: '10001'
+    - queryTimeout: '10000'
     - requireConfirmation: false
     - queryFailureConditions: ''
     - changesetIsObject: false
@@ -111,5 +83,5 @@ template:
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2022-10-05T18:44:29.505Z
+createdAt: 2023-01-26T22:33:31.868Z
 folder: ready_for_review_tab
