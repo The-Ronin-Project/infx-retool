@@ -310,9 +310,7 @@ style:
   ordered: []
 position2:
   position2:
-    container: tabbedContainer1
-    subcontainer: 8e8d8
-    row: -1.1102230246251565e-16
-    height: 27
+    row: 0.9999999999999998
+    height: 16.2
     width: 12
 createdAt: 2022-09-14T19:54:01.252Z

@@ -1,25 +1,19 @@
-id: download_draft
+id: draft_part_2
 type: datasource
-subtype: RESTQuery
-resourceName: a00335cd-bd3b-4d98-8af4-7ff590ce95e8
-resourceDisplayName: INFX Internal Tools API
+subtype: JavascriptQuery
+resourceName: JavascriptQuery
 template:
   ordered:
     - queryRefreshTime: ''
-    - paginationLimit: ''
-    - body: ''
     - lastReceivedFromResourceAt: null
     - queryDisabledMessage: ''
     - successMessage: ''
     - queryDisabled: ''
     - playgroundQuerySaveId: latest
     - resourceNameOverride: ''
-    - runWhenModelUpdates: true
-    - paginationPaginationField: ''
-    - headers: ''
+    - runWhenModelUpdates: false
     - showFailureToaster: true
-    - paginationEnabled: false
-    - query: ConceptMaps/{{urlparams.concept_map_version_uuid}}/draft
+    - query: utils.downloadFile(download_draft.data.message,"draft","csv")
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
@@ -31,7 +25,6 @@ template:
     - isImported: false
     - showSuccessToaster: true
     - cacheKeyTtl: ''
-    - cookies: ''
     - metadata: null
     - changesetObject: ''
     - errorTransformer: >-
@@ -46,38 +39,31 @@ template:
     - changeset: ''
     - rawData: null
     - queryTriggerDelay: '0'
-    - resourceTypeOverride: ''
+    - resourceTypeOverride: null
     - watchedParams: []
     - enableErrorTransformer: false
     - showLatestVersionUpdatedWarning: false
-    - paginationDataField: ''
     - timestamp: 0
     - importedQueryDefaults:
         ordered: []
     - enableTransformer: false
     - showUpdateSetValueDynamicallyToggle: true
     - runWhenPageLoads: false
-    - transformer: ''
-    - events:
-        - ordered:
-            - event: success
-            - type: datasource
-            - method: trigger
-            - pluginId: draft_part_2
-            - targetId: null
-            - params:
-                ordered: []
-            - waitType: debounce
-            - waitMs: '0'
+    - transformer: >-
+        // type your code here
+
+        // example: return formatDataAsArray(data).filter(row => row.quantity >
+        20)
+
+        return data
+    - events: []
     - queryTimeout: '10000'
     - requireConfirmation: false
-    - type: GET
     - queryFailureConditions: ''
     - changesetIsObject: false
     - enableCaching: false
     - allowedGroups: []
-    - bodyType: json
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2023-01-17T18:54:43.782Z
+createdAt: 2023-01-27T19:36:34.233Z
