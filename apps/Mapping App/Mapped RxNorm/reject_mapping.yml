@@ -19,7 +19,7 @@ template:
     - query: |-
         update concept_maps.concept_relationship
         set review_status='rejected'
-        where uuid={{mapped_concepts.selectedRow.data.mapping_uuid}}
+        where uuid={{mapped_concepts.selectedRow.data.source_concept_uuid}}
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
@@ -85,7 +85,7 @@ template:
             - event: success
             - type: datasource
             - method: trigger
-            - pluginId: get_concept_maps
+            - pluginId: current_draft_all_concepts
             - targetId: null
             - params:
                 ordered: []

@@ -14,7 +14,7 @@ template:
     - queryDisabled: ''
     - playgroundQuerySaveId: latest
     - resourceNameOverride: ''
-    - runWhenModelUpdates: true
+    - runWhenModelUpdates: false
     - paginationPaginationField: ''
     - headers: ''
     - showFailureToaster: true
