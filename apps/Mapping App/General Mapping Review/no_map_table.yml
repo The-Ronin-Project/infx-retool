@@ -17,9 +17,6 @@ template:
               ordered: []
     - columnWidths:
         - object:
-            id: code
-            value: 202
-        - object:
             id: assigned_reviewer_first_last_name
             value: 79.3359375
         - object:
@@ -28,6 +25,27 @@ template:
         - object:
             id: reason_for_no_map
             value: 145
+        - object:
+            id: assigned_mapper
+            value: 121.3359375
+        - object:
+            id: code
+            value: 187
+        - object:
+            id: comments
+            value: 145.9140625
+        - object:
+            id: map_status
+            value: 90
+        - object:
+            id: additional_data
+            value: 56
+        - object:
+            id: __retool__action_list
+            value: 166
+        - object:
+            id: count_of_resources_affected
+            value: 91
     - showSummaryFooter: false
     - disableRowSelectInteraction: false
     - columnWidthsMobile: []
@@ -38,12 +56,15 @@ template:
     - columnHeaderNames:
         ordered:
           - display: Source Display
+          - additional_data: ℹ️
           - first_last_name: Assigned Mapper
+          - count_of_resources_affected: Resource Count
           - code: Source Code
           - reason_for_no_map: No-Map Reason
           - assigned_mapper: Mapper
           - comments: Comments
           - map_status: Map Status
+          - additional_context: Additional Context
           - assigned_reviewer_first_last_name: Assigned Reviewer
           - no_map: No-Map
     - alwaysShowPaginator: false
@@ -83,7 +104,7 @@ template:
           - last_name: false
           - map_status: true
           - assigned_reviewer: false
-          - additional_context: false
+          - additional_context: true
           - first_name: false
           - uuid: false
           - concept_map_version_uuid: false
@@ -135,7 +156,7 @@ template:
     - paginationOffset: 0
     - columnAlignment:
         ordered:
-          - code: right
+          - code: left
     - columnSummaries:
         object: {}
     - showBoxShadow: false
@@ -202,7 +223,17 @@ template:
     - defaultSelectedRow: first
     - freezeActionButtonColumns: false
     - sort: null
-    - _columns: []
+    - _columns:
+        - uuid
+        - code
+        - display
+        - additional_data
+        - comments
+        - assigned_mapper
+        - map_status
+        - additional_context
+        - reason_for_no_map
+        - count_of_resources_affected
     - sortByRawValue:
         ordered: []
     - calculatedColumns: []
@@ -220,7 +251,7 @@ position2:
   position2:
     container: tabbedContainer1
     subcontainer: f61b2
-    row: 1.2
+    row: 0.5999999999999999
     height: 15
     width: 12
 createdAt: 2022-12-07T18:43:31.434Z
