@@ -10,7 +10,7 @@ template:
     - showInEditor: false
     - verticalAlign: center
     - tooltipText: ''
-    - value: '## **Concepts for Discussion** ##'
+    - value: '#### Concepts for Discussion'
     - disableMarkdown: false
     - overflowType: scroll
     - maintainSpaceWhenHidden: false

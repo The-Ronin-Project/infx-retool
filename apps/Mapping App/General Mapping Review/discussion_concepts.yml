@@ -17,17 +17,25 @@ template:
     - runWhenModelUpdates: true
     - showFailureToaster: true
     - query: >-
-        select sc.uuid, sc.code, sc.display, sc.comments, cr.review_comment,
-        cr.target_concept_code, cr.target_concept_display, pm.first_last_name 
+        select pmu.first_last_name as mapper, sc.uuid, sc.code, sc.display,
+        sc.comments, sc.additional_context, cr.review_comment,
+        cr.target_concept_code, cr.target_concept_display, ctc.additional_data,
+        ctc.additional_data->>'count_of_resources_affected' as
+        count_of_resources_affected from concept_maps.source_concept as sc
 
-        from concept_maps.source_concept sc
+        join project_management.user as pmu on sc.assigned_mapper = pmu.uuid
 
         left join concept_maps.concept_relationship cr on sc.uuid =
         cr.source_concept_uuid
 
-        join project_management.user pm on pm.uuid = sc.assigned_mapper
+        left join custom_terminologies.code ctc on sc.code=ctc.code
 
-        where sc.concept_map_version_uuid={{urlparams.concept_map_version_uuid}}
+        and sc.display = ctc.display
+
+        and cast(sc.system as uuid) = ctc.terminology_version_uuid
+
+        where sc.concept_map_version_uuid =
+        {{urlparams.concept_map_version_uuid}}
 
         and (sc.reason_for_no_map = 'Save for discussion' or
         sc.reason_for_no_map = 'Save for discusion' or cr.review_status = 'hold

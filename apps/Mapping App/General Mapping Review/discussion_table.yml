@@ -17,6 +17,33 @@ template:
         - object:
             id: code
             value: 192.6640625
+        - object:
+            id: additional_data
+            value: 42.5390625
+        - object:
+            id: __retool__action_list
+            value: 211
+        - object:
+            id: target_concept_display
+            value: 217
+        - object:
+            id: count_of_resources_affected
+            value: 117
+        - object:
+            id: target_concept_code
+            value: 159
+        - object:
+            id: display
+            value: 417.0390625
+        - object:
+            id: comments
+            value: 367
+        - object:
+            id: review_comment
+            value: 151
+        - object:
+            id: additional_context
+            value: 146
     - showSummaryFooter: false
     - disableRowSelectInteraction: false
     - columnWidthsMobile: []
@@ -30,19 +57,26 @@ template:
     - onRowAdded: ''
     - columnHeaderNames:
         ordered:
-          - Custom Column 1: Send back to mapping queue
-          - first_last_name: Mapper
-          - code: Source Code
+          - mapper: Mapper
           - display: Source Display
-          - review_comment: Review Comment
+          - additional_data: ℹ️
+          - first_last_name: Mapper
+          - count_of_resources_affected: Resource Count
+          - code: Source Code
           - target_concept_code: Target Code
-          - target_concept_display: Target Display
           - comments: Comments
+          - Custom Column 1: Send back to mapping queue
+          - additional_context: Additional Context
+          - review_comment: Review Comment
+          - target_concept_display: Target Display
     - alwaysShowPaginator: false
     - columnColors:
         ordered:
+          - mapper: ''
           - display: ''
+          - additional_data: ''
           - first_last_name: ''
+          - count_of_resources_affected: ''
           - code: ''
           - mapping_group: ''
           - system: ''
@@ -80,7 +114,7 @@ template:
           - last_name: false
           - map_status: false
           - assigned_reviewer: false
-          - additional_context: false
+          - additional_context: true
           - first_name: false
           - uuid: false
           - concept_map_version_uuid: false
@@ -193,11 +227,15 @@ template:
     - _columns:
         - code
         - display
-        - reason_for_no_map
+        - additional_data
         - comments
-        - first_last_name
-        - review_status
         - review_comment
+        - mapper
+        - uuid
+        - additional_context
+        - target_concept_code
+        - target_concept_display
+        - count_of_resources_affected
     - sortByRawValue:
         ordered: []
     - calculatedColumns: []
@@ -215,7 +253,7 @@ position2:
   position2:
     container: tabbedContainer1
     subcontainer: d4435
-    row: 1.1999999999999993
+    row: 0.5999999999999992
     height: 14.4
     width: 12
 createdAt: 2022-11-02T20:15:45.510Z
