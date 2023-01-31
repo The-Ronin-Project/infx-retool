@@ -21,17 +21,8 @@ template:
               ordered: []
     - columnWidths:
         - object:
-            id: code
-            value: 291
-        - object:
             id: relationship
             value: 177
-        - object:
-            id: display
-            value: 180
-        - object:
-            id: review_status
-            value: 140.671875
         - object:
             id: system
             value: 261
@@ -48,11 +39,29 @@ template:
             id: source_display
             value: 912
         - object:
-            id: mapping_comments
-            value: 44.421875
-        - object:
             id: mapping_uuid
             value: 316
+        - object:
+            id: additional_data
+            value: 43
+        - object:
+            id: code
+            value: 187
+        - object:
+            id: display
+            value: 235
+        - object:
+            id: mapping_comments
+            value: 83.421875
+        - object:
+            id: count_of_resources_affected
+            value: 95
+        - object:
+            id: __retool__action_list
+            value: 125
+        - object:
+            id: review_status
+            value: 115.671875
     - showSummaryFooter: false
     - disableRowSelectInteraction: false
     - columnWidthsMobile: []
@@ -63,7 +72,9 @@ template:
     - columnHeaderNames:
         ordered:
           - display: Source Display
+          - additional_data: ℹ️
           - mapping_comments: Mapping Comments
+          - count_of_resources_affected: Resource Count
           - author: Mapper
           - code: Source Code
           - mapping_group: Mapping_Group
@@ -88,10 +99,12 @@ template:
         ordered:
           - special_use: ''
           - display: ''
+          - additional_data: ''
           - relationship_system_uuid: ''
           - mapping_comments: ''
           - created_date: ''
           - relationship_code_uuid: ''
+          - count_of_resources_affected: ''
           - author: ''
           - mapping_uuid: ''
           - target_concept_system_version_uuid: ''
@@ -269,6 +282,7 @@ template:
     - _columns:
         - code
         - display
+        - additional_data
         - relationship_display
         - target_concept_code
         - target_concept_display
@@ -295,6 +309,7 @@ template:
         - target_concept_system_version_uuid
         - reviewed_by
         - review_comment
+        - count_of_resources_affected
     - sortByRawValue:
         ordered: []
     - calculatedColumns: []
