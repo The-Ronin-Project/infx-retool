@@ -11,7 +11,7 @@ template:
     - dynamicHeightsEnabled: true
     - itemHeight: '3'
     - overflowType: scroll
-    - instances: '3'
+    - instances: '{{ mapper_assignment_counts.data.first_last_name.length }}'
 style:
   ordered: []
 position2:
