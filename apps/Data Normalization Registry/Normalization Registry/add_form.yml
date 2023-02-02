@@ -1,0 +1,47 @@
+id: add_form
+type: widget
+subtype: FormWidget2
+template:
+  ordered:
+    - disableSubmit: >-
+        {{!resource_type_select.value || !data_element_input.value ||
+        concept_map_select.value === null || !source_extension_url.value}}
+    - heightType: fixed
+    - resetAfterSubmit: false
+    - submitting: false
+    - hidden: false
+    - data:
+        object: {}
+    - showHeader: true
+    - hoistFetching: true
+    - initialData: null
+    - showInEditor: false
+    - tooltipText: ''
+    - invalid: false
+    - showFooter: true
+    - events:
+        - ordered:
+            - event: submit
+            - type: datasource
+            - method: trigger
+            - pluginId: insert_registry
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - loading: false
+    - overflowType: scroll
+    - disabled: false
+    - requireValidation: true
+    - maintainSpaceWhenHidden: false
+    - showBody: true
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabbedContainer1
+    subcontainer: d7b26
+    height: 13.200000000000001
+    width: 12
+createdAt: 2022-10-05T20:21:28.969Z
