@@ -82,7 +82,27 @@ template:
             - event: success
             - type: datasource
             - method: trigger
-            - pluginId: approve_all_query_part_2
+            - pluginId: populate_review_queue
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: success
+            - type: widget
+            - method: clearValue
+            - pluginId: review_comment_all
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: success
+            - type: widget
+            - method: selectRow
+            - pluginId: review_queue
             - targetId: null
             - params:
                 ordered: []
