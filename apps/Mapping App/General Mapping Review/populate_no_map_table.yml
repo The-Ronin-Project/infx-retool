@@ -35,6 +35,8 @@ template:
 
         and sc.no_map = True
 
+        and sc.map_status = 'ready for review'
+
         and sc.reason_for_no_map != 'Save for discusion' 
 
         and sc.reason_for_no_map != 'Save for discussion'
