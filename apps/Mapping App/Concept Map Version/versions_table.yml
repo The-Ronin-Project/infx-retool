@@ -361,8 +361,8 @@ style:
 position2:
   position2:
     container: concept_maps_version
-    rowGroup: header
-    row: 1.4000000000000012
-    height: 9
+    subcontainer: '0'
+    row: 1.8318679906315083e-15
+    height: 17.8
     width: 12
 createdAt: 2022-03-04T20:18:04.515Z
