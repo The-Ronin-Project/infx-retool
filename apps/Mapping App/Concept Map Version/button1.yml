@@ -1,0 +1,35 @@
+id: button1
+type: widget
+subtype: ButtonWidget2
+template:
+  ordered:
+    - horizontalAlign: stretch
+    - clickable: false
+    - iconAfter: ''
+    - submitTargetId: null
+    - hidden: false
+    - text: >-
+        Create {{load_concept_map_version_metadata.data.title[0]}} version
+        {{version_input.value}}
+    - showInEditor: false
+    - tooltipText: ''
+    - styleVariant: solid
+    - submit: false
+    - iconBefore: ''
+    - events:
+        ordered: []
+    - loading: false
+    - loaderPosition: auto
+    - disabled: '{{description_input.value == ""}}'
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: concept_maps_version
+    subcontainer: '3'
+    row: 5.4
+    col: 8
+    height: 1
+    width: 4
+createdAt: 2023-02-08T22:03:43.772Z

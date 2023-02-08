@@ -3,7 +3,7 @@ type: widget
 subtype: NumberInputWidget
 template:
   ordered:
-    - readOnly: false
+    - readOnly: 'true'
     - iconAfter: ''
     - max: null
     - inputValue: null
@@ -21,10 +21,10 @@ template:
     - currency: USD
     - labelAlign: right
     - formDataKey: '{{ self.id }}'
-    - value: '0'
+    - value: '{{select_concept_map_version.data.version[0] + 1}}'
     - labelCaption: ''
     - min: null
-    - labelWidth: '33'
+    - labelWidth: '20'
     - placeholder: Enter a value
     - showStepper: true
     - label: version
@@ -38,7 +38,7 @@ template:
     - events:
         ordered: []
     - loading: false
-    - disabled: false
+    - disabled: ''
     - labelPosition: left
     - decimalPlaces: '0'
     - labelWrap: true
@@ -49,8 +49,10 @@ style:
   ordered: []
 position2:
   position2:
-    container: concept_map_version_form
-    row: 3
+    container: concept_maps_version
+    subcontainer: '3'
+    row: 2.8000000000000016
+    col: 5
     height: 1
-    width: 12
+    width: 7
 createdAt: 2022-03-04T20:18:04.703Z

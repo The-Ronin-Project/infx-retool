@@ -21,9 +21,9 @@ template:
     - formDataKey: '{{ self.id }}'
     - value: ''
     - labelCaption: ''
-    - labelWidth: '33'
+    - labelWidth: '20'
     - autoFill: ''
-    - placeholder: Enter a value
+    - placeholder: 'Description of the new version. '
     - label: description
     - _validate: false
     - labelWidthUnit: '%'
@@ -44,8 +44,10 @@ style:
   ordered: []
 position2:
   position2:
-    container: concept_map_version_form
-    row: 2
+    container: concept_maps_version
+    subcontainer: '3'
+    row: 3.8
+    col: 5
     height: 1
-    width: 12
+    width: 7
 createdAt: 2022-03-04T20:18:04.650Z
