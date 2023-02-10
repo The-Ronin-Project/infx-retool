@@ -22,6 +22,7 @@ template:
         where resource_uuid={{vs_metadata_table.selectedRow.data.uuid}}
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
+    - error: null
     - privateParams: []
     - runWhenPageLoadsDelay: ''
     - warningCodes: []

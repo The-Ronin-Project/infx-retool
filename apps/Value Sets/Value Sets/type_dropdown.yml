@@ -4,7 +4,7 @@ subtype: SelectWidget
 template:
   ordered:
     - enableClientSideMatching: true
-    - values: '[''intensional'', ''extensional'']'
+    - values: '[''intensional'']'
     - allowOutOfRangeValues: false
     - enableFuzzyMatching: true
     - searchValue: ''
@@ -25,8 +25,8 @@ template:
     - allowCustomValues: false
     - disabled: ''
     - hideClearButton: false
-    - required: false
-    - labels: '[''Intensional'', ''Extensional'']'
+    - required: true
+    - labels: '[''Intensional'']'
 style:
   ordered: []
 position2:

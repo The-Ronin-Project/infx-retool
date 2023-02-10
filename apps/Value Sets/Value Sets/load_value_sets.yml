@@ -35,6 +35,7 @@ template:
         order by value_set.name
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
+    - error: null
     - privateParams: []
     - triggersOnSuccess: []
     - runWhenPageLoadsDelay: ''
