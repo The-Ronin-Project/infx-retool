@@ -25,6 +25,7 @@ template:
         where vs.uuid = {{value_set_select.value}}
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
+    - error: null
     - privateParams: []
     - runWhenPageLoadsDelay: ''
     - warningCodes: []

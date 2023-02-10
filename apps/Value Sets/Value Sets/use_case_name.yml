@@ -19,6 +19,7 @@ template:
     - query: select name, uuid from project_management.use_case
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
+    - error: null
     - privateParams: []
     - runWhenPageLoadsDelay: ''
     - warningCodes: []

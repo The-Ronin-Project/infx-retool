@@ -23,6 +23,7 @@ template:
     - query: /ValueSets/{{value_set_select.value}}/duplicate
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
+    - error: null
     - privateParams: []
     - runWhenPageLoadsDelay: ''
     - data: null

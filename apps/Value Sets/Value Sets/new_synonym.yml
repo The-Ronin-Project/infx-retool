@@ -27,6 +27,7 @@ template:
         {{synonym_context_input.value}}, {{synonym_synonym_input.value}})
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
+    - error: null
     - privateParams: []
     - runWhenPageLoadsDelay: ''
     - warningCodes: []

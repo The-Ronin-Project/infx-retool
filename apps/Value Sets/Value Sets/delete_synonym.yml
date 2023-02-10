@@ -21,6 +21,7 @@ template:
         uuid={{synonym_table.selectedRow.data.uuid}}
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
+    - error: null
     - privateParams: []
     - runWhenPageLoadsDelay: ''
     - warningCodes: []
