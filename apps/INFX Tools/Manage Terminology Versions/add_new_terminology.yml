@@ -7,16 +7,8 @@ template:
   ordered:
     - queryRefreshTime: ''
     - paginationLimit: ''
-    - body: |-
-        [{
-            "terminology": {{new_name.value}},
-            "version": {{version.value}},
-            "effective_start": {{date_range.value.start}},
-            "effective_end": {{date_range.value.end}},
-            "fhir_uri":{{fhir_uri.value}},
-            "is_standard":{{is_standard.value}},
-            "fhir_terminology":{{is_fhir.value}}  
-        }]
+    - body: >-
+        [{"key":"terminology","value":"{{new_name.value}}"},{"key":"version","value":"{{version.value}}"},{"key":"effective_start","value":"{{date_range.value.start}}"},{"key":"effective_end","value":"{{date_range.value.end}}"},{"key":"fhir_uri","value":"{{fhir_uri.value}}"},{"key":"is_standard","value":"{{is_standard.value}}"},{"key":"fhir_terminology","value":"{{is_fhir.value}}"}]
     - lastReceivedFromResourceAt: null
     - queryDisabledMessage: ''
     - successMessage: ''
@@ -81,7 +73,7 @@ template:
     - changesetIsObject: false
     - enableCaching: false
     - allowedGroups: []
-    - bodyType: raw
+    - bodyType: json
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
