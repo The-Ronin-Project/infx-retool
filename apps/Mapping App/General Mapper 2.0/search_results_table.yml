@@ -23,6 +23,8 @@ template:
                 - optionLabels: ''
                 - optionColors: []
                 - optionValues: []
+          - code:
+              ordered: []
     - columnWidths:
         - object:
             id: rxcui
@@ -77,6 +79,7 @@ template:
         ordered:
           - rxcui: TextDataCell
           - tags: SingleTagDataCell
+          - code: TextDataCell
     - columnRestrictedEditing:
         ordered: []
     - showFilterButton: true
@@ -104,6 +107,7 @@ template:
         ordered:
           - rxcui: ''
           - tags: ''
+          - code: ''
     - _columnsWithLegacyBackgroundColor:
         set: []
     - showAddRowButton: false
@@ -145,6 +149,7 @@ template:
         ordered:
           - rxcui: left
           - tags: left
+          - code: left
     - columnSummaries:
         object: {}
     - showBoxShadow: false
@@ -172,6 +177,7 @@ template:
         ordered:
           - rxcui: ''
           - tags: ''
+          - code: ''
     - checkboxRowSelect: true
     - _compatibilityMode: false
     - showColumnBorders: false
