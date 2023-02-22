@@ -184,7 +184,7 @@ template:
             - actionButtonText: Manage Assignments
             - actionButtonType: openInternalUrl
             - actionButtonQuery: ''
-            - actionButtonInternalUrlPath: a9cc7ea0-3451-11ed-afb6-43e81142ad0a
+            - actionButtonInternalUrlPath: 6634caa0-8161-11ed-a103-6b5287048014
             - actionButtonInternalUrlQuery: >-
                 "[{\"key\":\"concept_map_version_uuid\",\"value\":\"{{versions_table.selectedRow.data.uuid}}\"}]"
             - actionButtonUrl: >-
