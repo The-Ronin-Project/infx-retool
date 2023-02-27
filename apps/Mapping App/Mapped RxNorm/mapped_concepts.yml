@@ -201,7 +201,7 @@ template:
             - actionButtonInternalUrlQuery: ''
             - actionButtonUrl: ''
             - actionButtonNewWindow: false
-            - actionButtonDisabled: ''
+            - actionButtonDisabled: '{{currentRow.review_status == ''rejected''}}'
     - actionButtonSelectsRow: true
     - selectRowByDefault: true
     - defaultSortByColumn: ''

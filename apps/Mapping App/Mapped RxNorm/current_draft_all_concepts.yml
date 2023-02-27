@@ -17,9 +17,10 @@ template:
     - runWhenModelUpdates: true
     - showFailureToaster: true
     - query: >-
-        select sc.*, cr.*, rc.display as relationship_display,
-        ctc.additional_data, ctc.additional_data->>'count_of_resources_affected'
-        as count_of_resources_affected from concept_maps.source_concept sc
+        select cr.uuid as mapping_uuid, sc.*, cr.*, rc.display as
+        relationship_display, ctc.additional_data,
+        ctc.additional_data->>'count_of_resources_affected' as
+        count_of_resources_affected from concept_maps.source_concept sc
 
         left join concept_maps.concept_relationship cr on
         sc.uuid=cr.source_concept_uuid
