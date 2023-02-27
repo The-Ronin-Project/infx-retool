@@ -196,7 +196,7 @@ template:
     - filterStackType: and
     - downloadRawData: false
     - showFetchingIndicator: true
-    - serverPaginated: true
+    - serverPaginated: false
     - data: '{{populate_review_queue.data}}'
     - displayedData: null
     - actionButtons: []
