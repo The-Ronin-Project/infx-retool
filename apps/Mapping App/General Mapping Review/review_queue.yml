@@ -21,6 +21,8 @@ template:
               ordered: []
           - Custom Column 1:
               ordered: []
+          - target_concept_code:
+              ordered: []
     - columnWidths:
         - object:
             id: mapping_comments
@@ -131,6 +133,7 @@ template:
           - source_display: TextMultiDataCell
           - mapping_comments: TextMultiDataCell
           - Custom Column 1: ModalDataCell
+          - target_concept_code: TextDataCell
     - columnRestrictedEditing:
         ordered: []
     - showFilterButton: true
@@ -176,6 +179,7 @@ template:
           - source_display: ''
           - mapping_comments: ''
           - Custom Column 1: ''
+          - target_concept_code: ''
     - _columnsWithLegacyBackgroundColor:
         set: []
     - showAddRowButton: false
@@ -206,6 +210,7 @@ template:
           - source_display: left
           - mapping_comments: left
           - Custom Column 1: left
+          - target_concept_code: left
     - columnSummaries:
         object: {}
     - showBoxShadow: false
@@ -230,6 +235,7 @@ template:
           - source_display: ''
           - mapping_comments: ''
           - Custom Column 1: ''
+          - target_concept_code: ''
     - checkboxRowSelect: true
     - _compatibilityMode: false
     - showColumnBorders: false
