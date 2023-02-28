@@ -1,0 +1,19 @@
+id: bugReporting1
+type: widget
+subtype: GlobalWidget
+template:
+  ordered:
+    - showFetchingIndicator: boolean
+    - heightType: auto
+    - name: Bug Reporting
+    - pageUuid: 0eaa8960-b6d5-11ed-8108-eff60e0cb731
+    - childNamespace: bugReporting1
+style:
+  ordered: []
+position2:
+  position2:
+    row: 17.2
+    col: 4
+    height: 2.4
+    width: 8
+createdAt: 2023-02-28T23:43:27.688Z
