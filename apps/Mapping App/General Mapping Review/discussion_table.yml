@@ -12,7 +12,9 @@ template:
     - rowHeight: standard
     - saveChangesDisabled: ''
     - columnTypeProperties:
-        ordered: []
+        ordered:
+          - target_concept_code:
+              ordered: []
     - columnWidths:
         - object:
             id: code
@@ -101,6 +103,7 @@ template:
     - columnFormats:
         ordered:
           - Custom Column 1: button
+          - target_concept_code: TextDataCell
     - columnRestrictedEditing:
         ordered: []
     - showFilterButton: true
@@ -120,7 +123,8 @@ template:
           - concept_map_version_uuid: false
           - no_map: false
     - _columnSummaryTypes:
-        ordered: []
+        ordered:
+          - target_concept_code: ''
     - _columnsWithLegacyBackgroundColor:
         set: []
     - showAddRowButton: false
@@ -158,6 +162,7 @@ template:
         ordered:
           - code: left
           - Custom Column 1: left
+          - target_concept_code: right
     - columnSummaries:
         object: {}
     - showBoxShadow: false
@@ -177,7 +182,8 @@ template:
         object: {}
     - sortedColumn: ''
     - _columnSummaryValues:
-        ordered: []
+        ordered:
+          - target_concept_code: ''
     - checkboxRowSelect: true
     - _compatibilityMode: false
     - showColumnBorders: false
