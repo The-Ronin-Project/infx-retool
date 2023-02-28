@@ -22,6 +22,7 @@ style:
 position2:
   position2:
     container: Mapper_listView2
+    row: 0.8
     col: 3
     height: 0.6
     width: 3
