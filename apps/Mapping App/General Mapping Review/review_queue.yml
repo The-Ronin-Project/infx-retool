@@ -23,40 +23,44 @@ template:
               ordered: []
           - target_concept_code:
               ordered: []
+          - target_concept_display:
+              ordered: []
+          - relationship_display:
+              ordered: []
     - columnWidths:
-        - object:
-            id: mapping_comments
-            value: 255.5
         - object:
             id: display
             value: 436
         - object:
-            id: target_concept_display
-            value: 551
-        - object:
             id: __retool__action_list
             value: 124
-        - object:
-            id: target_concept_code
-            value: 153.15625
-        - object:
-            id: additional_data
-            value: 77
-        - object:
-            id: source_display
-            value: 541.15625
         - object:
             id: count_of_resources_affected
             value: 119
         - object:
-            id: source_code
-            value: 124
+            id: source_display
+            value: 739.15625
         - object:
-            id: relationship_display
-            value: 218.171875
+            id: source_code
+            value: 253
+        - object:
+            id: additional_data
+            value: 397
         - object:
             id: author
-            value: 127
+            value: 138
+        - object:
+            id: mapping_comments
+            value: 217.5
+        - object:
+            id: target_concept_display
+            value: 424
+        - object:
+            id: relationship_display
+            value: 215.171875
+        - object:
+            id: target_concept_code
+            value: 225.15625
     - showSummaryFooter: false
     - disableRowSelectInteraction: false
     - columnWidthsMobile: []
@@ -134,6 +138,8 @@ template:
           - mapping_comments: TextMultiDataCell
           - Custom Column 1: ModalDataCell
           - target_concept_code: TextDataCell
+          - target_concept_display: TextMultiDataCell
+          - relationship_display: TextMultiDataCell
     - columnRestrictedEditing:
         ordered: []
     - showFilterButton: true
@@ -145,6 +151,7 @@ template:
           - relationship_system_uuid: false
           - created_date: false
           - relationship_code_uuid: false
+          - count_of_resources_affected: false
           - source_code_uuid: false
           - author: true
           - mapping_uuid: false
@@ -180,6 +187,8 @@ template:
           - mapping_comments: ''
           - Custom Column 1: ''
           - target_concept_code: ''
+          - target_concept_display: ''
+          - relationship_display: ''
     - _columnsWithLegacyBackgroundColor:
         set: []
     - showAddRowButton: false
@@ -211,6 +220,8 @@ template:
           - mapping_comments: left
           - Custom Column 1: left
           - target_concept_code: left
+          - target_concept_display: left
+          - relationship_display: left
     - columnSummaries:
         object: {}
     - showBoxShadow: false
@@ -222,7 +233,7 @@ template:
     - pageSize: '20'
     - useDynamicColumnSettings: false
     - actionButtonPosition: right
-    - dynamicRowHeights: false
+    - dynamicRowHeights: true
     - bulkUpdateAction: ''
     - afterCursor: ''
     - onCustomButtonPressQueryName: ''
@@ -236,6 +247,8 @@ template:
           - mapping_comments: ''
           - Custom Column 1: ''
           - target_concept_code: ''
+          - target_concept_display: ''
+          - relationship_display: ''
     - checkboxRowSelect: true
     - _compatibilityMode: false
     - showColumnBorders: false
@@ -287,7 +300,6 @@ template:
         - concept_map_version_uuid
         - source_code
         - source_display
-        - additional_data
         - display
         - relationship_display
         - target_concept_code
@@ -302,6 +314,7 @@ template:
         - created_date
         - reviewed_date
         - author
+        - additional_data
         - source_concept_uuid
         - relationship_code_uuid
         - target_concept_system_version_uuid
@@ -322,6 +335,7 @@ template:
         - resource_count
         - source_system
         - terminology_version_uuid
+        - count_of_resources_affected
     - sortByRawValue:
         ordered: []
     - calculatedColumns: []
@@ -340,6 +354,6 @@ position2:
     container: tabbedContainer1
     subcontainer: '2e213'
     row: 1.6000000000000223
-    height: 16.8
+    height: 24.2
     width: 12
 createdAt: 2022-10-05T18:46:24.842Z
