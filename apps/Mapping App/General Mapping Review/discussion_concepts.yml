@@ -17,11 +17,11 @@ template:
     - runWhenModelUpdates: true
     - showFailureToaster: true
     - query: >-
-        select pmu.first_last_name as mapper, sc.uuid, sc.code, sc.display,
-        sc.comments, sc.additional_context, cr.review_comment,
-        cr.target_concept_code, cr.target_concept_display, ctc.additional_data,
-        ctc.additional_data->>'count_of_resources_affected' as
-        count_of_resources_affected from concept_maps.source_concept as sc
+        select cr.author, pmu.first_last_name as assigned_mapper, sc.uuid,
+        sc.code, sc.display, sc.comments, sc.additional_context,
+        cr.review_comment, cr.target_concept_code, cr.target_concept_display,
+        ctc.additional_data, ctc.additional_data->>'count_of_resources_affected'
+        as count_of_resources_affected from concept_maps.source_concept as sc
 
         join project_management.user as pmu on sc.assigned_mapper = pmu.uuid
 

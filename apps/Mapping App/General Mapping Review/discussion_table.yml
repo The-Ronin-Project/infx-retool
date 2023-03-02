@@ -12,7 +12,9 @@ template:
     - rowHeight: standard
     - saveChangesDisabled: ''
     - columnTypeProperties:
-        ordered: []
+        ordered:
+          - target_concept_code:
+              ordered: []
     - columnWidths:
         - object:
             id: code
@@ -44,6 +46,9 @@ template:
         - object:
             id: additional_context
             value: 146
+        - object:
+            id: assigned_mapper
+            value: 144
     - showSummaryFooter: false
     - disableRowSelectInteraction: false
     - columnWidthsMobile: []
@@ -62,8 +67,10 @@ template:
           - additional_data: ℹ️
           - first_last_name: Mapper
           - count_of_resources_affected: Resource Count
+          - author: Author
           - code: Source Code
           - target_concept_code: Target Code
+          - assigned_mapper: Assigned Mapper
           - comments: Comments
           - Custom Column 1: Send back to mapping queue
           - additional_context: Additional Context
@@ -77,6 +84,7 @@ template:
           - additional_data: ''
           - first_last_name: ''
           - count_of_resources_affected: ''
+          - author: ''
           - code: ''
           - mapping_group: ''
           - system: ''
@@ -101,6 +109,7 @@ template:
     - columnFormats:
         ordered:
           - Custom Column 1: button
+          - target_concept_code: TextDataCell
     - columnRestrictedEditing:
         ordered: []
     - showFilterButton: true
@@ -109,7 +118,7 @@ template:
           - first_last_name: true
           - mapping_group: false
           - system: false
-          - assigned_mapper: false
+          - assigned_mapper: true
           - comments: true
           - last_name: false
           - map_status: false
@@ -120,7 +129,8 @@ template:
           - concept_map_version_uuid: false
           - no_map: false
     - _columnSummaryTypes:
-        ordered: []
+        ordered:
+          - target_concept_code: ''
     - _columnsWithLegacyBackgroundColor:
         set: []
     - showAddRowButton: false
@@ -158,6 +168,7 @@ template:
         ordered:
           - code: left
           - Custom Column 1: left
+          - target_concept_code: right
     - columnSummaries:
         object: {}
     - showBoxShadow: false
@@ -177,7 +188,8 @@ template:
         object: {}
     - sortedColumn: ''
     - _columnSummaryValues:
-        ordered: []
+        ordered:
+          - target_concept_code: ''
     - checkboxRowSelect: true
     - _compatibilityMode: false
     - showColumnBorders: false
