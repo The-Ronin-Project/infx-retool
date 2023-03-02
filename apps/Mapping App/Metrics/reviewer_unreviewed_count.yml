@@ -28,7 +28,7 @@ template:
         where sc.concept_map_version_uuid =
         {{urlparams.concept_map_version_uuid}}
 
-        and sc.map_status = 'ready for review'
+        and (cr.review_status is null or cr.review_status = 'ready for review')
 
         group by pmu.first_last_name, sc.assigned_reviewer
     - playgroundQueryUuid: ''
