@@ -10,7 +10,7 @@ template:
     - showInEditor: false
     - verticalAlign: center
     - tooltipText: ''
-    - value: '## {{total_count.data.count}}'
+    - value: '## {{unassigned_count.data.unassigned_count}}'
     - style:
         ordered:
           - color: rgb(36, 59, 83)
