@@ -64,6 +64,7 @@ template:
         - ''
         - ''
         - ''
+    - hovered: false
     - loading: false
     - overflowType: hidden
     - disabled: ''
