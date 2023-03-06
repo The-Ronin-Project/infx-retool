@@ -1,4 +1,4 @@
-id: text13
+id: text43
 type: widget
 subtype: TextWidget2
 template:
@@ -10,7 +10,7 @@ template:
     - showInEditor: false
     - verticalAlign: center
     - tooltipText: ''
-    - value: '{{ mapper_assignment_counts.data.first_last_name[i] }}'
+    - value: '{{mapper_no_assigments_count.data.count[i]}}'
     - disableMarkdown: false
     - overflowType: scroll
     - maintainSpaceWhenHidden: false
@@ -18,8 +18,9 @@ style:
   ordered: []
 position2:
   position2:
-    container: Mapper_listView2
-    row: 1.4
+    container: unassigned_mapper_listView
+    row: 0.8
+    col: 9
     height: 0.6
     width: 3
-createdAt: 2023-01-20T23:10:54.356Z
+createdAt: 2023-03-06T19:51:37.267Z
