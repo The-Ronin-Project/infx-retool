@@ -73,7 +73,7 @@ template:
             value: 247
         - object:
             id: published_date
-            value: 237.203125
+            value: 277.203125
     - showSummaryFooter: false
     - disableRowSelectInteraction: false
     - columnWidthsMobile: []
@@ -180,6 +180,15 @@ template:
     - data: '{{ select_concept_map_version.data }}'
     - displayedData: null
     - actionButtons:
+        - ordered:
+            - actionButtonText: Metrics
+            - actionButtonType: openInternalUrl
+            - actionButtonQuery: ''
+            - actionButtonInternalUrlPath: 4f40fa80-9908-11ed-b92d-27dfee9843c6
+            - actionButtonInternalUrlQuery: ''
+            - actionButtonUrl: ''
+            - actionButtonNewWindow: false
+            - actionButtonDisabled: ''
         - ordered:
             - actionButtonText: Manage Assignments
             - actionButtonType: openInternalUrl
