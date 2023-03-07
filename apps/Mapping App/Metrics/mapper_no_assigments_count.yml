@@ -1,4 +1,4 @@
-id: unassigned_count
+id: mapper_no_assigments_count
 type: datasource
 subtype: SqlQueryUnified
 resourceName: dc8029bc-3980-4836-841e-776c64eeca49
@@ -17,10 +17,27 @@ template:
     - resourceNameOverride: ''
     - runWhenModelUpdates: true
     - showFailureToaster: true
-    - query: |-
-        select count(*) as unassigned_count from concept_maps.source_concept
-        where assigned_mapper is null
-        and concept_map_version_uuid = {{urlparams.concept_map_version_uuid}}
+    - query: >-
+        select cr.author, count(cr.author) from concept_maps.source_concept sc 
+
+        join concept_maps.concept_relationship cr on
+        sc.uuid=cr.source_concept_uuid
+
+        where sc.concept_map_version_uuid =
+        {{urlparams.concept_map_version_uuid}}
+
+        and cr.author not IN
+
+        (select pmu.first_last_name from concept_maps.source_concept sc 
+
+        join project_management.user pmu on pmu.uuid=sc.assigned_mapper
+
+        where sc.concept_map_version_uuid =
+        {{urlparams.concept_map_version_uuid}}
+
+        group by pmu.first_last_name)
+
+        group by cr.author
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
@@ -92,4 +109,4 @@ template:
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2023-01-20T22:22:23.520Z
+createdAt: 2023-03-06T18:49:59.989Z
