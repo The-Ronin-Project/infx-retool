@@ -61,6 +61,7 @@ template:
         - ''
         - ''
         - ''
+    - hovered: false
     - loading: false
     - overflowType: scroll
     - disabled: false
