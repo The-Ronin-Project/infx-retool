@@ -36,7 +36,7 @@ template:
 
         and sc.no_map = True
 
-        and sc.map_status = 'no_map'
+        and sc.map_status = 'no map'
 
         and sc.reason_for_no_map != 'Save for discusion' 
 
