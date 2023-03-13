@@ -10,6 +10,7 @@ template:
     - lastReceivedFromResourceAt: null
     - databasePasswordOverride: ''
     - queryDisabledMessage: ''
+    - servedFromCache: false
     - successMessage: ''
     - queryDisabled: ''
     - playgroundQuerySaveId: latest
@@ -32,9 +33,11 @@ template:
     - cacheKeyTtl: ''
     - filterBy: >-
         [{"key":"uuid","value":"{{mapping_queue.selectedRow.data.uuid}}","operation":"="}]
+    - requestSentTimestamp: null
     - databaseHostOverride: ''
     - metadata: null
     - editorMode: gui
+    - queryRunTime: null
     - actionType: UPDATE_BY
     - changesetObject: ''
     - shouldUseLegacySql: false
@@ -45,11 +48,12 @@ template:
         // example: return data.find(element => element.isError)
 
         return data.error
+    - finished: null
     - databaseNameOverride: ''
     - confirmationMessage: null
     - isFetching: false
     - changeset: >-
-        [{"key":"no_map","value":"true"},{"key":"reason_for_no_map","value":"{{no_map.selectedItem.label}}"},{"key":"comments","value":"{{no_map_reason_input.value}}"}]
+        [{"key":"no_map","value":"true"},{"key":"reason_for_no_map","value":"{{no_map.selectedItem.label}}"},{"key":"comments","value":"{{no_map_reason_input.value}}"},{"key":"map_status","value":"no_map"}]
     - rawData: null
     - queryTriggerDelay: '0'
     - resourceTypeOverride: null
@@ -112,6 +116,7 @@ template:
     - databaseUsernameOverride: ''
     - shouldEnableBatchQuerying: false
     - doNotThrowOnNoOp: false
+    - offlineQueryType: None
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''

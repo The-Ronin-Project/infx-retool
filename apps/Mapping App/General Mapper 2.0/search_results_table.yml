@@ -21,8 +21,10 @@ template:
                 - colorMode: auto
                 - allowCustomValue: true
                 - optionLabels: ''
-                - optionColors: []
-                - optionValues: []
+                - optionColors:
+                    array: []
+                - optionValues:
+                    array: []
           - code:
               ordered: []
     - columnWidths:
