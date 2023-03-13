@@ -29,6 +29,7 @@ template:
         - ''
         - ''
         - ''
+    - overlayMinWidth: null
     - hidden: false
     - data:
         array: []
