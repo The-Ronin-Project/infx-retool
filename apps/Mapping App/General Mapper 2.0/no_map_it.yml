@@ -53,7 +53,8 @@ template:
     - confirmationMessage: null
     - isFetching: false
     - changeset: >-
-        [{"key":"no_map","value":"true"},{"key":"reason_for_no_map","value":"{{no_map.selectedItem.label}}"},{"key":"comments","value":"{{no_map_reason_input.value}}"},{"key":"map_status","value":"no_map"}]
+        [{"key":"no_map","value":"true"},{"key":"reason_for_no_map","value":"{{no_map.selectedItem.label}}"},{"key":"comments","value":"{{no_map_reason_input.value}}"},{"key":"map_status","value":"no
+        map"}]
     - rawData: null
     - queryTriggerDelay: '0'
     - resourceTypeOverride: null
