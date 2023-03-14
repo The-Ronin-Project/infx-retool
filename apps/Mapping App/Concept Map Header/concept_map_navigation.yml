@@ -153,14 +153,15 @@ template:
                   - valueToCopy: ''
                   - internalUrlHashParams: ''
                   - exportFileType: csv
-                  - buttonType: action
+                  - buttonType: internal-url
                   - exportTemplate: null
                   - url: ''
                   - newWindow: false
                   - exportQuery: ''
                   - action: ''
-                  - internalUrlQuery: ''
-                  - internalUrlPath: ''
+                  - internalUrlQuery: >-
+                      "[{\"key\":\"\\\"concept_map_version_uuid\\\"\",\"value\":\"{{urlparams.concept_map_version_uuid}}\"}]"
+                  - internalUrlPath: 8c727660-4690-11ed-8fd4-0f8700d37ab7
                   - exportFileName: ''
                   - disabled: ''
             - hidden: ''
