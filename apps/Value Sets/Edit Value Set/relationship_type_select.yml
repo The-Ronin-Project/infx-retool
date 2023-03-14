@@ -15,6 +15,7 @@ template:
     - iconAfter: ''
     - _iconByIndex: []
     - wrapTags: true
+    - overlayMinWidth: null
     - selectedIndexes:
         array: []
     - selectedItems:

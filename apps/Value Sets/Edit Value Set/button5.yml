@@ -22,7 +22,7 @@ template:
             - pluginId: ''
             - params:
                 ordered:
-                  - uuid: 2852e280-638a-11ec-8b00-e7805aea3133
+                  - uuid: a02baa80-6f4b-11ed-abb1-87a066ddb8d5
                   - options:
                       ordered:
                         - queryParams:

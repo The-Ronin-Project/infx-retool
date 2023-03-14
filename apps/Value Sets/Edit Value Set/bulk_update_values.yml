@@ -12,6 +12,7 @@ template:
     - lastReceivedFromResourceAt: null
     - databasePasswordOverride: ''
     - queryDisabledMessage: ''
+    - servedFromCache: false
     - successMessage: ''
     - queryDisabled: '{{version_metadata.data.status[0]==''active''}}'
     - playgroundQuerySaveId: latest
@@ -36,9 +37,11 @@ template:
     - dataArray: []
     - cacheKeyTtl: ''
     - filterBy: ''
+    - requestSentTimestamp: null
     - databaseHostOverride: ''
     - metadata: null
     - editorMode: gui
+    - queryRunTime: null
     - actionType: BULK_UPDATE_BY_KEY
     - triggersOnFailure: []
     - changesetObject: ''
@@ -50,6 +53,7 @@ template:
         // example: return data.find(element => element.isError)
 
         return data.error
+    - finished: null
     - databaseNameOverride: ''
     - confirmationMessage: null
     - isFetching: false
@@ -95,6 +99,7 @@ template:
     - databaseUsernameOverride: ''
     - shouldEnableBatchQuerying: false
     - doNotThrowOnNoOp: false
+    - offlineQueryType: None
     - queryThrottleTime: '750'
     - updateSetValueDynamically: true
     - notificationDuration: ''
