@@ -35,6 +35,7 @@ template:
         - ''
         - ''
         - ''
+    - overlayMinWidth: null
     - allowDeselect: true
     - inputValue: ''
     - hidden: false

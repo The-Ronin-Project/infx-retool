@@ -10,6 +10,7 @@ template:
     - body: ''
     - lastReceivedFromResourceAt: null
     - queryDisabledMessage: ''
+    - servedFromCache: false
     - successMessage: ''
     - queryDisabled: '{{version_metadata.data.status[0] == ''active''}}'
     - playgroundQuerySaveId: latest
@@ -31,8 +32,10 @@ template:
     - isImported: false
     - showSuccessToaster: true
     - cacheKeyTtl: ''
+    - requestSentTimestamp: null
     - cookies: ''
     - metadata: null
+    - queryRunTime: null
     - changesetObject: ''
     - errorTransformer: >-
         // The variable 'data' allows you to reference the request's data in the
@@ -41,6 +44,7 @@ template:
         // example: return data.find(element => element.isError)
 
         return data.error
+    - finished: null
     - confirmationMessage: null
     - isFetching: false
     - changeset: ''
@@ -91,6 +95,7 @@ template:
     - enableCaching: false
     - allowedGroups: []
     - bodyType: json
+    - offlineQueryType: None
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
