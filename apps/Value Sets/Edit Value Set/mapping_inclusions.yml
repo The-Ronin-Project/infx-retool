@@ -93,7 +93,9 @@ template:
             - actionButtonInternalUrlQuery: ''
             - actionButtonUrl: ''
             - actionButtonNewWindow: false
-            - actionButtonDisabled: ''
+            - actionButtonDisabled: >-
+                {{ ['active', 'obsolete',
+                'retired'].includes(version_metadata.data.status[0])}}
     - actionButtonSelectsRow: true
     - selectRowByDefault: true
     - defaultSortByColumn: ''
