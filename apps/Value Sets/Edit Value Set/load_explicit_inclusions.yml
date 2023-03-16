@@ -25,9 +25,9 @@ template:
 
         on code.uuid = code_uuid
 
-        join terminology_versions tv
+        join public.terminology_versions tv
 
-        on tv.uuid = terminology_version
+        on tv.uuid = terminology_version_uuid
 
         where vs_version_uuid={{urlparams.uuid}}
     - playgroundQueryUuid: ''
