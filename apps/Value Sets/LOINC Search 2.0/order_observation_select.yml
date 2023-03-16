@@ -10,6 +10,7 @@ template:
         - ''
         - ''
         - false
+        - false
     - showActions: false
     - showSelectionIndicator: true
     - _values:
@@ -17,11 +18,13 @@ template:
         - Observation
         - Both
         - 'null'
+        - ''''''
     - iconByIndex:
         array: []
     - values:
         array: []
     - _iconByIndex:
+        - ''
         - ''
         - ''
         - ''
@@ -40,6 +43,7 @@ template:
     - fallbackTextByIndex:
         array: []
     - _fallbackTextByIndex:
+        - ''
         - ''
         - ''
         - ''
@@ -63,7 +67,9 @@ template:
         - ''
         - ''
         - false
+        - false
     - _captionByIndex:
+        - ''
         - ''
         - ''
         - ''
@@ -83,7 +89,9 @@ template:
         - ''
         - ''
         - ''
+        - ''
     - _colorByIndex:
+        - ''
         - ''
         - ''
         - ''
@@ -99,6 +107,7 @@ template:
         - 369db
         - 6d484
         - '22468'
+        - e6bc2
     - emptyMessage: ''
     - selectedLabels:
         array: []
@@ -110,6 +119,7 @@ template:
         - ''
         - ''
         - ''
+        - Empty
     - labelWrap: false
     - disabledValues:
         array: []
@@ -117,6 +127,7 @@ template:
         array: []
     - maintainSpaceWhenHidden: false
     - _imageByIndex:
+        - ''
         - ''
         - ''
         - ''
