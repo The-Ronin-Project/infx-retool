@@ -10,6 +10,7 @@ template:
     - lastReceivedFromResourceAt: null
     - databasePasswordOverride: ''
     - queryDisabledMessage: ''
+    - servedFromCache: false
     - successMessage: ''
     - queryDisabled: ''
     - playgroundQuerySaveId: latest
@@ -20,12 +21,15 @@ template:
         select count(sc.assigned_reviewer), cm.title,cmv.uuid as version_uuid
         from concept_maps.source_concept sc
 
+        join concept_maps.concept_relationship cr on
+        cr.source_concept_uuid=sc.uuid
+
         join concept_maps.concept_map_version cmv on sc.concept_map_version_uuid
         = cmv.uuid
 
         join concept_maps.concept_map cm on cmv.concept_map_uuid = cm.uuid
 
-        where sc.map_status = 'ready for review'
+        where cr.review_status = 'ready for review'
 
         and sc.assigned_reviewer = {{current_user_uuid.data.uuid[0]}}
 
@@ -45,9 +49,11 @@ template:
     - dataArray: []
     - cacheKeyTtl: ''
     - filterBy: ''
+    - requestSentTimestamp: null
     - databaseHostOverride: ''
     - metadata: null
     - editorMode: sql
+    - queryRunTime: null
     - actionType: ''
     - changesetObject: ''
     - shouldUseLegacySql: false
@@ -58,6 +64,7 @@ template:
         // example: return data.find(element => element.isError)
 
         return data.error
+    - finished: null
     - databaseNameOverride: ''
     - confirmationMessage: null
     - isFetching: false
@@ -94,6 +101,7 @@ template:
     - databaseUsernameOverride: ''
     - shouldEnableBatchQuerying: false
     - doNotThrowOnNoOp: false
+    - offlineQueryType: None
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''

@@ -6,5 +6,5 @@ appTemplate:
     object:
       batchCommitModelEnabled: false
   rootScreen: null
-  version: 2.103.2
+  version: 2.110.3
   markdownLinkBehavior: auto
