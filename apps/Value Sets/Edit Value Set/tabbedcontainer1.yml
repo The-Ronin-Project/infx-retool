@@ -6,6 +6,12 @@ template:
     - heightType: fixed
     - spinWhenChildrenAreFetching: true
     - unmountInactiveTabs: false
+    - style:
+        ordered:
+          - primary-surface: rgb(240, 244, 248)
+          - primary-text: rgb(16, 42, 67)
+          - primary-foreground: rgb(72, 101, 129)
+          - primary-background: rgb(188, 204, 220)
     - tabNames: >-
         ["Rules","Mapping Inclusions","Explicitly Included
         Codes","Expansion","Review"]
