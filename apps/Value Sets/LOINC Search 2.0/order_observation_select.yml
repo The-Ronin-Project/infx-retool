@@ -17,8 +17,8 @@ template:
         - Order
         - Observation
         - Both
-        - 'null'
         - ''''''
+        - 'null'
     - iconByIndex:
         array: []
     - values:
@@ -106,8 +106,8 @@ template:
         - 9a86c
         - 369db
         - 6d484
-        - '22468'
         - e6bc2
+        - '22468'
     - emptyMessage: ''
     - selectedLabels:
         array: []
@@ -118,8 +118,8 @@ template:
         - ''
         - ''
         - ''
-        - ''
         - Empty
+        - ''
     - labelWrap: false
     - disabledValues:
         array: []
