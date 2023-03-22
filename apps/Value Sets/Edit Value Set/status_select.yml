@@ -5,15 +5,27 @@ template:
   ordered:
     - imageByIndex:
         array: []
-    - _disabledByIndex: []
+    - _disabledByIndex:
+        - false
+        - false
+        - false
+        - false
     - showSelectionIndicator: true
-    - _values: []
+    - _values:
+        - reviewed
+        - in progress
+        - retired
+        - obsolete
     - iconByIndex:
         array: []
     - values: '{{ item }}'
     - readOnly: false
     - iconAfter: ''
-    - _iconByIndex: []
+    - _iconByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
     - overlayMinWidth: null
     - allowDeselect: true
     - inputValue: ''
@@ -25,7 +37,11 @@ template:
     - fallbackTextByIndex:
         array: []
     - textBefore: ''
-    - _fallbackTextByIndex: []
+    - _fallbackTextByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
     - selectedItem: null
     - validationMessage: ''
     - automaticItemColors: false
@@ -44,22 +60,38 @@ template:
     - labelWidth: '33'
     - deprecatedLabels:
         array: []
-    - _hiddenByIndex: []
+    - _hiddenByIndex:
+        - false
+        - false
+        - false
+        - false
     - placeholder: Select an option
-    - _captionByIndex: []
+    - _captionByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
     - itemAdornmentSize: auto
     - label: Status
     - _hasMigratedNestedItems: true
     - captionByIndex:
         array: []
     - _validate: false
-    - itemMode: dynamic
+    - itemMode: static
     - labelWidthUnit: '%'
     - allowCustomValue: false
     - invalid: false
     - selectedIndex: null
-    - _tooltipByIndex: []
-    - _colorByIndex: []
+    - _tooltipByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+    - _colorByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
     - tooltipByIndex:
         array: []
     - iconBefore: ''
@@ -76,20 +108,32 @@ template:
                 ordered: []
             - waitType: debounce
             - waitMs: '0'
-    - _ids: []
+    - _ids:
+        - 400fc
+        - 9d103
+        - 91fe5
+        - 984c2
     - emptyMessage: ''
     - overlayMaxHeight: null
     - loading: false
     - disabled: ''
     - labelPosition: left
-    - _labels: []
+    - _labels:
+        - ''
+        - ''
+        - ''
+        - ''
     - labelWrap: false
     - disabledValues:
         array: []
     - disabledByIndex:
         array: []
     - maintainSpaceWhenHidden: false
-    - _imageByIndex: []
+    - _imageByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
     - required: false
     - labels: '{{ _.startCase(item) }}'
 style:
@@ -97,6 +141,7 @@ style:
 position2:
   position2:
     container: tabbedcontainer1
+    row: 1
     height: 1
     width: 4
     tabNum: 4
