@@ -127,7 +127,7 @@ template:
     - useDynamicColumnSettings: false
     - style:
         ordered:
-          - headerBackground: rgb(217, 226, 236)
+          - headerBackground: rgba(217, 226, 236, 0.6)
           - headerText: rgb(130, 154, 177)
           - toolbarText: rgb(130, 154, 177)
     - actionButtonPosition: right
