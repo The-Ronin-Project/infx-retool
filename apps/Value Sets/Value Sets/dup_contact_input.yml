@@ -1,7 +1,6 @@
 id: dup_contact_input
 type: widget
 subtype: TextInputWidget2
-resourceName: null
 template:
   ordered:
     - spellCheck: false
@@ -49,8 +48,8 @@ style:
 position2:
   position2:
     container: tabbedcontainer1
-    row: 21
+    subcontainer: '2'
+    row: 22.999999999999996
     height: 1
     width: 12
-    tabNum: 2
 createdAt: 2022-01-25T22:36:05.975Z

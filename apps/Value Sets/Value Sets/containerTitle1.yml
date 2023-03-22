@@ -1,7 +1,6 @@
 id: containerTitle1
 type: widget
 subtype: TextWidget2
-resourceName: null
 template:
   ordered:
     - heightType: auto
@@ -12,6 +11,9 @@ template:
     - verticalAlign: center
     - tooltipText: ''
     - value: '#### Create New Use Case'
+    - style:
+        ordered:
+          - links: rgb(159, 179, 200)
     - disableMarkdown: false
     - overflowType: scroll
     - maintainSpaceWhenHidden: false
@@ -23,5 +25,5 @@ position2:
     rowGroup: header
     row: 0.20000000000000034
     height: 0.6
-    width: 6
+    width: 9
 createdAt: 2022-06-22T21:29:40.890Z

@@ -11,6 +11,7 @@ template:
         [{"key":"name","value":"{{name_input_dup.value}}"},{"key":"title","value":"{{title_input_dup.value}}"},{"key":"contact","value":"{{dup_contact_input.value}}"},{"key":"value_set_description","value":"{{dup_description_input.value}}"},{"key":"purpose","value":"{{dup_purpose_input.value}}"},{"key":"version_description","value":"{{dup_version_description.value}}"}]
     - lastReceivedFromResourceAt: null
     - queryDisabledMessage: ''
+    - servedFromCache: false
     - successMessage: ''
     - queryDisabled: ''
     - playgroundQuerySaveId: latest
@@ -32,8 +33,10 @@ template:
     - isImported: false
     - showSuccessToaster: true
     - cacheKeyTtl: ''
+    - requestSentTimestamp: null
     - cookies: ''
     - metadata: null
+    - queryRunTime: null
     - changesetObject: ''
     - errorTransformer: >-
         // The variable 'data' allows you to reference the request's data in the
@@ -42,6 +45,7 @@ template:
         // example: return data.find(element => element.isError)
 
         return data.error
+    - finished: null
     - confirmationMessage: null
     - isFetching: false
     - changeset: ''
@@ -107,6 +111,7 @@ template:
     - enableCaching: false
     - allowedGroups: []
     - bodyType: json
+    - offlineQueryType: None
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''

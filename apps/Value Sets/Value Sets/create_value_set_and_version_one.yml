@@ -11,6 +11,7 @@ template:
         [{"key":"name","value":"{{name_input.value}}"},{"key":"title","value":"{{title_input.value}}"},{"key":"publisher","value":"{{publisher.value}}"},{"key":"contact","value":"{{contact_input.value}}"},{"key":"value_set_description","value":"{{value_set_description.value}}"},{"key":"immutable","value":"false"},{"key":"experimental","value":"{{experimental_checkbox.value}}"},{"key":"purpose","value":"{{purpose_input.value}}"},{"key":"type","value":"{{type_dropdown.value}}"},{"key":"version_description","value":"{{version_description_input.value}}"},{"key":"use_case_uuid","value":"{{select_use.value}}"}]
     - lastReceivedFromResourceAt: null
     - queryDisabledMessage: ''
+    - servedFromCache: false
     - successMessage: ''
     - queryDisabled: ''
     - playgroundQuerySaveId: latest
@@ -32,8 +33,10 @@ template:
     - isImported: false
     - showSuccessToaster: true
     - cacheKeyTtl: ''
+    - requestSentTimestamp: null
     - cookies: ''
     - metadata: null
+    - queryRunTime: null
     - changesetObject: ''
     - errorTransformer: >-
         // The variable 'data' allows you to reference the request's data in the
@@ -42,6 +45,7 @@ template:
         // example: return data.find(element => element.isError)
 
         return data.error
+    - finished: null
     - confirmationMessage: null
     - isFetching: false
     - changeset: ''
@@ -94,6 +98,7 @@ template:
     - enableCaching: false
     - allowedGroups: []
     - bodyType: json
+    - offlineQueryType: None
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''

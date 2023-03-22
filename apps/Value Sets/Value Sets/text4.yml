@@ -1,7 +1,6 @@
 id: text4
 type: widget
 subtype: TextWidget2
-resourceName: null
 template:
   ordered:
     - heightType: auto
@@ -20,7 +19,8 @@ style:
 position2:
   position2:
     container: tabbedcontainer1
-    row: 12.199999999999996
+    subcontainer: '0'
+    row: 12.399999999999995
     col: 8
     height: 0.6
     width: 3

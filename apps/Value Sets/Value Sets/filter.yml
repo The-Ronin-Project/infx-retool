@@ -1,7 +1,6 @@
 id: filter
 type: widget
 subtype: TextInputWidget2
-resourceName: null
 template:
   ordered:
     - spellCheck: false
@@ -49,6 +48,8 @@ style:
 position2:
   position2:
     container: tabbedcontainer1
+    subcontainer: '0'
+    row: 0.39999999999999997
     height: 1
     width: 12
 createdAt: 2022-01-07T19:38:53.740Z

@@ -14,6 +14,7 @@ template:
     - readOnly: false
     - iconAfter: ''
     - _iconByIndex: []
+    - overlayMinWidth: null
     - allowDeselect: true
     - inputValue: ''
     - hidden: false
@@ -87,7 +88,7 @@ style:
 position2:
   position2:
     container: form1
-    row: 8.6
+    row: 12.4
     col: 3
     height: 1
     width: 6

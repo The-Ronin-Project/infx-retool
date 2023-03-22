@@ -1,28 +1,28 @@
-id: button3
+id: link1
 type: widget
-subtype: ButtonWidget2
+subtype: LinkWidget
 template:
   ordered:
-    - horizontalAlign: stretch
+    - horizontalAlign: left
     - clickable: false
     - iconAfter: ''
-    - submitTargetId: null
     - hidden: false
-    - text: Duplicate
+    - text: Dashboard
+    - showUnderline: always
     - showInEditor: false
     - tooltipText: ''
-    - styleVariant: solid
-    - submit: false
-    - iconBefore: ''
+    - allowWrap: false
+    - iconBefore: line/interface-arrows-turn-backward
     - events:
         - ordered:
             - event: click
-            - type: datasource
-            - method: trigger
-            - pluginId: duplication_api
+            - type: util
+            - method: openApp
+            - pluginId: ''
             - targetId: null
             - params:
-                ordered: []
+                ordered:
+                  - uuid: 3b52c88c-6488-11ed-b9e7-8f03ff165179
             - waitType: debounce
             - waitMs: '0'
     - loading: false
@@ -34,9 +34,8 @@ style:
 position2:
   position2:
     container: tabbedcontainer1
-    subcontainer: '2'
-    row: 25.799999999999997
-    col: 7
-    height: 1
-    width: 5
-createdAt: 2022-07-28T17:31:32.732Z
+    rowGroup: header
+    col: 11
+    height: 0.6
+    width: 1
+createdAt: 2023-03-22T17:49:42.211Z

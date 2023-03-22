@@ -40,7 +40,9 @@ template:
         ordered: []
     - onRowAdded: ''
     - columnHeaderNames:
-        ordered: []
+        ordered:
+          - title: Title
+          - description: Description
     - alwaysShowPaginator: false
     - columnColors:
         ordered:
@@ -159,6 +161,11 @@ template:
     - showRefreshButton: true
     - pageSize: 15
     - useDynamicColumnSettings: false
+    - style:
+        ordered:
+          - headerBackground: rgba(217, 226, 236, 0.5)
+          - headerText: rgb(130, 154, 177)
+          - toolbarText: rgb(130, 154, 177)
     - actionButtonPosition: right
     - dynamicRowHeights: false
     - bulkUpdateAction: ''
@@ -288,7 +295,8 @@ style:
 position2:
   position2:
     container: tabbedcontainer1
-    row: 1
+    subcontainer: '0'
+    row: 1.6
     height: 18.400000000000002
     width: 8
 createdAt: 2021-10-01T16:34:17.643Z

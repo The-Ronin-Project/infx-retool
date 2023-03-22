@@ -1,7 +1,6 @@
 id: text7
 type: widget
 subtype: TextWidget2
-resourceName: null
 template:
   ordered:
     - heightType: auto
@@ -20,7 +19,7 @@ style:
 position2:
   position2:
     container: form1
-    row: 10.8
+    row: 11.4
     height: 0.6
     width: 3
 createdAt: 2022-07-27T18:30:58.139Z
