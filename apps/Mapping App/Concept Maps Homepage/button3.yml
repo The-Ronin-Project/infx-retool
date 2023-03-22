@@ -1,4 +1,4 @@
-id: button1
+id: button3
 type: widget
 subtype: ButtonWidget2
 template:
@@ -8,7 +8,7 @@ template:
     - iconAfter: ''
     - submitTargetId: null
     - hidden: false
-    - text: Duplicate Value Set
+    - text: Create New Concept Map
     - showInEditor: false
     - tooltipText: ''
     - styleVariant: solid
@@ -19,7 +19,8 @@ template:
             - event: click
             - type: datasource
             - method: trigger
-            - pluginId: load_concept_map_metadata
+            - pluginId: create_new_concept_map
+            - targetId: null
             - params:
                 ordered: []
             - waitType: debounce
@@ -32,10 +33,9 @@ style:
   ordered: []
 position2:
   position2:
-    container: tabbedcontainer1
-    subcontainer: '2'
-    row: 24.799999999999997
-    col: 9
+    container: form1
+    row: 15.4
+    col: 8
     height: 1
-    width: 3
-createdAt: 2022-01-25T22:26:32.535Z
+    width: 4
+createdAt: 2023-03-22T18:22:16.575Z
