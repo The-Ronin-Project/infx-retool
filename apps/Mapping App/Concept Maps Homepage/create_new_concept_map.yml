@@ -12,6 +12,7 @@ template:
         Ronin\""},{"key":"author","value":"{{current_user.fullName}}"},{"key":"use_case_uuid","value":"{{use_case.value}}"},{"key":"cm_description","value":"{{description_text_input.value}}"},{"key":"experimental","value":"{{experimental_check_box.value}}"},{"key":"source_value_set_uuid","value":"{{source_terminology.value}}"},{"key":"target_value_set_uuid","value":"{{target_terminology.value}}"},{"key":"cm_version_description","value":"{{version_description.value}}"},{"key":"source_value_set_version_uuid","value":"{{source_terminology_version.value}}"},{"key":"target_value_set_version_uuid","value":"{{target_terminology_version.value}}"}]
     - lastReceivedFromResourceAt: null
     - queryDisabledMessage: ''
+    - servedFromCache: false
     - successMessage: ''
     - queryDisabled: ''
     - playgroundQuerySaveId: latest
@@ -33,8 +34,10 @@ template:
     - isImported: false
     - showSuccessToaster: true
     - cacheKeyTtl: ''
+    - requestSentTimestamp: null
     - cookies: ''
     - metadata: null
+    - queryRunTime: null
     - changesetObject: ''
     - errorTransformer: >-
         // The variable 'data' allows you to reference the request's data in the
@@ -43,6 +46,7 @@ template:
         // example: return data.find(element => element.isError)
 
         return data.error
+    - finished: null
     - confirmationMessage: null
     - isFetching: false
     - changeset: ''
@@ -200,6 +204,7 @@ template:
     - enableCaching: false
     - allowedGroups: []
     - bodyType: json
+    - offlineQueryType: None
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''

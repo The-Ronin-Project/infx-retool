@@ -43,6 +43,10 @@ template:
           - publisher: false
           - description: false
           - purpose: true
+    - style:
+        ordered:
+          - primary-background: rgb(217, 226, 236)
+          - primary-foreground: rgb(130, 154, 177)
     - prevRowFormats:
         ordered: []
     - rowMappers:

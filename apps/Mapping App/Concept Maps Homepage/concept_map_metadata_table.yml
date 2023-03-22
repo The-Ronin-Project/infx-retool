@@ -27,9 +27,6 @@ template:
             id: name
             value: 272.40625
         - object:
-            id: __retool__action_list
-            value: 329.09375
-        - object:
             id: description
             value: 337.09375
         - object:
@@ -37,10 +34,13 @@ template:
             value: 150
         - object:
             id: author
-            value: 152.765625
+            value: 222.765625
+        - object:
+            id: __retool__action_list
+            value: 154.09375
         - object:
             id: title
-            value: 479.71875
+            value: 442.71875
     - showSummaryFooter: false
     - disableRowSelectInteraction: false
     - columnWidthsMobile: []
@@ -49,7 +49,9 @@ template:
         ordered: []
     - onRowAdded: ''
     - columnHeaderNames:
-        ordered: []
+        ordered:
+          - title: Title
+          - author: Author
     - alwaysShowPaginator: false
     - columnColors:
         ordered:
@@ -173,6 +175,10 @@ template:
     - showRefreshButton: true
     - pageSize: 19
     - useDynamicColumnSettings: false
+    - style:
+        ordered:
+          - headerBackground: rgb(217, 226, 236)
+          - headerText: rgb(130, 154, 177)
     - actionButtonPosition: right
     - dynamicRowHeights: false
     - bulkUpdateAction: ''

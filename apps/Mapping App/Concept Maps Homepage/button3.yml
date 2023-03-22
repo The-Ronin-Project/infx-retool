@@ -1,4 +1,4 @@
-id: button2
+id: button3
 type: widget
 subtype: ButtonWidget2
 template:
@@ -8,13 +8,9 @@ template:
     - iconAfter: ''
     - submitTargetId: null
     - hidden: false
-    - text: Save
+    - text: Create New Concept Map
     - showInEditor: false
     - tooltipText: ''
-    - style:
-        ordered:
-          - background: rgb(159, 179, 200)
-          - label: rgb(240, 244, 248)
     - styleVariant: solid
     - submit: false
     - iconBefore: ''
@@ -23,16 +19,8 @@ template:
             - event: click
             - type: datasource
             - method: trigger
-            - pluginId: new_synonym
-            - params:
-                ordered: []
-            - waitType: debounce
-            - waitMs: '0'
-        - ordered:
-            - event: click
-            - type: widget
-            - method: close
-            - pluginId: modal1
+            - pluginId: create_new_concept_map
+            - targetId: null
             - params:
                 ordered: []
             - waitType: debounce
@@ -45,9 +33,9 @@ style:
   ordered: []
 position2:
   position2:
-    container: modal1
-    row: 6.199999999999999
-    col: 4
+    container: form1
+    row: 15.4
+    col: 8
     height: 1
-    width: 8
-createdAt: 2022-02-17T19:04:46.435Z
+    width: 4
+createdAt: 2023-03-22T18:22:16.575Z

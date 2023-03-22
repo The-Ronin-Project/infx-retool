@@ -24,7 +24,7 @@ style:
 position2:
   position2:
     container: form1
-    row: 4.800000000000001
+    row: 6
     col: 3
     height: 0.6
     width: 2

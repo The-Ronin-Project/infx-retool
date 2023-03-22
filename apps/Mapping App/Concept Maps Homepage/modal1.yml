@@ -10,8 +10,11 @@ template:
     - tooltipText: ''
     - style:
         ordered:
-          - accent-background: '#6a6a6a'
-    - modalHeight: ''
+          - accent-background: rgb(159, 179, 200)
+          - primary-text: rgb(51, 78, 104)
+          - primary-surface: rgb(240, 244, 248)
+          - accent-foreground: rgb(240, 244, 248)
+    - modalHeight: 400xp
     - onModalOpen: ''
     - modalWidth: ''
     - closeOnOutsideClick: false

@@ -23,6 +23,10 @@ template:
         array: []
     - showInEditor: null
     - tooltipText: ''
+    - style:
+        ordered:
+          - background: rgb(240, 244, 248)
+          - headerBackground: rgb(217, 226, 236)
     - hiddenByIndex:
         array: []
     - _hiddenByIndex:
@@ -58,6 +62,7 @@ template:
         - ''
         - ''
         - ''
+    - hovered: false
     - loading: false
     - overflowType: hidden
     - disabled: ''
@@ -65,6 +70,9 @@ template:
         - Browse Existing Concept Maps
         - Create A New Concept Map
         - Duplicate Existing Concept Map
+    - styleContext:
+        ordered:
+          - textDark: rgb(51, 78, 104)
     - disabledByIndex:
         array: []
     - maintainSpaceWhenHidden: null
@@ -75,6 +83,7 @@ style:
   ordered: []
 position2:
   position2:
-    height: 25.8
+    row: 1
+    height: 27.4
     width: 12
 createdAt: 2021-10-01T16:33:49.853Z

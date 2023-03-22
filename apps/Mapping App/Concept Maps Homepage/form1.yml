@@ -17,6 +17,9 @@ template:
     - initialData: null
     - showInEditor: null
     - tooltipText: ''
+    - style:
+        ordered:
+          - background: rgb(240, 244, 248)
     - invalid: false
     - showFooter: true
     - events:
@@ -41,6 +44,6 @@ position2:
   position2:
     container: tabbedcontainer1
     subcontainer: '1'
-    height: 17.8
+    height: 19.399999999999995
     width: 12
 createdAt: 2021-10-11T18:28:16.438Z
