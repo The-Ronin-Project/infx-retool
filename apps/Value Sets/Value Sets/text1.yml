@@ -1,7 +1,6 @@
 id: text1
 type: widget
 subtype: TextWidget2
-resourceName: null
 template:
   ordered:
     - heightType: auto
@@ -22,7 +21,7 @@ style:
 position2:
   position2:
     container: tabbedcontainer1
+    subcontainer: '2'
     height: 0.6
     width: 12
-    tabNum: 2
 createdAt: 2022-01-25T22:15:01.886Z

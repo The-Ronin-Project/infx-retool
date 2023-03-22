@@ -1,7 +1,6 @@
 id: keyvaluemap1
 type: widget
 subtype: KeyValueMapWidget
-resourceName: null
 template:
   ordered:
     - rowHeaderNames:
@@ -43,6 +42,11 @@ template:
           - publisher: true
           - description: true
           - purpose: true
+    - style:
+        ordered:
+          - primary-surface: '#ffffff'
+          - primary-foreground: rgb(130, 154, 177)
+          - primary-background: rgb(217, 226, 236)
     - prevRowFormats:
         ordered:
           - hyperlink: link
@@ -81,7 +85,8 @@ style:
 position2:
   position2:
     container: tabbedcontainer1
-    row: 1
+    subcontainer: '0'
+    row: 1.6
     col: 8
     height: 10.800000000000002
     width: 4

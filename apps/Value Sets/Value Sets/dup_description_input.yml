@@ -1,7 +1,6 @@
 id: dup_description_input
 type: widget
 subtype: TextInputWidget2
-resourceName: null
 template:
   ordered:
     - spellCheck: false
@@ -49,8 +48,8 @@ style:
 position2:
   position2:
     container: tabbedcontainer1
-    row: 19
+    subcontainer: '2'
+    row: 20.2
     height: 1
     width: 12
-    tabNum: 2
 createdAt: 2022-01-25T22:35:35.105Z

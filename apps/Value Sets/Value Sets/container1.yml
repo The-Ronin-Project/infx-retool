@@ -19,6 +19,9 @@ template:
         array: []
     - showInEditor: false
     - tooltipText: ''
+    - style:
+        ordered:
+          - headerBackground: rgb(217, 226, 236)
     - hiddenByIndex:
         array: []
     - _hiddenByIndex:
@@ -44,6 +47,7 @@ template:
         array: []
     - _iconPositionByIndex:
         - ''
+    - hovered: false
     - loading: false
     - overflowType: scroll
     - disabled: false

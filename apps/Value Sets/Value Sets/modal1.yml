@@ -1,7 +1,6 @@
 id: modal1
 type: widget
 subtype: ModalWidget
-resourceName: null
 template:
   ordered:
     - opened: false
@@ -11,7 +10,8 @@ template:
     - tooltipText: ''
     - style:
         ordered:
-          - accent-background: '#6a6a6a'
+          - accent-background: rgb(159, 179, 200)
+          - accent-foreground: rgb(240, 244, 248)
     - modalHeight: ''
     - onModalOpen: ''
     - modalWidth: ''
@@ -24,8 +24,9 @@ style:
 position2:
   position2:
     container: tabbedcontainer1
-    row: 19.000000000000004
-    col: 9
+    subcontainer: '0'
+    row: 20.000000000000004
+    col: 10
     height: 1
-    width: 3
+    width: 2
 createdAt: 2022-02-17T19:02:04.242Z

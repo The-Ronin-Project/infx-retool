@@ -1,7 +1,6 @@
 id: keyValue1
 type: widget
 subtype: KeyValueMapWidget
-resourceName: null
 template:
   ordered:
     - rowHeaderNames:
@@ -43,6 +42,10 @@ template:
           - description: true
           - purpose: true
           - queryExecutionMetadata: true
+    - style:
+        ordered:
+          - primary-background: rgb(217, 226, 236)
+          - primary-foreground: rgb(130, 154, 177)
     - prevRowFormats:
         ordered: []
     - rowMappers:
@@ -81,9 +84,9 @@ style:
 position2:
   position2:
     container: tabbedcontainer1
+    subcontainer: '2'
     row: 3.0000000000000004
     col: 2
     height: 13.199999999999998
     width: 10
-    tabNum: 2
 createdAt: 2022-07-28T17:10:42.579Z

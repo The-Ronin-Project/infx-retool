@@ -125,6 +125,11 @@ template:
     - showRefreshButton: true
     - pageSize: 3
     - useDynamicColumnSettings: false
+    - style:
+        ordered:
+          - headerBackground: rgb(217, 226, 236)
+          - headerText: rgb(130, 154, 177)
+          - toolbarText: rgb(130, 154, 177)
     - actionButtonPosition: right
     - dynamicRowHeights: false
     - bulkUpdateAction: ''
@@ -221,8 +226,9 @@ style:
 position2:
   position2:
     container: tabbedcontainer1
-    row: 12.799999999999997
+    subcontainer: '0'
+    row: 12.999999999999996
     col: 8
-    height: 6
+    height: 7
     width: 4
 createdAt: 2022-02-17T18:08:38.790Z
