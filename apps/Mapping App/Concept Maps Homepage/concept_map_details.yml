@@ -39,6 +39,11 @@ template:
           - publisher: true
           - description: true
           - purpose: true
+    - style:
+        ordered:
+          - primary-background: rgb(217, 226, 236)
+          - primary-text: rgb(51, 78, 104)
+          - primary-foreground: rgb(130, 154, 177)
     - prevRowFormats:
         ordered: []
     - rowMappers:
@@ -75,6 +80,7 @@ position2:
   position2:
     container: tabbedcontainer1
     subcontainer: '0'
+    row: 0.2
     col: 8
     height: 16.200000000000003
     width: 4

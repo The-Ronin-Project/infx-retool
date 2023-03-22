@@ -13,7 +13,8 @@ template:
     - tooltipText: ''
     - style:
         ordered:
-          - background: '#3c92dc'
+          - background: rgb(159, 179, 200)
+          - label: rgb(240, 244, 248)
     - styleVariant: solid
     - submit: false
     - iconBefore: ''
@@ -45,7 +46,7 @@ style:
 position2:
   position2:
     container: modal1
-    row: 3.2
+    row: 6.199999999999999
     col: 4
     height: 1
     width: 8

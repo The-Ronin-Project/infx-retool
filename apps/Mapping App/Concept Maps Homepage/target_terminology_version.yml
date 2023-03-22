@@ -12,6 +12,7 @@ template:
     - readOnly: false
     - iconAfter: ''
     - _iconByIndex: []
+    - overlayMinWidth: null
     - allowDeselect: false
     - inputValue: ''
     - hidden: false

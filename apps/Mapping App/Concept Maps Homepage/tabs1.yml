@@ -28,6 +28,10 @@ template:
     - showInEditor: false
     - navigateContainer: true
     - value: '{{ self.values[0] }}'
+    - style:
+        ordered:
+          - selectedBackground: rgba(240, 244, 248, 0.7)
+          - unselectedText: rgb(98, 125, 152)
     - hiddenByIndex:
         array: []
     - _hiddenByIndex:
@@ -74,5 +78,5 @@ position2:
     container: tabbedcontainer1
     rowGroup: header
     height: 0.8
-    width: 12
+    width: 11
 createdAt: 2022-10-27T19:34:23.482Z
