@@ -19,6 +19,8 @@ template:
               ordered: []
           - source_code:
               ordered: []
+          - display:
+              ordered: []
     - columnWidths:
         - object:
             id: relationship
@@ -141,8 +143,9 @@ template:
     - columnFormats:
         ordered:
           - target_concept_code: TextDataCell
-          - code: TextDataCell
+          - code: TextMultiDataCell
           - source_code: TextDataCell
+          - display: TextMultiDataCell
     - columnRestrictedEditing:
         ordered: []
     - showFilterButton: true
@@ -173,6 +176,7 @@ template:
           - target_concept_code: ''
           - code: ''
           - source_code: ''
+          - display: ''
     - _columnsWithLegacyBackgroundColor:
         set: []
     - showAddRowButton: false
@@ -235,6 +239,7 @@ template:
           - target_concept_code: ''
           - code: ''
           - source_code: ''
+          - display: ''
     - checkboxRowSelect: true
     - _compatibilityMode: false
     - showColumnBorders: false
