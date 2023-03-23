@@ -10,8 +10,10 @@ template:
         - false
         - false
         - false
+        - false
     - showSelectionIndicator: true
     - _values:
+        - active
         - reviewed
         - in progress
         - retired
@@ -22,6 +24,7 @@ template:
     - readOnly: false
     - iconAfter: ''
     - _iconByIndex:
+        - ''
         - ''
         - ''
         - ''
@@ -38,6 +41,7 @@ template:
         array: []
     - textBefore: ''
     - _fallbackTextByIndex:
+        - ''
         - ''
         - ''
         - ''
@@ -65,8 +69,10 @@ template:
         - false
         - false
         - false
+        - false
     - placeholder: Select an option
     - _captionByIndex:
+        - ''
         - ''
         - ''
         - ''
@@ -87,7 +93,9 @@ template:
         - ''
         - ''
         - ''
+        - ''
     - _colorByIndex:
+        - ''
         - ''
         - ''
         - ''
@@ -109,6 +117,7 @@ template:
             - waitType: debounce
             - waitMs: '0'
     - _ids:
+        - efccb
         - 400fc
         - 9d103
         - 91fe5
@@ -123,6 +132,7 @@ template:
         - ''
         - ''
         - ''
+        - ''
     - labelWrap: false
     - disabledValues:
         array: []
@@ -130,6 +140,7 @@ template:
         array: []
     - maintainSpaceWhenHidden: false
     - _imageByIndex:
+        - ''
         - ''
         - ''
         - ''
