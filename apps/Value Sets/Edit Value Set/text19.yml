@@ -1,4 +1,4 @@
-id: text1
+id: text19
 type: widget
 subtype: TextWidget2
 template:
@@ -10,9 +10,11 @@ template:
     - showInEditor: false
     - verticalAlign: center
     - tooltipText: ''
-    - value: 'UUID of Value Set Version: {{urlparams.uuid}}'
-    - style:
-        ordered: []
+    - value: >-
+        The button below will set the status of Version
+        **{{version_metadata.data.version}}**of
+        **{{version_metadata.data.title[0].trim()}}** to 'active' and publish it
+        to OCI. This action can not be undone.
     - disableMarkdown: false
     - overflowType: scroll
     - maintainSpaceWhenHidden: false
@@ -21,7 +23,8 @@ style:
 position2:
   position2:
     container: tabbedcontainer1
-    row: 25.4
-    height: 1
-    width: 8
-createdAt: 2021-10-01T16:47:33.487Z
+    row: 7.799999999999999
+    height: 0.6
+    width: 4
+    tabNum: 4
+createdAt: 2023-03-23T16:34:10.619Z

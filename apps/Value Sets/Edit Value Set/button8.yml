@@ -34,8 +34,7 @@ style:
 position2:
   position2:
     container: tabbedcontainer1
-    row: 1
-    col: 6
+    row: 9.8
     height: 1
     width: 3
     tabNum: 4

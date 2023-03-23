@@ -61,6 +61,7 @@ template:
         array: []
     - allowSearch: true
     - labelCaption: ''
+    - hideLabel: false
     - labelWidth: '33'
     - deprecatedLabels:
         array: []
@@ -152,7 +153,7 @@ style:
 position2:
   position2:
     container: tabbedcontainer1
-    row: 1
+    row: 2
     height: 1
     width: 4
     tabNum: 4
