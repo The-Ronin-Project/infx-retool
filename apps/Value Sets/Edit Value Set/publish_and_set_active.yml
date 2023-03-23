@@ -15,7 +15,7 @@ template:
     - queryDisabled: ''
     - playgroundQuerySaveId: latest
     - resourceNameOverride: ''
-    - runWhenModelUpdates: true
+    - runWhenModelUpdates: false
     - paginationPaginationField: ''
     - headers: ''
     - showFailureToaster: true
@@ -81,7 +81,7 @@ template:
             - waitMs: '0'
     - queryTimeout: '10000'
     - requireConfirmation: false
-    - type: GET
+    - type: POST
     - queryFailureConditions: ''
     - changesetIsObject: false
     - enableCaching: false
