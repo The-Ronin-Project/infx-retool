@@ -15,12 +15,12 @@ template:
     - queryDisabled: ''
     - playgroundQuerySaveId: latest
     - resourceNameOverride: ''
-    - runWhenModelUpdates: true
+    - runWhenModelUpdates: false
     - paginationPaginationField: ''
     - headers: ''
     - showFailureToaster: true
     - paginationEnabled: false
-    - query: ValueSets/{{{ version_metadata.data.value_set_uuid }}}/published
+    - query: ValueSets/{{urlparams.uuid}}/published
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
@@ -68,10 +68,20 @@ template:
         20)
 
         return data
-    - events: []
+    - events:
+        - ordered:
+            - event: success
+            - type: util
+            - method: confetti
+            - pluginId: ''
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
     - queryTimeout: '10000'
     - requireConfirmation: false
-    - type: GET
+    - type: POST
     - queryFailureConditions: ''
     - changesetIsObject: false
     - enableCaching: false
