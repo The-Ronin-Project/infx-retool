@@ -1,4 +1,4 @@
-id: publish_and_set_active
+id: oci_status_check
 type: datasource
 subtype: RESTQuery
 resourceName: a00335cd-bd3b-4d98-8af4-7ff590ce95e8
@@ -15,12 +15,12 @@ template:
     - queryDisabled: ''
     - playgroundQuerySaveId: latest
     - resourceNameOverride: ''
-    - runWhenModelUpdates: false
+    - runWhenModelUpdates: true
     - paginationPaginationField: ''
     - headers: ''
     - showFailureToaster: true
     - paginationEnabled: false
-    - query: ValueSets/{{urlparams.uuid}}/published
+    - query: ValueSets/{{urlparams.uuid}}/published?return_content=false
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
@@ -50,7 +50,7 @@ template:
     - changeset: ''
     - rawData: null
     - queryTriggerDelay: '0'
-    - resourceTypeOverride: ''
+    - resourceTypeOverride: null
     - watchedParams: []
     - enableErrorTransformer: false
     - showLatestVersionUpdatedWarning: false
@@ -68,40 +68,10 @@ template:
         20)
 
         return data
-    - events:
-        - ordered:
-            - event: success
-            - type: util
-            - method: confetti
-            - pluginId: ''
-            - targetId: null
-            - params:
-                ordered: []
-            - waitType: debounce
-            - waitMs: '0'
-        - ordered:
-            - event: success
-            - type: datasource
-            - method: trigger
-            - pluginId: oci_status_check
-            - targetId: null
-            - params:
-                ordered: []
-            - waitType: debounce
-            - waitMs: '0'
-        - ordered:
-            - event: success
-            - type: datasource
-            - method: trigger
-            - pluginId: version_metadata
-            - targetId: null
-            - params:
-                ordered: []
-            - waitType: debounce
-            - waitMs: '0'
+    - events: []
     - queryTimeout: '10000'
     - requireConfirmation: false
-    - type: POST
+    - type: GET
     - queryFailureConditions: ''
     - changesetIsObject: false
     - enableCaching: false
@@ -111,4 +81,4 @@ template:
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2023-03-22T15:10:53.309Z
+createdAt: 2023-03-23T21:32:11.454Z

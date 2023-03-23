@@ -1,18 +1,16 @@
-id: text1
+id: text21
 type: widget
 subtype: TextWidget2
 template:
   ordered:
     - heightType: auto
     - horizontalAlign: left
-    - hidden: false
+    - hidden: '{{oci_status_check.metadata}}'
     - imageWidth: fit
     - showInEditor: false
     - verticalAlign: center
     - tooltipText: ''
-    - value: 'UUID of Value Set Version: {{urlparams.uuid}}'
-    - style:
-        ordered: []
+    - value: ❌ Could not verify publication to OCI
     - disableMarkdown: false
     - overflowType: scroll
     - maintainSpaceWhenHidden: false
@@ -21,7 +19,8 @@ style:
 position2:
   position2:
     container: tabbedcontainer1
-    row: 25.4
-    height: 1
-    width: 8
-createdAt: 2021-10-01T16:47:33.487Z
+    row: 12.2
+    height: 0.6
+    width: 3
+    tabNum: 4
+createdAt: 2023-03-23T22:11:53.758Z

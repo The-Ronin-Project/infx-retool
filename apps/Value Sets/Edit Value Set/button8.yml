@@ -15,7 +15,16 @@ template:
     - submit: false
     - iconBefore: ''
     - events:
-        ordered: []
+        - ordered:
+            - event: click
+            - type: datasource
+            - method: trigger
+            - pluginId: publish_and_set_active
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
     - loading: false
     - loaderPosition: auto
     - disabled: false
@@ -25,8 +34,7 @@ style:
 position2:
   position2:
     container: tabbedcontainer1
-    row: 1
-    col: 6
+    row: 9.8
     height: 1
     width: 3
     tabNum: 4

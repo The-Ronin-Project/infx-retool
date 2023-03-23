@@ -1,4 +1,4 @@
-id: text8
+id: text14
 type: widget
 subtype: TextWidget2
 template:
@@ -10,7 +10,7 @@ template:
     - showInEditor: false
     - verticalAlign: center
     - tooltipText: ''
-    - value: Add view which explicitly shows new codes and codes that will be removed
+    - value: '#### Update Status'
     - disableMarkdown: false
     - overflowType: scroll
     - maintainSpaceWhenHidden: false
@@ -19,8 +19,8 @@ style:
 position2:
   position2:
     container: tabbedcontainer1
-    row: 4.4
+    row: 0.39999999999999997
     height: 0.6
     width: 3
     tabNum: 4
-createdAt: 2022-02-04T22:37:34.899Z
+createdAt: 2023-03-23T16:26:49.889Z
