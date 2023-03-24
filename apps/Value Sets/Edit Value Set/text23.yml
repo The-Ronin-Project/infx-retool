@@ -1,16 +1,16 @@
-id: text21
+id: text23
 type: widget
 subtype: TextWidget2
 template:
   ordered:
     - heightType: auto
     - horizontalAlign: left
-    - hidden: '{{oci_status_check.metadata}}'
+    - hidden: '{{!version_metadata.data.status =="active"}}'
     - imageWidth: fit
     - showInEditor: false
     - verticalAlign: center
     - tooltipText: ''
-    - value: ❌ Could not verify publication to OCI
+    - value: ✅ Version status 'active'
     - disableMarkdown: false
     - overflowType: scroll
     - maintainSpaceWhenHidden: false
@@ -19,8 +19,8 @@ style:
 position2:
   position2:
     container: tabbedcontainer1
-    row: 13
+    row: 11
     height: 0.6
     width: 3
     tabNum: 4
-createdAt: 2023-03-23T22:11:53.758Z
+createdAt: 2023-03-24T16:38:06.325Z

@@ -10,10 +10,8 @@ template:
         - false
         - false
         - false
-        - false
     - showSelectionIndicator: true
     - _values:
-        - active
         - reviewed
         - in progress
         - retired
@@ -24,7 +22,6 @@ template:
     - readOnly: false
     - iconAfter: ''
     - _iconByIndex:
-        - ''
         - ''
         - ''
         - ''
@@ -41,7 +38,6 @@ template:
         array: []
     - textBefore: ''
     - _fallbackTextByIndex:
-        - ''
         - ''
         - ''
         - ''
@@ -70,16 +66,14 @@ template:
         - false
         - false
         - false
-        - false
     - placeholder: Select an option
     - _captionByIndex:
         - ''
         - ''
         - ''
         - ''
-        - ''
     - itemAdornmentSize: auto
-    - label: Status
+    - label: Update Status to
     - _hasMigratedNestedItems: true
     - captionByIndex:
         array: []
@@ -94,9 +88,7 @@ template:
         - ''
         - ''
         - ''
-        - ''
     - _colorByIndex:
-        - ''
         - ''
         - ''
         - ''
@@ -118,7 +110,6 @@ template:
             - waitType: debounce
             - waitMs: '0'
     - _ids:
-        - efccb
         - 400fc
         - 9d103
         - 91fe5
@@ -129,7 +120,6 @@ template:
     - disabled: ''
     - labelPosition: left
     - _labels:
-        - ''
         - ''
         - ''
         - ''
@@ -145,7 +135,6 @@ template:
         - ''
         - ''
         - ''
-        - ''
     - required: false
     - labels: '{{ _.startCase(item) }}'
 style:
@@ -153,7 +142,7 @@ style:
 position2:
   position2:
     container: tabbedcontainer1
-    row: 2
+    row: 4.2
     height: 1
     width: 4
     tabNum: 4
