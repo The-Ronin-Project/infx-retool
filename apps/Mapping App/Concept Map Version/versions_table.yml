@@ -185,7 +185,8 @@ template:
             - actionButtonType: openInternalUrl
             - actionButtonQuery: ''
             - actionButtonInternalUrlPath: 4f40fa80-9908-11ed-b92d-27dfee9843c6
-            - actionButtonInternalUrlQuery: ''
+            - actionButtonInternalUrlQuery: >-
+                "[{\"key\":\"concept_map_version_uuid\",\"value\":\"{{versions_table.selectedRow.data.uuid}}\"}]"
             - actionButtonUrl: ''
             - actionButtonNewWindow: false
             - actionButtonDisabled: ''
