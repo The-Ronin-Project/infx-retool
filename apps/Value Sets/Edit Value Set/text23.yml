@@ -5,7 +5,7 @@ template:
   ordered:
     - heightType: auto
     - horizontalAlign: left
-    - hidden: '{{!version_metadata.data.status =="active"}}'
+    - hidden: '{{version_metadata.data.status != "active"}}'
     - imageWidth: fit
     - showInEditor: false
     - verticalAlign: center
