@@ -1,4 +1,4 @@
-id: insert_registry
+id: insert_value_set_to_registry
 type: datasource
 subtype: SqlQueryUnified
 resourceName: dc8029bc-3980-4836-841e-776c64eeca49
@@ -10,6 +10,7 @@ template:
     - lastReceivedFromResourceAt: null
     - databasePasswordOverride: ''
     - queryDisabledMessage: ''
+    - servedFromCache: false
     - successMessage: ''
     - queryDisabled: ''
     - playgroundQuerySaveId: latest
@@ -18,8 +19,8 @@ template:
     - showFailureToaster: false
     - query: |-
         INSERT INTO data_ingestion.registry(
-          resource_type, data_element, tenant_id, concept_map_uuid, source_extension_url, registry_uuid, is_unique)
-          VALUES ({{ resource_type_select.value }}, {{data_element_input.value}}, {{tenant_id_select.value}}, {{concept_map_select.selectedItem.concept_map_uuid}}, {{source_extension_url.labelCaption + source_extension_url.value}}, uuid_generate_v4(), {{resource_type_select.value+','+data_element_input.value+','+tenant_id_select.value}})
+          resource_type, data_element, tenant_id, value_set_uuid, registry_uuid, type, profile_url)
+          VALUES ({{ resource_type_select_vs_insert.value }}, {{data_element_vs_insert.value}}, {{tenant_id_vs_insert.value}}, {{value_set_select.value}}, uuid_generate_v4(), 'value_set', {{profile_url_input.value}})
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
@@ -35,9 +36,11 @@ template:
     - dataArray: []
     - cacheKeyTtl: ''
     - filterBy: ''
+    - requestSentTimestamp: null
     - databaseHostOverride: ''
     - metadata: null
     - editorMode: sql
+    - queryRunTime: null
     - actionType: ''
     - changesetObject: ''
     - shouldUseLegacySql: false
@@ -48,6 +51,7 @@ template:
         // example: return data.find(element => element.isError)
 
         return data.error
+    - finished: null
     - databaseNameOverride: ''
     - confirmationMessage: null
     - isFetching: false
@@ -126,7 +130,7 @@ template:
                   - options:
                       ordered:
                         - notificationType: error
-                        - description: '{{insert_registry.data.message}}'
+                        - description: '{{insert_concept_map_to_registry.data.message}}'
                         - title: 'Failure:'
             - waitType: debounce
             - waitMs: '0'
@@ -140,7 +144,8 @@ template:
     - databaseUsernameOverride: ''
     - shouldEnableBatchQuerying: false
     - doNotThrowOnNoOp: false
+    - offlineQueryType: None
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2022-10-07T18:39:46.099Z
+createdAt: 2023-03-24T22:55:55.174Z

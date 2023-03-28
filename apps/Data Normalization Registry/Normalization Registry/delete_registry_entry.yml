@@ -10,6 +10,7 @@ template:
     - lastReceivedFromResourceAt: null
     - databasePasswordOverride: ''
     - queryDisabledMessage: ''
+    - servedFromCache: false
     - successMessage: ''
     - queryDisabled: ''
     - playgroundQuerySaveId: latest
@@ -34,9 +35,11 @@ template:
     - dataArray: []
     - cacheKeyTtl: ''
     - filterBy: ''
+    - requestSentTimestamp: null
     - databaseHostOverride: ''
     - metadata: null
     - editorMode: sql
+    - queryRunTime: null
     - actionType: ''
     - changesetObject: ''
     - shouldUseLegacySql: false
@@ -47,8 +50,18 @@ template:
         // example: return data.find(element => element.isError)
 
         return data.error
+    - finished: null
     - databaseNameOverride: ''
-    - confirmationMessage: null
+    - confirmationMessage: |-
+        ## Are you sure you want to delete this registry entry?
+
+        resource type: {{registry_table.selectedRow.data.resource_type}}
+
+        data element: {{registry_table.selectedRow.data.data_element}}
+
+        tenant id: {{registry_table.selectedRow.data.tenant_id}}
+
+        profile url: {{registry_table.selectedRow.data.profile_url}}
     - isFetching: false
     - changeset: ''
     - rawData: null
@@ -85,7 +98,7 @@ template:
             - waitMs: '0'
     - tableName: ''
     - queryTimeout: '10000'
-    - requireConfirmation: false
+    - requireConfirmation: true
     - queryFailureConditions: ''
     - changesetIsObject: false
     - enableCaching: false
@@ -93,6 +106,7 @@ template:
     - databaseUsernameOverride: ''
     - shouldEnableBatchQuerying: false
     - doNotThrowOnNoOp: false
+    - offlineQueryType: None
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''

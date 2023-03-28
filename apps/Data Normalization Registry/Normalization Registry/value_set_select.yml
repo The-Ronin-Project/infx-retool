@@ -1,4 +1,4 @@
-id: concept_map_select
+id: value_set_select
 type: widget
 subtype: SelectWidget2
 template:
@@ -8,7 +8,7 @@ template:
     - showSelectionIndicator: true
     - _values: []
     - iconByIndex: ''
-    - values: ''
+    - values: '{{ item.uuid }}'
     - readOnly: false
     - iconAfter: ''
     - _iconByIndex: []
@@ -17,7 +17,7 @@ template:
     - inputValue: ''
     - hidden: false
     - customValidation: ''
-    - data: '{{ concept_maps.data }}'
+    - data: '{{ value_sets.data }}'
     - searchMode: fuzzy
     - hideValidationMessage: false
     - fallbackTextByIndex: ''
@@ -35,7 +35,7 @@ template:
     - formDataKey: '{{ self.id }}'
     - value: null
     - hiddenByIndex: ''
-    - labelCaption: This is the value of the title data element in the Concept Map resource.
+    - labelCaption: ''
     - labelWidth: '48'
     - deprecatedLabels:
         array: []
@@ -43,7 +43,7 @@ template:
     - placeholder: Select an option
     - _captionByIndex: []
     - itemAdornmentSize: auto
-    - label: 'Concept Map:'
+    - label: 'Value Set:'
     - _hasMigratedNestedItems: true
     - captionByIndex: ''
     - _validate: false
@@ -73,14 +73,14 @@ template:
     - disabledByIndex: ''
     - maintainSpaceWhenHidden: false
     - _imageByIndex: []
-    - required: false
+    - required: true
     - labels: '{{ item.title }}'
 style:
   ordered: []
 position2:
   position2:
-    container: add_form
-    row: 5.199999999999999
+    container: add_form2
+    row: 4.6000000000000005
     height: 1
-    width: 10
-createdAt: 2022-10-07T18:29:14.367Z
+    width: 9
+createdAt: 2023-03-24T22:52:20.209Z

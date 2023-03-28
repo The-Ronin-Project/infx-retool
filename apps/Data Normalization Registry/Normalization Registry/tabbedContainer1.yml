@@ -7,12 +7,14 @@ template:
         - ''
         - ''
         - false
+        - false
     - heightType: fixed
     - currentViewKey: '{{ self.viewKeys[0] }}'
     - iconByIndex:
         array: []
     - clickable: false
     - _iconByIndex:
+        - ''
         - ''
         - ''
         - ''
@@ -29,6 +31,7 @@ template:
         - ''
         - ''
         - false
+        - false
     - currentViewIndex: null
     - _hasMigratedNestedItems: true
     - transition: none
@@ -37,12 +40,14 @@ template:
         - ''
         - ''
         - ''
+        - ''
     - tooltipByIndex:
         array: []
     - showFooter: false
     - _viewKeys:
         - View Registry
-        - Add to Registry
+        - Add Concept Map to Registry
+        - Add Value Set To Registry
         - Publish New Registry
     - events:
         - ordered:
@@ -59,6 +64,7 @@ template:
     - _ids:
         - 69b0a
         - d7b26
+        - ace12
         - e2f3b
     - viewKeys:
         array: []
@@ -68,10 +74,13 @@ template:
         - ''
         - ''
         - left
+        - left
+    - hovered: false
     - loading: false
     - overflowType: scroll
     - disabled: false
     - _labels:
+        - ''
         - ''
         - ''
         - ''
