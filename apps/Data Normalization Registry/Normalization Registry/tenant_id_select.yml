@@ -13,6 +13,7 @@ template:
         - false
         - false
         - false
+        - false
     - showSelectionIndicator: true
     - _values:
         - mdaoc
@@ -23,6 +24,7 @@ template:
         - apposnd
         - roninstg
         - ejh3j95h
+        - ronincer
     - iconByIndex:
         array: []
     - values:
@@ -37,6 +39,8 @@ template:
         - ''
         - ''
         - ''
+        - ''
+    - overlayMinWidth: null
     - allowDeselect: false
     - inputValue: ''
     - hidden: false
@@ -49,6 +53,7 @@ template:
         array: []
     - textBefore: ''
     - _fallbackTextByIndex:
+        - ''
         - ''
         - ''
         - ''
@@ -81,8 +86,10 @@ template:
         - false
         - false
         - false
+        - false
     - placeholder: Select an option
     - _captionByIndex:
+        - ''
         - ''
         - ''
         - ''
@@ -109,7 +116,9 @@ template:
         - ''
         - ''
         - ''
+        - ''
     - _colorByIndex:
+        - ''
         - ''
         - ''
         - ''
@@ -133,6 +142,7 @@ template:
         - 0ff19
         - 526fb
         - b05df
+        - db55f
     - emptyMessage: ''
     - overlayMaxHeight: 375
     - loading: false
@@ -147,6 +157,7 @@ template:
         - App Orchard Sandbox
         - roninstg
         - Cerner Code Sandbox
+        - ''
     - labelWrap: false
     - disabledValues:
         array: []
@@ -154,6 +165,7 @@ template:
         array: []
     - maintainSpaceWhenHidden: false
     - _imageByIndex:
+        - ''
         - ''
         - ''
         - ''

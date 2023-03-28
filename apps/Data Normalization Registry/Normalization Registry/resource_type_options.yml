@@ -1,4 +1,4 @@
-id: concept_maps
+id: resource_type_options
 type: datasource
 subtype: SqlQueryUnified
 resourceName: dc8029bc-3980-4836-841e-776c64eeca49
@@ -17,11 +17,7 @@ template:
     - resourceNameOverride: ''
     - runWhenModelUpdates: true
     - showFailureToaster: true
-    - query: |-
-        SELECT DISTINCT title, concept_map_uuid FROM concept_maps.concept_map cm
-        JOIN concept_maps.concept_map_version cmv
-        ON cm.uuid = cmv.concept_map_uuid
-        -- order by VERSION ASC
+    - query: select distinct resource_type from data_ingestion.registry
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
@@ -80,7 +76,7 @@ template:
         return data
     - events: []
     - tableName: ''
-    - queryTimeout: '10001'
+    - queryTimeout: '10000'
     - requireConfirmation: false
     - queryFailureConditions: ''
     - changesetIsObject: false
@@ -93,4 +89,5 @@ template:
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2022-10-05T19:54:56.670Z
+createdAt: 2023-03-28T18:16:41.840Z
+folder: dropdown_options

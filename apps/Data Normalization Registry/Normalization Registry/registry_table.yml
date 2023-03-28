@@ -32,6 +32,9 @@ template:
         - object:
             id: resource_type
             value: 126
+        - object:
+            id: profile_url
+            value: 510
     - showSummaryFooter: false
     - disableRowSelectInteraction: false
     - columnWidthsMobile: []
@@ -79,6 +82,8 @@ template:
         ordered:
           - concept_map_title: true
           - concept_map_uuid: false
+          - value_set_uuid: false
+          - registry_uuid: false
     - _columnSummaryTypes:
         ordered: []
     - _columnsWithLegacyBackgroundColor:

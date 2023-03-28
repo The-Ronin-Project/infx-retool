@@ -1,4 +1,4 @@
-id: resource_type_select
+id: tenant_id_vs_insert
 type: widget
 subtype: SelectWidget2
 template:
@@ -8,20 +8,23 @@ template:
     - _disabledByIndex:
         - ''
         - ''
-        - ''
+        - false
+        - false
         - false
         - false
         - false
         - false
     - showSelectionIndicator: true
     - _values:
-        - Appointment
-        - Patient
-        - Condition
-        - Medication
-        - Practitioner
-        - PractitionerRole
-        - Location
+        - mdaoc
+        - |
+          ronin
+        - v7r1eczk
+        - 1xrekpx5
+        - apposnd
+        - roninstg
+        - ejh3j95h
+        - ronincer
     - iconByIndex:
         array: []
     - values:
@@ -29,6 +32,7 @@ template:
     - readOnly: false
     - iconAfter: ''
     - _iconByIndex:
+        - ''
         - ''
         - ''
         - ''
@@ -56,6 +60,7 @@ template:
         - ''
         - ''
         - ''
+        - ''
     - selectedItem: null
     - validationMessage: ''
     - automaticItemColors: false
@@ -69,14 +74,15 @@ template:
     - value: null
     - hiddenByIndex:
         array: []
-    - labelCaption: ''
+    - labelCaption: If Tenant ID is not listed, you must add it.
     - labelWidth: '32'
     - deprecatedLabels:
         array: []
     - _hiddenByIndex:
         - ''
         - ''
-        - ''
+        - false
+        - false
         - false
         - false
         - false
@@ -90,8 +96,9 @@ template:
         - ''
         - ''
         - ''
+        - ''
     - itemAdornmentSize: auto
-    - label: 'Resource Type:'
+    - label: 'Tenant ID:'
     - _hasMigratedNestedItems: true
     - captionByIndex:
         array: []
@@ -109,7 +116,9 @@ template:
         - ''
         - ''
         - ''
+        - ''
     - _colorByIndex:
+        - ''
         - ''
         - ''
         - ''
@@ -128,23 +137,26 @@ template:
     - _ids:
         - 6ea7e
         - 51aef
-        - 4f760
-        - fe328
-        - d89ec
-        - f049a
-        - 33d5c
+        - 3bd1c
+        - 68a91
+        - 0ff19
+        - 526fb
+        - b05df
+        - db55f
     - emptyMessage: ''
     - overlayMaxHeight: 375
     - loading: false
     - disabled: false
     - labelPosition: left
     - _labels:
-        - ''
-        - ''
-        - ''
-        - ''
-        - ''
-        - ''
+        - mdaoc
+        - |
+          ronin
+        - psj
+        - psj-tst
+        - App Orchard Sandbox
+        - roninstg
+        - Cerner Code Sandbox
         - ''
     - labelWrap: false
     - disabledValues:
@@ -160,6 +172,7 @@ template:
         - ''
         - ''
         - ''
+        - ''
     - required: false
     - labels:
         array: []
@@ -167,8 +180,8 @@ style:
   ordered: []
 position2:
   position2:
-    container: add_form
-    row: 0.4
+    container: add_form2
+    row: 3.1999999999999997
     height: 1
     width: 9
-createdAt: 2022-10-07T18:23:42.090Z
+createdAt: 2023-03-24T22:52:22.486Z
