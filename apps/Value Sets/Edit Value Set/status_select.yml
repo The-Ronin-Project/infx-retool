@@ -3,29 +3,15 @@ type: widget
 subtype: SelectWidget2
 template:
   ordered:
-    - imageByIndex:
-        array: []
-    - _disabledByIndex:
-        - false
-        - false
-        - false
-        - false
+    - imageByIndex: ''
+    - _disabledByIndex: []
     - showSelectionIndicator: true
-    - _values:
-        - reviewed
-        - in progress
-        - retired
-        - obsolete
-    - iconByIndex:
-        array: []
+    - _values: []
+    - iconByIndex: ''
     - values: '{{ item }}'
     - readOnly: false
     - iconAfter: ''
-    - _iconByIndex:
-        - ''
-        - ''
-        - ''
-        - ''
+    - _iconByIndex: []
     - overlayMinWidth: null
     - allowDeselect: true
     - inputValue: ''
@@ -34,14 +20,9 @@ template:
     - data: '{{load_statuses.data.display}}'
     - searchMode: fuzzy
     - hideValidationMessage: false
-    - fallbackTextByIndex:
-        array: []
+    - fallbackTextByIndex: ''
     - textBefore: ''
-    - _fallbackTextByIndex:
-        - ''
-        - ''
-        - ''
-        - ''
+    - _fallbackTextByIndex: []
     - selectedItem: null
     - validationMessage: ''
     - automaticItemColors: false
@@ -53,51 +34,31 @@ template:
     - labelAlign: left
     - formDataKey: '{{ self.id }}'
     - value: '{{version_metadata.data.status[0]}}'
-    - hiddenByIndex:
-        array: []
+    - hiddenByIndex: ''
     - allowSearch: true
     - labelCaption: ''
     - hideLabel: false
     - labelWidth: '33'
     - deprecatedLabels:
         array: []
-    - _hiddenByIndex:
-        - false
-        - false
-        - false
-        - false
+    - _hiddenByIndex: []
     - placeholder: Select an option
-    - _captionByIndex:
-        - ''
-        - ''
-        - ''
-        - ''
+    - _captionByIndex: []
     - itemAdornmentSize: auto
     - label: Update Status to
     - _hasMigratedNestedItems: true
-    - captionByIndex:
-        array: []
+    - captionByIndex: ''
     - _validate: false
-    - itemMode: static
+    - itemMode: dynamic
     - labelWidthUnit: '%'
     - allowCustomValue: false
     - invalid: false
     - selectedIndex: null
-    - _tooltipByIndex:
-        - ''
-        - ''
-        - ''
-        - ''
-    - _colorByIndex:
-        - ''
-        - ''
-        - ''
-        - ''
-    - tooltipByIndex:
-        array: []
+    - _tooltipByIndex: []
+    - _colorByIndex: []
+    - tooltipByIndex: ''
     - iconBefore: ''
-    - colorByIndex:
-        array: []
+    - colorByIndex: ''
     - selectedLabel: ''
     - events:
         - ordered:
@@ -109,32 +70,19 @@ template:
                 ordered: []
             - waitType: debounce
             - waitMs: '0'
-    - _ids:
-        - 400fc
-        - 9d103
-        - 91fe5
-        - 984c2
+    - _ids: []
     - emptyMessage: ''
     - overlayMaxHeight: null
     - loading: false
     - disabled: ''
     - labelPosition: left
-    - _labels:
-        - ''
-        - ''
-        - ''
-        - ''
+    - _labels: []
     - labelWrap: false
     - disabledValues:
         array: []
-    - disabledByIndex:
-        array: []
+    - disabledByIndex: ''
     - maintainSpaceWhenHidden: false
-    - _imageByIndex:
-        - ''
-        - ''
-        - ''
-        - ''
+    - _imageByIndex: []
     - required: false
     - labels: '{{ _.startCase(item) }}'
 style:
