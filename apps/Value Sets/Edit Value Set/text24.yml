@@ -10,7 +10,7 @@ template:
     - showInEditor: false
     - verticalAlign: center
     - tooltipText: ''
-    - value: ❌ Vesrion status not 'active'
+    - value: ❌ Version status not 'active'
     - disableMarkdown: false
     - overflowType: scroll
     - maintainSpaceWhenHidden: false
