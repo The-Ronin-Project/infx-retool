@@ -96,6 +96,16 @@ template:
                 ordered: []
             - waitType: debounce
             - waitMs: '0'
+        - ordered:
+            - event: success
+            - type: datasource
+            - method: trigger
+            - pluginId: retire_previous_versions
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+            - enabled: '{{status_select.value == ''active''}}'
     - tableName: ''
     - queryTimeout: '10000'
     - requireConfirmation: true
