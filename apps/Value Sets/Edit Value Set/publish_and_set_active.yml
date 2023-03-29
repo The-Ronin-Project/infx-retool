@@ -71,16 +71,6 @@ template:
     - events:
         - ordered:
             - event: success
-            - type: util
-            - method: confetti
-            - pluginId: ''
-            - targetId: null
-            - params:
-                ordered: []
-            - waitType: debounce
-            - waitMs: '0'
-        - ordered:
-            - event: success
             - type: datasource
             - method: trigger
             - pluginId: oci_status_check
@@ -94,6 +84,16 @@ template:
             - type: datasource
             - method: trigger
             - pluginId: version_metadata
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: success
+            - type: util
+            - method: confetti
+            - pluginId: ''
             - targetId: null
             - params:
                 ordered: []
