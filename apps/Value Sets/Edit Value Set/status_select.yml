@@ -3,7 +3,8 @@ type: widget
 subtype: SelectWidget2
 template:
   ordered:
-    - imageByIndex: ''
+    - imageByIndex:
+        array: []
     - _disabledByIndex:
         - false
         - false
@@ -11,11 +12,12 @@ template:
         - false
     - showSelectionIndicator: true
     - _values:
-        - Option 1
-        - Option 2
-        - Option 3
-        - Option 4
-    - iconByIndex: ''
+        - reviewed
+        - in progress
+        - retired
+        - obsolete
+    - iconByIndex:
+        array: []
     - values: '{{ item }}'
     - readOnly: false
     - iconAfter: ''
@@ -32,7 +34,8 @@ template:
     - data: '{{load_statuses.data.display}}'
     - searchMode: fuzzy
     - hideValidationMessage: false
-    - fallbackTextByIndex: ''
+    - fallbackTextByIndex:
+        array: []
     - textBefore: ''
     - _fallbackTextByIndex:
         - ''
@@ -50,7 +53,8 @@ template:
     - labelAlign: left
     - formDataKey: '{{ self.id }}'
     - value: '{{version_metadata.data.status[0]}}'
-    - hiddenByIndex: ''
+    - hiddenByIndex:
+        array: []
     - allowSearch: true
     - labelCaption: ''
     - hideLabel: false
@@ -71,7 +75,8 @@ template:
     - itemAdornmentSize: auto
     - label: Update Status to
     - _hasMigratedNestedItems: true
-    - captionByIndex: ''
+    - captionByIndex:
+        array: []
     - _validate: false
     - itemMode: static
     - labelWidthUnit: '%'
@@ -88,9 +93,11 @@ template:
         - ''
         - ''
         - ''
-    - tooltipByIndex: ''
+    - tooltipByIndex:
+        array: []
     - iconBefore: ''
-    - colorByIndex: ''
+    - colorByIndex:
+        array: []
     - selectedLabel: ''
     - events:
         - ordered:
@@ -103,24 +110,25 @@ template:
             - waitType: debounce
             - waitMs: '0'
     - _ids:
-        - '08379'
-        - 2a7fb
-        - '78656'
-        - 7673a
+        - 400fc
+        - 9d103
+        - 91fe5
+        - 984c2
     - emptyMessage: ''
     - overlayMaxHeight: null
     - loading: false
     - disabled: ''
     - labelPosition: left
     - _labels:
-        - reviewed
-        - in progress
-        - retired
-        - obsolete
+        - ''
+        - ''
+        - ''
+        - ''
     - labelWrap: false
     - disabledValues:
         array: []
-    - disabledByIndex: ''
+    - disabledByIndex:
+        array: []
     - maintainSpaceWhenHidden: false
     - _imageByIndex:
         - ''

@@ -27,7 +27,7 @@ template:
             - waitMs: '0'
     - loading: false
     - loaderPosition: auto
-    - disabled: '{{version_metadata.data.status==''active''}} '
+    - disabled: false
     - maintainSpaceWhenHidden: false
 style:
   ordered: []
