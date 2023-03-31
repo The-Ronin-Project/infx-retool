@@ -21,11 +21,14 @@ template:
             id: assigned_mapper
             value: 131.5546875
         - object:
-            id: display
-            value: 777.8359375
-        - object:
             id: code
             value: 283.5
+        - object:
+            id: display
+            value: 761.8359375
+        - object:
+            id: assigned_reviewer
+            value: 143.5546875
     - showSummaryFooter: false
     - disableRowSelectInteraction: false
     - columnWidthsMobile: []
@@ -40,6 +43,7 @@ template:
           - assigned_mapper: Mapper
           - assigned_reviewer: Reviewer
           - resource_count: Resource Count
+          - count_of_resources_affected: Resource Count
     - alwaysShowPaginator: false
     - columnColors:
         ordered:
@@ -73,7 +77,9 @@ template:
     - showFilterButton: true
     - _columnVisibility:
         ordered:
+          - additional_data: false
           - first_last_name: false
+          - terminology_version_uuid: false
           - mapping_group: false
           - system: false
           - reason_for_no_map: false

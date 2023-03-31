@@ -10,6 +10,7 @@ template:
     - lastReceivedFromResourceAt: null
     - databasePasswordOverride: ''
     - queryDisabledMessage: ''
+    - servedFromCache: false
     - successMessage: ''
     - queryDisabled: ''
     - playgroundQuerySaveId: latest
@@ -17,24 +18,31 @@ template:
     - runWhenModelUpdates: true
     - showFailureToaster: true
     - query: >-
-        select *, source_concept.uuid as source_uuid, pmu.uuid as mapper_uuid,
+        select *, sc.uuid as source_uuid, pmu.uuid as mapper_uuid,
         pmu.first_last_name as assigned_mapper, pmu2.uuid as reviewer_uuid,
-        pmu2.first_last_name as assigned_reviewer from
-        concept_maps.source_concept
+        pmu2.first_last_name as assigned_reviewer,
+        ctc.additional_data->>'count_of_resources_affected' as
+        count_of_resources_affected from concept_maps.source_concept sc
 
         left join project_management.user pmu
 
-        on pmu.uuid = assigned_mapper
+        on pmu.uuid = sc.assigned_mapper
 
         left join project_management.user pmu2
 
-        on assigned_reviewer = pmu2.uuid
+        on sc.assigned_reviewer = pmu2.uuid
 
-        where concept_map_version_uuid={{urlparams.concept_map_version_uuid}}
+        left join custom_terminologies.code ctc on sc.code=ctc.code
 
-        and map_status = 'pending'
+        and sc.display = ctc.display
 
-        and source_concept.uuid not in 
+        and cast(sc.system as uuid) = ctc.terminology_version_uuid
+
+        where sc.concept_map_version_uuid={{urlparams.concept_map_version_uuid}}
+
+        and sc.map_status = 'pending'
+
+        and sc.uuid not in 
 
         (select source_concept_uuid from concept_maps.concept_relationship)
     - playgroundQueryUuid: ''
@@ -52,9 +60,11 @@ template:
     - dataArray: []
     - cacheKeyTtl: ''
     - filterBy: ''
+    - requestSentTimestamp: null
     - databaseHostOverride: ''
     - metadata: null
     - editorMode: sql
+    - queryRunTime: null
     - actionType: ''
     - changesetObject: ''
     - shouldUseLegacySql: false
@@ -65,6 +75,7 @@ template:
         // example: return data.find(element => element.isError)
 
         return data.error
+    - finished: null
     - databaseNameOverride: ''
     - confirmationMessage: null
     - isFetching: false
@@ -101,6 +112,7 @@ template:
     - databaseUsernameOverride: ''
     - shouldEnableBatchQuerying: false
     - doNotThrowOnNoOp: false
+    - offlineQueryType: None
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''

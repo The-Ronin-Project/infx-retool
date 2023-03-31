@@ -10,19 +10,33 @@ template:
     - lastReceivedFromResourceAt: null
     - databasePasswordOverride: ''
     - queryDisabledMessage: ''
+    - servedFromCache: false
     - successMessage: ''
     - queryDisabled: ''
     - playgroundQuerySaveId: latest
     - resourceNameOverride: ''
     - runWhenModelUpdates: true
     - showFailureToaster: true
-    - query: |-
-        select * from concept_maps.source_concept
-        where concept_map_version_uuid={{urlparams.concept_map_version_uuid}}
-        and (lower(display) like any({{transform_query_match.value.split(",")}})
-        or lower(code) like any({{transform_query_match.value.split(",")}}))
-        and assigned_mapper is null
-        and map_status = 'pending'
+    - query: >-
+        select *, ctc.additional_data->>'count_of_resources_affected' as
+        count_of_resources_affected from concept_maps.source_concept sc
+
+        left join custom_terminologies.code ctc on sc.code=ctc.code
+
+        and sc.display = ctc.display
+
+        and cast(sc.system as uuid) = ctc.terminology_version_uuid
+
+        where sc.concept_map_version_uuid={{urlparams.concept_map_version_uuid}}
+
+        and (lower(sc.display) like
+        any({{transform_query_match.value.split(",")}})
+
+        or lower(sc.code) like any({{transform_query_match.value.split(",")}}))
+
+        and sc.assigned_mapper is null
+
+        and sc.map_status = 'pending'
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
@@ -38,9 +52,11 @@ template:
     - dataArray: []
     - cacheKeyTtl: ''
     - filterBy: ''
+    - requestSentTimestamp: null
     - databaseHostOverride: ''
     - metadata: null
     - editorMode: sql
+    - queryRunTime: null
     - actionType: ''
     - changesetObject: ''
     - shouldUseLegacySql: false
@@ -51,6 +67,7 @@ template:
         // example: return data.find(element => element.isError)
 
         return data.error
+    - finished: null
     - databaseNameOverride: ''
     - confirmationMessage: null
     - isFetching: false
@@ -87,6 +104,7 @@ template:
     - databaseUsernameOverride: ''
     - shouldEnableBatchQuerying: false
     - doNotThrowOnNoOp: false
+    - offlineQueryType: None
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''

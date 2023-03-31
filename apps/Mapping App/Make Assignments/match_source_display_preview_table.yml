@@ -42,6 +42,7 @@ template:
           - display: Source Display
           - additional_context: Additional Context
           - map_status: Map Status
+          - count_of_resources_affected: Resource Count
     - alwaysShowPaginator: false
     - columnColors:
         ordered:
@@ -69,6 +70,8 @@ template:
     - showFilterButton: true
     - _columnVisibility:
         ordered:
+          - additional_data: false
+          - terminology_version_uuid: false
           - mapping_group: false
           - system: false
           - reason_for_no_map: false
