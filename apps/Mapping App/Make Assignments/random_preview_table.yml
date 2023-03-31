@@ -23,6 +23,9 @@ template:
         - object:
             id: resource_count
             value: 151.75
+        - object:
+            id: additional_context
+            value: 317.25
     - showSummaryFooter: false
     - disableRowSelectInteraction: false
     - columnWidthsMobile: []
@@ -36,6 +39,7 @@ template:
           - code: Source Code
           - display: Source Display
           - additional_context: Additional Context
+          - count_of_resources_affected: Resource Count
     - alwaysShowPaginator: false
     - columnColors:
         ordered:
@@ -63,6 +67,8 @@ template:
     - showFilterButton: true
     - _columnVisibility:
         ordered:
+          - additional_data: false
+          - terminology_version_uuid: false
           - mapping_group: false
           - system: false
           - reason_for_no_map: false

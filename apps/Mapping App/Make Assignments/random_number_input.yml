@@ -6,6 +6,7 @@ template:
     - readOnly: false
     - iconAfter: ''
     - max: null
+    - preventScroll: false
     - inputValue: 0
     - hidden: false
     - customValidation: ''
