@@ -5,6 +5,8 @@ template:
   ordered:
     - type: main
     - sticky: false
+    - isHiddenOnDesktop: false
+    - isHiddenOnMobile: false
 style:
   ordered: []
-createdAt: 2022-11-01T20:17:41.025Z
+createdAt: 2023-03-27T19:34:11.447Z

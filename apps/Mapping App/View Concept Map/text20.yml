@@ -1,0 +1,27 @@
+id: text20
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - tooltipText: ''
+    - value: Include assignment and status data
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: filter_container
+    subcontainer: fef3f
+    row: 0.6000000000000001
+    col: 7
+    height: 0.6
+    width: 5
+createdAt: 2023-03-23T23:46:40.870Z
