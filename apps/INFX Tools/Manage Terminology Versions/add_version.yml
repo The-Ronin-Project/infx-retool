@@ -27,7 +27,9 @@ template:
             - waitMs: '0'
     - loading: false
     - loaderPosition: auto
-    - disabled: false
+    - disabled: |+
+        {{fhir_uri.value=="" | date_range.value==""}}
+
     - maintainSpaceWhenHidden: false
 style:
   ordered: []

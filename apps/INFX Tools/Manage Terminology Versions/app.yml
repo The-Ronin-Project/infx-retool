@@ -6,4 +6,4 @@ appTemplate:
       batchCommitModelEnabled: false
   rootScreen: null
   isFetching: true
-  version: 2.100.7
+  version: 2.110.3

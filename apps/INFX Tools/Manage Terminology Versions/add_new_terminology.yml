@@ -11,6 +11,7 @@ template:
         [{"key":"terminology","value":"{{new_name.value}}"},{"key":"version","value":"{{version.value}}"},{"key":"effective_start","value":"{{date_range.value.start}}"},{"key":"effective_end","value":"{{date_range.value.end}}"},{"key":"fhir_uri","value":"{{fhir_uri.value}}"},{"key":"is_standard","value":"{{is_standard.value}}"},{"key":"fhir_terminology","value":"{{is_fhir.value}}"}]
     - lastReceivedFromResourceAt: null
     - queryDisabledMessage: ''
+    - servedFromCache: false
     - successMessage: ''
     - queryDisabled: ''
     - playgroundQuerySaveId: latest
@@ -32,8 +33,10 @@ template:
     - isImported: false
     - showSuccessToaster: true
     - cacheKeyTtl: ''
+    - requestSentTimestamp: null
     - cookies: ''
     - metadata: null
+    - queryRunTime: null
     - changesetObject: ''
     - errorTransformer: >-
         // The variable 'data' allows you to reference the request's data in the
@@ -42,6 +45,7 @@ template:
         // example: return data.find(element => element.isError)
 
         return data.error
+    - finished: null
     - confirmationMessage: null
     - isFetching: false
     - changeset: ''
@@ -114,6 +118,7 @@ template:
     - enableCaching: false
     - allowedGroups: []
     - bodyType: json
+    - offlineQueryType: None
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
