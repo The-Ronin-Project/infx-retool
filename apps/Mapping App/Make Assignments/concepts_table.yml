@@ -82,8 +82,10 @@ template:
     - showFilterButton: true
     - _columnVisibility:
         ordered:
+          - display: false
           - additional_data: false
           - first_last_name: false
+          - code: false
           - terminology_version_uuid: false
           - mapping_group: false
           - system: false
@@ -205,6 +207,8 @@ template:
         - resource_count
         - code
         - display
+        - source_code
+        - source_display
         - system
         - comments
         - additional_context
@@ -215,6 +219,15 @@ template:
         - no_map
         - reason_for_no_map
         - mapping_group
+        - first_name
+        - last_name
+        - first_last_name
+        - terminology_version_uuid
+        - additional_data
+        - source_uuid
+        - mapper_uuid
+        - reviewer_uuid
+        - count_of_resources_affected
     - sortByRawValue:
         ordered: []
     - calculatedColumns: []
