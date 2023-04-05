@@ -44,14 +44,8 @@ template:
             id: mapping_uuid
             value: 316
         - object:
-            id: additional_data
-            value: 43
-        - object:
             id: code
             value: 187
-        - object:
-            id: mapping_comments
-            value: 83.421875
         - object:
             id: count_of_resources_affected
             value: 95
@@ -62,8 +56,14 @@ template:
             id: review_status
             value: 115.671875
         - object:
+            id: additional_data
+            value: 139
+        - object:
             id: display
             value: 246
+        - object:
+            id: mapping_comments
+            value: 173.4201431274414
     - showSummaryFooter: false
     - disableRowSelectInteraction: false
     - columnWidthsMobile: []
@@ -193,8 +193,8 @@ template:
     - filterStackType: and
     - downloadRawData: false
     - showFetchingIndicator: true
-    - serverPaginated: false
-    - data: '{{current_draft_all_concepts.data}}'
+    - serverPaginated: true
+    - data: '{{all_concepts.data}}'
     - displayedData: null
     - actionButtons:
         - ordered:
@@ -208,7 +208,7 @@ template:
             - actionButtonDisabled: '{{currentRow.review_status == ''rejected''}}'
     - actionButtonSelectsRow: true
     - selectRowByDefault: true
-    - defaultSortByColumn: ''
+    - defaultSortByColumn: null
     - paginationOffset: 0
     - columnAlignment:
         ordered:
@@ -255,7 +255,7 @@ template:
     - defaultSortDescending: false
     - _sortedDisplayedDataIndices: null
     - dynamicColumnSettings: null
-    - totalRowCount: ''
+    - totalRowCount: '{{count_all_concepts.data.count}}'
     - recordUpdates:
         array: []
     - newRow: null
@@ -273,7 +273,7 @@ template:
         ordered: []
     - showClearSelection: false
     - doubleClickToEdit: true
-    - overflowType: scroll
+    - overflowType: pagination
     - _reverseSortedDisplayedDataIndices: null
     - showTableBorder: true
     - selectedCell:
@@ -331,7 +331,7 @@ style:
   ordered: []
 position2:
   position2:
-    row: 0.9999999999999998
-    height: 16.2
+    row: 3.0000000000000013
+    height: 22.6
     width: 12
 createdAt: 2022-09-14T19:54:01.252Z

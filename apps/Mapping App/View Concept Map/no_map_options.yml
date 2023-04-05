@@ -1,4 +1,4 @@
-id: get_concept_maps
+id: no_map_options
 type: datasource
 subtype: SqlQueryUnified
 resourceName: dc8029bc-3980-4836-841e-776c64eeca49
@@ -17,39 +17,10 @@ template:
     - resourceNameOverride: ''
     - runWhenModelUpdates: true
     - showFailureToaster: true
-    - query: >-
-        select rc.code as relationship, 
-
-        cr.review_status,
-
-        sc.map_status,
-
-        cr.mapping_comments, 
-
-        cr.target_concept_code,
-
-        cr.target_concept_display,
-
-        cr.uuid as mapping_uuid,
-
-        sc.code as source_code,
-
-        sc.display as source_display,
-
-        sc.no_map,
-
-        cr.author as actual_mapper,
-
-        cr.reviewed_by as actual_reviewer
-
-        FROM concept_maps.concept_relationship cr
-
-        JOIN concept_maps.relationship_codes rc
-          ON cr.relationship_code_uuid = rc.uuid
-        JOIN concept_maps.source_concept sc
-          ON sc.uuid = cr.source_concept_uuid
-        WHERE sc.concept_map_version_uuid =
-        {{urlparams.concept_map_version_uuid}}
+    - query: |-
+        select distinct sc.no_map
+        from concept_maps.source_concept sc 
+        where sc.concept_map_version_uuid={{urlparams.concept_map_version_uuid}}
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
@@ -121,4 +92,5 @@ template:
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2022-09-20T17:05:26.056Z
+createdAt: 2023-03-28T14:55:51.043Z
+folder: filter_options

@@ -1,4 +1,4 @@
-id: reject_mapping
+id: review_status_options
 type: datasource
 subtype: SqlQueryUnified
 resourceName: dc8029bc-3980-4836-841e-776c64eeca49
@@ -15,12 +15,16 @@ template:
     - queryDisabled: ''
     - playgroundQuerySaveId: latest
     - resourceNameOverride: ''
-    - runWhenModelUpdates: false
+    - runWhenModelUpdates: true
     - showFailureToaster: true
     - query: |-
-        update concept_maps.concept_relationship
-        set review_status='rejected'
-        where uuid={{mapped_concepts.selectedRow.data.mapping_uuid}}
+        select distinct review_status, rc.display
+        from concept_maps.concept_relationship cr
+        join concept_maps.source_concept sc 
+        on sc.uuid=cr.source_concept_uuid
+        join concept_maps.relationship_codes rc
+        on cr.relationship_code_uuid = rc.uuid
+        where sc.concept_map_version_uuid={{urlparams.concept_map_version_uuid}}
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
@@ -53,14 +57,7 @@ template:
         return data.error
     - finished: null
     - databaseNameOverride: ''
-    - confirmationMessage: |-
-        ### Are you sure you want to reject the following mapping?
-
-        Source: {{mapped_concepts.selectedRow.data.source_display}} 
-
-        Relationship: {{mapped_concepts.selectedRow.data.relationship}} 
-
-        Target: {{mapped_concepts.selectedRow.data.target_concept_display}}
+    - confirmationMessage: null
     - isFetching: false
     - changeset: ''
     - rawData: null
@@ -84,20 +81,10 @@ template:
         20)
 
         return data
-    - events:
-        - ordered:
-            - event: success
-            - type: datasource
-            - method: trigger
-            - pluginId: reject_mapping_part2
-            - targetId: null
-            - params:
-                ordered: []
-            - waitType: debounce
-            - waitMs: '0'
+    - events: []
     - tableName: ''
     - queryTimeout: '10000'
-    - requireConfirmation: true
+    - requireConfirmation: false
     - queryFailureConditions: ''
     - changesetIsObject: false
     - enableCaching: false
@@ -109,4 +96,5 @@ template:
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2022-11-16T20:26:22.770Z
+createdAt: 2023-03-27T20:44:31.944Z
+folder: filter_options

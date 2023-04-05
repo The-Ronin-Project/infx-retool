@@ -1,6 +1,8 @@
 version: 43.0.9
 pageUuid: e2f3f220-3466-11ed-8852-83f9a016043a
 appTemplate:
+  folders:
+    - filter_options
   experimentalPerfFeatures:
     object:
       batchCommitModelEnabled: false

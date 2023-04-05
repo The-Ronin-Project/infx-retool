@@ -1,0 +1,26 @@
+id: text18
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - tooltipText: ''
+    - value: Relate to the content being mapped, including source and target data
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: filter_container
+    subcontainer: fef3f
+    row: 0.6
+    height: 0.6
+    width: 6
+createdAt: 2023-03-23T22:36:11.637Z

@@ -1,4 +1,4 @@
-id: current_draft_all_concepts
+id: map_status_options
 type: datasource
 subtype: SqlQueryUnified
 resourceName: dc8029bc-3980-4836-841e-776c64eeca49
@@ -17,26 +17,12 @@ template:
     - resourceNameOverride: ''
     - runWhenModelUpdates: true
     - showFailureToaster: true
-    - query: >-
-        select cr.uuid as mapping_uuid, sc.*, cr.*, rc.display as
-        relationship_display, ctc.additional_data,
-        ctc.additional_data->>'count_of_resources_affected' as
-        count_of_resources_affected from concept_maps.source_concept sc
-
-        left join concept_maps.concept_relationship cr on
-        sc.uuid=cr.source_concept_uuid
-
-        left join concept_maps.relationship_codes rc on
-        rc.uuid=cr.relationship_code_uuid
-
-        left join custom_terminologies.code ctc on sc.code=ctc.code
-
-        and sc.display = ctc.display
-
-        and cast(sc.system as uuid) = ctc.terminology_version_uuid
-
-        WHERE sc.concept_map_version_uuid =
-        {{urlparams.concept_map_version_uuid}}
+    - query: |-
+        select distinct sc.map_status
+        from concept_maps.concept_relationship cr
+        join concept_maps.source_concept sc 
+        on sc.uuid=cr.source_concept_uuid
+        where sc.concept_map_version_uuid={{urlparams.concept_map_version_uuid}}
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
@@ -108,4 +94,5 @@ template:
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2023-01-23T20:42:50.967Z
+createdAt: 2023-03-27T19:37:24.685Z
+folder: filter_options

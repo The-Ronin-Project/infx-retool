@@ -1,4 +1,4 @@
-id: text1
+id: text3
 type: widget
 subtype: TextWidget2
 template:
@@ -10,7 +10,7 @@ template:
     - showInEditor: false
     - verticalAlign: center
     - tooltipText: ''
-    - value: '**Current State Concept Map**'
+    - value: '**Content Filters**'
     - disableMarkdown: false
     - overflowType: scroll
     - maintainSpaceWhenHidden: false
@@ -18,6 +18,8 @@ style:
   ordered: []
 position2:
   position2:
+    container: filter_container
+    subcontainer: fef3f
     height: 0.6
     width: 3
-createdAt: 2023-01-27T00:15:19.184Z
+createdAt: 2023-03-23T20:46:56.395Z

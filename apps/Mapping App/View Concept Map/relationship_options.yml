@@ -1,4 +1,4 @@
-id: reject_mapping_part2
+id: relationship_options
 type: datasource
 subtype: SqlQueryUnified
 resourceName: dc8029bc-3980-4836-841e-776c64eeca49
@@ -15,12 +15,16 @@ template:
     - queryDisabled: ''
     - playgroundQuerySaveId: latest
     - resourceNameOverride: ''
-    - runWhenModelUpdates: false
+    - runWhenModelUpdates: true
     - showFailureToaster: true
     - query: |-
-        update concept_maps.source_concept
-        set map_status ='pending' no_map = 'null'
-        where uuid={{mapped_concepts.selectedRow.data.source_concept_uuid}}
+        select distinct relationship_code_uuid, rc.display
+        from concept_maps.concept_relationship cr
+        join concept_maps.source_concept sc 
+        on sc.uuid=cr.source_concept_uuid
+        join concept_maps.relationship_codes rc
+        on cr.relationship_code_uuid = rc.uuid
+        where sc.concept_map_version_uuid={{urlparams.concept_map_version_uuid}}
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
@@ -77,17 +81,7 @@ template:
         20)
 
         return data
-    - events:
-        - ordered:
-            - event: success
-            - type: datasource
-            - method: trigger
-            - pluginId: current_draft_all_concepts
-            - targetId: null
-            - params:
-                ordered: []
-            - waitType: debounce
-            - waitMs: '0'
+    - events: []
     - tableName: ''
     - queryTimeout: '10000'
     - requireConfirmation: false
@@ -102,4 +96,5 @@ template:
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2023-02-02T21:25:48.377Z
+createdAt: 2023-03-23T21:15:32.201Z
+folder: filter_options
