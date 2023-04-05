@@ -27,7 +27,7 @@ template:
     - hideLabel: false
     - maxDate: ''
     - labelWidth: '33'
-    - label: Effective Dates
+    - label: Effective Dates*
     - formattedValue: ''
     - _validate: false
     - labelWidthUnit: '%'
