@@ -18,11 +18,11 @@ template:
     - runWhenModelUpdates: true
     - showFailureToaster: true
     - query: >-
-        select *, sc.uuid as source_uuid, pmu.uuid as mapper_uuid,
-        pmu.first_last_name as assigned_mapper, pmu2.uuid as reviewer_uuid,
-        pmu2.first_last_name as assigned_reviewer,
-        ctc.additional_data->>'count_of_resources_affected' as
-        count_of_resources_affected from concept_maps.source_concept sc
+        select *, sc.code as source_code, sc.display as source_display, sc.uuid
+        as source_uuid, pmu.uuid as mapper_uuid, pmu.first_last_name as
+        assigned_mapper, pmu2.uuid as reviewer_uuid, pmu2.first_last_name as
+        assigned_reviewer, ctc.additional_data->>'count_of_resources_affected'
+        as count_of_resources_affected from concept_maps.source_concept sc
 
         left join project_management.user pmu
 
@@ -32,7 +32,9 @@ template:
 
         on sc.assigned_reviewer = pmu2.uuid
 
-        left join custom_terminologies.code ctc on sc.code=ctc.code
+        left join custom_terminologies.code ctc 
+
+        on sc.code=ctc.code
 
         and sc.display = ctc.display
 
