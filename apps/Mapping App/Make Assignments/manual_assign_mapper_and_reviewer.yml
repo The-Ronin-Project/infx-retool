@@ -1,4 +1,4 @@
-id: manual_assign
+id: manual_assign_mapper_and_reviewer
 type: datasource
 subtype: SqlQueryUnified
 resourceName: dc8029bc-3980-4836-841e-776c64eeca49
@@ -17,16 +17,16 @@ template:
     - resourceNameOverride: ''
     - runWhenModelUpdates: false
     - showFailureToaster: true
-    - query: >-
-        update concept_maps.source_concept
+    - query: >
+        UPDATE concept_maps.source_concept
 
-        set assigned_mapper={{mapper_select.value}},
-        assigned_reviewer={{reviewer_select.value}}
+        SET assigned_mapper = COALESCE({{mapper_select.value}},
+        assigned_mapper),
+            assigned_reviewer = COALESCE({{reviewer_select.value}}, assigned_reviewer)
+        WHERE concept_map_version_uuid={{urlparams.concept_map_version_uuid}}
 
-        where concept_map_version_uuid={{urlparams.concept_map_version_uuid}}
-
-        and cast(uuid as text) =
-        ANY({{concepts_table.selectedRow.data.map(x=>x.source_uuid)}})
+        AND cast(uuid as text) =
+        ANY({{concepts_table.selectedRow.data.map(x=>x.source_uuid)}});
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null

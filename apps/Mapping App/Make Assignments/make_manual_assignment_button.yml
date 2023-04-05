@@ -19,7 +19,7 @@ template:
             - event: click
             - type: datasource
             - method: trigger
-            - pluginId: manual_assign
+            - pluginId: manual_assign_mapper_and_reviewer
             - targetId: null
             - params:
                 ordered: []
@@ -27,7 +27,7 @@ template:
             - waitMs: '0'
     - loading: false
     - loaderPosition: auto
-    - disabled: '{{mapper_select.value == null}}'
+    - disabled: '{{mapper_select.value == null && reviewer_select.value == null}}'
     - maintainSpaceWhenHidden: false
 style:
   ordered: []
