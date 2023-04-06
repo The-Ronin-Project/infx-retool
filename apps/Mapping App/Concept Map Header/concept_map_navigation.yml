@@ -54,7 +54,7 @@ template:
                   - valueToCopy: ''
                   - internalUrlHashParams: ''
                   - exportFileType: csv
-                  - buttonType: action
+                  - buttonType: internal-url
                   - exportTemplate: null
                   - url: ''
                   - newWindow: false
@@ -93,7 +93,7 @@ template:
                   - valueToCopy: ''
                   - internalUrlHashParams: ''
                   - exportFileType: csv
-                  - buttonType: action
+                  - buttonType: internal-url
                   - exportTemplate: null
                   - url: ''
                   - newWindow: false
@@ -101,7 +101,7 @@ template:
                   - action: navigate_to_review
                   - internalUrlQuery: >-
                       "[{\"key\":\"concept_map_version_uuid\",\"value\":\"{{urlparams.concept_map_version_uuid}}\"}]"
-                  - internalUrlPath: bea37d00-44dd-11ed-908b-eb3e8eafc0fa
+                  - internalUrlPath: afb4d380-50cb-11ed-b76c-ffbcb400100c
                   - exportFileName: ''
                   - disabled: ''
             - hidden: ''
@@ -160,7 +160,7 @@ template:
                   - exportQuery: ''
                   - action: ''
                   - internalUrlQuery: >-
-                      "[{\"key\":\"\\\"concept_map_version_uuid\\\"\",\"value\":\"{{urlparams.concept_map_version_uuid}}\"}]"
+                      "[{\"key\":\"concept_map_version_uuid\",\"value\":\"{{urlparams.concept_map_version_uuid}}\"}]"
                   - internalUrlPath: 8c727660-4690-11ed-8fd4-0f8700d37ab7
                   - exportFileName: ''
                   - disabled: ''
