@@ -144,11 +144,12 @@ template:
 
         (case when {{sorting_column_select.value}} = 'resource_count' and
         {{sort_direction_select.value}} = 'ASC' then
-        ctc.additional_data->>'count_of_resources_affected' end) asc,
+        (ctc.additional_data->>'count_of_resources_affected')::integer end) asc,
 
         (case when {{sorting_column_select.value}} = 'resource_count' and
         {{sort_direction_select.value}} = 'DESC' then
-        ctc.additional_data->>'count_of_resources_affected' end) desc,
+        (ctc.additional_data->>'count_of_resources_affected')::integer end)
+        desc,
 
         (case when {{sorting_column_select.value}} = 'review_status' and
         {{sort_direction_select.value}} = 'ASC' then cr.review_status end) asc,
