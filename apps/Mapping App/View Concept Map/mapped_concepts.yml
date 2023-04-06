@@ -21,6 +21,10 @@ template:
               ordered: []
           - display:
               ordered: []
+          - count_of_resources_affected:
+              ordered:
+                - showSeparators: true
+                - padDecimal: true
     - columnWidths:
         - object:
             id: relationship
@@ -146,6 +150,7 @@ template:
           - code: TextMultiDataCell
           - source_code: TextDataCell
           - display: TextMultiDataCell
+          - count_of_resources_affected: NumberDataCell
     - columnRestrictedEditing:
         ordered: []
     - showFilterButton: true
@@ -177,6 +182,7 @@ template:
           - code: ''
           - source_code: ''
           - display: ''
+          - count_of_resources_affected: sum
     - _columnsWithLegacyBackgroundColor:
         set: []
     - showAddRowButton: false
@@ -216,6 +222,7 @@ template:
           - code: left
           - source_code: left
           - display: left
+          - count_of_resources_affected: right
     - columnSummaries:
         object: {}
     - showBoxShadow: false
@@ -240,6 +247,7 @@ template:
           - code: ''
           - source_code: ''
           - display: ''
+          - count_of_resources_affected: ''
     - checkboxRowSelect: true
     - _compatibilityMode: false
     - showColumnBorders: false
