@@ -1,0 +1,67 @@
+id: reassign_reviewer
+type: widget
+subtype: SplitButtonWidget
+template:
+  ordered:
+    - _disabledByIndex: []
+    - showSelectionIndicator: true
+    - horizontalAlign: stretch
+    - iconByIndex:
+        array: []
+    - values: '{{ item.user_uuid }}'
+    - clickable: false
+    - _iconByIndex: []
+    - overlayMinWidth: null
+    - hidden: false
+    - data: '{{ get_users_to_assign.data }}'
+    - selectedItem: null
+    - showInEditor: false
+    - tooltipText: ''
+    - style:
+        ordered:
+          - background: rgb(159, 179, 200)
+          - itemText: rgb(51, 78, 104)
+    - hiddenByIndex:
+        array: []
+    - _hiddenByIndex: []
+    - _captionByIndex: []
+    - styleVariant: solid
+    - _hasMigratedNestedItems: true
+    - captionByIndex:
+        array: []
+    - itemMode: dynamic
+    - selectedIndex: 0
+    - _tooltipByIndex: []
+    - tooltipByIndex:
+        array: []
+    - selectedLabel: ''
+    - events:
+        - ordered:
+            - event: click
+            - type: datasource
+            - method: trigger
+            - pluginId: update_reviewer_assignment
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - _ids: []
+    - overlayMaxHeight: 375
+    - loading: false
+    - disabled: false
+    - _labels: []
+    - disabledByIndex:
+        array: []
+    - maintainSpaceWhenHidden: false
+    - labels: Re-Assign to {{ item.first_last_name }}
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabbedContainer1
+    subcontainer: '2e213'
+    col: 5
+    height: 1
+    width: 3
+createdAt: 2023-04-07T15:50:04.131Z

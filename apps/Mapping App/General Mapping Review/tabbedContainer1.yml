@@ -26,6 +26,7 @@ template:
     - style:
         ordered:
           - headerBackground: rgba(60, 146, 222, 0.12)
+          - background: rgb(240, 244, 248)
     - hiddenByIndex:
         array: []
     - _hiddenByIndex:
