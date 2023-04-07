@@ -207,7 +207,7 @@ template:
     - columnMappers:
         ordered:
           - Custom Column 2: ''
-    - showClearSelection: false
+    - showClearSelection: true
     - doubleClickToEdit: true
     - overflowType: scroll
     - _reverseSortedDisplayedDataIndices: null

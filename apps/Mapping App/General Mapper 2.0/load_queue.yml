@@ -30,6 +30,8 @@ template:
 
         and (mapping_group={{mapping_group_select.value}} or
         {{mapping_group_select.value == null}})
+
+        order by code ASC
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
