@@ -34,6 +34,8 @@ template:
         and concept_relationship.review_status = 'rejected'
 
         and source_concept.map_status != 'no_map_rejected'
+
+        order by code ASC
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
