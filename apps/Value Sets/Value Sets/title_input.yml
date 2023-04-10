@@ -11,7 +11,7 @@ template:
     - maxLength: null
     - hidden: null
     - customValidation: ''
-    - patternType: regex
+    - patternType: ''
     - hideValidationMessage: false
     - textBefore: ''
     - validationMessage: ''
