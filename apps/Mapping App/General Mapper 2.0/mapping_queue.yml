@@ -128,7 +128,7 @@ template:
             - actionButtonInternalUrlQuery: ''
             - actionButtonUrl: ''
             - actionButtonNewWindow: false
-            - actionButtonDisabled: '{{load_settings.data.auto_advance_mapping == true}}'
+            - actionButtonDisabled: '{{load_settings.data.auto_advance_mapping[0] == true}}'
     - actionButtonSelectsRow: true
     - selectRowByDefault: true
     - defaultSortByColumn: ''
