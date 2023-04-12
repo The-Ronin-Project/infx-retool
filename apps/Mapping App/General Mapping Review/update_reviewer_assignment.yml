@@ -93,6 +93,26 @@ template:
                 ordered: []
             - waitType: debounce
             - waitMs: '0'
+        - ordered:
+            - event: success
+            - type: util
+            - method: confetti
+            - pluginId: ''
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: success
+            - type: datasource
+            - method: trigger
+            - pluginId: getUsers_reviewer
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
     - tableName: ''
     - queryTimeout: '10000'
     - requireConfirmation: false
