@@ -73,7 +73,7 @@ template:
             value: 247
         - object:
             id: published_date
-            value: 277.203125
+            value: 207.203125
     - showSummaryFooter: false
     - disableRowSelectInteraction: false
     - columnWidthsMobile: []
