@@ -177,19 +177,7 @@ template:
     - defaultSortDescending: false
     - _sortedDisplayedDataIndices: null
     - dynamicColumnSettings: null
-    - events:
-        - ordered:
-            - method: setValue
-            - enabled: '{{load_settings.data.auto_fill_search[0]}}'
-            - params:
-                ordered:
-                  - value: '{{mapping_queue.selectedRow.data.display}}'
-            - targetId: null
-            - pluginId: search_text_input
-            - waitType: debounce
-            - event: rowSelectChange
-            - type: widget
-            - waitMs: '0'
+    - events: []
     - totalRowCount: ''
     - recordUpdates:
         array: []
