@@ -22,17 +22,23 @@ template:
             id: resource_count
             value: 116.5546875
         - object:
-            id: assigned_mapper
-            value: 131.5546875
-        - object:
             id: code
             value: 283.5
         - object:
             id: display
             value: 761.8359375
         - object:
+            id: source_code
+            value: 311.96875
+        - object:
+            id: source_display
+            value: 506.9609375
+        - object:
+            id: assigned_mapper
+            value: 227.5546875
+        - object:
             id: assigned_reviewer
-            value: 143.5546875
+            value: 186.5546875
     - showSummaryFooter: false
     - disableRowSelectInteraction: false
     - columnWidthsMobile: []
@@ -48,6 +54,8 @@ template:
           - assigned_reviewer: Reviewer
           - resource_count: Resource Count
           - count_of_resources_affected: Resource Count
+          - source_code: Source Code
+          - source_display: Source Display
     - alwaysShowPaginator: false
     - columnColors:
         ordered:
@@ -82,6 +90,7 @@ template:
     - showFilterButton: true
     - _columnVisibility:
         ordered:
+          - previous_version_context: false
           - display: false
           - additional_data: false
           - first_last_name: false
@@ -245,7 +254,7 @@ position2:
   position2:
     container: assignment_groups_tabbedContainer
     subcontainer: '82482'
-    row: 1.1999999999999993
+    row: 1.9999999999999996
     height: 13.999999999999998
     width: 12
 createdAt: 2022-12-21T20:14:03.670Z
