@@ -40,13 +40,19 @@ template:
 
         and cast(sc.system as uuid) = ctc.terminology_version_uuid
 
-        where sc.concept_map_version_uuid={{urlparams.concept_map_version_uuid}}
+        where (CASE
+            WHEN {{unassigned_mapper_switch.value}} = true THEN sc.assigned_mapper IS NULL
+            ELSE true
+          END)
+        and sc.concept_map_version_uuid={{urlparams.concept_map_version_uuid}}
 
         and sc.map_status = 'pending'
 
         and sc.uuid not in 
 
         (select source_concept_uuid from concept_maps.concept_relationship)
+
+        order by sc.code asc
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
