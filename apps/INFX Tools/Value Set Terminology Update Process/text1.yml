@@ -1,0 +1,33 @@
+id: text1
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - tooltipText: ''
+    - value: >-
+        Please select a terminology to genrate a report of Value Set standing
+        before terminology update. The report will generate based on the most
+        recent avaible version of the terminology in our database. The Value
+        Sets on the 'Latest version Not active' tab require action before
+        running an update.
+    - _disclosedFields:
+        array: []
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: container1
+    subcontainer: 0555a
+    row: 0.2
+    height: 0.6
+    width: 4
+createdAt: 2023-04-17T20:25:22.593Z
