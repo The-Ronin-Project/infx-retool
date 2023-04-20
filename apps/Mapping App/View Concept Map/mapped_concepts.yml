@@ -103,6 +103,7 @@ template:
     - alwaysShowPaginator: false
     - columnColors:
         ordered:
+          - previous_version_context: ''
           - special_use: ''
           - display: ''
           - additional_data: ''

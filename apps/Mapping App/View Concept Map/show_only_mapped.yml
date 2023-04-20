@@ -13,6 +13,8 @@ template:
     - formDataKey: '{{ self.id }}'
     - value: false
     - labelCaption: ''
+    - _disclosedFields:
+        array: []
     - label: Show Only Mapped
     - _validate: false
     - invalid: false

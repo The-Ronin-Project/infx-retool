@@ -11,6 +11,8 @@ template:
     - text: Download CSV (Entire Concept Map)
     - showInEditor: false
     - tooltipText: ''
+    - _disclosedFields:
+        array: []
     - styleVariant: solid
     - submit: false
     - iconBefore: ''

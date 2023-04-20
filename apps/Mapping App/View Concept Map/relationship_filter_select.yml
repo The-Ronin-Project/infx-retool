@@ -52,6 +52,8 @@ template:
     - _hiddenByIndex: []
     - placeholder: Select a relationship
     - _captionByIndex: []
+    - _disclosedFields:
+        array: []
     - itemAdornmentSize: auto
     - label: Relationship
     - _hasMigratedNestedItems: true

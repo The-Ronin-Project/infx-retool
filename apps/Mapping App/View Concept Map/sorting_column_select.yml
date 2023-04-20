@@ -18,6 +18,7 @@ template:
         - false
         - false
         - false
+        - false
     - showSelectionIndicator: true
     - _values:
         - source_code
@@ -32,6 +33,7 @@ template:
         - mapping_comments
         - review_comment
         - source_comments
+        - reason_for_no_map
     - iconByIndex:
         array: []
     - values:
@@ -39,6 +41,7 @@ template:
     - readOnly: false
     - iconAfter: ''
     - _iconByIndex:
+        - ''
         - ''
         - ''
         - ''
@@ -64,6 +67,7 @@ template:
         array: []
     - textBefore: ''
     - _fallbackTextByIndex:
+        - ''
         - ''
         - ''
         - ''
@@ -106,6 +110,7 @@ template:
         - false
         - false
         - false
+        - false
     - placeholder: Select an option
     - _captionByIndex:
         - ''
@@ -120,6 +125,9 @@ template:
         - ''
         - ''
         - ''
+        - ''
+    - _disclosedFields:
+        array: []
     - itemAdornmentSize: auto
     - label: Sort by
     - _hasMigratedNestedItems: true
@@ -144,7 +152,9 @@ template:
         - ''
         - ''
         - ''
+        - ''
     - _colorByIndex:
+        - ''
         - ''
         - ''
         - ''
@@ -178,6 +188,7 @@ template:
         - 710f6
         - e53f9
         - b897d
+        - c208b
     - emptyMessage: No options
     - overlayMaxHeight: 375
     - loading: false
@@ -196,6 +207,7 @@ template:
         - Mapping Comments
         - Review Comment
         - Comments
+        - No Map Reason
     - labelWrap: false
     - disabledValues:
         array: []
@@ -203,6 +215,7 @@ template:
         array: []
     - maintainSpaceWhenHidden: false
     - _imageByIndex:
+        - ''
         - ''
         - ''
         - ''
