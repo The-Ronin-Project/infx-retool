@@ -54,6 +54,8 @@ template:
     - placeholder: Select options
     - _captionByIndex:
         - ''
+    - _disclosedFields:
+        array: []
     - itemAdornmentSize: auto
     - label: No Map Reason
     - _hasMigratedNestedItems: true

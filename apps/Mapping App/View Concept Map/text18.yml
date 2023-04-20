@@ -11,6 +11,8 @@ template:
     - verticalAlign: center
     - tooltipText: ''
     - value: Relate to the content being mapped, including source and target data
+    - _disclosedFields:
+        array: []
     - disableMarkdown: false
     - overflowType: scroll
     - maintainSpaceWhenHidden: false

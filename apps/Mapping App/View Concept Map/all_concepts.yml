@@ -11,6 +11,7 @@ template:
     - databasePasswordOverride: ''
     - queryDisabledMessage: ''
     - servedFromCache: false
+    - offlineUserQueryInputs: ''
     - successMessage: ''
     - queryDisabled: ''
     - playgroundQuerySaveId: latest
@@ -171,6 +172,14 @@ template:
 
         (case when {{sorting_column_select.value}} = 'review_comment' and
         {{sort_direction_select.value}} = 'DESC' then cr.review_comment end)
+        desc,
+
+        (case when {{sorting_column_select.value}} = 'reason_for_no_map' and
+        {{sort_direction_select.value}} = 'ASC' then sc.reason_for_no_map end)
+        asc,
+
+        (case when {{sorting_column_select.value}} = 'reason_for_no_map' and
+        {{sort_direction_select.value}} = 'DESC' then sc.reason_for_no_map end)
         desc,
 
         (case when {{sorting_column_select.value}} = 'source_comments' and

@@ -61,6 +61,8 @@ template:
     - _captionByIndex:
         - ''
         - ''
+    - _disclosedFields:
+        array: []
     - itemAdornmentSize: auto
     - label: Label
     - _hasMigratedNestedItems: true
