@@ -15,11 +15,23 @@ template:
         ordered:
           - background: rgba(64, 152, 215, 0.09)
           - label: rgb(64, 152, 215)
+    - _disclosedFields:
+        array: []
     - styleVariant: solid
     - submit: false
     - iconBefore: bold/interface-file-clipboard-text
     - events:
-        ordered: []
+        - ordered:
+            - event: click
+            - type: util
+            - method: openApp
+            - pluginId: ''
+            - targetId: null
+            - params:
+                ordered:
+                  - uuid: 3890c4c0-0a9b-11ec-902a-57202d4ce0d0
+            - waitType: debounce
+            - waitMs: '0'
     - loading: false
     - loaderPosition: auto
     - disabled: false

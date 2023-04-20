@@ -12,11 +12,13 @@ template:
     - _defaultValue: ''
     - tooltipText: ''
     - value: >-
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore. </p>
+        <p>Generate pre-terminology update report to identify value sets in need
+        of attention before versioning. </p>
     - style:
         ordered:
           - color: rgba(36, 59, 83, 0.9)
+    - _disclosedFields:
+        array: []
     - disableMarkdown: false
     - overflowType: scroll
     - maintainSpaceWhenHidden: false

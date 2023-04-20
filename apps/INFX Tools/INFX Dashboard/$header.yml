@@ -7,8 +7,8 @@ template:
     - sticky: true
     - style:
         ordered:
-          - primary-surface: '#f5f5f5'
-          - primary-text: rgba(255, 255, 255, 0.8)
+          - primary-surface: rgb(188, 204, 220)
+          - primary-text: rgba(16, 42, 67, 0.8)
           - accent-background: rgba(248, 249, 255, 1)
 style:
   ordered: []
