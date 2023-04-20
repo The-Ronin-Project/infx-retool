@@ -15,11 +15,23 @@ template:
         ordered:
           - background: rgba(64, 152, 215, 0.13)
           - label: rgb(64, 152, 215)
+    - _disclosedFields:
+        array: []
     - styleVariant: solid
     - submit: false
     - iconBefore: bold/health-medical-house
     - events:
-        ordered: []
+        - ordered:
+            - event: click
+            - type: util
+            - method: openApp
+            - pluginId: ''
+            - targetId: null
+            - params:
+                ordered:
+                  - uuid: 35347ac0-9bf4-11ec-bea5-53c1223dcd2f
+            - waitType: debounce
+            - waitMs: '0'
     - loading: false
     - loaderPosition: auto
     - disabled: false

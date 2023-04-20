@@ -11,10 +11,12 @@ template:
     - verticalAlign: center
     - _defaultValue: ''
     - tooltipText: ''
-    - value: '#### Data Modeling'
+    - value: '#### Versioning Process'
     - style:
         ordered:
           - color: rgba(98, 125, 152, 0.8)
+    - _disclosedFields:
+        array: []
     - disableMarkdown: false
     - overflowType: scroll
     - maintainSpaceWhenHidden: false
@@ -22,7 +24,7 @@ style:
   ordered: []
 position2:
   position2:
-    row: 20
+    row: 21.2
     height: 0.8
     width: 11
 createdAt: 2022-04-19T20:54:56.345Z
