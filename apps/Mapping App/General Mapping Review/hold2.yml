@@ -11,6 +11,8 @@ template:
     - text: Hold for discussion All Selected
     - showInEditor: false
     - tooltipText: ''
+    - _disclosedFields:
+        array: []
     - styleVariant: solid
     - submit: false
     - iconBefore: ''
