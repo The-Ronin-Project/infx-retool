@@ -27,6 +27,8 @@ template:
     - labelWidth: '48'
     - autoFill: ''
     - placeholder: Enter value
+    - _disclosedFields:
+        array: []
     - label: Source Extension Url
     - _validate: false
     - labelWidthUnit: '%'

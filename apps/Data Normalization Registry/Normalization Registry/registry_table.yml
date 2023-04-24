@@ -49,6 +49,7 @@ template:
     - alwaysShowPaginator: false
     - columnColors:
         ordered:
+          - value_set_uuid: ''
           - is_unique: ''
           - filename: ''
           - data_element: ''
@@ -59,11 +60,14 @@ template:
           - resource_type: ''
           - name: ''
           - sales: ''
+          - value_set_title: ''
           - tenant_id: ''
           - concept_map_uuid: ''
           - original_data_element: ''
           - version: ''
+          - profile_url: ''
           - field: ''
+          - type: ''
           - id: ''
           - uuid: ''
           - email: ''

@@ -1,8 +1,6 @@
 version: 43.0.9
 pageUuid: 963763e0-44e7-11ed-8353-1bcc90713a41
 appTemplate:
-  folders:
-    - dropdown_options
   experimentalPerfFeatures:
     object:
       batchCommitModelEnabled: false
@@ -10,5 +8,5 @@ appTemplate:
       serverDepGraphEnabled: false
       useRuntimeV2: false
   rootScreen: null
-  version: 2.110.3
+  version: 2.113.8
   markdownLinkBehavior: auto
