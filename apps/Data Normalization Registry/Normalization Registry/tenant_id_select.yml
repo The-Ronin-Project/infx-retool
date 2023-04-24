@@ -97,6 +97,8 @@ template:
         - ''
         - ''
         - ''
+    - _disclosedFields:
+        array: []
     - itemAdornmentSize: auto
     - label: 'Tenant ID:'
     - _hasMigratedNestedItems: true

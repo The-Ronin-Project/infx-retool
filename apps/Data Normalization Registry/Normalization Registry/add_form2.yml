@@ -17,6 +17,8 @@ template:
     - initialData: null
     - showInEditor: false
     - tooltipText: ''
+    - _disclosedFields:
+        array: []
     - invalid: false
     - showFooter: true
     - events:

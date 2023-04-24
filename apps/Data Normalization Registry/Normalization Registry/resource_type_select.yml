@@ -13,6 +13,7 @@ template:
         - false
         - false
         - false
+        - false
     - showSelectionIndicator: true
     - _values:
         - Appointment
@@ -22,6 +23,7 @@ template:
         - Practitioner
         - PractitionerRole
         - Location
+        - DocumentReference
     - iconByIndex:
         array: []
     - values:
@@ -29,6 +31,7 @@ template:
     - readOnly: false
     - iconAfter: ''
     - _iconByIndex:
+        - ''
         - ''
         - ''
         - ''
@@ -49,6 +52,7 @@ template:
         array: []
     - textBefore: ''
     - _fallbackTextByIndex:
+        - ''
         - ''
         - ''
         - ''
@@ -81,6 +85,7 @@ template:
         - false
         - false
         - false
+        - false
     - placeholder: Select an option
     - _captionByIndex:
         - ''
@@ -90,6 +95,9 @@ template:
         - ''
         - ''
         - ''
+        - ''
+    - _disclosedFields:
+        array: []
     - itemAdornmentSize: auto
     - label: 'Resource Type:'
     - _hasMigratedNestedItems: true
@@ -109,7 +117,9 @@ template:
         - ''
         - ''
         - ''
+        - ''
     - _colorByIndex:
+        - ''
         - ''
         - ''
         - ''
@@ -133,12 +143,14 @@ template:
         - d89ec
         - f049a
         - 33d5c
+        - fa30b
     - emptyMessage: ''
     - overlayMaxHeight: 375
     - loading: false
     - disabled: false
     - labelPosition: left
     - _labels:
+        - ''
         - ''
         - ''
         - ''
@@ -153,6 +165,7 @@ template:
         array: []
     - maintainSpaceWhenHidden: false
     - _imageByIndex:
+        - ''
         - ''
         - ''
         - ''
