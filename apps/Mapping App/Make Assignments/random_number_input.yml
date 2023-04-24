@@ -27,6 +27,8 @@ template:
     - min: null
     - labelWidth: '33'
     - placeholder: Enter value
+    - _disclosedFields:
+        array: []
     - showStepper: true
     - label: Number of Random concepts
     - _validate: false

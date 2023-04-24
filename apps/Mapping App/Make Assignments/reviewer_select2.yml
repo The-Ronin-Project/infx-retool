@@ -46,6 +46,8 @@ template:
     - _hiddenByIndex: []
     - placeholder: Select a reviewer
     - _captionByIndex: []
+    - _disclosedFields:
+        array: []
     - itemAdornmentSize: auto
     - label: Reviewer
     - _hasMigratedNestedItems: true

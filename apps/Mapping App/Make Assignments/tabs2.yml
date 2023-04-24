@@ -38,6 +38,8 @@ template:
         - ''
         - ''
         - ''
+    - _disclosedFields:
+        array: []
     - _hasMigratedNestedItems: true
     - itemMode: static
     - selectedIndex: null
