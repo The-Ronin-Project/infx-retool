@@ -46,6 +46,8 @@ template:
     - _hiddenByIndex: []
     - placeholder: Select a mapper
     - _captionByIndex: []
+    - _disclosedFields:
+        array: []
     - itemAdornmentSize: auto
     - label: Mapper
     - _hasMigratedNestedItems: true

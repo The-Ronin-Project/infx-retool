@@ -32,6 +32,8 @@ template:
         - false
         - ''
         - ''
+    - _disclosedFields:
+        array: []
     - currentViewIndex: null
     - _hasMigratedNestedItems: true
     - transition: none

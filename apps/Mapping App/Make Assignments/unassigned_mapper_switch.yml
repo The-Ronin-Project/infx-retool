@@ -13,6 +13,8 @@ template:
     - formDataKey: '{{ self.id }}'
     - value: false
     - labelCaption: ''
+    - _disclosedFields:
+        array: []
     - label: only view concpets with un-assigned mapper
     - _validate: false
     - invalid: false
