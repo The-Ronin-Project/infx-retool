@@ -11,6 +11,7 @@ template:
     - lastReceivedFromResourceAt: null
     - queryDisabledMessage: ''
     - servedFromCache: false
+    - offlineUserQueryInputs: ''
     - successMessage: ''
     - queryDisabled: ''
     - playgroundQuerySaveId: latest
@@ -83,4 +84,5 @@ template:
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
+    - playgroundQueryName: getInfoBeforeMapping
 createdAt: 2022-10-05T19:52:24.615Z

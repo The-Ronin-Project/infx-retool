@@ -25,6 +25,8 @@ template:
         array: []
     - _hiddenByIndex: []
     - _captionByIndex: []
+    - _disclosedFields:
+        array: []
     - styleVariant: solid
     - _hasMigratedNestedItems: true
     - captionByIndex:

@@ -44,9 +44,6 @@ template:
             id: source_code
             value: 253
         - object:
-            id: additional_data
-            value: 397
-        - object:
             id: author
             value: 138
         - object:
@@ -64,6 +61,12 @@ template:
         - object:
             id: previous_version_context
             value: 153
+        - object:
+            id: additional_data
+            value: 343
+        - object:
+            id: assigned_reviewer
+            value: 145
     - showSummaryFooter: false
     - disableRowSelectInteraction: false
     - columnWidthsMobile: []
@@ -73,13 +76,16 @@ template:
     - onRowAdded: ''
     - columnHeaderNames:
         ordered:
+          - previous_version_context: Previous Version Context
           - display: source display
           - additional_data: ℹ️
           - mapping_comments: Mapping Comments
+          - first_last_name: Assigned Reviewer
           - count_of_resources_affected: Resource Count
           - author: Mapper
           - source_code: Source Code
           - target_concept_code: Target Code
+          - assigned_reviewer: Assigned Reviewer
           - Custom Column 1: Additional Data
           - relationship_display: Relationship
           - target_concept_display: Target Concept Display
@@ -87,12 +93,14 @@ template:
     - alwaysShowPaginator: false
     - columnColors:
         ordered:
+          - previous_version_context: ''
           - special_use: ''
           - display: ''
           - additional_data: ''
           - relationship_system_uuid: ''
           - mapping_comments: ''
           - created_date: ''
+          - first_last_name: ''
           - relationship_code_uuid: ''
           - count_of_resources_affected: ''
           - source_code_uuid: ''
@@ -112,6 +120,7 @@ template:
           - source_system: ''
           - target_concept_system: ''
           - comments: ''
+          - last_name: ''
           - map_status: ''
           - source_concept_uuid: ''
           - reviewed_date: ''
@@ -120,6 +129,7 @@ template:
           - review_comment: ''
           - source_comments: ''
           - review_status: ''
+          - first_name: ''
           - id: ''
           - relationship_display: ''
           - uuid: ''
@@ -169,6 +179,7 @@ template:
           - source_system: false
           - target_concept_system: false
           - comments: false
+          - last_name: false
           - map_status: false
           - source_concept_uuid: false
           - reviewed_date: false
@@ -177,6 +188,7 @@ template:
           - review_comment: false
           - source_comments: false
           - review_status: false
+          - first_name: false
           - uuid: false
           - concept_map_version_uuid: false
           - resource_count: false

@@ -13,6 +13,8 @@ template:
     - value: >-
         **{{ready_for_review_but_unassigned.data.count}}** concepts without an
         assigned reviewer
+    - _disclosedFields:
+        array: []
     - disableMarkdown: false
     - overflowType: scroll
     - maintainSpaceWhenHidden: false

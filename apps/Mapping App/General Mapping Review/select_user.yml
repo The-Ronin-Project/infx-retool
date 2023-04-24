@@ -42,6 +42,8 @@ template:
     - _hiddenByIndex: []
     - placeholder: Select an option
     - _captionByIndex: []
+    - _disclosedFields:
+        array: []
     - itemAdornmentSize: auto
     - label: User
     - _hasMigratedNestedItems: true

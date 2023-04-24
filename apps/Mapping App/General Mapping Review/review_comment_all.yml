@@ -24,6 +24,8 @@ template:
     - labelWidth: '33'
     - autoFill: ''
     - placeholder: Type in review comment before approving/rejecting all selected rows
+    - _disclosedFields:
+        array: []
     - label: Comment On All Selected Rows (Optional)
     - _validate: false
     - labelWidthUnit: '%'

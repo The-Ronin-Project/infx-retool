@@ -11,6 +11,7 @@ template:
     - databasePasswordOverride: ''
     - queryDisabledMessage: ''
     - servedFromCache: false
+    - offlineUserQueryInputs: ''
     - successMessage: ''
     - queryDisabled: ''
     - playgroundQuerySaveId: latest
@@ -24,10 +25,14 @@ template:
         source_code, source_concept.system as source_system,
         source_concept.comments as source_comments, ctc.additional_data,
         ctc.additional_data->>'count_of_resources_affected' as
-        count_of_resources_affected, * from concept_maps.concept_relationship
+        count_of_resources_affected, pmu.first_last_name, * from
+        concept_maps.concept_relationship
 
         join concept_maps.source_concept on source_concept.uuid =
         source_concept_uuid
+
+        join project_management.user pmu on
+        source_concept.assigned_reviewer=pmu.uuid
 
         join concept_maps.relationship_codes rc on
         concept_relationship.relationship_code_uuid=rc.uuid
