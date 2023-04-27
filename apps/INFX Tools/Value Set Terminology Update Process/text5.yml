@@ -23,7 +23,7 @@ position2:
     container: container1
     subcontainer: 0555a
     row: 1.2
-    col: 6
+    col: 5
     height: 0.6
-    width: 2
+    width: 3
 createdAt: 2023-04-18T21:25:22.020Z

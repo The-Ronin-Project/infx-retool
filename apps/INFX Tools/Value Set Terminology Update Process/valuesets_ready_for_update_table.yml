@@ -60,7 +60,16 @@ template:
     - serverPaginated: false
     - data: '{{get_reports.data.ready_for_update}}'
     - displayedData: null
-    - actionButtons: []
+    - actionButtons:
+        - ordered:
+            - actionButtonText: Perform Update on selected row
+            - actionButtonType: runQuery
+            - actionButtonQuery: update_selected_row
+            - actionButtonInternalUrlPath: ''
+            - actionButtonInternalUrlQuery: ''
+            - actionButtonUrl: ''
+            - actionButtonNewWindow: false
+            - actionButtonDisabled: ''
     - actionButtonSelectsRow: true
     - selectRowByDefault: true
     - defaultSortByColumn: ''
@@ -155,7 +164,6 @@ position2:
     container: tabbedContainer1
     subcontainer: 1a057
     row: -1.1102230246251565e-16
-    col: 2
     height: 15.000000000000002
-    width: 8
+    width: 12
 createdAt: 2023-04-17T20:36:40.574Z

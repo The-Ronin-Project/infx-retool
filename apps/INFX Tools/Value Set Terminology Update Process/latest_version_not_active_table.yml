@@ -37,7 +37,10 @@ template:
           - value_set_uuid: ValueSet UUID
     - alwaysShowPaginator: false
     - columnColors:
-        ordered: []
+        ordered:
+          - name: ''
+          - title: ''
+          - value_set_uuid: ''
     - columnFrozenAlignments:
         ordered: []
     - allowMultiRowSelect: false

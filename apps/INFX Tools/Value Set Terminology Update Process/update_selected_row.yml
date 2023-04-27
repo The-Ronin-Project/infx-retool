@@ -1,14 +1,14 @@
-id: get_versions
+id: update_selected_row
 type: datasource
-subtype: SqlQueryUnified
-resourceName: dc8029bc-3980-4836-841e-776c64eeca49
-resourceDisplayName: Clinical Content PostgresSQL DB
+subtype: RESTQuery
+resourceName: a00335cd-bd3b-4d98-8af4-7ff590ce95e8
+resourceDisplayName: INFX Internal Tools API
 template:
   ordered:
     - queryRefreshTime: ''
-    - records: ''
+    - paginationLimit: ''
+    - body: ''
     - lastReceivedFromResourceAt: null
-    - databasePasswordOverride: ''
     - queryDisabledMessage: ''
     - servedFromCache: false
     - offlineUserQueryInputs: ''
@@ -16,38 +16,32 @@ template:
     - queryDisabled: ''
     - playgroundQuerySaveId: latest
     - resourceNameOverride: ''
-    - runWhenModelUpdates: true
+    - runWhenModelUpdates: false
+    - paginationPaginationField: ''
+    - headers: >-
+        [{"key":"old_terminology_version_uuid","value":"{{get_versions.data.uuid[1]}}"},{"key":"new_terminology_version_uuid","value":"{{get_versions.data.uuid[0]}}"},{"key":"new_value_set_effective_start","value":"{{get_versions.data.effective_start[0]}}"},{"key":"new_value_set_effective_end","value":"{{get_versions.data.effective_end[0]}}"},{"key":"new_value_set_description","value":"Updated
+        for {{get_versions.data.terminology[0]}},
+        {{get_versions.data.version[0]}}  update"}]
     - showFailureToaster: true
-    - query: >
-        SELECT version, terminology, uuid, effective_start, effective_end FROM
-        public.terminology_versions
-
-        WHERE fhir_uri = {{terminology_select.value}}
-
-        ORDER BY version DESC;
+    - paginationEnabled: false
+    - query: >-
+        ValueSets/{{valuesets_ready_for_update_table.selectedRow.data.value_set_uuid}}/actions/perform_terminology_update
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
     - privateParams: []
     - runWhenPageLoadsDelay: ''
-    - warningCodes: []
     - data: null
-    - recordId: ''
     - importedQueryInputs:
         ordered: []
     - isImported: false
     - showSuccessToaster: true
-    - dataArray: []
     - cacheKeyTtl: ''
-    - filterBy: ''
     - requestSentTimestamp: null
-    - databaseHostOverride: ''
+    - cookies: ''
     - metadata: null
-    - editorMode: sql
     - queryRunTime: null
-    - actionType: ''
     - changesetObject: ''
-    - shouldUseLegacySql: false
     - errorTransformer: >-
         // The variable 'data' allows you to reference the request's data in the
         transformer. 
@@ -56,23 +50,21 @@ template:
 
         return data.error
     - finished: null
-    - databaseNameOverride: ''
     - confirmationMessage: null
     - isFetching: false
     - changeset: ''
     - rawData: null
     - queryTriggerDelay: '0'
-    - resourceTypeOverride: null
+    - resourceTypeOverride: ''
     - watchedParams: []
     - enableErrorTransformer: false
-    - enableBulkUpdates: false
     - showLatestVersionUpdatedWarning: false
+    - paginationDataField: ''
     - timestamp: 0
     - importedQueryDefaults:
         ordered: []
     - enableTransformer: false
     - showUpdateSetValueDynamicallyToggle: true
-    - bulkUpdatePrimaryKey: ''
     - runWhenPageLoads: false
     - transformer: >-
         // type your code here
@@ -82,18 +74,16 @@ template:
 
         return data
     - events: []
-    - tableName: ''
-    - queryTimeout: '10001'
+    - queryTimeout: '10000'
     - requireConfirmation: false
+    - type: POST
     - queryFailureConditions: ''
     - changesetIsObject: false
     - enableCaching: false
     - allowedGroups: []
-    - databaseUsernameOverride: ''
-    - shouldEnableBatchQuerying: false
-    - doNotThrowOnNoOp: false
+    - bodyType: json
     - offlineQueryType: None
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2023-04-17T20:14:15.735Z
+createdAt: 2023-04-26T20:24:39.151Z
