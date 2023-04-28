@@ -7,17 +7,11 @@ template:
   ordered:
     - queryRefreshTime: ''
     - paginationLimit: ''
-    - body: |-
-        [{
-            "terminology": {{terminologies.selectedRow.data.terminology}},
-            "version": {{new_version.value}},
-            "effective_start": {{version_dates.value.start}},
-            "effective_end": {{version_dates.value.end}},
-            "is_standard":{{terminologies.selectedRow.data.is_standard}},
-            "fhir_terminology":{{terminologies.selectedRow.data.fhir_terminology}},
-            "previous_version_uuid": {{terminologies.selectedRow.data.uuid}}
-          
-        }]
+    - body: >-
+        [{"key":"","value":""},{"key":"previous_terminology_version_uuid","value":"{{terminologies.selectedRow.data.uuid}}"},{"key":"version","value":"{{
+        new_version.value }}"},{"key":"effective_start","value":"{{
+        version_dates.value.start }}"},{"key":"effective_end","value":"{{
+        version_dates.value.end }}"}]
     - lastReceivedFromResourceAt: null
     - queryDisabledMessage: ''
     - servedFromCache: false
@@ -30,7 +24,7 @@ template:
     - headers: ''
     - showFailureToaster: true
     - paginationEnabled: false
-    - query: terminology/new_version/
+    - query: terminology/new_version_from_previous
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
@@ -86,7 +80,7 @@ template:
     - changesetIsObject: false
     - enableCaching: false
     - allowedGroups: []
-    - bodyType: raw
+    - bodyType: json
     - offlineQueryType: None
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
