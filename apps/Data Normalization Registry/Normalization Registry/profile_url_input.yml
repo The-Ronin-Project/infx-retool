@@ -23,7 +23,7 @@ template:
     - labelAlign: left
     - formDataKey: '{{ self.id }}'
     - value: ''
-    - labelCaption: ''
+    - labelCaption: http://projectronin.io/fhir/StructureDefinition/
     - labelWidth: '33'
     - autoFill: ''
     - placeholder: Enter value

@@ -21,7 +21,7 @@ template:
     - query: |-
         INSERT INTO data_ingestion.registry(
           resource_type, data_element, tenant_id, concept_map_uuid, source_extension_url, registry_uuid, type)
-          VALUES ({{ resource_type_select.value }}, {{data_element_input.value}}, {{tenant_id_select.value}}, {{concept_map_select.selectedItem.concept_map_uuid}}, {{source_extension_url.labelCaption + source_extension_url.value}}, uuid_generate_v4(), 'concept_map')
+          VALUES ({{ resource_type_select.value }}, {{data_element_input.value.trim().replace(/\s+/g, '')}}, {{tenant_id_select.value}}, {{concept_map_select.selectedItem.concept_map_uuid}}, {{source_extension_url.labelCaption + source_extension_url.value}}, uuid_generate_v4(), 'concept_map')
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
@@ -92,37 +92,11 @@ template:
         - ordered:
             - event: success
             - type: widget
-            - method: setCurrentView
-            - pluginId: tabbedContainer1
-            - targetId: null
-            - params:
-                ordered:
-                  - viewKey: View Registry
-            - waitType: debounce
-            - waitMs: '0'
-        - ordered:
-            - event: success
-            - type: datasource
-            - method: trigger
-            - pluginId: view_all_registry
+            - method: clear
+            - pluginId: add_form
             - targetId: null
             - params:
                 ordered: []
-            - waitType: debounce
-            - waitMs: '0'
-        - ordered:
-            - event: success
-            - type: script
-            - method: run
-            - pluginId: ''
-            - targetId: null
-            - params:
-                ordered:
-                  - src: |-
-                      resource_type_select.clearValue
-                      tenant_id_select.clearValue
-                      concept_map_select.clearValue
-                      source_extension_url.clearValue
             - waitType: debounce
             - waitMs: '0'
         - ordered:

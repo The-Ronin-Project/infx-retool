@@ -18,7 +18,10 @@ template:
     - resourceNameOverride: ''
     - runWhenModelUpdates: true
     - showFailureToaster: true
-    - query: select title, uuid from value_sets.value_set
+    - query: |-
+        select vs.title, vs.uuid from value_sets.value_set vs
+        join value_sets.value_set_version vsv on vsv.value_set_uuid=vs.uuid
+        where vsv.status='active'
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
