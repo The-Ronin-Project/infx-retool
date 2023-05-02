@@ -27,6 +27,8 @@ template:
     - labelWidth: '33'
     - autoFill: ''
     - placeholder: Enter value
+    - _disclosedFields:
+        array: []
     - label: Additional comments on why you chose this particular action
     - _validate: false
     - labelWidthUnit: '%'

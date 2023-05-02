@@ -12,6 +12,7 @@ template:
     - lastReceivedFromResourceAt: null
     - queryDisabledMessage: ''
     - servedFromCache: false
+    - offlineUserQueryInputs: ''
     - successMessage: ''
     - queryDisabled: ''
     - playgroundQuerySaveId: latest
@@ -72,22 +73,11 @@ template:
     - events:
         - ordered:
             - method: trigger
-            - enabled: '{{!load_settings.data.auto_advance_mapping[0]}}'
+            - enabled: ''
             - params:
                 ordered: []
             - targetId: null
             - pluginId: load_queue
-            - waitType: debounce
-            - event: success
-            - type: datasource
-            - waitMs: '0'
-        - ordered:
-            - method: trigger
-            - enabled: '{{load_settings.data.auto_advance_mapping[0]}}'
-            - params:
-                ordered: []
-            - targetId: null
-            - pluginId: complete_mapping
             - waitType: debounce
             - event: success
             - type: datasource
