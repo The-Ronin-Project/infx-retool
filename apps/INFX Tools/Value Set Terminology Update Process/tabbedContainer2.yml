@@ -23,7 +23,7 @@ template:
     - tooltipText: ''
     - style:
         ordered:
-          - headerBackground: rgb(217, 226, 236)
+          - headerBackground: rgb(185, 211, 233)
           - background: rgb(240, 244, 248)
     - hiddenByIndex:
         array: []

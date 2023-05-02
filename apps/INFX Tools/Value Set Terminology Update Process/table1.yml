@@ -67,7 +67,17 @@ template:
         {{ get_reports.data.already_updated.filter(row =>
         row.most_recent_version_status === "reviewed") }}
     - displayedData: null
-    - actionButtons: []
+    - actionButtons:
+        - ordered:
+            - actionButtonText: Go to Versions
+            - actionButtonType: openInternalUrl
+            - actionButtonQuery: ''
+            - actionButtonInternalUrlPath: ''
+            - actionButtonInternalUrlQuery: >-
+                "[{\"key\":\"uuid\",\"value\":\"{{latest_version_not_active_table.selectedRow.data.value_set_uuid}}\"}]"
+            - actionButtonUrl: ''
+            - actionButtonNewWindow: true
+            - actionButtonDisabled: ''
     - actionButtonSelectsRow: true
     - selectRowByDefault: true
     - defaultSortByColumn: ''
@@ -88,7 +98,7 @@ template:
         ordered:
           - headerBackground: rgb(240, 244, 248)
           - toolbarBackground: rgb(217, 226, 236)
-    - actionButtonPosition: left
+    - actionButtonPosition: right
     - dynamicRowHeights: false
     - bulkUpdateAction: ''
     - afterCursor: ''
@@ -161,6 +171,6 @@ position2:
   position2:
     container: tabbedContainer2
     subcontainer: 6fc3d
-    height: 8
+    height: 16.4
     width: 12
 createdAt: 2023-05-02T18:06:59.861Z

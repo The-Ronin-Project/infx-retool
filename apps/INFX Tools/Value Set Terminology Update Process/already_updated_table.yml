@@ -68,7 +68,17 @@ template:
         {{ get_reports.data.already_updated.filter(row =>
         row.most_recent_version_status === "pending") }}
     - displayedData: null
-    - actionButtons: []
+    - actionButtons:
+        - ordered:
+            - actionButtonText: Go to Versions
+            - actionButtonType: openInternalUrl
+            - actionButtonQuery: ''
+            - actionButtonInternalUrlPath: ''
+            - actionButtonInternalUrlQuery: >-
+                "[{\"key\":\"uuid\",\"value\":\"{{latest_version_not_active_table.selectedRow.data.value_set_uuid}}\"}]"
+            - actionButtonUrl: ''
+            - actionButtonNewWindow: true
+            - actionButtonDisabled: ''
     - actionButtonSelectsRow: true
     - selectRowByDefault: true
     - defaultSortByColumn: ''
@@ -89,7 +99,7 @@ template:
         ordered:
           - toolbarBackground: rgb(217, 226, 236)
           - headerBackground: rgb(240, 244, 248)
-    - actionButtonPosition: left
+    - actionButtonPosition: right
     - dynamicRowHeights: false
     - bulkUpdateAction: ''
     - afterCursor: ''
