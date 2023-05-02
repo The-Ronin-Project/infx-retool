@@ -1,6 +1,14 @@
 version: 43.0.9
 pageUuid: 184659c0-4e4f-11ed-8a53-4f14117ffdcc
 appTemplate:
+  mobileAppSettings:
+    object:
+      mobileOfflineModeEnabled: false
+      mobileOfflineModeDelaySync: false
+      displaySetting:
+        object:
+          landscapeMode: false
+          tabletMode: false
   experimentalPerfFeatures:
     object:
       batchCommitModelEnabled: false
@@ -8,5 +16,5 @@ appTemplate:
       serverDepGraphEnabled: false
       useRuntimeV2: false
   rootScreen: null
-  version: 2.113.8
+  version: 2.115.3
   markdownLinkBehavior: auto
