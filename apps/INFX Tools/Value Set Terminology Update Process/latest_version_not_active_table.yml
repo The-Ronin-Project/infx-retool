@@ -33,8 +33,8 @@ template:
     - columnHeaderNames:
         ordered:
           - name: ValueSet Name
-          - title: ValueSet Title
-          - value_set_uuid: ValueSet UUID
+          - title: Value Set Title
+          - value_set_uuid: Value Set UUID
     - alwaysShowPaginator: false
     - columnColors:
         ordered:
@@ -52,6 +52,7 @@ template:
     - _columnVisibility:
         ordered:
           - name: false
+          - title: true
     - _columnSummaryTypes:
         ordered: []
     - _columnsWithLegacyBackgroundColor:

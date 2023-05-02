@@ -23,11 +23,15 @@ template:
     - onRowAdded: ''
     - columnHeaderNames:
         ordered:
-          - title: ValueSet Title
-          - value_set_uuid: ValueSet UUID
+          - title: Value Set Title
+          - value_set_uuid: Value Set UUID
     - alwaysShowPaginator: false
     - columnColors:
-        ordered: []
+        ordered:
+          - most_recent_version_status: ''
+          - name: ''
+          - title: ''
+          - value_set_uuid: ''
     - columnFrozenAlignments:
         ordered: []
     - allowMultiRowSelect: false
@@ -40,6 +44,7 @@ template:
         ordered:
           - title: true
           - name: false
+          - most_recent_version_status: false
     - _columnSummaryTypes:
         ordered: []
     - _columnsWithLegacyBackgroundColor:
@@ -59,7 +64,9 @@ template:
     - downloadRawData: false
     - showFetchingIndicator: true
     - serverPaginated: false
-    - data: '{{get_reports.data.already_updated}}'
+    - data: >-
+        {{ get_reports.data.already_updated.filter(row =>
+        row.most_recent_version_status === "pending") }}
     - displayedData: null
     - actionButtons: []
     - actionButtonSelectsRow: true
@@ -153,10 +160,9 @@ style:
   ordered: []
 position2:
   position2:
-    container: tabbedContainer1
-    subcontainer: 873b1
-    row: -2.4980018054066022e-15
-    col: 2
-    height: 14.8
-    width: 8
+    container: tabbedContainer2
+    subcontainer: c1ea1
+    row: -2.6645352591003757e-15
+    height: 15.8
+    width: 12
 createdAt: 2023-04-17T21:43:51.477Z
