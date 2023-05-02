@@ -60,6 +60,8 @@ template:
         - ''
         - ''
         - ''
+    - _disclosedFields:
+        array: []
     - itemAdornmentSize: auto
     - label: Select Relationship
     - _hasMigratedNestedItems: true

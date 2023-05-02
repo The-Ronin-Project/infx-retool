@@ -26,6 +26,8 @@ template:
     - labelWidth: '33'
     - autoFill: ''
     - placeholder: Enter value
+    - _disclosedFields:
+        array: []
     - label: Mapping Comments
     - _validate: false
     - labelWidthUnit: '%'

@@ -47,6 +47,7 @@ template:
     - alwaysShowPaginator: false
     - columnColors:
         ordered:
+          - previous_version_context: ''
           - display: ''
           - name: ''
           - sales: ''

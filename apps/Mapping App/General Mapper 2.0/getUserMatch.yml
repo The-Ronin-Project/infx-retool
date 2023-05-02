@@ -11,6 +11,7 @@ template:
     - databasePasswordOverride: ''
     - queryDisabledMessage: ''
     - servedFromCache: false
+    - offlineUserQueryInputs: ''
     - successMessage: ''
     - queryDisabled: ''
     - playgroundQuerySaveId: 75
@@ -93,4 +94,5 @@ template:
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
+    - playgroundQueryName: current_user_uuid
 createdAt: 2022-09-12T21:37:44.405Z

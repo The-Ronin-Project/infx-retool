@@ -27,6 +27,8 @@ template:
     - labelWidth: '33'
     - autoFill: ''
     - placeholder: Enter RXCUI
+    - _disclosedFields:
+        array: []
     - label: RxCUI to Map
     - _validate: false
     - labelWidthUnit: '%'
