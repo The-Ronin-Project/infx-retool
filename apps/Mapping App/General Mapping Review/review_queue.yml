@@ -308,7 +308,7 @@ template:
           data: null
           columnName: null
     - columns: []
-    - defaultSelectedRow: first
+    - defaultSelectedRow: none
     - freezeActionButtonColumns: false
     - sort: null
     - _columns:
