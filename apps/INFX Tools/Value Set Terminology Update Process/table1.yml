@@ -1,4 +1,4 @@
-id: already_updated_table
+id: table1
 type: widget
 subtype: TableWidget
 template:
@@ -23,7 +23,7 @@ template:
     - onRowAdded: ''
     - columnHeaderNames:
         ordered:
-          - title: Value Set Title
+          - name: Value Set Name
           - value_set_uuid: Value Set UUID
     - alwaysShowPaginator: false
     - columnColors:
@@ -42,8 +42,7 @@ template:
     - showFilterButton: true
     - _columnVisibility:
         ordered:
-          - title: true
-          - name: false
+          - title: false
           - most_recent_version_status: false
     - _columnSummaryTypes:
         ordered: []
@@ -64,9 +63,9 @@ template:
     - downloadRawData: false
     - showFetchingIndicator: true
     - serverPaginated: false
-    - data: >-
+    - data: >
         {{ get_reports.data.already_updated.filter(row =>
-        row.most_recent_version_status === "pending") }}
+        row.most_recent_version_status === "reviewed") }}
     - displayedData: null
     - actionButtons:
         - ordered:
@@ -97,8 +96,8 @@ template:
     - useDynamicColumnSettings: false
     - style:
         ordered:
-          - toolbarBackground: rgb(217, 226, 236)
           - headerBackground: rgb(240, 244, 248)
+          - toolbarBackground: rgb(217, 226, 236)
     - actionButtonPosition: right
     - dynamicRowHeights: false
     - bulkUpdateAction: ''
@@ -171,8 +170,7 @@ style:
 position2:
   position2:
     container: tabbedContainer2
-    subcontainer: c1ea1
-    row: -2.6645352591003757e-15
-    height: 15.8
+    subcontainer: 6fc3d
+    height: 16.4
     width: 12
-createdAt: 2023-04-17T21:43:51.477Z
+createdAt: 2023-05-02T18:06:59.861Z

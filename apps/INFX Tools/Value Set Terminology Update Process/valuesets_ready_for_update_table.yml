@@ -23,8 +23,8 @@ template:
     - onRowAdded: ''
     - columnHeaderNames:
         ordered:
-          - title: ValueSet Title
-          - value_set_uuid: ValueSet UUID
+          - title: Value Set Title
+          - value_set_uuid: Value Set UUID
     - alwaysShowPaginator: false
     - columnColors:
         ordered: []
@@ -90,7 +90,7 @@ template:
         ordered:
           - toolbarBackground: rgb(217, 226, 236)
           - headerBackground: rgb(240, 244, 248)
-    - actionButtonPosition: left
+    - actionButtonPosition: right
     - dynamicRowHeights: false
     - bulkUpdateAction: ''
     - afterCursor: ''
