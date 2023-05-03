@@ -15,6 +15,10 @@ template:
         ordered:
           - target_concept_code:
               ordered: []
+          - count_of_resources_affected:
+              ordered:
+                - showSeparators: true
+                - padDecimal: true
     - columnWidths:
         - object:
             id: code
@@ -110,6 +114,7 @@ template:
         ordered:
           - Custom Column 1: button
           - target_concept_code: TextDataCell
+          - count_of_resources_affected: NumberDataCell
     - columnRestrictedEditing:
         ordered: []
     - showFilterButton: true
@@ -131,6 +136,7 @@ template:
     - _columnSummaryTypes:
         ordered:
           - target_concept_code: ''
+          - count_of_resources_affected: sum
     - _columnsWithLegacyBackgroundColor:
         set: []
     - showAddRowButton: false
@@ -169,6 +175,7 @@ template:
           - code: left
           - Custom Column 1: left
           - target_concept_code: right
+          - count_of_resources_affected: right
     - columnSummaries:
         object: {}
     - showBoxShadow: false
@@ -190,6 +197,7 @@ template:
     - _columnSummaryValues:
         ordered:
           - target_concept_code: ''
+          - count_of_resources_affected: ''
     - checkboxRowSelect: true
     - _compatibilityMode: false
     - showColumnBorders: false
