@@ -12,7 +12,11 @@ template:
     - rowHeight: standard
     - saveChangesDisabled: ''
     - columnTypeProperties:
-        ordered: []
+        ordered:
+          - count_of_resources_affected:
+              ordered:
+                - showSeparators: true
+                - padDecimal: true
     - columnWidths:
         - object:
             id: code
@@ -64,7 +68,8 @@ template:
         ordered: []
     - allowMultiRowSelect: false
     - columnFormats:
-        ordered: []
+        ordered:
+          - count_of_resources_affected: NumberDataCell
     - columnRestrictedEditing:
         ordered: []
     - showFilterButton: true
@@ -83,7 +88,8 @@ template:
           - resource_count: false
           - no_map: false
     - _columnSummaryTypes:
-        ordered: []
+        ordered:
+          - count_of_resources_affected: sum
     - _columnsWithLegacyBackgroundColor:
         set: []
     - showAddRowButton: false
@@ -111,6 +117,7 @@ template:
     - columnAlignment:
         ordered:
           - resource_count: right
+          - count_of_resources_affected: right
     - columnSummaries:
         object: {}
     - showBoxShadow: false
@@ -130,7 +137,8 @@ template:
         object: {}
     - sortedColumn: ''
     - _columnSummaryValues:
-        ordered: []
+        ordered:
+          - count_of_resources_affected: ''
     - checkboxRowSelect: true
     - _compatibilityMode: false
     - showColumnBorders: false
