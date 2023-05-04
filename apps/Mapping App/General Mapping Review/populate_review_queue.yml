@@ -31,7 +31,7 @@ template:
         join concept_maps.source_concept on source_concept.uuid =
         source_concept_uuid
 
-        join project_management.user pmu on
+        left join project_management.user pmu on
         source_concept.assigned_reviewer=pmu.uuid
 
         join concept_maps.relationship_codes rc on
@@ -46,8 +46,8 @@ template:
         where source_concept.concept_map_version_uuid =
         {{urlparams.concept_map_version_uuid}}
 
-        and ({{select_user.value}} = '' or source_concept.assigned_reviewer =
-        {{select_user.value}})
+        and ({{select_user.value}}::uuid IS NULL or
+        source_concept.assigned_reviewer = {{select_user.value}})
 
         and ((concept_relationship.review_status is null) or
         (concept_relationship.review_status = 'ready for review'))
