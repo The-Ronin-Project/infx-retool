@@ -1,0 +1,128 @@
+id: relationship_splitButton
+type: widget
+subtype: SplitButtonWidget
+template:
+  ordered:
+    - _disabledByIndex:
+        - ''
+        - ''
+        - ''
+    - showSelectionIndicator: true
+    - horizontalAlign: stretch
+    - _values:
+        - ''
+        - ''
+        - ''
+    - iconByIndex:
+        array: []
+    - clickable: false
+    - _iconByIndex:
+        - ''
+        - ''
+        - ''
+    - overlayMinWidth: null
+    - hidden: false
+    - data:
+        array: []
+    - _fallbackTextByIndex:
+        - ''
+        - ''
+        - ''
+    - selectedItem: null
+    - showInEditor: false
+    - tooltipText: ''
+    - style:
+        ordered:
+          - background: rgb(159, 179, 200)
+          - itemText: rgb(51, 78, 104)
+    - hiddenByIndex:
+        array: []
+    - _hiddenByIndex:
+        - ''
+        - ''
+        - ''
+    - _captionByIndex:
+        - f2a20235-bd9d-4f6a-8e78-b3f41f97d07f
+        - 788ed6b8-90b4-4661-bc55-9ab20922fc16
+        - dca7c556-82d9-4433-8971-0b7edb9c9661
+    - _disclosedFields:
+        array: []
+    - styleVariant: solid
+    - _hasMigratedNestedItems: true
+    - captionByIndex:
+        array: []
+    - itemMode: static
+    - selectedIndex: 0
+    - _tooltipByIndex:
+        - ''
+        - ''
+        - ''
+    - _colorByIndex:
+        - ''
+        - ''
+        - ''
+    - tooltipByIndex:
+        array: []
+    - selectedLabel: ''
+    - events:
+        - ordered:
+            - event: click
+            - type: datasource
+            - method: trigger
+            - pluginId: update_relationship
+            - targetId: 3d96e
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: click
+            - type: datasource
+            - method: trigger
+            - pluginId: update_relationship
+            - targetId: 622af
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: click
+            - type: datasource
+            - method: trigger
+            - pluginId: update_relationship
+            - targetId: d72bd
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - _ids:
+        - d72bd
+        - 622af
+        - 3d96e
+    - overlayMaxHeight: 375
+    - loading: false
+    - disabled: false
+    - _labels:
+        - Equivalent
+        - Source Is Broader Than Target
+        - Source Is Narrower Than Target
+    - disabledByIndex:
+        array: []
+    - maintainSpaceWhenHidden: false
+    - _imageByIndex:
+        - ''
+        - ''
+        - ''
+    - labels:
+        array: []
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabbedContainer1
+    subcontainer: '2e213'
+    row: 1.6
+    col: 6
+    height: 1
+    width: 2
+createdAt: 2023-05-02T19:50:37.570Z
