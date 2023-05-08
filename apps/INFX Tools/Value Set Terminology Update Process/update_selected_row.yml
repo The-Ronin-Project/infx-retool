@@ -7,7 +7,10 @@ template:
   ordered:
     - queryRefreshTime: ''
     - paginationLimit: ''
-    - body: ''
+    - body: >-
+        [{"key":"old_terminology_version_uuid","value":"{{get_versions.data.uuid[1]}}"},{"key":"new_terminology_version_uuid","value":"{{get_versions.data.uuid[0]}}"},{"key":"new_value_set_effective_start","value":"{{get_versions.data.effective_start[0]}}"},{"key":"new_value_set_effective_end","value":"{{get_versions.data.effective_end[0]}}"},{"key":"new_value_set_description","value":"Updated
+        for {{get_versions.data.terminology[0]}},
+        {{get_versions.data.version[0]}}  update"}]
     - lastReceivedFromResourceAt: null
     - queryDisabledMessage: ''
     - servedFromCache: false
@@ -18,10 +21,7 @@ template:
     - resourceNameOverride: ''
     - runWhenModelUpdates: false
     - paginationPaginationField: ''
-    - headers: >-
-        [{"key":"old_terminology_version_uuid","value":"{{get_versions.data.uuid[1]}}"},{"key":"new_terminology_version_uuid","value":"{{get_versions.data.uuid[0]}}"},{"key":"new_value_set_effective_start","value":"{{get_versions.data.effective_start[0]}}"},{"key":"new_value_set_effective_end","value":"{{get_versions.data.effective_end[0]}}"},{"key":"new_value_set_description","value":"Updated
-        for {{get_versions.data.terminology[0]}},
-        {{get_versions.data.version[0]}}  update"}]
+    - headers: '[]'
     - showFailureToaster: true
     - paginationEnabled: false
     - query: >-
