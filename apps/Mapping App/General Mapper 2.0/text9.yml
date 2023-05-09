@@ -11,7 +11,7 @@ template:
     - verticalAlign: center
     - tooltipText: ''
     - value: >-
-        #### **{{mapping_queue.selectedRow.data.code.replace(/</g,
+        #### **{{mapping_queue.selectedRow.data[0].code.replace(/</g,
         '&lt;').replace(/>/g, '&gt;')}}**
     - style:
         ordered:

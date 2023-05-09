@@ -24,7 +24,7 @@ template:
     - formDataKey: '{{ self.id }}'
     - value: >-
         {{load_settings.data.auto_fill_search[0] ?
-        mapping_queue.selectedRow.data.display : ""}}
+        mapping_queue.selectedRow.data[0].display : ""}}
     - labelCaption: ''
     - labelWidth: '33'
     - autoFill: ''

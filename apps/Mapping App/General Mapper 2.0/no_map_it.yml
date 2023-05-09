@@ -33,7 +33,7 @@ template:
     - dataArray: []
     - cacheKeyTtl: ''
     - filterBy: >-
-        [{"key":"uuid","value":"{{mapping_queue.selectedRow.data.uuid}}","operation":"="}]
+        [{"key":"uuid","value":"{{mapping_queue.selectedRow.data[0].uuid}}","operation":"="}]
     - requestSentTimestamp: null
     - databaseHostOverride: ''
     - metadata: null
@@ -61,7 +61,7 @@ template:
     - resourceTypeOverride: null
     - watchedParams: []
     - enableErrorTransformer: false
-    - enableBulkUpdates: false
+    - enableBulkUpdates: true
     - showLatestVersionUpdatedWarning: false
     - timestamp: 0
     - importedQueryDefaults:

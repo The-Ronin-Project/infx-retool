@@ -8,7 +8,9 @@ template:
     - queryRefreshTime: ''
     - paginationLimit: ''
     - body: >-
-        [{"key":"source_concept_uuid","value":"{{mapping_queue.selectedRow.data.uuid}}"},{"key":"relationship_code_uuid","value":"{{select_rel.value}}"},{"key":"target_concept_code","value":"{{search_results_table.selectedRow.data.code}}"},{"key":"target_concept_display","value":"{{search_results_table.selectedRow.data.display}}"},{"key":"target_concept_terminology_version_uuid","value":"{{search_results_table.selectedRow.data.terminology_version_uuid}}"},{"key":"author","value":"{{current_user.fullName}}"},{"key":"mapping_comments","value":"{{mapping_comments.value}}"}]
+        [{"key":"source_concept_uuid","value":"{{mapping_queue.selectedRow.data.map(data
+        =>
+        data.uuid)}}"},{"key":"relationship_code_uuid","value":"{{select_rel.value}}"},{"key":"target_concept_code","value":"{{search_results_table.selectedRow.data.code}}"},{"key":"target_concept_display","value":"{{search_results_table.selectedRow.data.display}}"},{"key":"target_concept_terminology_version_uuid","value":"{{search_results_table.selectedRow.data.terminology_version_uuid}}"},{"key":"author","value":"{{current_user.fullName}}"},{"key":"mapping_comments","value":"{{mapping_comments.value}}"}]
     - lastReceivedFromResourceAt: null
     - queryDisabledMessage: ''
     - servedFromCache: false
@@ -87,6 +89,16 @@ template:
             - type: widget
             - method: clearValue
             - pluginId: mapping_comments
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: success
+            - type: widget
+            - method: selectRow
+            - pluginId: mapping_queue
             - targetId: null
             - params:
                 ordered: []
