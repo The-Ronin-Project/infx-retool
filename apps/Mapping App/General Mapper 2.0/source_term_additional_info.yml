@@ -18,11 +18,15 @@ template:
     - resourceNameOverride: ''
     - runWhenModelUpdates: true
     - showFailureToaster: true
-    - query: |-
+    - query: >-
         select * from custom_terminologies.code
-        where code={{mapping_queue.selectedRow.data.code}}
-        and display={{mapping_queue.selectedRow.data.display}}
-        and terminology_version_uuid={{mapping_queue.selectedRow.data.system}}
+
+        where code={{mapping_queue.selectedRow.data[0].code}}
+
+        and display={{mapping_queue.selectedRow.data[0].display}}
+
+        and
+        terminology_version_uuid={{mapping_queue.selectedRow.data[0].system}}
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null

@@ -39,7 +39,7 @@ template:
 
         ON sc.assigned_reviewer = u.uuid
 
-        where source_concept_uuid = {{mapping_queue.selectedRow.data.uuid}}
+        where source_concept_uuid = {{mapping_queue.selectedRow.data[0].uuid}}
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null

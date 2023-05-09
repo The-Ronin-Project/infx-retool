@@ -31,7 +31,7 @@ template:
     - columnWidths:
         - object:
             id: display
-            value: 402.6640625
+            value: 434.6640625
     - showSummaryFooter: false
     - disableRowSelectInteraction: false
     - columnWidthsMobile: []
@@ -68,7 +68,7 @@ template:
           - no_map: ''
     - columnFrozenAlignments:
         ordered: []
-    - allowMultiRowSelect: false
+    - allowMultiRowSelect: true
     - columnFormats:
         ordered:
           - Custom Column 1: button
@@ -80,6 +80,7 @@ template:
     - showFilterButton: true
     - _columnVisibility:
         ordered:
+          - previous_version_context: false
           - name: false
           - sales: false
           - code: true
