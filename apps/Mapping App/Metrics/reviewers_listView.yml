@@ -9,6 +9,7 @@ template:
     - showDropShadow: true
     - formDataKey: '{{ self.id }}'
     - dynamicHeightsEnabled: true
+    - numColumns: '1'
     - itemHeight: '3'
     - overflowType: scroll
     - instances: '{{ reviewer_assignment_counts.data.first_last_name.length }}'

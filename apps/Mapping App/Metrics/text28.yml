@@ -14,6 +14,8 @@ template:
     - style:
         ordered:
           - color: rgb(36, 59, 83)
+    - _disclosedFields:
+        array: []
     - disableMarkdown: false
     - overflowType: scroll
     - maintainSpaceWhenHidden: false
@@ -22,7 +24,7 @@ style:
 position2:
   position2:
     container: modal1
-    row: 7.199999999999999
+    row: 7.6
     col: 3
     height: 0.6
     width: 9

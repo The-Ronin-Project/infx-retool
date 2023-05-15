@@ -11,6 +11,8 @@ template:
     - verticalAlign: center
     - tooltipText: ''
     - value: '{{mapper_no_assigments_count.data.count[i]}}'
+    - _disclosedFields:
+        array: []
     - disableMarkdown: false
     - overflowType: scroll
     - maintainSpaceWhenHidden: false

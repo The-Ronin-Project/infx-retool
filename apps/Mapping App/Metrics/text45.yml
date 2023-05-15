@@ -1,4 +1,4 @@
-id: text2
+id: text45
 type: widget
 subtype: TextWidget2
 template:
@@ -10,10 +10,7 @@ template:
     - showInEditor: false
     - verticalAlign: center
     - tooltipText: ''
-    - value: '**Total Concepts**'
-    - style:
-        ordered:
-          - color: rgb(72, 101, 129)
+    - value: User without assignments
     - _disclosedFields:
         array: []
     - disableMarkdown: false
@@ -24,9 +21,9 @@ style:
 position2:
   position2:
     container: container1
-    rowGroup: header
-    row: -1.6653345369377348e-16
-    col: 1
+    subcontainer: 22ec8
+    row: 5.6
+    col: 6
     height: 0.6
-    width: 2
-createdAt: 2023-01-20T22:15:19.352Z
+    width: 3
+createdAt: 2023-05-15T18:38:27.421Z

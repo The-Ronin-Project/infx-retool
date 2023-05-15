@@ -19,7 +19,7 @@ template:
     - closeOnOutsideClick: false
     - loading: ''
     - disabled: ''
-    - buttonText: ℹ️
+    - buttonText: ℹ️ Counts
 style:
   ordered: []
 position2:

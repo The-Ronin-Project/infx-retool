@@ -11,6 +11,7 @@ template:
     - databasePasswordOverride: ''
     - queryDisabledMessage: ''
     - servedFromCache: false
+    - offlineUserQueryInputs: ''
     - successMessage: ''
     - queryDisabled: ''
     - playgroundQuerySaveId: latest
@@ -20,10 +21,10 @@ template:
     - query: >-
         select count(*)from concept_maps.source_concept sc
 
-        join concept_maps.concept_relationship cr on
-        sc.uuid=cr.source_concept_uuid
+        left join concept_maps.concept_relationship cr on sc.uuid =
+        cr.source_concept_uuid
 
-        where cr.concept_map_version_uuid={{urlparams.concept_map_version_uuid}}
+        where sc.concept_map_version_uuid={{urlparams.concept_map_version_uuid}}
 
         and (sc.reason_for_no_map = 'Save for discussion' or
         sc.reason_for_no_map = 'Save for discusion' or cr.review_status = 'hold

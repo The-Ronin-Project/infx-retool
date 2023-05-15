@@ -10,10 +10,12 @@ template:
     - showInEditor: false
     - verticalAlign: center
     - tooltipText: ''
-    - value: '**Reviewed**'
+    - value: '**All Accomplished Reviews**'
     - style:
         ordered:
           - color: rgb(16, 42, 67)
+    - _disclosedFields:
+        array: []
     - disableMarkdown: false
     - overflowType: scroll
     - maintainSpaceWhenHidden: false
@@ -22,7 +24,7 @@ style:
 position2:
   position2:
     container: modal1
-    row: 7.199999999999999
+    row: 7.6
     height: 0.6
     width: 3
 createdAt: 2023-01-24T16:29:30.102Z

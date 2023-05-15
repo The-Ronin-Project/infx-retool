@@ -10,10 +10,12 @@ template:
     - showInEditor: false
     - verticalAlign: center
     - tooltipText: ''
-    - value: '**Assigned**'
+    - value: '**Assignments**'
     - style:
         ordered:
           - color: rgb(16, 42, 67)
+    - _disclosedFields:
+        array: []
     - disableMarkdown: false
     - overflowType: scroll
     - maintainSpaceWhenHidden: false
