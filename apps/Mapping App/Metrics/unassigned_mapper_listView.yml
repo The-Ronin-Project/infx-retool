@@ -9,6 +9,7 @@ template:
     - showDropShadow: true
     - formDataKey: '{{ self.id }}'
     - dynamicHeightsEnabled: true
+    - numColumns: '1'
     - itemHeight: '3'
     - overflowType: scroll
     - instances: '{{mapper_no_assigments_count.data.author.length}}'
@@ -18,7 +19,7 @@ position2:
   position2:
     container: container1
     subcontainer: 22ec8
-    row: 5.6000000000000005
+    row: 6.2
     height: 5
     width: 5
 createdAt: 2023-03-06T18:42:53.718Z

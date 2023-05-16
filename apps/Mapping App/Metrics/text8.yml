@@ -10,10 +10,12 @@ template:
     - showInEditor: false
     - verticalAlign: center
     - tooltipText: ''
-    - value: Reviewed
+    - value: All Accomplished Reviews
     - style:
         ordered:
           - color: rgb(36, 59, 83)
+    - _disclosedFields:
+        array: []
     - disableMarkdown: false
     - overflowType: scroll
     - maintainSpaceWhenHidden: false
@@ -22,7 +24,6 @@ style:
 position2:
   position2:
     container: reviewers_listView
-    row: 0.8
     col: 9
     height: 0.6
     width: 3

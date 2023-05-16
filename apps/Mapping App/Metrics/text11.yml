@@ -10,10 +10,14 @@ template:
     - showInEditor: false
     - verticalAlign: center
     - tooltipText: ''
-    - value: Outstanding
+    - value: |-
+        Assignments 
+        to Do
     - style:
         ordered:
           - color: rgb(36, 59, 83)
+    - _disclosedFields:
+        array: []
     - disableMarkdown: false
     - overflowType: scroll
     - maintainSpaceWhenHidden: false
@@ -22,7 +26,7 @@ style:
 position2:
   position2:
     container: Mapper_listView2
-    row: 0.8
+    row: 1.1102230246251565e-16
     col: 6
     height: 0.6
     width: 3

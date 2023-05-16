@@ -13,6 +13,8 @@ template:
     - value: >-
         {{mapper_unmapped_count.data[mapper_assignment_counts.data.first_last_name[i]]
         ?? '--'}}
+    - _disclosedFields:
+        array: []
     - disableMarkdown: false
     - overflowType: scroll
     - maintainSpaceWhenHidden: false
@@ -21,7 +23,7 @@ style:
 position2:
   position2:
     container: Mapper_listView2
-    row: 1.4
+    row: 0.7999999999999999
     col: 6
     height: 0.6
     width: 3
