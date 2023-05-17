@@ -13,6 +13,8 @@ template:
     - value: >-
         * *Note: version of currently selected row is {{
         terminologies.selectedRow.data.version}}*
+    - _disclosedFields:
+        array: []
     - disableMarkdown: false
     - overflowType: scroll
     - maintainSpaceWhenHidden: false

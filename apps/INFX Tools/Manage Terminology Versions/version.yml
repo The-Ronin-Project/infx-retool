@@ -28,6 +28,8 @@ template:
     - labelWidth: '33'
     - autoFill: ''
     - placeholder: Enter New Version
+    - _disclosedFields:
+        array: []
     - label: Version
     - _validate: false
     - labelWidthUnit: '%'

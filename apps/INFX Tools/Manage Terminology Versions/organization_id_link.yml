@@ -12,6 +12,8 @@ template:
     - showInEditor: false
     - tooltipText: ''
     - allowWrap: false
+    - _disclosedFields:
+        array: []
     - iconBefore: ''
     - events:
         - ordered:

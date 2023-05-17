@@ -11,6 +11,8 @@ template:
     - text: Add Terminology Version
     - showInEditor: false
     - tooltipText: ''
+    - _disclosedFields:
+        array: []
     - styleVariant: solid
     - submit: false
     - iconBefore: ''

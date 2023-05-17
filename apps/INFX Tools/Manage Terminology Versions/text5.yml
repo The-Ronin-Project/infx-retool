@@ -10,10 +10,12 @@ template:
     - showInEditor: false
     - verticalAlign: center
     - tooltipText: ''
-    - value: //projectronin.io/fhir/CodeSytem/{tenant ID}/{data model element}
+    - value: //projectronin.io/fhir/CodeSystem/{tenant ID}/{data model element}
     - style:
         ordered:
           - color: rgba(38, 38, 38, 0.37)
+    - _disclosedFields:
+        array: []
     - disableMarkdown: false
     - overflowType: scroll
     - maintainSpaceWhenHidden: false

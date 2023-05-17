@@ -27,6 +27,8 @@ template:
     - labelWidth: '33'
     - autoFill: ''
     - placeholder: Enter http://
+    - _disclosedFields:
+        array: []
     - label: FHIR uri*
     - _validate: false
     - labelWidthUnit: '%'
