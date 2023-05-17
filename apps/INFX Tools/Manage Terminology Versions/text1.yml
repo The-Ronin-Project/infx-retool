@@ -14,6 +14,8 @@ template:
     - style:
         ordered:
           - background: rgba(165, 157, 157, 0)
+    - _disclosedFields:
+        array: []
     - disableMarkdown: false
     - overflowType: scroll
     - maintainSpaceWhenHidden: false

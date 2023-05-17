@@ -28,6 +28,8 @@ template:
     - labelWidth: '33'
     - autoFill: ''
     - placeholder: Enter Name
+    - _disclosedFields:
+        array: []
     - label: Terminology
     - _validate: false
     - labelWidthUnit: '%'

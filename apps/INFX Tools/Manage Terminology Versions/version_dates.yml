@@ -26,6 +26,8 @@ template:
     - labelCaption: ''
     - maxDate: ''
     - labelWidth: '33'
+    - _disclosedFields:
+        array: []
     - label: 'Effective '
     - formattedValue: ''
     - _validate: false

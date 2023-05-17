@@ -27,6 +27,8 @@ template:
     - hideLabel: false
     - maxDate: ''
     - labelWidth: '33'
+    - _disclosedFields:
+        array: []
     - label: Effective Dates*
     - formattedValue: ''
     - _validate: false

@@ -13,6 +13,8 @@ template:
     - formDataKey: '{{ self.id }}'
     - value: false
     - labelCaption: ''
+    - _disclosedFields:
+        array: []
     - label: Standard Terminology
     - _validate: false
     - invalid: false
