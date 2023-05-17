@@ -8,22 +8,24 @@ template:
     - _disabledByIndex:
         - ''
         - ''
+        - false
+        - false
+        - false
+        - false
         - ''
-        - false
-        - false
-        - false
         - false
         - false
     - showSelectionIndicator: true
     - _values:
         - Appointment
-        - Patient
         - Condition
+        - DocumentReference
+        - Location
         - Medication
+        - Observation
+        - Patient
         - Practitioner
         - PractitionerRole
-        - Location
-        - DocumentReference
     - iconByIndex:
         array: []
     - values:
@@ -31,6 +33,7 @@ template:
     - readOnly: false
     - iconAfter: ''
     - _iconByIndex:
+        - ''
         - ''
         - ''
         - ''
@@ -60,6 +63,7 @@ template:
         - ''
         - ''
         - ''
+        - ''
     - selectedItem: null
     - validationMessage: ''
     - automaticItemColors: false
@@ -80,14 +84,16 @@ template:
     - _hiddenByIndex:
         - ''
         - ''
+        - false
+        - false
+        - false
+        - false
         - ''
-        - false
-        - false
-        - false
         - false
         - false
     - placeholder: Select an option
     - _captionByIndex:
+        - ''
         - ''
         - ''
         - ''
@@ -118,7 +124,9 @@ template:
         - ''
         - ''
         - ''
+        - ''
     - _colorByIndex:
+        - ''
         - ''
         - ''
         - ''
@@ -137,19 +145,21 @@ template:
         ordered: []
     - _ids:
         - 6ea7e
-        - 51aef
         - 4f760
+        - fa30b
+        - 33d5c
         - fe328
+        - e7723
+        - 51aef
         - d89ec
         - f049a
-        - 33d5c
-        - fa30b
     - emptyMessage: ''
     - overlayMaxHeight: 375
     - loading: false
     - disabled: false
     - labelPosition: left
     - _labels:
+        - ''
         - ''
         - ''
         - ''
@@ -165,6 +175,7 @@ template:
         array: []
     - maintainSpaceWhenHidden: false
     - _imageByIndex:
+        - ''
         - ''
         - ''
         - ''
