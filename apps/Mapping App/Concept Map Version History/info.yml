@@ -11,6 +11,8 @@ template:
     - verticalAlign: center
     - tooltipText: ''
     - value: Mappings with the target codes highlighted in red have been deleted.
+    - _disclosedFields:
+        array: []
     - disableMarkdown: false
     - overflowType: scroll
     - maintainSpaceWhenHidden: false

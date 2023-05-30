@@ -10,6 +10,8 @@ template:
     - lastReceivedFromResourceAt: null
     - databasePasswordOverride: ''
     - queryDisabledMessage: ''
+    - servedFromCache: false
+    - offlineUserQueryInputs: ''
     - successMessage: ''
     - queryDisabled: ''
     - playgroundQuerySaveId: latest
@@ -70,11 +72,13 @@ template:
     - isImported: false
     - showSuccessToaster: true
     - dataArray: []
-    - cacheKeyTtl: ''
+    - cacheKeyTtl: 300
     - filterBy: ''
+    - requestSentTimestamp: null
     - databaseHostOverride: ''
     - metadata: null
     - editorMode: sql
+    - queryRunTime: null
     - actionType: ''
     - changesetObject: ''
     - shouldUseLegacySql: false
@@ -85,6 +89,7 @@ template:
         // example: return data.find(element => element.isError)
 
         return data.error
+    - finished: null
     - databaseNameOverride: ''
     - confirmationMessage: null
     - isFetching: false
@@ -112,15 +117,16 @@ template:
         return data
     - events: []
     - tableName: ''
-    - queryTimeout: '10000'
+    - queryTimeout: '60000'
     - requireConfirmation: false
     - queryFailureConditions: ''
     - changesetIsObject: false
-    - enableCaching: false
+    - enableCaching: true
     - allowedGroups: []
     - databaseUsernameOverride: ''
     - shouldEnableBatchQuerying: false
     - doNotThrowOnNoOp: false
+    - offlineQueryType: None
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''

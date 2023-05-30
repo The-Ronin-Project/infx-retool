@@ -21,6 +21,7 @@ template:
         - ''
         - ''
         - ''
+    - overlayMinWidth: null
     - allowDeselect: false
     - inputValue: ''
     - hidden: false
@@ -59,6 +60,8 @@ template:
         - ''
         - ''
         - ''
+    - _disclosedFields:
+        array: []
     - itemAdornmentSize: auto
     - label: Filter by User
     - _hasMigratedNestedItems: true
