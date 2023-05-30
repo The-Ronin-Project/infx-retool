@@ -58,9 +58,15 @@ template:
     - onRowAdded: ''
     - columnHeaderNames:
         ordered:
-          - fhir_terminology: fhir_terminology
+          - effective_end: Effective End
+          - effective_start: Effective Start
+          - is_standard: is standard
+          - terminology: Terminology
           - Custom Column 1: add
           - Custom Column 2: copy UUID
+          - fhir_uri: FHIR uri
+          - version: Version
+          - fhir_terminology: fhir terminology
     - alwaysShowPaginator: false
     - columnColors:
         ordered:
@@ -69,7 +75,6 @@ template:
           - is_standard: ''
           - terminology: ''
           - Custom Column 1: ''
-          - Custom Column 2: ''
           - fhir_uri: ''
           - version: ''
           - uuid: ''
@@ -119,6 +124,16 @@ template:
     - data: '{{load_terminologies.data}}'
     - displayedData: null
     - actionButtons:
+        - ordered:
+            - actionButtonQuery: ''
+            - actionButtonType: copyToClipboard
+            - actionButtonDisabled: ''
+            - actionButtonUrl: ''
+            - actionButtonNewWindow: false
+            - actionButtonInternalUrlPath: ''
+            - actionButtonText: Copy UUID
+            - actionButtonValueToCopy: '{{terminologies.selectedRow.data.uuid}}'
+            - actionButtonInternalUrlQuery: ''
         - ordered:
             - actionButtonText: View/Edit
             - actionButtonType: openInternalUrl
@@ -197,7 +212,6 @@ template:
         ordered:
           - Custom Column 1: false
           - effective_end: true
-          - Custom Column 2: false
     - _viewerColumnSummaryTypes:
         object: {}
     - filters:
@@ -211,7 +225,7 @@ template:
           - Custom Column 2: Copy UUID
     - showClearSelection: false
     - doubleClickToEdit: true
-    - overflowType: pagination
+    - overflowType: scroll
     - _reverseSortedDisplayedDataIndices: null
     - showTableBorder: true
     - selectedCell:
@@ -220,7 +234,7 @@ template:
           data: null
           columnName: null
     - columns: []
-    - defaultSelectedRow: first
+    - defaultSelectedRow: none
     - freezeActionButtonColumns: false
     - sort: null
     - _columns:
@@ -233,12 +247,10 @@ template:
         - is_standard
         - fhir_terminology
         - Custom Column 1
-        - Custom Column 2
     - sortByRawValue:
         ordered: []
     - calculatedColumns:
         - Custom Column 1
-        - Custom Column 2
     - selectedRow:
         object:
           index: null
@@ -252,6 +264,6 @@ style:
 position2:
   position2:
     row: 1.2
-    height: 15.399999999999997
+    height: 17.199999999999996
     width: 12
 createdAt: 2022-08-23T20:25:00.999Z
