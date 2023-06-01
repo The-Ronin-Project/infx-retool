@@ -11,6 +11,7 @@ template:
         - false
         - false
         - false
+        - false
         - ''
         - false
         - false
@@ -19,6 +20,7 @@ template:
         - Appointment
         - Condition
         - DocumentReference
+        - Encounter
         - Location
         - Medication
         - Observation
@@ -39,6 +41,7 @@ template:
         - ''
         - ''
         - ''
+        - ''
     - overlayMinWidth: null
     - allowDeselect: false
     - inputValue: ''
@@ -50,6 +53,7 @@ template:
     - fallbackTextByIndex: ''
     - textBefore: ''
     - _fallbackTextByIndex:
+        - ''
         - ''
         - ''
         - ''
@@ -82,11 +86,13 @@ template:
         - false
         - false
         - false
+        - false
         - ''
         - false
         - false
     - placeholder: Select an option
     - _captionByIndex:
+        - ''
         - ''
         - ''
         - ''
@@ -118,7 +124,9 @@ template:
         - ''
         - ''
         - ''
+        - ''
     - _colorByIndex:
+        - ''
         - ''
         - ''
         - ''
@@ -138,6 +146,7 @@ template:
         - 6ea7e
         - 4f760
         - eec03
+        - aa0f8
         - 33d5c
         - fe328
         - add12
@@ -159,12 +168,14 @@ template:
         - ''
         - ''
         - ''
+        - ''
     - labelWrap: false
     - disabledValues:
         array: []
     - disabledByIndex: ''
     - maintainSpaceWhenHidden: false
     - _imageByIndex:
+        - ''
         - ''
         - ''
         - ''
