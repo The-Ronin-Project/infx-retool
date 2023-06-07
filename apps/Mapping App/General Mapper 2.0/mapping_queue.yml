@@ -32,6 +32,9 @@ template:
         - object:
             id: display
             value: 434.6640625
+        - object:
+            id: code
+            value: 204
     - showSummaryFooter: false
     - disableRowSelectInteraction: false
     - columnWidthsMobile: []
@@ -104,7 +107,7 @@ template:
           - code: ''
     - _columnsWithLegacyBackgroundColor:
         set: []
-    - showAddRowButton: false
+    - showAddRowButton: true
     - _unfilteredSelectedIndex: null
     - nextBeforeCursor: ''
     - columnVisibility:
@@ -131,7 +134,7 @@ template:
             - actionButtonUrl: ''
             - actionButtonNewWindow: false
             - actionButtonDisabled: '{{load_settings.data.auto_advance_mapping[0] == true}}'
-    - actionButtonSelectsRow: true
+    - actionButtonSelectsRow: false
     - selectRowByDefault: true
     - defaultSortByColumn: ''
     - paginationOffset: 0
