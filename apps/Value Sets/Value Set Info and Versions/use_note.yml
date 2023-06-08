@@ -1,0 +1,27 @@
+id: use_note
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - tooltipText: ''
+    - value: Assign a use case to value set
+    - _disclosedFields:
+        array: []
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabbedcontainer1
+    height: 0.6
+    width: 3
+    tabNum: 4
+createdAt: 2022-06-08T21:27:49.388Z
