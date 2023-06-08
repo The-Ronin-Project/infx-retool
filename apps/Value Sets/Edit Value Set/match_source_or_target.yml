@@ -47,6 +47,8 @@ template:
     - _hiddenByIndex: []
     - placeholder: Select an option
     - _captionByIndex: []
+    - _disclosedFields:
+        array: []
     - itemAdornmentSize: auto
     - label: Match Source or Target
     - _hasMigratedNestedItems: true

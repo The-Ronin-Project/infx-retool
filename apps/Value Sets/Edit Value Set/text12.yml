@@ -18,6 +18,8 @@ template:
 
         **This functionality should be treated as a last resort and only used
         when Rules and Mapping Inclusions cannot.**
+    - _disclosedFields:
+        array: []
     - disableMarkdown: false
     - overflowType: scroll
     - maintainSpaceWhenHidden: false

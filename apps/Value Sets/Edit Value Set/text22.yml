@@ -13,6 +13,8 @@ template:
     - value: >-
         Note: Current status for this version of the value set is
         **{{version_metadata.data.status}}**.
+    - _disclosedFields:
+        array: []
     - disableMarkdown: false
     - overflowType: scroll
     - maintainSpaceWhenHidden: false

@@ -89,6 +89,8 @@ template:
         - ''
         - ''
         - ''
+    - _disclosedFields:
+        array: []
     - itemAdornmentSize: auto
     - label: Rule Type
     - _hasMigratedNestedItems: true

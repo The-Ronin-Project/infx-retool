@@ -13,6 +13,7 @@ template:
     - databasePasswordOverride: ''
     - queryDisabledMessage: ''
     - servedFromCache: false
+    - offlineUserQueryInputs: ''
     - successMessage: ''
     - queryDisabled: '{{version_metadata.data.status[0]==''active''}}'
     - playgroundQuerySaveId: latest
