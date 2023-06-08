@@ -16,6 +16,8 @@ template:
         **{{version_metadata.data.title[0].trim()}}** to be updated to one of
         the availbale options. To set to 'active' please use the Publish button
         below.
+    - _disclosedFields:
+        array: []
     - disableMarkdown: false
     - overflowType: scroll
     - maintainSpaceWhenHidden: false

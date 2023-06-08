@@ -72,6 +72,8 @@ template:
         - ''
         - ''
         - ''
+    - _disclosedFields:
+        array: []
     - itemAdornmentSize: auto
     - label: Update Status to
     - _hasMigratedNestedItems: true

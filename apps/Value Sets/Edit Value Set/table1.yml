@@ -60,6 +60,7 @@ template:
           - sales: true
           - code: true
           - system: true
+          - custom_terminology_uuid: false
           - version: true
           - id: true
           - expansion_uuid: false
