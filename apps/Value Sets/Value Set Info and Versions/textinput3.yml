@@ -1,0 +1,59 @@
+id: textinput3
+type: widget
+subtype: NumberInputWidget
+template:
+  ordered:
+    - readOnly: false
+    - iconAfter: ''
+    - max: null
+    - preventScroll: false
+    - inputValue: null
+    - hidden: false
+    - customValidation: ''
+    - showSeparators: true
+    - hideValidationMessage: false
+    - textBefore: ''
+    - validationMessage: ''
+    - textAfter: ''
+    - showInEditor: false
+    - allowNull: false
+    - showClear: true
+    - tooltipText: ''
+    - currency: USD
+    - labelAlign: right
+    - formDataKey: '{{ self.id }}'
+    - value: '1'
+    - labelCaption: ''
+    - min: null
+    - labelWidth: '33'
+    - placeholder: Enter a value
+    - _disclosedFields:
+        array: []
+    - showStepper: true
+    - label: version
+    - _validate: false
+    - labelWidthUnit: '%'
+    - invalid: false
+    - format: decimal
+    - iconBefore: ''
+    - textAlign: left
+    - inputTooltip: ''
+    - events:
+        ordered: []
+    - loading: false
+    - disabled: false
+    - labelPosition: left
+    - decimalPlaces: '0'
+    - labelWrap: true
+    - padDecimal: false
+    - maintainSpaceWhenHidden: false
+    - required: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: form1
+    row: 3.8
+    height: 1
+    width: 12
+createdAt: 2021-10-11T20:35:21.312Z
