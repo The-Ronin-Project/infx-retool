@@ -8,16 +8,25 @@ template:
     - iconAfter: ''
     - submitTargetId: null
     - hidden: false
-    - text: >-
-        Create {{load_concept_map_version_metadata.data.title[0]}} version
-        {{version_input.value}}
+    - text: Create new vesion of {{load_concept_map_version_metadata.data.title[0]}}
     - showInEditor: false
     - tooltipText: ''
+    - _disclosedFields:
+        array: []
     - styleVariant: solid
     - submit: false
     - iconBefore: ''
     - events:
-        ordered: []
+        - ordered:
+            - event: click
+            - type: datasource
+            - method: trigger
+            - pluginId: new_version_submission
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
     - loading: false
     - loaderPosition: auto
     - disabled: '{{description_input.value == ""}}'
@@ -28,7 +37,7 @@ position2:
   position2:
     container: concept_maps_version
     subcontainer: '3'
-    row: 5.4
+    row: 6
     col: 8
     height: 1
     width: 4

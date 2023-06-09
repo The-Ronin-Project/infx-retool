@@ -1,0 +1,38 @@
+id: checkbox_require_review_for_non_equivalent_relationships
+type: widget
+subtype: CheckboxWidget2
+template:
+  ordered:
+    - hidden: false
+    - customValidation: ''
+    - hideValidationMessage: false
+    - validationMessage: ''
+    - showInEditor: false
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: false
+    - labelCaption: ''
+    - _disclosedFields:
+        array: []
+    - label: Require review for non-equivalent relationship
+    - _validate: false
+    - invalid: false
+    - events:
+        ordered: []
+    - disabled: false
+    - labelPosition: right
+    - labelWrap: false
+    - maintainSpaceWhenHidden: false
+    - required: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: concept_maps_version
+    subcontainer: '3'
+    row: 4.4
+    col: 9
+    height: 0.6
+    width: 3
+createdAt: 2023-06-09T19:57:17.053Z

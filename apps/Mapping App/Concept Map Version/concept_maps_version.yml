@@ -32,6 +32,8 @@ template:
         - ''
         - ''
         - ''
+    - _disclosedFields:
+        array: []
     - currentViewIndex: 0
     - _hasMigratedNestedItems: true
     - transition: slide
@@ -84,6 +86,6 @@ style:
 position2:
   position2:
     row: -8.881784197001252e-16
-    height: 55.00000000000001
+    height: 55.80000000000002
     width: 12
 createdAt: 2022-03-04T20:18:04.387Z

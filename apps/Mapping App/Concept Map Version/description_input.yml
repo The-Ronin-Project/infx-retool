@@ -24,7 +24,9 @@ template:
     - labelWidth: '20'
     - autoFill: ''
     - placeholder: 'Description of the new version. '
-    - label: description
+    - _disclosedFields:
+        array: []
+    - label: Description
     - _validate: false
     - labelWidthUnit: '%'
     - invalid: false
@@ -46,8 +48,8 @@ position2:
   position2:
     container: concept_maps_version
     subcontainer: '3'
-    row: 3.8
-    col: 5
+    row: 2.8
+    col: 6
     height: 1
-    width: 7
+    width: 6
 createdAt: 2022-03-04T20:18:04.650Z
