@@ -8,6 +8,7 @@ template:
     - lastReceivedFromResourceAt: null
     - queryDisabledMessage: ''
     - servedFromCache: false
+    - offlineUserQueryInputs: ''
     - successMessage: ''
     - queryDisabled: ''
     - playgroundQuerySaveId: latest
@@ -101,7 +102,7 @@ template:
             - waitMs: '0'
     - queryTimeout: '10000'
     - requireConfirmation: false
-    - queryFailureConditions: ''
+    - queryFailureConditions: '[]'
     - changesetIsObject: false
     - enableCaching: false
     - allowedGroups: []

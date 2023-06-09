@@ -27,6 +27,8 @@ template:
     - min: null
     - labelWidth: '20'
     - placeholder: Enter a value
+    - _disclosedFields:
+        array: []
     - showStepper: true
     - label: version
     - _validate: false

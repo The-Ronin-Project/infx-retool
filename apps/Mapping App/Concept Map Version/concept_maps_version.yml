@@ -32,6 +32,8 @@ template:
         - ''
         - ''
         - ''
+    - _disclosedFields:
+        array: []
     - currentViewIndex: 0
     - _hasMigratedNestedItems: true
     - transition: slide
