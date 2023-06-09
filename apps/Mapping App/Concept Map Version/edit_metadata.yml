@@ -1,4 +1,4 @@
-id: table2
+id: edit_metadata
 type: widget
 subtype: TableWidget
 template:
@@ -152,7 +152,7 @@ template:
             - event: saveChanges
             - type: datasource
             - method: trigger
-            - pluginId: tableBulkUpdateTriggerAction
+            - pluginId: save_concept_map_metadata_changes
             - params:
                 ordered: []
             - waitType: debounce

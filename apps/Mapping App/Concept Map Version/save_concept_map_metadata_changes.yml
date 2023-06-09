@@ -1,4 +1,4 @@
-id: mapping_with_valueset_table
+id: save_concept_map_metadata_changes
 type: datasource
 subtype: SqlQueryUnified
 resourceName: dc8029bc-3980-4836-841e-776c64eeca49
@@ -6,7 +6,11 @@ resourceDisplayName: Clinical Content PostgresSQL DB
 template:
   ordered:
     - queryRefreshTime: ''
-    - records: ''
+    - records: >-
+        {{edit_metadata.recordUpdates.map(row => ({uuid: row.uuid, name:
+        row.name, title: row.title, publisher: row.publisher, description:
+        row.description, experimental: row.experimental, purpose: row.purpose,
+        author: row.author}) ) }}
     - lastReceivedFromResourceAt: null
     - databasePasswordOverride: ''
     - queryDisabledMessage: ''
@@ -16,15 +20,14 @@ template:
     - queryDisabled: ''
     - playgroundQuerySaveId: latest
     - resourceNameOverride: ''
-    - runWhenModelUpdates: true
+    - runWhenModelUpdates: false
     - showFailureToaster: true
-    - query: "--select * from concept_maps.source_concept WHERE\nselect code, display from value_sets.expansion_member where expansion_uuid in \n\t(select uuid from value_sets.expansion where vs_version_uuid in \n\t(select uuid from value_sets.value_set_version where uuid = {{urlparams.uuid}}\n\t))"
+    - query: ''
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
     - privateParams: []
     - runWhenPageLoadsDelay: ''
-    - warningCodes: []
     - data: null
     - recordId: ''
     - importedQueryInputs:
@@ -37,9 +40,9 @@ template:
     - requestSentTimestamp: null
     - databaseHostOverride: ''
     - metadata: null
-    - editorMode: sql
+    - editorMode: gui
     - queryRunTime: null
-    - actionType: ''
+    - actionType: BULK_UPDATE_BY_KEY
     - changesetObject: ''
     - shouldUseLegacySql: false
     - errorTransformer: >-
@@ -64,13 +67,29 @@ template:
     - timestamp: 0
     - importedQueryDefaults:
         ordered: []
-    - enableTransformer: true
+    - enableTransformer: false
     - showUpdateSetValueDynamicallyToggle: true
-    - bulkUpdatePrimaryKey: ''
+    - bulkUpdatePrimaryKey: uuid
     - runWhenPageLoads: false
-    - transformer: ''
-    - events: []
-    - tableName: ''
+    - transformer: >-
+        // type your code here
+
+        // example: return formatDataAsArray(data).filter(row => row.quantity >
+        20)
+
+        return data
+    - events:
+        - ordered:
+            - event: success
+            - type: datasource
+            - method: trigger
+            - pluginId: load_concept_map_version_metadata
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - tableName: concept_maps.concept_map
     - queryTimeout: '10000'
     - requireConfirmation: false
     - queryFailureConditions: ''
@@ -84,4 +103,4 @@ template:
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2022-04-28T21:55:12.184Z
+createdAt: 2023-06-09T20:30:38.605Z

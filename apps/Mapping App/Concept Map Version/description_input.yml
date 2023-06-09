@@ -24,6 +24,8 @@ template:
     - labelWidth: '20'
     - autoFill: ''
     - placeholder: 'Description of the new version. '
+    - _disclosedFields:
+        array: []
     - label: description
     - _validate: false
     - labelWidthUnit: '%'
