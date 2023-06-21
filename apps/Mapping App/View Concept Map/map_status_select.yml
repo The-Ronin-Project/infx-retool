@@ -21,6 +21,7 @@ template:
     - selectedItems:
         array: []
     - inputValue: ''
+    - persistSearchTerm: false
     - hidden: false
     - customValidation: ''
     - data: '{{ map_status_options.data }}'
