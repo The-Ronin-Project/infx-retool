@@ -17,6 +17,10 @@ template:
     - initialData: null
     - showInEditor: false
     - tooltipText: ''
+    - style:
+        ordered:
+          - background: rgb(240, 244, 248)
+          - headerBackground: rgb(217, 226, 236)
     - _disclosedFields:
         array: []
     - invalid: false
@@ -35,6 +39,9 @@ template:
     - loading: false
     - overflowType: scroll
     - disabled: false
+    - styleContext:
+        ordered:
+          - textDark: rgb(36, 59, 83)
     - requireValidation: true
     - maintainSpaceWhenHidden: false
     - showBody: true

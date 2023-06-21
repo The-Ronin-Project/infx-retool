@@ -28,12 +28,11 @@ template:
         ordered:
           - contact: ''
           - immutable: ''
-          - created_date: ''
           - experimental: ''
           - identifier: ''
-          - author: ''
           - name: ''
           - url: ''
+          - use_case_uuid: ''
           - title: ''
           - type: ''
           - uuid: ''
@@ -52,13 +51,12 @@ template:
         ordered:
           - contact: true
           - immutable: true
-          - created_date: true
           - experimental: true
           - identifier: true
-          - author: true
           - name: true
           - sales: true
           - url: true
+          - use_case_uuid: true
           - title: true
           - type: true
           - id: true
@@ -78,13 +76,12 @@ template:
         ordered:
           - contact: true
           - immutable: true
-          - created_date: true
           - experimental: true
           - identifier: true
-          - author: true
           - name: true
           - sales: true
           - url: true
+          - use_case_uuid: true
           - title: true
           - type: true
           - id: true
@@ -103,7 +100,7 @@ template:
     - downloadRawData: false
     - showFetchingIndicator: true
     - serverPaginated: false
-    - data: '{{load_concept_map_version_metadata.data}}'
+    - data: '{{load_vs_metadata.data}}'
     - displayedData: null
     - actionButtons: []
     - actionButtonSelectsRow: true
@@ -168,7 +165,6 @@ template:
           - immutable: true
           - experimental: true
           - identifier: true
-          - author: true
           - name: true
           - url: true
           - title: true
@@ -211,8 +207,7 @@ template:
         - experimental
         - purpose
         - type
-        - author
-        - created_date
+        - use_case_uuid
     - defaultSelectedRow: first
     - freezeActionButtonColumns: false
     - sort: null
@@ -232,8 +227,7 @@ template:
         - experimental
         - purpose
         - type
-        - author
-        - created_date
+        - use_case_uuid
     - sortByRawValue:
         ordered: []
     - calculatedColumns: []
@@ -249,8 +243,8 @@ style:
   ordered: []
 position2:
   position2:
-    container: concept_maps_version
-    subcontainer: '2'
+    container: tabbedcontainer1
     height: 8
     width: 12
-createdAt: 2022-03-04T20:18:04.855Z
+    tabNum: 2
+createdAt: 2021-10-12T23:10:31.815Z

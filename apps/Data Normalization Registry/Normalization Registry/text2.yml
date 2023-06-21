@@ -13,6 +13,9 @@ template:
     - value: >-
         #### The registry was last published: <br><br>
         {{get_datetime.data.last_modified}}
+    - style:
+        ordered:
+          - color: rgb(16, 42, 67)
     - _disclosedFields:
         array: []
     - disableMarkdown: false

@@ -13,6 +13,8 @@ template:
     - value: >-
         Version **{{version_metadata.data.version}}** of
         **{{version_metadata.data.title[0].trim()}}**
+    - _disclosedFields:
+        array: []
     - disableMarkdown: false
     - overflowType: scroll
     - maintainSpaceWhenHidden: false

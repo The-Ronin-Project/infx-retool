@@ -54,9 +54,6 @@ template:
             id: count_of_resources_affected
             value: 95
         - object:
-            id: __retool__action_list
-            value: 125
-        - object:
             id: review_status
             value: 115.671875
         - object:
@@ -68,6 +65,12 @@ template:
         - object:
             id: mapping_comments
             value: 173.4201431274414
+        - object:
+            id: previous_version_context
+            value: 103
+        - object:
+            id: __retool__action_list
+            value: 298
     - showSummaryFooter: false
     - disableRowSelectInteraction: false
     - columnWidthsMobile: []
@@ -126,6 +129,7 @@ template:
           - target_concept_system: ''
           - comments: ''
           - map_status: ''
+          - custom_terminology_uuid: ''
           - source_concept_uuid: ''
           - reviewed_date: ''
           - assigned_reviewer: ''
@@ -212,7 +216,18 @@ template:
             - actionButtonInternalUrlQuery: ''
             - actionButtonUrl: ''
             - actionButtonNewWindow: false
-            - actionButtonDisabled: '{{currentRow.review_status == ''rejected''}}'
+            - actionButtonDisabled: >-
+                {{currentRow.review_status == 'rejected'||currentRow.no_map ==
+                true}}
+        - ordered:
+            - actionButtonText: Reject No-Map
+            - actionButtonType: runQuery
+            - actionButtonQuery: reject_no_map
+            - actionButtonInternalUrlPath: ''
+            - actionButtonInternalUrlQuery: ''
+            - actionButtonUrl: ''
+            - actionButtonNewWindow: false
+            - actionButtonDisabled: '{{currentRow.no_map == null}}'
     - actionButtonSelectsRow: true
     - selectRowByDefault: true
     - defaultSortByColumn: null

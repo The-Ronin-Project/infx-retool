@@ -15,6 +15,8 @@ template:
         connecting one or more map sets. Any codes already in the value set
         which match a source code in the map set will result in the target value
         being included in the value set as well.
+    - _disclosedFields:
+        array: []
     - disableMarkdown: false
     - overflowType: scroll
     - maintainSpaceWhenHidden: false

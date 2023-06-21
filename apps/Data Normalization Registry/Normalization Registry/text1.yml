@@ -11,6 +11,9 @@ template:
     - verticalAlign: center
     - tooltipText: ''
     - value: '### Data Normalization Registry'
+    - style:
+        ordered:
+          - color: rgb(16, 42, 67)
     - _disclosedFields:
         array: []
     - disableMarkdown: false

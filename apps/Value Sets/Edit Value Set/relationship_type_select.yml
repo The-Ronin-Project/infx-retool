@@ -53,6 +53,8 @@ template:
     - _hiddenByIndex: []
     - placeholder: Select multiple options
     - _captionByIndex: []
+    - _disclosedFields:
+        array: []
     - itemAdornmentSize: auto
     - label: Allowed Relationship Types
     - _hasMigratedNestedItems: true

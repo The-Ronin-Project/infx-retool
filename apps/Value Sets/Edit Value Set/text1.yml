@@ -13,6 +13,8 @@ template:
     - value: 'UUID of Value Set Version: {{urlparams.uuid}}'
     - style:
         ordered: []
+    - _disclosedFields:
+        array: []
     - disableMarkdown: false
     - overflowType: scroll
     - maintainSpaceWhenHidden: false
