@@ -25,15 +25,18 @@ template:
           - effective_start: true
           - author: true
           - name: true
+          - source_value_set_version_uuid: true
           - status: true
           - comments: true
           - concept_map_uuid: true
           - version: true
           - title: true
+          - target_value_set_version_uuid: true
           - uuid: true
           - publisher: true
           - description: true
           - purpose: true
+          - published_date: true
     - prevRowFormats:
         ordered: []
     - rowMappers:
@@ -57,6 +60,9 @@ template:
         - effective_start
         - effective_end
         - version
+        - published_date
+        - source_value_set_version_uuid
+        - target_value_set_version_uuid
     - keyTitle: Key
 style:
   ordered: []
