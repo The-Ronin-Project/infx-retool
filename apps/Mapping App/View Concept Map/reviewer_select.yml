@@ -21,6 +21,7 @@ template:
     - selectedItems:
         array: []
     - inputValue: ''
+    - persistSearchTerm: false
     - hidden: false
     - customValidation: ''
     - data: '{{ reviewer_options.data }}'

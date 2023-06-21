@@ -21,6 +21,7 @@ template:
     - selectedItems:
         array: []
     - inputValue: ''
+    - persistSearchTerm: false
     - hidden: false
     - customValidation: ''
     - data: '{{ mapping_group_options.data }}'
