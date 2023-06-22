@@ -22,7 +22,9 @@ template:
     - query: |-
         update concept_maps.source_concept
         set map_status = 'no_map_rejected'
-        where uuid={{mapped_concepts.selectedRow.data.source_concept_uuid}}
+        where code={{mapped_concepts.selectedRow.data.code}}
+        and display = {{mapped_concepts.selectedRow.data.display}}
+        and concept_map_version_uuid = {{urlparams.concept_map_version_uuid}}
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
