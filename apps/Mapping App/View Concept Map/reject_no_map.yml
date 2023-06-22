@@ -19,11 +19,16 @@ template:
     - resourceNameOverride: ''
     - runWhenModelUpdates: false
     - showFailureToaster: true
-    - query: |-
+    - query: >-
         update concept_maps.source_concept
-        set map_status = 'no_map_rejected'
+
+        set no_map = null, reason_for_no_map = null, map_status =
+        'no_map_rejected'
+
         where code={{mapped_concepts.selectedRow.data.code}}
+
         and display = {{mapped_concepts.selectedRow.data.display}}
+
         and concept_map_version_uuid = {{urlparams.concept_map_version_uuid}}
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
