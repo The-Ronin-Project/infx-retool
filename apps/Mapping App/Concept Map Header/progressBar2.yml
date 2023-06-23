@@ -10,7 +10,7 @@ template:
     - labelAlign: right
     - value: '{{Math.round(count_reviewed.data.count / count_total.data.count * 100)}}'
     - labelCaption: ''
-    - labelWidth: '33'
+    - labelWidth: '50'
     - label: >-
         {{Math.round(count_reviewed.data.count / count_total.data.count *
         100)}}% ({{count_reviewed.data.count}}) Reviewed
