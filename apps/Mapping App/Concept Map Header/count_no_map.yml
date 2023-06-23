@@ -1,11 +1,14 @@
-id: navigate_to_mapper
+id: count_no_map
 type: datasource
-subtype: JavascriptQuery
-resourceName: JavascriptQuery
+subtype: SqlQueryUnified
+resourceName: dc8029bc-3980-4836-841e-776c64eeca49
+resourceDisplayName: Clinical Content PostgresSQL DB
 template:
   ordered:
     - queryRefreshTime: ''
+    - records: ''
     - lastReceivedFromResourceAt: null
+    - databasePasswordOverride: ''
     - queryDisabledMessage: ''
     - servedFromCache: false
     - offlineUserQueryInputs: ''
@@ -14,25 +17,37 @@ template:
     - playgroundQuerySaveId: latest
     - workflowParams: null
     - resourceNameOverride: ''
-    - runWhenModelUpdates: false
+    - runWhenModelUpdates: true
     - showFailureToaster: true
-    - query: ''
+    - query: |-
+        select count(*)
+        from concept_maps.source_concept
+        where concept_map_version_uuid={{urlparams.concept_map_version_uuid}}
+        and no_map=true
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
     - workflowRunBodyType: raw
     - privateParams: []
     - runWhenPageLoadsDelay: ''
+    - warningCodes: []
     - data: null
+    - recordId: ''
     - importedQueryInputs:
         ordered: []
     - isImported: false
     - showSuccessToaster: true
+    - dataArray: []
     - cacheKeyTtl: ''
+    - filterBy: ''
     - requestSentTimestamp: null
+    - databaseHostOverride: ''
     - metadata: null
+    - editorMode: sql
     - queryRunTime: null
+    - actionType: ''
     - changesetObject: ''
+    - shouldUseLegacySql: false
     - errorTransformer: >-
         // The variable 'data' allows you to reference the request's data in the
         transformer. 
@@ -41,6 +56,7 @@ template:
 
         return data.error
     - finished: null
+    - databaseNameOverride: ''
     - confirmationMessage: null
     - isFetching: false
     - changeset: ''
@@ -49,12 +65,14 @@ template:
     - resourceTypeOverride: null
     - watchedParams: []
     - enableErrorTransformer: false
+    - enableBulkUpdates: false
     - showLatestVersionUpdatedWarning: false
     - timestamp: 0
     - importedQueryDefaults:
         ordered: []
     - enableTransformer: false
     - showUpdateSetValueDynamicallyToggle: true
+    - bulkUpdatePrimaryKey: ''
     - runWhenPageLoads: false
     - transformer: >-
         // type your code here
@@ -63,54 +81,20 @@ template:
         20)
 
         return data
-    - events:
-        - ordered:
-            - method: openApp
-            - enabled: >-
-                {{metadata.data.target_value_set_uuid=='139b3b16-70c0-443a-86d1-db3dc640d063'}}
-            - params:
-                ordered:
-                  - options:
-                      ordered:
-                        - queryParams:
-                            - ordered:
-                                - key: concept_map_version_uuid
-                                - value: '{{urlparams.concept_map_version_uuid}}'
-                  - uuid: acbbd180-308f-11ed-a0d2-97f043728495
-            - targetId: null
-            - pluginId: ''
-            - waitType: debounce
-            - event: success
-            - type: util
-            - waitMs: '0'
-        - ordered:
-            - method: openApp
-            - enabled: >-
-                {{metadata.data.target_value_set_uuid!=='139b3b16-70c0-443a-86d1-db3dc640d063'}}
-            - params:
-                ordered:
-                  - uuid: 184659c0-4e4f-11ed-8a53-4f14117ffdcc
-                  - options:
-                      ordered:
-                        - queryParams:
-                            - ordered:
-                                - key: concept_map_version_uuid
-                                - value: '{{urlparams.concept_map_version_uuid}}'
-            - targetId: null
-            - pluginId: ''
-            - waitType: debounce
-            - event: success
-            - type: util
-            - waitMs: '0'
+    - events: []
+    - tableName: ''
     - queryTimeout: '10000'
     - workflowId: null
     - requireConfirmation: false
-    - queryFailureConditions: '[]'
+    - queryFailureConditions: ''
     - changesetIsObject: false
     - enableCaching: false
     - allowedGroups: []
+    - databaseUsernameOverride: ''
+    - shouldEnableBatchQuerying: false
+    - doNotThrowOnNoOp: false
     - offlineQueryType: None
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2022-10-19T20:55:08.970Z
+createdAt: 2023-06-23T16:22:22.414Z
