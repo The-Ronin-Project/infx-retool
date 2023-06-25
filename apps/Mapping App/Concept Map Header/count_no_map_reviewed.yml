@@ -1,4 +1,4 @@
-id: metadata
+id: count_no_map_reviewed
 type: datasource
 subtype: SqlQueryUnified
 resourceName: dc8029bc-3980-4836-841e-776c64eeca49
@@ -20,12 +20,12 @@ template:
     - runWhenModelUpdates: true
     - showFailureToaster: true
     - query: |-
-        select * from concept_maps.concept_map_version cmv
-        join concept_maps.concept_map cm
-        on cmv.concept_map_uuid = cm.uuid
-        where cmv.uuid={{ variable0 }}
-    - playgroundQueryUuid: cdbb3eca-175f-4e0a-9c90-36c767ad88c4
-    - playgroundQueryId: 56
+        select count(DISTINCT sc.uuid) from concept_maps.source_concept sc 
+        where sc.concept_map_version_uuid={{urlparams.concept_map_version_uuid}}
+        and map_status = 'reviewed'
+        and no_map=true
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
     - error: null
     - workflowRunBodyType: raw
     - privateParams: []
@@ -33,11 +33,9 @@ template:
     - warningCodes: []
     - data: null
     - recordId: ''
-    - retoolVersion: 2.95.3
     - importedQueryInputs:
-        ordered:
-          - variable0: '{{urlparams.concept_map_version_uuid}}'
-    - isImported: true
+        ordered: []
+    - isImported: false
     - showSuccessToaster: true
     - dataArray: []
     - cacheKeyTtl: ''
@@ -75,7 +73,6 @@ template:
     - enableTransformer: false
     - showUpdateSetValueDynamicallyToggle: true
     - bulkUpdatePrimaryKey: ''
-    - playgroundQueryName: concept_map_version_metadata
     - runWhenPageLoads: false
     - transformer: >-
         // type your code here
@@ -100,4 +97,4 @@ template:
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2022-09-15T21:53:07.576Z
+createdAt: 2023-06-25T17:57:03.552Z
