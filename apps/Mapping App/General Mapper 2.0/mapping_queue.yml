@@ -61,6 +61,7 @@ template:
           - assigned_mapper: ''
           - comments: ''
           - map_status: ''
+          - custom_terminology_uuid: ''
           - assigned_reviewer: ''
           - additional_context: ''
           - id: ''
@@ -93,6 +94,7 @@ template:
           - assigned_mapper: false
           - comments: false
           - map_status: false
+          - custom_terminology_uuid: false
           - assigned_reviewer: false
           - additional_context: false
           - uuid: false
