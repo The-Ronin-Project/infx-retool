@@ -15,6 +15,7 @@ template:
     - successMessage: ''
     - queryDisabled: ''
     - playgroundQuerySaveId: latest
+    - workflowParams: null
     - resourceNameOverride: ''
     - runWhenModelUpdates: true
     - showFailureToaster: true
@@ -35,11 +36,7 @@ template:
 
         left join custom_terminologies.code ctc 
 
-        on sc.code=ctc.code
-
-        and sc.display = ctc.display
-
-        and cast(sc.system as uuid) = ctc.terminology_version_uuid
+        on sc.concept_map_version_uuid = ctc.uuid
 
         where sc.concept_map_version_uuid={{urlparams.concept_map_version_uuid}}
 
@@ -57,6 +54,7 @@ template:
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
+    - workflowRunBodyType: raw
     - privateParams: []
     - runWhenPageLoadsDelay: ''
     - warningCodes: []
@@ -113,6 +111,7 @@ template:
     - events: []
     - tableName: ''
     - queryTimeout: '120000'
+    - workflowId: null
     - requireConfirmation: false
     - queryFailureConditions: ''
     - changesetIsObject: false
