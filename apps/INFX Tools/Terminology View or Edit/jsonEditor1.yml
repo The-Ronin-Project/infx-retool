@@ -1,0 +1,21 @@
+id: jsonEditor1
+type: widget
+subtype: JSONEditorWidget
+template:
+  ordered:
+    - formDataKey: '{{ self.id }}'
+    - value: '{{table1.data}}'
+    - valid: true
+    - hidden: |
+        true
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabbedContainer1
+    subcontainer: 1fcf6
+    row: 12.2
+    col: 1
+    height: 8
+    width: 4
+createdAt: 2022-11-04T22:28:30.812Z
