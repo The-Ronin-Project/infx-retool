@@ -15,4 +15,4 @@ appTemplate:
     object:
       batchCommitModelEnabled: false
   rootScreen: null
-  version: 2.115.3
+  version: 2.121.5
