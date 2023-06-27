@@ -286,13 +286,20 @@ template:
     - emptyMessage: No rows found
     - columnEditable:
         ordered:
-          - effective_start: true
-          - effective_end: true
-          - version: false
-          - status: true
-          - description: true
+          - created_date: false
+          - target_title: false
+          - source_value_set_version_uuid: false
+          - status: false
+          - source_title: false
+          - comments: false
+          - concept_map_uuid: false
           - Custom Column 1: false
-          - Custom Column 2: true
+          - Custom Column 2: false
+          - version: false
+          - target_value_set_version_uuid: false
+          - uuid: false
+          - description: false
+          - published_date: false
     - _viewerColumnSummaryTypes:
         object: {}
     - filters:
