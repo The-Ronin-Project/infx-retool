@@ -15,6 +15,7 @@ template:
     - successMessage: ''
     - queryDisabled: ''
     - playgroundQuerySaveId: latest
+    - workflowParams: null
     - resourceNameOverride: ''
     - runWhenModelUpdates: true
     - showFailureToaster: true
@@ -37,9 +38,8 @@ template:
         join concept_maps.relationship_codes rc on
         concept_relationship.relationship_code_uuid=rc.uuid
 
-        left join custom_terminologies.code ctc on source_concept.code=ctc.code
-
-        and source_concept.display = ctc.display
+        left join custom_terminologies.code ctc on
+        source_concept.custom_terminology_uuid = ctc.uuid
 
         and cast(source_concept.system as uuid) = ctc.terminology_version_uuid
 
@@ -54,6 +54,7 @@ template:
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
+    - workflowRunBodyType: raw
     - privateParams: []
     - runWhenPageLoadsDelay: ''
     - warningCodes: []
@@ -110,6 +111,7 @@ template:
     - events: []
     - tableName: ''
     - queryTimeout: '10001'
+    - workflowId: null
     - requireConfirmation: false
     - queryFailureConditions: ''
     - changesetIsObject: false
