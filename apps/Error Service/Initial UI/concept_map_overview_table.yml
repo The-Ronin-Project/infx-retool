@@ -1,4 +1,4 @@
-id: table1
+id: concept_map_overview_table
 type: widget
 subtype: TableWidget
 template:
@@ -33,14 +33,21 @@ template:
     - columnColors:
         ordered:
           - Distinct Codeable Concepts: ''
+          - Number of Outstanding Cod: ''
           - Number of Concepts total: ''
           - 'Distinct ': ''
           - Concept Map: ''
           - Past due: ''
           - Resource Type: ''
+          - Number of Outstanding Codes: ''
           - Date/Time: ''
           - metadata: ''
           - AffectedConcept Map: ''
+          - Number of Outstanding Coddes: ''
+          - 'Number of ': ''
+          - Concept Map Title: ''
+          - Concept Ma p: ''
+          - Number of Outst: ''
     - columnFrozenAlignments:
         ordered: []
     - allowMultiRowSelect: false
@@ -70,20 +77,7 @@ template:
     - downloadRawData: false
     - showFetchingIndicator: true
     - serverPaginated: false
-    - data: |-
-        [{
-          "Concept Map": "PSJ conditions",
-          "Distinct Codeable Concepts": "25",
-          "metadata": "null",
-          "Date/Time": "June 8th 9am PST"
-          
-        }, 
-        {
-          "Concept Map": "PSJ observations",
-          "Distinct Codeable Concepts": "15",
-          "metadata": "null",
-          "Date/Time": "June 7th 9am PST"
-        }]
+    - data: '{{get_concept_map_with_outstanding_rows.data}}'
     - displayedData: null
     - actionButtons:
         - ordered:
