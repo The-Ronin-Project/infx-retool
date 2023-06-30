@@ -1,14 +1,13 @@
-id: query1
+id: get_concept_map_with_outstanding_rows
 type: datasource
-subtype: SqlQueryUnified
-resourceName: dc8029bc-3980-4836-841e-776c64eeca49
-resourceDisplayName: Clinical Content PostgresSQL DB
+subtype: RESTQuery
+resourceName: REST-WithoutResource
 template:
   ordered:
     - queryRefreshTime: ''
-    - records: ''
+    - paginationLimit: ''
+    - body: ''
     - lastReceivedFromResourceAt: null
-    - databasePasswordOverride: ''
     - queryDisabledMessage: ''
     - servedFromCache: false
     - offlineUserQueryInputs: ''
@@ -18,8 +17,12 @@ template:
     - workflowParams: null
     - resourceNameOverride: ''
     - runWhenModelUpdates: true
+    - paginationPaginationField: ''
+    - headers: ''
     - showFailureToaster: true
-    - query: ''
+    - paginationEnabled: false
+    - query: >-
+        https://infx-internal.prod.projectronin.io/data_normalization/outstanding_mapping_rows
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
@@ -27,22 +30,16 @@ template:
     - privateParams: []
     - runWhenPageLoadsDelay: ''
     - data: null
-    - recordId: ''
     - importedQueryInputs:
         ordered: []
     - isImported: false
     - showSuccessToaster: true
-    - dataArray: []
     - cacheKeyTtl: ''
-    - filterBy: ''
     - requestSentTimestamp: null
-    - databaseHostOverride: ''
+    - cookies: ''
     - metadata: null
-    - editorMode: sql
     - queryRunTime: null
-    - actionType: ''
     - changesetObject: ''
-    - shouldUseLegacySql: false
     - errorTransformer: >-
         // The variable 'data' allows you to reference the request's data in the
         transformer. 
@@ -51,23 +48,21 @@ template:
 
         return data.error
     - finished: null
-    - databaseNameOverride: ''
     - confirmationMessage: null
     - isFetching: false
     - changeset: ''
     - rawData: null
     - queryTriggerDelay: '0'
-    - resourceTypeOverride: null
+    - resourceTypeOverride: ''
     - watchedParams: []
     - enableErrorTransformer: false
-    - enableBulkUpdates: false
     - showLatestVersionUpdatedWarning: false
+    - paginationDataField: ''
     - timestamp: 0
     - importedQueryDefaults:
         ordered: []
     - enableTransformer: false
     - showUpdateSetValueDynamicallyToggle: true
-    - bulkUpdatePrimaryKey: ''
     - runWhenPageLoads: false
     - transformer: >-
         // type your code here
@@ -77,17 +72,15 @@ template:
 
         return data
     - events: []
-    - tableName: ''
-    - queryTimeout: '10001'
+    - queryTimeout: '10000'
     - workflowId: null
     - requireConfirmation: false
+    - type: GET
     - queryFailureConditions: ''
     - changesetIsObject: false
     - enableCaching: false
     - allowedGroups: []
-    - databaseUsernameOverride: ''
-    - shouldEnableBatchQuerying: false
-    - doNotThrowOnNoOp: false
+    - bodyType: none
     - offlineQueryType: None
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
