@@ -22,7 +22,7 @@ template:
     - tooltipText: ''
     - labelAlign: left
     - formDataKey: '{{ self.id }}'
-    - value: ''
+    - value: http://projectronin.io/fhir/StructureDefinition/
     - labelCaption: http://projectronin.io/fhir/StructureDefinition/
     - labelWidth: '33'
     - autoFill: ''
@@ -50,7 +50,7 @@ style:
 position2:
   position2:
     container: add_form2
-    row: 6
+    row: 6.2
     height: 1
-    width: 9
+    width: 11
 createdAt: 2023-03-28T18:09:54.714Z

@@ -10,6 +10,8 @@ template:
     - horizontalAlign: center
     - text: ''
     - textSize: default
+    - _disclosedFields:
+        array: []
 style:
   ordered: []
 position2:

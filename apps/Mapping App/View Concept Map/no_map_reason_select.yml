@@ -22,6 +22,7 @@ template:
     - selectedItems:
         array: []
     - inputValue: ''
+    - persistSearchTerm: false
     - hidden: false
     - customValidation: ''
     - data: '{{ reason_for_no_map_options.data }}'

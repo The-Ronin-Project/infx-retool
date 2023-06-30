@@ -21,7 +21,7 @@ template:
     - query: |-
         INSERT INTO data_ingestion.registry(
           resource_type, data_element, tenant_id, value_set_uuid, registry_uuid, type, profile_url)
-          VALUES ({{ resource_type_select_vs_insert.value }}, {{data_element_vs_insert.value.trim().replace(/\s+/g, '')}}, {{tenant_id_vs_insert.value}}, {{value_set_select.value}}, uuid_generate_v4(), 'value_set', {{profile_url_input.labelCaption + profile_url_input.value}})
+          VALUES ({{ resource_type_select_vs_insert.value }}, {{data_element_vs_insert.value.trim().replace(/\s+/g, '')}}, {{tenant_id_vs_insert.value}}, {{value_set_select.value}}, uuid_generate_v4(), 'value_set', {{profile_url_input.value}})
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null

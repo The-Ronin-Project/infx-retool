@@ -25,6 +25,8 @@ template:
         Any existing mappings which are still valid for the most recent versions
         of the target and source terminologies will be copied to the new
         version.
+    - _disclosedFields:
+        array: []
     - disableMarkdown: false
     - overflowType: scroll
     - maintainSpaceWhenHidden: false

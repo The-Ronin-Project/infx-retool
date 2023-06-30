@@ -1,45 +1,48 @@
 id: new_version_submission
 type: datasource
-subtype: SqlQueryUnified
-resourceName: dc8029bc-3980-4836-841e-776c64eeca49
-resourceDisplayName: Clinical Content PostgresSQL DB
+subtype: RESTQuery
+resourceName: a00335cd-bd3b-4d98-8af4-7ff590ce95e8
+resourceDisplayName: INFX Internal Tools API
 template:
   ordered:
     - queryRefreshTime: ''
-    - records: ''
+    - paginationLimit: ''
+    - body: >-
+        [{"key":"new_version_description","value":"{{description_input.value}}"},{"key":"new_source_value_set_version_uuid","value":"{{
+        source_value_set_info.data.value_set_version_uuid[0]}}"},{"key":"new_target_value_set_version_uuid","value":"{{target_value_set_info.data.value_set_version_uuid[0]}}"},{"key":"require_review_for_non_equivalent_relationships","value":"{{checkbox_require_review_for_non_equivalent_relationships.value}}"},{"key":"require_review_no_maps_not_in_target","value":"{{checkbox_require_review_no_maps_not_in_target.value}}"},{"key":"","value":""},{"key":"","value":""}]
     - lastReceivedFromResourceAt: null
-    - databasePasswordOverride: ''
     - queryDisabledMessage: ''
     - servedFromCache: false
+    - offlineUserQueryInputs: ''
     - successMessage: ''
     - queryDisabled: ''
     - playgroundQuerySaveId: latest
+    - workflowParams: null
     - resourceNameOverride: ''
     - runWhenModelUpdates: false
+    - paginationPaginationField: ''
+    - headers: ''
     - showFailureToaster: true
-    - query: ''
+    - paginationEnabled: false
+    - query: >-
+        ConceptMaps/{{select_concept_map_version.data.uuid[0]}}/new_version_from_previous
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
+    - workflowRunBodyType: raw
     - privateParams: []
     - runWhenPageLoadsDelay: ''
     - data: null
-    - recordId: ''
     - importedQueryInputs:
         ordered: []
     - isImported: false
     - showSuccessToaster: true
-    - dataArray: []
     - cacheKeyTtl: ''
-    - filterBy: ''
     - requestSentTimestamp: null
-    - databaseHostOverride: ''
+    - cookies: ''
     - metadata: null
-    - editorMode: gui
     - queryRunTime: null
-    - actionType: INSERT
     - changesetObject: ''
-    - shouldUseLegacySql: false
     - errorTransformer: >-
         // The variable 'data' allows you to reference the request's data in the
         transformer. 
@@ -48,25 +51,21 @@ template:
 
         return data.error
     - finished: null
-    - databaseNameOverride: ''
     - confirmationMessage: null
     - isFetching: false
-    - changeset: >-
-        [{"key":"uuid","value":"{{uuid.v4()}}"},{"key":"effective_start","value":"{{effective_dates.value.start}}"},{"key":"description","value":"{{description_input.value}}"},{"key":"status","value":"{{status.value}}"},{"key":"concept_map_uuid","value":"{{urlparams.uuid}}"},{"key":"created_date","value":"{{
-        moment() }}"},{"key":"version","value":"{{version_input.value}}"}]
+    - changeset: ''
     - rawData: null
     - queryTriggerDelay: '0'
-    - resourceTypeOverride: null
+    - resourceTypeOverride: ''
     - watchedParams: []
     - enableErrorTransformer: false
-    - enableBulkUpdates: false
     - showLatestVersionUpdatedWarning: false
+    - paginationDataField: ''
     - timestamp: 0
     - importedQueryDefaults:
         ordered: []
     - enableTransformer: false
     - showUpdateSetValueDynamicallyToggle: true
-    - bulkUpdatePrimaryKey: ''
     - runWhenPageLoads: false
     - transformer: >-
         // type your code here
@@ -94,16 +93,15 @@ template:
                 ordered: []
             - waitType: debounce
             - waitMs: '0'
-    - tableName: concept_maps.concept_map_version
     - queryTimeout: '10000'
+    - workflowId: null
     - requireConfirmation: false
+    - type: POST
     - queryFailureConditions: ''
     - changesetIsObject: false
     - enableCaching: false
     - allowedGroups: []
-    - databaseUsernameOverride: ''
-    - shouldEnableBatchQuerying: false
-    - doNotThrowOnNoOp: false
+    - bodyType: json
     - offlineQueryType: None
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false

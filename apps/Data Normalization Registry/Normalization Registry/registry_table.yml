@@ -44,8 +44,19 @@ template:
     - onRowAdded: ''
     - columnHeaderNames:
         ordered:
+          - value_set_uuid: Value Set uuid
+          - data_element: Data Element
           - profile: Profile
+          - source_extension_url: Source Extension url
+          - resource_type: Resource Type
+          - value_set_title: Value Set Title
+          - tenant_id: Tenant id
+          - concept_map_uuid: Concept Map uuid
+          - profile_url: Profile url
           - field: Field
+          - type: Type
+          - registry_uuid: Registry uuid
+          - concept_map_title: Concept Map Title
     - alwaysShowPaginator: false
     - columnColors:
         ordered:
@@ -136,6 +147,13 @@ template:
     - showRefreshButton: true
     - pageSize: '20'
     - useDynamicColumnSettings: false
+    - style:
+        ordered:
+          - headerBackground: rgb(217, 226, 236)
+          - cellText: rgb(16, 42, 67)
+          - summaryText: rgb(16, 42, 67)
+          - headerText: rgb(16, 42, 67)
+          - toolbarText: rgb(51, 78, 104)
     - actionButtonPosition: right
     - dynamicRowHeights: false
     - bulkUpdateAction: ''
@@ -188,7 +206,7 @@ template:
           data: null
           columnName: null
     - columns: []
-    - defaultSelectedRow: first
+    - defaultSelectedRow: none
     - freezeActionButtonColumns: false
     - sort: null
     - _columns:

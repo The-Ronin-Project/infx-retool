@@ -1,0 +1,58 @@
+databaseName: clinical-content
+databasePassword: ''
+databaseUsername: retool@psql-clinical-content-prod-centralus.postgres.database.azure.com
+description: null
+dynamicallyQueryable: false
+editPrivilege: false
+environment: production
+host: psql-clinical-content-prod-centralus.postgres.database.azure.com
+options:
+  amazon_secret_access_key: ''
+  api_key: ''
+  application_key: ''
+  athena_secret_access_key: ''
+  auth0_access_token: ''
+  auth0_clientSecret: ''
+  authentication: user_password
+  aws_secret_access_key: ''
+  basic_password: ''
+  ca_cert: ''
+  client_cert: null
+  client_cert_and_key: ''
+  client_key: null
+  connectionString: ''
+  credentialPrivileges:
+    allowRead: true
+    allowWrite: true
+  disableServerSidePrepare: false
+  dynamo_secret_access_key: ''
+  gcpConnectWithSelfSignedCertificate: false
+  googleToken: ''
+  oauth1_consumer_secret: ''
+  oauth2_access_token: ''
+  oauth2_client_secret: ''
+  oauth2_refresh_token: ''
+  password: ''
+  privateKey: ''
+  privateKeyPass: ''
+  queryEditorModes:
+    allowGuiMode: true
+    allowSqlMode: true
+  rejectUnauthorized: true
+  s3_secret_access_key_id: ''
+  serviceAccountKey: ''
+  skipVerifyHostname: false
+  sshHost: ''
+  sshPassword: ''
+  sshPrivateKeyName: ''
+  sshTunnelEnabled: false
+  sshUsername: ''
+  userExplicitlySetRejectUnauthorized: true
+  user_auth_key: ''
+  version: SqlQueryUnified
+outboundRegion: null
+port: '5432'
+ssl: true
+type: postgresql
+uuid: dc8029bc-3980-4836-841e-776c64eeca49
+version: 1.0.0
