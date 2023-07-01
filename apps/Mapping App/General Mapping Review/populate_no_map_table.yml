@@ -28,9 +28,8 @@ template:
 
         join project_management.user as pmu on sc.assigned_mapper = pmu.uuid
 
-        left join custom_terminologies.code ctc on sc.code=ctc.code
-
-        and sc.display = ctc.display
+        left join custom_terminologies.code ctc on sc.custom_terminology_uuid =
+        ctc.uuid
 
         and cast(sc.system as uuid) = ctc.terminology_version_uuid
 
