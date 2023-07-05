@@ -33,9 +33,6 @@ template:
 
         left join custom_terminologies.code ctc on sc.custom_terminology_uuid =
         ctc.uuid
-
-        and cast(sc.system as uuid) = ctc.terminology_version_uuid
-
         where sc.concept_map_version_uuid =
         {{urlparams.concept_map_version_uuid}}
 
