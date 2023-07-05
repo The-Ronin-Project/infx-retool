@@ -29,7 +29,7 @@ template:
 
         where sc.concept_map_version_uuid={{urlparams.concept_map_version_uuid}}
 
-        and review_status != 'rejected'
+        and (cr.review_status != 'rejected' or cr.review_status is null)
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
