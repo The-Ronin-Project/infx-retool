@@ -17,6 +17,7 @@ template:
     - successMessage: ''
     - queryDisabled: '{{version_metadata.data.status[0]==''active''}}'
     - playgroundQuerySaveId: latest
+    - workflowParams: null
     - resourceNameOverride: ''
     - runWhenModelUpdates: false
     - showFailureToaster: true
@@ -24,6 +25,7 @@ template:
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
+    - workflowRunBodyType: raw
     - privateParams: []
     - triggersOnSuccess:
         - load_rules
@@ -92,6 +94,7 @@ template:
             - waitMs: '0'
     - tableName: value_sets.value_set_rule
     - queryTimeout: '10000'
+    - workflowId: null
     - requireConfirmation: false
     - queryFailureConditions: ''
     - changesetIsObject: false

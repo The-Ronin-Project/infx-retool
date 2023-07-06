@@ -15,6 +15,7 @@ template:
     - successMessage: ''
     - queryDisabled: ''
     - playgroundQuerySaveId: latest
+    - workflowParams: null
     - resourceNameOverride: ''
     - runWhenModelUpdates: true
     - showFailureToaster: true
@@ -24,6 +25,7 @@ template:
     - playgroundQueryUuid: 096c70da-32df-4760-938b-ef22b18f121c
     - playgroundQueryId: 38
     - error: null
+    - workflowRunBodyType: raw
     - privateParams: []
     - runWhenPageLoadsDelay: ''
     - warningCodes: []
@@ -70,6 +72,7 @@ template:
     - enableTransformer: false
     - showUpdateSetValueDynamicallyToggle: true
     - bulkUpdatePrimaryKey: ''
+    - playgroundQueryName: get_concept_map_list
     - runWhenPageLoads: false
     - transformer: >-
         // type your code here
@@ -81,6 +84,7 @@ template:
     - events: []
     - tableName: ''
     - queryTimeout: '10000'
+    - workflowId: null
     - requireConfirmation: false
     - queryFailureConditions: ''
     - changesetIsObject: false
@@ -93,5 +97,4 @@ template:
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-    - playgroundQueryName: get_concept_map_list
 createdAt: 2022-02-28T21:49:37.036Z
