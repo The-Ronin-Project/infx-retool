@@ -21,6 +21,7 @@ template:
     - selectedItems:
         array: []
     - inputValue: ''
+    - persistSearchTerm: false
     - hidden: false
     - customValidation: ''
     - data: '{{get_relationship_types_for_concept_map.data.relationshipCode}}'
