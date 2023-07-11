@@ -7,7 +7,7 @@ template:
     - sortMappedValue:
         ordered: []
     - _filteredSortedRenderedDataWithTypes: null
-    - heightType: fixed
+    - heightType: auto
     - normalizedData: null
     - rowHeight: standard
     - saveChangesDisabled: ''
@@ -27,6 +27,8 @@ template:
               ordered: []
           - relationship_display:
               ordered: []
+          - additional_data:
+              ordered: []
     - columnWidths:
         - object:
             id: display
@@ -40,9 +42,6 @@ template:
         - object:
             id: source_display
             value: 739.15625
-        - object:
-            id: source_code
-            value: 253
         - object:
             id: author
             value: 138
@@ -67,6 +66,9 @@ template:
         - object:
             id: assigned_reviewer
             value: 145
+        - object:
+            id: source_code
+            value: 303
     - showSummaryFooter: false
     - disableRowSelectInteraction: false
     - columnWidthsMobile: []
@@ -158,6 +160,7 @@ template:
           - target_concept_code: TextDataCell
           - target_concept_display: TextMultiDataCell
           - relationship_display: TextMultiDataCell
+          - additional_data: default
     - columnRestrictedEditing:
         ordered: []
     - showFilterButton: true
@@ -179,6 +182,7 @@ template:
           - mapping_group: false
           - system: false
           - reason_for_no_map: false
+          - source_code: true
           - target_concept_code: true
           - assigned_mapper: false
           - source_system: false
@@ -209,6 +213,7 @@ template:
           - target_concept_code: ''
           - target_concept_display: ''
           - relationship_display: ''
+          - additional_data: ''
     - _columnsWithLegacyBackgroundColor:
         set: []
     - showAddRowButton: false
@@ -242,6 +247,7 @@ template:
           - target_concept_code: left
           - target_concept_display: left
           - relationship_display: left
+          - additional_data: left
     - columnSummaries:
         object: {}
     - showBoxShadow: false
@@ -253,7 +259,7 @@ template:
     - pageSize: '20'
     - useDynamicColumnSettings: false
     - actionButtonPosition: right
-    - dynamicRowHeights: true
+    - dynamicRowHeights: false
     - bulkUpdateAction: ''
     - afterCursor: ''
     - onCustomButtonPressQueryName: ''
@@ -269,6 +275,7 @@ template:
           - target_concept_code: ''
           - target_concept_display: ''
           - relationship_display: ''
+          - additional_data: ''
     - checkboxRowSelect: true
     - _compatibilityMode: false
     - showColumnBorders: false
@@ -374,6 +381,6 @@ position2:
     container: tabbedContainer1
     subcontainer: '2e213'
     row: 2.6000000000000223
-    height: 23.8
+    height: 2
     width: 12
 createdAt: 2022-10-05T18:46:24.842Z
