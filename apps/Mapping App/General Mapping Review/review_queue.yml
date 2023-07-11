@@ -253,7 +253,7 @@ template:
     - pageSize: '20'
     - useDynamicColumnSettings: false
     - actionButtonPosition: right
-    - dynamicRowHeights: true
+    - dynamicRowHeights: false
     - bulkUpdateAction: ''
     - afterCursor: ''
     - onCustomButtonPressQueryName: ''

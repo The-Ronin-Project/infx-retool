@@ -65,6 +65,7 @@ template:
         ordered: []
     - enableTransformer: false
     - showUpdateSetValueDynamicallyToggle: true
+    - playgroundQueryName: getInfoBeforeMapping
     - runWhenPageLoads: false
     - transformer: >-
         // type your code here
@@ -87,5 +88,4 @@ template:
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-    - playgroundQueryName: getInfoBeforeMapping
 createdAt: 2022-10-05T19:52:24.615Z
