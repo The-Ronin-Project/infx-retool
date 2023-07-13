@@ -87,6 +87,15 @@ template:
     - displayedData: null
     - actionButtons:
         - ordered:
+            - actionButtonText: Load Outstanding Data to Concept Map
+            - actionButtonType: runQuery
+            - actionButtonQuery: ''
+            - actionButtonInternalUrlPath: ''
+            - actionButtonInternalUrlQuery: ''
+            - actionButtonUrl: ''
+            - actionButtonNewWindow: false
+            - actionButtonDisabled: ''
+        - ordered:
             - actionButtonText: Open Concept Map
             - actionButtonType: openInternalUrl
             - actionButtonQuery: ''
