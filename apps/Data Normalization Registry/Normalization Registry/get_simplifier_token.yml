@@ -1,10 +1,13 @@
-id: tab_trigger_query
+id: get_simplifier_token
 type: datasource
-subtype: JavascriptQuery
-resourceName: JavascriptQuery
+subtype: RESTQuery
+resourceName: REST-WithoutResource
 template:
   ordered:
     - queryRefreshTime: ''
+    - paginationLimit: ''
+    - body: >-
+        [{"key":"Email","value":"\"retooluser@projectronin.com\""},{"key":"Password","value":"\"projectronin2022\""}]
     - lastReceivedFromResourceAt: null
     - queryDisabledMessage: ''
     - servedFromCache: false
@@ -15,11 +18,11 @@ template:
     - workflowParams: null
     - resourceNameOverride: ''
     - runWhenModelUpdates: false
+    - paginationPaginationField: ''
+    - headers: ''
     - showFailureToaster: true
-    - query: |-
-        if (tabs1.selectedLabel == 'View Registry'){
-          view_all_registry.trigger()
-        }
+    - paginationEnabled: false
+    - query: https://api.simplifier.net/token
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
@@ -30,9 +33,10 @@ template:
     - importedQueryInputs:
         ordered: []
     - isImported: false
-    - showSuccessToaster: false
+    - showSuccessToaster: true
     - cacheKeyTtl: ''
     - requestSentTimestamp: null
+    - cookies: ''
     - metadata: null
     - queryRunTime: null
     - changesetObject: ''
@@ -49,16 +53,17 @@ template:
     - changeset: ''
     - rawData: null
     - queryTriggerDelay: '0'
-    - resourceTypeOverride: null
+    - resourceTypeOverride: ''
     - watchedParams: []
     - enableErrorTransformer: false
     - showLatestVersionUpdatedWarning: false
+    - paginationDataField: ''
     - timestamp: 0
     - importedQueryDefaults:
         ordered: []
     - enableTransformer: false
     - showUpdateSetValueDynamicallyToggle: true
-    - runWhenPageLoads: false
+    - runWhenPageLoads: true
     - transformer: >-
         // type your code here
 
@@ -70,12 +75,14 @@ template:
     - queryTimeout: '10000'
     - workflowId: null
     - requireConfirmation: false
-    - queryFailureConditions: '[]'
+    - type: POST
+    - queryFailureConditions: ''
     - changesetIsObject: false
     - enableCaching: false
     - allowedGroups: []
+    - bodyType: json
     - offlineQueryType: None
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2022-10-12T16:50:28.858Z
+createdAt: 2023-07-10T20:57:01.311Z

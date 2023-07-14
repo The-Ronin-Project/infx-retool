@@ -15,6 +15,7 @@ template:
     - successMessage: ''
     - queryDisabled: ''
     - playgroundQuerySaveId: latest
+    - workflowParams: null
     - resourceNameOverride: ''
     - runWhenModelUpdates: true
     - paginationPaginationField: ''
@@ -25,6 +26,7 @@ template:
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
+    - workflowRunBodyType: raw
     - privateParams: []
     - runWhenPageLoadsDelay: ''
     - data: null
@@ -68,6 +70,7 @@ template:
         return update_date
     - events: []
     - queryTimeout: '10000'
+    - workflowId: null
     - requireConfirmation: false
     - type: GET
     - queryFailureConditions: ''

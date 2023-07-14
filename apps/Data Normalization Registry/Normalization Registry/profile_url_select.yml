@@ -1,28 +1,40 @@
-id: resource_type_select_vs_insert
+id: profile_url_select
 type: widget
 subtype: SelectWidget2
 template:
   ordered:
     - imageByIndex: ''
-    - _disabledByIndex: []
+    - _disabledByIndex:
+        - ''
+        - ''
+        - ''
     - showSelectionIndicator: true
-    - _values: []
+    - _values:
+        - Option 1
+        - Option 2
+        - Option 3
     - iconByIndex: ''
-    - values: ''
+    - values: '{{ item.profileURLs }}'
     - readOnly: false
     - iconAfter: ''
-    - _iconByIndex: []
+    - _iconByIndex:
+        - ''
+        - ''
+        - ''
     - overlayMinWidth: null
     - allowDeselect: false
     - inputValue: ''
     - hidden: false
     - customValidation: ''
-    - data: '{{ get_resource_types.data }}'
+    - data: '{{ get_urls.data }}'
     - searchMode: fuzzy
     - hideValidationMessage: false
     - fallbackTextByIndex: ''
     - textBefore: ''
-    - _fallbackTextByIndex: []
+    - _fallbackTextByIndex:
+        - ''
+        - ''
+        - ''
     - selectedItem: null
     - validationMessage: ''
     - automaticItemColors: false
@@ -36,53 +48,72 @@ template:
     - value: null
     - hiddenByIndex: ''
     - labelCaption: ''
-    - labelWidth: '32'
+    - labelWidth: '33'
     - deprecatedLabels:
         array: []
-    - _hiddenByIndex: []
+    - _hiddenByIndex:
+        - ''
+        - ''
+        - ''
     - placeholder: Select an option
-    - _captionByIndex: []
-    - _disclosedFields:
-        array: []
+    - _captionByIndex:
+        - ''
+        - ''
+        - ''
     - itemAdornmentSize: auto
-    - label: 'Resource Type:'
+    - label: Profile URL
     - _hasMigratedNestedItems: true
     - captionByIndex: ''
     - _validate: false
     - itemMode: dynamic
     - labelWidthUnit: '%'
-    - allowCustomValue: true
+    - allowCustomValue: false
     - invalid: false
     - selectedIndex: null
-    - _tooltipByIndex: []
-    - _colorByIndex: []
+    - _tooltipByIndex:
+        - ''
+        - ''
+        - ''
+    - _colorByIndex:
+        - ''
+        - ''
+        - ''
     - tooltipByIndex: ''
     - iconBefore: ''
     - colorByIndex: ''
     - selectedLabel: ''
     - events:
         ordered: []
-    - _ids: []
-    - emptyMessage: ''
+    - _ids:
+        - b0754
+        - 56a7a
+        - 1ce5f
+    - emptyMessage: No options
     - overlayMaxHeight: 375
     - loading: false
     - disabled: false
     - labelPosition: left
-    - _labels: []
+    - _labels:
+        - ''
+        - ''
+        - ''
     - labelWrap: false
     - disabledValues:
         array: []
     - disabledByIndex: ''
     - maintainSpaceWhenHidden: false
-    - _imageByIndex: []
-    - required: true
+    - _imageByIndex:
+        - ''
+        - ''
+        - ''
+    - required: false
     - labels: ''
 style:
   ordered: []
 position2:
   position2:
     container: add_form2
-    row: 0.4
+    row: 6
     height: 1
     width: 9
-createdAt: 2023-03-24T22:52:21.340Z
+createdAt: 2023-07-11T17:31:14.073Z

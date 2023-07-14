@@ -5,69 +5,27 @@ template:
   ordered:
     - imageByIndex:
         array: []
-    - _disabledByIndex:
-        - ''
-        - ''
-        - false
-        - false
-        - false
-        - false
-        - false
-        - ''
-        - false
-        - false
+    - _disabledByIndex: []
     - showSelectionIndicator: true
-    - _values:
-        - Appointment
-        - Condition
-        - DocumentReference
-        - Encounter
-        - Location
-        - Medication
-        - Observation
-        - Patient
-        - Practitioner
-        - PractitionerRole
+    - _values: []
     - iconByIndex:
         array: []
-    - values:
-        array: []
+    - values: '{{ item.resource_type }}'
     - readOnly: false
     - iconAfter: ''
-    - _iconByIndex:
-        - ''
-        - ''
-        - ''
-        - ''
-        - ''
-        - ''
-        - ''
-        - ''
-        - ''
-        - ''
+    - _iconByIndex: []
     - overlayMinWidth: null
     - allowDeselect: false
     - inputValue: ''
     - hidden: false
     - customValidation: ''
-    - data:
-        array: []
+    - data: '{{ get_resource_type.data }}'
     - searchMode: fuzzy
     - hideValidationMessage: false
     - fallbackTextByIndex:
         array: []
     - textBefore: ''
-    - _fallbackTextByIndex:
-        - ''
-        - ''
-        - ''
-        - ''
-        - ''
-        - ''
-        - ''
-        - ''
-        - ''
-        - ''
+    - _fallbackTextByIndex: []
     - selectedItem: null
     - validationMessage: ''
     - automaticItemColors: false
@@ -85,29 +43,9 @@ template:
     - labelWidth: '32'
     - deprecatedLabels:
         array: []
-    - _hiddenByIndex:
-        - ''
-        - ''
-        - false
-        - false
-        - false
-        - false
-        - false
-        - ''
-        - false
-        - false
+    - _hiddenByIndex: []
     - placeholder: Select an option
-    - _captionByIndex:
-        - ''
-        - ''
-        - ''
-        - ''
-        - ''
-        - ''
-        - ''
-        - ''
-        - ''
-        - ''
+    - _captionByIndex: []
     - _disclosedFields:
         array: []
     - itemAdornmentSize: auto
@@ -116,33 +54,13 @@ template:
     - captionByIndex:
         array: []
     - _validate: false
-    - itemMode: static
+    - itemMode: dynamic
     - labelWidthUnit: '%'
     - allowCustomValue: false
     - invalid: false
     - selectedIndex: null
-    - _tooltipByIndex:
-        - ''
-        - ''
-        - ''
-        - ''
-        - ''
-        - ''
-        - ''
-        - ''
-        - ''
-        - ''
-    - _colorByIndex:
-        - ''
-        - ''
-        - ''
-        - ''
-        - ''
-        - ''
-        - ''
-        - ''
-        - ''
-        - ''
+    - _tooltipByIndex: []
+    - _colorByIndex: []
     - tooltipByIndex:
         array: []
     - iconBefore: ''
@@ -151,50 +69,20 @@ template:
     - selectedLabel: ''
     - events:
         ordered: []
-    - _ids:
-        - 6ea7e
-        - 4f760
-        - fa30b
-        - 0cacd
-        - 33d5c
-        - fe328
-        - e7723
-        - 51aef
-        - d89ec
-        - f049a
+    - _ids: []
     - emptyMessage: ''
     - overlayMaxHeight: 375
     - loading: false
     - disabled: false
     - labelPosition: left
-    - _labels:
-        - ''
-        - ''
-        - ''
-        - ''
-        - ''
-        - ''
-        - ''
-        - ''
-        - ''
-        - ''
+    - _labels: []
     - labelWrap: false
     - disabledValues:
         array: []
     - disabledByIndex:
         array: []
     - maintainSpaceWhenHidden: false
-    - _imageByIndex:
-        - ''
-        - ''
-        - ''
-        - ''
-        - ''
-        - ''
-        - ''
-        - ''
-        - ''
-        - ''
+    - _imageByIndex: []
     - required: false
     - labels:
         array: []

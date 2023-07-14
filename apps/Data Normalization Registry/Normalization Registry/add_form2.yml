@@ -4,8 +4,8 @@ subtype: FormWidget2
 template:
   ordered:
     - disableSubmit: >-
-        {{!resource_type_select_vs_insert.value || !data_element_vs_insert.value
-        || value_set_select.value === null || !profile_url_input.value }}
+        {{!resource_type_select_vs_insert.value || !data_element_select.value ||
+        value_set_select.value === null || !profile_url_select.value }}
     - heightType: fixed
     - resetAfterSubmit: false
     - submitting: false

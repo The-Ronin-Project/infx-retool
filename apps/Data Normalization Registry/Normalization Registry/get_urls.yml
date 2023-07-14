@@ -1,10 +1,13 @@
-id: tab_trigger_query
+id: get_urls
 type: datasource
-subtype: JavascriptQuery
-resourceName: JavascriptQuery
+subtype: RESTQuery
+resourceName: 3613b0ef-8f05-48f6-9c3c-d5a8bd47c43c
+resourceDisplayName: FHIRRoninCommonModel
 template:
   ordered:
     - queryRefreshTime: ''
+    - paginationLimit: ''
+    - body: ''
     - lastReceivedFromResourceAt: null
     - queryDisabledMessage: ''
     - servedFromCache: false
@@ -14,12 +17,14 @@ template:
     - playgroundQuerySaveId: latest
     - workflowParams: null
     - resourceNameOverride: ''
-    - runWhenModelUpdates: false
+    - runWhenModelUpdates: true
+    - paginationPaginationField: ''
+    - headers: >-
+        [{"key":"Authorization","value":"Bearer
+        {{get_simplifier_token.data.token}}"},{"key":"Accept","value":"application/fhir+json"},{"key":"Content-Type","value":"application/fhir+json"}]
     - showFailureToaster: true
-    - query: |-
-        if (tabs1.selectedLabel == 'View Registry'){
-          view_all_registry.trigger()
-        }
+    - paginationEnabled: false
+    - query: StructureDefinition?_count=500
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
@@ -30,9 +35,10 @@ template:
     - importedQueryInputs:
         ordered: []
     - isImported: false
-    - showSuccessToaster: false
+    - showSuccessToaster: true
     - cacheKeyTtl: ''
     - requestSentTimestamp: null
+    - cookies: ''
     - metadata: null
     - queryRunTime: null
     - changesetObject: ''
@@ -53,29 +59,51 @@ template:
     - watchedParams: []
     - enableErrorTransformer: false
     - showLatestVersionUpdatedWarning: false
+    - paginationDataField: ''
     - timestamp: 0
     - importedQueryDefaults:
         ordered: []
-    - enableTransformer: false
+    - enableTransformer: true
     - showUpdateSetValueDynamicallyToggle: true
     - runWhenPageLoads: false
-    - transformer: >-
-        // type your code here
+    - transformer: >
+        function getOrderedSet(set) {
+          const orderedArray = Array.from(set);
+          orderedArray.sort();
+          return orderedArray;
+        }
 
-        // example: return formatDataAsArray(data).filter(row => row.quantity >
-        20)
 
-        return data
+        var urls = data.entry.map(function(entry) { return entry.resource.url;
+        })
+
+        const urlSet = new Set(urls);
+
+        const orderedURLs = getOrderedSet(urlSet);
+
+
+        // Split the URLs into extensions and profiles
+
+        const extensionURLs = orderedURLs.filter(url => url &&
+        url.includes("Extension"));
+
+        const profileURLs = orderedURLs.filter(url => url &&
+        !url.includes("Extension"));
+
+
+        return {extensionURLs, profileURLs};
     - events: []
     - queryTimeout: '10000'
     - workflowId: null
     - requireConfirmation: false
-    - queryFailureConditions: '[]'
+    - type: GET
+    - queryFailureConditions: ''
     - changesetIsObject: false
     - enableCaching: false
     - allowedGroups: []
+    - bodyType: none
     - offlineQueryType: None
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2022-10-12T16:50:28.858Z
+createdAt: 2023-07-11T18:25:43.325Z

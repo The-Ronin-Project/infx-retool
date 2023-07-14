@@ -1,10 +1,13 @@
-id: tab_trigger_query
+id: get_resource_types
 type: datasource
-subtype: JavascriptQuery
-resourceName: JavascriptQuery
+subtype: RESTQuery
+resourceName: 3613b0ef-8f05-48f6-9c3c-d5a8bd47c43c
+resourceDisplayName: FHIRRoninCommonModel
 template:
   ordered:
     - queryRefreshTime: ''
+    - paginationLimit: ''
+    - body: ''
     - lastReceivedFromResourceAt: null
     - queryDisabledMessage: ''
     - servedFromCache: false
@@ -14,12 +17,14 @@ template:
     - playgroundQuerySaveId: latest
     - workflowParams: null
     - resourceNameOverride: ''
-    - runWhenModelUpdates: false
+    - runWhenModelUpdates: true
+    - paginationPaginationField: ''
+    - headers: >-
+        [{"key":"Authorization","value":"Bearer
+        {{get_simplifier_token.data.token}}"},{"key":"Accept","value":"application/fhir+json"},{"key":"Content-Type","value":"application/fhir+json"}]
     - showFailureToaster: true
-    - query: |-
-        if (tabs1.selectedLabel == 'View Registry'){
-          view_all_registry.trigger()
-        }
+    - paginationEnabled: false
+    - query: StructureDefinition
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
@@ -30,9 +35,10 @@ template:
     - importedQueryInputs:
         ordered: []
     - isImported: false
-    - showSuccessToaster: false
+    - showSuccessToaster: true
     - cacheKeyTtl: ''
     - requestSentTimestamp: null
+    - cookies: ''
     - metadata: null
     - queryRunTime: null
     - changesetObject: ''
@@ -49,33 +55,50 @@ template:
     - changeset: ''
     - rawData: null
     - queryTriggerDelay: '0'
-    - resourceTypeOverride: null
+    - resourceTypeOverride: ''
     - watchedParams: []
     - enableErrorTransformer: false
     - showLatestVersionUpdatedWarning: false
+    - paginationDataField: ''
     - timestamp: 0
     - importedQueryDefaults:
         ordered: []
-    - enableTransformer: false
+    - enableTransformer: true
     - showUpdateSetValueDynamicallyToggle: true
     - runWhenPageLoads: false
-    - transformer: >-
-        // type your code here
+    - transformer: |-
+        function getOrderedSet(set) {
+          const orderedArray = Array.from(set);
+          orderedArray.sort();
+          return orderedArray;
+        }
 
-        // example: return formatDataAsArray(data).filter(row => row.quantity >
-        20)
-
-        return data
+        let resourceTypes = [];
+        for (let [key, value] of Object.entries(data)) {
+          if (key === 'entry') {
+            let resources = value;
+            for (let i = 0; i < resources.length; i++) {
+              if (resources[i].resource && resources[i].resource.type !== null) {
+                resourceTypes.push(resources[i].resource.type);
+              }
+            }
+          }
+        }
+        const resourceTypesSet = new Set(resourceTypes);
+        const orderedResourceTypes = getOrderedSet(resourceTypesSet);
+        return orderedResourceTypes;
     - events: []
     - queryTimeout: '10000'
     - workflowId: null
     - requireConfirmation: false
-    - queryFailureConditions: '[]'
+    - type: GET
+    - queryFailureConditions: ''
     - changesetIsObject: false
     - enableCaching: false
     - allowedGroups: []
+    - bodyType: none
     - offlineQueryType: None
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2022-10-12T16:50:28.858Z
+createdAt: 2023-07-10T20:58:43.475Z

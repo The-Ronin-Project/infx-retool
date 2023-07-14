@@ -5,7 +5,7 @@ template:
   ordered:
     - disableSubmit: >-
         {{!resource_type_select.value || !data_element_input.value ||
-        concept_map_select.value === null || !source_extension_url.value}}
+        concept_map_select.value === null || !source_extension_select.value}}
     - heightType: fixed
     - resetAfterSubmit: false
     - submitting: false

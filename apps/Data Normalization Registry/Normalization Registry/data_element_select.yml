@@ -1,4 +1,4 @@
-id: data_element_input
+id: data_element_select
 type: widget
 subtype: SelectWidget2
 template:
@@ -18,16 +18,16 @@ template:
         - false
     - showSelectionIndicator: true
     - _values:
-        - '{{ resource_type_select.value }}.category'
-        - '{{ resource_type_select.value }}.class'
-        - '{{ resource_type_select.value }}.code'
-        - '{{ resource_type_select.value }}.component.code'
-        - '{{ resource_type_select.value }}.component.value'
-        - '{{ resource_type_select.value }}.status'
-        - '{{ resource_type_select.value }}.telecom.system'
-        - '{{ resource_type_select.value }}.telecom.use'
-        - '{{ resource_type_select.value }}.type'
-        - '{{ resource_type_select.value }}.value'
+        - '{{ resource_type_select_vs_insert.value }}.category'
+        - '{{ resource_type_select_vs_insert.value }}.class'
+        - '{{ resource_type_select_vs_insert.value }}.code'
+        - '{{ resource_type_select_vs_insert.value }}.component.code'
+        - '{{ resource_type_select_vs_insert.value }}.component.value'
+        - '{{ resource_type_select_vs_insert.value }}.status'
+        - '{{ resource_type_select_vs_insert.value }}.telecom.system'
+        - '{{ resource_type_select_vs_insert.value }}.telecom.use'
+        - '{{ resource_type_select_vs_insert.value }}.type'
+        - '{{ resource_type_select_vs_insert.value }}.value'
     - iconByIndex:
         array: []
     - values:
@@ -96,7 +96,7 @@ template:
         - false
         - false
         - false
-    - placeholder: Select post prefix option
+    - placeholder: Select an option
     - _captionByIndex:
         - ''
         - ''
@@ -109,7 +109,7 @@ template:
         - ''
         - ''
     - itemAdornmentSize: auto
-    - label: 'Data Element:'
+    - label: 'Date Element:'
     - _hasMigratedNestedItems: true
     - captionByIndex:
         array: []
@@ -150,16 +150,16 @@ template:
     - events:
         ordered: []
     - _ids:
+        - b0754
         - 56a7a
         - 1ce5f
-        - b0754
-        - bda7d
-        - 1ea0b
-        - a10e6
-        - 9e28d
-        - f98f0
-        - c06c7
-        - 08d7a
+        - 476c4
+        - ace44
+        - f8485
+        - c52e3
+        - c056b
+        - 83a33
+        - 671f4
     - emptyMessage: No options
     - overlayMaxHeight: 375
     - loading: false
@@ -200,8 +200,8 @@ style:
   ordered: []
 position2:
   position2:
-    container: add_form
+    container: add_form2
     row: 1.8
     height: 1
     width: 9
-createdAt: 2023-07-14T17:45:19.554Z
+createdAt: 2023-07-14T18:12:31.496Z
