@@ -21,9 +21,6 @@ template:
             id: profile
             value: 260.328125
         - object:
-            id: source_extension_url
-            value: 274.421875
-        - object:
             id: data_element
             value: 213
         - object:
@@ -35,6 +32,9 @@ template:
         - object:
             id: profile_url
             value: 510
+        - object:
+            id: source_extension_url
+            value: 396.421875
     - showSummaryFooter: false
     - disableRowSelectInteraction: false
     - columnWidthsMobile: []

@@ -1,14 +1,16 @@
-id: resource_type_select_vs_insert
+id: source_extension_select
 type: widget
 subtype: SelectWidget2
 template:
   ordered:
-    - imageByIndex: ''
+    - imageByIndex:
+        array: []
     - _disabledByIndex: []
     - showSelectionIndicator: true
     - _values: []
-    - iconByIndex: ''
-    - values: ''
+    - iconByIndex:
+        array: []
+    - values: '{{ item.extensionURLs }}'
     - readOnly: false
     - iconAfter: ''
     - _iconByIndex: []
@@ -17,10 +19,11 @@ template:
     - inputValue: ''
     - hidden: false
     - customValidation: ''
-    - data: '{{ get_resource_types.data }}'
+    - data: '{{ get_urls.data }}'
     - searchMode: fuzzy
     - hideValidationMessage: false
-    - fallbackTextByIndex: ''
+    - fallbackTextByIndex:
+        array: []
     - textBefore: ''
     - _fallbackTextByIndex: []
     - selectedItem: null
@@ -34,36 +37,38 @@ template:
     - labelAlign: left
     - formDataKey: '{{ self.id }}'
     - value: null
-    - hiddenByIndex: ''
+    - hiddenByIndex:
+        array: []
     - labelCaption: ''
-    - labelWidth: '32'
+    - labelWidth: '33'
     - deprecatedLabels:
         array: []
     - _hiddenByIndex: []
     - placeholder: Select an option
     - _captionByIndex: []
-    - _disclosedFields:
-        array: []
     - itemAdornmentSize: auto
-    - label: 'Resource Type:'
+    - label: Source Extension URL
     - _hasMigratedNestedItems: true
-    - captionByIndex: ''
+    - captionByIndex:
+        array: []
     - _validate: false
     - itemMode: dynamic
     - labelWidthUnit: '%'
-    - allowCustomValue: true
+    - allowCustomValue: false
     - invalid: false
     - selectedIndex: null
     - _tooltipByIndex: []
     - _colorByIndex: []
-    - tooltipByIndex: ''
+    - tooltipByIndex:
+        array: []
     - iconBefore: ''
-    - colorByIndex: ''
+    - colorByIndex:
+        array: []
     - selectedLabel: ''
     - events:
         ordered: []
     - _ids: []
-    - emptyMessage: ''
+    - emptyMessage: No options
     - overlayMaxHeight: 375
     - loading: false
     - disabled: false
@@ -72,17 +77,19 @@ template:
     - labelWrap: false
     - disabledValues:
         array: []
-    - disabledByIndex: ''
+    - disabledByIndex:
+        array: []
     - maintainSpaceWhenHidden: false
     - _imageByIndex: []
-    - required: true
-    - labels: ''
+    - required: false
+    - labels:
+        array: []
 style:
   ordered: []
 position2:
   position2:
-    container: add_form2
-    row: 0.4
+    container: add_form
+    row: 6.4
     height: 1
     width: 9
-createdAt: 2023-03-24T22:52:21.340Z
+createdAt: 2023-07-11T19:46:45.981Z
