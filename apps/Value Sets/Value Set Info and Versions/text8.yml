@@ -1,0 +1,26 @@
+id: text8
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - tooltipText: ''
+    - value: '**Primary Use Case**'
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: useCaseView
+    subcontainer: 9330a
+    row: -2.886579864025407e-15
+    height: 0.6
+    width: 6
+createdAt: 2023-07-17T21:12:19.435Z

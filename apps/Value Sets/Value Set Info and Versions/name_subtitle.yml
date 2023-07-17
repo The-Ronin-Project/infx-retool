@@ -1,0 +1,29 @@
+id: name_subtitle
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - tooltipText: ''
+    - value: >-
+        **{{load_vs_metadata.data.name}}** is the name of the value set. Name is
+        intended to be machine-readable, while title is intended to be
+        human-readable.
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabbedcontainer1
+    row: 24.000000000000004
+    height: 0.6
+    width: 6
+    tabNum: 1
+createdAt: 2023-07-06T22:49:20.830Z

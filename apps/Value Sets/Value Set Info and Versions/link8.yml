@@ -1,0 +1,31 @@
+id: link8
+type: widget
+subtype: LinkWidget
+template:
+  ordered:
+    - horizontalAlign: left
+    - clickable: false
+    - iconAfter: ''
+    - hidden: false
+    - text: PSJ Questionnaire Assignment Use Case
+    - showUnderline: always
+    - showInEditor: false
+    - tooltipText: ''
+    - allowWrap: false
+    - iconBefore: bold/interface-link-square-alternate
+    - events:
+        ordered: []
+    - loading: false
+    - loaderPosition: auto
+    - disabled: false
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: useCaseView
+    subcontainer: 9330a
+    row: 0.6000000000000021
+    height: 0.6
+    width: 6
+createdAt: 2023-07-17T21:10:46.016Z
