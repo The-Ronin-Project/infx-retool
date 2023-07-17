@@ -24,6 +24,7 @@ template:
           - identifier: true
           - name: true
           - url: true
+          - use_case_uuid: true
           - title: true
           - type: true
           - uuid: true
@@ -50,6 +51,7 @@ template:
         - experimental
         - purpose
         - type
+        - use_case_uuid
     - keyTitle: Key
 style:
   ordered: []
