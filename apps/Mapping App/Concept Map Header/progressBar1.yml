@@ -9,8 +9,9 @@ template:
     - tooltipText: ''
     - labelAlign: right
     - value: >-
-        {{Math.round((count_mapped.data.count + count_no_map.data.count) /
-        count_total.data.count * 100)}}
+        {{((parseInt(count_mapped.data.count) +
+        parseInt(count_no_map.data.count)) / parseInt(count_total.data.count)) *
+        100}}
     - labelCaption: ''
     - labelWidth: '50'
     - label: >-
