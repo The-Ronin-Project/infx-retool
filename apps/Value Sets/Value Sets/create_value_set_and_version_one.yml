@@ -8,13 +8,15 @@ template:
     - queryRefreshTime: ''
     - paginationLimit: ''
     - body: >-
-        [{"key":"name","value":"{{name_input.value}}"},{"key":"title","value":"{{title_input.value.trim()}}"},{"key":"publisher","value":"{{publisher.value}}"},{"key":"contact","value":"{{contact_input.value}}"},{"key":"value_set_description","value":"{{value_set_description.value}}"},{"key":"immutable","value":"false"},{"key":"experimental","value":"{{experimental_checkbox.value}}"},{"key":"purpose","value":"{{purpose_input.value}}"},{"key":"type","value":"{{type_dropdown.value}}"},{"key":"version_description","value":"{{version_description_input.value}}"},{"key":"use_case_uuid","value":"{{select_use.value}}"}]
+        [{"key":"name","value":"{{name_input.value}}"},{"key":"title","value":"{{title_input.value.trim()}}"},{"key":"publisher","value":"{{publisher.value}}"},{"key":"contact","value":"{{contact_input.value}}"},{"key":"value_set_description","value":"{{value_set_description.value}}"},{"key":"immutable","value":"false"},{"key":"experimental","value":"{{experimental_checkbox.value}}"},{"key":"purpose","value":"{{purpose_input.value}}"},{"key":"type","value":"{{type_dropdown.value}}"},{"key":"version_description","value":"{{version_description_input.value}}"}]
     - lastReceivedFromResourceAt: null
     - queryDisabledMessage: ''
     - servedFromCache: false
+    - offlineUserQueryInputs: ''
     - successMessage: ''
     - queryDisabled: ''
     - playgroundQuerySaveId: latest
+    - workflowParams: null
     - resourceNameOverride: ''
     - runWhenModelUpdates: false
     - paginationPaginationField: ''
@@ -25,6 +27,7 @@ template:
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
+    - workflowRunBodyType: raw
     - privateParams: []
     - runWhenPageLoadsDelay: ''
     - data: null
@@ -91,6 +94,7 @@ template:
             - waitType: debounce
             - waitMs: '0'
     - queryTimeout: '10000'
+    - workflowId: null
     - requireConfirmation: false
     - type: POST
     - queryFailureConditions: ''

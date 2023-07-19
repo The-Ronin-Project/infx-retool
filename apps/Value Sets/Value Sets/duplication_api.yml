@@ -12,9 +12,11 @@ template:
     - lastReceivedFromResourceAt: null
     - queryDisabledMessage: ''
     - servedFromCache: false
+    - offlineUserQueryInputs: ''
     - successMessage: ''
     - queryDisabled: ''
     - playgroundQuerySaveId: latest
+    - workflowParams: null
     - resourceNameOverride: ''
     - runWhenModelUpdates: false
     - paginationPaginationField: ''
@@ -25,6 +27,7 @@ template:
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
+    - workflowRunBodyType: raw
     - privateParams: []
     - runWhenPageLoadsDelay: ''
     - data: null
@@ -104,6 +107,7 @@ template:
             - waitType: debounce
             - waitMs: '0'
     - queryTimeout: '10000'
+    - workflowId: null
     - requireConfirmation: false
     - type: POST
     - queryFailureConditions: ''
