@@ -1,0 +1,18 @@
+id: jsonExplorer1
+type: widget
+subtype: JSONExplorerWidget
+template:
+  ordered:
+    - value: '{{review_queue.selectedRow.data[0].additional_data}}'
+    - html: false
+    - expandNodes: true
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabbedContainer1
+    subcontainer: '2e213'
+    row: 12.999999999999998
+    height: 13
+    width: 12
+createdAt: 2023-07-21T16:00:13.251Z
