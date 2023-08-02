@@ -15,8 +15,10 @@ template:
     - successMessage: ''
     - queryDisabled: ''
     - playgroundQuerySaveId: latest
+    - workflowParams: null
     - resourceNameOverride: ''
     - runWhenModelUpdates: true
+    - workflowRunId: null
     - showFailureToaster: true
     - query: |-
         select * from concept_maps.concept_map_version cmv
@@ -26,6 +28,7 @@ template:
     - playgroundQueryUuid: cdbb3eca-175f-4e0a-9c90-36c767ad88c4
     - playgroundQueryId: 56
     - error: null
+    - workflowRunBodyType: raw
     - privateParams: []
     - runWhenPageLoadsDelay: ''
     - warningCodes: []
@@ -43,6 +46,7 @@ template:
     - requestSentTimestamp: null
     - databaseHostOverride: ''
     - metadata: null
+    - workflowActionType: null
     - editorMode: sql
     - queryRunTime: null
     - actionType: ''
@@ -73,6 +77,7 @@ template:
     - enableTransformer: false
     - showUpdateSetValueDynamicallyToggle: true
     - bulkUpdatePrimaryKey: ''
+    - playgroundQueryName: concept_map_version_metadata
     - runWhenPageLoads: false
     - transformer: >-
         // type your code here
@@ -84,11 +89,13 @@ template:
     - events: []
     - tableName: ''
     - queryTimeout: '10000'
+    - workflowId: null
     - requireConfirmation: false
     - queryFailureConditions: ''
     - changesetIsObject: false
     - enableCaching: false
     - allowedGroups: []
+    - workflowBlockPluginId: null
     - databaseUsernameOverride: ''
     - shouldEnableBatchQuerying: false
     - doNotThrowOnNoOp: false
@@ -96,5 +103,4 @@ template:
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-    - playgroundQueryName: concept_map_version_metadata
 createdAt: 2022-09-14T22:31:50.761Z
