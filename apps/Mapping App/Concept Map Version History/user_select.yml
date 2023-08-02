@@ -14,7 +14,7 @@ template:
         - Option 2
         - Option 3
     - iconByIndex: ''
-    - values: '{{ item.user_uuid }}'
+    - values: '{{ item.author }}'
     - readOnly: false
     - iconAfter: ''
     - _iconByIndex:
@@ -24,9 +24,10 @@ template:
     - overlayMinWidth: null
     - allowDeselect: false
     - inputValue: ''
+    - marginType: normal
     - hidden: false
     - customValidation: ''
-    - data: '{{ get_users.data }}'
+    - data: '{{ get_authors.data }}'
     - searchMode: fuzzy
     - hideValidationMessage: false
     - fallbackTextByIndex: ''
@@ -41,11 +42,11 @@ template:
     - itemAdornmentShape: circle
     - textAfter: ''
     - showInEditor: false
-    - showClear: false
+    - showClear: true
     - tooltipText: ''
     - labelAlign: left
     - formDataKey: '{{ self.id }}'
-    - value: '{{current_user_match.data.uuid[0]}}'
+    - value: '{{current_user_match.data.first_last_name[0]}}'
     - hiddenByIndex: ''
     - labelCaption: ''
     - labelWidth: '33'
@@ -109,12 +110,11 @@ template:
         - ''
         - ''
     - required: false
-    - labels: '{{ item.first_last_name }}'
+    - labels: ''
 style:
   ordered: []
 position2:
   position2:
     row: 0.6000000000000001
     height: 1
-    width: 3
 createdAt: 2022-09-15T15:29:07.328Z

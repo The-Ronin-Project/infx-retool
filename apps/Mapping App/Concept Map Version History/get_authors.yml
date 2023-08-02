@@ -1,4 +1,4 @@
-id: mapping_uuids
+id: get_authors
 type: datasource
 subtype: SqlQueryUnified
 resourceName: dc8029bc-3980-4836-841e-776c64eeca49
@@ -20,17 +20,10 @@ template:
     - runWhenModelUpdates: true
     - workflowRunId: null
     - showFailureToaster: true
-    - query: >-
-        select distinct cr.uuid mapping_uuid 
-
-        from concept_maps.concept_relationship cr
-
-        join concept_maps.source_concept sc 
-
-        on sc.uuid = cr.source_concept_uuid
-
-        where sc.concept_map_version_uuid =
-        {{urlparams.concept_map_version_uuid}}
+    - query: |-
+        select distinct author from concept_maps.concept_relationship cm
+        join concept_maps.source_concept sc on cm.source_concept_uuid = sc.uuid
+        where sc.concept_map_version_uuid={{urlparams.concept_map_version_uuid}}
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
@@ -106,4 +99,4 @@ template:
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2022-09-14T22:05:15.722Z
+createdAt: 2023-08-02T19:31:57.774Z
