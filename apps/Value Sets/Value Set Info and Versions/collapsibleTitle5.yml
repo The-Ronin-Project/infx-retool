@@ -1,16 +1,17 @@
-id: text9
+id: collapsibleTitle5
 type: widget
 subtype: TextWidget2
 template:
   ordered:
     - heightType: auto
     - horizontalAlign: left
+    - marginType: normal
     - hidden: false
     - imageWidth: fit
     - showInEditor: false
     - verticalAlign: center
     - tooltipText: ''
-    - value: '**Secondary Use Cases**'
+    - value: '#### Container title'
     - disableMarkdown: false
     - overflowType: scroll
     - maintainSpaceWhenHidden: false
@@ -18,9 +19,8 @@ style:
   ordered: []
 position2:
   position2:
-    container: useCaseView
-    subcontainer: 9330a
-    row: 1.3999999999999992
-    height: 0.6
-    width: 6
-createdAt: 2023-07-17T21:12:33.222Z
+    container: edit_name_container
+    rowGroup: header
+    height: 0.8
+    width: 9
+createdAt: 2023-07-21T20:40:43.797Z

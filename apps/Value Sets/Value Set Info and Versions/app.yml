@@ -9,8 +9,12 @@ appTemplate:
         object:
           landscapeMode: false
           tabletMode: false
+  experimentalFeatures:
+    object:
+      sourceControlTemplateDehydration: false
+  queryStatusVisibility: true
   experimentalPerfFeatures:
     object:
       batchCommitModelEnabled: false
-  rootScreen: null
-  version: 2.121.5
+  version: 3.4.3
+  markdownLinkBehavior: never

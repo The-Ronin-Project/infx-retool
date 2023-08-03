@@ -1,18 +1,17 @@
-id: use_note
+id: collapsibleTitle2
 type: widget
 subtype: TextWidget2
 template:
   ordered:
     - heightType: auto
     - horizontalAlign: left
+    - marginType: normal
     - hidden: false
     - imageWidth: fit
     - showInEditor: false
     - verticalAlign: center
     - tooltipText: ''
-    - value: Assign a use case to value set
-    - _disclosedFields:
-        array: []
+    - value: '#### Container title'
     - disableMarkdown: false
     - overflowType: scroll
     - maintainSpaceWhenHidden: false
@@ -20,8 +19,8 @@ style:
   ordered: []
 position2:
   position2:
-    container: tabbedcontainer1
-    height: 0.6
-    width: 3
-    tabNum: 4
-createdAt: 2022-06-08T21:27:49.388Z
+    container: edit_description_container
+    rowGroup: header
+    height: 0.8
+    width: 9
+createdAt: 2023-07-21T19:18:30.674Z

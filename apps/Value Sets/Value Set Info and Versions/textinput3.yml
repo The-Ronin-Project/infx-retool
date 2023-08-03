@@ -8,6 +8,7 @@ template:
     - max: null
     - preventScroll: false
     - inputValue: null
+    - marginType: normal
     - hidden: false
     - customValidation: ''
     - showSeparators: true

@@ -6,6 +6,7 @@ template:
     - horizontalAlign: left
     - clickable: false
     - iconAfter: ''
+    - marginType: normal
     - hidden: false
     - text: '{{useCaseView.hidden ? "Cancel Edit" : "Edit Use Cases"}}'
     - showUnderline: hover
@@ -34,8 +35,8 @@ style:
 position2:
   position2:
     container: tabbedcontainer1
-    row: 18.000000000000004
+    subcontainer: '1'
+    row: 18.39999999999999
     height: 0.6
     width: 2
-    tabNum: 1
 createdAt: 2023-07-06T23:10:40.456Z

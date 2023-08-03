@@ -1,31 +1,42 @@
-id: select_use_case
+id: publisher_select
 type: widget
 subtype: SelectWidget2
 template:
   ordered:
     - imageByIndex:
         array: []
-    - _disabledByIndex: []
+    - _disabledByIndex:
+        - ''
+        - ''
     - showSelectionIndicator: true
-    - _values: []
+    - _values:
+        - Project Ronin
+        - FHIR
     - iconByIndex:
         array: []
-    - values: '{{item.uuid}}'
+    - values:
+        array: []
     - readOnly: false
     - iconAfter: ''
-    - _iconByIndex: []
+    - _iconByIndex:
+        - ''
+        - ''
     - overlayMinWidth: null
-    - allowDeselect: true
+    - allowDeselect: false
     - inputValue: ''
+    - marginType: normal
     - hidden: false
     - customValidation: ''
-    - data: '{{ use_case_dropdown.data }}'
+    - data:
+        array: []
     - searchMode: fuzzy
     - hideValidationMessage: false
     - fallbackTextByIndex:
         array: []
     - textBefore: ''
-    - _fallbackTextByIndex: []
+    - _fallbackTextByIndex:
+        - ''
+        - ''
     - selectedItem: null
     - validationMessage: ''
     - automaticItemColors: false
@@ -36,31 +47,37 @@ template:
     - tooltipText: ''
     - labelAlign: left
     - formDataKey: '{{ self.id }}'
-    - value: null
+    - value: '{{load_vs_metadata.data.publisher[0]}}'
     - hiddenByIndex:
         array: []
     - labelCaption: ''
     - labelWidth: '33'
     - deprecatedLabels:
         array: []
-    - _hiddenByIndex: []
+    - _hiddenByIndex:
+        - ''
+        - ''
     - placeholder: Select an option
-    - _captionByIndex: []
-    - _disclosedFields:
-        array: []
+    - _captionByIndex:
+        - ''
+        - ''
     - itemAdornmentSize: auto
-    - label: use case
+    - label: Publisher
     - _hasMigratedNestedItems: true
     - captionByIndex:
         array: []
     - _validate: false
-    - itemMode: dynamic
+    - itemMode: static
     - labelWidthUnit: '%'
     - allowCustomValue: false
     - invalid: false
     - selectedIndex: null
-    - _tooltipByIndex: []
-    - _colorByIndex: []
+    - _tooltipByIndex:
+        - ''
+        - ''
+    - _colorByIndex:
+        - ''
+        - ''
     - tooltipByIndex:
         array: []
     - iconBefore: ''
@@ -69,29 +86,35 @@ template:
     - selectedLabel: ''
     - events:
         ordered: []
-    - _ids: []
-    - emptyMessage: ''
-    - overlayMaxHeight: null
+    - _ids:
+        - 928cf
+        - 55a81
+    - emptyMessage: No options
+    - overlayMaxHeight: 375
     - loading: false
     - disabled: false
     - labelPosition: left
-    - _labels: []
+    - _labels:
+        - ''
+        - ''
     - labelWrap: false
     - disabledValues:
         array: []
     - disabledByIndex:
         array: []
     - maintainSpaceWhenHidden: false
-    - _imageByIndex: []
+    - _imageByIndex:
+        - ''
+        - ''
     - required: false
-    - labels: '{{item.name}}'
+    - labels:
+        array: []
 style:
   ordered: []
 position2:
   position2:
-    container: tabbedcontainer1
-    row: 1.1999999999999997
+    container: edit_publisher_container
+    subcontainer: b2eb5
     height: 1
-    width: 5
-    tabNum: 4
-createdAt: 2022-06-08T21:27:16.685Z
+    width: 10
+createdAt: 2023-07-21T20:26:31.881Z

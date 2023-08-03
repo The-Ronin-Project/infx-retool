@@ -1,0 +1,29 @@
+id: use_case_list_view
+type: widget
+subtype: ListViewWidget
+template:
+  ordered:
+    - heightType: auto
+    - layoutType: list
+    - marginType: normal
+    - showBorder: true
+    - data: ''
+    - paddingType: normal
+    - showDropShadow: true
+    - formDataKey: '{{ self.id }}'
+    - itemWidth: ''
+    - dynamicHeightsEnabled: true
+    - numColumns: '3'
+    - itemHeight: '3'
+    - overflowType: scroll
+    - instances: '3'
+    - direction: vertical
+style:
+  ordered: []
+position2:
+  position2:
+    container: useCaseView
+    subcontainer: 9330a
+    row: 0.9999999999999992
+    width: 12
+createdAt: 2023-07-24T17:07:25.904Z

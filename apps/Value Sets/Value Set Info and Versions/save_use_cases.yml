@@ -1,4 +1,4 @@
-id: assign_use_case
+id: save_use_cases
 type: widget
 subtype: ButtonWidget2
 template:
@@ -7,12 +7,11 @@ template:
     - clickable: false
     - iconAfter: ''
     - submitTargetId: null
+    - marginType: normal
     - hidden: false
-    - text: assign use case
+    - text: Save
     - showInEditor: false
     - tooltipText: ''
-    - _disclosedFields:
-        array: []
     - styleVariant: solid
     - submit: false
     - iconBefore: ''
@@ -21,7 +20,7 @@ template:
             - event: click
             - type: datasource
             - method: trigger
-            - pluginId: set_use_case
+            - pluginId: overwrite_associations_query
             - targetId: null
             - params:
                 ordered: []
@@ -35,10 +34,10 @@ style:
   ordered: []
 position2:
   position2:
-    container: tabbedcontainer1
-    row: 3.6
-    col: 2
+    container: useCaseEdit
+    subcontainer: 9330a
+    row: 1.9999999999999996
+    col: 9
     height: 1
-    width: 3
-    tabNum: 4
-createdAt: 2022-06-08T21:33:57.826Z
+    width: 2
+createdAt: 2023-07-31T21:51:23.507Z

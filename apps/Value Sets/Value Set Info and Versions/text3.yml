@@ -5,6 +5,7 @@ template:
   ordered:
     - heightType: auto
     - horizontalAlign: left
+    - marginType: normal
     - hidden: false
     - imageWidth: fit
     - showInEditor: false
@@ -12,9 +13,11 @@ template:
     - tooltipText: ''
     - value: >-
         **{{load_vs_metadata.data.uuid[0]}}** is the UUID of the value set (also
-        known as `value_set_uuid`). This is assigned with the value set is first
-        created and cannot be edited afterward. It is consistent across all
-        versions of the value set.
+        known as `value_set_uuid`). 
+
+
+        This is assigned with the value set is first created and cannot be
+        edited afterward. It is consistent across all versions of the value set.
     - disableMarkdown: false
     - overflowType: scroll
     - maintainSpaceWhenHidden: false
@@ -23,8 +26,8 @@ style:
 position2:
   position2:
     container: tabbedcontainer1
-    row: 23.4
+    subcontainer: '1'
+    row: 27.800000000000022
     height: 0.6
-    width: 6
-    tabNum: 1
+    width: 7
 createdAt: 2023-07-06T22:55:32.964Z

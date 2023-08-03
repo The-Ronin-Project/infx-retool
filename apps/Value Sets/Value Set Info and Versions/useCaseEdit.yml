@@ -12,9 +12,11 @@ template:
     - clickable: false
     - _iconByIndex:
         - ''
+    - marginType: normal
     - hidden: '{{!useCaseView.hidden}}'
     - showHeader: false
     - hoistFetching: false
+    - paddingType: normal
     - views:
         array: []
     - showInEditor: false
@@ -64,8 +66,8 @@ style:
 position2:
   position2:
     container: tabbedcontainer1
-    row: 21.8
+    subcontainer: '1'
+    row: 20.999999999999986
     height: 0.2
-    width: 6
-    tabNum: 1
+    width: 7
 createdAt: 2023-07-17T21:22:16.713Z
