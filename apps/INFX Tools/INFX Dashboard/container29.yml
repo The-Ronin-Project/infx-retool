@@ -12,9 +12,11 @@ template:
     - clickable: false
     - _iconByIndex:
         - ''
+    - marginType: normal
     - hidden: false
     - showHeader: true
     - hoistFetching: true
+    - paddingType: normal
     - views:
         array: []
     - showInEditor: false
@@ -67,5 +69,4 @@ position2:
   position2:
     row: 15.199999999999996
     height: 4.8
-    width: 3
 createdAt: 2023-01-03T18:11:59.057Z

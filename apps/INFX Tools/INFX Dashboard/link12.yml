@@ -6,6 +6,7 @@ template:
     - horizontalAlign: left
     - clickable: false
     - iconAfter: bold/interface-arrows-right-alternate
+    - marginType: normal
     - hidden: false
     - text: Open
     - showUnderline: never
@@ -27,7 +28,7 @@ template:
             - targetId: null
             - params:
                 ordered:
-                  - uuid: 58682320-e5af-11ec-80e6-67cb31163e53
+                  - uuid: e727eb80-1cdc-11ee-8b3b-57cb4117df38
             - waitType: debounce
             - waitMs: '0'
     - loading: false
