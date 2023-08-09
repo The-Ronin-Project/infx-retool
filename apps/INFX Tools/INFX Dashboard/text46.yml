@@ -5,6 +5,7 @@ template:
   ordered:
     - heightType: auto
     - horizontalAlign: left
+    - marginType: normal
     - hidden: false
     - imageWidth: fit
     - showInEditor: false
@@ -12,8 +13,8 @@ template:
     - _defaultValue: ''
     - tooltipText: ''
     - value: >-
-        <p>Browse, create, assign use cases. See associated value sets with use
-        cases. </p>
+        <p>Browse and create use cases and teams. View value sets associated
+        with use cases and teams associated with use cases. </p>
     - style:
         ordered:
           - color: rgba(36, 59, 83, 0.9)

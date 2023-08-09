@@ -5,13 +5,14 @@ template:
   ordered:
     - heightType: auto
     - horizontalAlign: left
+    - marginType: normal
     - hidden: false
     - imageWidth: fit
     - showInEditor: false
     - verticalAlign: center
     - _defaultValue: ''
     - tooltipText: ''
-    - value: '#### **Use Case Registry**'
+    - value: '#### **Use Cases and Teams**'
     - style:
         ordered:
           - color: rgb(36, 59, 83)

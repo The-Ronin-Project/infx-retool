@@ -6,6 +6,7 @@ template:
     - horizontalAlign: left
     - clickable: false
     - iconAfter: bold/interface-arrows-right-alternate
+    - marginType: normal
     - hidden: false
     - text: Open
     - showUnderline: never
