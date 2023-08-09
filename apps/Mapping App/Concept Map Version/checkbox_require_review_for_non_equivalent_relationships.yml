@@ -3,6 +3,7 @@ type: widget
 subtype: CheckboxWidget2
 template:
   ordered:
+    - marginType: normal
     - hidden: false
     - customValidation: ''
     - hideValidationMessage: false
@@ -34,5 +35,4 @@ position2:
     row: 4.4
     col: 9
     height: 0.6
-    width: 3
 createdAt: 2023-06-09T19:57:17.053Z
