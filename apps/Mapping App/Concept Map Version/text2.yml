@@ -5,6 +5,7 @@ template:
   ordered:
     - heightType: auto
     - horizontalAlign: left
+    - marginType: normal
     - hidden: false
     - imageWidth: fit
     - showInEditor: false
@@ -12,7 +13,8 @@ template:
     - tooltipText: ''
     - value: >-
         This will create a new version of the concept map, based on the
-        **version 2**, the current highest version.
+        **{{load_latest_version_query.data.version[0]}}**, the current highest
+        version.
 
 
         The new concept map will map from the source value set

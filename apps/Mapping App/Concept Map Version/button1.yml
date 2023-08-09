@@ -7,6 +7,7 @@ template:
     - clickable: false
     - iconAfter: ''
     - submitTargetId: null
+    - marginType: normal
     - hidden: false
     - text: Create new vesion of {{load_concept_map_version_metadata.data.title[0]}}
     - showInEditor: false

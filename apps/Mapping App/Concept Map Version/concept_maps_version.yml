@@ -18,9 +18,11 @@ template:
         - ''
         - ''
         - ''
+    - marginType: normal
     - hidden: null
     - showHeader: true
     - hoistFetching: true
+    - paddingType: normal
     - views:
         array: []
     - showInEditor: null

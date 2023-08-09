@@ -1,4 +1,4 @@
-id: tpm_report_builder
+id: load_latest_version_query
 type: datasource
 subtype: SqlQueryUnified
 resourceName: dc8029bc-3980-4836-841e-776c64eeca49
@@ -17,22 +17,13 @@ template:
     - playgroundQuerySaveId: latest
     - workflowParams: null
     - resourceNameOverride: ''
-    - runWhenModelUpdates: false
+    - runWhenModelUpdates: true
     - workflowRunId: null
     - showFailureToaster: true
-    - query: >-
-        select * from concept_maps.concept_relationship
-
-        join (select uuid as sc_uuid, code as sc_code, display as sc_display,
-        additional_context as abreviations from concept_maps.source_concept) as
-        sc on concept_relationship.source_concept_uuid = sc.sc_uuid
-
-        join (select uuid as rc_uuid, code as rc_code, display as rc_display
-        from concept_maps.relationship_codes) as rc on relationship_code_uuid =
-        rc.rc_uuid
-
-        where concept_relationship.concept_map_version_uuid =
-        {{versions_table.selectedRow.data.uuid}}
+    - query: |-
+        select version from concept_maps.concept_map_version
+        where concept_map_uuid = {{urlparams.uuid}}
+        order by version DESC
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
@@ -80,34 +71,14 @@ template:
     - timestamp: 0
     - importedQueryDefaults:
         ordered: []
-    - enableTransformer: true
+    - enableTransformer: false
     - showUpdateSetValueDynamicallyToggle: true
     - bulkUpdatePrimaryKey: ''
     - runWhenPageLoads: false
-    - transformer: >-
-        return formatDataAsArray(data).map(row => ({source_code:row.sc_code,
-        source_display:row.sc_display, source_abreviations:row.abreviations,
-        relationship_code:row.rc_code, target_display:
-        row.target_concept_display, comments: row.mapping_comments}))
-    - events:
-        - ordered:
-            - event: success
-            - type: util
-            - method: exportData
-            - pluginId: ''
-            - targetId: null
-            - params:
-                ordered:
-                  - fileType: xlsx
-                  - fileName: >-
-                      {{metadata_key_table.data.title}} Version
-                      {{versions_table.selectedRow.data.version}}
-                  - data: '{{tpm_report_builder.data}}'
-                  - options:
-                      ordered:
-                        - sheetName: concept_map
-            - waitType: debounce
-            - waitMs: '0'
+    - transformer: |-
+        // Query results are available as the `data` variable
+        return formatDataAsArray(data)
+    - events: []
     - tableName: ''
     - queryTimeout: '10000'
     - workflowId: null
@@ -124,4 +95,4 @@ template:
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2022-04-22T20:09:29.649Z
+createdAt: 2023-08-09T22:05:07.116Z
