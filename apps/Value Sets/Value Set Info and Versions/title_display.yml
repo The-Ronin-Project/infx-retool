@@ -5,12 +5,16 @@ template:
   ordered:
     - heightType: auto
     - horizontalAlign: left
+    - marginType: normal
     - hidden: false
     - imageWidth: fit
     - showInEditor: false
     - verticalAlign: center
     - tooltipText: ''
     - value: '### {{load_vs_metadata.data.title}}'
+    - style:
+        ordered:
+          - color: rgb(16, 42, 67)
     - disableMarkdown: false
     - overflowType: scroll
     - maintainSpaceWhenHidden: false
@@ -19,7 +23,7 @@ style:
 position2:
   position2:
     container: tabbedcontainer1
-    row: 12.6
+    subcontainer: '1'
+    row: -7.216449660063518e-16
     height: 0.6
-    tabNum: 1
 createdAt: 2023-07-06T03:23:50.466Z

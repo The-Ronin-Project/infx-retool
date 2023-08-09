@@ -6,15 +6,29 @@ template:
     - horizontalAlign: left
     - clickable: false
     - iconAfter: ''
+    - marginType: normal
     - hidden: false
-    - text: PSJ Questionnaire Assignment Use Case
+    - text: Create new use case
     - showUnderline: always
     - showInEditor: false
     - tooltipText: ''
     - allowWrap: false
-    - iconBefore: bold/interface-link-square-alternate
+    - iconBefore: bold/interface-link-circle-alternate
     - events:
-        ordered: []
+        - ordered:
+            - event: click
+            - type: util
+            - method: openApp
+            - pluginId: ''
+            - targetId: null
+            - params:
+                ordered:
+                  - uuid: e727eb80-1cdc-11ee-8b3b-57cb4117df38
+                  - options:
+                      ordered:
+                        - newTab: true
+            - waitType: debounce
+            - waitMs: '0'
     - loading: false
     - loaderPosition: auto
     - disabled: false
@@ -23,9 +37,9 @@ style:
   ordered: []
 position2:
   position2:
-    container: useCaseView
+    container: useCaseEdit
     subcontainer: 9330a
-    row: 0.6000000000000021
+    row: 4.800000000000002
+    col: 9
     height: 0.6
-    width: 6
-createdAt: 2023-07-17T21:10:46.016Z
+createdAt: 2023-08-08T14:54:31.609Z

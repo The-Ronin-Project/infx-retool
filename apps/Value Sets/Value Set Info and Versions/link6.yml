@@ -6,15 +6,26 @@ template:
     - horizontalAlign: left
     - clickable: false
     - iconAfter: ''
+    - marginType: normal
     - hidden: false
-    - text: Edit Purpose
+    - text: '{{edit_purpose_container.hidden ? "Edit Purpose" : "Cancel Edit"}}'
     - showUnderline: always
     - showInEditor: false
     - tooltipText: ''
     - allowWrap: false
     - iconBefore: line/interface-edit-write-2
     - events:
-        ordered: []
+        - ordered:
+            - event: click
+            - type: widget
+            - method: setHidden
+            - pluginId: edit_purpose_container
+            - targetId: null
+            - params:
+                ordered:
+                  - hidden: '{{!edit_purpose_container.hidden}}'
+            - waitType: debounce
+            - waitMs: '0'
     - loading: false
     - loaderPosition: auto
     - disabled: false
@@ -24,8 +35,8 @@ style:
 position2:
   position2:
     container: tabbedcontainer1
-    row: 16.599999999999998
+    subcontainer: '1'
+    row: 14.19999999999999
     height: 0.6
     width: 2
-    tabNum: 1
 createdAt: 2023-07-06T23:07:32.226Z

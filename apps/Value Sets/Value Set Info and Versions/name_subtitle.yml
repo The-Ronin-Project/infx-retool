@@ -5,14 +5,17 @@ template:
   ordered:
     - heightType: auto
     - horizontalAlign: left
+    - marginType: normal
     - hidden: false
     - imageWidth: fit
     - showInEditor: false
     - verticalAlign: center
     - tooltipText: ''
     - value: >-
-        **{{load_vs_metadata.data.name}}** is the name of the value set. Name is
-        intended to be machine-readable, while title is intended to be
+        **{{load_vs_metadata.data.name}}** is the name of the value set. 
+
+
+        Name is intended to be machine-readable, while title is intended to be
         human-readable.
     - disableMarkdown: false
     - overflowType: scroll
@@ -22,8 +25,8 @@ style:
 position2:
   position2:
     container: tabbedcontainer1
-    row: 24.000000000000004
+    subcontainer: '1'
+    row: 3.000000000000033
     height: 0.6
     width: 6
-    tabNum: 1
 createdAt: 2023-07-06T22:49:20.830Z

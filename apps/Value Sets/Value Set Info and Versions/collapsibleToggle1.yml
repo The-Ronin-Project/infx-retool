@@ -5,6 +5,7 @@ template:
   ordered:
     - horizontalAlign: right
     - iconPosition: replace
+    - marginType: normal
     - hidden: false
     - text: '{{ self.value ? ''Hide'' : ''Show'' }}'
     - showInEditor: false

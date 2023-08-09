@@ -6,6 +6,7 @@ template:
     - horizontalAlign: left
     - clickable: false
     - iconAfter: ''
+    - marginType: normal
     - hidden: false
     - text: '{{edit_title_container.hidden ? "Edit Title" : "Cancel Edit"}}'
     - showUnderline: hover
@@ -34,8 +35,8 @@ style:
 position2:
   position2:
     container: tabbedcontainer1
-    row: 13.200000000000003
+    subcontainer: '1'
+    row: 0.6000000000000035
     height: 0.6
     width: 1
-    tabNum: 1
 createdAt: 2023-07-06T03:26:23.426Z

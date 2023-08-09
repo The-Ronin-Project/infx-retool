@@ -6,15 +6,25 @@ template:
     - horizontalAlign: left
     - clickable: false
     - iconAfter: ''
+    - marginType: normal
     - hidden: false
-    - text: Cancer Type Use Case
+    - text: Refresh
     - showUnderline: always
     - showInEditor: false
     - tooltipText: ''
     - allowWrap: false
-    - iconBefore: bold/interface-link-square-alternate
+    - iconBefore: bold/interface-arrows-round-right
     - events:
-        ordered: []
+        - ordered:
+            - event: click
+            - type: datasource
+            - method: trigger
+            - pluginId: load_all_use_cases_query
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
     - loading: false
     - loaderPosition: auto
     - disabled: false
@@ -23,9 +33,9 @@ style:
   ordered: []
 position2:
   position2:
-    container: useCaseView
+    container: useCaseEdit
     subcontainer: 9330a
-    row: 2.000000000000001
+    col: 9
     height: 0.6
-    width: 4
-createdAt: 2023-07-17T21:13:14.041Z
+    width: 2
+createdAt: 2023-08-08T16:19:04.714Z

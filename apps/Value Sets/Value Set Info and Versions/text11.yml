@@ -1,0 +1,26 @@
+id: text11
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - marginType: normal
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - tooltipText: ''
+    - value: '{{processUseCases.data[i]}}'
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: use_case_list_view
+    row: 0.8
+    height: 0.6
+    width: 10
+createdAt: 2023-07-24T17:22:28.330Z

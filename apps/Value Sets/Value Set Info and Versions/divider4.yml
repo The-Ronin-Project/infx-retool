@@ -1,0 +1,23 @@
+id: divider4
+type: widget
+subtype: DividerWidget
+template:
+  ordered:
+    - hidden: false
+    - maintainSpaceWhenHidden: false
+    - showInEditor: false
+    - marginType: normal
+    - tooltipText: ''
+    - horizontalAlign: center
+    - text: ''
+    - textSize: default
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabbedcontainer1
+    subcontainer: '0'
+    row: 28.4
+    height: 0.2
+    width: 7
+createdAt: 2023-07-21T20:37:25.442Z
