@@ -7,6 +7,7 @@ template:
     - clickable: false
     - iconAfter: ''
     - submitTargetId: add_form2
+    - marginType: normal
     - hidden: false
     - text: Submit
     - showInEditor: false

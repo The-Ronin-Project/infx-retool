@@ -10,16 +10,17 @@ template:
     - _values: []
     - iconByIndex:
         array: []
-    - values: '{{ item.resource_type }}'
+    - values: '{{ item }}'
     - readOnly: false
     - iconAfter: ''
     - _iconByIndex: []
     - overlayMinWidth: null
     - allowDeselect: false
     - inputValue: ''
+    - marginType: normal
     - hidden: false
     - customValidation: ''
-    - data: '{{ get_resource_type.data }}'
+    - data: '{{ get_resource_types.data }}'
     - searchMode: fuzzy
     - hideValidationMessage: false
     - fallbackTextByIndex:

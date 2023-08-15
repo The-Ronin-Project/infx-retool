@@ -20,6 +20,7 @@ template:
     - runWhenModelUpdates: true
     - paginationPaginationField: ''
     - headers: ''
+    - workflowRunId: null
     - showFailureToaster: true
     - paginationEnabled: false
     - query: data_normalization/registry/actions/get_time
@@ -38,6 +39,7 @@ template:
     - requestSentTimestamp: null
     - cookies: ''
     - metadata: null
+    - workflowActionType: null
     - queryRunTime: null
     - changesetObject: ''
     - errorTransformer: >-
@@ -77,6 +79,7 @@ template:
     - changesetIsObject: false
     - enableCaching: false
     - allowedGroups: []
+    - workflowBlockPluginId: null
     - bodyType: none
     - offlineQueryType: None
     - queryThrottleTime: '750'

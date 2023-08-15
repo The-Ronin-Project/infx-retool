@@ -22,6 +22,7 @@ template:
     - headers: >-
         [{"key":"Authorization","value":"Bearer
         {{get_simplifier_token.data.token}}"},{"key":"Accept","value":"application/fhir+json"},{"key":"Content-Type","value":"application/fhir+json"}]
+    - workflowRunId: null
     - showFailureToaster: true
     - paginationEnabled: false
     - query: StructureDefinition?_count=500
@@ -40,6 +41,7 @@ template:
     - requestSentTimestamp: null
     - cookies: ''
     - metadata: null
+    - workflowActionType: null
     - queryRunTime: null
     - changesetObject: ''
     - errorTransformer: >-
@@ -101,6 +103,7 @@ template:
     - changesetIsObject: false
     - enableCaching: false
     - allowedGroups: []
+    - workflowBlockPluginId: null
     - bodyType: none
     - offlineQueryType: None
     - queryThrottleTime: '750'
