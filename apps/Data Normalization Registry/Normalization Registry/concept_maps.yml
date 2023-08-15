@@ -18,13 +18,14 @@ template:
     - workflowParams: null
     - resourceNameOverride: ''
     - runWhenModelUpdates: true
+    - workflowRunId: null
     - showFailureToaster: true
     - query: |-
         SELECT DISTINCT title, concept_map_uuid FROM concept_maps.concept_map cm
         JOIN concept_maps.concept_map_version cmv
         ON cm.uuid = cmv.concept_map_uuid
         where cmv.status='active'
-        -- order by VERSION ASC
+        order by title ASC
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
@@ -44,6 +45,7 @@ template:
     - requestSentTimestamp: null
     - databaseHostOverride: ''
     - metadata: null
+    - workflowActionType: null
     - editorMode: sql
     - queryRunTime: null
     - actionType: ''
@@ -91,6 +93,7 @@ template:
     - changesetIsObject: false
     - enableCaching: false
     - allowedGroups: []
+    - workflowBlockPluginId: null
     - databaseUsernameOverride: ''
     - shouldEnableBatchQuerying: false
     - doNotThrowOnNoOp: false

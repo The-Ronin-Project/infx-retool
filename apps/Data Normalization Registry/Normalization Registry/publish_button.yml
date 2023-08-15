@@ -7,6 +7,7 @@ template:
     - clickable: false
     - iconAfter: ''
     - submitTargetId: null
+    - marginType: normal
     - hidden: false
     - text: Re-Publish Registry Now
     - showInEditor: false
@@ -39,5 +40,4 @@ position2:
     subcontainer: e2f3b
     row: 0.6000000000000001
     height: 1
-    width: 3
 createdAt: 2022-10-05T20:22:43.145Z

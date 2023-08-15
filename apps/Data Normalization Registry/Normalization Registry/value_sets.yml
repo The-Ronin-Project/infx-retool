@@ -18,11 +18,13 @@ template:
     - workflowParams: null
     - resourceNameOverride: ''
     - runWhenModelUpdates: true
+    - workflowRunId: null
     - showFailureToaster: true
     - query: |-
         select vs.title, vs.uuid from value_sets.value_set vs
         join value_sets.value_set_version vsv on vsv.value_set_uuid=vs.uuid
         where vsv.status='active'
+        order by vs.title ASC
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
@@ -42,6 +44,7 @@ template:
     - requestSentTimestamp: null
     - databaseHostOverride: ''
     - metadata: null
+    - workflowActionType: null
     - editorMode: sql
     - queryRunTime: null
     - actionType: ''
@@ -89,6 +92,7 @@ template:
     - changesetIsObject: false
     - enableCaching: false
     - allowedGroups: []
+    - workflowBlockPluginId: null
     - databaseUsernameOverride: ''
     - shouldEnableBatchQuerying: false
     - doNotThrowOnNoOp: false
