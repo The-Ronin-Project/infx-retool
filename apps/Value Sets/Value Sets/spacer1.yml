@@ -1,22 +1,18 @@
-id: divider2
+id: spacer1
 type: widget
-subtype: DividerWidget
+subtype: SpacerWidget
 template:
   ordered:
     - hidden: false
     - maintainSpaceWhenHidden: false
     - showInEditor: false
     - marginType: normal
-    - tooltipText: ''
-    - horizontalAlign: center
-    - text: ''
-    - textSize: default
 style:
   ordered: []
 position2:
   position2:
     container: form1
-    row: 13.8
-    height: 0.2
-    width: 2
-createdAt: 2023-03-22T18:01:08.981Z
+    row: 12.4
+    height: 0.8
+    width: 7
+createdAt: 2023-08-22T02:34:03.931Z

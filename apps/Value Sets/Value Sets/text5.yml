@@ -1,11 +1,11 @@
 id: text5
 type: widget
 subtype: TextWidget2
-resourceName: null
 template:
   ordered:
     - heightType: auto
     - horizontalAlign: left
+    - marginType: normal
     - hidden: false
     - imageWidth: fit
     - showInEditor: false

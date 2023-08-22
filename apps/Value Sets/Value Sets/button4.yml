@@ -7,6 +7,7 @@ template:
     - clickable: false
     - iconAfter: ''
     - submitTargetId: null
+    - marginType: normal
     - hidden: false
     - text: Create New Value Set
     - showInEditor: false
@@ -34,7 +35,7 @@ style:
 position2:
   position2:
     container: form1
-    row: 15.2
+    row: 21.599999999999994
     col: 7
     height: 1
     width: 5

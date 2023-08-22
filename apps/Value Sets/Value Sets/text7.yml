@@ -5,6 +5,7 @@ template:
   ordered:
     - heightType: auto
     - horizontalAlign: left
+    - marginType: normal
     - hidden: false
     - imageWidth: fit
     - showInEditor: false
@@ -19,7 +20,6 @@ style:
 position2:
   position2:
     container: form1
-    row: 11.4
+    row: 13.2
     height: 0.6
-    width: 3
 createdAt: 2022-07-27T18:30:58.139Z

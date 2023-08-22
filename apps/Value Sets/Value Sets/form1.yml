@@ -7,11 +7,13 @@ template:
     - heightType: fixed
     - resetAfterSubmit: false
     - submitting: false
+    - marginType: normal
     - hidden: null
     - data:
         object: {}
     - showHeader: false
     - hoistFetching: true
+    - paddingType: normal
     - initialData: null
     - showInEditor: null
     - tooltipText: ''
@@ -24,6 +26,9 @@ template:
     - loading: ''
     - overflowType: hidden
     - disabled: ''
+    - styleContext:
+        ordered:
+          - textDark: rgb(34, 34, 34)
     - requireValidation: true
     - maintainSpaceWhenHidden: null
     - showBody: true
@@ -33,6 +38,6 @@ position2:
   position2:
     container: tabbedcontainer1
     subcontainer: '1'
-    height: 17.399999999999995
+    height: 23.599999999999994
     width: 12
 createdAt: 2021-10-11T18:28:16.438Z

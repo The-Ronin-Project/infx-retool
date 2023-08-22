@@ -21,6 +21,7 @@ template:
     - runWhenModelUpdates: false
     - paginationPaginationField: ''
     - headers: ''
+    - workflowRunId: null
     - showFailureToaster: true
     - paginationEnabled: false
     - query: ValueSets/
@@ -39,6 +40,7 @@ template:
     - requestSentTimestamp: null
     - cookies: ''
     - metadata: null
+    - workflowActionType: null
     - queryRunTime: null
     - changesetObject: ''
     - errorTransformer: >-
@@ -75,22 +77,32 @@ template:
     - events:
         - ordered:
             - event: success
+            - type: datasource
+            - method: trigger
+            - pluginId: create_use_case_associations
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: success
             - type: script
             - method: run
             - pluginId: ''
             - targetId: null
             - params:
                 ordered:
-                  - src: |
+                  - src: |-
                       name_input.clearValue
                       title_input.clearValue
                       purpose_input.clearValue
                       value_set_description.clearValue
                       experimental_checkbox.clearValue
                       purpose_input.clearValue
-                      select_use.clearValue
                       version_description_input.clearValuevalue
-                      version_date_range.clearValue
+                      primary_select.clearValue
+                      secondary_multiselect.clearValuealue
             - waitType: debounce
             - waitMs: '0'
     - queryTimeout: '10000'
@@ -101,6 +113,7 @@ template:
     - changesetIsObject: false
     - enableCaching: false
     - allowedGroups: []
+    - workflowBlockPluginId: null
     - bodyType: json
     - offlineQueryType: None
     - queryThrottleTime: '750'
