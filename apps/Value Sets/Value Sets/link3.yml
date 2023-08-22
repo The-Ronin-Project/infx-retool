@@ -1,4 +1,4 @@
-id: link1
+id: link3
 type: widget
 subtype: LinkWidget
 template:
@@ -8,22 +8,21 @@ template:
     - iconAfter: ''
     - marginType: normal
     - hidden: false
-    - text: Dashboard
+    - text: Refresh
     - showUnderline: always
     - showInEditor: false
     - tooltipText: ''
     - allowWrap: false
-    - iconBefore: line/interface-arrows-turn-backward
+    - iconBefore: bold/interface-arrows-round-right
     - events:
         - ordered:
             - event: click
-            - type: util
-            - method: openApp
-            - pluginId: ''
+            - type: datasource
+            - method: trigger
+            - pluginId: load_all_use_cases_query
             - targetId: null
             - params:
-                ordered:
-                  - uuid: 3b52c88c-6488-11ed-b9e7-8f03ff165179
+                ordered: []
             - waitType: debounce
             - waitMs: '0'
     - loading: false
@@ -34,9 +33,9 @@ style:
   ordered: []
 position2:
   position2:
-    container: tabbedcontainer1
+    container: container1
     rowGroup: header
-    col: 11
+    col: 10
     height: 0.6
-    width: 1
-createdAt: 2023-03-22T17:49:42.211Z
+    width: 2
+createdAt: 2023-08-22T02:49:41.848Z

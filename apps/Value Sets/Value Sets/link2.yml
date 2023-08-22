@@ -1,4 +1,4 @@
-id: link1
+id: link2
 type: widget
 subtype: LinkWidget
 template:
@@ -8,12 +8,12 @@ template:
     - iconAfter: ''
     - marginType: normal
     - hidden: false
-    - text: Dashboard
+    - text: Create new use case
     - showUnderline: always
     - showInEditor: false
     - tooltipText: ''
     - allowWrap: false
-    - iconBefore: line/interface-arrows-turn-backward
+    - iconBefore: bold/interface-link-circle-alternate
     - events:
         - ordered:
             - event: click
@@ -23,7 +23,10 @@ template:
             - targetId: null
             - params:
                 ordered:
-                  - uuid: 3b52c88c-6488-11ed-b9e7-8f03ff165179
+                  - uuid: e727eb80-1cdc-11ee-8b3b-57cb4117df38
+                  - options:
+                      ordered:
+                        - newTab: true
             - waitType: debounce
             - waitMs: '0'
     - loading: false
@@ -34,9 +37,9 @@ style:
   ordered: []
 position2:
   position2:
-    container: tabbedcontainer1
-    rowGroup: header
-    col: 11
+    container: container1
+    subcontainer: '40616'
+    row: 2.599999999999999
+    col: 9
     height: 0.6
-    width: 1
-createdAt: 2023-03-22T17:49:42.211Z
+createdAt: 2023-08-22T02:47:42.975Z

@@ -8,6 +8,7 @@ template:
     - iconAfter: ''
     - showCharacterCount: true
     - autoComplete: false
+    - marginType: normal
     - maxLength: '254'
     - hidden: false
     - customValidation: ''

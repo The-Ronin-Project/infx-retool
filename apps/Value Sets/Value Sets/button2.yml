@@ -1,13 +1,13 @@
 id: button2
 type: widget
 subtype: ButtonWidget2
-resourceName: null
 template:
   ordered:
     - horizontalAlign: stretch
     - clickable: false
     - iconAfter: ''
     - submitTargetId: null
+    - marginType: normal
     - hidden: false
     - text: Save
     - showInEditor: false

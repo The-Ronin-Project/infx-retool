@@ -1,83 +1,60 @@
-id: tabbedcontainer1
+id: container1
 type: widget
 subtype: ContainerWidget2
 template:
   ordered:
     - _disabledByIndex:
         - ''
-        - ''
-        - ''
-    - heightType: fixed
-    - currentViewKey: 0
+    - heightType: auto
+    - currentViewKey: null
     - iconByIndex:
         array: []
     - clickable: false
     - _iconByIndex:
         - ''
-        - ''
-        - ''
     - marginType: normal
-    - hidden: null
+    - hidden: false
     - showHeader: true
-    - hoistFetching: true
+    - hoistFetching: false
     - paddingType: normal
     - views:
         array: []
-    - showInEditor: null
+    - showInEditor: false
     - tooltipText: ''
-    - style:
-        ordered:
-          - background: rgb(240, 244, 248)
-          - headerBackground: rgb(188, 204, 220)
     - hiddenByIndex:
         array: []
     - _hiddenByIndex:
         - ''
-        - ''
-        - ''
-    - currentViewIndex: 0
+    - currentViewIndex: null
     - _hasMigratedNestedItems: true
-    - transition: slide
+    - transition: none
     - itemMode: static
     - _tooltipByIndex:
-        - ''
-        - ''
         - ''
     - tooltipByIndex:
         array: []
     - showFooter: false
     - _viewKeys:
-        - 0
-        - 1
-        - 2
+        - View 1
     - events:
         ordered: []
     - _ids:
-        - '0'
-        - '1'
-        - '2'
+        - '40616'
     - viewKeys:
         array: []
     - iconPositionByIndex:
         array: []
     - _iconPositionByIndex:
         - ''
-        - ''
-        - ''
     - hovered: false
     - loading: false
-    - overflowType: hidden
-    - disabled: ''
+    - overflowType: scroll
+    - disabled: false
     - _labels:
-        - Browse Value Sets
-        - Create New Value Set
-        - Duplicate Existing Value Set
-    - styleContext:
-        ordered:
-          - textDark: rgb(51, 78, 104)
+        - ''
     - disabledByIndex:
         array: []
-    - maintainSpaceWhenHidden: null
+    - maintainSpaceWhenHidden: false
     - showBody: true
     - labels:
         array: []
@@ -85,7 +62,9 @@ style:
   ordered: []
 position2:
   position2:
-    row: -1.1102230246251565e-15
-    height: 29.199999999999996
-    width: 12
-createdAt: 2021-10-01T16:33:49.853Z
+    container: form1
+    row: 12.200000000000001
+    col: 3
+    height: 0.2
+    width: 7
+createdAt: 2023-08-22T02:36:50.451Z
