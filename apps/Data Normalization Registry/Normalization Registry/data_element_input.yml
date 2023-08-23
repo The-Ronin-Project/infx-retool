@@ -22,12 +22,12 @@ template:
         - '{{ resource_type_select.value }}.class'
         - '{{ resource_type_select.value }}.code'
         - '{{ resource_type_select.value }}.component.code'
-        - '{{ resource_type_select.value }}.component.value'
+        - '{{ resource_type_select.value }}.component.valueCodeableConcept'
         - '{{ resource_type_select.value }}.status'
         - '{{ resource_type_select.value }}.telecom.system'
         - '{{ resource_type_select.value }}.telecom.use'
         - '{{ resource_type_select.value }}.type'
-        - '{{ resource_type_select.value }}.value'
+        - '{{ resource_type_select.value }}.valueCodeableConcept'
     - iconByIndex:
         array: []
     - values:
@@ -171,12 +171,12 @@ template:
         - class
         - code
         - component.code
-        - component.value
+        - component.valueCodeableConcept
         - status
         - telecom.system
         - telecom.use
         - type
-        - value
+        - valueCodeableConcept
     - labelWrap: false
     - disabledValues:
         array: []

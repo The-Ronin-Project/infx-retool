@@ -24,12 +24,14 @@ template:
         - '{{ resource_type_select_vs_insert.value }}.class'
         - '{{ resource_type_select_vs_insert.value }}.code'
         - '{{ resource_type_select_vs_insert.value }}.component.code'
-        - '{{ resource_type_select_vs_insert.value }}.component.value'
+        - >-
+          {{ resource_type_select_vs_insert.value
+          }}.component.valueCodeableConcept
         - '{{ resource_type_select_vs_insert.value }}.status'
         - '{{ resource_type_select_vs_insert.value }}.telecom.system'
         - '{{ resource_type_select_vs_insert.value }}.telecom.use'
         - '{{ resource_type_select_vs_insert.value }}.type'
-        - '{{ resource_type_select_vs_insert.value }}.value'
+        - '{{ resource_type_select_vs_insert.value }}.valueCodeableConcept'
         - '{{ resource_type_select_vs_insert.value }}.component:Concentration'
         - '{{ resource_type_select_vs_insert.value }}.component:FlowRate.code'
     - iconByIndex:
@@ -189,12 +191,12 @@ template:
         - class
         - code
         - component.code
-        - component.value
+        - component.valueCodeableConcept
         - status
         - telecom.system
         - telecom.use
         - type
-        - value
+        - valueCodeableConcept
         - component:Concentration
         - component:FlowRate.code
     - labelWrap: false
