@@ -1,0 +1,75 @@
+id: use_case_container
+type: widget
+subtype: ContainerWidget2
+template:
+  ordered:
+    - _disabledByIndex:
+        - ''
+    - heightType: auto
+    - currentViewKey: null
+    - iconByIndex:
+        array: []
+    - clickable: false
+    - _iconByIndex:
+        - ''
+    - marginType: normal
+    - hidden: false
+    - showHeader: true
+    - hoistFetching: false
+    - paddingType: normal
+    - views:
+        array: []
+    - showInEditor: false
+    - tooltipText: ''
+    - style:
+        ordered:
+          - background: rgba(240, 244, 248, 0.6)
+          - headerBackground: rgb(217, 226, 236)
+    - hiddenByIndex:
+        array: []
+    - _hiddenByIndex:
+        - ''
+    - currentViewIndex: null
+    - _hasMigratedNestedItems: true
+    - transition: none
+    - itemMode: static
+    - _tooltipByIndex:
+        - ''
+    - tooltipByIndex:
+        array: []
+    - showFooter: false
+    - _viewKeys:
+        - View 1
+    - events:
+        ordered: []
+    - _ids:
+        - '80620'
+    - viewKeys:
+        array: []
+    - iconPositionByIndex:
+        array: []
+    - _iconPositionByIndex:
+        - ''
+    - hovered: false
+    - loading: false
+    - overflowType: scroll
+    - disabled: false
+    - _labels:
+        - ''
+    - styleContext:
+        ordered:
+          - textDark: rgb(16, 42, 67)
+    - disabledByIndex:
+        array: []
+    - maintainSpaceWhenHidden: false
+    - showBody: true
+    - labels:
+        array: []
+style:
+  ordered: []
+position2:
+  position2:
+    row: 0.40000000000000013
+    height: 0.2
+    width: 12
+createdAt: 2023-07-10T19:00:10.674Z

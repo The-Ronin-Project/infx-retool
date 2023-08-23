@@ -1,0 +1,27 @@
+id: text1
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - marginType: normal
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - tooltipText: ''
+    - value: '**Teams associated with the selected use case:**'
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: use_case_container
+    subcontainer: '80620'
+    row: 0.2
+    col: 9
+    height: 0.6
+createdAt: 2023-07-11T15:36:23.174Z
