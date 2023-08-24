@@ -1,0 +1,33 @@
+id: listView1
+type: widget
+subtype: ListViewWidget
+template:
+  ordered:
+    - heightType: auto
+    - layoutType: list
+    - marginType: normal
+    - showBorder: true
+    - data: ''
+    - paddingType: normal
+    - showDropShadow: true
+    - formDataKey: '{{ self.id }}'
+    - style:
+        ordered:
+          - primary-surface: rgba(240, 244, 248, 0.9)
+    - itemWidth: ''
+    - dynamicHeightsEnabled: true
+    - numColumns: '3'
+    - itemHeight: '3'
+    - overflowType: scroll
+    - instances: '3'
+    - direction: vertical
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabbedcontainer1
+    subcontainer: '0'
+    row: 12
+    col: 8
+    width: 4
+createdAt: 2023-08-23T21:36:23.382Z

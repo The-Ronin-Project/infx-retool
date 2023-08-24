@@ -1,4 +1,4 @@
-id: keyvaluemap1
+id: keyValue2
 type: widget
 subtype: KeyValueMapWidget
 template:
@@ -6,18 +6,11 @@ template:
     - rowHeaderNames:
         ordered: []
     - rowFormats:
-        ordered:
-          - hyperlink: link
-          - use_case_name: default
-          - use_case: link
-          - use_case_link: link
-          - purpose: default
+        ordered: []
     - valueTitle: Value
     - data: '{{vs_metadata_table.selectedRow.data}}'
     - prevRowMappers:
-        ordered:
-          - use_case_name: ''
-          - use_case: ''
+        ordered: []
     - rowMappersRenderAsHTML:
         ordered: []
     - rowVisibility:
@@ -28,12 +21,8 @@ template:
           - immutable: true
           - use_case_name: true
           - c: true
-          - hyperlink: true
           - experimental: true
-          - use_case: true
-          - identifier: true
           - name: true
-          - url: false
           - use_case_link: true
           - use_case_uuid: false
           - title: true
@@ -42,22 +31,10 @@ template:
           - publisher: true
           - description: true
           - purpose: true
-    - style:
-        ordered:
-          - primary-surface: '#ffffff'
-          - primary-foreground: rgb(130, 154, 177)
-          - primary-background: rgba(217, 226, 236, 0.7)
     - prevRowFormats:
-        ordered:
-          - hyperlink: link
-          - use_case_name: default
-          - use_case: link
-          - use_case_link: link
-          - purpose: default
+        ordered: []
     - rowMappers:
-        ordered:
-          - use_case_name: ''
-          - use_case: ''
+        ordered: []
     - rows:
         - a
         - b
@@ -66,19 +43,15 @@ template:
         - name
         - description
         - purpose
-        - identifier
-        - url
         - publisher
         - contact
+        - uuid
         - immutable
         - experimental
         - type
-        - uuid
-        - use_case_uuid
-        - use_case_name
-        - hyperlink
-        - use_case
         - use_case_link
+        - use_case_name
+        - use_case_uuid
     - keyTitle: Key
 style:
   ordered: []
@@ -88,6 +61,6 @@ position2:
     subcontainer: '0'
     row: 1.6
     col: 8
-    height: 10.800000000000002
+    height: 9.2
     width: 4
-createdAt: 2021-10-29T22:08:24.166Z
+createdAt: 2023-08-24T18:45:43.597Z

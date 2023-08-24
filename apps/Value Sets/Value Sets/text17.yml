@@ -1,4 +1,4 @@
-id: text4
+id: text17
 type: widget
 subtype: TextWidget2
 template:
@@ -6,12 +6,12 @@ template:
     - heightType: auto
     - horizontalAlign: left
     - marginType: normal
-    - hidden: false
+    - hidden: '{{i=" "}}'
     - imageWidth: fit
     - showInEditor: false
     - verticalAlign: center
     - tooltipText: ''
-    - value: '**Value Set Title Synonyms**'
+    - value: '{{processUseCases.data[i]}}'
     - disableMarkdown: false
     - overflowType: scroll
     - maintainSpaceWhenHidden: false
@@ -19,10 +19,8 @@ style:
   ordered: []
 position2:
   position2:
-    container: tabbedcontainer1
-    subcontainer: '0'
-    row: 16.999999999999996
-    col: 8
+    container: listView1
+    row: 0.8
     height: 0.6
-    width: 4
-createdAt: 2022-02-17T18:57:06.101Z
+    width: 11
+createdAt: 2023-08-23T21:38:45.409Z
