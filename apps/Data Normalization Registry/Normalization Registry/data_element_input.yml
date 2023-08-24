@@ -16,8 +16,6 @@ template:
         - false
         - false
         - false
-        - false
-        - false
     - showSelectionIndicator: true
     - _values:
         - '{{ resource_type_select.value }}.category'
@@ -25,8 +23,6 @@ template:
         - '{{ resource_type_select.value }}.code'
         - '{{ resource_type_select.value }}.component.code'
         - '{{ resource_type_select.value }}.component.valueCodeableConcept'
-        - '{{ resource_type_select.value }}.component:diastolic.code'
-        - '{{ resource_type_select.value }}.component:systolic.code'
         - '{{ resource_type_select.value }}.status'
         - '{{ resource_type_select.value }}.telecom.system'
         - '{{ resource_type_select.value }}.telecom.use'
@@ -39,8 +35,6 @@ template:
     - readOnly: false
     - iconAfter: ''
     - _iconByIndex:
-        - ''
-        - ''
         - ''
         - ''
         - ''
@@ -65,8 +59,6 @@ template:
         array: []
     - textBefore: ''
     - _fallbackTextByIndex:
-        - ''
-        - ''
         - ''
         - ''
         - ''
@@ -105,12 +97,8 @@ template:
         - false
         - false
         - false
-        - false
-        - false
     - placeholder: Select post prefix option
     - _captionByIndex:
-        - ''
-        - ''
         - ''
         - ''
         - ''
@@ -143,11 +131,7 @@ template:
         - ''
         - ''
         - ''
-        - ''
-        - ''
     - _colorByIndex:
-        - ''
-        - ''
         - ''
         - ''
         - ''
@@ -172,8 +156,6 @@ template:
         - b0754
         - bda7d
         - 1ea0b
-        - '1e947'
-        - dd64d
         - a10e6
         - 9e28d
         - f98f0
@@ -190,8 +172,6 @@ template:
         - code
         - component.code
         - component.valueCodeableConcept
-        - component:diastolic.code
-        - component:systolic.code
         - status
         - telecom.system
         - telecom.use
@@ -204,8 +184,6 @@ template:
         array: []
     - maintainSpaceWhenHidden: false
     - _imageByIndex:
-        - ''
-        - ''
         - ''
         - ''
         - ''

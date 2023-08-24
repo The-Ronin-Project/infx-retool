@@ -18,6 +18,8 @@ template:
         - false
         - false
         - false
+        - false
+        - false
     - showSelectionIndicator: true
     - _values:
         - '{{ resource_type_select_vs_insert.value }}.category'
@@ -34,6 +36,8 @@ template:
         - '{{ resource_type_select_vs_insert.value }}.valueCodeableConcept'
         - '{{ resource_type_select_vs_insert.value }}.component:Concentration'
         - '{{ resource_type_select_vs_insert.value }}.component:FlowRate.code'
+        - Option 13{{ resource_type_select.value }}.component:diastolic.code
+        - '{{ resource_type_select.value }}.component:systolic.code'
     - iconByIndex:
         array: []
     - values:
@@ -41,6 +45,8 @@ template:
     - readOnly: false
     - iconAfter: ''
     - _iconByIndex:
+        - ''
+        - ''
         - ''
         - ''
         - ''
@@ -67,6 +73,8 @@ template:
         array: []
     - textBefore: ''
     - _fallbackTextByIndex:
+        - ''
+        - ''
         - ''
         - ''
         - ''
@@ -109,8 +117,12 @@ template:
         - false
         - false
         - false
+        - false
+        - false
     - placeholder: Select an option
     - _captionByIndex:
+        - ''
+        - ''
         - ''
         - ''
         - ''
@@ -147,7 +159,11 @@ template:
         - ''
         - ''
         - ''
+        - ''
+        - ''
     - _colorByIndex:
+        - ''
+        - ''
         - ''
         - ''
         - ''
@@ -181,6 +197,8 @@ template:
         - 671f4
         - '68256'
         - e99ee
+        - bc4de
+        - 60be8
     - emptyMessage: No options
     - overlayMaxHeight: 375
     - loading: false
@@ -199,6 +217,8 @@ template:
         - valueCodeableConcept
         - component:Concentration
         - component:FlowRate.code
+        - component:diastolic.code
+        - component:systolic.code
     - labelWrap: false
     - disabledValues:
         array: []
@@ -206,6 +226,8 @@ template:
         array: []
     - maintainSpaceWhenHidden: false
     - _imageByIndex:
+        - ''
+        - ''
         - ''
         - ''
         - ''
