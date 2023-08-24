@@ -36,7 +36,7 @@ template:
         - '{{ resource_type_select_vs_insert.value }}.valueCodeableConcept'
         - '{{ resource_type_select_vs_insert.value }}.component:Concentration'
         - '{{ resource_type_select_vs_insert.value }}.component:FlowRate.code'
-        - Option 13{{ resource_type_select.value }}.component:diastolic.code
+        - '{{ resource_type_select.value }}.component:diastolic.code'
         - '{{ resource_type_select.value }}.component:systolic.code'
     - iconByIndex:
         array: []
