@@ -36,8 +36,8 @@ template:
         - '{{ resource_type_select_vs_insert.value }}.valueCodeableConcept'
         - '{{ resource_type_select_vs_insert.value }}.component:Concentration'
         - '{{ resource_type_select_vs_insert.value }}.component:FlowRate.code'
-        - '{{ resource_type_select.value }}.component:diastolic.code'
-        - '{{ resource_type_select.value }}.component:systolic.code'
+        - '{{  resource_type_select_vs_insert.value }}.component:diastolic.code'
+        - '{{  resource_type_select_vs_insert.value }}.component:systolic.code'
     - iconByIndex:
         array: []
     - values:
@@ -100,7 +100,7 @@ template:
     - value: null
     - hiddenByIndex:
         array: []
-    - labelCaption: ' the prefix auto populates as {{ resource_type_select.value }}.'
+    - labelCaption: ' the prefix auto populates as {{  resource_type_select_vs_insert.value }}.'
     - labelWidth: '33'
     - deprecatedLabels:
         array: []
