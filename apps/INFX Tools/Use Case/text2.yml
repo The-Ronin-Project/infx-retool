@@ -11,7 +11,7 @@ template:
     - showInEditor: false
     - verticalAlign: center
     - tooltipText: ''
-    - value: '**Value Sets associated with the selected use case:**'
+    - value: '**Teams:** {{formatAssociatedTeams.value}}'
     - disableMarkdown: false
     - overflowType: scroll
     - maintainSpaceWhenHidden: false
@@ -21,7 +21,7 @@ position2:
   position2:
     container: use_case_container
     subcontainer: '80620'
-    row: 6.3999999999999995
-    col: 9
+    row: 0.19999999999999962
+    col: 5
     height: 0.6
 createdAt: 2023-07-12T16:35:01.844Z

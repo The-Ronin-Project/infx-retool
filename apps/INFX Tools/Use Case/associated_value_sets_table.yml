@@ -61,7 +61,11 @@ template:
     - _toolbarButtonType:
         ordered: []
     - _columnStatusIndicator:
-        ordered: []
+        ordered:
+          - 1691a:
+              ordered: []
+          - '14e05':
+              ordered: []
     - _columnOptionList:
         ordered:
           - 1691a:
@@ -107,7 +111,9 @@ template:
     - _linkedFilterId: null
     - searchMode: fuzzy
     - _columnCellTooltip:
-        ordered: []
+        ordered:
+          - 1691a: ''
+          - '14e05': ''
     - _columnFormat:
         ordered:
           - 1691a: tag
@@ -149,7 +155,9 @@ template:
           - 85ba4: ''
           - 3a64e: ''
     - _columnCellTooltipMode:
-        ordered: []
+        ordered:
+          - 1691a: ''
+          - '14e05': ''
     - _pageSize: null
     - showInEditor: false
     - selectedSourceRows:
@@ -221,7 +229,11 @@ template:
     - _disabledVirtualization: false
     - _showColumnBorders: false
     - _columnStatusIndicatorOptions:
-        ordered: []
+        ordered:
+          - 1691a:
+              ordered: []
+          - '14e05':
+              ordered: []
     - _columnSize:
         ordered:
           - be2cf: 170.890625
@@ -312,8 +324,8 @@ template:
     - maintainSpaceWhenHidden: false
     - _columnHidden:
         ordered:
-          - 1691a: ''
-          - '14e05': ''
+          - 1691a: 'true'
+          - '14e05': 'true'
           - fd86f: ''
           - be2cf: ''
           - 85ba4: ''
@@ -333,7 +345,8 @@ position2:
   position2:
     container: use_case_container
     subcontainer: '80620'
-    row: 7
-    col: 9
-    height: 8.200000000000001
+    row: 0.8
+    col: 5
+    height: 14.6
+    width: 7
 createdAt: 2023-07-11T15:39:45.688Z

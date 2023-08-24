@@ -24,7 +24,7 @@ template:
     - showFailureToaster: true
     - paginationEnabled: false
     - query: >-
-        /teams/linked_use_cases?use_case_uuid={{all_use_cases_table.selectedSourceRow.uuid}}
+        /teams/linked_use_cases?use_case_uuid={{all_use_cases_table.selectedRow.uuid}}
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null

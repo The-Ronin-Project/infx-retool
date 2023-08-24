@@ -18,8 +18,8 @@ template:
           - 14de8: ''
           - '01535': ''
           - '32886': ''
-          - '89527': ''
           - adc10: ''
+          - e299f: ''
     - _defaultSort: null
     - _clearChangesetOnSave: true
     - heightType: fixed
@@ -28,7 +28,7 @@ template:
     - _columnIds:
         - c6168
         - 415c0
-        - '89527'
+        - e299f
     - _isSaving: false
     - _actionIds: []
     - _clearChangeset: false
@@ -61,9 +61,9 @@ template:
               ordered: []
           - '32886':
               ordered: []
-          - '89527':
-              ordered: []
           - adc10:
+              ordered: []
+          - e299f:
               ordered: []
     - _toolbarPosition: top
     - _groupByColumns: []
@@ -84,7 +84,9 @@ template:
           - 1a: filter
           - 4d: custom
     - _columnStatusIndicator:
-        ordered: []
+        ordered:
+          - e299f:
+              ordered: []
     - _columnOptionList:
         ordered:
           - c6168:
@@ -109,9 +111,9 @@ template:
               ordered: []
           - '32886':
               ordered: []
-          - '89527':
-              ordered: []
           - adc10:
+              ordered: []
+          - e299f:
               ordered: []
     - _columnValueOverride:
         ordered:
@@ -126,8 +128,8 @@ template:
           - 14de8: ''
           - '01535': ''
           - '32886': ''
-          - '89527': '{{ _.startCase(item) }}'
           - adc10: ''
+          - e299f: ''
     - marginType: normal
     - _showBorder: true
     - _templatePageSize: null
@@ -148,8 +150,8 @@ template:
           - 14de8: text
           - '01535': enabled
           - '32886': lastName
-          - '89527': status
           - adc10: createdAt
+          - e299f: uuid
     - hidden: false
     - _toolbarButtonIds:
         - 1a
@@ -160,7 +162,8 @@ template:
     - _linkedFilterId: null
     - searchMode: fuzzy
     - _columnCellTooltip:
-        ordered: []
+        ordered:
+          - e299f: ''
     - _columnFormat:
         ordered:
           - c6168: string
@@ -174,12 +177,12 @@ template:
           - 14de8: string
           - '01535': boolean
           - '32886': string
-          - '89527': tag
           - adc10: date
+          - e299f: string
     - _cursorCache:
         object: {}
     - _calculatedPageSize: null
-    - _primaryKeyColumnId: ''
+    - _primaryKeyColumnId: e299f
     - selectedDataIndex: null
     - _columnAlignment:
         ordered:
@@ -194,8 +197,8 @@ template:
           - 14de8: left
           - '01535': left
           - '32886': left
-          - '89527': left
           - adc10: left
+          - e299f: left
     - _actionIcon:
         ordered: []
     - _columnTooltip:
@@ -211,8 +214,8 @@ template:
           - 14de8: ''
           - '01535': ''
           - '32886': ''
-          - '89527': ''
           - adc10: ''
+          - e299f: ''
     - _columnIcon:
         ordered:
           - c6168: ''
@@ -226,10 +229,11 @@ template:
           - 14de8: ''
           - '01535': ''
           - '32886': ''
-          - '89527': ''
           - adc10: ''
+          - e299f: ''
     - _columnCellTooltipMode:
-        ordered: []
+        ordered:
+          - e299f: ''
     - _pageSize: null
     - showInEditor: false
     - selectedSourceRows:
@@ -248,8 +252,8 @@ template:
           - 14de8: false
           - '01535': false
           - '32886': false
-          - '89527': false
           - adc10: false
+          - e299f: false
     - filterStack: null
     - changesetObject: null
     - _actionDisabled:
@@ -271,8 +275,8 @@ template:
           - 14de8: ''
           - '01535': ''
           - '32886': ''
-          - '89527': ''
           - adc10: ''
+          - e299f: ''
     - _dynamicColumnSource:
         array: []
     - _rowSelection: single
@@ -289,8 +293,8 @@ template:
           - 14de8: ''
           - '01535': ''
           - '32886': ''
-          - '89527': ''
           - adc10: ''
+          - e299f: ''
     - _dynamicColumnFormatOptions:
         ordered: []
     - _dynamicRowHeights: false
@@ -321,10 +325,9 @@ template:
               ordered: []
           - '32886':
               ordered: []
-          - '89527':
-              ordered:
-                - automaticColors: true
           - adc10:
+              ordered: []
+          - e299f:
               ordered: []
     - _changeset: null
     - _afterCursor: ''
@@ -337,12 +340,14 @@ template:
     - _disabledVirtualization: false
     - _showColumnBorders: false
     - _columnStatusIndicatorOptions:
-        ordered: []
+        ordered:
+          - e299f:
+              ordered: []
     - _columnSize:
         ordered:
-          - '89527': 68.171875
-          - c6168: 285.8125
-          - 415c0: 835.234375
+          - e299f: 282.015625
+          - c6168: 198.8125
+          - 415c0: 567
     - _serverPaginationType: limitOffsetBased
     - _selectSingleRowsOnActionClick: replace
     - _showFooter: true
@@ -406,8 +411,8 @@ template:
           - 14de8: ''
           - '01535': ''
           - '32886': ''
-          - '89527': ''
           - adc10: ''
+          - e299f: ''
     - pagination: null
     - selectedDataIndexes:
         array: []
@@ -436,8 +441,8 @@ template:
           - 14de8: center
           - '01535': center
           - '32886': center
-          - '89527': center
           - adc10: center
+          - e299f: center
     - _enableSaveActions: true
     - _columnPlaceholder:
         ordered:
@@ -452,8 +457,8 @@ template:
           - 14de8: ''
           - '01535': ''
           - '32886': Enter value
-          - '89527': Select option
           - adc10: ''
+          - e299f: Enter value
     - _defaultFilterOperator: and
     - _actionLabel:
         ordered: []
@@ -475,8 +480,8 @@ template:
           - 14de8: ''
           - '01535': ''
           - '32886': ''
-          - '89527': ''
           - adc10: ''
+          - e299f: 'true'
     - _columnLabel:
         ordered:
           - c6168: Name
@@ -490,8 +495,8 @@ template:
           - 14de8: Bio
           - '01535': Enabled
           - '32886': Last name
-          - '89527': Status
           - adc10: Created at
+          - e299f: UUID
     - _showToolbar: true
 style:
   ordered: []
@@ -501,5 +506,5 @@ position2:
     subcontainer: '80620'
     row: 0.2
     height: 16.599999999999998
-    width: 8
+    width: 5
 createdAt: 2023-07-10T19:03:56.284Z
