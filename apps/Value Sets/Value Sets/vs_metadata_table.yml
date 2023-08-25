@@ -18,9 +18,6 @@ template:
             id: contact
             value: 77
         - object:
-            id: description
-            value: 271.09375
-        - object:
             id: immutable
             value: 95
         - object:
@@ -30,8 +27,14 @@ template:
             id: name
             value: 272.40625
         - object:
+            id: title
+            value: 283.8125
+        - object:
             id: __retool__action_list
-            value: 329.09375
+            value: 160.09375
+        - object:
+            id: description
+            value: 476.09375
     - showSummaryFooter: false
     - disableRowSelectInteraction: false
     - columnWidthsMobile: []
@@ -297,6 +300,6 @@ position2:
     container: tabbedcontainer1
     subcontainer: '0'
     row: 1.6
-    height: 18.400000000000002
+    height: 20.000000000000004
     width: 8
 createdAt: 2021-10-01T16:34:17.643Z

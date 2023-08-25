@@ -1,14 +1,14 @@
-id: load_value_sets
+id: get_associated_use_cases
 type: datasource
-subtype: SqlQueryUnified
-resourceName: dc8029bc-3980-4836-841e-776c64eeca49
-resourceDisplayName: Clinical Content PostgresSQL DB
+subtype: RESTQuery
+resourceName: a00335cd-bd3b-4d98-8af4-7ff590ce95e8
+resourceDisplayName: INFX Internal Tools API
 template:
   ordered:
     - queryRefreshTime: ''
-    - records: ''
+    - paginationLimit: ''
+    - body: ''
     - lastReceivedFromResourceAt: null
-    - databasePasswordOverride: ''
     - queryDisabledMessage: ''
     - servedFromCache: false
     - offlineUserQueryInputs: ''
@@ -18,47 +18,30 @@ template:
     - workflowParams: null
     - resourceNameOverride: ''
     - runWhenModelUpdates: true
+    - paginationPaginationField: ''
+    - headers: ''
     - workflowRunId: null
     - showFailureToaster: true
-    - query: >-
-        select value_sets.value_set.* from value_sets.value_set
-
-        where lower(title) like '%' || {{filter.value.toLowerCase()}} || '%'
-
-        or lower(value_set.description) like '%' ||
-        {{filter.value.toLowerCase()}} || '%'
-
-        or cast(value_set.uuid as text) = {{filter.value}}
-
-        order by value_set.name
+    - paginationEnabled: false
+    - query: /ValueSets/{{vs_metadata_table.selectedRow.data.uuid}}/linked_use_cases
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
     - workflowRunBodyType: raw
     - privateParams: []
-    - triggersOnSuccess: []
     - runWhenPageLoadsDelay: ''
-    - warningCodes: []
     - data: null
-    - recordId: ''
     - importedQueryInputs:
         ordered: []
-    - showSuccessConfetti: false
     - isImported: false
     - showSuccessToaster: true
-    - dataArray: []
     - cacheKeyTtl: ''
-    - filterBy: ''
     - requestSentTimestamp: null
-    - databaseHostOverride: ''
+    - cookies: ''
     - metadata: null
     - workflowActionType: null
-    - editorMode: sql
     - queryRunTime: null
-    - actionType: ''
-    - triggersOnFailure: []
     - changesetObject: ''
-    - shouldUseLegacySql: false
     - errorTransformer: >-
         // The variable 'data' allows you to reference the request's data in the
         transformer. 
@@ -67,40 +50,58 @@ template:
 
         return data.error
     - finished: null
-    - databaseNameOverride: ''
     - confirmationMessage: null
     - isFetching: false
     - changeset: ''
     - rawData: null
     - queryTriggerDelay: '0'
-    - resourceTypeOverride: null
+    - resourceTypeOverride: ''
     - watchedParams: []
     - enableErrorTransformer: false
-    - enableBulkUpdates: false
     - showLatestVersionUpdatedWarning: false
+    - paginationDataField: ''
     - timestamp: 0
     - importedQueryDefaults:
         ordered: []
-    - enableTransformer: true
+    - enableTransformer: false
     - showUpdateSetValueDynamicallyToggle: true
-    - bulkUpdatePrimaryKey: ''
     - runWhenPageLoads: false
-    - transformer: ''
-    - events: []
-    - tableName: ''
-    - queryTimeout: '10001'
+    - transformer: |-
+        // Query results are available as the `data` variable
+        return formatDataAsArray(data)
+    - events:
+        - ordered:
+            - event: success
+            - type: datasource
+            - method: trigger
+            - pluginId: processPrimary
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: success
+            - type: datasource
+            - method: trigger
+            - pluginId: processUseCases
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - queryTimeout: '10000'
     - workflowId: null
     - requireConfirmation: false
+    - type: GET
     - queryFailureConditions: ''
     - changesetIsObject: false
     - enableCaching: false
     - allowedGroups: []
     - workflowBlockPluginId: null
-    - databaseUsernameOverride: ''
-    - shouldEnableBatchQuerying: false
-    - doNotThrowOnNoOp: false
+    - bodyType: none
     - offlineQueryType: None
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2021-09-30T19:54:11.836Z
+createdAt: 2023-08-23T21:27:03.914Z

@@ -1,14 +1,11 @@
-id: load_value_sets
+id: processUseCases
 type: datasource
-subtype: SqlQueryUnified
-resourceName: dc8029bc-3980-4836-841e-776c64eeca49
-resourceDisplayName: Clinical Content PostgresSQL DB
+subtype: JavascriptQuery
+resourceName: JavascriptQuery
 template:
   ordered:
     - queryRefreshTime: ''
-    - records: ''
     - lastReceivedFromResourceAt: null
-    - databasePasswordOverride: ''
     - queryDisabledMessage: ''
     - servedFromCache: false
     - offlineUserQueryInputs: ''
@@ -17,48 +14,39 @@ template:
     - playgroundQuerySaveId: latest
     - workflowParams: null
     - resourceNameOverride: ''
-    - runWhenModelUpdates: true
+    - runWhenModelUpdates: false
     - workflowRunId: null
     - showFailureToaster: true
-    - query: >-
-        select value_sets.value_set.* from value_sets.value_set
+    - query: |-
+        const data = get_associated_use_cases.data;
 
-        where lower(title) like '%' || {{filter.value.toLowerCase()}} || '%'
+        let secondary_use_cases = data.secondary_use_cases 
+            ? data.secondary_use_cases.map(use_case => use_case.name) 
+            : [];
 
-        or lower(value_set.description) like '%' ||
-        {{filter.value.toLowerCase()}} || '%'
+        if(secondary_use_cases.length === 0) {
+            secondary_use_cases = [" "];
+        }
 
-        or cast(value_set.uuid as text) = {{filter.value}}
-
-        order by value_set.name
+        return secondary_use_cases;
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
     - workflowRunBodyType: raw
     - privateParams: []
-    - triggersOnSuccess: []
     - runWhenPageLoadsDelay: ''
-    - warningCodes: []
     - data: null
-    - recordId: ''
     - importedQueryInputs:
         ordered: []
-    - showSuccessConfetti: false
+    - _additionalScope: []
     - isImported: false
     - showSuccessToaster: true
-    - dataArray: []
     - cacheKeyTtl: ''
-    - filterBy: ''
     - requestSentTimestamp: null
-    - databaseHostOverride: ''
     - metadata: null
     - workflowActionType: null
-    - editorMode: sql
     - queryRunTime: null
-    - actionType: ''
-    - triggersOnFailure: []
     - changesetObject: ''
-    - shouldUseLegacySql: false
     - errorTransformer: >-
         // The variable 'data' allows you to reference the request's data in the
         transformer. 
@@ -67,7 +55,6 @@ template:
 
         return data.error
     - finished: null
-    - databaseNameOverride: ''
     - confirmationMessage: null
     - isFetching: false
     - changeset: ''
@@ -76,19 +63,18 @@ template:
     - resourceTypeOverride: null
     - watchedParams: []
     - enableErrorTransformer: false
-    - enableBulkUpdates: false
     - showLatestVersionUpdatedWarning: false
     - timestamp: 0
     - importedQueryDefaults:
         ordered: []
-    - enableTransformer: true
+    - enableTransformer: false
     - showUpdateSetValueDynamicallyToggle: true
-    - bulkUpdatePrimaryKey: ''
     - runWhenPageLoads: false
-    - transformer: ''
+    - transformer: |-
+        // Query results are available as the `data` variable
+        return formatDataAsArray(data)
     - events: []
-    - tableName: ''
-    - queryTimeout: '10001'
+    - queryTimeout: '10000'
     - workflowId: null
     - requireConfirmation: false
     - queryFailureConditions: ''
@@ -96,11 +82,8 @@ template:
     - enableCaching: false
     - allowedGroups: []
     - workflowBlockPluginId: null
-    - databaseUsernameOverride: ''
-    - shouldEnableBatchQuerying: false
-    - doNotThrowOnNoOp: false
     - offlineQueryType: None
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2021-09-30T19:54:11.836Z
+createdAt: 2023-08-23T21:38:26.586Z
