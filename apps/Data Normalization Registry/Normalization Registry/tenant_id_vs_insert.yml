@@ -11,6 +11,7 @@ template:
         - ''
         - false
         - false
+        - false
         - ''
         - false
         - false
@@ -19,6 +20,7 @@ template:
         - apposnd
         - ejh3j95h
         - mdaoc
+        - ggwadc8y
         - v7r1eczk
         - 1xrekpx5
         - |
@@ -32,6 +34,7 @@ template:
     - readOnly: false
     - iconAfter: ''
     - _iconByIndex:
+        - ''
         - ''
         - ''
         - ''
@@ -54,6 +57,7 @@ template:
         array: []
     - textBefore: ''
     - _fallbackTextByIndex:
+        - ''
         - ''
         - ''
         - ''
@@ -85,11 +89,13 @@ template:
         - ''
         - false
         - false
+        - false
         - ''
         - false
         - false
     - placeholder: Select an option
     - _captionByIndex:
+        - ''
         - ''
         - ''
         - ''
@@ -120,7 +126,9 @@ template:
         - ''
         - ''
         - ''
+        - ''
     - _colorByIndex:
+        - ''
         - ''
         - ''
         - ''
@@ -141,6 +149,7 @@ template:
         - 0ff19
         - b05df
         - 6ea7e
+        - cda26
         - 3bd1c
         - 68a91
         - 51aef
@@ -155,6 +164,7 @@ template:
         - App Orchard Sandbox
         - Cerner Code Sandbox
         - mdaoc
+        - p1941
         - psj
         - psj-tst
         - |
@@ -168,6 +178,7 @@ template:
         array: []
     - maintainSpaceWhenHidden: false
     - _imageByIndex:
+        - ''
         - ''
         - ''
         - ''
