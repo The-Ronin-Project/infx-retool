@@ -1,4 +1,4 @@
-id: text31
+id: text68
 type: widget
 subtype: TextWidget2
 template:
@@ -12,10 +12,10 @@ template:
     - verticalAlign: center
     - _defaultValue: ''
     - tooltipText: ''
-    - value: '#### Versioning Process'
+    - value: <p>View and edit registries for labs, vitals, documents, etc. </p>
     - style:
         ordered:
-          - color: rgba(98, 125, 152, 0.8)
+          - color: rgba(36, 59, 83, 0.9)
     - _disclosedFields:
         array: []
     - disableMarkdown: false
@@ -25,7 +25,8 @@ style:
   ordered: []
 position2:
   position2:
-    row: 19.800000000000004
-    height: 0.8
-    width: 11
-createdAt: 2022-04-19T20:54:56.345Z
+    container: container31
+    subcontainer: e47d5
+    height: 1.6
+    width: 12
+createdAt: 2023-08-30T22:46:02.861Z

@@ -5,7 +5,7 @@ template:
   ordered:
     - _disabledByIndex:
         - ''
-    - heightType: auto
+    - heightType: fixed
     - currentViewKey: null
     - iconByIndex:
         array: []
@@ -67,7 +67,7 @@ style:
   ordered: []
 position2:
   position2:
-    row: 15.2
+    row: 14.200000000000003
     col: 6
-    height: 4.8
+    height: 4
 createdAt: 2023-01-04T19:08:06.803Z
