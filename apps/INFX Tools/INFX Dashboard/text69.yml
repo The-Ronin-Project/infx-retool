@@ -1,4 +1,4 @@
-id: text31
+id: text69
 type: widget
 subtype: TextWidget2
 template:
@@ -12,10 +12,12 @@ template:
     - verticalAlign: center
     - _defaultValue: ''
     - tooltipText: ''
-    - value: '#### Versioning Process'
+    - value: '#### **Flexible Registry**'
     - style:
         ordered:
-          - color: rgba(98, 125, 152, 0.8)
+          - color: rgb(36, 59, 83)
+          - background: ''
+          - links: ''
     - _disclosedFields:
         array: []
     - disableMarkdown: false
@@ -25,7 +27,10 @@ style:
   ordered: []
 position2:
   position2:
-    row: 19.800000000000004
-    height: 0.8
-    width: 11
-createdAt: 2022-04-19T20:54:56.345Z
+    container: container31
+    rowGroup: header
+    row: 0.2
+    col: 2
+    height: 0.6
+    width: 10
+createdAt: 2023-08-30T22:46:03.079Z
