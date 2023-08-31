@@ -1,0 +1,135 @@
+id: navigation1
+type: widget
+subtype: NavigationWidget2
+template:
+  ordered:
+    - _disabledByIndex:
+        - ''
+        - ''
+    - heightType: auto
+    - iconByIndex:
+        array: []
+    - srcWidth: null
+    - _iconByIndex:
+        - ''
+        - ''
+    - src: ''
+    - overflowMode: scroll
+    - _parentKeyByIndex:
+        - ''
+        - ''
+    - _highlightByIndex:
+        - ''
+        - ''
+    - parentKeyByIndex:
+        array: []
+    - highlightByIndex:
+        array: []
+    - _appTargetByIndex:
+        - e2acd320-3ab6-11ee-987c-7f06c8ab6b06
+        - 72c90660-478a-11ee-ba7b-53e02fe6481c
+    - marginType: normal
+    - appTargetByIndex:
+        array: []
+    - hidden: false
+    - data:
+        array: []
+    - srcHeight: null
+    - itemTypeByIndex:
+        array: []
+    - showInEditor: false
+    - _itemTypeByIndex:
+        - custom
+        - custom
+    - orientation: horizontal
+    - tooltipText: ''
+    - hiddenByIndex:
+        array: []
+    - _hiddenByIndex:
+        - ''
+        - ''
+    - storageBlobId: ''
+    - _captionByIndex:
+        - ''
+        - ''
+    - _hasMigratedNestedItems: true
+    - captionByIndex:
+        array: []
+    - altText: ''
+    - itemMode: static
+    - dbBlobId: ''
+    - _tooltipByIndex:
+        - ''
+        - ''
+    - _automaticallyHighlightedIndices:
+        array: []
+    - tooltipByIndex:
+        array: []
+    - events:
+        - ordered:
+            - event: click
+            - type: util
+            - method: openApp
+            - pluginId: ''
+            - targetId: c7ce7
+            - params:
+                ordered:
+                  - uuid: 72c90660-478a-11ee-ba7b-53e02fe6481c
+                  - options:
+                      ordered:
+                        - queryParams:
+                            - ordered:
+                                - key: registry_uuid
+                                - value: '{{urlparams.registry_uuid}}'
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: click
+            - type: util
+            - method: openApp
+            - pluginId: ''
+            - targetId: 664ae
+            - params:
+                ordered:
+                  - uuid: e2acd320-3ab6-11ee-987c-7f06c8ab6b06
+                  - options:
+                      ordered:
+                        - queryParams:
+                            - ordered:
+                                - key: registry_uuid
+                                - value: '{{urlparams.registry_uuid}}'
+            - waitType: debounce
+            - waitMs: '0'
+    - _ids:
+        - 664ae
+        - c7ce7
+    - iconPositionByIndex:
+        array: []
+    - _iconPositionByIndex:
+        - ''
+        - ''
+    - _keyByIndex:
+        - ''
+        - ''
+    - disabled: false
+    - keyByIndex:
+        array: []
+    - _labels:
+        - View and Edit Registry
+        - Preview and Publish
+    - srcType: src
+    - disabledByIndex:
+        array: []
+    - horizontalAlignment: left
+    - maintainSpaceWhenHidden: false
+    - labels:
+        array: []
+style:
+  ordered: []
+position2:
+  position2:
+    container: moduleContainer
+    row: 1.2000000000000002
+    height: 0.8
+    width: 12
+createdAt: 2023-08-30T23:15:23.596Z
