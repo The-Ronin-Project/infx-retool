@@ -1,0 +1,25 @@
+id: create_group_modal
+type: widget
+subtype: ModalWidget
+template:
+  ordered:
+    - opened: false
+    - modalOverflowType: scroll
+    - onModalClose: ''
+    - modalHeightType: fixed
+    - tooltipText: ''
+    - modalHeight: '300'
+    - onModalOpen: ''
+    - modalWidth: 60%
+    - closeOnOutsideClick: false
+    - loading: ''
+    - disabled: ''
+    - buttonText: Create New Group
+style:
+  ordered: []
+position2:
+  position2:
+    row: -2.842170943040401e-14
+    col: 9
+    height: 1.2
+createdAt: 2023-08-15T16:04:54.698Z

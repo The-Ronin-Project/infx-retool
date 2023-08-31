@@ -1,0 +1,427 @@
+id: group_table
+type: widget
+subtype: TableWidget2
+template:
+  ordered:
+    - selectedRowKey: null
+    - _nextAfterCursor: ''
+    - _columnBackgroundColor:
+        ordered:
+          - d5c79: ''
+          - 2de43: ''
+          - 33fd6: ''
+          - dfbda: ''
+          - 76ecb: ''
+    - _defaultSort: null
+    - _clearChangesetOnSave: true
+    - heightType: fixed
+    - disableEdits: false
+    - _rowHeight: small
+    - _columnIds:
+        - d5c79
+        - dfbda
+        - 2de43
+        - 33fd6
+        - 76ecb
+    - _isSaving: false
+    - _actionIds:
+        - b4c62
+        - '92421'
+        - ec496
+        - 702eb
+    - _clearChangeset: false
+    - caseSensitiveFiltering: false
+    - _limitOffsetRowCount: null
+    - selectedSourceRow: null
+    - _dynamicColumnsEnabled: false
+    - disableSave: false
+    - _columnEditableOptions:
+        ordered:
+          - d5c79:
+              ordered:
+                - showStepper: true
+          - 2de43:
+              ordered: []
+          - 33fd6:
+              ordered: []
+          - dfbda:
+              ordered: []
+          - 76ecb:
+              ordered:
+                - showStepper: true
+    - _toolbarPosition: bottom
+    - _groupByColumns: []
+    - _toolbarButtonLabel:
+        ordered:
+          - 1a: Filter
+          - 3c: Download
+          - 4d: Refresh
+    - _nextBeforeCursor: ''
+    - _persistRowSelection: false
+    - _toolbarButtonIcon:
+        ordered:
+          - 1a: bold/interface-text-formatting-filter-2
+          - 3c: bold/interface-download-button-2
+          - 4d: bold/interface-arrows-round-left
+    - changesetArray:
+        array: []
+    - _toolbarButtonType:
+        ordered:
+          - 1a: filter
+          - 3c: custom
+          - 4d: custom
+    - _columnStatusIndicator:
+        ordered:
+          - d5c79:
+              ordered: []
+          - 2de43:
+              ordered: []
+          - 33fd6:
+              ordered: []
+          - dfbda:
+              ordered: []
+          - 76ecb:
+              ordered: []
+    - _columnOptionList:
+        ordered:
+          - d5c79:
+              ordered: []
+          - 2de43:
+              ordered: []
+          - 33fd6:
+              ordered: []
+          - dfbda:
+              ordered: []
+          - 76ecb:
+              ordered: []
+    - _columnValueOverride:
+        ordered:
+          - d5c79: ''
+          - 2de43: ''
+          - 33fd6: ''
+          - dfbda: ''
+          - 76ecb: ''
+    - marginType: normal
+    - _showBorder: true
+    - _templatePageSize: null
+    - _dynamicColumnProperties:
+        ordered: []
+    - _showHeader: true
+    - _currentPage: 0
+    - _columnKey:
+        ordered:
+          - d5c79: sequence
+          - 2de43: uuid
+          - 33fd6: registry_uuid
+          - dfbda: title
+          - 76ecb: minimum_panel_members
+    - hidden: false
+    - _toolbarButtonIds:
+        - 1a
+        - 3c
+        - 4d
+    - data: '{{ get_groups.data }}'
+    - _cellSelection: none
+    - _serverPaginated: false
+    - _linkedFilterId: null
+    - searchMode: fuzzy
+    - _columnCellTooltip:
+        ordered:
+          - d5c79: ''
+          - 2de43: ''
+          - 33fd6: ''
+          - dfbda: ''
+          - 76ecb: ''
+    - _columnFormat:
+        ordered:
+          - d5c79: decimal
+          - 2de43: string
+          - 33fd6: string
+          - dfbda: string
+          - 76ecb: decimal
+    - _cursorCache:
+        object: {}
+    - _calculatedPageSize: null
+    - _primaryKeyColumnId: ''
+    - selectedDataIndex: null
+    - _columnAlignment:
+        ordered:
+          - d5c79: right
+          - 2de43: left
+          - 33fd6: left
+          - dfbda: left
+          - 76ecb: right
+    - _actionIcon:
+        ordered:
+          - b4c62: bold/interface-arrows-up-alternate
+          - '92421': bold/interface-arrows-down-alternate
+          - ec496: bold/interface-edit-write-1
+          - 702eb: bold/interface-delete-bin-2
+    - _columnTooltip:
+        ordered:
+          - d5c79: ''
+          - 2de43: ''
+          - 33fd6: ''
+          - dfbda: ''
+          - 76ecb: ''
+    - _columnIcon:
+        ordered:
+          - d5c79: ''
+          - 2de43: ''
+          - 33fd6: ''
+          - dfbda: ''
+          - 76ecb: ''
+    - _columnCellTooltipMode:
+        ordered:
+          - d5c79: ''
+          - 2de43: ''
+          - 33fd6: ''
+          - dfbda: ''
+          - 76ecb: ''
+    - _pageSize: null
+    - showInEditor: false
+    - selectedSourceRows:
+        array: []
+    - _selectMultipleRowsOnActionClick: 'no'
+    - _columnSortDisabled:
+        ordered:
+          - d5c79: false
+          - 2de43: false
+          - 33fd6: false
+          - dfbda: false
+          - 76ecb: false
+    - filterStack: null
+    - changesetObject: null
+    - _actionDisabled:
+        ordered:
+          - b4c62: ''
+          - '92421': ''
+          - ec496: ''
+          - 702eb: ''
+    - _columnReferenceId:
+        ordered:
+          - d5c79: ''
+          - 2de43: ''
+          - 33fd6: ''
+          - dfbda: ''
+          - 76ecb: ''
+    - _dynamicColumnSource:
+        array: []
+    - _rowSelection: single
+    - _columnCaption:
+        ordered:
+          - d5c79: ''
+          - 2de43: ''
+          - 33fd6: ''
+          - dfbda: ''
+          - 76ecb: ''
+    - _dynamicColumnFormatOptions:
+        ordered: []
+    - _dynamicRowHeights: false
+    - _columnFormatOptions:
+        ordered:
+          - d5c79:
+              ordered:
+                - showSeparators: true
+                - notation: standard
+          - 2de43:
+              ordered: []
+          - 33fd6:
+              ordered: []
+          - dfbda:
+              ordered: []
+          - 76ecb:
+              ordered:
+                - showSeparators: true
+                - notation: standard
+    - _changeset: null
+    - _afterCursor: ''
+    - selectedRowKeys:
+        array: []
+    - _beforeCursor: ''
+    - searchTerm: ''
+    - selectedRows:
+        array: []
+    - _disabledVirtualization: false
+    - _showColumnBorders: false
+    - _columnStatusIndicatorOptions:
+        ordered:
+          - d5c79:
+              ordered: []
+          - 2de43:
+              ordered: []
+          - 33fd6:
+              ordered: []
+          - dfbda:
+              ordered: []
+          - 76ecb:
+              ordered: []
+    - _columnSize:
+        ordered:
+          - d5c79: 74.171875
+          - dfbda: 137.625
+          - 2de43: 276.609375
+          - 33fd6: 274.609375
+          - 76ecb: 161.875
+    - _serverPaginationType: limitOffsetBased
+    - _selectSingleRowsOnActionClick: replace
+    - _showFooter: true
+    - _groupedColumnConfig:
+        ordered: []
+    - _virtualizeStartIndex: 0
+    - _toolbarButtonHidden:
+        ordered:
+          - 1a: ''
+          - 3c: ''
+          - 4d: ''
+    - _defaultFilters:
+        ordered: []
+    - events:
+        - ordered:
+            - event: clickAction
+            - type: util
+            - method: openApp
+            - pluginId: ''
+            - targetId: ec496
+            - params:
+                ordered:
+                  - uuid: ebe9d8c0-3d3b-11ee-b47d-2fa6de34c303
+                  - options:
+                      ordered:
+                        - queryParams:
+                            - ordered:
+                                - key: group_uuid
+                                - value: '{{group_table.selectedRow.uuid}}'
+                            - ordered:
+                                - key: registry_uuid
+                                - value: '{{urlparams.registry_uuid}}'
+                        - newTab: false
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: clickAction
+            - type: datasource
+            - method: trigger
+            - pluginId: delete_group
+            - targetId: 702eb
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: clickAction
+            - type: datasource
+            - method: trigger
+            - pluginId: move_group_down
+            - targetId: '92421'
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: clickAction
+            - type: datasource
+            - method: trigger
+            - pluginId: move_group_up
+            - targetId: b4c62
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: clickAction
+            - type: datasource
+            - method: trigger
+            - pluginId: update_group_title
+            - targetId: 4f09e
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: clickCell
+            - type: util
+            - method: openUrl
+            - pluginId: ''
+            - targetId: 3de46
+            - params:
+                ordered:
+                  - url: '{{ item }}'
+            - waitType: debounce
+            - waitMs: '0'
+    - _columnEditable:
+        ordered:
+          - d5c79: ''
+          - 2de43: false
+          - 33fd6: ''
+          - dfbda: 'true'
+          - 76ecb: ''
+    - pagination: null
+    - selectedDataIndexes:
+        array: []
+    - sortArray:
+        array: []
+    - _selectedCell: null
+    - overflowType: scroll
+    - selectedCell: null
+    - _defaultSelectedRow:
+        ordered:
+          - mode: index
+          - indexType: display
+          - index: 0
+    - _hasNextPage: false
+    - _includeRowInChangesetArray: false
+    - _columnPosition:
+        ordered:
+          - d5c79: center
+          - 2de43: center
+          - 33fd6: center
+          - dfbda: center
+          - 76ecb: center
+    - _enableSaveActions: true
+    - _columnPlaceholder:
+        ordered:
+          - d5c79: Enter value
+          - 2de43: Enter value
+          - 33fd6: Enter value
+          - dfbda: Enter value
+          - 76ecb: Enter value
+    - _defaultFilterOperator: and
+    - _actionLabel:
+        ordered:
+          - b4c62: Move Up
+          - '92421': Move Down
+          - ec496: View/Edit Group
+          - 702eb: Delete Group
+    - _virtualizeEndIndex: 0
+    - selectedRow: null
+    - _actionHidden:
+        ordered:
+          - b4c62: ''
+          - '92421': ''
+          - ec496: 'false'
+          - 702eb: ''
+    - maintainSpaceWhenHidden: false
+    - _columnHidden:
+        ordered:
+          - d5c79: ''
+          - 2de43: 'true'
+          - 33fd6: 'true'
+          - dfbda: ''
+          - 76ecb: '{{get_registry_metadata.data.registry_type!=''labs''}}'
+    - _columnLabel:
+        ordered:
+          - d5c79: Sequence
+          - 2de43: UUID
+          - 33fd6: Registry UUID
+          - dfbda: Group Title
+          - 76ecb: Minimum panel members
+    - _showToolbar: true
+style:
+  ordered: []
+position2:
+  position2:
+    row: 1.1999999999999997
+    height: 12.6
+    width: 12
+createdAt: 2023-08-14T17:48:46.223Z
