@@ -1,0 +1,88 @@
+id: breadcrumbs1
+type: widget
+subtype: BreadcrumbsWidget
+template:
+  ordered:
+    - _disabledByIndex:
+        - ''
+        - ''
+    - _values: []
+    - iconByIndex:
+        array: []
+    - clickable: false
+    - _iconByIndex:
+        - ''
+        - ''
+    - _appTargetByIndex:
+        - e2acd320-3ab6-11ee-987c-7f06c8ab6b06
+        - ''
+    - marginType: normal
+    - appTargetByIndex:
+        array: []
+    - hidden: false
+    - data:
+        array: []
+    - itemTypeByIndex:
+        array: []
+    - showInEditor: false
+    - _itemTypeByIndex:
+        - custom
+        - app
+    - tooltipText: ''
+    - value: '{{ retoolContext.appUuid }}'
+    - _hasMigratedNestedItems: true
+    - itemMode: static
+    - _tooltipByIndex:
+        - ''
+        - ''
+    - _automaticallyHighlightedIndices:
+        array: []
+    - tooltipByIndex:
+        array: []
+    - events:
+        - ordered:
+            - event: click
+            - type: util
+            - method: openApp
+            - pluginId: ''
+            - targetId: d573a
+            - params:
+                ordered:
+                  - uuid: e2acd320-3ab6-11ee-987c-7f06c8ab6b06
+                  - options:
+                      ordered:
+                        - queryParams:
+                            - ordered:
+                                - key: registry_uuid
+                                - value: '{{urlparams.registry_uuid}}'
+                            - ordered:
+                                - key: ''
+                                - value: ''
+            - waitType: debounce
+            - waitMs: '0'
+    - _ids:
+        - d573a
+        - 3fad6
+    - iconPositionByIndex:
+        array: []
+    - _iconPositionByIndex:
+        - ''
+        - ''
+    - disabled: false
+    - _labels:
+        - '{{registry_metadata.data.title}} Registry'
+        - '{{get_group.data.title}} Group'
+    - disabledByIndex:
+        array: []
+    - maintainSpaceWhenHidden: false
+    - labels:
+        array: []
+style:
+  ordered: []
+position2:
+  position2:
+    subcontainer: header
+    row: 1.2
+    height: 0.6
+    width: 12
+createdAt: 2023-08-30T23:20:08.718Z

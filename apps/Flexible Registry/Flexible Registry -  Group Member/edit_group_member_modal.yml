@@ -1,0 +1,31 @@
+id: edit_group_member_modal
+type: widget
+subtype: ModalWidget
+template:
+  ordered:
+    - opened: false
+    - modalOverflowType: scroll
+    - hidden: 'true'
+    - onModalClose: ''
+    - modalHeightType: fixed
+    - tooltipText: ''
+    - style:
+        ordered:
+          - accent-foreground: ''
+          - primary-surface: rgb(240, 244, 248)
+    - modalHeight: '300'
+    - onModalOpen: ''
+    - modalWidth: ''
+    - closeOnOutsideClick: false
+    - loading: ''
+    - disabled: ''
+    - buttonText: edit group member
+style:
+  ordered: []
+position2:
+  position2:
+    row: 0.4
+    col: 10
+    height: 1
+    width: 2
+createdAt: 2023-08-25T14:43:12.071Z

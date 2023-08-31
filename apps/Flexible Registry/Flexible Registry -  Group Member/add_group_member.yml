@@ -1,0 +1,119 @@
+id: add_group_member
+type: datasource
+subtype: RESTQuery
+resourceName: a00335cd-bd3b-4d98-8af4-7ff590ce95e8
+resourceDisplayName: INFX Internal Tools API
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - paginationLimit: ''
+    - body: >-
+        [{"key":"value_set_uuid","value":"{{value_set_select.selectedItem.uuid}}"},{"key":"title","value":"{{product_label_input.value}}"},{"key":"ref_range_high","value":"{{ref_range_high_input.value}}"},{"key":"ref_range_low","value":"{{ref_range_low_input.value}}"},{"key":"ucum_ref_units","value":"{{ucum_ref_units_input.value}}"}]
+    - lastReceivedFromResourceAt: null
+    - queryDisabledMessage: ''
+    - servedFromCache: false
+    - offlineUserQueryInputs: ''
+    - successMessage: ''
+    - queryDisabled: ''
+    - playgroundQuerySaveId: latest
+    - workflowParams: null
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: false
+    - paginationPaginationField: ''
+    - headers: '[{"key":"","value":""},{"key":"","value":""}]'
+    - workflowRunId: null
+    - showFailureToaster: true
+    - paginationEnabled: false
+    - query: >-
+        registries/{{urlparams.registry_uuid}}/groups/{{urlparams.group_uuid}}/members/
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - error: null
+    - workflowRunBodyType: raw
+    - privateParams: []
+    - runWhenPageLoadsDelay: ''
+    - data: null
+    - importedQueryInputs:
+        ordered: []
+    - isImported: false
+    - showSuccessToaster: true
+    - cacheKeyTtl: ''
+    - requestSentTimestamp: null
+    - cookies: ''
+    - metadata: null
+    - workflowActionType: null
+    - queryRunTime: null
+    - changesetObject: ''
+    - errorTransformer: >-
+        // The variable 'data' allows you to reference the request's data in the
+        transformer. 
+
+        // example: return data.find(element => element.isError)
+
+        return data.error
+    - finished: null
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - resourceTypeOverride: null
+    - watchedParams: []
+    - enableErrorTransformer: false
+    - showLatestVersionUpdatedWarning: false
+    - paginationDataField: ''
+    - timestamp: 0
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - runWhenPageLoads: false
+    - transformer: |-
+        // Query results are available as the `data` variable
+        return formatDataAsArray(data)
+    - events:
+        - ordered:
+            - event: success
+            - type: datasource
+            - method: trigger
+            - pluginId: get_group_members
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: success
+            - type: widget
+            - method: clearValue
+            - pluginId: value_set_select
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: success
+            - type: widget
+            - method: clearValue
+            - pluginId: product_label_input
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - queryTimeout: '10000'
+    - workflowId: null
+    - requireConfirmation: false
+    - type: POST
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups: []
+    - workflowBlockPluginId: null
+    - bodyType: json
+    - offlineQueryType: None
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+createdAt: 2023-08-17T23:16:29.983Z

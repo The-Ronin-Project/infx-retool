@@ -1,0 +1,66 @@
+id: minimum_panel_members
+type: widget
+subtype: EditableNumberWidget
+template:
+  ordered:
+    - readOnly: false
+    - iconAfter: ''
+    - editIcon: bold/interface-edit-write-1
+    - max: null
+    - inputValue: null
+    - marginType: normal
+    - hidden: '{{registry_metadata.data.registry_type != "labs"}}'
+    - customValidation: ''
+    - showSeparators: true
+    - hideValidationMessage: false
+    - textBefore: ''
+    - validationMessage: ''
+    - textSize: default
+    - textAfter: ''
+    - showInEditor: false
+    - allowNull: false
+    - showClear: false
+    - tooltipText: ''
+    - currency: USD
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: '{{get_group.data.minimum_panel_members}}'
+    - labelCaption: Minimum number of labs which must be present to classify as a panel
+    - min: null
+    - labelWidth: '80'
+    - placeholder: Enter value
+    - showStepper: true
+    - label: Minimum Panel Members
+    - _validate: false
+    - labelWidthUnit: '%'
+    - invalid: false
+    - format: decimal
+    - iconBefore: ''
+    - textAlign: left
+    - inputTooltip: '`Enter` to save, `Esc` to cancel'
+    - events:
+        - ordered:
+            - event: change
+            - type: datasource
+            - method: trigger
+            - pluginId: edit_minimum_panel_members
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - loading: false
+    - labelPosition: left
+    - decimalPlaces: null
+    - labelWrap: false
+    - padDecimal: false
+    - maintainSpaceWhenHidden: false
+    - required: false
+style:
+  ordered: []
+position2:
+  position2:
+    row: 1.5999999999999999
+    height: 0.6
+    width: 7
+createdAt: 2023-08-30T23:34:28.796Z

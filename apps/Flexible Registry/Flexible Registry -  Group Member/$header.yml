@@ -1,0 +1,14 @@
+id: $header
+type: frame
+subtype: Frame
+template:
+  ordered:
+    - type: header
+    - sticky: true
+    - style:
+        ordered:
+          - primary-surface: ''
+          - primary-text: ''
+style:
+  ordered: []
+createdAt: 2022-11-18T19:35:05.905Z
