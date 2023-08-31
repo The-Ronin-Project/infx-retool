@@ -12,7 +12,7 @@ template:
     - verticalAlign: center
     - _defaultValue: ''
     - tooltipText: ''
-    - value: '#### **Normalization Registry**'
+    - value: '#### **Data Normalization Registry**'
     - style:
         ordered:
           - color: rgb(36, 59, 83)

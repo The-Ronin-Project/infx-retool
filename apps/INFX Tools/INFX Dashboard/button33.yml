@@ -30,7 +30,7 @@ template:
             - targetId: null
             - params:
                 ordered:
-                  - uuid: 963763e0-44e7-11ed-8353-1bcc90713a41
+                  - uuid: 0402c8c0-42b1-11ee-9cc0-7b5a2eca8e28
             - waitType: debounce
             - waitMs: '0'
     - loading: false
