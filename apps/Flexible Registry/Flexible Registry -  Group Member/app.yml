@@ -1,0 +1,22 @@
+version: 43.0.9
+pageUuid: ebe9d8c0-3d3b-11ee-b47d-2fa6de34c303
+appTemplate:
+  mobileAppSettings:
+    object:
+      mobileOfflineModeEnabled: false
+      mobileOfflineModeDelaySync: false
+      displaySetting:
+        object:
+          landscapeMode: false
+          tabletMode: false
+  experimentalFeatures:
+    object:
+      sourceControlTemplateDehydration: false
+  queryStatusVisibility: true
+  experimentalPerfFeatures:
+    object:
+      batchCommitModelEnabled: false
+      skipDepCycleCheckingEnabled: false
+      serverDepGraphEnabled: false
+      useRuntimeV2: false
+  version: 3.4.3
