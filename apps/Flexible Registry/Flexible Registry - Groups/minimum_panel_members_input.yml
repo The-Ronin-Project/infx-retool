@@ -1,0 +1,58 @@
+id: minimum_panel_members_input
+type: widget
+subtype: NumberInputWidget
+template:
+  ordered:
+    - readOnly: false
+    - iconAfter: ''
+    - max: null
+    - preventScroll: false
+    - inputValue: 0
+    - marginType: normal
+    - hidden: '{{get_registry_metadata.data.registry_type != "labs"}}'
+    - customValidation: ''
+    - showSeparators: true
+    - hideValidationMessage: false
+    - textBefore: ''
+    - validationMessage: ''
+    - textAfter: ''
+    - showInEditor: false
+    - allowNull: false
+    - showClear: false
+    - tooltipText: ''
+    - currency: USD
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: 0
+    - labelCaption: Minimum number of labs which must be present to classify as a panel
+    - min: null
+    - labelWidth: '70'
+    - placeholder: Enter value
+    - showStepper: true
+    - label: Minimum Panel Members
+    - _validate: false
+    - labelWidthUnit: '%'
+    - invalid: false
+    - format: decimal
+    - iconBefore: ''
+    - textAlign: left
+    - inputTooltip: ''
+    - events:
+        ordered: []
+    - loading: false
+    - disabled: false
+    - labelPosition: left
+    - decimalPlaces: null
+    - labelWrap: false
+    - padDecimal: false
+    - maintainSpaceWhenHidden: false
+    - required: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: create_group_modal
+    row: 1
+    height: 1
+    width: 12
+createdAt: 2023-08-31T15:21:53.661Z
