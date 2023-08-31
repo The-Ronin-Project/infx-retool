@@ -1,0 +1,26 @@
+id: edit_registry_metadata
+type: widget
+subtype: ModalWidget
+template:
+  ordered:
+    - opened: false
+    - modalOverflowType: scroll
+    - hidden: 'true'
+    - onModalClose: ''
+    - modalHeightType: fixed
+    - tooltipText: ''
+    - modalHeight: ''
+    - onModalOpen: ''
+    - modalWidth: ''
+    - closeOnOutsideClick: false
+    - loading: ''
+    - disabled: ''
+    - buttonText: Open Modal
+style:
+  ordered: []
+position2:
+  position2:
+    row: 10.399999999999999
+    col: 9
+    height: 1
+createdAt: 2023-08-24T22:11:18.769Z
