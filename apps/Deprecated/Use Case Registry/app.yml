@@ -1,8 +1,0 @@
-version: 43.0.9
-pageUuid: 58682320-e5af-11ec-80e6-67cb31163e53
-appTemplate:
-  queryStatusVisibility: true
-  experimentalPerfFeatures:
-    object:
-      batchCommitModelEnabled: false
-  version: 2.100.7
