@@ -8,7 +8,7 @@ template:
     - queryRefreshTime: ''
     - paginationLimit: ''
     - body: >-
-        [{"key":"title","value":"{{title_input.value}}"},{"key":"ref_range_high","value":"{{ref_high_input.value}}"},{"key":"ref_range_low","value":"{{ref_low_input.value}}"},{"key":"ucum_ref_units","value":"{{ucum_ref_units_input2.value}}"}]
+        [{"key":"title","value":"{{title_input.value}}"},{"key":"ref_range_high","value":"{{transformerRefHighEdit.value}}"},{"key":"ref_range_low","value":"{{transformerRefLowEdit.value}}"},{"key":"ucum_ref_units","value":"{{transformerUCUMEdit.value}}"}]
     - lastReceivedFromResourceAt: null
     - queryDisabledMessage: ''
     - servedFromCache: false

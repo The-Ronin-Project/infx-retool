@@ -1,0 +1,18 @@
+id: transformerRefHigh
+type: function
+subtype: Function
+template:
+  ordered:
+    - funcBody: |+
+        const inputValue = {{ref_range_high_input.value.value}};
+
+        // If inputValue is empty, return null
+        if (inputValue === "") {
+            return null;
+        }
+
+        // Otherwise, return inputValue
+        return inputValue;
+
+    - value: ''
+createdAt: 2023-09-01T15:35:18.483Z

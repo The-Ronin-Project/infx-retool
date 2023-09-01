@@ -8,7 +8,9 @@ template:
     - iconAfter: ''
     - submitTargetId: null
     - marginType: normal
-    - hidden: false
+    - hidden: >-
+        {{ !/^[0-9]*\.?[0-9]*$/.test(ref_high_input.value) |
+        !/^[0-9]*\.?[0-9]*$/.test(ref_low_input.value) }}
     - text: Save
     - showInEditor: false
     - tooltipText: ''

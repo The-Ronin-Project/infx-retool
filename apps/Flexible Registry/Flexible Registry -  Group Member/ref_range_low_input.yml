@@ -1,50 +1,47 @@
 id: ref_range_low_input
 type: widget
-subtype: NumberInputWidget
+subtype: TextInputWidget2
 template:
   ordered:
+    - spellCheck: false
     - readOnly: false
     - iconAfter: ''
-    - max: null
-    - preventScroll: false
-    - inputValue: 0
+    - showCharacterCount: false
+    - autoComplete: false
     - marginType: normal
+    - maxLength: null
     - hidden: '{{registry_metadata.data.registry_type!=''vitals''}}'
     - customValidation: ''
-    - showSeparators: true
+    - patternType: ''
     - hideValidationMessage: false
     - textBefore: ''
     - validationMessage: ''
     - textAfter: ''
     - showInEditor: false
-    - allowNull: false
     - showClear: true
+    - pattern: ''
     - tooltipText: ''
-    - currency: USD
     - labelAlign: left
     - formDataKey: '{{ self.id }}'
-    - value: 0
+    - value: 'null'
     - labelCaption: ''
-    - min: null
     - labelWidth: '33'
+    - autoFill: ''
     - placeholder: Enter value
-    - showStepper: true
     - label: Reference range low
     - _validate: false
     - labelWidthUnit: '%'
     - invalid: false
-    - format: decimal
     - iconBefore: ''
-    - textAlign: left
+    - minLength: null
     - inputTooltip: ''
     - events:
         ordered: []
+    - autoCapitalize: none
     - loading: false
     - disabled: false
     - labelPosition: left
-    - decimalPlaces: null
     - labelWrap: false
-    - padDecimal: false
     - maintainSpaceWhenHidden: false
     - required: false
 style:
