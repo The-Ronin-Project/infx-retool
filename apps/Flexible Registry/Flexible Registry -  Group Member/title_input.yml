@@ -53,7 +53,7 @@ style:
 position2:
   position2:
     container: edit_group_member_modal
-    row: 0.7999999999999999
+    row: 0.5999999999999999
     height: 1
     width: 12
 createdAt: 2023-08-25T14:50:34.632Z

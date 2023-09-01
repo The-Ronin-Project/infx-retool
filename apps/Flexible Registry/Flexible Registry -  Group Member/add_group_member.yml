@@ -8,7 +8,7 @@ template:
     - queryRefreshTime: ''
     - paginationLimit: ''
     - body: >-
-        [{"key":"value_set_uuid","value":"{{value_set_select.selectedItem.uuid}}"},{"key":"title","value":"{{product_label_input.value}}"},{"key":"ref_range_high","value":"{{ref_range_high_input.value}}"},{"key":"ref_range_low","value":"{{ref_range_low_input.value}}"},{"key":"ucum_ref_units","value":"{{ucum_ref_units_input.value}}"}]
+        [{"key":"value_set_uuid","value":"{{value_set_select.selectedItem.uuid}}"},{"key":"title","value":"{{product_label_input.value}}"},{"key":"ref_range_high","value":"{{transformerRefHigh.value}}"},{"key":"ref_range_low","value":"{{transformerRefHigh.value}}"},{"key":"ucum_ref_units","value":"{{transformerUCUM.value}}"}]
     - lastReceivedFromResourceAt: null
     - queryDisabledMessage: ''
     - servedFromCache: false
@@ -39,7 +39,7 @@ template:
     - showSuccessToaster: true
     - cacheKeyTtl: ''
     - requestSentTimestamp: null
-    - cookies: ''
+    - cookies: '[{"key":"","value":""},{"key":"","value":""}]'
     - metadata: null
     - workflowActionType: null
     - queryRunTime: null
