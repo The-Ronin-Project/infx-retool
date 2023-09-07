@@ -1,0 +1,16 @@
+id: registry_preview
+type: widget
+subtype: JSONExplorerWidget
+template:
+  ordered:
+    - value: '{{ get_registry_preview.data.message}}'
+    - html: false
+    - expandNodes: true
+style:
+  ordered: []
+position2:
+  position2:
+    row: 1
+    height: 9.2
+    width: 12
+createdAt: 2023-09-07T18:39:21.377Z
