@@ -11,7 +11,7 @@ template:
     - showInEditor: false
     - verticalAlign: center
     - tooltipText: ''
-    - value: '# {{metadata.data.title}} Registry'
+    - value: '# {{metadata.data.title}} '
     - disableMarkdown: false
     - overflowType: scroll
     - maintainSpaceWhenHidden: false
