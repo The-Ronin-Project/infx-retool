@@ -7,10 +7,13 @@ template:
     - clickable: false
     - iconAfter: ''
     - submitTargetId: ''
+    - marginType: normal
     - hidden: false
     - text: Add Terminology Version
     - showInEditor: false
-    - tooltipText: ''
+    - tooltipText: >-
+        Version and FHIR uri are required. The combination of version and FHIR
+        uri shall be novel.
     - _disclosedFields:
         array: []
     - styleVariant: solid
@@ -29,8 +32,10 @@ template:
             - waitMs: '0'
     - loading: false
     - loaderPosition: auto
-    - disabled: |+
-        {{fhir_uri.value=="" | date_range.value==""}}
+    - disabled: >+
+        {{fhir_uri.value == "" || date_range.value == "" ||
+        check_existing_row_fhir_uri_and_version.data.count[0] > 0}}
+
 
     - maintainSpaceWhenHidden: false
 style:

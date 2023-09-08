@@ -7,11 +7,13 @@ template:
     - heightType: auto
     - resetAfterSubmit: true
     - submitting: false
+    - marginType: normal
     - hidden: false
     - data:
         object: {}
     - showHeader: true
     - hoistFetching: true
+    - paddingType: normal
     - initialData: null
     - showInEditor: false
     - tooltipText: ''

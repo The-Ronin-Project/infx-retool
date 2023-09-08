@@ -9,9 +9,10 @@ appTemplate:
         object:
           landscapeMode: false
           tabletMode: false
+  queryStatusVisibility: true
   experimentalPerfFeatures:
     object:
       batchCommitModelEnabled: false
-  rootScreen: null
   isFetching: true
-  version: 2.115.3
+  version: 3.4.3
+  markdownLinkBehavior: never
