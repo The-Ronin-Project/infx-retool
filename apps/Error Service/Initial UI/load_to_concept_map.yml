@@ -1,12 +1,14 @@
-id: get_concept_map_with_outstanding_rows
+id: load_to_concept_map
 type: datasource
 subtype: RESTQuery
-resourceName: REST-WithoutResource
+resourceName: a00335cd-bd3b-4d98-8af4-7ff590ce95e8
+resourceDisplayName: INFX Internal Tools API
 template:
   ordered:
     - queryRefreshTime: ''
     - paginationLimit: ''
-    - body: ''
+    - body: >-
+        [{"key":"concept_map_uuid","value":"{{concept_map_overview_table.selectedRow.data.concept_map_uuid}}"}]
     - lastReceivedFromResourceAt: null
     - queryDisabledMessage: ''
     - servedFromCache: false
@@ -16,14 +18,13 @@ template:
     - playgroundQuerySaveId: latest
     - workflowParams: null
     - resourceNameOverride: ''
-    - runWhenModelUpdates: true
+    - runWhenModelUpdates: false
     - paginationPaginationField: ''
     - headers: ''
     - workflowRunId: null
     - showFailureToaster: true
     - paginationEnabled: false
-    - query: >-
-        https://infx-internal.prod.projectronin.io/data_normalization/outstanding_mapping_rows
+    - query: data_normalization/actions/load_outstanding_codes_to_concept_map
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
@@ -66,26 +67,22 @@ template:
     - enableTransformer: false
     - showUpdateSetValueDynamicallyToggle: true
     - runWhenPageLoads: false
-    - transformer: >-
-        // type your code here
-
-        // example: return formatDataAsArray(data).filter(row => row.quantity >
-        20)
-
-        return data
+    - transformer: |-
+        // Query results are available as the `data` variable
+        return formatDataAsArray(data)
     - events: []
-    - queryTimeout: '120000'
+    - queryTimeout: '60000'
     - workflowId: null
     - requireConfirmation: false
-    - type: GET
+    - type: POST
     - queryFailureConditions: ''
     - changesetIsObject: false
     - enableCaching: false
     - allowedGroups: []
     - workflowBlockPluginId: null
-    - bodyType: none
+    - bodyType: json
     - offlineQueryType: None
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2023-06-06T17:49:04.515Z
+createdAt: 2023-09-11T01:01:04.371Z

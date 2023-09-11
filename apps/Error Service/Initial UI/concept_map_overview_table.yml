@@ -12,7 +12,10 @@ template:
     - rowHeight: standard
     - saveChangesDisabled: ''
     - columnTypeProperties:
-        ordered: []
+        ordered:
+          - oldest_new_code_date:
+              ordered:
+                - dateFormat: MMM d, yyyy
     - columnWidths:
         - object:
             id: Resource Type
@@ -20,6 +23,12 @@ template:
         - object:
             id: code
             value: 123
+        - object:
+            id: oldest_new_code_date
+            value: 167.25
+        - object:
+            id: outstanding_code_count
+            value: 140.578125
     - showSummaryFooter: false
     - disableRowSelectInteraction: false
     - columnWidthsMobile: []
@@ -36,7 +45,9 @@ template:
         ordered:
           - Distinct Codeable Concepts: ''
           - Number of Outstanding Cod: ''
+          - oldest_new_code_date: ''
           - Number of Concepts total: ''
+          - outstanding_code_count: ''
           - 'Distinct ': ''
           - Concept Map: ''
           - Past due: ''
@@ -48,6 +59,7 @@ template:
           - AffectedConcept Map: ''
           - Number of Outstanding Coddes: ''
           - 'Number of ': ''
+          - latest_concept_map_version_uuid: ''
           - concept_map_uuid: ''
           - Concept Map Title: ''
           - Concept Ma p: ''
@@ -57,15 +69,18 @@ template:
         ordered: []
     - allowMultiRowSelect: false
     - columnFormats:
-        ordered: []
+        ordered:
+          - oldest_new_code_date: DateDataCell
     - columnRestrictedEditing:
         ordered: []
     - showFilterButton: true
     - _columnVisibility:
         ordered:
           - concept_map_uuid: false
+          - latest_concept_map_version_uuid: false
     - _columnSummaryTypes:
-        ordered: []
+        ordered:
+          - oldest_new_code_date: ''
     - _columnsWithLegacyBackgroundColor:
         set: []
     - showAddRowButton: false
@@ -89,7 +104,7 @@ template:
         - ordered:
             - actionButtonText: Load Outstanding Data to Concept Map
             - actionButtonType: runQuery
-            - actionButtonQuery: ''
+            - actionButtonQuery: load_to_concept_map
             - actionButtonInternalUrlPath: ''
             - actionButtonInternalUrlQuery: ''
             - actionButtonUrl: ''
@@ -112,7 +127,8 @@ template:
     - defaultSortByColumn: ''
     - paginationOffset: 0
     - columnAlignment:
-        ordered: []
+        ordered:
+          - oldest_new_code_date: left
     - columnSummaries:
         object: {}
     - showBoxShadow: false
@@ -132,7 +148,8 @@ template:
         object: {}
     - sortedColumn: ''
     - _columnSummaryValues:
-        ordered: []
+        ordered:
+          - oldest_new_code_date: ''
     - checkboxRowSelect: true
     - _compatibilityMode: false
     - showColumnBorders: false
@@ -178,7 +195,12 @@ template:
     - defaultSelectedRow: first
     - freezeActionButtonColumns: false
     - sort: null
-    - _columns: []
+    - _columns:
+        - concept_map_title
+        - concept_map_uuid
+        - latest_concept_map_version_uuid
+        - outstanding_code_count
+        - oldest_new_code_date
     - sortByRawValue:
         ordered: []
     - calculatedColumns: []
