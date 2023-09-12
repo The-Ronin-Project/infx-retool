@@ -1,4 +1,4 @@
-id: publish_registry3
+id: publish_registry_stage_only
 type: datasource
 subtype: RESTQuery
 resourceName: a00335cd-bd3b-4d98-8af4-7ff590ce95e8
@@ -23,7 +23,7 @@ template:
     - workflowRunId: null
     - showFailureToaster: true
     - paginationEnabled: false
-    - query: registries/{{urlparams.registry_uuid}}/prod
+    - query: registries/{{urlparams.registry_uuid}}/stage
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
@@ -69,7 +69,17 @@ template:
     - transformer: |-
         // Query results are available as the `data` variable
         return formatDataAsArray(data)
-    - events: []
+    - events:
+        - ordered:
+            - event: success
+            - type: datasource
+            - method: trigger
+            - pluginId: publish_registry_prod_only
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
     - queryTimeout: '10000'
     - workflowId: null
     - requireConfirmation: false
@@ -84,4 +94,4 @@ template:
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2023-09-07T18:49:52.546Z
+createdAt: 2023-09-07T18:49:41.949Z

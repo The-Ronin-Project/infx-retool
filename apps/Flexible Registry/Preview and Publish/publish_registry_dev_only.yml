@@ -1,4 +1,4 @@
-id: publish_registry2
+id: publish_registry_dev_only
 type: datasource
 subtype: RESTQuery
 resourceName: a00335cd-bd3b-4d98-8af4-7ff590ce95e8
@@ -23,7 +23,7 @@ template:
     - workflowRunId: null
     - showFailureToaster: true
     - paginationEnabled: false
-    - query: registries/{{urlparams.registry_uuid}}/stage
+    - query: registries/{{urlparams.registry_uuid}}/dev
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
@@ -74,7 +74,7 @@ template:
             - event: success
             - type: datasource
             - method: trigger
-            - pluginId: publish_registry3
+            - pluginId: publish_registry_stage_only
             - targetId: null
             - params:
                 ordered: []
@@ -94,4 +94,4 @@ template:
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2023-09-07T18:49:41.949Z
+createdAt: 2023-08-30T23:10:45.179Z
