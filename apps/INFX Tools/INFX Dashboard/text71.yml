@@ -1,0 +1,36 @@
+id: text71
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - marginType: normal
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: '#### **Error Validation**'
+    - style:
+        ordered:
+          - color: rgb(36, 59, 83)
+          - background: ''
+          - links: ''
+    - _disclosedFields:
+        array: []
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: container32
+    rowGroup: header
+    row: 0.2
+    col: 2
+    height: 0.6
+    width: 10
+createdAt: 2023-09-11T18:05:57.273Z
