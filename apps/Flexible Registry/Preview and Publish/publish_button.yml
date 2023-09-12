@@ -20,7 +20,7 @@ template:
             - event: click
             - type: datasource
             - method: trigger
-            - pluginId: publish_registry
+            - pluginId: publish_registry_dev_only
             - targetId: null
             - params:
                 ordered: []
