@@ -1,4 +1,4 @@
-id: get_registry_preview
+id: get_registry_metadata
 type: datasource
 subtype: RESTQuery
 resourceName: a00335cd-bd3b-4d98-8af4-7ff590ce95e8
@@ -23,7 +23,7 @@ template:
     - workflowRunId: null
     - showFailureToaster: true
     - paginationEnabled: false
-    - query: registries/{{urlparams.registry_uuid}}/pending
+    - query: registries/{{urlparams.registry_uuid}}
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
@@ -84,4 +84,4 @@ template:
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2023-09-07T15:13:25.112Z
+createdAt: 2023-09-14T09:58:32.509Z

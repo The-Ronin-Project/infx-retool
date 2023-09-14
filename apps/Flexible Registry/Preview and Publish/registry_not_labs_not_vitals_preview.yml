@@ -1,0 +1,412 @@
+id: registry_not_labs_not_vitals_preview
+type: widget
+subtype: TableWidget2
+template:
+  ordered:
+    - selectedRowKey: null
+    - _nextAfterCursor: ''
+    - _columnBackgroundColor:
+        ordered:
+          - ffd4a: ''
+          - 37b12: ''
+          - b2171: ''
+          - e28d5: ''
+          - '29492': ''
+          - 82e7f: ''
+          - 09bfc: ''
+    - _defaultSort: null
+    - _clearChangesetOnSave: true
+    - heightType: fixed
+    - disableEdits: false
+    - _rowHeight: small
+    - _columnIds:
+        - b2171
+        - ffd4a
+        - 37b12
+        - '29492'
+        - e28d5
+        - 09bfc
+        - 82e7f
+    - _isSaving: false
+    - _actionIds: []
+    - _clearChangeset: false
+    - caseSensitiveFiltering: false
+    - _limitOffsetRowCount: null
+    - selectedSourceRow: null
+    - _dynamicColumnsEnabled: false
+    - disableSave: false
+    - _columnEditableOptions:
+        ordered:
+          - ffd4a:
+              ordered: []
+          - 37b12:
+              ordered: []
+          - b2171:
+              ordered:
+                - showStepper: true
+          - e28d5:
+              ordered: []
+          - '29492':
+              ordered: []
+          - 82e7f:
+              ordered: []
+          - 09bfc:
+              ordered:
+                - showStepper: true
+    - _toolbarPosition: bottom
+    - _groupByColumns: []
+    - _toolbarButtonLabel:
+        ordered:
+          - 1a: Filter
+          - 3c: Download
+          - 4d: Refresh
+    - _nextBeforeCursor: ''
+    - _persistRowSelection: false
+    - _toolbarButtonIcon:
+        ordered:
+          - 1a: bold/interface-text-formatting-filter-2
+          - 3c: bold/interface-download-button-2
+          - 4d: bold/interface-arrows-round-left
+    - changesetArray:
+        array: []
+    - _toolbarButtonType:
+        ordered:
+          - 1a: filter
+          - 3c: custom
+          - 4d: custom
+    - _columnStatusIndicator:
+        ordered:
+          - ffd4a:
+              ordered: []
+          - 37b12:
+              ordered: []
+          - b2171:
+              ordered: []
+          - e28d5:
+              ordered: []
+          - '29492':
+              ordered: []
+          - 82e7f:
+              ordered: []
+          - 09bfc:
+              ordered: []
+    - _columnOptionList:
+        ordered:
+          - ffd4a:
+              ordered: []
+          - 37b12:
+              ordered: []
+          - b2171:
+              ordered: []
+          - e28d5:
+              ordered: []
+          - '29492':
+              ordered: []
+          - 82e7f:
+              ordered: []
+          - 09bfc:
+              ordered: []
+    - _columnValueOverride:
+        ordered:
+          - ffd4a: '{{ _.startCase(item) }}'
+          - 37b12: ''
+          - b2171: ''
+          - e28d5: ''
+          - '29492': ''
+          - 82e7f: ''
+          - 09bfc: ''
+    - marginType: normal
+    - _showBorder: true
+    - _templatePageSize: null
+    - _dynamicColumnProperties:
+        ordered: []
+    - _showHeader: true
+    - _currentPage: 0
+    - _columnKey:
+        ordered:
+          - ffd4a: productGroupLabel
+          - 37b12: productItemLabel
+          - b2171: sequence
+          - e28d5: valueSetCodeName
+          - '29492': valueSetDisplayTitle
+          - 82e7f: valueSetUuid
+          - 09bfc: valueSetVersion
+    - hidden: >-
+        {{ get_registry_metadata.data.registry_type}} == "labs" || {{
+        get_registry_metadata.data.registry_type}} == "vitals" 
+    - _toolbarButtonIds:
+        - 1a
+        - 3c
+        - 4d
+    - data: '{{ get_registry_preview.data }}'
+    - _cellSelection: none
+    - _serverPaginated: false
+    - _linkedFilterId: null
+    - searchMode: fuzzy
+    - _columnCellTooltip:
+        ordered:
+          - ffd4a: ''
+          - 37b12: ''
+          - b2171: ''
+          - e28d5: ''
+          - '29492': ''
+          - 82e7f: ''
+          - 09bfc: ''
+    - _columnFormat:
+        ordered:
+          - ffd4a: tag
+          - 37b12: string
+          - b2171: decimal
+          - e28d5: string
+          - '29492': string
+          - 82e7f: string
+          - 09bfc: decimal
+    - _cursorCache:
+        object: {}
+    - _calculatedPageSize: null
+    - _primaryKeyColumnId: ''
+    - selectedDataIndex: null
+    - _columnAlignment:
+        ordered:
+          - ffd4a: left
+          - 37b12: left
+          - b2171: right
+          - e28d5: left
+          - '29492': left
+          - 82e7f: left
+          - 09bfc: right
+    - _actionIcon:
+        ordered: []
+    - _columnTooltip:
+        ordered:
+          - ffd4a: ''
+          - 37b12: ''
+          - b2171: ''
+          - e28d5: ''
+          - '29492': ''
+          - 82e7f: ''
+          - 09bfc: ''
+    - _columnIcon:
+        ordered:
+          - ffd4a: ''
+          - 37b12: ''
+          - b2171: ''
+          - e28d5: ''
+          - '29492': ''
+          - 82e7f: ''
+          - 09bfc: ''
+    - _columnCellTooltipMode:
+        ordered:
+          - ffd4a: ''
+          - 37b12: ''
+          - b2171: ''
+          - e28d5: ''
+          - '29492': ''
+          - 82e7f: ''
+          - 09bfc: ''
+    - _pageSize: null
+    - showInEditor: false
+    - selectedSourceRows:
+        array: []
+    - _selectMultipleRowsOnActionClick: 'no'
+    - _columnSortDisabled:
+        ordered:
+          - ffd4a: false
+          - 37b12: false
+          - b2171: false
+          - e28d5: false
+          - '29492': false
+          - 82e7f: false
+          - 09bfc: false
+    - filterStack: null
+    - changesetObject: null
+    - _actionDisabled:
+        ordered: []
+    - _columnReferenceId:
+        ordered:
+          - ffd4a: ''
+          - 37b12: ''
+          - b2171: ''
+          - e28d5: ''
+          - '29492': ''
+          - 82e7f: ''
+          - 09bfc: ''
+    - _dynamicColumnSource:
+        array: []
+    - _rowSelection: single
+    - _columnCaption:
+        ordered:
+          - ffd4a: ''
+          - 37b12: ''
+          - b2171: ''
+          - e28d5: ''
+          - '29492': ''
+          - 82e7f: ''
+          - 09bfc: ''
+    - _dynamicColumnFormatOptions:
+        ordered: []
+    - _dynamicRowHeights: false
+    - _columnFormatOptions:
+        ordered:
+          - ffd4a:
+              ordered:
+                - automaticColors: true
+          - 37b12:
+              ordered: []
+          - b2171:
+              ordered:
+                - showSeparators: true
+                - notation: standard
+          - e28d5:
+              ordered: []
+          - '29492':
+              ordered: []
+          - 82e7f:
+              ordered: []
+          - 09bfc:
+              ordered:
+                - showSeparators: true
+                - notation: standard
+    - _changeset: null
+    - _afterCursor: ''
+    - selectedRowKeys:
+        array: []
+    - _beforeCursor: ''
+    - searchTerm: ''
+    - selectedRows:
+        array: []
+    - _disabledVirtualization: false
+    - _showColumnBorders: false
+    - _columnStatusIndicatorOptions:
+        ordered:
+          - ffd4a:
+              ordered: []
+          - 37b12:
+              ordered: []
+          - b2171:
+              ordered: []
+          - e28d5:
+              ordered: []
+          - '29492':
+              ordered: []
+          - 82e7f:
+              ordered: []
+          - 09bfc:
+              ordered: []
+    - _columnSize:
+        ordered:
+          - '29492': 467
+          - b2171: 98
+          - ffd4a: 135
+          - 37b12: 224
+          - e28d5: 315
+          - 09bfc: 100
+          - 82e7f: 100
+    - _serverPaginationType: limitOffsetBased
+    - _selectSingleRowsOnActionClick: replace
+    - _showFooter: true
+    - _groupedColumnConfig:
+        ordered: []
+    - _virtualizeStartIndex: 0
+    - _toolbarButtonHidden:
+        ordered:
+          - 1a: ''
+          - 3c: ''
+          - 4d: ''
+    - _defaultFilters:
+        ordered: []
+    - events:
+        - ordered:
+            - type: widget
+            - waitMs: '0'
+            - waitType: debounce
+            - event: clickToolbar
+            - method: exportData
+            - pluginId: registry_not_labs_not_vitals_preview
+            - targetId: 3c
+        - ordered:
+            - type: widget
+            - waitMs: '0'
+            - waitType: debounce
+            - event: clickToolbar
+            - method: refresh
+            - pluginId: registry_not_labs_not_vitals_preview
+            - targetId: 4d
+    - _columnEditable:
+        ordered:
+          - ffd4a: ''
+          - 37b12: ''
+          - b2171: ''
+          - e28d5: ''
+          - '29492': ''
+          - 82e7f: ''
+          - 09bfc: ''
+    - pagination: null
+    - selectedDataIndexes:
+        array: []
+    - sortArray:
+        array: []
+    - _selectedCell: null
+    - overflowType: scroll
+    - selectedCell: null
+    - _defaultSelectedRow:
+        ordered:
+          - mode: index
+          - indexType: display
+          - index: 0
+    - _hasNextPage: false
+    - _includeRowInChangesetArray: false
+    - _columnPosition:
+        ordered:
+          - ffd4a: center
+          - 37b12: center
+          - b2171: center
+          - e28d5: center
+          - '29492': center
+          - 82e7f: center
+          - 09bfc: center
+    - _enableSaveActions: true
+    - _columnPlaceholder:
+        ordered:
+          - ffd4a: Select option
+          - 37b12: Enter value
+          - b2171: Enter value
+          - e28d5: Enter value
+          - '29492': Enter value
+          - 82e7f: Enter value
+          - 09bfc: Enter value
+    - _defaultFilterOperator: and
+    - _actionLabel:
+        ordered: []
+    - _virtualizeEndIndex: 0
+    - selectedRow: null
+    - _actionHidden:
+        ordered: []
+    - maintainSpaceWhenHidden: false
+    - _columnHidden:
+        ordered:
+          - ffd4a: ''
+          - 37b12: ''
+          - b2171: ''
+          - e28d5: ''
+          - '29492': ''
+          - 82e7f: ''
+          - 09bfc: ''
+    - _columnLabel:
+        ordered:
+          - ffd4a: Product group label
+          - 37b12: Product item label
+          - b2171: Sequence
+          - e28d5: Value set code name
+          - '29492': Value set display title
+          - 82e7f: Value set UUID
+          - 09bfc: Value set version
+    - _showToolbar: true
+style:
+  ordered: []
+position2:
+  position2:
+    row: 18.400000000000002
+    height: 16.2
+    width: 9
+createdAt: 2023-09-14T10:13:24.979Z
