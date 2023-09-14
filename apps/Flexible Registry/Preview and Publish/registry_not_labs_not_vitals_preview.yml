@@ -295,12 +295,12 @@ template:
               ordered: []
     - _columnSize:
         ordered:
-          - '29492': 467
+          - '29492': 415
           - b2171: 98
           - ffd4a: 135
-          - 37b12: 224
+          - 37b12: 177
           - e28d5: 315
-          - 09bfc: 100
+          - 09bfc: 121
           - 82e7f: 100
     - _serverPaginationType: limitOffsetBased
     - _selectSingleRowsOnActionClick: replace
@@ -406,7 +406,7 @@ style:
   ordered: []
 position2:
   position2:
-    row: 18.400000000000002
+    row: 18.6
     height: 16.2
-    width: 9
+    width: 12
 createdAt: 2023-09-14T10:13:24.979Z
