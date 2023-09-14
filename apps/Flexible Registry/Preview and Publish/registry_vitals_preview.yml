@@ -163,7 +163,7 @@ template:
           - a286f: productItemLabel
           - a5df1: valueSetCodeName
           - 637bf: refRangeLow
-    - hidden: '{{ get_registry_metadata.data.registry_type}} != "vitals"'
+    - hidden: '{{ get_registry_metadata.data.registry_type != "vitals"}} '
     - _toolbarButtonIds:
         - 1a
         - 3c
@@ -188,7 +188,7 @@ template:
     - _columnFormat:
         ordered:
           - 467c0: string
-          - ef58f: percent
+          - ef58f: decimal
           - e9f2f: decimal
           - b825c: string
           - cda2b: tag
@@ -196,7 +196,7 @@ template:
           - ffff4: string
           - a286f: string
           - a5df1: string
-          - 637bf: percent
+          - 637bf: decimal
     - _cursorCache:
         object: {}
     - _calculatedPageSize: null

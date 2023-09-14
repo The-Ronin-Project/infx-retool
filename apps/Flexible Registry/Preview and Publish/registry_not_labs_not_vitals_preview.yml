@@ -132,8 +132,8 @@ template:
           - 82e7f: valueSetUuid
           - 09bfc: valueSetVersion
     - hidden: >-
-        {{ get_registry_metadata.data.registry_type}} == "labs" || {{
-        get_registry_metadata.data.registry_type}} == "vitals" 
+        {{ get_registry_metadata.data.registry_type == "labs" ||
+        get_registry_metadata.data.registry_type == "vitals" }}
     - _toolbarButtonIds:
         - 1a
         - 3c
