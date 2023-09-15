@@ -1,4 +1,4 @@
-id: get_users_to_assign
+id: save_all_for_discussion2
 type: datasource
 subtype: SqlQueryUnified
 resourceName: dc8029bc-3980-4836-841e-776c64eeca49
@@ -12,18 +12,21 @@ template:
     - queryDisabledMessage: ''
     - servedFromCache: false
     - offlineUserQueryInputs: ''
-    - successMessage: ''
+    - successMessage: Concepts saved for discussion.
     - queryDisabled: ''
     - playgroundQuerySaveId: latest
     - workflowParams: null
     - resourceNameOverride: ''
-    - runWhenModelUpdates: true
+    - runWhenModelUpdates: false
     - workflowRunId: null
     - showFailureToaster: true
-    - query: |-
-        select distinct first_last_name, uuid as user_uuid 
-        from project_management.user
-        order by first_last_name ASC
+    - query: >-
+        update concept_maps.concept_relationship
+
+        set review_comment = {{review_comment_all.value}}
+
+        where cast(uuid as text) =
+        ANY({{review_queue.selectedRow.data.map(x=>x.mapping_uuid)}})
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
@@ -63,7 +66,7 @@ template:
     - changeset: ''
     - rawData: null
     - queryTriggerDelay: '0'
-    - resourceTypeOverride: ''
+    - resourceTypeOverride: null
     - watchedParams: []
     - enableErrorTransformer: false
     - enableBulkUpdates: false
@@ -82,7 +85,37 @@ template:
         20)
 
         return data
-    - events: []
+    - events:
+        - ordered:
+            - event: success
+            - type: datasource
+            - method: trigger
+            - pluginId: update_reviewer_assignment
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: success
+            - type: widget
+            - method: clearValue
+            - pluginId: review_comment_all
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: success
+            - type: datasource
+            - method: trigger
+            - pluginId: populate_review_queue
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
     - tableName: ''
     - queryTimeout: '10000'
     - workflowId: null
@@ -99,5 +132,5 @@ template:
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2023-04-07T15:40:34.771Z
+createdAt: 2023-08-29T17:40:56.310Z
 folder: ready_for_review_tab

@@ -71,7 +71,7 @@ template:
           - additional_data: ℹ️
           - first_last_name: Mapper
           - count_of_resources_affected: Resource Count
-          - author: Author
+          - author: Mapper
           - code: Source Code
           - target_concept_code: Target Code
           - assigned_mapper: Assigned Mapper
@@ -123,7 +123,7 @@ template:
           - first_last_name: true
           - mapping_group: false
           - system: false
-          - assigned_mapper: true
+          - assigned_mapper: false
           - comments: true
           - last_name: false
           - map_status: false
@@ -160,12 +160,30 @@ template:
         - ordered:
             - actionButtonText: Return to mapper's queue
             - actionButtonType: runQuery
-            - actionButtonQuery: discussion_reject_part_1
+            - actionButtonQuery: discussion_return_to_mapper
             - actionButtonInternalUrlPath: ''
             - actionButtonInternalUrlQuery: ''
             - actionButtonUrl: ''
             - actionButtonNewWindow: false
-            - actionButtonDisabled: ''
+            - actionButtonDisabled: '{{currentRow.target_concept_code == null}}'
+        - ordered:
+            - actionButtonText: Reject
+            - actionButtonType: runQuery
+            - actionButtonQuery: reject_discussion
+            - actionButtonInternalUrlPath: ''
+            - actionButtonInternalUrlQuery: ''
+            - actionButtonUrl: ''
+            - actionButtonNewWindow: false
+            - actionButtonDisabled: '{{!currentRow.target_concept_code == null}}'
+        - ordered:
+            - actionButtonText: Approve
+            - actionButtonType: runQuery
+            - actionButtonQuery: approve_discussion
+            - actionButtonInternalUrlPath: ''
+            - actionButtonInternalUrlQuery: ''
+            - actionButtonUrl: ''
+            - actionButtonNewWindow: false
+            - actionButtonDisabled: '{{!currentRow.target_concept_code == null}}'
     - actionButtonSelectsRow: true
     - selectRowByDefault: true
     - defaultSortByColumn: ''

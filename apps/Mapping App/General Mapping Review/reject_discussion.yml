@@ -1,4 +1,4 @@
-id: discussion_reject_part_2
+id: reject_discussion
 type: datasource
 subtype: SqlQueryUnified
 resourceName: dc8029bc-3980-4836-841e-776c64eeca49
@@ -20,12 +20,9 @@ template:
     - runWhenModelUpdates: false
     - workflowRunId: null
     - showFailureToaster: true
-    - query: >
+    - query: |-
         update concept_maps.concept_relationship
-
-        set review_status = 'rejected', review_comment =
-        {{review_comment_all.value}}, reviewed_by = {{current_user.fullName}}
-
+        set review_status = 'rejected', reviewed_by = {{current_user.fullName}}
         where source_concept_uuid = {{discussion_table.selectedRow.data.uuid}}
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
@@ -39,7 +36,7 @@ template:
     - importedQueryInputs:
         ordered: []
     - isImported: false
-    - showSuccessToaster: true
+    - showSuccessToaster: false
     - dataArray: []
     - cacheKeyTtl: ''
     - filterBy: ''
@@ -78,24 +75,10 @@ template:
     - showUpdateSetValueDynamicallyToggle: true
     - bulkUpdatePrimaryKey: ''
     - runWhenPageLoads: false
-    - transformer: >-
-        // type your code here
-
-        // example: return formatDataAsArray(data).filter(row => row.quantity >
-        20)
-
-        return data
-    - events:
-        - ordered:
-            - event: success
-            - type: datasource
-            - method: trigger
-            - pluginId: discussion_concepts
-            - targetId: null
-            - params:
-                ordered: []
-            - waitType: debounce
-            - waitMs: '0'
+    - transformer: |-
+        // Query results are available as the `data` variable
+        return formatDataAsArray(data)
+    - events: []
     - tableName: ''
     - queryTimeout: '10000'
     - workflowId: null
@@ -112,5 +95,5 @@ template:
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2022-12-09T00:06:42.685Z
+createdAt: 2023-09-12T20:41:51.870Z
 folder: concepts_for_discussion

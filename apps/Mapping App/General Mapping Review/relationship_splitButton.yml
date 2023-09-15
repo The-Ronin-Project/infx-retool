@@ -31,7 +31,9 @@ template:
         - ''
     - selectedItem: null
     - showInEditor: false
-    - tooltipText: ''
+    - tooltipText: >-
+        This action is disabled when a target code No map is included in the
+        selection.
     - style:
         ordered:
           - background: rgb(159, 179, 200)
@@ -102,7 +104,7 @@ template:
         - 3d96e
     - overlayMaxHeight: 375
     - loading: false
-    - disabled: false
+    - disabled: '{{transformerHasNoMap.value}}'
     - _labels:
         - Equivalent
         - Source Is Broader Than Target
@@ -123,7 +125,7 @@ position2:
     container: tabbedContainer1
     subcontainer: '2e213'
     row: 1.6
-    col: 6
+    col: 4
     height: 1
     width: 2
 createdAt: 2023-05-02T19:50:37.570Z

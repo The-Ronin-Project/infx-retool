@@ -1,0 +1,13 @@
+id: transformerHasNoMap
+type: function
+subtype: Function
+template:
+  ordered:
+    - funcBody: >
+        const hasNoMap = {{ review_queue.selectedRow.data }}.some(row =>
+        row.target_concept_code === 'No map');
+
+        return hasNoMap;
+    - value: ''
+createdAt: 2023-09-05T20:05:14.701Z
+folder: ready_for_review_tab

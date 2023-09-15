@@ -12,7 +12,7 @@ template:
     - queryDisabledMessage: ''
     - servedFromCache: false
     - offlineUserQueryInputs: ''
-    - successMessage: ''
+    - successMessage: Concepts have been rejected!
     - queryDisabled: ''
     - playgroundQuerySaveId: latest
     - workflowParams: null
@@ -91,7 +91,7 @@ template:
             - event: success
             - type: datasource
             - method: trigger
-            - pluginId: populate_review_queue
+            - pluginId: set_user_as_assigned_reviewer
             - targetId: null
             - params:
                 ordered: []
@@ -112,6 +112,16 @@ template:
             - type: widget
             - method: clearValue
             - pluginId: review_comment_all
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: success
+            - type: datasource
+            - method: trigger
+            - pluginId: populate_review_queue
             - targetId: null
             - params:
                 ordered: []

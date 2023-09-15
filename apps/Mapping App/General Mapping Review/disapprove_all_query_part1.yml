@@ -23,7 +23,7 @@ template:
     - query: >-
         update concept_maps.source_concept
 
-        set map_status='pending'
+        set map_status='pending', reason_for_no_map=''
 
         where cast(uuid as text) =
         ANY({{review_queue.selectedRow.data.map(x=>x.source_concept_uuid)}})
@@ -39,7 +39,7 @@ template:
     - importedQueryInputs:
         ordered: []
     - isImported: false
-    - showSuccessToaster: true
+    - showSuccessToaster: false
     - dataArray: []
     - cacheKeyTtl: ''
     - filterBy: ''
@@ -86,6 +86,26 @@ template:
 
         return data
     - events:
+        - ordered:
+            - event: success
+            - type: datasource
+            - method: trigger
+            - pluginId: get_current_user_uuid
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: success
+            - type: widget
+            - method: clearValue
+            - pluginId: review_comment_all
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
         - ordered:
             - event: success
             - type: datasource

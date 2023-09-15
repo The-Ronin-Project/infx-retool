@@ -62,11 +62,14 @@ template:
             id: previous_version_context
             value: 153
         - object:
-            id: additional_data
-            value: 343
-        - object:
             id: assigned_reviewer
             value: 145
+        - object:
+            id: additional_data
+            value: 335
+        - object:
+            id: reason_for_no_map
+            value: 137
     - showSummaryFooter: false
     - disableRowSelectInteraction: false
     - columnWidthsMobile: []
@@ -179,7 +182,7 @@ template:
           - terminology_version_uuid: false
           - mapping_group: false
           - system: false
-          - reason_for_no_map: false
+          - reason_for_no_map: true
           - target_concept_code: true
           - assigned_mapper: false
           - source_system: false
@@ -329,6 +332,7 @@ template:
         - relationship_system_uuid
         - special_use
         - mapping_comments
+        - reason_for_no_map
         - source_comments
         - uuid
         - target_concept_system
@@ -347,16 +351,24 @@ template:
         - assigned_mapper
         - assigned_reviewer
         - no_map
-        - reason_for_no_map
         - mapping_group
         - mapping_uuid
         - review_comment
         - source_code_uuid
         - reviewed_by
-        - resource_count
         - source_system
         - terminology_version_uuid
         - count_of_resources_affected
+        - first_last_name
+        - previous_version_context
+        - custom_terminology_uuid
+        - save_for_discussion
+        - first_name
+        - last_name
+        - depends_on_property
+        - depends_on_system
+        - depends_on_value
+        - depends_on_display
     - sortByRawValue:
         ordered: []
     - calculatedColumns: []

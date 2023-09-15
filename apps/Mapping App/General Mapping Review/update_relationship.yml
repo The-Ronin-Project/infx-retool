@@ -13,7 +13,7 @@ template:
     - queryDisabledMessage: ''
     - servedFromCache: false
     - offlineUserQueryInputs: ''
-    - successMessage: ''
+    - successMessage: Relationship updated.
     - queryDisabled: ''
     - playgroundQuerySaveId: latest
     - workflowParams: null

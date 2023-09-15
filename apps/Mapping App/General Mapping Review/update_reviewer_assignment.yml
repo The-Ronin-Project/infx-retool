@@ -41,7 +41,7 @@ template:
     - importedQueryInputs:
         ordered: []
     - isImported: false
-    - showSuccessToaster: true
+    - showSuccessToaster: false
     - dataArray: []
     - cacheKeyTtl: ''
     - filterBy: ''
@@ -93,16 +93,6 @@ template:
             - type: datasource
             - method: trigger
             - pluginId: populate_review_queue
-            - targetId: null
-            - params:
-                ordered: []
-            - waitType: debounce
-            - waitMs: '0'
-        - ordered:
-            - event: success
-            - type: util
-            - method: confetti
-            - pluginId: ''
             - targetId: null
             - params:
                 ordered: []

@@ -1,4 +1,4 @@
-id: populate_no_map_table
+id: save_all_for_discussion
 type: datasource
 subtype: SqlQueryUnified
 resourceName: dc8029bc-3980-4836-841e-776c64eeca49
@@ -17,29 +17,16 @@ template:
     - playgroundQuerySaveId: latest
     - workflowParams: null
     - resourceNameOverride: ''
-    - runWhenModelUpdates: true
+    - runWhenModelUpdates: false
     - workflowRunId: null
     - showFailureToaster: true
     - query: >-
-        select pmu.first_last_name as assigned_mapper, sc.uuid, sc.code,
-        sc.display, sc.comments, sc.map_status, sc.additional_context,
-        sc.reason_for_no_map, ctc.additional_data,
-        ctc.additional_data->>'count_of_resources_affected' as
-        count_of_resources_affected from concept_maps.source_concept as sc
+        update concept_maps.source_concept
 
-        join project_management.user as pmu on sc.assigned_mapper = pmu.uuid
+        set save_for_discussion = TRUE
 
-        left join custom_terminologies.code ctc on sc.custom_terminology_uuid =
-        ctc.uuid where concept_map_version_uuid =
-        {{urlparams.concept_map_version_uuid}}
-
-        and sc.no_map = True
-
-        and sc.map_status = 'ready for review'
-
-        and sc.reason_for_no_map != 'Save for discusion' 
-
-        and sc.reason_for_no_map != 'Save for discussion'
+        where cast(uuid as text) =
+        ANY({{review_queue.selectedRow.data.map(x=>x.source_concept_uuid)}})
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
@@ -52,7 +39,7 @@ template:
     - importedQueryInputs:
         ordered: []
     - isImported: false
-    - showSuccessToaster: true
+    - showSuccessToaster: false
     - dataArray: []
     - cacheKeyTtl: ''
     - filterBy: ''
@@ -98,7 +85,17 @@ template:
         20)
 
         return data
-    - events: []
+    - events:
+        - ordered:
+            - event: success
+            - type: datasource
+            - method: trigger
+            - pluginId: save_all_for_discussion2
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
     - tableName: ''
     - queryTimeout: '10000'
     - workflowId: null
@@ -115,5 +112,5 @@ template:
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2022-12-07T18:44:03.623Z
-folder: no_map_concepts_tab
+createdAt: 2022-11-09T00:29:41.851Z
+folder: ready_for_review_tab
