@@ -35,7 +35,7 @@ template:
     - importedQueryInputs:
         ordered: []
     - isImported: false
-    - showSuccessToaster: true
+    - showSuccessToaster: false
     - dataArray: []
     - cacheKeyTtl: ''
     - filterBy: ''
@@ -86,27 +86,7 @@ template:
             - event: success
             - type: datasource
             - method: trigger
-            - pluginId: load_mapped_targets
-            - targetId: null
-            - params:
-                ordered: []
-            - waitType: debounce
-            - waitMs: '0'
-        - ordered:
-            - event: success
-            - type: datasource
-            - method: trigger
-            - pluginId: load_queue
-            - targetId: null
-            - params:
-                ordered: []
-            - waitType: debounce
-            - waitMs: '0'
-        - ordered:
-            - event: success
-            - type: datasource
-            - method: trigger
-            - pluginId: load_rejected_queue
+            - pluginId: delete_mapping2
             - targetId: null
             - params:
                 ordered: []

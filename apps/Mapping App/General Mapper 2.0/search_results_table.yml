@@ -35,11 +35,11 @@ template:
             id: __retool__action_list
             value: 141.875
         - object:
-            id: display
-            value: 304.78125
-        - object:
             id: code
             value: 167.5625
+        - object:
+            id: display
+            value: 479.78125
     - showSummaryFooter: false
     - disableRowSelectInteraction: false
     - columnWidthsMobile: []
@@ -142,7 +142,8 @@ template:
                 {{select_rel.value == null ||
                 load_mapped_targets.dataArray.filter(x => x.review_status[0] ===
                 null).map(x =>
-                x.target_concept_code[0]).includes(currentRow.code)}}
+                x.target_concept_code[0]).includes(currentRow.code) ||
+                currentRow.code === 'No map'}}
     - actionButtonSelectsRow: true
     - selectRowByDefault: true
     - defaultSortByColumn: ''

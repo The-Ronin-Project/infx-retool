@@ -25,7 +25,16 @@ template:
         ordered: []
     - onRowAdded: ''
     - columnHeaderNames:
-        ordered: []
+        ordered:
+          - display: Display
+          - reviewer_name: Reviewer
+          - mapping_comments: Mapping Comments
+          - author: Mapper
+          - target_concept_code: Target Concept Code
+          - review_comment: Review Comment
+          - review_status: Review Status
+          - target_concept_display: Target Concept Display
+          - reviewed_by: reviewed_by
     - alwaysShowPaginator: false
     - columnColors:
         ordered:
@@ -89,6 +98,7 @@ template:
           - uuid: false
           - concept_map_version_uuid: false
           - no_map: false
+          - reviewed_by: false
     - _columnSummaryTypes:
         ordered: []
     - _columnsWithLegacyBackgroundColor:

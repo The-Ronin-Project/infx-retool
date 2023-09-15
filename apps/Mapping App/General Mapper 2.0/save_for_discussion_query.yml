@@ -1,4 +1,4 @@
-id: load_rejected_queue
+id: save_for_discussion_query
 type: datasource
 subtype: SqlQueryUnified
 resourceName: dc8029bc-3980-4836-841e-776c64eeca49
@@ -17,26 +17,16 @@ template:
     - playgroundQuerySaveId: latest
     - workflowParams: null
     - resourceNameOverride: ''
-    - runWhenModelUpdates: true
+    - runWhenModelUpdates: false
     - workflowRunId: null
     - showFailureToaster: true
     - query: >-
-        select source_concept.* from concept_maps.source_concept
+        update concept_maps.source_concept
 
-        join concept_maps.concept_relationship
+        set save_for_discussion = true
 
-        on concept_relationship.source_concept_uuid = source_concept.uuid
-
-        where assigned_mapper={{user_select.value}}
-
-        and
-        source_concept.concept_map_version_uuid={{urlparams.concept_map_version_uuid}}
-
-        and source_concept.save_for_discussion = FALSE
-
-        and concept_relationship.review_status = 'rejected'
-
-        order by code ASC
+        where uuid IN ({{ mapping_queue.selectedRow.data.map(data =>
+        data.uuid).join(", ") }})
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
@@ -49,7 +39,7 @@ template:
     - importedQueryInputs:
         ordered: []
     - isImported: false
-    - showSuccessToaster: true
+    - showSuccessToaster: false
     - dataArray: []
     - cacheKeyTtl: ''
     - filterBy: ''
@@ -88,19 +78,25 @@ template:
     - showUpdateSetValueDynamicallyToggle: true
     - bulkUpdatePrimaryKey: ''
     - runWhenPageLoads: false
-    - transformer: >-
-        // type your code here
-
-        // example: return formatDataAsArray(data).filter(row => row.quantity >
-        20)
-
-        return data
+    - transformer: |-
+        // Query results are available as the `data` variable
+        return formatDataAsArray(data)
     - events:
         - ordered:
             - event: success
             - type: datasource
             - method: trigger
-            - pluginId: combined_queue_query
+            - pluginId: load_queue
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: success
+            - type: widget
+            - method: clearValue
+            - pluginId: mapping_comments
             - targetId: null
             - params:
                 ordered: []
@@ -122,4 +118,4 @@ template:
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2022-10-20T23:18:34.652Z
+createdAt: 2023-09-11T21:52:46.515Z

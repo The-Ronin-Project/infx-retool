@@ -21,8 +21,6 @@ template:
         switch(mapping_group_select.value) {
           case 'rejected':
             return load_rejected_queue.data;
-          case 'no_map_rejected':
-            return load_no_map_rejected_queue.data;
           default:
             return load_queue.data;
         }

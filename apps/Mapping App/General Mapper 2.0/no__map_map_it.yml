@@ -1,14 +1,19 @@
-id: load_no_map_rejected_queue
+id: no__map_map_it
 type: datasource
-subtype: SqlQueryUnified
-resourceName: dc8029bc-3980-4836-841e-776c64eeca49
-resourceDisplayName: Clinical Content PostgresSQL DB
+subtype: RESTQuery
+resourceName: a00335cd-bd3b-4d98-8af4-7ff590ce95e8
+resourceDisplayName: INFX Internal Tools API
 template:
   ordered:
     - queryRefreshTime: ''
-    - records: ''
+    - paginationLimit: ''
+    - body: >-
+        [{"key":"source_concept_uuids","value":"{{mapping_queue.selectedRow.data.map(data
+        =>
+        data.uuid)}}"},{"key":"relationship_code_uuid","value":"\"dca7c556-82d9-4433-8971-0b7edb9c9661\""},{"key":"target_concept_code","value":"\"No
+        map\""},{"key":"target_concept_display","value":"\"No matching
+        concept\""},{"key":"target_concept_terminology_version_uuid","value":"\"93ec9286-17cf-4837-a4dc-218ce3015de6\""},{"key":"author","value":"{{current_user.fullName}}"},{"key":"mapping_comments","value":"{{mapping_comments.value}}"},{"key":"","value":""}]
     - lastReceivedFromResourceAt: null
-    - databasePasswordOverride: ''
     - queryDisabledMessage: ''
     - servedFromCache: false
     - offlineUserQueryInputs: ''
@@ -17,49 +22,31 @@ template:
     - playgroundQuerySaveId: latest
     - workflowParams: null
     - resourceNameOverride: ''
-    - runWhenModelUpdates: true
+    - runWhenModelUpdates: false
+    - paginationPaginationField: ''
+    - headers: '[]'
     - workflowRunId: null
     - showFailureToaster: true
-    - query: >-
-        select source_concept.* from concept_maps.source_concept
-
-        where assigned_mapper={{user_select.value}}
-
-        and
-        source_concept.concept_map_version_uuid={{urlparams.concept_map_version_uuid}}
-
-        and no_map is not true
-
-        and source_concept.map_status = 'no_map_rejected'
-
-        or source_concept.map_status = 'no map rejected'
-
-        order by code ASC
+    - paginationEnabled: false
+    - query: mappings/
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
     - workflowRunBodyType: raw
     - privateParams: []
     - runWhenPageLoadsDelay: ''
-    - warningCodes: []
     - data: null
-    - recordId: ''
     - importedQueryInputs:
         ordered: []
     - isImported: false
-    - showSuccessToaster: true
-    - dataArray: []
+    - showSuccessToaster: false
     - cacheKeyTtl: ''
-    - filterBy: ''
     - requestSentTimestamp: null
-    - databaseHostOverride: ''
+    - cookies: ''
     - metadata: null
     - workflowActionType: null
-    - editorMode: sql
     - queryRunTime: null
-    - actionType: ''
     - changesetObject: ''
-    - shouldUseLegacySql: false
     - errorTransformer: >-
         // The variable 'data' allows you to reference the request's data in the
         transformer. 
@@ -68,7 +55,6 @@ template:
 
         return data.error
     - finished: null
-    - databaseNameOverride: ''
     - confirmationMessage: null
     - isFetching: false
     - changeset: ''
@@ -77,14 +63,13 @@ template:
     - resourceTypeOverride: null
     - watchedParams: []
     - enableErrorTransformer: false
-    - enableBulkUpdates: false
     - showLatestVersionUpdatedWarning: false
+    - paginationDataField: ''
     - timestamp: 0
     - importedQueryDefaults:
         ordered: []
     - enableTransformer: false
     - showUpdateSetValueDynamicallyToggle: true
-    - bulkUpdatePrimaryKey: ''
     - runWhenPageLoads: false
     - transformer: >-
         // type your code here
@@ -95,29 +80,48 @@ template:
         return data
     - events:
         - ordered:
+            - method: trigger
+            - enabled: ''
+            - params:
+                ordered: []
+            - targetId: null
+            - pluginId: load_queue
+            - waitType: debounce
             - event: success
             - type: datasource
-            - method: trigger
-            - pluginId: combined_queue_query
+            - waitMs: '0'
+        - ordered:
+            - event: success
+            - type: widget
+            - method: clearValue
+            - pluginId: mapping_comments
             - targetId: null
             - params:
                 ordered: []
             - waitType: debounce
             - waitMs: '0'
-    - tableName: ''
+        - ordered:
+            - event: success
+            - type: widget
+            - method: selectRow
+            - pluginId: mapping_queue
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
     - queryTimeout: '10000'
     - workflowId: null
     - requireConfirmation: false
+    - type: POST
     - queryFailureConditions: ''
     - changesetIsObject: false
     - enableCaching: false
     - allowedGroups: []
     - workflowBlockPluginId: null
-    - databaseUsernameOverride: ''
-    - shouldEnableBatchQuerying: false
-    - doNotThrowOnNoOp: false
+    - bodyType: json
     - offlineQueryType: None
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2022-12-14T17:48:39.186Z
+createdAt: 2023-08-29T16:31:27.655Z

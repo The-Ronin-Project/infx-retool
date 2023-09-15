@@ -1,4 +1,4 @@
-id: load_rejected_queue
+id: delete_mapping2
 type: datasource
 subtype: SqlQueryUnified
 resourceName: dc8029bc-3980-4836-841e-776c64eeca49
@@ -17,26 +17,13 @@ template:
     - playgroundQuerySaveId: latest
     - workflowParams: null
     - resourceNameOverride: ''
-    - runWhenModelUpdates: true
+    - runWhenModelUpdates: false
     - workflowRunId: null
     - showFailureToaster: true
-    - query: >-
-        select source_concept.* from concept_maps.source_concept
-
-        join concept_maps.concept_relationship
-
-        on concept_relationship.source_concept_uuid = source_concept.uuid
-
-        where assigned_mapper={{user_select.value}}
-
-        and
-        source_concept.concept_map_version_uuid={{urlparams.concept_map_version_uuid}}
-
-        and source_concept.save_for_discussion = FALSE
-
-        and concept_relationship.review_status = 'rejected'
-
-        order by code ASC
+    - query: |-
+        update concept_maps.source_concept
+        set reason_for_no_map = ''
+        where uuid={{mapped_targets.selectedRow.data.source_concept_uuid}}
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
@@ -49,7 +36,7 @@ template:
     - importedQueryInputs:
         ordered: []
     - isImported: false
-    - showSuccessToaster: true
+    - showSuccessToaster: false
     - dataArray: []
     - cacheKeyTtl: ''
     - filterBy: ''
@@ -100,7 +87,27 @@ template:
             - event: success
             - type: datasource
             - method: trigger
-            - pluginId: combined_queue_query
+            - pluginId: load_mapped_targets
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: success
+            - type: datasource
+            - method: trigger
+            - pluginId: load_queue
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: success
+            - type: datasource
+            - method: trigger
+            - pluginId: load_rejected_queue
             - targetId: null
             - params:
                 ordered: []
@@ -122,4 +129,4 @@ template:
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2022-10-20T23:18:34.652Z
+createdAt: 2023-09-05T19:47:11.369Z

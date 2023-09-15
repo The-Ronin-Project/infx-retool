@@ -1,4 +1,4 @@
-id: load_rejected_queue
+id: set_reason_not_enough_information
 type: datasource
 subtype: SqlQueryUnified
 resourceName: dc8029bc-3980-4836-841e-776c64eeca49
@@ -17,26 +17,16 @@ template:
     - playgroundQuerySaveId: latest
     - workflowParams: null
     - resourceNameOverride: ''
-    - runWhenModelUpdates: true
+    - runWhenModelUpdates: false
     - workflowRunId: null
     - showFailureToaster: true
     - query: >-
-        select source_concept.* from concept_maps.source_concept
+        update concept_maps.source_concept
 
-        join concept_maps.concept_relationship
+        set reason_for_no_map = 'Not enough information'
 
-        on concept_relationship.source_concept_uuid = source_concept.uuid
-
-        where assigned_mapper={{user_select.value}}
-
-        and
-        source_concept.concept_map_version_uuid={{urlparams.concept_map_version_uuid}}
-
-        and source_concept.save_for_discussion = FALSE
-
-        and concept_relationship.review_status = 'rejected'
-
-        order by code ASC
+        where uuid IN ({{ mapping_queue.selectedRow.data.map(data =>
+        data.uuid).join(", ") }})
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
@@ -49,7 +39,7 @@ template:
     - importedQueryInputs:
         ordered: []
     - isImported: false
-    - showSuccessToaster: true
+    - showSuccessToaster: false
     - dataArray: []
     - cacheKeyTtl: ''
     - filterBy: ''
@@ -76,7 +66,7 @@ template:
     - changeset: ''
     - rawData: null
     - queryTriggerDelay: '0'
-    - resourceTypeOverride: null
+    - resourceTypeOverride: ''
     - watchedParams: []
     - enableErrorTransformer: false
     - enableBulkUpdates: false
@@ -88,19 +78,15 @@ template:
     - showUpdateSetValueDynamicallyToggle: true
     - bulkUpdatePrimaryKey: ''
     - runWhenPageLoads: false
-    - transformer: >-
-        // type your code here
-
-        // example: return formatDataAsArray(data).filter(row => row.quantity >
-        20)
-
-        return data
+    - transformer: |-
+        // Query results are available as the `data` variable
+        return formatDataAsArray(data)
     - events:
         - ordered:
             - event: success
             - type: datasource
             - method: trigger
-            - pluginId: combined_queue_query
+            - pluginId: no__map_map_it
             - targetId: null
             - params:
                 ordered: []
@@ -122,4 +108,4 @@ template:
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2022-10-20T23:18:34.652Z
+createdAt: 2023-08-22T03:44:03.790Z
