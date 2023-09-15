@@ -15,33 +15,21 @@ template:
     - successMessage: ''
     - queryDisabled: ''
     - playgroundQuerySaveId: latest
+    - workflowParams: null
     - resourceNameOverride: ''
     - runWhenModelUpdates: true
+    - workflowRunId: null
     - showFailureToaster: true
-    - query: >-
-        select count(*)
-
-        from concept_maps.source_concept
-
-        where concept_map_version_uuid={{urlparams.concept_map_version_uuid}}
-
-        and no_map = 'true'
-
-        and reason_for_no_map != 'hold for discussion'
-
-        and uuid not in (select sc.uuid from concept_maps.source_concept sc
-
-        left join concept_maps.concept_relationship cr on sc.uuid =
-        cr.source_concept_uuid
-
+    - query: |-
+        select count(*) from concept_maps.concept_relationship cr
+        join concept_maps.source_concept sc on cr.source_concept_uuid=sc.uuid 
         where sc.concept_map_version_uuid={{urlparams.concept_map_version_uuid}}
-
-        and (sc.reason_for_no_map = 'Save for discussion' or
-        sc.reason_for_no_map = 'Save for discusion' or cr.review_status = 'hold
-        for discussion'))
+        and cr.target_concept_code = 'No map'
+        and sc.save_for_discussion = FALSE
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
+    - workflowRunBodyType: raw
     - privateParams: []
     - runWhenPageLoadsDelay: ''
     - warningCodes: []
@@ -57,6 +45,7 @@ template:
     - requestSentTimestamp: null
     - databaseHostOverride: ''
     - metadata: null
+    - workflowActionType: null
     - editorMode: sql
     - queryRunTime: null
     - actionType: ''
@@ -98,11 +87,13 @@ template:
     - events: []
     - tableName: ''
     - queryTimeout: '10000'
+    - workflowId: null
     - requireConfirmation: false
     - queryFailureConditions: ''
     - changesetIsObject: false
     - enableCaching: false
     - allowedGroups: []
+    - workflowBlockPluginId: null
     - databaseUsernameOverride: ''
     - shouldEnableBatchQuerying: false
     - doNotThrowOnNoOp: false

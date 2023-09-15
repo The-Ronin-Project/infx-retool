@@ -5,6 +5,7 @@ template:
   ordered:
     - heightType: auto
     - horizontalAlign: left
+    - marginType: normal
     - hidden: '{{i!=0}}'
     - imageWidth: fit
     - showInEditor: false
@@ -27,5 +28,4 @@ position2:
     row: 2.220446049250313e-16
     col: 3
     height: 0.6
-    width: 3
 createdAt: 2023-01-20T22:52:24.877Z

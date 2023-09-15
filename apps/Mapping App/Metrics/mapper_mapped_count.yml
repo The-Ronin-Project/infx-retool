@@ -1,4 +1,4 @@
-id: reviewer_no_assigments_count
+id: mapper_mapped_count
 type: datasource
 subtype: SqlQueryUnified
 resourceName: dc8029bc-3980-4836-841e-776c64eeca49
@@ -15,34 +15,28 @@ template:
     - successMessage: ''
     - queryDisabled: ''
     - playgroundQuerySaveId: latest
+    - workflowParams: null
     - resourceNameOverride: ''
     - runWhenModelUpdates: true
+    - workflowRunId: null
     - showFailureToaster: true
-    - query: >-
-        select cr.reviewed_by, count(cr.reviewed_by) from
-        concept_maps.source_concept sc 
+    - query: >
+        SELECT pmu.first_last_name, sc.assigned_mapper, COUNT(*)  
 
-        join concept_maps.concept_relationship cr on
-        sc.uuid=cr.source_concept_uuid
+        FROM concept_maps.source_concept sc  
 
-        where sc.concept_map_version_uuid =
-        {{urlparams.concept_map_version_uuid}}
+        JOIN project_management.user pmu ON pmu.uuid = sc.assigned_mapper  
 
-        and cr.reviewed_by not IN
+        WHERE sc.concept_map_version_uuid =
+        {{urlparams.concept_map_version_uuid}}  
 
-        (select pmu.first_last_name from concept_maps.source_concept sc 
+        AND (sc.map_status = 'ready for review' OR sc.map_status = 'reviewed')  
 
-        join project_management.user pmu on pmu.uuid=sc.assigned_reviewer
-
-        where sc.concept_map_version_uuid =
-        {{urlparams.concept_map_version_uuid}}
-
-        group by pmu.first_last_name)
-
-        group by cr.reviewed_by
+        GROUP BY pmu.first_last_name, sc.assigned_mapper  
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
+    - workflowRunBodyType: raw
     - privateParams: []
     - runWhenPageLoadsDelay: ''
     - warningCodes: []
@@ -58,6 +52,7 @@ template:
     - requestSentTimestamp: null
     - databaseHostOverride: ''
     - metadata: null
+    - workflowActionType: null
     - editorMode: sql
     - queryRunTime: null
     - actionType: ''
@@ -85,25 +80,28 @@ template:
     - timestamp: 0
     - importedQueryDefaults:
         ordered: []
-    - enableTransformer: false
+    - enableTransformer: true
     - showUpdateSetValueDynamicallyToggle: true
     - bulkUpdatePrimaryKey: ''
     - runWhenPageLoads: false
-    - transformer: >-
-        // type your code here
-
-        // example: return formatDataAsArray(data).filter(row => row.quantity >
-        20)
-
-        return data
+    - transformer: |-
+        const input = formatDataAsArray(data);  
+        const output = input.reduce((obj, item) => {  
+            obj[item.first_last_name] = item.count;  
+            return obj;  
+        }, {});  
+          
+        return output; 
     - events: []
     - tableName: ''
     - queryTimeout: '10000'
+    - workflowId: null
     - requireConfirmation: false
     - queryFailureConditions: ''
     - changesetIsObject: false
     - enableCaching: false
     - allowedGroups: []
+    - workflowBlockPluginId: null
     - databaseUsernameOverride: ''
     - shouldEnableBatchQuerying: false
     - doNotThrowOnNoOp: false
@@ -111,4 +109,4 @@ template:
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2023-03-06T19:44:04.321Z
+createdAt: 2023-01-22T21:28:37.767Z

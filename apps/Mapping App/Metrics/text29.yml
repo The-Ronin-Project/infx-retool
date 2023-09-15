@@ -5,6 +5,7 @@ template:
   ordered:
     - heightType: auto
     - horizontalAlign: left
+    - marginType: normal
     - hidden: false
     - imageWidth: fit
     - showInEditor: false
@@ -14,6 +15,7 @@ template:
         For mapping, this metric counts concepts where map_status =
         'pending'(rejected concepts have their map_status reverted to 'pending'
         so they are captured here).
+
          For reviewing, this metric counts concepts where map_status='ready for review'.
     - style:
         ordered:
@@ -28,7 +30,7 @@ style:
 position2:
   position2:
     container: modal1
-    row: 2.4
+    row: 1.7999999999999998
     col: 3
     height: 0.6
     width: 9

@@ -5,6 +5,7 @@ template:
   ordered:
     - heightType: auto
     - horizontalAlign: left
+    - marginType: normal
     - hidden: '{{i!=0}}'
     - imageWidth: fit
     - showInEditor: false
@@ -26,5 +27,4 @@ position2:
     container: Mapper_listView2
     col: 9
     height: 0.6
-    width: 3
 createdAt: 2023-01-20T22:53:49.235Z
