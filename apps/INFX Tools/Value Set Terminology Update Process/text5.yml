@@ -5,6 +5,7 @@ template:
   ordered:
     - heightType: auto
     - horizontalAlign: left
+    - marginType: normal
     - hidden: false
     - imageWidth: fit
     - showInEditor: false
@@ -25,5 +26,4 @@ position2:
     row: 1.2
     col: 5
     height: 0.6
-    width: 3
 createdAt: 2023-04-18T21:25:22.020Z

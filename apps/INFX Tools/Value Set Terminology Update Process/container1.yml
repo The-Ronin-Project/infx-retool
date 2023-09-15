@@ -12,9 +12,11 @@ template:
     - clickable: false
     - _iconByIndex:
         - ''
+    - marginType: normal
     - hidden: false
     - showHeader: true
     - hoistFetching: true
+    - paddingType: normal
     - views:
         array: []
     - showInEditor: false

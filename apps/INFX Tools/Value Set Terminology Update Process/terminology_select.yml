@@ -30,6 +30,7 @@ template:
     - overlayMinWidth: null
     - allowDeselect: false
     - inputValue: ''
+    - marginType: normal
     - hidden: false
     - customValidation: ''
     - data:
@@ -141,5 +142,4 @@ position2:
     row: 0.20000000000000018
     col: 5
     height: 1
-    width: 3
 createdAt: 2023-04-17T22:26:28.121Z

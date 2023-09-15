@@ -7,6 +7,7 @@ template:
     - clickable: false
     - iconAfter: ''
     - submitTargetId: null
+    - marginType: normal
     - hidden: false
     - text: Generate Report
     - showInEditor: false
@@ -40,5 +41,4 @@ position2:
     row: 0.20000000000000018
     col: 9
     height: 1
-    width: 3
 createdAt: 2023-04-17T20:35:01.601Z
