@@ -8,6 +8,7 @@ template:
     - iconAfter: ''
     - showCharacterCount: false
     - autoComplete: false
+    - marginType: normal
     - maxLength: null
     - hidden: false
     - customValidation: ''
@@ -55,5 +56,4 @@ position2:
     row: 1.2000000000000004
     col: 3
     height: 1
-    width: 3
 createdAt: 2023-03-23T20:43:51.393Z

@@ -7,6 +7,7 @@ template:
     - clickable: false
     - iconAfter: ''
     - submitTargetId: null
+    - marginType: normal
     - hidden: false
     - text: Download CSV (Entire Concept Map)
     - showInEditor: false
@@ -38,5 +39,4 @@ position2:
     row: 0.8
     col: 9
     height: 1
-    width: 3
 createdAt: 2023-01-27T00:21:30.373Z

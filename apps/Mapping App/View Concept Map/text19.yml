@@ -5,6 +5,7 @@ template:
   ordered:
     - heightType: auto
     - horizontalAlign: left
+    - marginType: normal
     - hidden: false
     - imageWidth: fit
     - showInEditor: false
@@ -24,5 +25,4 @@ position2:
     subcontainer: fef3f
     col: 7
     height: 0.6
-    width: 3
 createdAt: 2023-03-23T23:46:34.250Z

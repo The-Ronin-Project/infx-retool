@@ -1,4 +1,4 @@
-id: reject_no_map
+id: set_user_as_assigned_reviewer
 type: datasource
 subtype: SqlQueryUnified
 resourceName: dc8029bc-3980-4836-841e-776c64eeca49
@@ -18,18 +18,17 @@ template:
     - workflowParams: null
     - resourceNameOverride: ''
     - runWhenModelUpdates: false
+    - workflowRunId: null
     - showFailureToaster: true
     - query: >-
         update concept_maps.source_concept
 
-        set no_map = null, reason_for_no_map = null, map_status =
-        'no_map_rejected'
+        set assigned_reviewer={{get_current_user_uuid.data[0]}}
 
-        where code={{mapped_concepts.selectedRow.data.code}}
+        where concept_map_version_uuid={{urlparams.concept_map_version_uuid}}
 
-        and display = {{mapped_concepts.selectedRow.data.display}}
-
-        and concept_map_version_uuid = {{urlparams.concept_map_version_uuid}}
+        and cast(uuid as text) =
+        ANY({{mapped_concepts.selectedRow.data.map(x=>x.source_concept_uuid)}})
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
@@ -49,6 +48,7 @@ template:
     - requestSentTimestamp: null
     - databaseHostOverride: ''
     - metadata: null
+    - workflowActionType: null
     - editorMode: sql
     - queryRunTime: null
     - actionType: ''
@@ -80,13 +80,9 @@ template:
     - showUpdateSetValueDynamicallyToggle: true
     - bulkUpdatePrimaryKey: ''
     - runWhenPageLoads: false
-    - transformer: >-
-        // type your code here
-
-        // example: return formatDataAsArray(data).filter(row => row.quantity >
-        20)
-
-        return data
+    - transformer: |-
+        // Query results are available as the `data` variable
+        return formatDataAsArray(data)
     - events: []
     - tableName: ''
     - queryTimeout: '10000'
@@ -96,6 +92,7 @@ template:
     - changesetIsObject: false
     - enableCaching: false
     - allowedGroups: []
+    - workflowBlockPluginId: null
     - databaseUsernameOverride: ''
     - shouldEnableBatchQuerying: false
     - doNotThrowOnNoOp: false
@@ -103,4 +100,4 @@ template:
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2023-04-07T19:08:44.858Z
+createdAt: 2023-08-29T21:04:16.510Z

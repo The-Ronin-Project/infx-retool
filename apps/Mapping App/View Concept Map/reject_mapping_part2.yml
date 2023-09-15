@@ -18,10 +18,11 @@ template:
     - workflowParams: null
     - resourceNameOverride: ''
     - runWhenModelUpdates: false
+    - workflowRunId: null
     - showFailureToaster: true
     - query: |-
         update concept_maps.source_concept
-        set map_status ='pending', no_map = null
+        set map_status ='pending'
         where uuid={{mapped_concepts.selectedRow.data.source_concept_uuid}}
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
@@ -42,6 +43,7 @@ template:
     - requestSentTimestamp: null
     - databaseHostOverride: ''
     - metadata: null
+    - workflowActionType: null
     - editorMode: sql
     - queryRunTime: null
     - actionType: ''
@@ -80,7 +82,17 @@ template:
         20)
 
         return data
-    - events: []
+    - events:
+        - ordered:
+            - event: success
+            - type: datasource
+            - method: trigger
+            - pluginId: all_concepts
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
     - tableName: ''
     - queryTimeout: '10000'
     - workflowId: null
@@ -89,6 +101,7 @@ template:
     - changesetIsObject: false
     - enableCaching: false
     - allowedGroups: []
+    - workflowBlockPluginId: null
     - databaseUsernameOverride: ''
     - shouldEnableBatchQuerying: false
     - doNotThrowOnNoOp: false

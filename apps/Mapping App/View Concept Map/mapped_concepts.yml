@@ -71,6 +71,9 @@ template:
         - object:
             id: __retool__action_list
             value: 298
+        - object:
+            id: map_status
+            value: 169
     - showSummaryFooter: false
     - disableRowSelectInteraction: false
     - columnWidthsMobile: []
@@ -80,6 +83,7 @@ template:
     - onRowAdded: ''
     - columnHeaderNames:
         ordered:
+          - save_for_discussion: Save for discussion
           - display: Source Display
           - additional_data: ℹ️
           - mapping_comments: Mapping Comments
@@ -107,6 +111,7 @@ template:
     - columnColors:
         ordered:
           - previous_version_context: ''
+          - save_for_discussion: ''
           - special_use: ''
           - display: ''
           - additional_data: ''
@@ -173,6 +178,7 @@ template:
           - system: false
           - assigned_mapper: false
           - target_concept_system: false
+          - comments: false
           - map_status: true
           - source_concept_uuid: false
           - reviewed_date: false
@@ -180,6 +186,7 @@ template:
           - uuid: false
           - concept_map_version_uuid: false
           - resource_count: false
+          - no_map: false
           - reviewed_by: true
     - _columnSummaryTypes:
         ordered:
@@ -217,17 +224,8 @@ template:
             - actionButtonUrl: ''
             - actionButtonNewWindow: false
             - actionButtonDisabled: >-
-                {{currentRow.review_status == 'rejected'||currentRow.no_map ==
-                true}}
-        - ordered:
-            - actionButtonText: Reject No-Map
-            - actionButtonType: runQuery
-            - actionButtonQuery: reject_no_map
-            - actionButtonInternalUrlPath: ''
-            - actionButtonInternalUrlQuery: ''
-            - actionButtonUrl: ''
-            - actionButtonNewWindow: false
-            - actionButtonDisabled: '{{currentRow.no_map == null}}'
+                {{currentRow.map_status != 'reviewed'|| currentRow.review_status
+                != 'reviewed'}}
     - actionButtonSelectsRow: true
     - selectRowByDefault: true
     - defaultSortByColumn: null
