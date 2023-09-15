@@ -6,6 +6,7 @@ template:
     - horizontalAlign: left
     - clickable: false
     - iconAfter: ''
+    - marginType: normal
     - hidden: false
     - text: Dashboard
     - showUnderline: never
