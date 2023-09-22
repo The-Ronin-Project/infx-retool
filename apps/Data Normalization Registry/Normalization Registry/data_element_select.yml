@@ -20,6 +20,7 @@ template:
         - false
         - false
         - false
+        - false
     - showSelectionIndicator: true
     - _values:
         - '{{ resource_type_select_vs_insert.value }}.category'
@@ -38,6 +39,9 @@ template:
         - '{{ resource_type_select_vs_insert.value }}.component:FlowRate.code'
         - '{{  resource_type_select_vs_insert.value }}.component:diastolic.code'
         - '{{  resource_type_select_vs_insert.value }}.component:systolic.code'
+        - >-
+          {{  resource_type_select_vs_insert.value
+          }}.extension:originalMedicationDatatype.valueCode
     - iconByIndex:
         array: []
     - values:
@@ -45,6 +49,7 @@ template:
     - readOnly: false
     - iconAfter: ''
     - _iconByIndex:
+        - ''
         - ''
         - ''
         - ''
@@ -73,6 +78,7 @@ template:
         array: []
     - textBefore: ''
     - _fallbackTextByIndex:
+        - ''
         - ''
         - ''
         - ''
@@ -119,8 +125,10 @@ template:
         - false
         - false
         - false
+        - false
     - placeholder: Select an option
     - _captionByIndex:
+        - ''
         - ''
         - ''
         - ''
@@ -161,7 +169,9 @@ template:
         - ''
         - ''
         - ''
+        - ''
     - _colorByIndex:
+        - ''
         - ''
         - ''
         - ''
@@ -199,6 +209,7 @@ template:
         - e99ee
         - bc4de
         - 60be8
+        - '19681'
     - emptyMessage: No options
     - overlayMaxHeight: 375
     - loading: false
@@ -219,6 +230,7 @@ template:
         - component:FlowRate.code
         - component:diastolic.code
         - component:systolic.code
+        - extension:originalMedicationDatatype.valueCode
     - labelWrap: false
     - disabledValues:
         array: []
@@ -226,6 +238,7 @@ template:
         array: []
     - maintainSpaceWhenHidden: false
     - _imageByIndex:
+        - ''
         - ''
         - ''
         - ''
