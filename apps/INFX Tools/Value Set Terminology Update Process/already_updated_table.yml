@@ -73,9 +73,9 @@ template:
             - actionButtonText: Go to Versions
             - actionButtonType: openInternalUrl
             - actionButtonQuery: ''
-            - actionButtonInternalUrlPath: ''
+            - actionButtonInternalUrlPath: 4f31f1c8-2228-11ec-90d7-a387d41c775c
             - actionButtonInternalUrlQuery: >-
-                "[{\"key\":\"uuid\",\"value\":\"{{latest_version_not_active_table.selectedRow.data.value_set_uuid}}\"}]"
+                "[{\"key\":\"uuid\",\"value\":\"{{already_updated_table.selectedRow.data.value_set_uuid}}\"}]"
             - actionButtonUrl: ''
             - actionButtonNewWindow: true
             - actionButtonDisabled: ''
