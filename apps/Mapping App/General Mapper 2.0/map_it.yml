@@ -23,6 +23,7 @@ template:
     - runWhenModelUpdates: false
     - paginationPaginationField: ''
     - headers: '[]'
+    - workflowRunId: null
     - showFailureToaster: true
     - paginationEnabled: false
     - query: mappings/
@@ -41,6 +42,7 @@ template:
     - requestSentTimestamp: null
     - cookies: ''
     - metadata: null
+    - workflowActionType: null
     - queryRunTime: null
     - changesetObject: ''
     - errorTransformer: >-
@@ -114,6 +116,7 @@ template:
     - changesetIsObject: false
     - enableCaching: false
     - allowedGroups: []
+    - workflowBlockPluginId: null
     - bodyType: json
     - offlineQueryType: None
     - queryThrottleTime: '750'

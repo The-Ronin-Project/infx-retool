@@ -17,6 +17,7 @@ template:
     - workflowParams: null
     - resourceNameOverride: ''
     - runWhenModelUpdates: true
+    - workflowRunId: null
     - showFailureToaster: true
     - query: |-
         { 
@@ -44,6 +45,7 @@ template:
     - cacheKeyTtl: ''
     - requestSentTimestamp: null
     - metadata: null
+    - workflowActionType: null
     - queryRunTime: null
     - changesetObject: ''
     - errorTransformer: >-
@@ -94,6 +96,7 @@ template:
     - changesetIsObject: false
     - enableCaching: false
     - allowedGroups: []
+    - workflowBlockPluginId: null
     - collection: ''
     - offlineQueryType: None
     - queryThrottleTime: '750'

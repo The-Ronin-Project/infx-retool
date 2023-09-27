@@ -28,6 +28,8 @@ template:
               ordered: []
           - code:
               ordered: []
+          - previous_version_context:
+              ordered: []
     - columnWidths:
         - object:
             id: display
@@ -51,6 +53,7 @@ template:
     - columnColors:
         ordered:
           - previous_version_context: ''
+          - save_for_discussion: ''
           - display: ''
           - name: ''
           - sales: ''
@@ -79,12 +82,14 @@ template:
           - Custom Column 2: SingleTagDataCell
           - display: TextMultiDataCell
           - code: TextDataCell
+          - previous_version_context: default
     - columnRestrictedEditing:
         ordered: []
     - showFilterButton: true
     - _columnVisibility:
         ordered:
-          - previous_version_context: false
+          - previous_version_context: true
+          - save_for_discussion: false
           - name: false
           - sales: false
           - code: true
@@ -107,6 +112,7 @@ template:
           - Custom Column 2: ''
           - display: ''
           - code: ''
+          - previous_version_context: ''
     - _columnsWithLegacyBackgroundColor:
         set: []
     - showAddRowButton: true
@@ -146,6 +152,7 @@ template:
           - Custom Column 2: left
           - display: left
           - code: left
+          - previous_version_context: left
     - columnSummaries:
         object: {}
     - showBoxShadow: false
@@ -157,7 +164,7 @@ template:
     - pageSize: '20'
     - useDynamicColumnSettings: false
     - actionButtonPosition: right
-    - dynamicRowHeights: true
+    - dynamicRowHeights: false
     - bulkUpdateAction: ''
     - afterCursor: ''
     - onCustomButtonPressQueryName: ''
@@ -169,6 +176,7 @@ template:
           - Custom Column 2: ''
           - display: ''
           - code: ''
+          - previous_version_context: ''
     - checkboxRowSelect: true
     - _compatibilityMode: false
     - showColumnBorders: false

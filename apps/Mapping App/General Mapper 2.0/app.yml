@@ -15,6 +15,4 @@ appTemplate:
       skipDepCycleCheckingEnabled: false
       serverDepGraphEnabled: false
       useRuntimeV2: false
-  rootScreen: null
-  version: 2.121.5
-  markdownLinkBehavior: auto
+  version: 3.4.3

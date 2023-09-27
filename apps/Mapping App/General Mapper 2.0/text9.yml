@@ -5,6 +5,7 @@ template:
   ordered:
     - heightType: fixed
     - horizontalAlign: left
+    - marginType: normal
     - hidden: false
     - imageWidth: fill
     - showInEditor: false

@@ -15,6 +15,7 @@ template:
         - ''
         - ''
     - overlayMinWidth: null
+    - marginType: normal
     - hidden: '{{rxcui_input.value == ""}}'
     - data:
         array: []
