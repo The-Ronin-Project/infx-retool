@@ -144,7 +144,7 @@ template:
         - ''
         - ''
     - itemAdornmentSize: auto
-    - label: 'Date Element:'
+    - label: 'Data Element:'
     - _hasMigratedNestedItems: true
     - captionByIndex:
         array: []
