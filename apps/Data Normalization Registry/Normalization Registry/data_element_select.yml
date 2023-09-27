@@ -21,12 +21,28 @@ template:
         - false
         - false
         - false
+        - false
+        - false
+        - false
+        - false
     - showSelectionIndicator: true
     - _values:
         - '{{ resource_type_select_vs_insert.value }}.category'
         - '{{ resource_type_select_vs_insert.value }}.class'
         - '{{ resource_type_select_vs_insert.value }}.code'
         - '{{ resource_type_select_vs_insert.value }}.component.code'
+        - >-
+          {{  resource_type_select_vs_insert.value
+          }}.component:Concentration.valueCodeableConcept
+        - >-
+          {{  resource_type_select_vs_insert.value
+          }}.component:diastolic.valueCodeableConcept
+        - >-
+          {{  resource_type_select_vs_insert.value
+          }}.component:FlowRate.valueCodeableConcept
+        - >-
+          {{  resource_type_select_vs_insert.value
+          }}.component:systolic.valueCodeableConcept
         - >-
           {{ resource_type_select_vs_insert.value
           }}.component.valueCodeableConcept
@@ -64,6 +80,10 @@ template:
         - ''
         - ''
         - ''
+        - ''
+        - ''
+        - ''
+        - ''
     - overlayMinWidth: null
     - allowDeselect: false
     - inputValue: ''
@@ -78,6 +98,10 @@ template:
         array: []
     - textBefore: ''
     - _fallbackTextByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
         - ''
         - ''
         - ''
@@ -126,8 +150,16 @@ template:
         - false
         - false
         - false
+        - false
+        - false
+        - false
+        - false
     - placeholder: Select an option
     - _captionByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
         - ''
         - ''
         - ''
@@ -170,7 +202,15 @@ template:
         - ''
         - ''
         - ''
+        - ''
+        - ''
+        - ''
+        - ''
     - _colorByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
         - ''
         - ''
         - ''
@@ -199,6 +239,10 @@ template:
         - 56a7a
         - 1ce5f
         - 476c4
+        - 80da8
+        - f8d77
+        - 23c1c
+        - 841b4
         - ace44
         - f8485
         - c52e3
@@ -220,6 +264,10 @@ template:
         - class
         - code
         - component.code
+        - component:Concentration.valueCodeableConcept
+        - component:diastolic.valueCodeableConcept
+        - component:FlowRate.valueCodeableConcept
+        - component:systolic.valueCodeableConcept
         - component.valueCodeableConcept
         - status
         - telecom.system
@@ -238,6 +286,10 @@ template:
         array: []
     - maintainSpaceWhenHidden: false
     - _imageByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
         - ''
         - ''
         - ''
