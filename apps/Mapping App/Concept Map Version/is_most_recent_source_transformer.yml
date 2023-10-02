@@ -1,0 +1,27 @@
+id: is_most_recent_source_transformer
+type: function
+subtype: Function
+template:
+  ordered:
+    - funcBody: >
+        // Access the 'version' field from both query results
+
+        const versionFromSourceInfo = {{source_value_set_info.data.version[0]}};
+
+        const versionFromSourceInfo2 =
+        {{source_value_set_info2.data.version[0]}};
+
+
+        // Check if either value is null
+
+        if (versionFromSourceInfo == null || versionFromSourceInfo2 == null) {
+          return false;
+        }
+
+
+        // Compare and return the result
+
+        return versionFromSourceInfo === versionFromSourceInfo2;
+    - value: ''
+createdAt: 2023-10-02T14:30:08.771Z
+folder: new_version

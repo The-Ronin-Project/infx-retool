@@ -30,7 +30,10 @@ template:
             - waitMs: '0'
     - loading: false
     - loaderPosition: auto
-    - disabled: '{{description_input.value == ""}}'
+    - disabled: >-
+        {{description_input.value == "" ||
+        is_most_recent_source_transformer.value == false ||
+        is_most_recent_target_transformer.value == false}}
     - maintainSpaceWhenHidden: false
 style:
   ordered: []
