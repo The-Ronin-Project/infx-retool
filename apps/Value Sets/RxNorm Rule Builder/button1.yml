@@ -7,6 +7,7 @@ template:
     - clickable: false
     - iconAfter: ''
     - submitTargetId: null
+    - marginType: normal
     - hidden: false
     - text: Save Rule to Value Set
     - showInEditor: false
