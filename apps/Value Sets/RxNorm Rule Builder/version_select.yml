@@ -14,19 +14,19 @@ template:
         - 3dae1d22-06a1-4e60-98e7-42a2a241bf9d
     - iconByIndex:
         array: []
-    - values:
-        array: []
+    - values: ''
     - readOnly: false
     - iconAfter: ''
     - _iconByIndex:
         - ''
         - ''
+    - overlayMinWidth: null
     - allowDeselect: true
     - inputValue: ''
+    - marginType: normal
     - hidden: false
     - customValidation: ''
-    - data:
-        array: []
+    - data: '{{ version_selection.data }}'
     - searchMode: fuzzy
     - hideValidationMessage: false
     - fallbackTextByIndex:
@@ -65,7 +65,7 @@ template:
     - captionByIndex:
         array: []
     - _validate: false
-    - itemMode: static
+    - itemMode: dynamic
     - labelWidthUnit: '%'
     - allowCustomValue: false
     - invalid: false
@@ -105,8 +105,7 @@ template:
         - ''
         - ''
     - required: false
-    - labels:
-        array: []
+    - labels: '{{ item.version }}'
 style:
   ordered: []
 position2:

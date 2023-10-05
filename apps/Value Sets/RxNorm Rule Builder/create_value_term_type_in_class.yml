@@ -7,11 +7,15 @@ template:
     - queryRefreshTime: ''
     - lastReceivedFromResourceAt: null
     - queryDisabledMessage: ''
+    - servedFromCache: false
+    - offlineUserQueryInputs: ''
     - successMessage: ''
     - queryDisabled: ''
     - playgroundQuerySaveId: latest
+    - workflowParams: null
     - resourceNameOverride: ''
     - runWhenModelUpdates: false
+    - workflowRunId: null
     - showFailureToaster: true
     - query: |-
         var rule_value = {
@@ -25,15 +29,20 @@ template:
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
+    - workflowRunBodyType: raw
     - privateParams: []
     - runWhenPageLoadsDelay: ''
     - data: null
     - importedQueryInputs:
         ordered: []
+    - _additionalScope: []
     - isImported: false
     - showSuccessToaster: true
     - cacheKeyTtl: ''
+    - requestSentTimestamp: null
     - metadata: null
+    - workflowActionType: null
+    - queryRunTime: null
     - changesetObject: ''
     - errorTransformer: >-
         // The variable 'data' allows you to reference the request's data in the
@@ -42,6 +51,7 @@ template:
         // example: return data.find(element => element.isError)
 
         return data.error
+    - finished: null
     - confirmationMessage: null
     - isFetching: false
     - changeset: ''
@@ -66,11 +76,14 @@ template:
         return data
     - events: []
     - queryTimeout: '10000'
+    - workflowId: null
     - requireConfirmation: false
-    - queryFailureConditions: ''
+    - queryFailureConditions: '[]'
     - changesetIsObject: false
     - enableCaching: false
     - allowedGroups: []
+    - workflowBlockPluginId: null
+    - offlineQueryType: None
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''

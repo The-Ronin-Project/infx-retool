@@ -4,6 +4,4 @@ appTemplate:
   experimentalPerfFeatures:
     object:
       batchCommitModelEnabled: false
-  rootScreen: null
-  version: 2.100.7
-  markdownLinkBehavior: auto
+  version: 3.4.3

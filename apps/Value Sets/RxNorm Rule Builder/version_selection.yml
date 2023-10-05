@@ -1,11 +1,14 @@
-id: create_value_term_type
+id: version_selection
 type: datasource
-subtype: JavascriptQuery
-resourceName: JavascriptQuery
+subtype: SqlQueryUnified
+resourceName: dc8029bc-3980-4836-841e-776c64eeca49
+resourceDisplayName: Clinical Content PostgresSQL DB
 template:
   ordered:
     - queryRefreshTime: ''
+    - records: ''
     - lastReceivedFromResourceAt: null
+    - databasePasswordOverride: ''
     - queryDisabledMessage: ''
     - servedFromCache: false
     - offlineUserQueryInputs: ''
@@ -14,32 +17,37 @@ template:
     - playgroundQuerySaveId: latest
     - workflowParams: null
     - resourceNameOverride: ''
-    - runWhenModelUpdates: false
+    - runWhenModelUpdates: true
     - workflowRunId: null
     - showFailureToaster: true
     - query: |-
-        var rule_value = {
-          'term_type': term_type.value
-        };
-        return JSON.stringify(rule_value);
+        select version from public.terminology_versions
+        where terminology = 'RxNorm'
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
     - workflowRunBodyType: raw
     - privateParams: []
     - runWhenPageLoadsDelay: ''
+    - warningCodes: []
     - data: null
+    - recordId: ''
     - importedQueryInputs:
         ordered: []
-    - _additionalScope: []
     - isImported: false
     - showSuccessToaster: true
+    - dataArray: []
     - cacheKeyTtl: ''
+    - filterBy: ''
     - requestSentTimestamp: null
+    - databaseHostOverride: ''
     - metadata: null
     - workflowActionType: null
+    - editorMode: sql
     - queryRunTime: null
+    - actionType: ''
     - changesetObject: ''
+    - shouldUseLegacySql: false
     - errorTransformer: >-
         // The variable 'data' allows you to reference the request's data in the
         transformer. 
@@ -48,6 +56,7 @@ template:
 
         return data.error
     - finished: null
+    - databaseNameOverride: ''
     - confirmationMessage: null
     - isFetching: false
     - changeset: ''
@@ -56,31 +65,33 @@ template:
     - resourceTypeOverride: null
     - watchedParams: []
     - enableErrorTransformer: false
+    - enableBulkUpdates: false
     - showLatestVersionUpdatedWarning: false
     - timestamp: 0
     - importedQueryDefaults:
         ordered: []
     - enableTransformer: false
     - showUpdateSetValueDynamicallyToggle: true
+    - bulkUpdatePrimaryKey: ''
     - runWhenPageLoads: false
-    - transformer: >-
-        // type your code here
-
-        // example: return formatDataAsArray(data).filter(row => row.quantity >
-        20)
-
-        return data
+    - transformer: |-
+        // Query results are available as the `data` variable
+        return formatDataAsArray(data)
     - events: []
+    - tableName: ''
     - queryTimeout: '10000'
     - workflowId: null
     - requireConfirmation: false
-    - queryFailureConditions: '[]'
+    - queryFailureConditions: ''
     - changesetIsObject: false
     - enableCaching: false
     - allowedGroups: []
     - workflowBlockPluginId: null
+    - databaseUsernameOverride: ''
+    - shouldEnableBatchQuerying: false
+    - doNotThrowOnNoOp: false
     - offlineQueryType: None
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2022-08-09T23:36:31.983Z
+createdAt: 2023-10-05T16:41:49.838Z

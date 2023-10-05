@@ -16,11 +16,14 @@ template:
     - iconAfter: ''
     - _iconByIndex: []
     - wrapTags: true
+    - overlayMinWidth: null
     - selectedIndexes:
         array: []
     - selectedItems:
         array: []
     - inputValue: ''
+    - marginType: normal
+    - persistSearchTerm: false
     - hidden: false
     - customValidation: ''
     - data: '{{getTermTypes.data.termTypeList.termType}}  '

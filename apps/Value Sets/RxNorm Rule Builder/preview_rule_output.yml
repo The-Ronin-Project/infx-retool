@@ -11,19 +11,24 @@ template:
         [{"key":"property","value":"term_type_within_class"},{"key":"operator","value":"="},{"key":"value","value":""},{"key":"include","value":"true"},{"key":"terminology_version","value":"{{version_select.value}}"}]
     - lastReceivedFromResourceAt: null
     - queryDisabledMessage: ''
+    - servedFromCache: false
+    - offlineUserQueryInputs: ''
     - successMessage: ''
     - queryDisabled: ''
     - playgroundQuerySaveId: latest
+    - workflowParams: null
     - resourceNameOverride: ''
     - runWhenModelUpdates: false
     - paginationPaginationField: ''
     - headers: ''
+    - workflowRunId: null
     - showFailureToaster: true
     - paginationEnabled: false
     - query: ValueSets/rule_set/execute
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
+    - workflowRunBodyType: raw
     - privateParams: []
     - runWhenPageLoadsDelay: ''
     - data: null
@@ -32,8 +37,11 @@ template:
     - isImported: false
     - showSuccessToaster: true
     - cacheKeyTtl: ''
+    - requestSentTimestamp: null
     - cookies: ''
     - metadata: null
+    - workflowActionType: null
+    - queryRunTime: null
     - changesetObject: ''
     - errorTransformer: >-
         // The variable 'data' allows you to reference the request's data in the
@@ -42,6 +50,7 @@ template:
         // example: return data.find(element => element.isError)
 
         return data.error
+    - finished: null
     - confirmationMessage: null
     - isFetching: false
     - changeset: ''
@@ -67,13 +76,16 @@ template:
         return data
     - events: []
     - queryTimeout: '10000'
+    - workflowId: null
     - requireConfirmation: false
     - type: POST
     - queryFailureConditions: ''
     - changesetIsObject: false
     - enableCaching: false
     - allowedGroups: []
+    - workflowBlockPluginId: null
     - bodyType: json
+    - offlineQueryType: None
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''

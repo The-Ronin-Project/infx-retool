@@ -16,8 +16,10 @@ template:
     - readOnly: false
     - iconAfter: ''
     - _iconByIndex: []
+    - overlayMinWidth: null
     - allowDeselect: true
     - inputValue: ''
+    - marginType: normal
     - hidden: false
     - customValidation: ''
     - data: '{{getSourcesofDrugClassRelations.data.relaSourceList.relaSourceName}}'

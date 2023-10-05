@@ -10,11 +10,15 @@ template:
     - lastReceivedFromResourceAt: null
     - databasePasswordOverride: ''
     - queryDisabledMessage: ''
+    - servedFromCache: false
+    - offlineUserQueryInputs: ''
     - successMessage: ''
     - queryDisabled: ''
     - playgroundQuerySaveId: latest
+    - workflowParams: null
     - resourceNameOverride: ''
     - runWhenModelUpdates: false
+    - workflowRunId: null
     - showFailureToaster: true
     - query: >-
         select coalesce(max(rule_group),0) + 1 as next_num from
@@ -24,6 +28,7 @@ template:
     - playgroundQueryUuid: b32806d2-0167-400c-a735-ad1982c27fdc
     - playgroundQueryId: 34
     - error: null
+    - workflowRunBodyType: raw
     - privateParams: []
     - runWhenPageLoadsDelay: ''
     - warningCodes: []
@@ -38,9 +43,12 @@ template:
     - dataArray: []
     - cacheKeyTtl: ''
     - filterBy: ''
+    - requestSentTimestamp: null
     - databaseHostOverride: ''
     - metadata: null
+    - workflowActionType: null
     - editorMode: sql
+    - queryRunTime: null
     - actionType: ''
     - changesetObject: ''
     - shouldUseLegacySql: false
@@ -51,6 +59,7 @@ template:
         // example: return data.find(element => element.isError)
 
         return data.error
+    - finished: null
     - databaseNameOverride: ''
     - confirmationMessage: null
     - isFetching: false
@@ -79,15 +88,19 @@ template:
     - events: []
     - tableName: ''
     - queryTimeout: '10000'
+    - workflowId: null
     - requireConfirmation: false
     - queryFailureConditions: ''
     - changesetIsObject: false
     - enableCaching: false
     - allowedGroups: []
+    - workflowBlockPluginId: null
     - databaseUsernameOverride: ''
     - shouldEnableBatchQuerying: false
     - doNotThrowOnNoOp: false
+    - offlineQueryType: None
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
+    - playgroundQueryName: next_rule_group_num
 createdAt: 2022-04-05T18:54:32.138Z

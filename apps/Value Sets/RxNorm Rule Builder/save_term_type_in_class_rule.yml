@@ -10,11 +10,15 @@ template:
     - lastReceivedFromResourceAt: null
     - databasePasswordOverride: ''
     - queryDisabledMessage: ''
+    - servedFromCache: false
+    - offlineUserQueryInputs: ''
     - successMessage: ''
     - queryDisabled: ''
     - playgroundQuerySaveId: latest
+    - workflowParams: null
     - resourceNameOverride: ''
     - runWhenModelUpdates: false
+    - workflowRunId: null
     - showFailureToaster: true
     - query: >-
         insert into value_sets.value_set_rule
@@ -30,6 +34,7 @@ template:
     - playgroundQueryUuid: 5bff9f62-accc-4017-974e-28c9dcbde0b3
     - playgroundQueryId: 42
     - error: null
+    - workflowRunBodyType: raw
     - privateParams: []
     - runWhenPageLoadsDelay: ''
     - warningCodes: []
@@ -53,9 +58,12 @@ template:
     - dataArray: []
     - cacheKeyTtl: ''
     - filterBy: ''
+    - requestSentTimestamp: null
     - databaseHostOverride: ''
     - metadata: null
+    - workflowActionType: null
     - editorMode: sql
+    - queryRunTime: null
     - actionType: ''
     - changesetObject: ''
     - shouldUseLegacySql: false
@@ -66,6 +74,7 @@ template:
         // example: return data.find(element => element.isError)
 
         return data.error
+    - finished: null
     - databaseNameOverride: ''
     - confirmationMessage: null
     - isFetching: false
@@ -94,15 +103,19 @@ template:
     - events: []
     - tableName: ''
     - queryTimeout: '10000'
+    - workflowId: null
     - requireConfirmation: false
     - queryFailureConditions: ''
     - changesetIsObject: false
     - enableCaching: false
     - allowedGroups: []
+    - workflowBlockPluginId: null
     - databaseUsernameOverride: ''
     - shouldEnableBatchQuerying: false
     - doNotThrowOnNoOp: false
+    - offlineQueryType: None
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
+    - playgroundQueryName: save_value_set_rule
 createdAt: 2022-04-05T18:53:10.951Z
