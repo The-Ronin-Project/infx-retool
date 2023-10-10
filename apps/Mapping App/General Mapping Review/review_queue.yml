@@ -86,6 +86,7 @@ template:
           - first_last_name: Assigned Reviewer
           - count_of_resources_affected: Resource Count
           - author: Mapper
+          - reason_for_no_map: No Map Reason
           - source_code: Source Code
           - target_concept_code: Target Code
           - assigned_reviewer: Assigned Reviewer
