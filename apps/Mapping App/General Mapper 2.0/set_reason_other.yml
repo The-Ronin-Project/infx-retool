@@ -20,13 +20,13 @@ template:
     - runWhenModelUpdates: false
     - workflowRunId: null
     - showFailureToaster: true
-    - query: >-
-        update concept_maps.source_concept
+    - query: >
+        UPDATE concept_maps.source_concept
 
-        set reason_for_no_map = 'Other'
+        SET reason_for_no_map = 'Other'
 
-        where uuid IN ({{ mapping_queue.selectedRow.data.map(data =>
-        data.uuid).join(", ") }})
+        WHERE uuid = ANY({{'{' + mapping_queue.selectedRow.data.map(data => '"'
+        + data.uuid + '"').join(", ") + '}'}})
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
