@@ -24,8 +24,9 @@ template:
     - workflowRunId: null
     - showFailureToaster: true
     - query: >-
-        SELECT cr.uuid as cr_uuid, cr.*, sc.assigned_reviewer, rc.display,
-        u.first_name || ' ' || u.last_name AS reviewer_name
+        SELECT cr.uuid as cr_uuid, cr.*, sc.assigned_reviewer,
+        sc.reason_for_no_map, rc.display, u.first_name || ' ' || u.last_name AS
+        reviewer_name
 
         FROM concept_maps.concept_relationship cr
 
