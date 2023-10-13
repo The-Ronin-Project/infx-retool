@@ -21,6 +21,7 @@ template:
         - ''
         - ''
     - overlayMinWidth: null
+    - marginType: normal
     - hidden: false
     - data:
         array: []
