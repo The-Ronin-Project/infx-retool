@@ -6,12 +6,14 @@ template:
     - _disabledByIndex:
         - ''
         - ''
+        - ''
     - heightType: auto
     - currentViewKey: '{{ self.viewKeys[0] }}'
     - iconByIndex:
         array: []
     - clickable: false
     - _iconByIndex:
+        - ''
         - ''
         - ''
     - marginType: normal
@@ -32,6 +34,7 @@ template:
     - _hiddenByIndex:
         - ''
         - ''
+        - ''
     - _disclosedFields:
         array: []
     - currentViewIndex: null
@@ -41,16 +44,19 @@ template:
     - _tooltipByIndex:
         - ''
         - ''
+        - ''
     - tooltipByIndex:
         array: []
     - showFooter: false
     - _viewKeys:
         - Ready for Review
+        - No-Map Concepts
         - Concepts for Discussion
     - events:
         ordered: []
     - _ids:
         - '2e213'
+        - f61b2
         - d4435
     - viewKeys:
         array: []
@@ -59,11 +65,13 @@ template:
     - _iconPositionByIndex:
         - ''
         - ''
+        - ''
     - hovered: false
     - loading: false
     - overflowType: scroll
     - disabled: false
     - _labels:
+        - ''
         - ''
         - ''
     - disabledByIndex:
