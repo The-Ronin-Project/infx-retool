@@ -7,6 +7,7 @@ template:
     - clickable: false
     - iconAfter: ''
     - submitTargetId: null
+    - marginType: normal
     - hidden: false
     - text: Make Assignments
     - showInEditor: false
@@ -39,5 +40,4 @@ position2:
     subcontainer: 04cea
     col: 9
     height: 1
-    width: 3
 createdAt: 2022-12-22T22:21:43.427Z
