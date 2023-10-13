@@ -12,6 +12,7 @@ template:
     - clickable: false
     - _iconByIndex: []
     - overlayMinWidth: null
+    - marginType: normal
     - hidden: false
     - data: '{{ get_users_to_assign.data }}'
     - selectedItem: null
@@ -65,5 +66,4 @@ position2:
     subcontainer: '2e213'
     col: 5
     height: 1
-    width: 3
 createdAt: 2023-04-07T15:50:04.131Z

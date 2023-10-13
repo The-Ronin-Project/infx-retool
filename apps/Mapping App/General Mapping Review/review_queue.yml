@@ -94,6 +94,7 @@ template:
     - columnColors:
         ordered:
           - previous_version_context: ''
+          - save_for_discussion: ''
           - special_use: ''
           - display: ''
           - additional_data: ''

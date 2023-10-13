@@ -20,6 +20,7 @@ template:
     - runWhenModelUpdates: true
     - paginationPaginationField: ''
     - headers: ''
+    - workflowRunId: null
     - showFailureToaster: true
     - paginationEnabled: false
     - query: RxTerms/rxcui/{{ variable0 }}/allinfo.json
@@ -40,6 +41,7 @@ template:
     - requestSentTimestamp: null
     - cookies: ''
     - metadata: null
+    - workflowActionType: null
     - queryRunTime: null
     - changesetObject: ''
     - errorTransformer: >-
@@ -83,6 +85,7 @@ template:
     - changesetIsObject: false
     - enableCaching: false
     - allowedGroups: []
+    - workflowBlockPluginId: null
     - bodyType: none
     - offlineQueryType: None
     - queryThrottleTime: '750'
