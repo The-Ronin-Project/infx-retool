@@ -17,6 +17,7 @@ template:
     - overlayMinWidth: null
     - allowDeselect: false
     - inputValue: ''
+    - marginType: normal
     - hidden: false
     - customValidation: ''
     - data: '{{ get_users.data }}'
@@ -94,5 +95,4 @@ position2:
     row: -5.551115123125783e-16
     col: 6
     height: 1
-    width: 3
 createdAt: 2022-12-22T22:12:05.146Z

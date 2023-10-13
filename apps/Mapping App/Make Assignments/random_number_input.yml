@@ -8,6 +8,7 @@ template:
     - max: null
     - preventScroll: false
     - inputValue: 0
+    - marginType: normal
     - hidden: false
     - customValidation: ''
     - showSeparators: true
@@ -64,5 +65,4 @@ position2:
     container: assignment_groups_tabbedContainer
     subcontainer: 04cea
     height: 1
-    width: 3
 createdAt: 2022-12-21T22:03:22.714Z
