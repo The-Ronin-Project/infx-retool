@@ -4,7 +4,7 @@ subtype: Function
 template:
   ordered:
     - funcBody: |+
-        const inputValue = {{ref_range_low_input.value}};
+        const inputValue = {{ref_low_input.value}};
 
         // If inputValue is empty, return null
         if (inputValue === "") {
