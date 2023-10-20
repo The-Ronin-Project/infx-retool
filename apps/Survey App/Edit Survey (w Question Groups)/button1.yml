@@ -1,0 +1,44 @@
+id: button1
+type: widget
+subtype: ButtonWidget
+template:
+  ordered:
+    - valueToCopy: ''
+    - internalUrlHashParams: ''
+    - exportFileType: csv
+    - buttonType: action
+    - exportTemplate: null
+    - url: ''
+    - newWindow: false
+    - value: Create New Question Group
+    - exportQuery: ''
+    - action: ''
+    - internalUrlQuery: ''
+    - internalUrlPath: ''
+    - events:
+        - ordered:
+            - event: click
+            - type: util
+            - method: openApp
+            - pluginId: ''
+            - params:
+                ordered:
+                  - uuid: 3890c4c0-0a9b-11ec-902a-57202d4ce0d0
+                  - options:
+                      ordered:
+                        - newTab: true
+            - waitType: debounce
+            - waitMs: '0'
+    - exportFileName: ''
+    - loading: ''
+    - disabled: ''
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabbedcontainer1
+    col: 10
+    height: 1
+    width: 2
+    tabNum: 1
+createdAt: 2021-08-31T21:14:28.466Z

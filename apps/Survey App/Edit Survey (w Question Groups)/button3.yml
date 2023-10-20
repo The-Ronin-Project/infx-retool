@@ -1,0 +1,39 @@
+id: button3
+type: widget
+subtype: ButtonWidget
+template:
+  ordered:
+    - valueToCopy: ''
+    - internalUrlHashParams: ''
+    - exportFileType: csv
+    - buttonType: action
+    - exportTemplate: null
+    - url: ''
+    - newWindow: false
+    - value: Build Survey
+    - exportQuery: ''
+    - action: ''
+    - internalUrlQuery: ''
+    - internalUrlPath: ''
+    - events:
+        - ordered:
+            - event: click
+            - type: datasource
+            - method: trigger
+            - pluginId: load_entire_survey_with_questions
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - exportFileName: ''
+    - loading: '{{load_entire_survey_with_questions.isFetching}}'
+    - disabled: ''
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabbedcontainer1
+    height: 1
+    width: 2
+    tabNum: 3
+createdAt: 2021-09-07T20:26:20.512Z

@@ -1,0 +1,26 @@
+id: text4
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - tooltipText: ''
+    - value: '{{load_entire_survey_with_questions.data.title[i]}}'
+    - style:
+        ordered: []
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: listview1
+    height: 1
+    width: 1
+createdAt: 2021-09-07T20:07:17.465Z

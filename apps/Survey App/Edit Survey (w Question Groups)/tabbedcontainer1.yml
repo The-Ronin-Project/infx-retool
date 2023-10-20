@@ -1,0 +1,25 @@
+id: tabbedcontainer1
+type: widget
+subtype: TabbedContainerWidget
+template:
+  ordered:
+    - heightType: fixed
+    - spinWhenChildrenAreFetching: true
+    - unmountInactiveTabs: false
+    - tabNames: >-
+        ["Edit Survey","Search Question Groups","Pick Question Group from
+        List","View Survey"]
+    - selectedTabIndex: 0
+    - selectedTab: '"0"'
+    - showTabBar: true
+    - disableAnimation: false
+    - overflowType: scroll
+    - disabled: ''
+style:
+  ordered: []
+position2:
+  position2:
+    row: 1
+    height: 22.4
+    width: 12
+createdAt: 2021-08-31T21:08:32.590Z

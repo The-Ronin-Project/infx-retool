@@ -1,0 +1,46 @@
+id: button4
+type: widget
+subtype: ButtonWidget
+template:
+  ordered:
+    - valueToCopy: ''
+    - internalUrlHashParams: ''
+    - exportFileType: csv
+    - buttonType: action
+    - exportTemplate: null
+    - url: ''
+    - newWindow: false
+    - value: Download Survey
+    - exportQuery: ''
+    - action: ''
+    - internalUrlQuery: ''
+    - internalUrlPath: ''
+    - events:
+        - ordered:
+            - event: click
+            - type: util
+            - method: openUrl
+            - pluginId: ''
+            - params:
+                ordered:
+                  - options:
+                      ordered:
+                        - newTab: true
+                  - url: >-
+                      https://hashi.prod.projectronin.io/surveys/{{urlparams.uuid}}?organization_uuid={{org_select.value}}
+            - waitType: debounce
+            - waitMs: '0'
+            - enabled: ''
+    - exportFileName: ''
+    - loading: ''
+    - disabled: '{{org_select.value == null}}'
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabbedcontainer1
+    col: 8
+    height: 1
+    width: 2
+    tabNum: 3
+createdAt: 2021-11-19T17:28:35.375Z
