@@ -1,0 +1,28 @@
+id: text4
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - marginType: normal
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - tooltipText: ''
+    - value: '{{load_questions_and_answers.data.generic_answer_display[i]}}'
+    - style:
+        ordered: []
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: listview1
+    row: 1
+    height: 1
+    width: 6
+createdAt: 2021-09-09T21:01:17.049Z

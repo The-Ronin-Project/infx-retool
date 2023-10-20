@@ -1,0 +1,103 @@
+id: dropdown1
+type: widget
+subtype: SelectWidget2
+template:
+  ordered:
+    - imageByIndex:
+        array: []
+    - _disabledByIndex: []
+    - showSelectionIndicator: false
+    - _values: []
+    - iconByIndex:
+        array: []
+    - values: '{{ item }}'
+    - readOnly: false
+    - iconAfter: ''
+    - _iconByIndex: []
+    - overlayMinWidth: null
+    - allowDeselect: false
+    - inputValue: ''
+    - marginType: normal
+    - hidden: null
+    - customValidation: ''
+    - data: >-
+        {{ [null, 1].concat(
+        load_survey_questions.data.question_uuid.slice(load_survey_questions.data.question_uuid.indexOf(load_questions_and_answers.data.question_uuid[i])+1))}}
+    - searchMode: fuzzy
+    - hideValidationMessage: false
+    - fallbackTextByIndex:
+        array: []
+    - textBefore: ''
+    - _fallbackTextByIndex: []
+    - selectedItem: null
+    - validationMessage: ''
+    - automaticItemColors: false
+    - itemAdornmentShape: circle
+    - textAfter: ''
+    - showInEditor: null
+    - showClear: true
+    - tooltipText: ''
+    - labelAlign: right
+    - formDataKey: '{{ self.id }}'
+    - value: >-
+        {{load_questions_and_answers.data.specific_next_question[i] ?
+        load_questions_and_answers.data.specific_next_question[i] :
+        (load_questions_and_answers.data.next_question_group[i] ? 1 : null)}}
+    - hiddenByIndex:
+        array: []
+    - allowSearch: true
+    - labelCaption: ''
+    - labelWidth: '33'
+    - deprecatedLabels: >-
+        {{ ['Next Question', 'Next Question Group'].concat(
+        load_survey_questions.data.question_text.slice(load_survey_questions.data.question_text.indexOf(load_questions_and_answers.data.question_text[i])+1))}}
+    - _hiddenByIndex: []
+    - placeholder: Select a value
+    - _captionByIndex: []
+    - itemAdornmentSize: auto
+    - label: Next Question
+    - _hasMigratedNestedItems: true
+    - captionByIndex:
+        array: []
+    - _validate: false
+    - itemMode: dynamic
+    - labelWidthUnit: '%'
+    - allowCustomValue: false
+    - invalid: false
+    - selectedIndex: null
+    - _tooltipByIndex: []
+    - _colorByIndex: []
+    - tooltipByIndex:
+        array: []
+    - iconBefore: ''
+    - colorByIndex:
+        array: []
+    - selectedLabel: ''
+    - events:
+        ordered: []
+    - _ids: []
+    - emptyMessage: ''
+    - overlayMaxHeight: 250
+    - loading: false
+    - disabled: ''
+    - labelPosition: left
+    - _labels: []
+    - labelWrap: true
+    - disabledValues:
+        array: []
+    - disabledByIndex:
+        array: []
+    - maintainSpaceWhenHidden: null
+    - _imageByIndex: []
+    - required: false
+    - labels: '{{ self.deprecatedLabels[i] }}'
+style:
+  ordered: []
+position2:
+  position2:
+    container: listview1
+    row: 1
+    col: 6
+    height: 1
+    width: 6
+createdAt: 2021-09-09T21:04:31.689Z
