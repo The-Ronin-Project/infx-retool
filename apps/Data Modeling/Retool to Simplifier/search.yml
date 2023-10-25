@@ -1,39 +1,30 @@
-id: search
+id: Search
 type: widget
 subtype: SelectWidget2
 template:
   ordered:
-    - imageByIndex: ''
-    - _disabledByIndex:
-        - ''
-        - ''
-        - ''
+    - imageByIndex:
+        array: []
+    - _disabledByIndex: []
     - showSelectionIndicator: true
-    - _values:
-        - Option 1
-        - Option 2
-        - Option 3
-    - iconByIndex: ''
-    - values: '{{ item.concept_map_uuid }}'
+    - _values: []
+    - iconByIndex:
+        array: []
+    - values: '{{ item.uuid }}'
     - readOnly: false
     - iconAfter: ''
-    - _iconByIndex:
-        - ''
-        - ''
-        - ''
+    - _iconByIndex: []
     - allowDeselect: false
     - inputValue: ''
     - hidden: false
     - customValidation: ''
-    - data: '{{ concept_map_dropdown.data }}'
+    - data: '{{ value_set_dropdown.data }}'
     - searchMode: fuzzy
     - hideValidationMessage: false
-    - fallbackTextByIndex: ''
+    - fallbackTextByIndex:
+        array: []
     - textBefore: ''
-    - _fallbackTextByIndex:
-        - ''
-        - ''
-        - ''
+    - _fallbackTextByIndex: []
     - selectedItem: null
     - validationMessage: ''
     - automaticItemColors: false
@@ -45,66 +36,69 @@ template:
     - labelAlign: left
     - formDataKey: '{{ self.id }}'
     - value: null
-    - hiddenByIndex: ''
+    - hiddenByIndex:
+        array: []
     - labelCaption: ''
     - labelWidth: '33'
     - deprecatedLabels:
         array: []
-    - _hiddenByIndex:
-        - ''
-        - ''
-        - ''
+    - _hiddenByIndex: []
     - placeholder: Select an option
-    - _captionByIndex:
-        - ''
-        - ''
-        - ''
+    - _captionByIndex: []
     - itemAdornmentSize: auto
-    - label: ConceptMap
+    - label: Valueset
     - _hasMigratedNestedItems: true
-    - captionByIndex: ''
+    - captionByIndex:
+        array: []
     - _validate: false
     - itemMode: dynamic
     - labelWidthUnit: '%'
     - allowCustomValue: false
     - invalid: false
     - selectedIndex: null
-    - _tooltipByIndex:
-        - ''
-        - ''
-        - ''
-    - _colorByIndex:
-        - ''
-        - ''
-        - ''
-    - tooltipByIndex: ''
+    - _tooltipByIndex: []
+    - _colorByIndex: []
+    - tooltipByIndex:
+        array: []
     - iconBefore: ''
-    - colorByIndex: ''
+    - colorByIndex:
+        array: []
     - selectedLabel: ''
     - events:
-        ordered: []
-    - _ids:
-        - 6f324
-        - 9614b
-        - 5c58b
+        - ordered:
+            - event: change
+            - type: datasource
+            - method: trigger
+            - pluginId: ValuesetExpansionCall
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: change
+            - type: widget
+            - method: close
+            - pluginId: modal1
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - _ids: []
     - emptyMessage: ''
     - overlayMaxHeight: 375
     - loading: false
     - disabled: false
     - labelPosition: left
-    - _labels:
-        - ''
-        - ''
-        - ''
+    - _labels: []
     - labelWrap: false
     - disabledValues:
         array: []
-    - disabledByIndex: ''
+    - disabledByIndex:
+        array: []
     - maintainSpaceWhenHidden: false
-    - _imageByIndex:
-        - ''
-        - ''
-        - ''
+    - _imageByIndex: []
     - required: false
     - labels: '{{ item.name }}'
 style:
@@ -112,7 +106,7 @@ style:
 position2:
   position2:
     container: Send_expanded_ValueSet_to_Simplifier
-    subcontainer: '66107'
+    subcontainer: e9557
     height: 1
-    width: 5
-createdAt: 2022-10-05T14:34:50.131Z
+    width: 4
+createdAt: 2022-09-19T21:58:26.198Z

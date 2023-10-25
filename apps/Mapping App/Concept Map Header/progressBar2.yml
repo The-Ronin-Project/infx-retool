@@ -4,21 +4,20 @@ subtype: ProgressBarWidget
 template:
   ordered:
     - hideOutput: true
+    - marginType: normal
     - hidden: false
     - showInEditor: false
     - tooltipText: ''
     - labelAlign: right
     - value: >-
-        {{(parseInt(count_reviewed.data.count) +
-        parseInt(count_no_map_reviewed.data.count)) /
+        {{(parseInt(count_reviewed.data.count)) /
         parseInt(count_total.data.count) * 100}}
     - labelCaption: ''
     - labelWidth: '50'
     - label: >-
-        {{Math.round((parseInt(count_reviewed.data.count) +
-        parseInt(count_no_map_reviewed.data.count)) / count_total.data.count *
-        100)}}% ({{count_reviewed.data.count}}) Maps +
-        ({{count_no_map_reviewed.data.count}}) No Maps Reviewed
+        {{Math.round((parseInt(count_reviewed.data.count)) /
+        count_total.data.count * 100)}}% ({{count_reviewed.data.count}})
+        Reviewed
     - labelWidthUnit: '%'
     - indeterminate: false
     - labelPosition: left

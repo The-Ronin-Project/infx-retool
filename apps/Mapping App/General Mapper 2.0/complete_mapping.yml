@@ -36,7 +36,7 @@ template:
     - importedQueryInputs:
         ordered: []
     - isImported: false
-    - showSuccessToaster: true
+    - showSuccessToaster: false
     - dataArray: []
     - cacheKeyTtl: ''
     - filterBy: ''
@@ -92,17 +92,6 @@ template:
                 ordered: []
             - targetId: null
             - pluginId: load_queue
-            - waitType: debounce
-            - event: success
-            - type: datasource
-            - waitMs: '0'
-        - ordered:
-            - method: trigger
-            - enabled: '{{ mapping_group_select.value==''no_map_rejected'' }}'
-            - params:
-                ordered: []
-            - targetId: null
-            - pluginId: load_no_map_rejected_queue
             - waitType: debounce
             - event: success
             - type: datasource

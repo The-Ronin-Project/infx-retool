@@ -29,7 +29,7 @@ template:
 
         and sc.map_status = 'pending'
 
-        and sc.no_map is not true
+        and sc.save_for_discussion = FALSE
 
         and (sc.mapping_group={{mapping_group_select.value}} or
         {{mapping_group_select.value == null}})

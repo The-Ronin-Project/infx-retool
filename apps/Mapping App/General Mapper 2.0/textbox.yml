@@ -10,7 +10,7 @@ template:
     - imageWidth: fit
     - showInEditor: false
     - verticalAlign: center
-    - tooltipText: ''
+    - tooltipText: Other will only be an option once a mapping comment is present.
     - value: '**Source Actions**'
     - _disclosedFields:
         array: []
@@ -21,7 +21,7 @@ style:
   ordered: []
 position2:
   position2:
-    row: 15.799999999999995
+    row: 15.599999999999998
     height: 0.6
     width: 1
 createdAt: 2022-09-14T17:32:20.920Z

@@ -18,7 +18,6 @@ template:
         - false
         - false
         - false
-        - false
     - showSelectionIndicator: true
     - _values:
         - source_code
@@ -32,7 +31,6 @@ template:
         - resource_count
         - mapping_comments
         - review_comment
-        - source_comments
         - reason_for_no_map
     - iconByIndex:
         array: []
@@ -53,10 +51,10 @@ template:
         - ''
         - ''
         - ''
-        - ''
     - overlayMinWidth: null
     - allowDeselect: true
     - inputValue: ''
+    - marginType: normal
     - hidden: false
     - customValidation: ''
     - data:
@@ -67,7 +65,6 @@ template:
         array: []
     - textBefore: ''
     - _fallbackTextByIndex:
-        - ''
         - ''
         - ''
         - ''
@@ -110,10 +107,8 @@ template:
         - false
         - false
         - false
-        - false
     - placeholder: Select an option
     - _captionByIndex:
-        - ''
         - ''
         - ''
         - ''
@@ -152,9 +147,7 @@ template:
         - ''
         - ''
         - ''
-        - ''
     - _colorByIndex:
-        - ''
         - ''
         - ''
         - ''
@@ -187,7 +180,6 @@ template:
         - 46f39
         - 710f6
         - e53f9
-        - b897d
         - c208b
     - emptyMessage: No options
     - overlayMaxHeight: 375
@@ -206,7 +198,6 @@ template:
         - Resource Count
         - Mapping Comments
         - Review Comment
-        - Comments
         - No Map Reason
     - labelWrap: false
     - disabledValues:
@@ -215,7 +206,6 @@ template:
         array: []
     - maintainSpaceWhenHidden: false
     - _imageByIndex:
-        - ''
         - ''
         - ''
         - ''
@@ -238,5 +228,4 @@ position2:
     row: 2.0000000000000138
     col: 8
     height: 1
-    width: 3
 createdAt: 2023-03-23T21:07:35.280Z

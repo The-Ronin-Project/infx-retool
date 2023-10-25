@@ -18,6 +18,7 @@ template:
     - workflowParams: null
     - resourceNameOverride: ''
     - runWhenModelUpdates: true
+    - workflowRunId: null
     - showFailureToaster: true
     - query: >-
         select cr.uuid as mapping_uuid, sc.*, cr.*, rc.display as
@@ -87,9 +88,6 @@ template:
         and ((cr.target_concept_code is null and cr.target_concept_display is
         null and sc.no_map is not true) or ({{show_only_unmapped.value ==
         false}}))
-
-        and ((cr.target_concept_code is null and cr.target_concept_display is
-        null and sc.no_map is true) or ({{show_only_no_maps.value == false}}))
 
         and ((cr.target_concept_code is not null and cr.target_concept_display
         is not null) or ({{show_only_mapped.value == false}}))
@@ -208,6 +206,7 @@ template:
     - requestSentTimestamp: null
     - databaseHostOverride: ''
     - metadata: null
+    - workflowActionType: null
     - editorMode: sql
     - queryRunTime: null
     - actionType: ''
@@ -255,6 +254,7 @@ template:
     - changesetIsObject: false
     - enableCaching: false
     - allowedGroups: []
+    - workflowBlockPluginId: null
     - databaseUsernameOverride: ''
     - shouldEnableBatchQuerying: false
     - doNotThrowOnNoOp: false

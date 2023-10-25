@@ -3,6 +3,7 @@ type: widget
 subtype: SwitchWidget2
 template:
   ordered:
+    - marginType: normal
     - hidden: false
     - customValidation: ''
     - hideValidationMessage: false
@@ -31,5 +32,4 @@ position2:
   position2:
     row: 1.9999999999999993
     height: 0.6
-    width: 3
 createdAt: 2023-03-23T21:05:38.978Z

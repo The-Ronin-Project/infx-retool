@@ -25,7 +25,17 @@ template:
         ordered: []
     - onRowAdded: ''
     - columnHeaderNames:
-        ordered: []
+        ordered:
+          - display: Display
+          - reviewer_name: Reviewer
+          - mapping_comments: Mapping Comments
+          - author: Mapper
+          - reason_for_no_map: No Map Reason
+          - target_concept_code: Target Concept Code
+          - review_comment: Review Comment
+          - review_status: Review Status
+          - target_concept_display: Target Concept Display
+          - reviewed_by: reviewed_by
     - alwaysShowPaginator: false
     - columnColors:
         ordered:
@@ -78,7 +88,7 @@ template:
           - code: false
           - mapping_group: false
           - system: false
-          - reason_for_no_map: false
+          - reason_for_no_map: true
           - assigned_mapper: false
           - target_concept_system: false
           - map_status: false
@@ -89,6 +99,7 @@ template:
           - uuid: false
           - concept_map_version_uuid: false
           - no_map: false
+          - reviewed_by: false
     - _columnSummaryTypes:
         ordered: []
     - _columnsWithLegacyBackgroundColor:

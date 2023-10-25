@@ -21,9 +21,7 @@ template:
     - labelAlign: left
     - formDataKey: '{{ self.id }}'
     - value: ''
-    - labelCaption: >-
-        Only for use when a target has been selected and a mapping will be
-        created. This will not comment on sources for no maps.
+    - labelCaption: Used when a target has been selected and a mapping will be created.
     - labelWidth: '33'
     - autoFill: ''
     - placeholder: Enter value

@@ -5,14 +5,15 @@ template:
   ordered:
     - heightType: auto
     - horizontalAlign: left
+    - marginType: normal
     - hidden: false
     - imageWidth: fit
     - showInEditor: false
     - verticalAlign: center
     - tooltipText: ''
     - value: >-
-        {{authored_by.data[mapper_assignment_counts.data.first_last_name[i]] ??
-        '--'}}
+        {{mapper_mapped_count.data[mapper_assignment_counts.data.first_last_name[i]]
+        ?? '--'}}
     - _disclosedFields:
         array: []
     - disableMarkdown: false
@@ -26,5 +27,4 @@ position2:
     row: 0.7999999999999999
     col: 9
     height: 0.6
-    width: 3
 createdAt: 2023-01-20T23:13:20.497Z

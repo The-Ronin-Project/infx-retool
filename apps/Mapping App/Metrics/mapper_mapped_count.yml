@@ -1,4 +1,4 @@
-id: authored_by
+id: mapper_mapped_count
 type: datasource
 subtype: SqlQueryUnified
 resourceName: dc8029bc-3980-4836-841e-776c64eeca49
@@ -15,24 +15,28 @@ template:
     - successMessage: ''
     - queryDisabled: ''
     - playgroundQuerySaveId: latest
+    - workflowParams: null
     - resourceNameOverride: ''
     - runWhenModelUpdates: true
+    - workflowRunId: null
     - showFailureToaster: true
-    - query: >-
-        select cr.author, count(cr.author) from concept_maps.source_concept sc
+    - query: >
+        SELECT pmu.first_last_name, sc.assigned_mapper, COUNT(*)  
 
-        join project_management.user pmu on pmu.uuid=sc.assigned_mapper
+        FROM concept_maps.source_concept sc  
 
-        join concept_maps.concept_relationship cr on sc.uuid =
-        cr.source_concept_uuid
+        JOIN project_management.user pmu ON pmu.uuid = sc.assigned_mapper  
 
-        where sc.concept_map_version_uuid =
-        {{urlparams.concept_map_version_uuid}}
+        WHERE sc.concept_map_version_uuid =
+        {{urlparams.concept_map_version_uuid}}  
 
-        group by cr.author
+        AND (sc.map_status = 'ready for review' OR sc.map_status = 'reviewed')  
+
+        GROUP BY pmu.first_last_name, sc.assigned_mapper  
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
+    - workflowRunBodyType: raw
     - privateParams: []
     - runWhenPageLoadsDelay: ''
     - warningCodes: []
@@ -48,6 +52,7 @@ template:
     - requestSentTimestamp: null
     - databaseHostOverride: ''
     - metadata: null
+    - workflowActionType: null
     - editorMode: sql
     - queryRunTime: null
     - actionType: ''
@@ -80,21 +85,23 @@ template:
     - bulkUpdatePrimaryKey: ''
     - runWhenPageLoads: false
     - transformer: |-
-        const input = formatDataAsArray(data);
-        const output = input.reduce((obj, item) => {
-            obj[item.author] = item.count;
-            return obj;
-        }, {});
-
-        return output;
+        const input = formatDataAsArray(data);  
+        const output = input.reduce((obj, item) => {  
+            obj[item.first_last_name] = item.count;  
+            return obj;  
+        }, {});  
+          
+        return output; 
     - events: []
     - tableName: ''
     - queryTimeout: '10000'
+    - workflowId: null
     - requireConfirmation: false
     - queryFailureConditions: ''
     - changesetIsObject: false
     - enableCaching: false
     - allowedGroups: []
+    - workflowBlockPluginId: null
     - databaseUsernameOverride: ''
     - shouldEnableBatchQuerying: false
     - doNotThrowOnNoOp: false

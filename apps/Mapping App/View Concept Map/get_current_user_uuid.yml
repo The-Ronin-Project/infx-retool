@@ -1,4 +1,4 @@
-id: count_no_map
+id: get_current_user_uuid
 type: datasource
 subtype: SqlQueryUnified
 resourceName: dc8029bc-3980-4836-841e-776c64eeca49
@@ -18,12 +18,11 @@ template:
     - workflowParams: null
     - resourceNameOverride: ''
     - runWhenModelUpdates: true
+    - workflowRunId: null
     - showFailureToaster: true
     - query: |-
-        select count(*)
-        from concept_maps.source_concept
-        where concept_map_version_uuid={{urlparams.concept_map_version_uuid}}
-        and no_map=true
+        select uuid from project_management.user
+        where first_last_name={{current_user.fullName}}
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
@@ -43,6 +42,7 @@ template:
     - requestSentTimestamp: null
     - databaseHostOverride: ''
     - metadata: null
+    - workflowActionType: null
     - editorMode: sql
     - queryRunTime: null
     - actionType: ''
@@ -74,13 +74,9 @@ template:
     - showUpdateSetValueDynamicallyToggle: true
     - bulkUpdatePrimaryKey: ''
     - runWhenPageLoads: false
-    - transformer: >-
-        // type your code here
-
-        // example: return formatDataAsArray(data).filter(row => row.quantity >
-        20)
-
-        return data
+    - transformer: |-
+        // Query results are available as the `data` variable
+        return formatDataAsArray(data)
     - events: []
     - tableName: ''
     - queryTimeout: '10000'
@@ -90,6 +86,7 @@ template:
     - changesetIsObject: false
     - enableCaching: false
     - allowedGroups: []
+    - workflowBlockPluginId: null
     - databaseUsernameOverride: ''
     - shouldEnableBatchQuerying: false
     - doNotThrowOnNoOp: false
@@ -97,4 +94,4 @@ template:
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2023-06-23T16:22:22.414Z
+createdAt: 2023-08-29T21:03:26.227Z

@@ -7,6 +7,9 @@ template:
     - sticky: false
     - isHiddenOnDesktop: false
     - isHiddenOnMobile: false
+    - style:
+        ordered:
+          - canvas: rgb(240, 244, 248)
 style:
   ordered: []
 createdAt: 2023-03-27T19:34:11.447Z

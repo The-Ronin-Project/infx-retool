@@ -1,4 +1,4 @@
-id: no_map_it
+id: set_user_as_assigned_reviewer
 type: datasource
 subtype: SqlQueryUnified
 resourceName: dc8029bc-3980-4836-841e-776c64eeca49
@@ -23,11 +23,12 @@ template:
     - query: >-
         update concept_maps.source_concept
 
-        set no_map = 'true', reason_for_no_map = {{no_map.selectedItem.label}},
-        comments = {{no_map_reason_input.value}}, map_status = 'no map'
+        set assigned_reviewer={{get_current_user_uuid.data[0]}}
 
-        where cast(uuid as text) =
-        ANY({{mapping_queue.selectedRow.data.map(x=>x.uuid)}})
+        where concept_map_version_uuid={{urlparams.concept_map_version_uuid}}
+
+        and cast(uuid as text) =
+        ANY({{mapped_concepts.selectedRow.data.map(x=>x.source_concept_uuid)}})
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
@@ -43,15 +44,14 @@ template:
     - showSuccessToaster: true
     - dataArray: []
     - cacheKeyTtl: ''
-    - filterBy: >-
-        [{"key":"uuid","value":"{{mapping_queue.selectedRow.data[0].uuid}}","operation":"="}]
+    - filterBy: ''
     - requestSentTimestamp: null
     - databaseHostOverride: ''
     - metadata: null
     - workflowActionType: null
     - editorMode: sql
     - queryRunTime: null
-    - actionType: UPDATE_BY
+    - actionType: ''
     - changesetObject: ''
     - shouldUseLegacySql: false
     - errorTransformer: >-
@@ -65,15 +65,13 @@ template:
     - databaseNameOverride: ''
     - confirmationMessage: null
     - isFetching: false
-    - changeset: >-
-        [{"key":"no_map","value":"true"},{"key":"reason_for_no_map","value":"{{no_map.selectedItem.label}}"},{"key":"comments","value":"{{no_map_reason_input.value}}"},{"key":"map_status","value":"no
-        map"}]
+    - changeset: ''
     - rawData: null
     - queryTriggerDelay: '0'
     - resourceTypeOverride: null
     - watchedParams: []
     - enableErrorTransformer: false
-    - enableBulkUpdates: true
+    - enableBulkUpdates: false
     - showLatestVersionUpdatedWarning: false
     - timestamp: 0
     - importedQueryDefaults:
@@ -82,45 +80,11 @@ template:
     - showUpdateSetValueDynamicallyToggle: true
     - bulkUpdatePrimaryKey: ''
     - runWhenPageLoads: false
-    - transformer: >-
-        // type your code here
-
-        // example: return formatDataAsArray(data).filter(row => row.quantity >
-        20)
-
-        return data
-    - events:
-        - ordered:
-            - event: success
-            - type: datasource
-            - method: trigger
-            - pluginId: load_queue
-            - targetId: null
-            - params:
-                ordered: []
-            - waitType: debounce
-            - waitMs: '0'
-        - ordered:
-            - event: success
-            - type: widget
-            - method: clearValue
-            - pluginId: no_map_reason_input
-            - targetId: null
-            - params:
-                ordered: []
-            - waitType: debounce
-            - waitMs: '0'
-        - ordered:
-            - event: success
-            - type: widget
-            - method: clearValue
-            - pluginId: mapping_comments
-            - targetId: null
-            - params:
-                ordered: []
-            - waitType: debounce
-            - waitMs: '0'
-    - tableName: concept_maps.source_concept
+    - transformer: |-
+        // Query results are available as the `data` variable
+        return formatDataAsArray(data)
+    - events: []
+    - tableName: ''
     - queryTimeout: '10000'
     - workflowId: null
     - requireConfirmation: false
@@ -136,4 +100,4 @@ template:
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2022-09-14T17:19:12.402Z
+createdAt: 2023-08-29T21:04:16.510Z

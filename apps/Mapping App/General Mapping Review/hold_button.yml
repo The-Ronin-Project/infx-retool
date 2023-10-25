@@ -1,4 +1,4 @@
-id: hold2
+id: hold_button
 type: widget
 subtype: ButtonWidget2
 template:
@@ -9,7 +9,7 @@ template:
     - submitTargetId: null
     - marginType: normal
     - hidden: false
-    - text: Hold for discussion All Selected
+    - text: Save for discussion All Selected
     - showInEditor: false
     - tooltipText: ''
     - _disclosedFields:
@@ -22,7 +22,7 @@ template:
             - event: click
             - type: datasource
             - method: trigger
-            - pluginId: hold_all_for_discussion
+            - pluginId: save_all_for_discussion
             - targetId: null
             - params:
                 ordered: []

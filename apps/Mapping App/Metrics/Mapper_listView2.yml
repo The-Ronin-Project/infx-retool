@@ -4,15 +4,20 @@ subtype: ListViewWidget
 template:
   ordered:
     - heightType: auto
+    - layoutType: list
+    - marginType: normal
     - showBorder: true
     - data: ''
+    - paddingType: normal
     - showDropShadow: true
     - formDataKey: '{{ self.id }}'
+    - itemWidth: ''
     - dynamicHeightsEnabled: true
     - numColumns: '1'
     - itemHeight: '3'
     - overflowType: scroll
     - instances: '{{ mapper_assignment_counts.data.first_last_name.length }}'
+    - direction: vertical
 style:
   ordered: []
 position2:
@@ -20,6 +25,5 @@ position2:
     container: container1
     subcontainer: 22ec8
     row: 0.6000000000000001
-    height: 5
     width: 5
 createdAt: 2023-01-20T22:53:48.926Z

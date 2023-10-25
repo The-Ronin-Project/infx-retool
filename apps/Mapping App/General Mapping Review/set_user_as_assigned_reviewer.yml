@@ -1,4 +1,4 @@
-id: no_map_reject
+id: set_user_as_assigned_reviewer
 type: datasource
 subtype: SqlQueryUnified
 resourceName: dc8029bc-3980-4836-841e-776c64eeca49
@@ -23,12 +23,12 @@ template:
     - query: >-
         update concept_maps.source_concept
 
-        set no_map = null, reason_for_no_map = null,
-        map_status='no_map_rejected'
+        set assigned_reviewer={{get_current_user_uuid.data.uuid[0]}}
 
-        where uuid = {{no_map_table.selectedRow.data.uuid}}
+        where concept_map_version_uuid={{urlparams.concept_map_version_uuid}}
 
-        and concept_map_version_uuid={{urlparams.concept_map_version_uuid}}
+        and cast(uuid as text) =
+        ANY({{review_queue.selectedRow.data.map(x=>x.source_concept_uuid)}})
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
@@ -41,7 +41,7 @@ template:
     - importedQueryInputs:
         ordered: []
     - isImported: false
-    - showSuccessToaster: true
+    - showSuccessToaster: false
     - dataArray: []
     - cacheKeyTtl: ''
     - filterBy: ''
@@ -87,17 +87,7 @@ template:
         20)
 
         return data
-    - events:
-        - ordered:
-            - event: success
-            - type: datasource
-            - method: trigger
-            - pluginId: populate_no_map_table
-            - targetId: null
-            - params:
-                ordered: []
-            - waitType: debounce
-            - waitMs: '0'
+    - events: []
     - tableName: ''
     - queryTimeout: '10000'
     - workflowId: null
@@ -114,5 +104,5 @@ template:
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2022-12-07T18:49:44.101Z
-folder: no_map_concepts_tab
+createdAt: 2023-08-29T20:21:11.970Z
+folder: ready_for_review_tab

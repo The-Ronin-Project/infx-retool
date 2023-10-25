@@ -9,12 +9,11 @@ appTemplate:
         object:
           landscapeMode: false
           tabletMode: false
+  queryStatusVisibility: true
   experimentalPerfFeatures:
     object:
       batchCommitModelEnabled: false
       skipDepCycleCheckingEnabled: false
       serverDepGraphEnabled: false
       useRuntimeV2: false
-  rootScreen: null
-  version: 2.115.3
-  markdownLinkBehavior: auto
+  version: 3.4.3

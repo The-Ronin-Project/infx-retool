@@ -36,9 +36,7 @@ template:
         ctc.uuid where sc.concept_map_version_uuid =
         {{urlparams.concept_map_version_uuid}}
 
-        and (sc.reason_for_no_map = 'Save for discussion' or
-        sc.reason_for_no_map = 'Save for discusion' or cr.review_status = 'hold
-        for discussion')
+        and sc.save_for_discussion is TRUE
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null

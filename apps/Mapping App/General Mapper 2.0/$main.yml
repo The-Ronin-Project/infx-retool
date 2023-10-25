@@ -5,6 +5,9 @@ template:
   ordered:
     - type: main
     - sticky: false
+    - style:
+        ordered:
+          - canvas: rgb(240, 244, 248)
 style:
   ordered: []
 createdAt: 2022-09-09T22:13:35.479Z

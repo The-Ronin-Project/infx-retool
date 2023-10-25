@@ -5,25 +5,22 @@ template:
   ordered:
     - _disabledByIndex:
         - false
-        - 'true'
         - false
         - false
         - false
-        - ''
+        - false
     - showSelectionIndicator: true
     - horizontalAlign: stretch
     - _values:
         - ''
-        - Action 5
-        - ''
         - ''
         - Action 6
-        - ''
+        - Action 4
+        - Action 5
     - iconByIndex:
         array: []
     - clickable: false
     - _iconByIndex:
-        - ''
         - ''
         - ''
         - ''
@@ -40,7 +37,6 @@ template:
         - ''
         - ''
         - ''
-        - ''
     - selectedItem: null
     - showInEditor: false
     - tooltipText: ''
@@ -50,11 +46,9 @@ template:
         - false
         - false
         - false
-        - false
-        - false
+        - '{{ !mapping_comments.value || mapping_comments.value === "" }}'
         - false
     - _captionByIndex:
-        - ''
         - ''
         - ''
         - ''
@@ -74,9 +68,7 @@ template:
         - ''
         - ''
         - ''
-        - ''
     - _colorByIndex:
-        - ''
         - ''
         - ''
         - ''
@@ -90,8 +82,48 @@ template:
             - event: click
             - type: datasource
             - method: trigger
-            - pluginId: no_map_it
+            - pluginId: save_for_discussion_query
+            - targetId: '23685'
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: click
+            - type: datasource
+            - method: trigger
+            - pluginId: set_reason_other
+            - targetId: 38ef5
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: click
+            - type: datasource
+            - method: trigger
+            - pluginId: set_reason_conflicting_information
             - targetId: 70dcf
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: click
+            - type: datasource
+            - method: trigger
+            - pluginId: set_reason_not_in_target_code_system
+            - targetId: 8404d
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: click
+            - type: datasource
+            - method: trigger
+            - pluginId: set_reason_not_enough_information
+            - targetId: e85eb
             - params:
                 ordered: []
             - waitType: debounce
@@ -128,27 +160,7 @@ template:
             - type: datasource
             - method: trigger
             - pluginId: no_map_it
-            - targetId: 8404d
-            - params:
-                ordered: []
-            - waitType: debounce
-            - waitMs: '0'
-        - ordered:
-            - event: click
-            - type: datasource
-            - method: trigger
-            - pluginId: no_map_it
             - targetId: '20e16'
-            - params:
-                ordered: []
-            - waitType: debounce
-            - waitMs: '0'
-        - ordered:
-            - event: click
-            - type: datasource
-            - method: trigger
-            - pluginId: no_map_it
-            - targetId: e85eb
             - params:
                 ordered: []
             - waitType: debounce
@@ -184,29 +196,26 @@ template:
             - waitType: debounce
             - waitMs: '0'
     - _ids:
-        - '20e16'
-        - 807d9
         - e85eb
         - 8404d
         - 70dcf
-        - 82bbe
+        - 38ef5
+        - '23685'
     - overlayMaxHeight: 375
     - loading: false
     - disabled: >-
         {{load_metadata.data.status == 'active' || load_metadata.data.status ==
         'retired' }}
     - _labels:
-        - Save for discussion
-        - 'No Map Reasons:'
         - Not enough information
         - Not in target code system
         - Conflicting information
         - Other
+        - Save for discussion
     - disabledByIndex:
         array: []
     - maintainSpaceWhenHidden: false
     - _imageByIndex:
-        - ''
         - ''
         - ''
         - ''
@@ -218,7 +227,7 @@ style:
   ordered: []
 position2:
   position2:
-    row: 15.799999999999988
+    row: 15.599999999999989
     col: 1
     height: 1
     width: 5

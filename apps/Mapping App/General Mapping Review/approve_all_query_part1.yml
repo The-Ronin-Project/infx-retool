@@ -40,7 +40,7 @@ template:
     - importedQueryInputs:
         ordered: []
     - isImported: false
-    - showSuccessToaster: true
+    - showSuccessToaster: false
     - dataArray: []
     - cacheKeyTtl: ''
     - filterBy: ''
@@ -89,16 +89,6 @@ template:
     - events:
         - ordered:
             - event: success
-            - type: datasource
-            - method: trigger
-            - pluginId: populate_review_queue
-            - targetId: null
-            - params:
-                ordered: []
-            - waitType: debounce
-            - waitMs: '0'
-        - ordered:
-            - event: success
             - type: widget
             - method: clearValue
             - pluginId: review_comment_all
@@ -109,9 +99,19 @@ template:
             - waitMs: '0'
         - ordered:
             - event: success
-            - type: widget
-            - method: selectRow
-            - pluginId: review_queue
+            - type: datasource
+            - method: trigger
+            - pluginId: get_current_user_uuid
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: success
+            - type: datasource
+            - method: trigger
+            - pluginId: approve_all_query_part2
             - targetId: null
             - params:
                 ordered: []

@@ -1,4 +1,4 @@
-id: discussion_reject_part_1
+id: set_reason_not_enough_information
 type: datasource
 subtype: SqlQueryUnified
 resourceName: dc8029bc-3980-4836-841e-776c64eeca49
@@ -20,11 +20,13 @@ template:
     - runWhenModelUpdates: false
     - workflowRunId: null
     - showFailureToaster: true
-    - query: |-
+    - query: >-
         update concept_maps.source_concept
-        set no_map = null, reason_for_no_map = null, map_status='pending'
-        where uuid = {{discussion_table.selectedRow.data.uuid}}
-        and concept_map_version_uuid={{urlparams.concept_map_version_uuid}}
+
+        set reason_for_no_map = 'Not enough information'
+
+        WHERE uuid = ANY({{'{' + mapping_queue.selectedRow.data.map(data => '"'
+        + data.uuid + '"').join(", ") + '}'}})
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
@@ -37,7 +39,7 @@ template:
     - importedQueryInputs:
         ordered: []
     - isImported: false
-    - showSuccessToaster: true
+    - showSuccessToaster: false
     - dataArray: []
     - cacheKeyTtl: ''
     - filterBy: ''
@@ -64,7 +66,7 @@ template:
     - changeset: ''
     - rawData: null
     - queryTriggerDelay: '0'
-    - resourceTypeOverride: null
+    - resourceTypeOverride: ''
     - watchedParams: []
     - enableErrorTransformer: false
     - enableBulkUpdates: false
@@ -76,19 +78,15 @@ template:
     - showUpdateSetValueDynamicallyToggle: true
     - bulkUpdatePrimaryKey: ''
     - runWhenPageLoads: false
-    - transformer: >-
-        // type your code here
-
-        // example: return formatDataAsArray(data).filter(row => row.quantity >
-        20)
-
-        return data
+    - transformer: |-
+        // Query results are available as the `data` variable
+        return formatDataAsArray(data)
     - events:
         - ordered:
             - event: success
             - type: datasource
             - method: trigger
-            - pluginId: discussion_reject_part_2
+            - pluginId: no__map_map_it
             - targetId: null
             - params:
                 ordered: []
@@ -110,5 +108,4 @@ template:
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2022-11-02T20:35:44.665Z
-folder: concepts_for_discussion
+createdAt: 2023-08-22T03:44:03.790Z

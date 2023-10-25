@@ -12,9 +12,11 @@ template:
     - clickable: false
     - _iconByIndex:
         - ''
+    - marginType: normal
     - hidden: '{{!show_filters.value}}'
     - showHeader: false
     - hoistFetching: true
+    - paddingType: normal
     - views:
         array: []
     - showInEditor: false

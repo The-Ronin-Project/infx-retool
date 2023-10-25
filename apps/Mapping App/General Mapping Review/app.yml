@@ -9,10 +9,13 @@ appTemplate:
         object:
           landscapeMode: false
           tabletMode: false
+  experimentalFeatures:
+    object:
+      sourceControlTemplateDehydration: false
   folders:
     - ready_for_review_tab
-    - no_map_concepts_tab
     - concepts_for_discussion
+  queryStatusVisibility: true
   experimentalPerfFeatures:
     object:
       batchCommitModelEnabled: false

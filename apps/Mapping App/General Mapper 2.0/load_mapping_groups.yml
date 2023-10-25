@@ -88,8 +88,6 @@ template:
 
         finalResults.mapping_group.push('rejected')
 
-        finalResults.mapping_group.push('no_map_rejected')
-
         return finalResults
     - events: []
     - tableName: ''

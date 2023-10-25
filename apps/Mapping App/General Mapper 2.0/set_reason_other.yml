@@ -1,4 +1,4 @@
-id: rejected_count
+id: set_reason_other
 type: datasource
 subtype: SqlQueryUnified
 resourceName: dc8029bc-3980-4836-841e-776c64eeca49
@@ -15,24 +15,22 @@ template:
     - successMessage: ''
     - queryDisabled: ''
     - playgroundQuerySaveId: latest
+    - workflowParams: null
     - resourceNameOverride: ''
-    - runWhenModelUpdates: true
+    - runWhenModelUpdates: false
+    - workflowRunId: null
     - showFailureToaster: true
-    - query: >-
-        select pmu.first_last_name, sc.assigned_mapper, count(*) from
-        concept_maps.source_concept sc
+    - query: >
+        UPDATE concept_maps.source_concept
 
-        join project_management.user pmu on pmu.uuid=sc.assigned_mapper
+        SET reason_for_no_map = 'Other'
 
-        where sc.concept_map_version_uuid =
-        {{urlparams.concept_map_version_uuid}}
-
-        and sc.map_status = 'rejected'
-
-        group by pmu.first_last_name, sc.assigned_mapper
+        WHERE uuid = ANY({{'{' + mapping_queue.selectedRow.data.map(data => '"'
+        + data.uuid + '"').join(", ") + '}'}})
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
+    - workflowRunBodyType: raw
     - privateParams: []
     - runWhenPageLoadsDelay: ''
     - warningCodes: []
@@ -41,13 +39,14 @@ template:
     - importedQueryInputs:
         ordered: []
     - isImported: false
-    - showSuccessToaster: true
+    - showSuccessToaster: false
     - dataArray: []
     - cacheKeyTtl: ''
     - filterBy: ''
     - requestSentTimestamp: null
     - databaseHostOverride: ''
     - metadata: null
+    - workflowActionType: null
     - editorMode: sql
     - queryRunTime: null
     - actionType: ''
@@ -67,7 +66,7 @@ template:
     - changeset: ''
     - rawData: null
     - queryTriggerDelay: '0'
-    - resourceTypeOverride: null
+    - resourceTypeOverride: ''
     - watchedParams: []
     - enableErrorTransformer: false
     - enableBulkUpdates: false
@@ -79,21 +78,29 @@ template:
     - showUpdateSetValueDynamicallyToggle: true
     - bulkUpdatePrimaryKey: ''
     - runWhenPageLoads: false
-    - transformer: >-
-        // type your code here
-
-        // example: return formatDataAsArray(data).filter(row => row.quantity >
-        20)
-
-        return data
-    - events: []
+    - transformer: |-
+        // Query results are available as the `data` variable
+        return formatDataAsArray(data)
+    - events:
+        - ordered:
+            - event: success
+            - type: datasource
+            - method: trigger
+            - pluginId: no__map_map_it
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
     - tableName: ''
     - queryTimeout: '10000'
+    - workflowId: null
     - requireConfirmation: false
     - queryFailureConditions: ''
     - changesetIsObject: false
     - enableCaching: false
     - allowedGroups: []
+    - workflowBlockPluginId: null
     - databaseUsernameOverride: ''
     - shouldEnableBatchQuerying: false
     - doNotThrowOnNoOp: false
@@ -101,4 +108,4 @@ template:
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2023-01-24T17:40:44.005Z
+createdAt: 2023-08-29T20:41:47.826Z

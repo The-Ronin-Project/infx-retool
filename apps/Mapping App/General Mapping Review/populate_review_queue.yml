@@ -50,6 +50,8 @@ template:
 
         and ((concept_relationship.review_status is null) or
         (concept_relationship.review_status = 'ready for review'))
+
+        and ((source_concept.save_for_discussion = FALSE))
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null

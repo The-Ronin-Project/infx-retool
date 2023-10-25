@@ -21,6 +21,7 @@ template:
     - selectedItems:
         array: []
     - inputValue: ''
+    - marginType: normal
     - persistSearchTerm: false
     - hidden: false
     - customValidation: ''

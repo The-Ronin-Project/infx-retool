@@ -5,12 +5,15 @@ template:
   ordered:
     - heightType: auto
     - horizontalAlign: left
+    - marginType: normal
     - hidden: false
     - imageWidth: fit
     - showInEditor: false
     - verticalAlign: center
     - tooltipText: ''
-    - value: This metric counts any concpets the user mapped in the project.
+    - value: >-
+        This metric counts concepts the user mapped in the project (map_status
+        ="ready for review" OR "reviewed").
     - style:
         ordered:
           - color: rgb(36, 59, 83)

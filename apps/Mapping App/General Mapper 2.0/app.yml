@@ -9,6 +9,10 @@ appTemplate:
         object:
           landscapeMode: false
           tabletMode: false
+  experimentalFeatures:
+    object:
+      sourceControlTemplateDehydration: false
+  queryStatusVisibility: true
   experimentalPerfFeatures:
     object:
       batchCommitModelEnabled: false
