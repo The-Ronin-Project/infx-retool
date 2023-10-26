@@ -19,7 +19,7 @@ template:
     - numColumns: '3'
     - itemHeight: '3'
     - overflowType: scroll
-    - instances: '3'
+    - instances: '{{processUseCases.data.length}}'
     - direction: vertical
 style:
   ordered: []

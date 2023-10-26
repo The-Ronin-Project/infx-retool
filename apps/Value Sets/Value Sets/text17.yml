@@ -6,7 +6,7 @@ template:
     - heightType: auto
     - horizontalAlign: left
     - marginType: normal
-    - hidden: '{{i=" "}}'
+    - hidden: ''
     - imageWidth: fit
     - showInEditor: false
     - verticalAlign: center
