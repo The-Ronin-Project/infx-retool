@@ -83,11 +83,7 @@ template:
         ({{no_map_reason_select.value.length == 0}}))
 
         and ((cr.target_concept_code is null and cr.target_concept_display is
-        null and sc.no_map is not true) or ({{show_only_unmapped.value ==
-        false}}))
-
-        and ((cr.target_concept_code is null and cr.target_concept_display is
-        null and sc.no_map is true))
+        null) or ({{show_only_unmapped.value == false}}))
 
         and ((cr.target_concept_code is not null and cr.target_concept_display
         is not null) or ({{show_only_mapped.value == false}}))
