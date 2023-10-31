@@ -83,21 +83,27 @@ template:
     - onRowAdded: ''
     - columnHeaderNames:
         ordered:
-          - save_for_discussion: Save for discussion
+          - previous_version_context: Previous Version Context
+          - save_for_discussion: Save for Discussion
+          - model_name: Model Name
           - display: Source Display
           - additional_data: ℹ️
+          - model_version: Model Version
           - mapping_comments: Mapping Comments
           - count_of_resources_affected: Resource Count
+          - model_output_score: Model Output Score
           - author: Mapper
           - code: Source Code
-          - mapping_group: Mapping_Group
+          - mapping_group: Mapping Group
           - reason_for_no_map: No-Map Reason
           - source_code: Source Code
           - target_concept_code: Target Code
           - actual_mapper: Mapper
           - comments: Comments
           - map_status: Map Status
+          - custom_terminology_uuid: Custom Terminology uuid
           - actual_reviewer: Reviewer
+          - model_run_time: Model Run Time
           - additional_context: Additional Context
           - review_comment: Review Comment
           - relationship: Relationship
@@ -210,7 +216,7 @@ template:
     - applyDynamicSettingsToColumnOrder: true
     - rowColor:
         array: []
-    - actionButtonColumnName: Send Back for Review
+    - actionButtonColumnName: Reject
     - resetAfterSave: true
     - filterStackType: and
     - downloadRawData: false
@@ -228,8 +234,8 @@ template:
             - actionButtonUrl: ''
             - actionButtonNewWindow: false
             - actionButtonDisabled: >-
-                {{currentRow.map_status != 'reviewed'|| currentRow.review_status
-                != 'reviewed'}}
+                {{load_metadata.data.status == 'active' ||
+                load_metadata.data.status == 'retired' }}
     - actionButtonSelectsRow: true
     - selectRowByDefault: true
     - defaultSortByColumn: null
