@@ -17,6 +17,7 @@ template:
     - overlayMinWidth: null
     - allowDeselect: true
     - inputValue: ''
+    - marginType: normal
     - hidden: false
     - customValidation: ''
     - data: '{{load_loinc_versions.data.uuid}}'
@@ -89,5 +90,4 @@ position2:
   position2:
     col: 9
     height: 1
-    width: 3
 createdAt: 2022-02-02T23:02:29.170Z

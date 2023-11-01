@@ -17,6 +17,7 @@ template:
         array: []
     - selectedItems:
         array: []
+    - marginType: normal
     - hidden: false
     - customValidation: ''
     - data: '{{system_options.data.system}}'

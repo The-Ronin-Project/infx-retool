@@ -17,6 +17,7 @@ template:
         array: []
     - selectedItems:
         array: []
+    - marginType: normal
     - hidden: false
     - customValidation: ''
     - data: '{{timing_options.data.time_aspct}}'
@@ -83,6 +84,5 @@ position2:
   position2:
     container: container3
     row: 21.4
-    height: 5
     width: 12
 createdAt: 2022-01-26T18:28:08.636Z
