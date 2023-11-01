@@ -86,7 +86,27 @@ template:
             - event: success
             - type: datasource
             - method: trigger
-            - pluginId: delete_mapping2
+            - pluginId: load_rejected_queue
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: success
+            - type: datasource
+            - method: trigger
+            - pluginId: load_queue
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: success
+            - type: datasource
+            - method: trigger
+            - pluginId: load_mapped_targets
             - targetId: null
             - params:
                 ordered: []
