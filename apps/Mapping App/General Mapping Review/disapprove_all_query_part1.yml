@@ -110,6 +110,16 @@ template:
             - event: success
             - type: datasource
             - method: trigger
+            - pluginId: set_user_as_assigned_reviewer
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: success
+            - type: datasource
+            - method: trigger
             - pluginId: disapprove_all_query_part2
             - targetId: null
             - params:
