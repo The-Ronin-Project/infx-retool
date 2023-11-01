@@ -39,12 +39,15 @@ template:
     - alwaysShowPaginator: false
     - columnColors:
         ordered:
+          - model_name: ''
           - display: ''
+          - model_version: ''
           - reviewer_name: ''
           - mapping_comments: ''
           - created_date: ''
           - relationship_code_uuid: ''
           - rc_uuid: ''
+          - model_output_score: ''
           - cr_uuid: ''
           - author: ''
           - target_concept_system_version_uuid: ''
@@ -60,6 +63,7 @@ template:
           - source_concept_uuid: ''
           - reviewed_date: ''
           - assigned_reviewer: ''
+          - model_run_time: ''
           - additional_context: ''
           - review_comment: ''
           - relationship: ''
