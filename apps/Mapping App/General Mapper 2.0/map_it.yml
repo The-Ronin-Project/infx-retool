@@ -83,7 +83,7 @@ template:
             - params:
                 ordered: []
             - targetId: null
-            - pluginId: load_queue
+            - pluginId: clear_no_map_reason_query
             - waitType: debounce
             - event: success
             - type: datasource
@@ -103,6 +103,16 @@ template:
             - type: widget
             - method: selectRow
             - pluginId: mapping_queue
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: success
+            - type: datasource
+            - method: trigger
+            - pluginId: load_queue
             - targetId: null
             - params:
                 ordered: []
