@@ -30,6 +30,7 @@ template:
         array: []
     - selectedItems:
         array: []
+    - marginType: normal
     - hidden: false
     - customValidation: ''
     - data:

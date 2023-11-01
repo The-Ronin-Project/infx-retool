@@ -8,11 +8,14 @@ template:
     - lastReceivedFromResourceAt: null
     - queryDisabledMessage: ''
     - servedFromCache: false
+    - offlineUserQueryInputs: ''
     - successMessage: ''
     - queryDisabled: ''
     - playgroundQuerySaveId: latest
+    - workflowParams: null
     - resourceNameOverride: ''
     - runWhenModelUpdates: false
+    - workflowRunId: null
     - showFailureToaster: true
     - query: |-
         if (exclusions_code.value != '') {
@@ -23,16 +26,19 @@ template:
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
+    - workflowRunBodyType: raw
     - privateParams: []
     - runWhenPageLoadsDelay: ''
     - data: null
     - importedQueryInputs:
         ordered: []
+    - _additionalScope: []
     - isImported: false
     - showSuccessToaster: true
     - cacheKeyTtl: ''
     - requestSentTimestamp: null
     - metadata: null
+    - workflowActionType: null
     - queryRunTime: null
     - changesetObject: ''
     - errorTransformer: >-
@@ -67,11 +73,13 @@ template:
         return data
     - events: []
     - queryTimeout: '10000'
+    - workflowId: null
     - requireConfirmation: false
-    - queryFailureConditions: ''
+    - queryFailureConditions: '[]'
     - changesetIsObject: false
     - enableCaching: false
     - allowedGroups: []
+    - workflowBlockPluginId: null
     - offlineQueryType: None
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false

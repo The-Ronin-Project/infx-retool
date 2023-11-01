@@ -17,6 +17,7 @@ template:
         array: []
     - selectedItems:
         array: []
+    - marginType: normal
     - hidden: false
     - customValidation: ''
     - data: '{{scale_options.data.scale_typ}}'

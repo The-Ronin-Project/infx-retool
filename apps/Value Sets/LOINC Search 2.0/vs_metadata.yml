@@ -11,11 +11,14 @@ template:
     - databasePasswordOverride: ''
     - queryDisabledMessage: ''
     - servedFromCache: false
+    - offlineUserQueryInputs: ''
     - successMessage: ''
     - queryDisabled: ''
     - playgroundQuerySaveId: latest
+    - workflowParams: null
     - resourceNameOverride: ''
     - runWhenModelUpdates: true
+    - workflowRunId: null
     - showFailureToaster: true
     - query: |-
         select * from value_sets.value_set_version vsv
@@ -25,6 +28,7 @@ template:
     - playgroundQueryUuid: 1fcfc4ad-b997-4832-9678-d01dbc85c214
     - playgroundQueryId: 36
     - error: null
+    - workflowRunBodyType: raw
     - privateParams: []
     - runWhenPageLoadsDelay: ''
     - warningCodes: []
@@ -42,6 +46,7 @@ template:
     - requestSentTimestamp: null
     - databaseHostOverride: ''
     - metadata: null
+    - workflowActionType: null
     - editorMode: sql
     - queryRunTime: null
     - actionType: ''
@@ -83,11 +88,13 @@ template:
     - events: []
     - tableName: ''
     - queryTimeout: '10000'
+    - workflowId: null
     - requireConfirmation: false
     - queryFailureConditions: ''
     - changesetIsObject: false
     - enableCaching: false
     - allowedGroups: []
+    - workflowBlockPluginId: null
     - databaseUsernameOverride: ''
     - shouldEnableBatchQuerying: false
     - doNotThrowOnNoOp: false
@@ -95,4 +102,5 @@ template:
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
+    - playgroundQueryName: vs_metadata
 createdAt: 2022-02-02T21:50:52.135Z

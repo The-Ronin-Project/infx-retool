@@ -10,11 +10,14 @@ template:
     - lastReceivedFromResourceAt: null
     - queryDisabledMessage: ''
     - servedFromCache: false
+    - offlineUserQueryInputs: ''
     - successMessage: ''
     - queryDisabled: ''
     - playgroundQuerySaveId: latest
+    - workflowParams: null
     - resourceNameOverride: ''
     - runWhenModelUpdates: true
+    - workflowRunId: null
     - showFailureToaster: true
     - query: |-
         {
@@ -41,6 +44,7 @@ template:
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
+    - workflowRunBodyType: raw
     - privateParams: []
     - runWhenPageLoadsDelay: ''
     - data: null
@@ -51,6 +55,7 @@ template:
     - cacheKeyTtl: ''
     - requestSentTimestamp: null
     - metadata: null
+    - workflowActionType: null
     - queryRunTime: null
     - changesetObject: ''
     - errorTransformer: >-
@@ -94,11 +99,13 @@ template:
             - waitType: debounce
             - waitMs: '0'
     - queryTimeout: '10000'
+    - workflowId: null
     - requireConfirmation: false
     - queryFailureConditions: ''
     - changesetIsObject: false
     - enableCaching: false
     - allowedGroups: []
+    - workflowBlockPluginId: null
     - collection: ''
     - offlineQueryType: None
     - queryThrottleTime: '750'
