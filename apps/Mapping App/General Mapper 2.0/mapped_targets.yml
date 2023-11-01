@@ -12,11 +12,16 @@ template:
     - rowHeight: standard
     - saveChangesDisabled: ''
     - columnTypeProperties:
-        ordered: []
+        ordered:
+          - target_concept_code:
+              ordered: []
     - columnWidths:
         - object:
+            id: target_concept_code
+            value: 175
+        - object:
             id: display
-            value: 270
+            value: 129
     - showSummaryFooter: false
     - disableRowSelectInteraction: false
     - columnWidthsMobile: []
@@ -78,15 +83,19 @@ template:
         ordered: []
     - allowMultiRowSelect: false
     - columnFormats:
-        ordered: []
+        ordered:
+          - target_concept_code: TextDataCell
     - columnRestrictedEditing:
         ordered: []
     - showFilterButton: true
     - _columnVisibility:
         ordered:
+          - model_name: false
+          - model_version: false
           - created_date: false
           - relationship_code_uuid: false
           - rc_uuid: false
+          - model_output_score: false
           - cr_uuid: false
           - target_concept_system_version_uuid: false
           - code: false
@@ -99,13 +108,15 @@ template:
           - source_concept_uuid: false
           - reviewed_date: false
           - assigned_reviewer: false
+          - model_run_time: false
           - additional_context: false
           - uuid: false
           - concept_map_version_uuid: false
           - no_map: false
           - reviewed_by: false
     - _columnSummaryTypes:
-        ordered: []
+        ordered:
+          - target_concept_code: ''
     - _columnsWithLegacyBackgroundColor:
         set: []
     - showAddRowButton: false
@@ -140,7 +151,8 @@ template:
     - defaultSortByColumn: ''
     - paginationOffset: 0
     - columnAlignment:
-        ordered: []
+        ordered:
+          - target_concept_code: left
     - columnSummaries:
         object: {}
     - showBoxShadow: false
@@ -160,7 +172,8 @@ template:
         object: {}
     - sortedColumn: ''
     - _columnSummaryValues:
-        ordered: []
+        ordered:
+          - target_concept_code: ''
     - checkboxRowSelect: true
     - _compatibilityMode: false
     - showColumnBorders: false
@@ -225,6 +238,12 @@ template:
         - target_concept_system_version_uuid
         - review_comment
         - assigned_reviewer
+        - reviewed_by
+        - model_name
+        - model_run_time
+        - model_version
+        - model_output_score
+        - reason_for_no_map
     - sortByRawValue:
         ordered: []
     - calculatedColumns: []
