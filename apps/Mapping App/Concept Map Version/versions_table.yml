@@ -101,6 +101,7 @@ template:
           - source_title: ''
           - comments: ''
           - concept_map_uuid: ''
+          - count_loaded_concepts: ''
           - Custom Column 1: ''
           - Custom Column 2: ''
           - version: ''
@@ -134,6 +135,7 @@ template:
           - source_title: false
           - comments: false
           - concept_map_uuid: false
+          - count_loaded_concepts: false
           - Custom Column 1: true
           - Custom Column 2: true
           - version: true
