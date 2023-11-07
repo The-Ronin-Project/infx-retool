@@ -42,7 +42,7 @@ template:
     - showFooter: false
     - _viewKeys:
         - Triage Errors
-        - Detailed View
+        - Recently Created
     - events:
         ordered: []
     - _ids:

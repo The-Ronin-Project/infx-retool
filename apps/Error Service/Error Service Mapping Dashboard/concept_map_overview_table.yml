@@ -28,7 +28,7 @@ template:
             value: 167.25
         - object:
             id: outstanding_code_count
-            value: 140.578125
+            value: 175.578125
     - showSummaryFooter: false
     - disableRowSelectInteraction: false
     - columnWidthsMobile: []
