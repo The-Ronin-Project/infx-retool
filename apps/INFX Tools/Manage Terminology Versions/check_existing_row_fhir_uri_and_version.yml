@@ -1,18 +1,14 @@
-id: add_new_version
+id: check_existing_row_fhir_uri_and_version
 type: datasource
-subtype: RESTQuery
-resourceName: a00335cd-bd3b-4d98-8af4-7ff590ce95e8
-resourceDisplayName: INFX Internal Tools API
+subtype: SqlQueryUnified
+resourceName: dc8029bc-3980-4836-841e-776c64eeca49
+resourceDisplayName: Clinical Content PostgresSQL DB
 template:
   ordered:
     - queryRefreshTime: ''
-    - paginationLimit: ''
-    - body: >-
-        [{"key":"","value":""},{"key":"previous_terminology_version_uuid","value":"{{terminologies.selectedRow.data.uuid}}"},{"key":"version","value":"{{
-        new_version.value }}"},{"key":"effective_start","value":"{{
-        version_dates.value.start }}"},{"key":"effective_end","value":"{{
-        version_dates.value.end }}"}]
+    - records: ''
     - lastReceivedFromResourceAt: null
+    - databasePasswordOverride: ''
     - queryDisabledMessage: ''
     - servedFromCache: false
     - offlineUserQueryInputs: ''
@@ -21,31 +17,38 @@ template:
     - playgroundQuerySaveId: latest
     - workflowParams: null
     - resourceNameOverride: ''
-    - runWhenModelUpdates: false
-    - paginationPaginationField: ''
-    - headers: ''
+    - runWhenModelUpdates: true
     - workflowRunId: null
     - showFailureToaster: true
-    - paginationEnabled: false
-    - query: terminology/new_version_from_previous
+    - query: |
+        SELECT COUNT(*) as count
+        FROM public.terminology_versions
+        WHERE version = {{version.value}} AND fhir_uri = {{fhir_uri.value}}
     - playgroundQueryUuid: ''
     - playgroundQueryId: null
     - error: null
     - workflowRunBodyType: raw
     - privateParams: []
     - runWhenPageLoadsDelay: ''
+    - warningCodes: []
     - data: null
+    - recordId: ''
     - importedQueryInputs:
         ordered: []
     - isImported: false
     - showSuccessToaster: true
+    - dataArray: []
     - cacheKeyTtl: ''
+    - filterBy: ''
     - requestSentTimestamp: null
-    - cookies: ''
+    - databaseHostOverride: ''
     - metadata: null
     - workflowActionType: null
+    - editorMode: sql
     - queryRunTime: null
+    - actionType: ''
     - changesetObject: ''
+    - shouldUseLegacySql: false
     - errorTransformer: >-
         // The variable 'data' allows you to reference the request's data in the
         transformer. 
@@ -54,6 +57,7 @@ template:
 
         return data.error
     - finished: null
+    - databaseNameOverride: ''
     - confirmationMessage: null
     - isFetching: false
     - changeset: ''
@@ -62,34 +66,33 @@ template:
     - resourceTypeOverride: null
     - watchedParams: []
     - enableErrorTransformer: false
+    - enableBulkUpdates: false
     - showLatestVersionUpdatedWarning: false
-    - paginationDataField: ''
     - timestamp: 0
     - importedQueryDefaults:
         ordered: []
     - enableTransformer: false
     - showUpdateSetValueDynamicallyToggle: true
+    - bulkUpdatePrimaryKey: ''
     - runWhenPageLoads: false
-    - transformer: >-
-        // type your code here
-
-        // example: return formatDataAsArray(data).filter(row => row.quantity >
-        20)
-
-        return data
+    - transformer: |-
+        // Query results are available as the `data` variable
+        return formatDataAsArray(data)
     - events: []
+    - tableName: ''
     - queryTimeout: '10000'
     - workflowId: null
     - requireConfirmation: false
-    - type: POST
     - queryFailureConditions: ''
     - changesetIsObject: false
     - enableCaching: false
     - allowedGroups: []
     - workflowBlockPluginId: null
-    - bodyType: json
+    - databaseUsernameOverride: ''
+    - shouldEnableBatchQuerying: false
+    - doNotThrowOnNoOp: false
     - offlineQueryType: None
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2022-11-04T21:47:15.806Z
+createdAt: 2023-09-08T14:21:27.792Z

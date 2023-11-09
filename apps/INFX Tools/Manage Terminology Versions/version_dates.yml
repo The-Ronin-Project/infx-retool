@@ -7,6 +7,7 @@ template:
     - readOnly: false
     - iconAfter: ''
     - dateFormat: MMM d, yyyy
+    - marginType: normal
     - hidden: false
     - customValidation: ''
     - hideValidationMessage: false

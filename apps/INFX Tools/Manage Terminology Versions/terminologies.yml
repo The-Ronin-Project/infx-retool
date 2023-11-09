@@ -238,6 +238,7 @@ template:
     - freezeActionButtonColumns: false
     - sort: null
     - _columns:
+        - Custom Column 1
         - terminology
         - uuid
         - version
@@ -246,7 +247,6 @@ template:
         - fhir_uri
         - is_standard
         - fhir_terminology
-        - Custom Column 1
     - sortByRawValue:
         ordered: []
     - calculatedColumns:
