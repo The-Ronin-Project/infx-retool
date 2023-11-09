@@ -1,0 +1,30 @@
+id: listview1
+type: widget
+subtype: ListViewWidget
+template:
+  ordered:
+    - heightType: fixed
+    - layoutType: list
+    - marginType: normal
+    - showBorder: true
+    - data: ''
+    - paddingType: normal
+    - showDropShadow: true
+    - scroll: false
+    - formDataKey: ''
+    - itemWidth: ''
+    - dynamicHeightsEnabled: false
+    - numColumns: '3'
+    - itemHeight: '2'
+    - overflowType: visible
+    - instances: '{{load_questions_and_answers.data.uuid.length}}'
+    - direction: vertical
+style:
+  ordered: []
+position2:
+  position2:
+    container: edit_question_group
+    subcontainer: '2'
+    height: 51.39999999999999
+    width: 12
+createdAt: 2021-09-09T20:59:35.036Z

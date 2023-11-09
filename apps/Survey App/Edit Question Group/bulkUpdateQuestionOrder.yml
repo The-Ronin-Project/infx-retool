@@ -1,0 +1,123 @@
+id: bulkUpdateQuestionOrder
+type: datasource
+subtype: SqlQueryUnified
+resourceName: dc8029bc-3980-4836-841e-776c64eeca49
+resourceDisplayName: Clinical Content PostgresSQL DB
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - records: '{{table1.recordUpdates.map(row => _.pick(row, ["uuid","position"]) ) }}'
+    - lastReceivedFromResourceAt: null
+    - databasePasswordOverride: ''
+    - queryDisabledMessage: ''
+    - servedFromCache: false
+    - offlineUserQueryInputs: ''
+    - successMessage: ''
+    - queryDisabled: ''
+    - playgroundQuerySaveId: latest
+    - workflowParams: null
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: false
+    - workflowRunId: null
+    - showFailureToaster: true
+    - query: ''
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - error: null
+    - workflowRunBodyType: raw
+    - privateParams: []
+    - triggersOnSuccess:
+        - load_survey_questions
+        - max_position_survey
+    - runWhenPageLoadsDelay: ''
+    - data: null
+    - recordId: ''
+    - importedQueryInputs:
+        ordered: []
+    - showSuccessConfetti: false
+    - isImported: false
+    - showSuccessToaster: true
+    - dataArray: []
+    - cacheKeyTtl: ''
+    - filterBy: ''
+    - requestSentTimestamp: null
+    - databaseHostOverride: ''
+    - metadata: null
+    - workflowActionType: null
+    - editorMode: gui
+    - queryRunTime: null
+    - actionType: BULK_UPDATE_BY_KEY
+    - triggersOnFailure: []
+    - changesetObject: ''
+    - shouldUseLegacySql: false
+    - errorTransformer: >-
+        // The variable 'data' allows you to reference the request's data in the
+        transformer. 
+
+        // example: return data.find(element => element.isError)
+
+        return data.error
+    - finished: null
+    - databaseNameOverride: ''
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - resourceTypeOverride: null
+    - watchedParams: []
+    - enableErrorTransformer: false
+    - enableBulkUpdates: false
+    - showLatestVersionUpdatedWarning: false
+    - timestamp: 0
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: false
+    - bulkUpdatePrimaryKey: uuid
+    - runWhenPageLoads: false
+    - transformer: >-
+        // type your code here
+
+        // example: return formatDataAsArray(data).filter(row => row.quantity >
+        20)
+
+        return data
+    - events:
+        - ordered:
+            - event: success
+            - type: datasource
+            - method: trigger
+            - pluginId: load_survey_questions
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: success
+            - type: datasource
+            - method: trigger
+            - pluginId: max_position_survey
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - tableName: surveys.question_group_members
+    - queryTimeout: '10000'
+    - workflowId: null
+    - requireConfirmation: false
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups:
+        - Clinical Intelligence Admin
+        - INFX
+    - workflowBlockPluginId: null
+    - databaseUsernameOverride: ''
+    - shouldEnableBatchQuerying: false
+    - doNotThrowOnNoOp: false
+    - offlineQueryType: None
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: true
+    - notificationDuration: ''
+createdAt: 2021-09-01T17:38:28.728Z

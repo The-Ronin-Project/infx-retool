@@ -1,0 +1,127 @@
+id: load_questions_and_answers
+type: datasource
+subtype: SqlQueryUnified
+resourceName: dc8029bc-3980-4836-841e-776c64eeca49
+resourceDisplayName: Clinical Content PostgresSQL DB
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - records: ''
+    - lastReceivedFromResourceAt: null
+    - databasePasswordOverride: ''
+    - queryDisabledMessage: ''
+    - servedFromCache: false
+    - offlineUserQueryInputs: ''
+    - successMessage: ''
+    - queryDisabled: ''
+    - playgroundQuerySaveId: latest
+    - workflowParams: null
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: true
+    - workflowRunId: null
+    - showFailureToaster: true
+    - query: >-
+        select *, x.answer_uuid from
+
+        (select *, unnest(specific_answer_uuids) as answer_uuid from
+        surveys.question_group_members
+
+        join surveys.question
+
+        on surveys.question_group_members.question_uuid =
+        surveys.question.question_uuid
+
+        where question_group_uuid = {{urlparams.uuid}}
+
+        order by position asc) as x
+
+        join surveys.specific_answer
+
+        on x.answer_uuid=specific_answer_uuid
+
+        left join surveys.branching_logic bl
+
+        on x.answer_uuid = bl.answer_uuid
+
+        and x.question_group_uuid = bl.question_group_uuid
+
+        order by position asc, clinical_severity_order asc
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - error: null
+    - workflowRunBodyType: raw
+    - privateParams: []
+    - triggersOnSuccess: []
+    - runWhenPageLoadsDelay: ''
+    - warningCodes: []
+    - data: null
+    - recordId: ''
+    - importedQueryInputs:
+        ordered: []
+    - showSuccessConfetti: false
+    - isImported: false
+    - showSuccessToaster: true
+    - dataArray: []
+    - cacheKeyTtl: ''
+    - filterBy: ''
+    - requestSentTimestamp: null
+    - databaseHostOverride: ''
+    - metadata: null
+    - workflowActionType: null
+    - editorMode: sql
+    - queryRunTime: null
+    - actionType: ''
+    - triggersOnFailure: []
+    - changesetObject: ''
+    - shouldUseLegacySql: false
+    - errorTransformer: >-
+        // The variable 'data' allows you to reference the request's data in the
+        transformer. 
+
+        // example: return data.find(element => element.isError)
+
+        return data.error
+    - finished: null
+    - databaseNameOverride: ''
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - resourceTypeOverride: null
+    - watchedParams: []
+    - enableErrorTransformer: false
+    - enableBulkUpdates: false
+    - showLatestVersionUpdatedWarning: false
+    - timestamp: 0
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: false
+    - bulkUpdatePrimaryKey: ''
+    - runWhenPageLoads: false
+    - transformer: >-
+        // type your code here
+
+        // example: return formatDataAsArray(data).filter(row => row.quantity >
+        20)
+
+        return data
+    - events: []
+    - tableName: ''
+    - queryTimeout: '10000'
+    - workflowId: null
+    - requireConfirmation: false
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups: []
+    - workflowBlockPluginId: null
+    - databaseUsernameOverride: ''
+    - shouldEnableBatchQuerying: false
+    - doNotThrowOnNoOp: false
+    - offlineQueryType: None
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: true
+    - notificationDuration: ''
+createdAt: 2021-09-09T20:52:19.054Z
