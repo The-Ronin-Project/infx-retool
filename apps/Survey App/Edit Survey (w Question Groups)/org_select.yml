@@ -1,0 +1,39 @@
+id: org_select
+type: widget
+subtype: SelectWidget
+template:
+  ordered:
+    - enableClientSideMatching: true
+    - values: '{{load_organizations.data.uuid}}'
+    - allowOutOfRangeValues: false
+    - enableFuzzyMatching: true
+    - searchValue: ''
+    - showFetchingIndicator: true
+    - enableCaseSensitivity: false
+    - validationMessage: ''
+    - displayValue: ''
+    - tooltipText: ''
+    - value: ''
+    - maxResults: 50
+    - placeholder: Select a value
+    - label: Organization
+    - clearValueOnFocus: true
+    - labelMaxWidth: ''
+    - labelPlacedOnLeft: false
+    - validationState: ''
+    - onSelect: ''
+    - allowCustomValues: false
+    - disabled: ''
+    - hideClearButton: false
+    - required: false
+    - labels: '{{load_organizations.data.org_name}}'
+style:
+  ordered: []
+position2:
+  position2:
+    container: tabbedcontainer1
+    col: 4
+    height: 1
+    width: 4
+    tabNum: 3
+createdAt: 2021-11-19T17:28:52.386Z

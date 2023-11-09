@@ -1,0 +1,9 @@
+version: 43.0.9
+pageUuid: 210c1e2c-0a9f-11ec-94e9-5fa633c4b7ef
+appTemplate:
+  queryStatusVisibility: true
+  experimentalPerfFeatures:
+    object:
+      batchCommitModelEnabled: false
+  version: 2.100.7
+  markdownLinkBehavior: never
