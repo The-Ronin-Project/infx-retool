@@ -1,0 +1,29 @@
+{
+  "fhir_system_select": {
+    "container": "moduleContainer",
+    "height": 1,
+    "width": 7
+  },
+  "fhir_table": {
+    "container": "moduleContainer",
+    "row": 2,
+    "height": 10.6,
+    "width": 12
+  },
+  "fhir_version_select": {
+    "container": "moduleContainer",
+    "row": 1,
+    "height": 1,
+    "width": 7
+  },
+  "keyValue1": {
+    "container": "fhir_table",
+    "subcontainer": "Custom Column 1",
+    "height": 10.4,
+    "width": 12
+  },
+  "moduleContainer": {
+    "height": 12.6,
+    "width": 12
+  }
+}

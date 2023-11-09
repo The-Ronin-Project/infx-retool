@@ -1,0 +1,127 @@
+{
+  "additional_data": {
+    "container": "tabbedContainer1",
+    "subcontainer": "225d3",
+    "row": 9.8,
+    "col": 6,
+    "height": 1,
+    "width": 6
+  },
+  "button1": {
+    "container": "tabbedContainer1",
+    "subcontainer": "225d3",
+    "row": 19.4,
+    "col": 6,
+    "height": 1,
+    "width": 4
+  },
+  "button2": {
+    "container": "tabbedContainer1",
+    "subcontainer": "1fcf6",
+    "row": 12.8,
+    "col": 8,
+    "height": 1
+  },
+  "code": {
+    "container": "tabbedContainer1",
+    "subcontainer": "225d3",
+    "row": 10,
+    "height": 1,
+    "width": 5
+  },
+  "depends_display_input": {
+    "container": "tabbedContainer1",
+    "subcontainer": "225d3",
+    "row": 18.2,
+    "height": 1,
+    "width": 5
+  },
+  "depends_property_input": {
+    "container": "tabbedContainer1",
+    "subcontainer": "225d3",
+    "row": 13.2,
+    "height": 1,
+    "width": 5
+  },
+  "depends_system_input": {
+    "container": "tabbedContainer1",
+    "subcontainer": "225d3",
+    "row": 14.8,
+    "height": 1,
+    "width": 5
+  },
+  "depends_value_input": {
+    "container": "tabbedContainer1",
+    "subcontainer": "225d3",
+    "row": 16.4,
+    "height": 1,
+    "width": 5
+  },
+  "display": {
+    "container": "tabbedContainer1",
+    "subcontainer": "225d3",
+    "row": 11.6,
+    "height": 1,
+    "width": 5
+  },
+  "divider1": {
+    "container": "tabbedContainer1",
+    "subcontainer": "225d3",
+    "row": 9.2,
+    "height": 0.2,
+    "width": 6
+  },
+  "fileButton1": {
+    "container": "tabbedContainer1",
+    "subcontainer": "1fcf6",
+    "row": 0.4,
+    "col": 6,
+    "height": 1
+  },
+  "jsonEditor1": {
+    "container": "tabbedContainer1",
+    "subcontainer": "1fcf6",
+    "row": 12.2,
+    "col": 1,
+    "height": 8,
+    "width": 4
+  },
+  "tabbedContainer1": {
+    "row": 0.2,
+    "height": 22.4,
+    "width": 12
+  },
+  "table1": {
+    "container": "tabbedContainer1",
+    "subcontainer": "1fcf6",
+    "row": 2.6,
+    "height": 8.8,
+    "width": 12
+  },
+  "tabs1": {
+    "container": "tabbedContainer1",
+    "rowGroup": "header",
+    "height": 0.8,
+    "width": 12
+  },
+  "terminology_table": {
+    "container": "tabbedContainer1",
+    "subcontainer": "225d3",
+    "height": 8.2,
+    "width": 12
+  },
+  "text1": {
+    "container": "tabbedContainer1",
+    "subcontainer": "225d3",
+    "row": 8.6,
+    "height": 0.6,
+    "width": 11
+  },
+  "text2": {
+    "container": "tabbedContainer1",
+    "subcontainer": "1fcf6",
+    "row": 0.6,
+    "height": 0.6,
+    "width": 6
+  }
+}

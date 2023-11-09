@@ -1,0 +1,186 @@
+{
+  "assignment_que_status_filter": {
+    "container": "mapper",
+    "row": 1.4,
+    "height": 1,
+    "width": 4
+  },
+  "containerTitle1": {
+    "container": "mapper",
+    "rowGroup": "header",
+    "height": 0.6,
+    "width": 12
+  },
+  "count_text": {
+    "container": "mapper",
+    "row": 0,
+    "height": 0.6,
+    "width": 12
+  },
+  "current_mappings": {
+    "container": "mapper",
+    "row": 15.6,
+    "height": 4,
+    "width": 5
+  },
+  "custom_terminology_selector": {
+    "container": "tabbedContainer1",
+    "subcontainer": "8",
+    "height": 1,
+    "width": 12
+  },
+  "custom_terminology_table": {
+    "container": "tabbedContainer1",
+    "subcontainer": "8",
+    "row": 3.2,
+    "height": 30.6,
+    "width": 12
+  },
+  "custom_terminology_version_selector": {
+    "container": "tabbedContainer1",
+    "subcontainer": "8",
+    "row": 1,
+    "height": 1,
+    "width": 12
+  },
+  "fhir_system_select": {
+    "container": "tabbedContainer1",
+    "subcontainer": "0",
+    "height": 1,
+    "width": 12
+  },
+  "fhir_tab_modal_table": {
+    "container": "fhir_table",
+    "subcontainer": "Custom Column 1",
+    "height": 10.2,
+    "width": 12
+  },
+  "fhir_tab_modal_table3": {
+    "container": "custom_terminology_table",
+    "subcontainer": "Custom Column 1",
+    "height": 10.2,
+    "width": 12
+  },
+  "fhir_table": {
+    "container": "tabbedContainer1",
+    "subcontainer": "0",
+    "row": 2.2,
+    "height": 19.4,
+    "width": 12
+  },
+  "fhir_version_select": {
+    "container": "tabbedContainer1",
+    "subcontainer": "0",
+    "row": 1,
+    "height": 1,
+    "width": 12
+  },
+  "icd10CmMappingModule1": {
+    "container": "tabbedContainer1",
+    "subcontainer": "4",
+    "height": 8.4,
+    "width": 12
+  },
+  "icd10CmSearchModule1": {
+    "container": "tabbedContainer1",
+    "subcontainer": "4",
+    "row": 0.2,
+    "height": 8.2,
+    "width": 12
+  },
+  "icd10PcsMappingModule1": {
+    "container": "tabbedContainer1",
+    "subcontainer": "5",
+    "height": 7.8,
+    "width": 12
+  },
+  "loincMappingModule1": {
+    "container": "tabbedContainer1",
+    "subcontainer": "3",
+    "height": 10.4,
+    "width": 12
+  },
+  "map_assignee": {
+    "row": 0,
+    "height": 1,
+    "width": 4
+  },
+  "mapcomments": {
+    "container": "mapper",
+    "row": 3.2,
+    "col": 6,
+    "height": 1,
+    "width": 5
+  },
+  "mapped_targets": {
+    "container": "current_mappings",
+    "subcontainer": "0e2c0",
+    "row": 0,
+    "height": 6.2,
+    "width": 12
+  },
+  "mapper": {
+    "row": 1,
+    "height": 49.4,
+    "width": 12
+  },
+  "relationship_selection": {
+    "container": "mapper",
+    "row": 3.2,
+    "col": 2,
+    "height": 1,
+    "width": 4
+  },
+  "select_concept_status": {
+    "container": "current_mappings",
+    "rowGroup": "header",
+    "height": 0.6,
+    "width": 12
+  },
+  "snomed_result_table": {
+    "container": "tabbedContainer1",
+    "subcontainer": "1",
+    "row": 1.8,
+    "height": 21.4,
+    "width": 12
+  },
+  "snomed_search_input": {
+    "container": "tabbedContainer1",
+    "subcontainer": "1",
+    "row": 0,
+    "height": 1,
+    "width": 12
+  },
+  "source_concept_additional_information": {
+    "container": "source_concepts",
+    "subcontainer": "Custom Column 1",
+    "height": 9.8,
+    "width": 12
+  },
+  "source_concepts": {
+    "container": "mapper",
+    "row": 4.6,
+    "height": 10.4,
+    "width": 5
+  },
+  "tabbedContainer1": {
+    "container": "mapper",
+    "row": 4.8,
+    "col": 5,
+    "height": 72,
+    "width": 7
+  },
+  "tabs1": {
+    "container": "tabbedContainer1",
+    "rowGroup": "header",
+    "height": 0.8,
+    "width": 12
+  },
+  "text1": {
+    "container": "tabbedContainer1",
+    "subcontainer": "6",
+    "row": 1,
+    "col": 7,
+    "height": 0.6
+  }
+}

@@ -1,0 +1,1 @@
+select display, uuid from rxnorm_extension.dose_form

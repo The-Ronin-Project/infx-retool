@@ -1,0 +1,27 @@
+{
+  "concept_map_review": {
+    "row": 1.2,
+    "height": 11,
+    "width": 12
+  },
+  "more_info_modal": {
+    "container": "concept_map_review",
+    "subcontainer": "Custom Column 1",
+    "height": 10.4,
+    "width": 12
+  },
+  "reviewerNameSelection2": {
+    "height": 1,
+    "width": 5
+  },
+  "status_select": {
+    "row": 13,
+    "height": 1,
+    "width": 4
+  },
+  "update_status": {
+    "row": 13,
+    "col": 4,
+    "height": 1
+  }
+}

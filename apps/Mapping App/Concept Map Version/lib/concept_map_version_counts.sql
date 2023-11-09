@@ -1,0 +1,1 @@
+select map_status, count(display) from concept_maps.source_concept where concept_map_version_uuid = {{versions_table.selectedRow.data.uuid}} group by map_status

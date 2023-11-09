@@ -1,0 +1,16 @@
+{
+  "table1": {
+    "row": 1,
+    "height": 13.2,
+    "width": 12
+  },
+  "text1": {
+    "height": 0.6,
+    "width": 5
+  },
+  "vsHeader1": {
+    "subcontainer": "header",
+    "height": 2.4,
+    "width": 12
+  }
+}

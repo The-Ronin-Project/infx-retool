@@ -1,0 +1,40 @@
+{
+  "add_group_button": {
+    "container": "create_group_modal",
+    "row": 3.4,
+    "col": 3,
+    "height": 1,
+    "width": 9
+  },
+  "create_group_modal": {
+    "row": 0,
+    "col": 9,
+    "height": 1.2
+  },
+  "flexibleRegistryHeader1": {
+    "subcontainer": "header",
+    "height": 2.4,
+    "width": 12
+  },
+  "group_table": {
+    "row": 1.2,
+    "height": 12.6,
+    "width": 12
+  },
+  "group_title_input": {
+    "container": "create_group_modal",
+    "row": 0,
+    "height": 1,
+    "width": 12
+  },
+  "minimum_panel_members_input": {
+    "container": "create_group_modal",
+    "row": 1,
+    "height": 1,
+    "width": 12
+  },
+  "text1": {
+    "row": 0.4,
+    "height": 0.6
+  }
+}

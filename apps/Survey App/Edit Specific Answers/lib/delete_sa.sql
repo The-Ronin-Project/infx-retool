@@ -1,0 +1,1 @@
+delete from surveys.specific_answer where specific_answer_uuid={{sa_list.selectedRow.data.specific_answer_uuid}}

@@ -1,0 +1,144 @@
+{
+  "add_version": {
+    "container": "container1",
+    "subcontainer": "aa62f",
+    "row": 0.4,
+    "height": 1.2,
+    "width": 12
+  },
+  "container1": {
+    "container": "create_new_terminology",
+    "row": 0.4,
+    "height": 0.2,
+    "width": 12
+  },
+  "containerTitle1": {
+    "container": "container1",
+    "rowGroup": "header",
+    "height": 0.6,
+    "width": 12
+  },
+  "create_new_terminology": {
+    "col": 9,
+    "height": 1
+  },
+  "date_range": {
+    "container": "container1",
+    "rowGroup": "header",
+    "row": 2.6,
+    "height": 1,
+    "width": 12
+  },
+  "fhir_uri": {
+    "container": "container1",
+    "rowGroup": "header",
+    "row": 3.6,
+    "height": 1,
+    "width": 12
+  },
+  "form1": {
+    "container": "terminologies",
+    "subcontainer": "Custom Column 1",
+    "height": 0.2,
+    "width": 12
+  },
+  "formTitle1": {
+    "container": "form1",
+    "rowGroup": "header",
+    "height": 0.6,
+    "width": 12
+  },
+  "is_fhir": {
+    "container": "container1",
+    "rowGroup": "header",
+    "row": 5.8,
+    "col": 6,
+    "height": 0.6,
+    "width": 5
+  },
+  "is_standard": {
+    "container": "container1",
+    "rowGroup": "header",
+    "row": 5.8,
+    "height": 0.6,
+    "width": 5
+  },
+  "new_name": {
+    "container": "container1",
+    "rowGroup": "header",
+    "row": 0.6,
+    "height": 1,
+    "width": 12
+  },
+  "new_version": {
+    "container": "form1",
+    "row": 0.6,
+    "height": 1,
+    "width": 12
+  },
+  "organization_id_link": {
+    "container": "container1",
+    "rowGroup": "header",
+    "row": 5.2,
+    "height": 0.6,
+    "width": 12
+  },
+  "search": {
+    "height": 1,
+    "width": 6
+  },
+  "submit_version": {
+    "container": "form1",
+    "rowGroup": "footer",
+    "col": 8,
+    "height": 1,
+    "width": 4
+  },
+  "terminologies": {
+    "row": 1.2,
+    "height": 17.2,
+    "width": 12
+  },
+  "text1": {
+    "container": "form1",
+    "height": 0.6,
+    "width": 4
+  },
+  "text2": {
+    "container": "form1",
+    "col": 4,
+    "height": 0.6,
+    "width": 8
+  },
+  "text3": {
+    "subcontainer": "header",
+    "height": 0.6,
+    "width": 11
+  },
+  "text4": {
+    "container": "form1",
+    "row": 1.6,
+    "height": 0.6,
+    "width": 12
+  },
+  "text5": {
+    "container": "container1",
+    "rowGroup": "header",
+    "row": 4.6,
+    "height": 0.6,
+    "width": 12
+  },
+  "version": {
+    "container": "container1",
+    "rowGroup": "header",
+    "row": 1.6,
+    "height": 1,
+    "width": 12
+  },
+  "version_dates": {
+    "container": "form1",
+    "row": 2.6,
+    "height": 1,
+    "width": 12
+  }
+}

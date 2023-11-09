@@ -1,0 +1,238 @@
+{
+  "alert_tier_select": {
+    "container": "form1",
+    "row": 1,
+    "col": 6,
+    "height": 1,
+    "width": 6
+  },
+  "button1": {
+    "container": "tabbedcontainer1",
+    "col": 10,
+    "height": 1,
+    "width": 2,
+    "tabNum": 2
+  },
+  "button2": {
+    "container": "wizard1",
+    "row": 1,
+    "height": 1,
+    "tabNum": "oiD5B4wFM"
+  },
+  "button3": {
+    "container": "wizard1",
+    "col": 9,
+    "height": 1,
+    "tabNum": "Nzux9bLwz"
+  },
+  "button4": {
+    "container": "wizard1",
+    "col": 9,
+    "height": 1,
+    "tabNum": "jXZWSpNW_"
+  },
+  "checkbox1": {
+    "container": "create_question_form",
+    "row": 4,
+    "col": 4,
+    "width": 8
+  },
+  "checkbox2": {
+    "container": "create_question_form",
+    "row": 9,
+    "col": 4,
+    "height": 1,
+    "width": 8
+  },
+  "checkbox3": {
+    "container": "form1",
+    "row": 2,
+    "col": 8,
+    "height": 2,
+    "width": 4
+  },
+  "create_question_form": {
+    "container": "wizard1",
+    "height": 15,
+    "width": 6,
+    "tabNum": "VGcbjman1"
+  },
+  "fields_to_search": {
+    "container": "tabbedcontainer1",
+    "col": 4,
+    "height": 1,
+    "width": 8,
+    "tabNum": 3
+  },
+  "form1": {
+    "container": "wizard1",
+    "height": 6,
+    "width": 12,
+    "tabNum": "EJL_mwHKy"
+  },
+  "new_answer_uuid": {
+    "container": "form1",
+    "height": 1,
+    "width": 6
+  },
+  "new_question_uuid": {
+    "container": "create_question_form",
+    "row": 12,
+    "height": 1,
+    "width": 12
+  },
+  "qc_table": {
+    "container": "wizard1",
+    "row": 1,
+    "height": 17,
+    "width": 12,
+    "tabNum": "jXZWSpNW_"
+  },
+  "question_list": {
+    "container": "tabbedcontainer1",
+    "height": 53,
+    "width": 12
+  },
+  "question_search_results": {
+    "container": "tabbedcontainer1",
+    "row": 1,
+    "height": 52,
+    "width": 12,
+    "tabNum": 3
+  },
+  "requires_question_results": {
+    "container": "wizard1",
+    "row": 2,
+    "height": 15,
+    "width": 12,
+    "tabNum": "IKXRcoND7"
+  },
+  "requires_question_search_input": {
+    "container": "wizard1",
+    "row": 1,
+    "height": 1,
+    "width": 9,
+    "tabNum": "IKXRcoND7"
+  },
+  "search_field": {
+    "container": "tabbedcontainer1",
+    "height": 1,
+    "width": 4,
+    "tabNum": 3
+  },
+  "symptom_search_input": {
+    "container": "wizard1",
+    "row": 1,
+    "height": 1,
+    "width": 12,
+    "tabNum": "Nzux9bLwz"
+  },
+  "symptom_search_results": {
+    "container": "wizard1",
+    "row": 2,
+    "height": 15,
+    "width": 12,
+    "tabNum": "Nzux9bLwz"
+  },
+  "tabbedcontainer1": {
+    "height": 56,
+    "width": 12
+  },
+  "table1": {
+    "container": "tabbedcontainer1",
+    "row": 1,
+    "height": 52,
+    "width": 12,
+    "tabNum": 2
+  },
+  "table2": {
+    "container": "wizard1",
+    "row": 6,
+    "height": 12,
+    "width": 12,
+    "tabNum": "EJL_mwHKy"
+  },
+  "text1": {
+    "container": "tabbedcontainer1",
+    "height": 1,
+    "tabNum": 2
+  },
+  "text2": {
+    "container": "tabbedcontainer1",
+    "row": 53,
+    "height": 1,
+    "width": 5,
+    "tabNum": 2
+  },
+  "text3": {
+    "container": "wizard1",
+    "height": 1,
+    "width": 9,
+    "tabNum": "Nzux9bLwz"
+  },
+  "text4": {
+    "container": "wizard1",
+    "height": 1,
+    "width": 5,
+    "tabNum": "oiD5B4wFM"
+  },
+  "text5": {
+    "container": "wizard1",
+    "height": 1,
+    "width": 7,
+    "tabNum": "jXZWSpNW_"
+  },
+  "text6": {
+    "container": "wizard1",
+    "height": 1,
+    "width": 12,
+    "tabNum": "IKXRcoND7"
+  },
+  "textinput1": {
+    "container": "create_question_form",
+    "row": 3,
+    "height": 1,
+    "width": 12
+  },
+  "textinput2": {
+    "container": "create_question_form",
+    "row": 2,
+    "height": 1,
+    "width": 12
+  },
+  "textinput3": {
+    "container": "create_question_form",
+    "height": 1,
+    "width": 12
+  },
+  "textinput5": {
+    "container": "create_question_form",
+    "row": 1,
+    "height": 1,
+    "width": 12
+  },
+  "textinput7": {
+    "container": "form1",
+    "row": 1,
+    "height": 1,
+    "width": 6
+  },
+  "textinput8": {
+    "container": "form1",
+    "row": 2,
+    "height": 1,
+    "width": 6
+  },
+  "textinput9": {
+    "container": "form1",
+    "col": 6,
+    "height": 1,
+    "width": 6
+  },
+  "wizard1": {
+    "container": "tabbedcontainer1",
+    "height": 22,
+    "width": 12,
+    "tabNum": 1
+  }
+}

@@ -1,0 +1,1 @@
+select distinct uuid from public.terminology_versions where terminology = {{fhir_system_select.value}} and version = {{fhir_version_select.selectedLabel}}

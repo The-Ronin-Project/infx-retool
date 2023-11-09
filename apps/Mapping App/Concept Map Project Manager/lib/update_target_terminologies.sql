@@ -1,0 +1,2 @@
+insert INTO concept_maps.concept_map_version_terminologies (concept_map_version_uuid, terminology_version_uuid, context)
+values ({{urlparams.uuid}}, {{terminology_version_select.value}}, 'target_terminology')

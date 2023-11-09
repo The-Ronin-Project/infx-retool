@@ -1,8 +1,0 @@
-id: cm_version
-type: globalwidgetprop
-subtype: GlobalWidgetProp
-template:
-  ordered:
-    - value: ''
-    - defaultValue: '{{urlparams.uuid}}'
-createdAt: 2022-08-03T21:51:38.460Z

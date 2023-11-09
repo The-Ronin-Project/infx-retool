@@ -1,0 +1,108 @@
+{
+  "button1": {
+    "container": "tabbedcontainer1",
+    "col": 10,
+    "height": 1,
+    "width": 2,
+    "tabNum": 1
+  },
+  "button2": {
+    "container": "listview1",
+    "col": 10,
+    "height": 1,
+    "width": 2
+  },
+  "button3": {
+    "container": "tabbedcontainer1",
+    "height": 1,
+    "width": 2,
+    "tabNum": 3
+  },
+  "button4": {
+    "container": "tabbedcontainer1",
+    "col": 8,
+    "height": 1,
+    "width": 2,
+    "tabNum": 3
+  },
+  "button5": {
+    "container": "tabbedcontainer1",
+    "col": 10,
+    "height": 1,
+    "width": 2,
+    "tabNum": 3
+  },
+  "listview1": {
+    "container": "tabbedcontainer1",
+    "row": 1,
+    "height": 15,
+    "width": 12,
+    "tabNum": 3
+  },
+  "org_select": {
+    "container": "tabbedcontainer1",
+    "col": 4,
+    "height": 1,
+    "width": 4,
+    "tabNum": 3
+  },
+  "qg_list": {
+    "container": "tabbedcontainer1",
+    "height": 44,
+    "width": 12,
+    "tabNum": 2
+  },
+  "qg_search": {
+    "container": "tabbedcontainer1",
+    "height": 1,
+    "width": 7,
+    "tabNum": 1
+  },
+  "qg_search_results": {
+    "container": "tabbedcontainer1",
+    "row": 1,
+    "height": 19,
+    "width": 12,
+    "tabNum": 1
+  },
+  "question_groups": {
+    "container": "tabbedcontainer1",
+    "height": 32,
+    "width": 12
+  },
+  "tabbedcontainer1": {
+    "row": 1,
+    "height": 22.4,
+    "width": 12
+  },
+  "text1": {
+    "container": "tabbedcontainer1",
+    "row": 32,
+    "height": 1,
+    "width": 6
+  },
+  "text2": {
+    "container": "listview1",
+    "col": 1,
+    "height": 1,
+    "width": 9
+  },
+  "text3": {
+    "container": "listview1",
+    "row": 2,
+    "height": 1
+  },
+  "text4": {
+    "container": "listview1",
+    "height": 1,
+    "width": 1
+  },
+  "text5": {
+    "height": 1
+  },
+  "text6": {
+    "col": 6,
+    "height": 0.6,
+    "width": 4
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "toolscriptVersion": "1.0.0",
+  "version": "43.0.9",
+  "pageUuid": "99325480-6f51-11ed-bab0-1b7566baaaff",
+  "appTemplate": {
+    "appMaxWidth": "1560px",
+    "experimentalPerfFeatures": {
+      "object": {
+        "batchCommitModelEnabled": false
+      }
+    },
+    "version": "3.16.1"
+  }
+}

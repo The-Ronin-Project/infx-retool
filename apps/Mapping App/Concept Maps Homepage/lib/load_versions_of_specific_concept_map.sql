@@ -1,0 +1,1 @@
+select * from concept_maps.concept_map_version where concept_map_uuid = {{concept_map_drop_down_select.value}}

@@ -1,0 +1,21 @@
+{
+  body: {
+    query: {
+      bool: {
+        must: [
+          {
+            simple_query_string: {
+              fields: ["display", "code"],
+              query: {{search_string.value}}
+            }
+          }
+        ],
+        filter: [
+          { "term":  { "version_uuid.keyword": {{version_select.value}} }},
+        ]
+      }
+    }
+  },
+  size: 500,
+  index: "icd_10_cm_codes"
+}

@@ -1,0 +1,1 @@
+select * from concept_maps.relationship_codes where relationship_system_uuid = (select uuid from concept_maps.relationship_system where uuid = {{relationship_selector.value}}) and special_use = {{allow_special_use_codes.value}}

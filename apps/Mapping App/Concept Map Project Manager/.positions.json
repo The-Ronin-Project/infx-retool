@@ -1,0 +1,166 @@
+{
+  "allow_special_use_codes": {
+    "container": "concept_map_manager",
+    "subcontainer": "1",
+    "row": 0.6,
+    "col": 8,
+    "height": 0.6
+  },
+  "assign_review_concepts": {
+    "container": "reviewer_modal",
+    "row": 2,
+    "col": 2,
+    "height": 1.2,
+    "width": 8
+  },
+  "concept_map_info": {
+    "container": "concept_map_manager",
+    "subcontainer": "0",
+    "height": 0.6,
+    "width": 6
+  },
+  "concept_map_manager": {
+    "height": 28.6,
+    "width": 12
+  },
+  "current_relationship_systems": {
+    "container": "concept_map_manager",
+    "subcontainer": "1",
+    "row": 0.2,
+    "height": 7.8,
+    "width": 4
+  },
+  "enabled_target_terminologies": {
+    "container": "concept_map_manager",
+    "subcontainer": "2",
+    "height": 8,
+    "width": 6
+  },
+  "mapper_assignment_button": {
+    "container": "mapper_modal",
+    "row": 2,
+    "col": 2,
+    "height": 1.2,
+    "width": 8
+  },
+  "mapper_modal": {
+    "container": "concept_map_manager",
+    "subcontainer": "0",
+    "row": 7.2,
+    "col": 5,
+    "height": 1
+  },
+  "mapper_qty": {
+    "container": "concept_map_manager",
+    "subcontainer": "0",
+    "row": 7.2,
+    "col": 2,
+    "height": 1
+  },
+  "relationship_codes": {
+    "container": "concept_map_manager",
+    "subcontainer": "1",
+    "row": 2.2,
+    "col": 5,
+    "height": 7.8,
+    "width": 7
+  },
+  "relationship_selector": {
+    "container": "concept_map_manager",
+    "subcontainer": "1",
+    "row": 0,
+    "col": 5,
+    "height": 7.8
+  },
+  "reviewer_modal": {
+    "container": "concept_map_manager",
+    "subcontainer": "0",
+    "row": 8.4,
+    "col": 5,
+    "height": 1
+  },
+  "reviewer_qty": {
+    "container": "concept_map_manager",
+    "subcontainer": "0",
+    "row": 8.4,
+    "col": 2,
+    "height": 1
+  },
+  "status_selection": {
+    "container": "concept_map_manager",
+    "subcontainer": "3",
+    "row": 2,
+    "col": 3,
+    "height": 1,
+    "width": 4
+  },
+  "tabs1": {
+    "container": "concept_map_manager",
+    "rowGroup": "header",
+    "height": 0.8,
+    "width": 12
+  },
+  "target_select": {
+    "container": "concept_map_manager",
+    "subcontainer": "2",
+    "row": 0,
+    "col": 8,
+    "height": 6.8,
+    "width": 4
+  },
+  "team_mate": {
+    "container": "concept_map_manager",
+    "subcontainer": "0",
+    "row": 2.6,
+    "col": 1,
+    "height": 1,
+    "width": 4
+  },
+  "team_mate_que_information": {
+    "container": "concept_map_manager",
+    "subcontainer": "0",
+    "row": 2.6,
+    "col": 5,
+    "height": 0.6,
+    "width": 4
+  },
+  "terminology_select": {
+    "container": "target_select",
+    "height": 2.4,
+    "width": 12
+  },
+  "terminology_version_select": {
+    "container": "target_select",
+    "row": 1.6,
+    "height": 1,
+    "width": 12
+  },
+  "text1": {
+    "container": "mapper_modal",
+    "row": 0.4,
+    "col": 1,
+    "height": 0.6,
+    "width": 10
+  },
+  "text3": {
+    "container": "reviewer_modal",
+    "row": 0.4,
+    "col": 1,
+    "height": 0.6,
+    "width": 10
+  },
+  "update_relationship_button": {
+    "container": "concept_map_manager",
+    "subcontainer": "1",
+    "row": 10.4,
+    "col": 7,
+    "height": 1.4
+  },
+  "update_status": {
+    "container": "concept_map_manager",
+    "subcontainer": "3",
+    "row": 3.8,
+    "col": 4,
+    "height": 1
+  }
+}

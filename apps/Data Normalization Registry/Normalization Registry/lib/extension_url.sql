@@ -1,0 +1,1 @@
+select DISTINCT(source_extension_url) from data_ingestion.registry

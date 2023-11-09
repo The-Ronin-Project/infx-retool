@@ -1,0 +1,14 @@
+{ 
+  body: {
+    "specific_answer_uuid": {{ answer_uuid }},
+    "specific_answer_label": {{ label }},
+    "generic_answer_display": {{ generic_answer_display }},
+    "clinical_severity_order": {{ clinical_severity_order }},
+    "next_question_slug": {{ next_question_slug }},
+    "alert_tier": {{ alert_tier }},
+    "expected": {{expected}}
+  },
+  index: "survey_answer",
+  id: {{ answer_uuid }},
+  type: "_doc"
+}

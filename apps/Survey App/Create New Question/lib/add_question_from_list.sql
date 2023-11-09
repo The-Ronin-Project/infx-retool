@@ -1,0 +1,1 @@
+insert into surveys.survey_question_link (survey_uuid, question_uuid, position, last_modified_date, last_modified_user) values ({{urlparams.uuid}}, {{question_list.selectedRow.data.question_uuid}}, 0, now(), {{current_user}});

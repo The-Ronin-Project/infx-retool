@@ -1,0 +1,27 @@
+{
+  index: 'survey_question',
+  body: {
+    "query": {
+        "bool": {
+            "must": [
+                {
+                    "multi_match": {
+                        "query": {{requires_question_search_input.value}},
+                        "fields": ["symptoms.provider_label", "symptoms.patient_label", "question_text"],
+                  			"type": "bool_prefix"
+                    }
+                }
+            ],
+            "must_not": [
+                {
+                    "match": {
+                        "historical_question": true
+                    }
+                }
+            ]
+        }
+		}
+  },
+  size: {{ requires_question_results.pageSize }},
+  from: {{ requires_question_results.paginationOffset }},
+}

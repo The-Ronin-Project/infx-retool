@@ -1,0 +1,94 @@
+{
+  "button1": {
+    "container": "rule_input_container",
+    "row": 13.8,
+    "col": 7,
+    "height": 1,
+    "width": 5
+  },
+  "button2": {
+    "container": "rule_input_container",
+    "row": 13.2,
+    "col": 6,
+    "height": 1,
+    "width": 6,
+    "tabNum": 1
+  },
+  "classification_source": {
+    "container": "rule_input_container",
+    "row": 3.8,
+    "height": 1,
+    "width": 12
+  },
+  "description_for_term_type": {
+    "container": "rule_input_container",
+    "row": 5.6,
+    "height": 1,
+    "width": 12,
+    "tabNum": 1
+  },
+  "description_input": {
+    "container": "rule_input_container",
+    "row": 9.8,
+    "height": 1,
+    "width": 12
+  },
+  "drug_class_id_input": {
+    "container": "rule_input_container",
+    "row": 5,
+    "height": 1,
+    "width": 12
+  },
+  "relationship": {
+    "container": "rule_input_container",
+    "row": 6.2,
+    "height": 1,
+    "width": 12
+  },
+  "rule_input_container": {
+    "row": 1.2,
+    "height": 17,
+    "width": 6
+  },
+  "table1": {
+    "row": 1.2,
+    "col": 6,
+    "height": 17,
+    "width": 6
+  },
+  "term_type": {
+    "container": "rule_input_container",
+    "row": 4,
+    "height": 1,
+    "width": 12,
+    "tabNum": 1
+  },
+  "term_type_input": {
+    "container": "rule_input_container",
+    "row": 8.6,
+    "height": 1,
+    "width": 12
+  },
+  "text1": {
+    "container": "rule_input_container",
+    "height": 0.6,
+    "width": 12
+  },
+  "text2": {
+    "container": "rule_input_container",
+    "height": 0.6,
+    "width": 12,
+    "tabNum": 1
+  },
+  "trans": {
+    "container": "rule_input_container",
+    "row": 7.4,
+    "height": 1,
+    "width": 12
+  },
+  "version_select": {
+    "col": 8,
+    "height": 1,
+    "width": 4
+  }
+}

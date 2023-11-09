@@ -1,0 +1,1 @@
+select DISTINCT resource_type from data_ingestion.registry

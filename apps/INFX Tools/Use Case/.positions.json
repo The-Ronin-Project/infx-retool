@@ -1,0 +1,86 @@
+{
+  "all_use_cases_table": {
+    "container": "use_case_container",
+    "subcontainer": "80620",
+    "row": 0.2,
+    "height": 16.6,
+    "width": 5
+  },
+  "associated_value_sets_table": {
+    "container": "use_case_container",
+    "subcontainer": "80620",
+    "row": 0.8,
+    "col": 5,
+    "height": 14.6,
+    "width": 7
+  },
+  "bugReporting1": {
+    "row": 0.6,
+    "col": 5,
+    "height": 2.4,
+    "width": 7
+  },
+  "containerTitle1": {
+    "container": "use_case_container",
+    "rowGroup": "header",
+    "height": 0.6,
+    "width": 12
+  },
+  "description_input": {
+    "container": "form1",
+    "row": 1,
+    "height": 1,
+    "width": 12
+  },
+  "form1": {
+    "container": "modal1",
+    "width": 12
+  },
+  "formButton1": {
+    "container": "form1",
+    "rowGroup": "footer",
+    "col": 8,
+    "height": 1,
+    "width": 4
+  },
+  "formTitle1": {
+    "container": "form1",
+    "rowGroup": "header",
+    "height": 0.6,
+    "width": 12
+  },
+  "modal1": {
+    "container": "use_case_container",
+    "subcontainer": "80620",
+    "row": 15.8,
+    "col": 9,
+    "height": 1
+  },
+  "name_input": {
+    "container": "form1",
+    "height": 1,
+    "width": 12
+  },
+  "status_select": {
+    "container": "form1",
+    "row": 2,
+    "height": 1,
+    "width": 12
+  },
+  "text2": {
+    "container": "use_case_container",
+    "subcontainer": "80620",
+    "row": 0.2,
+    "col": 5,
+    "height": 0.6
+  },
+  "useCaseAndTeamsHeader1": {
+    "height": 0.4,
+    "width": 12
+  },
+  "use_case_container": {
+    "row": 0.4,
+    "height": 0.2,
+    "width": 12
+  }
+}

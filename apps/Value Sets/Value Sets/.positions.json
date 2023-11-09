@@ -1,0 +1,367 @@
+{
+  "bugReporting1": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "1",
+    "row": 24,
+    "col": 5,
+    "height": 2.4,
+    "width": 7
+  },
+  "button2": {
+    "container": "modal1",
+    "row": 3.2,
+    "col": 4,
+    "height": 1,
+    "width": 8
+  },
+  "button3": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "2",
+    "row": 25.8,
+    "col": 7,
+    "height": 1,
+    "width": 5
+  },
+  "button4": {
+    "container": "form1",
+    "row": 21.6,
+    "col": 7,
+    "height": 1,
+    "width": 5
+  },
+  "contact_input": {
+    "container": "form1",
+    "row": 8.2,
+    "height": 1,
+    "width": 10
+  },
+  "container1": {
+    "container": "form1",
+    "row": 12.2,
+    "col": 3,
+    "height": 0.2,
+    "width": 7
+  },
+  "containerTitle1": {
+    "container": "container1",
+    "rowGroup": "header",
+    "height": 0.6,
+    "width": 10
+  },
+  "divider1": {
+    "container": "form1",
+    "row": 0.6,
+    "height": 0.2,
+    "width": 2
+  },
+  "divider2": {
+    "container": "form1",
+    "row": 13.8,
+    "height": 0.2,
+    "width": 2
+  },
+  "divider5": {
+    "container": "listView1",
+    "row": 0.6,
+    "height": 0.2,
+    "width": 12
+  },
+  "dup_contact_input": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "2",
+    "row": 23,
+    "height": 1,
+    "width": 12
+  },
+  "dup_description_input": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "2",
+    "row": 20.2,
+    "height": 1,
+    "width": 12
+  },
+  "dup_purpose_input": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "2",
+    "row": 21.6,
+    "height": 1,
+    "width": 12
+  },
+  "dup_version_description": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "2",
+    "row": 24.4,
+    "height": 1,
+    "width": 12
+  },
+  "experimental_checkbox": {
+    "container": "form1",
+    "row": 9.2,
+    "col": 3,
+    "height": 1,
+    "width": 8
+  },
+  "filter": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "0",
+    "row": 0.4,
+    "height": 1,
+    "width": 12
+  },
+  "form1": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "1",
+    "height": 23.6,
+    "width": 12
+  },
+  "formButton1": {
+    "container": "form1",
+    "rowGroup": "footer",
+    "col": 8,
+    "height": 1,
+    "width": 4
+  },
+  "keyValue1": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "2",
+    "row": 3,
+    "col": 2,
+    "height": 13.2,
+    "width": 10
+  },
+  "keyValue2": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "0",
+    "row": 1.6,
+    "col": 8,
+    "height": 9.2,
+    "width": 4
+  },
+  "link1": {
+    "container": "tabbedcontainer1",
+    "rowGroup": "header",
+    "col": 11,
+    "height": 0.6,
+    "width": 1
+  },
+  "link2": {
+    "container": "container1",
+    "subcontainer": "40616",
+    "row": 2.6,
+    "col": 9,
+    "height": 0.6
+  },
+  "link3": {
+    "container": "container1",
+    "rowGroup": "header",
+    "col": 10,
+    "height": 0.6,
+    "width": 2
+  },
+  "listView1": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "0",
+    "row": 12,
+    "col": 8,
+    "width": 4
+  },
+  "modal1": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "0",
+    "row": 24.6,
+    "col": 10,
+    "height": 1,
+    "width": 2
+  },
+  "name_input": {
+    "container": "form1",
+    "row": 2.2,
+    "height": 1,
+    "width": 10
+  },
+  "name_input_dup": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "2",
+    "row": 18.4,
+    "height": 1,
+    "width": 12
+  },
+  "primary_select": {
+    "container": "container1",
+    "subcontainer": "40616",
+    "row": 0.6,
+    "height": 1,
+    "width": 12
+  },
+  "publisher": {
+    "container": "form1",
+    "row": 10.4,
+    "height": 1,
+    "width": 10
+  },
+  "purpose_input": {
+    "container": "form1",
+    "row": 5.4,
+    "height": 1,
+    "width": 10
+  },
+  "secondary_multiselect": {
+    "container": "container1",
+    "subcontainer": "40616",
+    "row": 1.6,
+    "height": 1,
+    "width": 12
+  },
+  "spacer1": {
+    "container": "form1",
+    "row": 12.4,
+    "height": 0.8,
+    "width": 7
+  },
+  "synonym_context_input": {
+    "container": "modal1",
+    "row": 1.2,
+    "height": 1,
+    "width": 12
+  },
+  "synonym_synonym_input": {
+    "container": "modal1",
+    "row": 2.2,
+    "height": 1,
+    "width": 12
+  },
+  "synonym_table": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "0",
+    "row": 17.6,
+    "col": 8,
+    "height": 7,
+    "width": 4
+  },
+  "tabbedcontainer1": {
+    "row": 0,
+    "height": 32.2,
+    "width": 12
+  },
+  "tabs1": {
+    "container": "tabbedcontainer1",
+    "rowGroup": "header",
+    "height": 0.8,
+    "width": 11
+  },
+  "text1": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "2",
+    "height": 0.6,
+    "width": 12
+  },
+  "text14": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "0",
+    "row": 10.8,
+    "col": 8,
+    "height": 0.6,
+    "width": 4
+  },
+  "text15": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "0",
+    "row": 11.4,
+    "col": 8,
+    "height": 0.6,
+    "width": 4
+  },
+  "text16": {
+    "container": "listView1",
+    "height": 0.6,
+    "width": 6
+  },
+  "text17": {
+    "container": "listView1",
+    "row": 0.8,
+    "height": 0.6,
+    "width": 11
+  },
+  "text2": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "2",
+    "row": 2.2,
+    "height": 0.6
+  },
+  "text3": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "2",
+    "row": 16.4,
+    "height": 0.6,
+    "width": 4
+  },
+  "text4": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "0",
+    "row": 17,
+    "col": 8,
+    "height": 0.6,
+    "width": 4
+  },
+  "text5": {
+    "container": "modal1",
+    "height": 0.6,
+    "width": 12
+  },
+  "text6": {
+    "container": "form1",
+    "height": 0.6,
+    "width": 2
+  },
+  "text7": {
+    "container": "form1",
+    "row": 13.2,
+    "height": 0.6
+  },
+  "title_input": {
+    "container": "form1",
+    "row": 1,
+    "height": 1,
+    "width": 10
+  },
+  "title_input_dup": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "2",
+    "row": 17,
+    "height": 1,
+    "width": 12
+  },
+  "type_dropdown": {
+    "container": "form1",
+    "row": 6.8,
+    "height": 1,
+    "width": 10
+  },
+  "value_set_description": {
+    "container": "form1",
+    "row": 4,
+    "height": 1,
+    "width": 10
+  },
+  "value_set_select": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "2",
+    "row": 1.2,
+    "height": 1,
+    "width": 12
+  },
+  "version_description_input": {
+    "container": "form1",
+    "row": 19.4,
+    "col": 3,
+    "height": 1,
+    "width": 5
+  },
+  "vs_metadata_table": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "0",
+    "row": 1.6,
+    "height": 20,
+    "width": 8
+  }
+}

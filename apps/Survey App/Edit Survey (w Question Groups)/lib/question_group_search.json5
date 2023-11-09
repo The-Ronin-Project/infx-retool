@@ -1,0 +1,14 @@
+{
+  index: 'survey_question_group',
+  body: {
+    "query": {
+          "multi_match": {
+              "query": {{qg_search.value}},
+              "fields": ["title", "description", "symptom"],
+              "type": "bool_prefix"
+          }
+      }
+  },
+  size: {{ qg_search_results.pageSize }},
+  from: {{ qg_search_results.paginationOffset }},
+}

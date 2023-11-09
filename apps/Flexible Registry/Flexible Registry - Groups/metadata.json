@@ -1,0 +1,36 @@
+{
+  "toolscriptVersion": "1.0.0",
+  "version": "43.0.9",
+  "pageUuid": "e2acd320-3ab6-11ee-987c-7f06c8ab6b06",
+  "appTemplate": {
+    "mobileAppSettings": {
+      "object": {
+        "mobileOfflineModeEnabled": false,
+        "mobileOfflineModeDelaySync": false,
+        "displaySetting": {
+          "object": {
+            "landscapeMode": false,
+            "tabletMode": false
+          }
+        }
+      }
+    },
+    "appMaxWidth": "1560px",
+    "appThemeId": -1,
+    "experimentalFeatures": {
+      "object": {
+        "sourceControlTemplateDehydration": false
+      }
+    },
+    "queryStatusVisibility": true,
+    "experimentalPerfFeatures": {
+      "object": {
+        "batchCommitModelEnabled": false,
+        "skipDepCycleCheckingEnabled": false,
+        "serverDepGraphEnabled": false,
+        "useRuntimeV2": false
+      }
+    },
+    "version": "3.16.1"
+  }
+}

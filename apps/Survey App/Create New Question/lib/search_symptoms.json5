@@ -1,0 +1,12 @@
+{
+  index: 'survey_symptom',
+  body: {
+    "query": {
+      "match_bool_prefix": {
+        "provider_label": {{symptom_search_input.value}}
+      }
+    }
+  },
+  size: {{ symptom_search_results.pageSize }},
+  from: {{ symptom_search_results.paginationOffset }},
+}

@@ -1,0 +1,102 @@
+{
+  "already_updated_table": {
+    "container": "tabbedContainer2",
+    "subcontainer": "c1ea1",
+    "row": 0,
+    "height": 15.8,
+    "width": 12
+  },
+  "bugReporting1": {
+    "container": "tabbedContainer1",
+    "subcontainer": "45984",
+    "row": 17.2,
+    "col": 5,
+    "height": 2.4,
+    "width": 7
+  },
+  "container1": {
+    "row": 0,
+    "height": 0.2,
+    "width": 12
+  },
+  "containerTitle1": {
+    "container": "container1",
+    "rowGroup": "header",
+    "row": 0,
+    "height": 0.6,
+    "width": 11
+  },
+  "genertae_report_button": {
+    "container": "container1",
+    "subcontainer": "0555a",
+    "row": 0.2,
+    "col": 9,
+    "height": 1
+  },
+  "latest_version_not_active_table": {
+    "container": "tabbedContainer1",
+    "subcontainer": "45984",
+    "row": 0,
+    "height": 17.2,
+    "width": 12
+  },
+  "tabbedContainer1": {
+    "container": "container1",
+    "subcontainer": "0555a",
+    "row": 2.8,
+    "height": 0.2,
+    "width": 12
+  },
+  "tabbedContainer2": {
+    "container": "tabbedContainer1",
+    "subcontainer": "873b1",
+    "height": 0.2,
+    "width": 12
+  },
+  "table1": {
+    "container": "tabbedContainer2",
+    "subcontainer": "6fc3d",
+    "height": 16.4,
+    "width": 12
+  },
+  "tabs1": {
+    "container": "tabbedContainer1",
+    "rowGroup": "header",
+    "height": 0.8,
+    "width": 12
+  },
+  "tabs2": {
+    "container": "tabbedContainer2",
+    "rowGroup": "header",
+    "height": 0.8,
+    "width": 12
+  },
+  "terminology_select": {
+    "container": "container1",
+    "subcontainer": "0555a",
+    "row": 0.2,
+    "col": 5,
+    "height": 1
+  },
+  "text1": {
+    "container": "container1",
+    "subcontainer": "0555a",
+    "row": 0.2,
+    "height": 0.6,
+    "width": 4
+  },
+  "text5": {
+    "container": "container1",
+    "subcontainer": "0555a",
+    "row": 1.2,
+    "col": 5,
+    "height": 0.6
+  },
+  "valuesets_ready_for_update_table": {
+    "container": "tabbedContainer1",
+    "subcontainer": "1a057",
+    "row": 0,
+    "height": 15,
+    "width": 12
+  }
+}

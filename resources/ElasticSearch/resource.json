@@ -1,0 +1,16 @@
+{
+  "type": "elasticsearch",
+  "host": null,
+  "port": null,
+  "databaseName": null,
+  "databaseUsername": null,
+  "description": null,
+  "outboundRegion": null,
+  "ssl": null,
+  "editPrivilege": null,
+  "options": {},
+  "environment": "production",
+  "dynamicallyQueryable": false,
+  "uuid": "3e68115b-9776-4956-86b4-f468d2d1f836",
+  "toolscriptVersion": "1.0.0"
+}

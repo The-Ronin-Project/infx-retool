@@ -1,0 +1,58 @@
+{
+  "Assignment": {
+    "height": 1,
+    "width": 12
+  },
+  "mapping": {
+    "container": "tabbedContainer1",
+    "row": 0.4,
+    "height": 19.2,
+    "width": 12
+  },
+  "tabbedContainer1": {
+    "row": 1.2,
+    "height": 21.6,
+    "width": 12
+  },
+  "table1": {
+    "container": "tabbedContainer1",
+    "height": 19.6,
+    "width": 12,
+    "tabNum": 1
+  },
+  "table2": {
+    "container": "tabbedContainer1",
+    "row": 0.6,
+    "height": 19,
+    "width": 12,
+    "tabNum": 2
+  },
+  "table3": {
+    "container": "tabbedContainer1",
+    "row": 0.2,
+    "height": 19.2,
+    "width": 12,
+    "tabNum": 3
+  },
+  "table4": {
+    "container": "tabbedContainer1",
+    "height": 19.2,
+    "width": 4,
+    "tabNum": 4
+  },
+  "table5": {
+    "container": "tabbedContainer1",
+    "row": 0,
+    "col": 4,
+    "height": 19.4,
+    "width": 4,
+    "tabNum": 4
+  },
+  "table6": {
+    "container": "tabbedContainer1",
+    "col": 8,
+    "height": 19.4,
+    "width": 4,
+    "tabNum": 4
+  }
+}

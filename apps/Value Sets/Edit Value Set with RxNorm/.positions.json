@@ -1,0 +1,206 @@
+{
+  "ClassID": {
+    "container": "modal1",
+    "row": 5.6,
+    "height": 1,
+    "width": 12
+  },
+  "alert1": {
+    "container": "tabbedcontainer1",
+    "height": 1,
+    "width": 6,
+    "tabNum": 3
+  },
+  "button1": {
+    "container": "modal1",
+    "row": 10,
+    "height": 1,
+    "width": 12
+  },
+  "button2": {
+    "container": "tabbedcontainer1",
+    "height": 1,
+    "width": 2,
+    "tabNum": 2
+  },
+  "button3": {
+    "container": "tabbedcontainer1",
+    "col": 9,
+    "height": 1,
+    "tabNum": 2
+  },
+  "button4": {
+    "container": "tabbedcontainer1",
+    "col": 2,
+    "height": 1,
+    "width": 2,
+    "tabNum": 2
+  },
+  "button5": {
+    "container": "tabbedcontainer1",
+    "col": 5,
+    "height": 1,
+    "tabNum": 2
+  },
+  "button6": {
+    "container": "tabbedcontainer1",
+    "row": 2.2,
+    "col": 9,
+    "height": 1,
+    "tabNum": 1
+  },
+  "concept_map_select": {
+    "container": "tabbedcontainer1",
+    "row": 1.4,
+    "height": 1,
+    "tabNum": 1
+  },
+  "mapping_inclusions": {
+    "container": "tabbedcontainer1",
+    "row": 4.2,
+    "height": 11.2,
+    "width": 12,
+    "tabNum": 1
+  },
+  "match_source_or_target": {
+    "container": "tabbedcontainer1",
+    "row": 1.6,
+    "col": 7,
+    "height": 1,
+    "width": 2,
+    "tabNum": 1
+  },
+  "modal1": {
+    "container": "tabbedcontainer1",
+    "col": 9,
+    "height": 1
+  },
+  "relationship_type_select": {
+    "container": "tabbedcontainer1",
+    "row": 1.6,
+    "col": 3,
+    "height": 1,
+    "width": 4,
+    "tabNum": 1
+  },
+  "rule_interface_link": {
+    "container": "modal1",
+    "height": 1,
+    "width": 12
+  },
+  "rules_table": {
+    "container": "tabbedcontainer1",
+    "row": 1,
+    "height": 16,
+    "width": 12
+  },
+  "select2": {
+    "container": "modal1",
+    "row": 8.6,
+    "height": 1,
+    "width": 12
+  },
+  "select_rela": {
+    "container": "modal1",
+    "row": 6.6,
+    "height": 1,
+    "width": 12
+  },
+  "select_source": {
+    "container": "modal1",
+    "row": 4.6,
+    "height": 1,
+    "width": 12
+  },
+  "status_select": {
+    "container": "tabbedcontainer1",
+    "row": 1,
+    "height": 1,
+    "width": 4,
+    "tabNum": 3
+  },
+  "tabbedcontainer1": {
+    "row": 0.6,
+    "height": 30,
+    "width": 12
+  },
+  "table1": {
+    "container": "tabbedcontainer1",
+    "row": 2,
+    "height": 20,
+    "width": 12,
+    "tabNum": 2
+  },
+  "term_type": {
+    "container": "modal1",
+    "row": 7.6,
+    "height": 1,
+    "width": 12
+  },
+  "terminology_select": {
+    "container": "modal1",
+    "row": 2.2,
+    "height": 1,
+    "width": 12
+  },
+  "text1": {
+    "container": "tabbedcontainer1",
+    "row": 17,
+    "height": 1,
+    "width": 7
+  },
+  "text10": {
+    "container": "tabbedcontainer1",
+    "row": 3.6,
+    "height": 0.6,
+    "tabNum": 1
+  },
+  "text2": {
+    "container": "tabbedcontainer1",
+    "row": 1.2,
+    "height": 1,
+    "width": 12,
+    "tabNum": 2
+  },
+  "text3": {
+    "height": 0.6,
+    "width": 12
+  },
+  "text4": {
+    "container": "tabbedcontainer1",
+    "row": 2,
+    "height": 0.6,
+    "width": 12,
+    "tabNum": 3
+  },
+  "text7": {
+    "container": "tabbedcontainer1",
+    "height": 0.6,
+    "width": 12,
+    "tabNum": 1
+  },
+  "text8": {
+    "container": "tabbedcontainer1",
+    "row": 4.4,
+    "height": 0.6,
+    "tabNum": 3
+  },
+  "text9": {
+    "container": "tabbedcontainer1",
+    "row": 0.8,
+    "height": 0.6,
+    "tabNum": 1
+  },
+  "textinput1": {
+    "container": "modal1",
+    "row": 3.2,
+    "height": 1,
+    "width": 12
+  },
+  "type_select": {
+    "container": "modal1",
+    "row": 1.2,
+    "height": 1,
+    "width": 12
+  }
+}

@@ -1,0 +1,1 @@
+select distinct data_element from data_ingestion.registry

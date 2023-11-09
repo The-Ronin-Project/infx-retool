@@ -1,7 +1,0 @@
-id: $appStyles
-type: setting
-subtype: AppStyles
-template:
-  ordered:
-    - value: '--retool-canvas-max-width: 10000px; '
-createdAt: 2022-11-02T23:08:22.610Z

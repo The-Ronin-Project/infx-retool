@@ -1,0 +1,1 @@
+select * from fhir_defined_terminologies.code_systems_new where uuid = {{fhir_table.selectedRow.data.uuid}}

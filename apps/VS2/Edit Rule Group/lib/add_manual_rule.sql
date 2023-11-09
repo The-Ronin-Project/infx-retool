@@ -1,0 +1,2 @@
+update value_sets_new.value_set_rule_group 
+set uuid = {{ uuid.v4 }}, position = , description = {{description_textInput5.value}}, property = {{property_select7.value}}, operator = {{operator_select8.value}} , value = {{value_textInput6.value}}, include = {{include_switch1.value}},  rule_group={{rule_group_uuid}}, terminology_version = {{version_select6.value}}

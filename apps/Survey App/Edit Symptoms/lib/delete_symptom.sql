@@ -1,0 +1,1 @@
+delete from surveys.symptom where symptom_uuid={{symptom_list.selectedRow.data.symptom_uuid}}

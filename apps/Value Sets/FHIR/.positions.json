@@ -1,0 +1,37 @@
+{
+  "fhir_table": {
+    "row": 5.2,
+    "height": 19.2,
+    "width": 12
+  },
+  "rule_description": {
+    "row": 2.2,
+    "height": 1,
+    "width": 12
+  },
+  "save": {
+    "row": 4.2,
+    "col": 9,
+    "height": 1
+  },
+  "select_fhir_system": {
+    "height": 1,
+    "width": 12
+  },
+  "select_fhir_version": {
+    "row": 1,
+    "height": 1,
+    "width": 12
+  },
+  "selected_row_key_values": {
+    "container": "fhir_table",
+    "subcontainer": "Custom Column 1",
+    "height": 10.2,
+    "width": 12
+  },
+  "text1": {
+    "subcontainer": "header",
+    "height": 1,
+    "width": 10
+  }
+}

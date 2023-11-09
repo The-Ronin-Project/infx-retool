@@ -1,0 +1,312 @@
+{
+  "button1": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "2",
+    "row": 24.8,
+    "col": 9,
+    "height": 1
+  },
+  "button2": {
+    "container": "modal1",
+    "row": 6.2,
+    "col": 4,
+    "height": 1,
+    "width": 8
+  },
+  "button3": {
+    "container": "form1",
+    "row": 15.4,
+    "col": 8,
+    "height": 1,
+    "width": 4
+  },
+  "concept_map_details": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "0",
+    "row": 1,
+    "col": 8,
+    "height": 16.2,
+    "width": 4
+  },
+  "concept_map_drop_down_select": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "2",
+    "row": 0.6,
+    "height": 1,
+    "width": 12
+  },
+  "concept_map_metadata_table": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "0",
+    "row": 1,
+    "height": 22.8,
+    "width": 8
+  },
+  "contact_input": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "2",
+    "row": 19.6,
+    "height": 1,
+    "width": 12
+  },
+  "description_input": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "2",
+    "row": 15.6,
+    "height": 1,
+    "width": 12
+  },
+  "description_text_input": {
+    "container": "form1",
+    "row": 3.8,
+    "height": 1,
+    "width": 12
+  },
+  "divider1": {
+    "col": 7,
+    "height": 0.2,
+    "width": 4
+  },
+  "divider2": {
+    "container": "form1",
+    "col": 5,
+    "height": 0.2,
+    "width": 4
+  },
+  "divider3": {
+    "container": "form1",
+    "row": 0.6,
+    "height": 0.2,
+    "width": 2
+  },
+  "divider4": {
+    "container": "form1",
+    "row": 12.8,
+    "height": 0.2,
+    "width": 2
+  },
+  "effective_date_input": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "2",
+    "row": 21,
+    "height": 1,
+    "width": 12
+  },
+  "experimental_check_box": {
+    "container": "form1",
+    "row": 7,
+    "col": 3,
+    "height": 1,
+    "width": 2
+  },
+  "experimental_input": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "2",
+    "row": 22,
+    "col": 4,
+    "height": 0.6,
+    "width": 8
+  },
+  "filter": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "0",
+    "height": 1,
+    "width": 12
+  },
+  "form1": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "1",
+    "height": 19.4,
+    "width": 12
+  },
+  "keyValue1": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "2",
+    "row": 2.6,
+    "col": 4,
+    "height": 10.2,
+    "width": 8
+  },
+  "link1": {
+    "container": "tabbedcontainer1",
+    "rowGroup": "header",
+    "col": 11,
+    "height": 0.6,
+    "width": 1
+  },
+  "modal1": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "0",
+    "row": 22.8,
+    "col": 9,
+    "height": 1
+  },
+  "name_input": {
+    "container": "form1",
+    "row": 2,
+    "height": 1,
+    "width": 12
+  },
+  "name_input_dup": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "2",
+    "row": 14.6,
+    "height": 1,
+    "width": 12
+  },
+  "new_concept_map_uuid": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "2",
+    "row": 22.6,
+    "height": 1,
+    "width": 12
+  },
+  "new_concept_map_version_uuid": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "2",
+    "row": 23.6,
+    "height": 1,
+    "width": 12
+  },
+  "purpose_input": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "2",
+    "row": 18.2,
+    "height": 1,
+    "width": 12
+  },
+  "source_terminology": {
+    "container": "form1",
+    "row": 8.4,
+    "col": 1,
+    "height": 1,
+    "width": 8
+  },
+  "source_terminology_version": {
+    "container": "form1",
+    "row": 8.4,
+    "col": 9,
+    "height": 1
+  },
+  "synonym_context_input": {
+    "container": "modal1",
+    "row": 1.8,
+    "height": 1,
+    "width": 12
+  },
+  "synonym_synonym_input": {
+    "container": "modal1",
+    "row": 3.8,
+    "height": 1,
+    "width": 12
+  },
+  "tabbedcontainer1": {
+    "row": 1,
+    "height": 27.4,
+    "width": 12
+  },
+  "tabs1": {
+    "container": "tabbedcontainer1",
+    "rowGroup": "header",
+    "height": 0.8,
+    "width": 11
+  },
+  "target_terminology": {
+    "container": "form1",
+    "row": 10.4,
+    "col": 1,
+    "height": 1,
+    "width": 8
+  },
+  "target_terminology_version": {
+    "container": "form1",
+    "row": 10.4,
+    "col": 9,
+    "height": 1
+  },
+  "text1": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "2",
+    "height": 0.6,
+    "width": 12
+  },
+  "text2": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "2",
+    "row": 2.6,
+    "height": 0.6
+  },
+  "text3": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "2",
+    "row": 13,
+    "height": 0.6
+  },
+  "text5": {
+    "container": "modal1",
+    "height": 0.6,
+    "width": 12
+  },
+  "text6": {
+    "container": "form1",
+    "height": 0.6
+  },
+  "text7": {
+    "container": "form1",
+    "row": 12.2,
+    "height": 0.6
+  },
+  "title_input": {
+    "container": "form1",
+    "row": 1,
+    "height": 1,
+    "width": 12
+  },
+  "title_input_dup": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "2",
+    "row": 13.6,
+    "height": 1,
+    "width": 12
+  },
+  "use_case": {
+    "container": "form1",
+    "row": 5,
+    "col": 3,
+    "height": 1,
+    "width": 9
+  },
+  "use_case_link": {
+    "container": "form1",
+    "row": 6,
+    "col": 3,
+    "height": 0.6,
+    "width": 2
+  },
+  "version_alert": {
+    "container": "form1",
+    "row": 7.2,
+    "col": 9,
+    "height": 1
+  },
+  "version_alert2": {
+    "container": "form1",
+    "row": 9.4,
+    "col": 9,
+    "height": 1
+  },
+  "version_description": {
+    "container": "form1",
+    "row": 13,
+    "col": 2,
+    "height": 1,
+    "width": 10
+  },
+  "version_select": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "2",
+    "row": 1.6,
+    "height": 1,
+    "width": 12
+  }
+}

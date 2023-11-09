@@ -1,0 +1,284 @@
+{
+  "Mapper_listView2": {
+    "container": "container1",
+    "subcontainer": "22ec8",
+    "row": 0.6,
+    "width": 5
+  },
+  "assigned_numeral": {
+    "container": "container1",
+    "rowGroup": "header",
+    "row": 0.6,
+    "col": 3,
+    "height": 0.6,
+    "width": 2
+  },
+  "bugReporting1": {
+    "row": 0.2,
+    "col": 4,
+    "height": 2.4,
+    "width": 8
+  },
+  "conceptMapHeader1": {
+    "subcontainer": "header",
+    "height": 0.8,
+    "width": 12
+  },
+  "container1": {
+    "row": 0,
+    "height": 0.2,
+    "width": 12
+  },
+  "discussion_numeral": {
+    "container": "container1",
+    "rowGroup": "header",
+    "row": 0.6,
+    "col": 9,
+    "height": 0.6,
+    "width": 2
+  },
+  "divider1": {
+    "container": "reviewers_listView",
+    "row": 0.6,
+    "height": 0.2,
+    "width": 12
+  },
+  "divider2": {
+    "container": "Mapper_listView2",
+    "row": 0.6,
+    "height": 0.2,
+    "width": 12
+  },
+  "modal1": {
+    "container": "container1",
+    "subcontainer": "22ec8",
+    "col": 11,
+    "height": 0.8,
+    "width": 1
+  },
+  "no_map_numeral": {
+    "container": "container1",
+    "rowGroup": "header",
+    "row": 0.6,
+    "col": 7,
+    "height": 0.6,
+    "width": 2
+  },
+  "reviewers_listView": {
+    "container": "container1",
+    "subcontainer": "22ec8",
+    "row": 0.6,
+    "col": 6,
+    "width": 5
+  },
+  "text10": {
+    "container": "Mapper_listView2",
+    "col": 3,
+    "height": 0.6
+  },
+  "text11": {
+    "container": "Mapper_listView2",
+    "row": 0,
+    "col": 6,
+    "height": 0.6
+  },
+  "text12": {
+    "container": "Mapper_listView2",
+    "col": 9,
+    "height": 0.6
+  },
+  "text13": {
+    "container": "Mapper_listView2",
+    "row": 0.8,
+    "height": 0.6
+  },
+  "text14": {
+    "container": "Mapper_listView2",
+    "row": 0.8,
+    "col": 3,
+    "height": 0.6
+  },
+  "text15": {
+    "container": "Mapper_listView2",
+    "row": 0.8,
+    "col": 6,
+    "height": 0.6
+  },
+  "text16": {
+    "container": "Mapper_listView2",
+    "row": 0.8,
+    "col": 9,
+    "height": 0.6
+  },
+  "text17": {
+    "container": "reviewers_listView",
+    "row": 0.8,
+    "height": 0.6
+  },
+  "text18": {
+    "container": "reviewers_listView",
+    "row": 0.8,
+    "col": 3,
+    "height": 0.6
+  },
+  "text19": {
+    "container": "reviewers_listView",
+    "row": 0.8,
+    "col": 6,
+    "height": 0.6
+  },
+  "text2": {
+    "container": "container1",
+    "rowGroup": "header",
+    "row": 0,
+    "col": 1,
+    "height": 0.6,
+    "width": 2
+  },
+  "text20": {
+    "container": "reviewers_listView",
+    "row": 0.8,
+    "col": 9,
+    "height": 0.6
+  },
+  "text21": {
+    "container": "container1",
+    "rowGroup": "header",
+    "row": 0,
+    "col": 5,
+    "height": 0.6,
+    "width": 2
+  },
+  "text22": {
+    "container": "modal1",
+    "row": 1.2,
+    "height": 0.6
+  },
+  "text23": {
+    "container": "modal1",
+    "row": 2.4,
+    "height": 0.6
+  },
+  "text24": {
+    "container": "modal1",
+    "row": 5.8,
+    "height": 0.6
+  },
+  "text25": {
+    "container": "modal1",
+    "row": 7.6,
+    "height": 0.6
+  },
+  "text27": {
+    "container": "modal1",
+    "height": 0.6,
+    "width": 10
+  },
+  "text28": {
+    "container": "modal1",
+    "row": 7.6,
+    "col": 3,
+    "height": 0.6,
+    "width": 9
+  },
+  "text29": {
+    "container": "modal1",
+    "row": 1.8,
+    "col": 3,
+    "height": 0.6,
+    "width": 9
+  },
+  "text3": {
+    "container": "container1",
+    "rowGroup": "header",
+    "row": 0,
+    "col": 3,
+    "height": 0.6,
+    "width": 2
+  },
+  "text31": {
+    "container": "modal1",
+    "row": 5.8,
+    "col": 3,
+    "height": 0.6,
+    "width": 9
+  },
+  "text32": {
+    "container": "modal1",
+    "row": 1.2,
+    "col": 3,
+    "height": 0.6,
+    "width": 9
+  },
+  "text35": {
+    "container": "container1",
+    "rowGroup": "header",
+    "row": 0,
+    "col": 9,
+    "height": 0.6,
+    "width": 2
+  },
+  "text36": {
+    "container": "container1",
+    "subcontainer": "22ec8",
+    "row": 0,
+    "col": 6,
+    "height": 0.6
+  },
+  "text37": {
+    "container": "container1",
+    "subcontainer": "22ec8",
+    "row": 0,
+    "height": 0.6
+  },
+  "text4": {
+    "container": "container1",
+    "rowGroup": "header",
+    "row": 0,
+    "col": 7,
+    "height": 0.6,
+    "width": 2
+  },
+  "text5": {
+    "container": "reviewers_listView",
+    "row": 0,
+    "height": 0.6
+  },
+  "text6": {
+    "container": "reviewers_listView",
+    "row": 0,
+    "col": 3,
+    "height": 0.6
+  },
+  "text7": {
+    "container": "reviewers_listView",
+    "row": 0,
+    "col": 6,
+    "height": 0.6
+  },
+  "text8": {
+    "container": "reviewers_listView",
+    "col": 9,
+    "height": 0.6
+  },
+  "text9": {
+    "container": "Mapper_listView2",
+    "height": 0.6
+  },
+  "total_numeral": {
+    "container": "container1",
+    "rowGroup": "header",
+    "row": 0.6,
+    "col": 1,
+    "height": 0.6,
+    "width": 2
+  },
+  "unassigned_numeral": {
+    "container": "container1",
+    "rowGroup": "header",
+    "row": 0.6,
+    "col": 5,
+    "height": 0.6,
+    "width": 2
+  }
+}

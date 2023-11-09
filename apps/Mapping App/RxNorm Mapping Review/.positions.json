@@ -1,0 +1,95 @@
+{
+  "approve_2": {
+    "row": 16.2,
+    "col": 8,
+    "height": 1,
+    "width": 2
+  },
+  "approve_rows_in_view": {
+    "row": 1.2,
+    "col": 8,
+    "height": 1,
+    "width": 2
+  },
+  "button1": {
+    "container": "modal1",
+    "row": 8.6,
+    "col": 8,
+    "height": 1,
+    "width": 4
+  },
+  "button2": {
+    "container": "modal1",
+    "row": 8.6,
+    "col": 1,
+    "height": 1,
+    "width": 4
+  },
+  "conceptMapHeader1": {
+    "subcontainer": "header",
+    "height": 0.4,
+    "width": 12
+  },
+  "detailed_rxnorm_info": {
+    "container": "modal1",
+    "row": 0.6,
+    "col": 1,
+    "height": 7,
+    "width": 11
+  },
+  "disapprove_2": {
+    "row": 17.2,
+    "col": 10,
+    "height": 1,
+    "width": 2
+  },
+  "disapprove_all": {
+    "row": 1.2,
+    "col": 10,
+    "height": 1,
+    "width": 2
+  },
+  "modal1": {
+    "row": 15,
+    "col": 11,
+    "height": 1,
+    "width": 1
+  },
+  "no_map_table": {
+    "row": 19.6,
+    "height": 8,
+    "width": 12
+  },
+  "review_comment": {
+    "container": "modal1",
+    "row": 7.6,
+    "col": 1,
+    "height": 1,
+    "width": 11
+  },
+  "review_comment_all": {
+    "row": 14,
+    "height": 1,
+    "width": 12
+  },
+  "review_queue": {
+    "row": 2.2,
+    "height": 11.6,
+    "width": 12
+  },
+  "select_review_group": {
+    "col": 5,
+    "height": 1,
+    "width": 4
+  },
+  "select_user": {
+    "height": 1,
+    "width": 4
+  },
+  "text1": {
+    "container": "modal1",
+    "col": 1,
+    "height": 0.6,
+    "width": 11
+  }
+}

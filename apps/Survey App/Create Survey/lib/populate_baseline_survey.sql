@@ -1,0 +1,1 @@
+insert into surveys.survey_question_group_link (uuid, survey_uuid, question_group_uuid, position) values ({{uuid.v1()}}, {{new_uuid.value}}, 'f45d92c0-10de-11ec-a8ca-15bcc626eecf', 1)

@@ -1,0 +1,156 @@
+{
+  "AddGroupMember": {
+    "row": 2,
+    "col": 9,
+    "height": 1.4
+  },
+  "add_to_group_button": {
+    "container": "AddGroupMember",
+    "row": 7,
+    "col": 3,
+    "height": 1,
+    "width": 7
+  },
+  "breadcrumbs1": {
+    "subcontainer": "header",
+    "row": 1.2,
+    "height": 0.6,
+    "width": 12
+  },
+  "bugReporting1": {
+    "row": 21.8,
+    "col": 4,
+    "height": 2.4,
+    "width": 8
+  },
+  "button1": {
+    "container": "edit_title_container",
+    "subcontainer": "df7c7",
+    "col": 9,
+    "height": 1
+  },
+  "edit_group_member_modal": {
+    "row": 0.4,
+    "col": 10,
+    "height": 1,
+    "width": 2
+  },
+  "edit_title_container": {
+    "row": 1.2,
+    "height": 0.4,
+    "width": 7
+  },
+  "group_member_table": {
+    "row": 3.4,
+    "height": 17,
+    "width": 12
+  },
+  "group_title": {
+    "row": 0,
+    "height": 0.6,
+    "width": 7
+  },
+  "group_title_input": {
+    "container": "edit_title_container",
+    "subcontainer": "df7c7",
+    "row": 0,
+    "height": 1,
+    "width": 8
+  },
+  "link1": {
+    "row": 0.6,
+    "height": 0.6,
+    "width": 2
+  },
+  "minimum_panel_members": {
+    "row": 1.6,
+    "height": 0.6,
+    "width": 7
+  },
+  "product_label_input": {
+    "container": "AddGroupMember",
+    "row": 1.6,
+    "height": 1,
+    "width": 12
+  },
+  "ref_high_input": {
+    "container": "edit_group_member_modal",
+    "row": 1.6,
+    "height": 1,
+    "width": 12
+  },
+  "ref_low_input": {
+    "container": "edit_group_member_modal",
+    "row": 2.6,
+    "height": 1,
+    "width": 12
+  },
+  "ref_range_high_input": {
+    "container": "AddGroupMember",
+    "row": 2.6,
+    "height": 1,
+    "width": 12
+  },
+  "ref_range_low_input": {
+    "container": "AddGroupMember",
+    "row": 3.6,
+    "height": 1,
+    "width": 12
+  },
+  "save_edit_button": {
+    "container": "edit_group_member_modal",
+    "row": 5.2,
+    "col": 6,
+    "height": 1,
+    "width": 6
+  },
+  "text1": {
+    "subcontainer": "header",
+    "height": 0.6,
+    "width": 8
+  },
+  "text4": {
+    "container": "edit_group_member_modal",
+    "row": 0,
+    "height": 0.6,
+    "width": 8
+  },
+  "text5": {
+    "subcontainer": "header",
+    "row": 0.6,
+    "height": 0.6
+  },
+  "text6": {
+    "row": 2.2,
+    "height": 0.6
+  },
+  "text7": {
+    "container": "AddGroupMember",
+    "height": 0.6,
+    "width": 4
+  },
+  "title_input": {
+    "container": "edit_group_member_modal",
+    "row": 0.6,
+    "height": 1,
+    "width": 12
+  },
+  "ucum_ref_units_input": {
+    "container": "AddGroupMember",
+    "row": 4.6,
+    "height": 1,
+    "width": 12
+  },
+  "ucum_ref_units_input2": {
+    "container": "edit_group_member_modal",
+    "row": 3.6,
+    "height": 1,
+    "width": 12
+  },
+  "value_set_select": {
+    "container": "AddGroupMember",
+    "row": 0.6,
+    "height": 1,
+    "width": 12
+  }
+}

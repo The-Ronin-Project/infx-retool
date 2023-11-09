@@ -1,0 +1,47 @@
+{
+  "button1": {
+    "container": "tabbedcontainer1",
+    "height": 1
+  },
+  "checkbox1": {
+    "container": "form1",
+    "row": 2,
+    "col": 4,
+    "height": 1,
+    "width": 8
+  },
+  "form1": {
+    "container": "tabbedcontainer1",
+    "height": 8,
+    "width": 6,
+    "tabNum": 1
+  },
+  "symptom_list": {
+    "container": "tabbedcontainer1",
+    "row": 1,
+    "height": 12,
+    "width": 12
+  },
+  "tabbedcontainer1": {
+    "height": 15,
+    "width": 9
+  },
+  "textinput3": {
+    "container": "form1",
+    "height": 1,
+    "width": 12
+  },
+  "textinput4": {
+    "container": "form1",
+    "row": 1,
+    "height": 1,
+    "width": 12
+  },
+  "textinput5": {
+    "container": "form1",
+    "row": 5,
+    "col": 1,
+    "height": 1,
+    "width": 10
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "additional_filters": {
+    "row": 15.6,
+    "col": 7,
+    "height": 5.2,
+    "width": 5
+  },
+  "alert1": {
+    "container": "additional_filters",
+    "row": 1.6,
+    "height": 1,
+    "width": 12
+  },
+  "button2": {
+    "container": "container1",
+    "row": 1.8,
+    "col": 7,
+    "height": 1,
+    "width": 5
+  },
+  "button3": {
+    "container": "container2",
+    "row": 1,
+    "col": 8,
+    "height": 1,
+    "width": 4
+  },
+  "button4": {
+    "row": 44.4,
+    "col": 9,
+    "height": 1
+  },
+  "category_2_select": {
+    "container": "container1",
+    "row": 1.2,
+    "height": 1,
+    "width": 7
+  },
+  "category_3_table": {
+    "container": "container1",
+    "row": 3,
+    "height": 7.2,
+    "width": 12
+  },
+  "category_4_table": {
+    "container": "container1",
+    "row": 10.2,
+    "height": 8.4,
+    "width": 12
+  },
+  "category_select": {
+    "container": "container1",
+    "row": 0,
+    "height": 9.4,
+    "width": 12
+  },
+  "container1": {
+    "row": 1,
+    "height": 20.6,
+    "width": 7
+  },
+  "container2": {
+    "row": 1,
+    "col": 7,
+    "height": 4.4,
+    "width": 5
+  },
+  "container4": {
+    "row": 5.4,
+    "col": 7,
+    "height": 10,
+    "width": 5
+  },
+  "container5": {
+    "row": 21.6,
+    "height": 22.8,
+    "width": 12
+  },
+  "cpt_version_select": {
+    "col": 8,
+    "height": 1,
+    "width": 4
+  },
+  "custom_range_name": {
+    "container": "container2",
+    "col": 8,
+    "height": 1,
+    "width": 4
+  },
+  "description_input": {
+    "row": 44.4,
+    "col": 5,
+    "height": 1,
+    "width": 4
+  },
+  "exclude_codes": {
+    "container": "additional_filters",
+    "row": 2.8,
+    "height": 1,
+    "width": 12
+  },
+  "keyword_search_include": {
+    "container": "additional_filters",
+    "row": 0.6,
+    "col": 9,
+    "height": 1
+  },
+  "range_end": {
+    "container": "container2",
+    "col": 4,
+    "height": 1,
+    "width": 4
+  },
+  "range_start": {
+    "container": "container2",
+    "height": 1,
+    "width": 4
+  },
+  "search_string": {
+    "container": "additional_filters",
+    "height": 1,
+    "width": 9
+  },
+  "table4": {
+    "container": "container4",
+    "height": 8.2,
+    "width": 12
+  },
+  "table5": {
+    "container": "container5",
+    "height": 20.8,
+    "width": 12
+  }
+}

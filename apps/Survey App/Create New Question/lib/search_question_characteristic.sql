@@ -1,0 +1,1 @@
+select * from surveys.question_characteristic order by question_characteristic

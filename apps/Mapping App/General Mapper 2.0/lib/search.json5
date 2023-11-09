@@ -1,0 +1,22 @@
+{ index: 'target_concepts_for_mapping',
+  body: 
+  {
+   query: {
+    bool: {
+      filter:{
+        term: {
+          "concept_map_version_uuid.keyword": {{urlparams.concept_map_version_uuid}}
+        }
+      },
+      must:{
+        multi_match: {
+          query: {{ search_text_input.value }},
+          fields: ["code", "display"],
+          type: "bool_prefix"
+          }
+      },
+    }
+   }
+ },
+   size: 50
+}

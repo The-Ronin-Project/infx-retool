@@ -1,0 +1,1 @@
+delete from value_sets_new.value_set_rule where uuid={{list_view1.selectedRow.data.uuid}}

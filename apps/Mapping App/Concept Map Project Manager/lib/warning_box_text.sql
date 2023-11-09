@@ -1,0 +1,1 @@
+SELECT first_last_name from project_management.user where uuid = {{team_mate.value}}

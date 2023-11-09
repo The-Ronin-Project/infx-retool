@@ -1,0 +1,28 @@
+{ 
+  body: {
+    "historical_question": false,
+    "future_question": {{checkbox2.value}},
+    "not_expected_reason": {{textinput1.value}},
+    "present_most_severe_first": {{checkbox1.value}},
+    "provider_sees": {{textinput2.value}},
+    "question_characteristic_uuid": {{load_new_question.data.question_characteristic_uuid[0]}},
+    "question_characteristic": {{load_new_question.data.question_characteristic[0]}},
+    "question_text": {{textinput3.value}},
+    "question_uuid": {{new_question_uuid.value}},
+    "requires_question": null,
+    "slug": {{textinput5.value}},
+    "specific_answer_uuids": null,
+    "symptom_uuids": {{load_new_question.data.symptom_uuid}},
+    "symptoms": {{load_symptoms_for_new_question.dataArray.map((item) => {
+  	return {
+      uuid: item.symptom_uuid[0],
+      symptom_id: item.symptom_id[0],
+      provider_label: item.provider_label[0],
+      patient_label: item.patient_label[0]
+  	}
+		})}}
+  },
+  index: "survey_question",
+  id: {{new_question_uuid.value}},
+  type: "_doc"
+}

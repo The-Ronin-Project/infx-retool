@@ -1,0 +1,167 @@
+{
+  "alert1": {
+    "height": 1,
+    "width": 12
+  },
+  "best_match_info": {
+    "container": "rxnorm_search_results_container",
+    "rowGroup": "header",
+    "row": 0,
+    "col": 5,
+    "height": 0.6,
+    "width": 7
+  },
+  "bpck_table": {
+    "container": "rxnorm_search_results_container",
+    "subcontainer": "92fd1",
+    "row": 0,
+    "height": 18.6,
+    "width": 12
+  },
+  "button3": {
+    "row": 5.8,
+    "col": 4,
+    "height": 1
+  },
+  "conceptMapHeader1": {
+    "subcontainer": "header",
+    "height": 0.2,
+    "width": 12
+  },
+  "currently_mapping_display": {
+    "row": 1.6,
+    "col": 4,
+    "height": 0.6,
+    "width": 8
+  },
+  "detailView": {
+    "row": 15.8,
+    "height": 10.4,
+    "width": 4
+  },
+  "divider1": {
+    "row": 15.6,
+    "height": 0.2,
+    "width": 4
+  },
+  "divider2": {
+    "row": 4.4,
+    "col": 4,
+    "height": 0.2,
+    "width": 8
+  },
+  "gpck_table": {
+    "container": "rxnorm_search_results_container",
+    "subcontainer": "04a3d",
+    "row": 0,
+    "height": 18.4,
+    "width": 12
+  },
+  "map_button": {
+    "row": 30.2,
+    "height": 1,
+    "width": 4
+  },
+  "mapping_comments": {
+    "row": 3.4,
+    "col": 4,
+    "height": 1,
+    "width": 8
+  },
+  "mapping_group_select": {
+    "row": 1.6,
+    "col": 2,
+    "height": 1,
+    "width": 2
+  },
+  "mapping_queue": {
+    "row": 2.6,
+    "height": 11,
+    "width": 4
+  },
+  "no_map": {
+    "row": 13.6,
+    "col": 1,
+    "height": 1
+  },
+  "rxcui_input": {
+    "row": 14.6,
+    "height": 1,
+    "width": 4
+  },
+  "rxnorm_search_results_container": {
+    "row": 3.2,
+    "col": 4,
+    "height": 0.2,
+    "width": 8
+  },
+  "sbd_table": {
+    "container": "rxnorm_search_results_container",
+    "subcontainer": "7ae2f",
+    "height": 18.6,
+    "width": 12
+  },
+  "scd_table": {
+    "container": "rxnorm_search_results_container",
+    "subcontainer": "b667b",
+    "row": 0,
+    "height": 17.2,
+    "width": 12
+  },
+  "search_text_input": {
+    "row": 2.2,
+    "col": 4,
+    "height": 1,
+    "width": 8
+  },
+  "table1": {
+    "row": 26.2,
+    "height": 4,
+    "width": 4
+  },
+  "tabs1": {
+    "container": "rxnorm_search_results_container",
+    "rowGroup": "header",
+    "row": 0.6,
+    "height": 0.8,
+    "width": 12
+  },
+  "text1": {
+    "row": 1,
+    "height": 0.6,
+    "width": 2
+  },
+  "text2": {
+    "container": "rxnorm_search_results_container",
+    "rowGroup": "header",
+    "row": 0,
+    "height": 0.6,
+    "width": 5
+  },
+  "text4": {
+    "row": 5.2,
+    "col": 4,
+    "height": 0.6
+  },
+  "text5": {
+    "row": 4.6,
+    "col": 4,
+    "height": 0.6,
+    "width": 4
+  },
+  "text8": {
+    "row": 1,
+    "col": 4,
+    "height": 0.6
+  },
+  "textbox": {
+    "row": 13.8,
+    "height": 0.6,
+    "width": 1
+  },
+  "user_select": {
+    "row": 1.6,
+    "height": 1,
+    "width": 2
+  }
+}

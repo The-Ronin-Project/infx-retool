@@ -1,0 +1,1 @@
+{{source_concepts.recordUpdates[0].review_status}}

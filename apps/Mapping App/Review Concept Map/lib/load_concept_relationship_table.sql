@@ -1,0 +1,1 @@
+select * from concept_maps.concept_relationship where concept_map_version_uuid = {{urlparams.uuid}}

@@ -1,0 +1,12 @@
+{
+  body: {
+    query: {
+      simple_query_string: {
+        fields: ["display"],
+        query: {{search_string.value}}
+      }
+    }
+  },
+  size: 50,
+  index: "cpt_codes"
+}

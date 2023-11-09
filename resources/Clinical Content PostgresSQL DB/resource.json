@@ -1,0 +1,32 @@
+{
+  "type": "postgresql",
+  "host": "psql-clinical-content-prod-centralus.postgres.database.azure.com",
+  "port": "5432",
+  "databaseName": "clinical-content",
+  "databaseUsername": "retool@psql-clinical-content-prod-centralus.postgres.database.azure.com",
+  "description": null,
+  "outboundRegion": null,
+  "ssl": true,
+  "editPrivilege": false,
+  "options": {
+    "authentication": "user_password",
+    "client_cert": null,
+    "client_key": null,
+    "credentialPrivileges": { "allowRead": true, "allowWrite": true },
+    "disableServerSidePrepare": false,
+    "gcpConnectWithSelfSignedCertificate": false,
+    "queryEditorModes": { "allowGuiMode": true, "allowSqlMode": true },
+    "rejectUnauthorized": true,
+    "skipVerifyHostname": false,
+    "sshHost": "",
+    "sshPrivateKeyName": "",
+    "sshTunnelEnabled": false,
+    "sshUsername": "",
+    "userExplicitlySetRejectUnauthorized": true,
+    "version": "SqlQueryUnified"
+  },
+  "environment": "production",
+  "dynamicallyQueryable": false,
+  "uuid": "dc8029bc-3980-4836-841e-776c64eeca49",
+  "toolscriptVersion": "1.0.0"
+}

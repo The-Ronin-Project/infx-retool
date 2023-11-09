@@ -1,0 +1,2 @@
+insert INTO project_management.user (uuid, first_name, last_name, first_last_name)
+values ({{uuid.v4()}}, {{first_name_input.value}}, {{last_name_input.value}}, {{first_name_input.value+" "+last_name_input.value}})

@@ -1,0 +1,17 @@
+{
+  "link1": {
+    "container": "moduleContainer",
+    "height": 0.6,
+    "width": 2
+  },
+  "moduleContainer": {
+    "height": 2,
+    "width": 12
+  },
+  "navigation1": {
+    "container": "moduleContainer",
+    "row": 0.8,
+    "height": 0.8,
+    "width": 7
+  }
+}

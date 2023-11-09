@@ -1,0 +1,26 @@
+{
+  "container1": {
+    "container": "moduleContainer",
+    "row": 0.8,
+    "col": 8,
+    "height": 0.2
+  },
+  "link1": {
+    "container": "container1",
+    "subcontainer": "1befa",
+    "row": 0,
+    "col": 1,
+    "height": 0.6,
+    "width": 10
+  },
+  "moduleContainer": {
+    "height": 12,
+    "width": 12
+  },
+  "text1": {
+    "container": "container1",
+    "rowGroup": "header",
+    "height": 0.6,
+    "width": 7
+  }
+}

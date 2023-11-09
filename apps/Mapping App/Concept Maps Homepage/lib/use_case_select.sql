@@ -1,0 +1,1 @@
+select uuid, name from project_management.use_case

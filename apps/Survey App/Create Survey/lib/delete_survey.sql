@@ -1,0 +1,1 @@
+delete from surveys.survey where uuid={{table1.selectedRow.data.uuid}};

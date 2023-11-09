@@ -1,0 +1,45 @@
+{
+  "button6": {
+    "row": 2.6,
+    "col": 9,
+    "height": 1
+  },
+  "concept_map_select": {
+    "row": 1.8,
+    "height": 1
+  },
+  "mapping_inclusions": {
+    "row": 4.8,
+    "height": 11.2,
+    "width": 12
+  },
+  "match_source_or_target": {
+    "row": 2,
+    "col": 7,
+    "height": 1,
+    "width": 2
+  },
+  "relationship_type_select": {
+    "row": 2,
+    "col": 3,
+    "height": 1,
+    "width": 4
+  },
+  "text10": {
+    "row": 4.2,
+    "height": 0.6
+  },
+  "text7": {
+    "height": 0.6,
+    "width": 12
+  },
+  "text9": {
+    "row": 1.2,
+    "height": 0.6
+  },
+  "vsHeader1": {
+    "subcontainer": "header",
+    "height": 2.4,
+    "width": 12
+  }
+}

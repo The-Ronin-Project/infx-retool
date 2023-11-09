@@ -1,0 +1,127 @@
+{
+  "Current_assignment_count": {
+    "container": "tabbedContainer1",
+    "subcontainer": "7578c",
+    "row": 2.8,
+    "col": 9,
+    "height": 0.6
+  },
+  "assignee_select": {
+    "container": "tabbedContainer1",
+    "subcontainer": "6343b",
+    "row": 0.4,
+    "height": 1,
+    "width": 12
+  },
+  "assignment_que": {
+    "container": "tabbedContainer1",
+    "subcontainer": "7578c",
+    "row": 7.6,
+    "height": 13.2,
+    "width": 12
+  },
+  "assignment_table_1": {
+    "container": "tabbedContainer1",
+    "subcontainer": "6343b",
+    "row": 4.8,
+    "height": 11.6,
+    "width": 12
+  },
+  "backup_asignee": {
+    "container": "tabbedContainer1",
+    "subcontainer": "7578c",
+    "row": 3.8,
+    "height": 1,
+    "width": 9
+  },
+  "backup_checkbox": {
+    "container": "tabbedContainer1",
+    "subcontainer": "6343b",
+    "row": 2.6,
+    "height": 0.6
+  },
+  "concept_maps_table": {
+    "container": "tabbedContainer1",
+    "subcontainer": "0315c",
+    "row": 0.4,
+    "height": 10,
+    "width": 12
+  },
+  "create_new_assignment_checkbox": {
+    "container": "tabbedContainer1",
+    "subcontainer": "7578c",
+    "row": 1,
+    "height": 0.6
+  },
+  "create_value_set": {
+    "container": "tabbedContainer1",
+    "subcontainer": "7578c",
+    "height": 1,
+    "width": 12
+  },
+  "current_backup_count": {
+    "container": "tabbedContainer1",
+    "subcontainer": "7578c",
+    "row": 4,
+    "col": 9,
+    "height": 0.6
+  },
+  "current_backup_count2": {
+    "container": "tabbedContainer1",
+    "subcontainer": "7578c",
+    "row": 5.2,
+    "col": 9,
+    "height": 0.6
+  },
+  "due_date": {
+    "container": "tabbedContainer1",
+    "subcontainer": "7578c",
+    "row": 6.2,
+    "height": 1,
+    "width": 9
+  },
+  "primary_assignee": {
+    "container": "tabbedContainer1",
+    "subcontainer": "7578c",
+    "row": 2.6,
+    "height": 1,
+    "width": 9
+  },
+  "primary_checkbox": {
+    "container": "tabbedContainer1",
+    "subcontainer": "6343b",
+    "row": 1.6,
+    "height": 0.6
+  },
+  "review_checkbox": {
+    "container": "tabbedContainer1",
+    "subcontainer": "6343b",
+    "row": 3.6,
+    "height": 0.6
+  },
+  "reviewer": {
+    "container": "tabbedContainer1",
+    "subcontainer": "7578c",
+    "row": 5,
+    "height": 1,
+    "width": 9
+  },
+  "tabbedContainer1": {
+    "row": 5.2,
+    "height": 0.2,
+    "width": 12
+  },
+  "update_current_assignment_checkbox": {
+    "container": "tabbedContainer1",
+    "subcontainer": "7578c",
+    "row": 1.6,
+    "height": 0.6
+  },
+  "value_set_assignment_tabs": {
+    "container": "tabbedContainer1",
+    "rowGroup": "header",
+    "row": 1,
+    "height": 0.8,
+    "width": 11
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "create_new_registry_modal": {
+    "row": 0,
+    "col": 9,
+    "height": 1
+  },
+  "edit_registry_metadata": {
+    "row": 11.4,
+    "col": 9,
+    "height": 1
+  },
+  "registries": {
+    "row": 1,
+    "height": 9.8,
+    "width": 12
+  },
+  "registry_type": {
+    "container": "edit_registry_metadata",
+    "row": 0.8,
+    "col": 1,
+    "height": 1,
+    "width": 10
+  },
+  "registry_type_input": {
+    "container": "create_new_registry_modal",
+    "row": 2.2,
+    "col": 1,
+    "height": 1,
+    "width": 10
+  },
+  "save_metadata_edit": {
+    "container": "edit_registry_metadata",
+    "row": 9,
+    "col": 2,
+    "height": 1,
+    "width": 8
+  },
+  "save_new_registry": {
+    "container": "create_new_registry_modal",
+    "row": 8.6,
+    "col": 2,
+    "height": 1,
+    "width": 8
+  },
+  "sorting_enabled": {
+    "container": "edit_registry_metadata",
+    "row": 3.2,
+    "col": 1,
+    "height": 1,
+    "width": 10
+  },
+  "sorting_enabled_boolean": {
+    "container": "create_new_registry_modal",
+    "row": 3.2,
+    "col": 1,
+    "height": 1,
+    "width": 10
+  },
+  "text1": {
+    "subcontainer": "header",
+    "height": 0.6,
+    "width": 10
+  },
+  "text2": {
+    "row": 0.2,
+    "height": 0.6,
+    "width": 9
+  },
+  "title": {
+    "container": "edit_registry_metadata",
+    "row": 2,
+    "col": 1,
+    "height": 1,
+    "width": 10
+  },
+  "title_input": {
+    "container": "create_new_registry_modal",
+    "row": 1.2,
+    "col": 1,
+    "height": 1,
+    "width": 10
+  }
+}

@@ -1,8 +1,0 @@
-version: 43.0.9
-pageUuid: f80a4860-a93f-11ec-8d25-cb078e13262a
-appTemplate:
-  experimentalPerfFeatures:
-    object:
-      batchCommitModelEnabled: false
-  rootScreen: null
-  version: 2.95.3

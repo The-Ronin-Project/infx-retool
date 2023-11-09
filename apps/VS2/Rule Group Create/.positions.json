@@ -1,0 +1,94 @@
+{
+  "button1": {
+    "container": "modal1",
+    "row": 9.6,
+    "height": 1,
+    "width": 12
+  },
+  "button2": {
+    "row": 22.4,
+    "col": 7,
+    "height": 1,
+    "width": 5
+  },
+  "library_save_switch": {
+    "row": 21.8,
+    "col": 7,
+    "height": 0.6,
+    "width": 2
+  },
+  "modal1": {
+    "row": 0.8,
+    "col": 8,
+    "height": 1,
+    "width": 4
+  },
+  "select1": {
+    "container": "modal1",
+    "height": 1,
+    "width": 12
+  },
+  "select2": {
+    "container": "modal1",
+    "row": 1,
+    "col": 1,
+    "height": 1,
+    "width": 11
+  },
+  "select3": {
+    "container": "modal1",
+    "row": 2,
+    "col": 1,
+    "height": 1,
+    "width": 11
+  },
+  "select4": {
+    "container": "modal1",
+    "row": 3,
+    "col": 1,
+    "height": 1,
+    "width": 11
+  },
+  "select5": {
+    "container": "modal1",
+    "row": 4,
+    "col": 1,
+    "height": 1,
+    "width": 11
+  },
+  "select6": {
+    "container": "modal1",
+    "row": 5.8,
+    "col": 1,
+    "height": 1,
+    "width": 11
+  },
+  "select7": {
+    "container": "modal1",
+    "row": 6.8,
+    "col": 1,
+    "height": 1,
+    "width": 11
+  },
+  "table1": {
+    "row": 2,
+    "height": 19.4,
+    "width": 12
+  },
+  "textInput1": {
+    "height": 1,
+    "width": 4
+  },
+  "textInput2": {
+    "row": 1,
+    "height": 1,
+    "width": 4
+  },
+  "textInput3": {
+    "container": "modal1",
+    "row": 7.8,
+    "col": 1,
+    "height": 1,
+    "width": 11
+  }
+}

@@ -1,0 +1,1 @@
+insert into surveys.question_group_members (uuid, question_group_uuid, question_uuid, position) values ({{uuid.v1()}}, {{urlparams.uuid}}, {{question_search_results.selectedRow.data.question_uuid}}, {{parseInt(max_position_survey.data.max_position) + 1}} );

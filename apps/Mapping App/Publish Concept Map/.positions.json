@@ -1,0 +1,16 @@
+{
+  "alert1": {
+    "height": 1.4,
+    "width": 12
+  },
+  "conceptMapHeader1": {
+    "subcontainer": "header",
+    "height": 0.4,
+    "width": 12
+  },
+  "publish": {
+    "row": 1.8,
+    "height": 1.6,
+    "width": 5
+  }
+}

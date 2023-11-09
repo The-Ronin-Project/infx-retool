@@ -1,0 +1,4 @@
+insert into concept_maps.concept_relationship
+(uuid, concept_map_version_uuid, review_status, mapping_comments, source_concept_uuid, relationship_code_uuid, target_concept_code, target_concept_display, target_concept_system, target_concept_system_version_uuid, created_date, author)
+values
+({{uuid.v4()}}, {{urlparams.uuid}}, 'ready for review', {{mapcomments.value}}, {{source_concepts.selectedRow.data.uuid}}, {{relationship_selection.value}}, {{fhir_table.selectedRow.data.code}}, {{fhir_table.selectedRow.data.display}}, {{fhir_system_select.value}}, {{fhir_terminology_version_check.data.uuid[0]}}, now(), {{current_user.fullName}})

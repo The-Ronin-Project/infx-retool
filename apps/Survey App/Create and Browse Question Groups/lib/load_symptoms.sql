@@ -1,0 +1,1 @@
+select * from surveys.symptom order by provider_label asc;

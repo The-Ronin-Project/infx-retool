@@ -1,0 +1,21 @@
+{
+  index: 'survey_question',
+  body: {
+    "query": {
+        "bool": {
+            "must": [
+                {
+                    "multi_match": {
+                        "query": {{ variable0 }},
+                        "fields": ["symptoms.provider_label", "symptoms.patient_label", "question_text"],
+                  			"type": "bool_prefix"
+                    }
+                }
+            ],
+            
+        }
+		}
+  },
+  size: {{ variable1 }},
+  from: {{ variable2 }},
+}

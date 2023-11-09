@@ -1,0 +1,48 @@
+{
+  "auto_advance_mapping_switch": {
+    "row": 1.2,
+    "height": 0.6
+  },
+  "auto_fill_search_switch": {
+    "row": 3.8,
+    "height": 0.6
+  },
+  "bugReporting1": {
+    "row": 9,
+    "col": 4,
+    "height": 2.4,
+    "width": 8
+  },
+  "conceptMapHeader1": {
+    "subcontainer": "header",
+    "height": 0.8,
+    "width": 12
+  },
+  "divider1": {
+    "row": 0.6,
+    "height": 0.2,
+    "width": 12
+  },
+  "show_target_code_switch": {
+    "row": 6.4,
+    "height": 0.6
+  },
+  "text1": {
+    "row": 1.8,
+    "height": 0.6,
+    "width": 4
+  },
+  "text2": {
+    "height": 0.6
+  },
+  "text3": {
+    "row": 4.4,
+    "height": 0.6,
+    "width": 4
+  },
+  "text4": {
+    "row": 7,
+    "height": 0.6,
+    "width": 4
+  }
+}

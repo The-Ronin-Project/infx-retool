@@ -1,7 +1,0 @@
-id: duplicate_survey_uuid
-type: state
-subtype: State
-template:
-  ordered:
-    - value: null
-createdAt: 2021-08-09T20:36:18.516Z

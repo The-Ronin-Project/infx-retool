@@ -1,0 +1,1 @@
+select * from surveys.survey where uuid={{urlparams.uuid}}

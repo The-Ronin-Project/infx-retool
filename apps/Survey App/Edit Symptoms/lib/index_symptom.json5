@@ -1,0 +1,10 @@
+{ 
+  body: {
+    "symptom_uuid": {{textinput5.value}} ,
+    "provider_label": {{textinput3.value}} ,
+    "patient_label": {{textinput4.value}}   
+  },
+  index: "survey_symptom",
+  id: {{textinput5.value}},  
+  type: "_doc"
+}

@@ -1,0 +1,2 @@
+select count(DISTINCT code) from concept_maps.source_concept where concept_map_version_uuid = {{urlparams.uuid}} and map_status = (
+CASE WHEN {{role.display}} = 'Mapper' then 'pending' WHEN {{role.display}} = 'Reviewer' then 'ready for review' end)

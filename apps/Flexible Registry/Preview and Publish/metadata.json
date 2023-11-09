@@ -1,0 +1,17 @@
+{
+  "toolscriptVersion": "1.0.0",
+  "version": "43.0.9",
+  "pageUuid": "72c90660-478a-11ee-ba7b-53e02fe6481c",
+  "appTemplate": {
+    "appMaxWidth": "1560px",
+    "experimentalPerfFeatures": {
+      "object": {
+        "serverDepGraphEnabled": false,
+        "useRuntimeV2": true,
+        "runtimeV2OptOut": false
+      }
+    },
+    "version": "3.16.1",
+    "experimentalDataTabEnabled": true
+  }
+}

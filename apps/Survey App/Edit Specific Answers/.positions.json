@@ -1,0 +1,45 @@
+{
+  "button1": {
+    "container": "tabbedcontainer1",
+    "height": 1
+  },
+  "form1": {
+    "container": "tabbedcontainer1",
+    "height": 8,
+    "width": 6,
+    "tabNum": 1
+  },
+  "sa_list": {
+    "container": "tabbedcontainer1",
+    "row": 1,
+    "height": 15,
+    "width": 12
+  },
+  "tabbedcontainer1": {
+    "height": 18,
+    "width": 12
+  },
+  "textinput1": {
+    "container": "form1",
+    "height": 1,
+    "width": 12
+  },
+  "textinput2": {
+    "container": "form1",
+    "row": 1,
+    "height": 1,
+    "width": 12
+  },
+  "textinput3": {
+    "container": "form1",
+    "row": 2,
+    "height": 1,
+    "width": 12
+  },
+  "textinput5": {
+    "container": "form1",
+    "row": 4,
+    "height": 1,
+    "width": 12
+  }
+}

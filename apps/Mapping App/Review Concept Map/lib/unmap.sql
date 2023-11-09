@@ -1,0 +1,2 @@
+---include logic where if we only have one concept; it changes the source concept status to pending
+--delete this entire row from the concept_relationship_table

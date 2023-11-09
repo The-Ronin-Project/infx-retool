@@ -1,9 +1,0 @@
-version: 43.0.9
-pageUuid: e81c8f40-1cdd-11ee-a774-771a2d49afb2
-appTemplate:
-  experimentalFeatures:
-    object:
-      sourceControlTemplateDehydration: false
-  isGlobalWidget: true
-  version: 2.121.5
-  experimentalDataTabEnabled: true

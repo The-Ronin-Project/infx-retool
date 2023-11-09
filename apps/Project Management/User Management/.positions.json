@@ -1,0 +1,83 @@
+{
+  "add_user_modal": {
+    "container": "user_management",
+    "col": 7,
+    "height": 1
+  },
+  "container1": {
+    "container": "add_user_modal",
+    "row": 1.6,
+    "height": 0.2,
+    "width": 12
+  },
+  "containerTitle1": {
+    "container": "container1",
+    "rowGroup": "header",
+    "height": 0.6,
+    "width": 12
+  },
+  "current_users": {
+    "container": "user_management",
+    "row": 1.2,
+    "col": 1,
+    "height": 14,
+    "width": 9
+  },
+  "first_name_input": {
+    "container": "container1",
+    "subcontainer": "bab36",
+    "row": 0,
+    "height": 1,
+    "width": 12
+  },
+  "formButton1": {
+    "container": "user_management",
+    "rowGroup": "footer",
+    "col": 8,
+    "height": 1,
+    "width": 4
+  },
+  "formButton2": {
+    "container": "user_management",
+    "rowGroup": "footer",
+    "col": 8,
+    "height": 1,
+    "width": 4
+  },
+  "last_name_input": {
+    "container": "container1",
+    "subcontainer": "bab36",
+    "row": 1.8,
+    "height": 1,
+    "width": 12
+  },
+  "save_new_user_button": {
+    "container": "container1",
+    "subcontainer": "bab36",
+    "row": 4.4,
+    "col": 7,
+    "height": 1,
+    "width": 5
+  },
+  "text1": {
+    "container": "container1",
+    "subcontainer": "bab36",
+    "row": 3.4,
+    "height": 0.6,
+    "width": 12
+  },
+  "text2": {
+    "container": "user_management",
+    "col": 1,
+    "height": 0.6,
+    "width": 4
+  },
+  "text3": {
+    "subcontainer": "header",
+    "height": 0.6
+  },
+  "user_management": {
+    "height": 16.8,
+    "width": 12
+  }
+}

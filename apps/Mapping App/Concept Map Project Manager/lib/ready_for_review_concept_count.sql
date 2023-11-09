@@ -1,0 +1,1 @@
+select count(DISTINCT code) from concept_maps.source_concept where concept_map_version_uuid = {{urlparams.uuid}} and map_status = 'ready for review' and assigned_reviewer is NULL
