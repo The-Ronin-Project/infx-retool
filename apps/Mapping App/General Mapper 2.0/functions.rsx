@@ -372,44 +372,6 @@ return formatDataAsArray(data)"
       waitType="debounce"
     />
   </SqlQueryUnified>
-  <ElasticSearchQuery
-    id="search"
-    query={include("./lib/search.json5", "string")}
-    resourceDisplayName="ElasticSearch"
-    resourceName="3e68115b-9776-4956-86b4-f468d2d1f836"
-    transformer="// type your code here
-// example: return formatDataAsArray(data).filter(row => row.quantity > 20)
-return data"
-  >
-    <Event
-      event="success"
-      method="trigger"
-      params={{ ordered: [] }}
-      pluginId="aggregate_search"
-      type="datasource"
-      waitMs="0"
-      waitType="debounce"
-    />
-  </ElasticSearchQuery>
-  <ElasticSearchQuery
-    id="search_match_all"
-    query={include("./lib/search_match_all.json5", "string")}
-    resourceDisplayName="ElasticSearch"
-    resourceName="3e68115b-9776-4956-86b4-f468d2d1f836"
-    transformer="// type your code here
-// example: return formatDataAsArray(data).filter(row => row.quantity > 20)
-return data"
-  >
-    <Event
-      event="success"
-      method="trigger"
-      params={{ ordered: [] }}
-      pluginId="aggregate_search"
-      type="datasource"
-      waitMs="0"
-      waitType="debounce"
-    />
-  </ElasticSearchQuery>
   <SqlQueryUnified
     id="set_reason_conflicting_information"
     query={include("./lib/set_reason_conflicting_information.sql", "string")}
@@ -508,4 +470,46 @@ return formatDataAsArray(data)"
 return data"
     warningCodes={[]}
   />
+  <RESTQuery
+    id="search"
+    body={
+      '[{"key":"query","value":"{    bool: {      filter:{        term: {          \\"concept_map_version_uuid.keyword\\": {{urlparams.concept_map_version_uuid}}        }      },      must:{        multi_match: {          query: {{ search_text_input.value }},          fields: [\\"code\\", \\"display\\"],          type: \\"bool_prefix\\"          }      },    }}"}]'
+    }
+    bodyType="json"
+    isMultiplayerEdited={false}
+    query="target_concepts_for_mapping/_search?size=50"
+    resourceDisplayName="OpenSearch API"
+    resourceName="cd5755b4-f1e3-43ed-9532-894ef58a329d"
+    resourceTypeOverride=""
+  >
+    <Event
+      event="success"
+      method="trigger"
+      params={{ ordered: [] }}
+      pluginId="aggregate_search"
+      type="datasource"
+      waitMs="0"
+      waitType="debounce"
+    />
+  </RESTQuery>
+  <RESTQuery
+    id="search_match_all"
+    body={
+      '[{"key":"query","value":"{term: {\\"concept_map_version_uuid.keyword\\": {{urlparams.concept_map_version_uuid}} }}"}]'
+    }
+    bodyType="json"
+    query="target_concepts_for_mapping/_search?size=50"
+    resourceDisplayName="OpenSearch API"
+    resourceName="cd5755b4-f1e3-43ed-9532-894ef58a329d"
+  >
+    <Event
+      event="success"
+      method="trigger"
+      params={{ ordered: [] }}
+      pluginId="aggregate_search"
+      type="datasource"
+      waitMs="0"
+      waitType="debounce"
+    />
+  </RESTQuery>
 </GlobalFunctions>
