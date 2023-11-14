@@ -13,7 +13,7 @@
         event="click"
         method="trigger"
         params={{ ordered: [] }}
-        pluginId="publish_registry_dev_only"
+        pluginId="publish_registry_all_environments"
         type="datasource"
         waitMs="0"
         waitType="debounce"
