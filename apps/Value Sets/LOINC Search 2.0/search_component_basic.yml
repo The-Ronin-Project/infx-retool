@@ -1,0 +1,108 @@
+id: search_component_basic
+type: datasource
+subtype: ElasticSearchQuery
+resourceName: 3e68115b-9776-4956-86b4-f468d2d1f836
+resourceDisplayName: ElasticSearch
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - method: search
+    - lastReceivedFromResourceAt: null
+    - queryDisabledMessage: ''
+    - servedFromCache: false
+    - successMessage: ''
+    - queryDisabled: ''
+    - playgroundQuerySaveId: latest
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: true
+    - showFailureToaster: true
+    - query: |-
+        {
+          body: {
+            query: {
+              bool: {
+                must: [
+                  {
+                    multi_match: {
+                      type: {{search_type.value == 'Prefix' ? "bool_prefix" : "best_fields"}},
+                      fields: {{related_names.value ? ["component", "related_names"] : ["component"]}},
+                      query: {{component_search.value}}
+                    }
+                  }
+                ],
+                filter: [
+                  { "term":  { "terminology_version_uuid.keyword": {{loinc_version_select.value}} }},
+                ]
+              }
+            }
+          },
+          size: 500,
+          index: "loinc_components"
+        }
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - error: null
+    - privateParams: []
+    - runWhenPageLoadsDelay: ''
+    - data: null
+    - importedQueryInputs:
+        ordered: []
+    - isImported: false
+    - showSuccessToaster: true
+    - cacheKeyTtl: ''
+    - requestSentTimestamp: null
+    - metadata: null
+    - queryRunTime: null
+    - changesetObject: ''
+    - errorTransformer: >-
+        // The variable 'data' allows you to reference the request's data in the
+        transformer. 
+
+        // example: return data.find(element => element.isError)
+
+        return data.error
+    - finished: null
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - resourceTypeOverride: null
+    - watchedParams: []
+    - enableErrorTransformer: false
+    - showLatestVersionUpdatedWarning: false
+    - timestamp: 0
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: true
+    - showUpdateSetValueDynamicallyToggle: true
+    - runWhenPageLoads: false
+    - transformer: >-
+        // type your code here
+
+        // example: return formatDataAsArray(data).filter(row => row.quantity >
+        20)
+
+        return data.hits.hits.map(hit => hit['_source'].component)
+    - events:
+        - ordered:
+            - event: success
+            - type: datasource
+            - method: trigger
+            - pluginId: search_component
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - queryTimeout: '10000'
+    - requireConfirmation: false
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups: []
+    - collection: ''
+    - offlineQueryType: None
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+createdAt: 2022-01-31T22:02:11.026Z
