@@ -4,7 +4,7 @@
     <Text
       id="text1"
       _disclosedFields={{ array: [] }}
-      value="**{{load_vs_metadata.data.title}}**"
+      value="#### {{load_vs_metadata.data.title}}"
       verticalAlign="center"
     />
     <Include src="./src/tabbedcontainer1.rsx" />
