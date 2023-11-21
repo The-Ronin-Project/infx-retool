@@ -353,7 +353,42 @@
       id="link3"
       showUnderline="hover"
       text="{{concept_map_metadata_table.selectedRow.data.target_value_set_title}}"
-    />
+    >
+      <Event
+        event="click"
+        method="openApp"
+        params={{
+          ordered: [
+            { uuid: "4f31f1c8-2228-11ec-90d7-a387d41c775c" },
+            {
+              options: {
+                ordered: [
+                  {
+                    queryParams: [
+                      {
+                        ordered: [
+                          { key: "uuid" },
+                          {
+                            value:
+                              "{{concept_map_metadata_table.selectedRow.data.target_value_set_uuid}}",
+                          },
+                        ],
+                      },
+                      { ordered: [{ key: "" }, { value: "" }] },
+                    ],
+                  },
+                  { newTab: true },
+                ],
+              },
+            },
+          ],
+        }}
+        pluginId=""
+        type="util"
+        waitMs="0"
+        waitType="debounce"
+      />
+    </Link>
     <Text id="text12" value="**Purpose**" verticalAlign="center" />
     <Text
       id="text13"
