@@ -137,14 +137,6 @@
     "height": 0.6,
     "width": 4
   },
-  "link4": {
-    "container": "tabbedcontainer1",
-    "subcontainer": "0",
-    "row": 9,
-    "col": 8,
-    "height": 0.6,
-    "width": 4
-  },
   "modal1": {
     "container": "tabbedcontainer1",
     "subcontainer": "0",
@@ -220,7 +212,7 @@
     "width": 12
   },
   "tabbedcontainer1": {
-    "height": 23.6,
+    "height": 23.8,
     "width": 12
   },
   "tabs1": {
@@ -243,7 +235,7 @@
     "height": 1
   },
   "test_content_switch": {
-    "row": 23.6,
+    "row": 23.8,
     "height": 0.6
   },
   "text1": {
@@ -354,6 +346,14 @@
     "row": 14.6,
     "col": 8,
     "height": 0.6
+  },
+  "text25": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "0",
+    "row": 9,
+    "col": 8,
+    "height": 0.6,
+    "width": 4
   },
   "text3": {
     "container": "tabbedcontainer1",

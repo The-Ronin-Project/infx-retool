@@ -396,10 +396,10 @@
       verticalAlign="center"
     />
     <Text id="text14" value="**Use Case(s)**" verticalAlign="center" />
-    <Link
-      id="link4"
-      showUnderline="hover"
-      text="{{use_case_info.data.name[0]}}"
+    <Text
+      id="text25"
+      value="{{use_case_info.data.name[0]}}"
+      verticalAlign="center"
     />
     <Text id="text15" value="**Created Date**" verticalAlign="center" />
     <Text
