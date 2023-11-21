@@ -185,6 +185,7 @@ return data"
     />
     <SqlQueryUnified
       id="load_concept_maps"
+      isMultiplayerEdited={false}
       query={include("./lib/load_concept_maps.sql", "string")}
       resourceDisplayName="Clinical Content PostgresSQL DB"
       resourceName="dc8029bc-3980-4836-841e-776c64eeca49"
@@ -261,193 +262,63 @@ return data"
       warningCodes={[]}
     />
   </Folder>
-  <Folder id="valueset_queries">
-    <SqlQueryUnified
-      id="create_new_value_set"
-      actionType="INSERT"
-      changeset={
-        '[{"key":"title","value":"{{title_input.value}}"},{"key":"purpose","value":"{{purpose_text_input.value}}"},{"key":"experimental","value":"{{experimental_check_box.value}}"},{"key":"type","value":"{{type_dropdown.value}}"},{"key":"immutable","value":"false"},{"key":"contact","value":"{{author_text.value}}"},{"key":"uuid","value":"{{uuid.v1()}}"},{"key":"publisher","value":"{{publisher_text_input.value}}"},{"key":"description","value":"{{description_text_input.value}}"},{"key":"name","value":"{{name_input.value}}"}]'
-      }
-      editorMode="gui"
-      resourceDisplayName="Clinical Content PostgresSQL DB"
-      resourceName="dc8029bc-3980-4836-841e-776c64eeca49"
-      runWhenModelUpdates={false}
-      showSuccessConfetti={false}
-      showUpdateSetValueDynamicallyToggle={false}
-      tableName="value_sets.value_set"
-      transformer="// type your code here
+  <SqlQueryUnified
+    id="delete_synonym"
+    query={include("./lib/delete_synonym.sql", "string")}
+    resourceDisplayName="Clinical Content PostgresSQL DB"
+    resourceName="dc8029bc-3980-4836-841e-776c64eeca49"
+    runWhenModelUpdates={false}
+    transformer="// type your code here
 // example: return formatDataAsArray(data).filter(row => row.quantity > 20)
 return data"
-      triggersOnFailure={[]}
-      triggersOnSuccess={["load_value_sets"]}
-      updateSetValueDynamically={true}
-    >
-      <Event
-        event="success"
-        method="trigger"
-        params={{ ordered: [] }}
-        pluginId="load_value_sets"
-        type="datasource"
-        waitMs="0"
-        waitType="debounce"
-      />
-    </SqlQueryUnified>
-    <SqlQueryUnified
-      id="delete_synonym"
-      query={include("./lib/delete_synonym.sql", "string")}
-      resourceDisplayName="Clinical Content PostgresSQL DB"
-      resourceName="dc8029bc-3980-4836-841e-776c64eeca49"
-      runWhenModelUpdates={false}
-      transformer="// type your code here
-// example: return formatDataAsArray(data).filter(row => row.quantity > 20)
-return data"
-      warningCodes={[]}
-    >
-      <Event
-        event="success"
-        method="trigger"
-        params={{ ordered: [] }}
-        pluginId="load_synonyms"
-        type="datasource"
-        waitMs="0"
-        waitType="debounce"
-      />
-    </SqlQueryUnified>
-    <SqlQueryUnified
-      id="duplicate_copy_version_contents"
-      query={include("./lib/duplicate_copy_version_contents.sql", "string")}
-      resourceDisplayName="Clinical Content PostgresSQL DB"
-      resourceName="dc8029bc-3980-4836-841e-776c64eeca49"
-      runWhenModelUpdates={false}
-      transformer="// type your code here
-// example: return formatDataAsArray(data).filter(row => row.quantity > 20)
-return data"
-      warningCodes={[]}
+    warningCodes={[]}
+  >
+    <Event
+      event="success"
+      method="trigger"
+      params={{ ordered: [] }}
+      pluginId="load_synonyms"
+      type="datasource"
+      waitMs="0"
+      waitType="debounce"
     />
-    <SqlQueryUnified
-      id="duplicate_create_vs"
-      query={include("./lib/duplicate_create_vs.sql", "string")}
-      resourceDisplayName="Clinical Content PostgresSQL DB"
-      resourceName="dc8029bc-3980-4836-841e-776c64eeca49"
-      runWhenModelUpdates={false}
-      transformer="// type your code here
+  </SqlQueryUnified>
+  <SqlQueryUnified
+    id="load_synonyms"
+    query={include("./lib/load_synonyms.sql", "string")}
+    resourceDisplayName="Clinical Content PostgresSQL DB"
+    resourceName="dc8029bc-3980-4836-841e-776c64eeca49"
+    transformer="// type your code here
 // example: return formatDataAsArray(data).filter(row => row.quantity > 20)
 return data"
-      warningCodes={[]}
+    warningCodes={[]}
+  />
+  <SqlQueryUnified
+    id="new_synonym"
+    query={include("./lib/new_synonym.sql", "string")}
+    resourceDisplayName="Clinical Content PostgresSQL DB"
+    resourceName="dc8029bc-3980-4836-841e-776c64eeca49"
+    runWhenModelUpdates={false}
+    transformer="// type your code here
+// example: return formatDataAsArray(data).filter(row => row.quantity > 20)
+return data"
+    warningCodes={[]}
+  >
+    <Event
+      event="success"
+      method="trigger"
+      params={{ ordered: [] }}
+      pluginId="load_synonyms"
+      type="datasource"
+      waitMs="0"
+      waitType="debounce"
     />
-    <SqlQueryUnified
-      id="duplicate_create_vs_version"
-      query={include("./lib/duplicate_create_vs_version.sql", "string")}
-      resourceDisplayName="Clinical Content PostgresSQL DB"
-      resourceName="dc8029bc-3980-4836-841e-776c64eeca49"
-      runWhenModelUpdates={false}
-      transformer="// type your code here
-// example: return formatDataAsArray(data).filter(row => row.quantity > 20)
-return data"
-      warningCodes={[]}
-    />
-    <SqlQueryUnified
-      id="load_all_value_sets"
-      query={include("./lib/load_all_value_sets.sql", "string")}
-      resourceDisplayName="Clinical Content PostgresSQL DB"
-      resourceName="dc8029bc-3980-4836-841e-776c64eeca49"
-      transformer="// type your code here
-// example: return formatDataAsArray(data).filter(row => row.quantity > 20)
-return data"
-      warningCodes={[]}
-    />
-    <SqlQueryUnified
-      id="load_synonyms"
-      query={include("./lib/load_synonyms.sql", "string")}
-      resourceDisplayName="Clinical Content PostgresSQL DB"
-      resourceName="dc8029bc-3980-4836-841e-776c64eeca49"
-      transformer="// type your code here
-// example: return formatDataAsArray(data).filter(row => row.quantity > 20)
-return data"
-      warningCodes={[]}
-    />
-    <SqlQueryUnified
-      id="load_value_sets"
-      enableTransformer={true}
-      query={include("./lib/load_value_sets.sql", "string")}
-      queryTimeout="10001"
-      resourceDisplayName="Clinical Content PostgresSQL DB"
-      resourceName="dc8029bc-3980-4836-841e-776c64eeca49"
-      showSuccessConfetti={false}
-      transformer=""
-      triggersOnFailure={[]}
-      triggersOnSuccess={[]}
-      warningCodes={[]}
-    />
-    <SqlQueryUnified
-      id="load_versions_of_selected_value_set"
-      query={include("./lib/load_versions_of_selected_value_set.sql", "string")}
-      resourceDisplayName="Clinical Content PostgresSQL DB"
-      resourceName="dc8029bc-3980-4836-841e-776c64eeca49"
-      transformer="// type your code here
-// example: return formatDataAsArray(data).filter(row => row.quantity > 20)
-return data"
-      warningCodes={[]}
-    />
-    <SqlQueryUnified
-      id="load_vs_metadata"
-      query={include("./lib/load_vs_metadata.sql", "string")}
-      resourceDisplayName="Clinical Content PostgresSQL DB"
-      resourceName="dc8029bc-3980-4836-841e-776c64eeca49"
-      transformer="// type your code here
-// example: return formatDataAsArray(data).filter(row => row.quantity > 20)
-return data"
-      warningCodes={[]}
-    />
-    <SqlQueryUnified
-      id="new_synonym"
-      query={include("./lib/new_synonym.sql", "string")}
-      resourceDisplayName="Clinical Content PostgresSQL DB"
-      resourceName="dc8029bc-3980-4836-841e-776c64eeca49"
-      runWhenModelUpdates={false}
-      transformer="// type your code here
-// example: return formatDataAsArray(data).filter(row => row.quantity > 20)
-return data"
-      warningCodes={[]}
-    >
-      <Event
-        event="success"
-        method="trigger"
-        params={{ ordered: [] }}
-        pluginId="load_synonyms"
-        type="datasource"
-        waitMs="0"
-        waitType="debounce"
-      />
-    </SqlQueryUnified>
-    <SqlQueryUnified
-      id="tableBulkUpdateActionTrigger"
-      actionType="BULK_UPDATE_BY_KEY"
-      bulkUpdatePrimaryKey="uuid"
-      editorMode="gui"
-      records="{{concept_map_metadata_table.recordUpdates}}"
-      resourceDisplayName="Clinical Content PostgresSQL DB"
-      resourceName="dc8029bc-3980-4836-841e-776c64eeca49"
-      runWhenModelUpdates={false}
-      showSuccessConfetti={false}
-      showUpdateSetValueDynamicallyToggle={false}
-      tableName="value_sets.value_set"
-      transformer="// type your code here
-// example: return formatDataAsArray(data).filter(row => row.quantity > 20)
-return data"
-      triggersOnFailure={[]}
-      triggersOnSuccess={["load_value_sets"]}
-      updateSetValueDynamically={true}
-    >
-      <Event
-        event="success"
-        method="trigger"
-        params={{ ordered: [] }}
-        pluginId="load_value_sets"
-        type="datasource"
-        waitMs="0"
-        waitType="debounce"
-      />
-    </SqlQueryUnified>
-  </Folder>
+  </SqlQueryUnified>
+  <SqlQueryUnified
+    id="use_case_info"
+    query={include("./lib/use_case_info.sql", "string")}
+    resourceDisplayName="Clinical Content PostgresSQL DB"
+    resourceName="dc8029bc-3980-4836-841e-776c64eeca49"
+    warningCodes={[]}
+  />
 </GlobalFunctions>

@@ -82,6 +82,12 @@
         "author",
         "created_date",
       ]}
+      _columnSummaryTypes={{
+        ordered: [{ use_case_names: "" }, { use_case_array: "" }],
+      }}
+      _columnSummaryValues={{
+        ordered: [{ use_case_names: "" }, { use_case_array: "" }],
+      }}
       _columnVisibility={{
         ordered: [
           { contact: false },
@@ -90,9 +96,11 @@
           { immutable: false },
           { created_date: false },
           { experimental: false },
+          { formatted_created_date: false },
           { identifier: false },
+          { source_value_set_title: false },
           { source_value_set_uuid: false },
-          { author: true },
+          { author: false },
           { name: false },
           { sales: true },
           { url: false },
@@ -108,6 +116,7 @@
           { email: true },
           { description: false },
           { purpose: false },
+          { target_value_set_title: false },
         ],
       }}
       _unfilteredSelectedIndex=""
@@ -133,19 +142,26 @@
         },
       ]}
       applyDynamicSettingsToColumnOrder={false}
+      columnAlignment={{
+        ordered: [{ use_case_names: "left" }, { use_case_array: "left" }],
+      }}
       columnColors={{
         ordered: [
           { contact: "" },
           { include_self_map: "" },
           { auto_advance_mapping: "" },
           { immutable: "" },
+          { use_case_array: "" },
           { created_date: "" },
           { experimental: "" },
+          { formatted_created_date: "" },
           { identifier: "" },
+          { source_value_set_title: "" },
           { source_value_set_uuid: "" },
           { author: "" },
           { name: "" },
           { url: "" },
+          { use_case_names: "" },
           { use_case_uuid: "" },
           { target_value_set_uuid: "" },
           { auto_fill_search: "" },
@@ -156,6 +172,7 @@
           { publisher: "" },
           { description: "" },
           { purpose: "" },
+          { target_value_set_title: "" },
         ],
       }}
       columnEditable={{
@@ -169,8 +186,21 @@
           { type: true },
         ],
       }}
+      columnFormats={{
+        ordered: [
+          { use_case_names: "default" },
+          { use_case_array: "SingleTagDataCell" },
+        ],
+      }}
       columnHeaderNames={{
-        ordered: [{ title: "Title" }, { author: "Author" }],
+        ordered: [
+          { title: "Title" },
+          { author: "Author" },
+          { use_case_array: "Use Case" },
+        ],
+      }}
+      columnMappers={{
+        ordered: [{ use_case_names: "" }, { use_case_array: "" }],
       }}
       columns={[
         "id",
@@ -191,6 +221,23 @@
         "author",
         "created_date",
       ]}
+      columnTypeProperties={{
+        ordered: [
+          { use_case_names: { ordered: [] } },
+          {
+            use_case_array: {
+              ordered: [
+                { optionData: "{{ currentColumn }}" },
+                { colorMode: "auto" },
+                { allowCustomValue: true },
+                { optionLabels: { array: [] } },
+                { optionColors: { array: [] } },
+                { optionValues: { array: [] } },
+              ],
+            },
+          },
+        ],
+      }}
       columnVisibility={{
         ordered: [
           { contact: false },
@@ -221,7 +268,8 @@
         { object: { id: "created_date", value: 150 } },
         { object: { id: "author", value: 222.765625 } },
         { object: { id: "__retool__action_list", value: 154.09375 } },
-        { object: { id: "title", value: 442.71875 } },
+        { object: { id: "use_case_array", value: 239.1875 } },
+        { object: { id: "title", value: 564.71875 } },
       ]}
       customButtonName=""
       data="{{load_concept_maps.data}}"
@@ -241,6 +289,7 @@
       overflowType="scroll"
       pageSize={19}
       showColumnBorders={true}
+      sortMappedValue={{ ordered: [{ use_case_names: false }] }}
       style={{
         ordered: [
           { headerBackground: "rgb(217, 226, 236)" },
@@ -248,72 +297,102 @@
         ],
       }}
     />
-    <KeyValueMap
-      id="concept_map_details"
-      data="{{concept_map_metadata_table.selectedRow.data}}"
-      prevRowFormats={{ ordered: [] }}
-      prevRowMappers={{ ordered: [] }}
-      rows={[
-        "a",
-        "b",
-        "c",
-        "title",
-        "name",
-        "description",
-        "purpose",
-        "identifier",
-        "url",
-        "publisher",
-        "contact",
-        "immutable",
-        "experimental",
-        "type",
-        "uuid",
-        "author",
-        "created_date",
-        "include_self_map",
-        "source_value_set_uuid",
-        "target_value_set_uuid",
-        "use_case_uuid",
-        "auto_advance_mapping",
-        "auto_fill_search",
-        "show_target_codes",
-      ]}
-      rowVisibility={{
-        ordered: [
-          { contact: true },
-          { include_self_map: true },
-          { a: true },
-          { auto_advance_mapping: true },
-          { b: true },
-          { immutable: true },
-          { c: true },
-          { created_date: true },
-          { experimental: true },
-          { identifier: true },
-          { source_value_set_uuid: true },
-          { author: true },
-          { name: true },
-          { url: false },
-          { use_case_uuid: true },
-          { target_value_set_uuid: true },
-          { auto_fill_search: true },
-          { title: true },
-          { show_target_codes: true },
-          { type: true },
-          { uuid: true },
-          { publisher: true },
-          { description: true },
-          { purpose: true },
-        ],
-      }}
-      style={{
-        ordered: [
-          { "primary-background": "rgb(217, 226, 236)" },
-          { "primary-text": "rgb(51, 78, 104)" },
-          { "primary-foreground": "rgb(130, 154, 177)" },
-        ],
-      }}
+    <Divider id="divider5" />
+    <Text
+      id="text8"
+      value="##### {{ concept_map_metadata_table.selectedRow.data.title }}"
+      verticalAlign="center"
+    />
+    <Text
+      id="text9"
+      value="{{concept_map_metadata_table.selectedRow.data.description}}"
+      verticalAlign="center"
+    />
+    <Text id="text10" value="**Source Value Set**" verticalAlign="center" />
+    <Link
+      id="source_value_set_link"
+      showUnderline="hover"
+      text="{{concept_map_metadata_table.selectedRow.data.source_value_set_title}}"
+    >
+      <Event
+        event="click"
+        method="openApp"
+        params={{
+          ordered: [
+            { uuid: "4f31f1c8-2228-11ec-90d7-a387d41c775c" },
+            {
+              options: {
+                ordered: [
+                  {
+                    queryParams: [
+                      {
+                        ordered: [
+                          { key: "uuid" },
+                          {
+                            value:
+                              "{{concept_map_metadata_table.selectedRow.data.source_value_set_uuid}}",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  { newTab: true },
+                ],
+              },
+            },
+          ],
+        }}
+        pluginId=""
+        type="util"
+        waitMs="0"
+        waitType="debounce"
+      />
+    </Link>
+    <Text id="text11" value="**Target Value Set**" verticalAlign="center" />
+    <Link
+      id="link3"
+      showUnderline="hover"
+      text="{{concept_map_metadata_table.selectedRow.data.target_value_set_title}}"
+    />
+    <Text id="text12" value="**Purpose**" verticalAlign="center" />
+    <Text
+      id="text13"
+      value="{{concept_map_metadata_table.selectedRow.data.purpose}}"
+      verticalAlign="center"
+    />
+    <Text id="text14" value="**Use Case(s)**" verticalAlign="center" />
+    <Link
+      id="link4"
+      showUnderline="hover"
+      text="{{use_case_info.data.name[0]}}"
+    />
+    <Text id="text15" value="**Created Date**" verticalAlign="center" />
+    <Text
+      id="text22"
+      value="{{concept_map_metadata_table.selectedRow.data.formatted_created_date}}"
+      verticalAlign="center"
+    />
+    <Text id="text20" value="**Name**" verticalAlign="center" />
+    <Text
+      id="text21"
+      value="{{concept_map_metadata_table.selectedRow.data.name}}"
+      verticalAlign="center"
+    />
+    <Text id="text16" value="**UUID**" verticalAlign="center" />
+    <Text
+      id="text17"
+      value="{{concept_map_metadata_table.selectedRow.data.uuid}}"
+      verticalAlign="center"
+    />
+    <Text
+      id="text23"
+      value="**Experimental (Test) Content**"
+      verticalAlign="center"
+    />
+    <Text
+      id="text24"
+      value="{{concept_map_metadata_table.selectedRow.data.experimental}}"
+      verticalAlign="center"
     />
     <Include src="./modal1.rsx" />
   </View>
@@ -610,11 +689,24 @@
         "cm_description",
         "cmv_description",
         "concept_map_uuid",
+        "published_date",
+        "source_value_set_version_uuid",
+        "target_value_set_version_uuid",
+        "count_loaded_concepts",
+        "include_self_map",
+        "source_value_set_uuid",
+        "target_value_set_uuid",
+        "use_case_uuid",
+        "auto_advance_mapping",
+        "auto_fill_search",
+        "show_target_codes",
       ]}
       rowVisibility={{
         ordered: [
           { contact: true },
+          { include_self_map: true },
           { a: true },
+          { auto_advance_mapping: true },
           { b: true },
           { immutable: true },
           { c: true },
@@ -624,21 +716,30 @@
           { cm_description: true },
           { experimental: true },
           { cmv_description: true },
+          { source_value_set_uuid: true },
           { effective_start: true },
           { author: true },
           { name: false },
+          { source_value_set_version_uuid: true },
+          { use_case_uuid: true },
           { status: true },
+          { target_value_set_uuid: true },
+          { auto_fill_search: true },
           { comments: true },
           { concept_map_uuid: true },
+          { count_loaded_concepts: true },
           { vsv_description: true },
           { version: false },
           { title: false },
           { vs_description: true },
+          { show_target_codes: true },
           { type: false },
+          { target_value_set_version_uuid: true },
           { uuid: false },
           { publisher: false },
           { description: false },
           { purpose: true },
+          { published_date: true },
         ],
       }}
       style={{
