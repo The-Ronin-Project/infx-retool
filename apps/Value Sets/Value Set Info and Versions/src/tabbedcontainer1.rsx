@@ -11,12 +11,7 @@
   showBody={true}
   showHeader={true}
   showInEditor={null}
-  style={{
-    ordered: [
-      { background: "rgb(240, 244, 248)" },
-      { headerBackground: "rgb(217, 226, 236)" },
-    ],
-  }}
+  style={{ ordered: [] }}
   styleContext={{ ordered: [{ textDark: "rgb(34, 34, 34)" }] }}
   transition="slide"
 >
