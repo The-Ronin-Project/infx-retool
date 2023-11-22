@@ -191,7 +191,14 @@ return data"
       resourceName="dc8029bc-3980-4836-841e-776c64eeca49"
       transformer="// type your code here
 // example: return formatDataAsArray(data).filter(row => row.quantity > 20)
-return data"
+
+return formatDataAsArray(data).map(row => {
+    if (row.tenant_array) {
+      row.tenant_array = row.tenant_array.split(', '); 
+    }
+    return row
+  }
+)"
       warningCodes={[]}
     />
     <SqlQueryUnified
@@ -294,6 +301,13 @@ return data"
     warningCodes={[]}
   />
   <SqlQueryUnified
+    id="cm_registry_lookup"
+    query={include("./lib/cm_registry_lookup.sql", "string")}
+    resourceDisplayName="Clinical Content PostgresSQL DB"
+    resourceName="dc8029bc-3980-4836-841e-776c64eeca49"
+    warningCodes={[]}
+  />
+  <SqlQueryUnified
     id="new_synonym"
     query={include("./lib/new_synonym.sql", "string")}
     resourceDisplayName="Clinical Content PostgresSQL DB"
@@ -314,11 +328,4 @@ return data"
       waitType="debounce"
     />
   </SqlQueryUnified>
-  <SqlQueryUnified
-    id="use_case_info"
-    query={include("./lib/use_case_info.sql", "string")}
-    resourceDisplayName="Clinical Content PostgresSQL DB"
-    resourceName="dc8029bc-3980-4836-841e-776c64eeca49"
-    warningCodes={[]}
-  />
 </GlobalFunctions>
