@@ -563,12 +563,12 @@
     />
     <Text
       id="text23"
-      value="**Experimental (Test) Content**"
+      value="Experimental (Test) Content"
       verticalAlign="center"
     />
     <Text
       id="text24"
-      value="{{concept_map_metadata_table.selectedRow.experimental}}"
+      value="**{{concept_map_metadata_table.selectedRow.experimental}}**"
       verticalAlign="center"
     />
     <Button
