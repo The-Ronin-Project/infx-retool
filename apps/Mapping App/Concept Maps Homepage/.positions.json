@@ -23,7 +23,7 @@
   "button4": {
     "container": "tabbedcontainer1",
     "subcontainer": "0",
-    "row": 19,
+    "row": 19.2,
     "col": 8,
     "height": 1,
     "width": 4
@@ -140,7 +140,7 @@
   "link3": {
     "container": "tabbedcontainer1",
     "subcontainer": "0",
-    "row": 4.2,
+    "row": 4.8,
     "col": 8,
     "height": 0.6,
     "width": 4
@@ -148,14 +148,15 @@
   "listView1": {
     "container": "tabbedcontainer1",
     "subcontainer": "0",
-    "row": 8.2,
+    "row": 7.6,
     "col": 8,
+    "height": 5.2,
     "width": 4
   },
   "modal1": {
     "container": "tabbedcontainer1",
     "subcontainer": "0",
-    "row": 36.2,
+    "row": 36.4,
     "col": 9,
     "height": 1
   },
@@ -209,7 +210,7 @@
   "source_value_set_link": {
     "container": "tabbedcontainer1",
     "subcontainer": "0",
-    "row": 3,
+    "row": 3.4,
     "col": 8,
     "height": 0.6,
     "width": 4
@@ -262,21 +263,21 @@
   "text10": {
     "container": "tabbedcontainer1",
     "subcontainer": "0",
-    "row": 2.4,
+    "row": 2.8,
     "col": 8,
     "height": 0.6
   },
   "text11": {
     "container": "tabbedcontainer1",
     "subcontainer": "0",
-    "row": 3.6,
+    "row": 4.2,
     "col": 8,
     "height": 0.6
   },
   "text12": {
     "container": "tabbedcontainer1",
     "subcontainer": "0",
-    "row": 6.2,
+    "row": 5.6,
     "col": 8,
     "height": 0.6,
     "width": 4
@@ -284,7 +285,7 @@
   "text13": {
     "container": "tabbedcontainer1",
     "subcontainer": "0",
-    "row": 6.8,
+    "row": 6.2,
     "col": 8,
     "height": 0.6,
     "width": 4
@@ -292,21 +293,21 @@
   "text15": {
     "container": "tabbedcontainer1",
     "subcontainer": "0",
-    "row": 13.4,
+    "row": 13,
     "col": 8,
     "height": 0.6
   },
   "text16": {
     "container": "tabbedcontainer1",
     "subcontainer": "0",
-    "row": 16.2,
+    "row": 15.8,
     "col": 8,
     "height": 0.6
   },
   "text17": {
     "container": "tabbedcontainer1",
     "subcontainer": "0",
-    "row": 16.8,
+    "row": 16.4,
     "col": 8,
     "height": 0.6,
     "width": 4
@@ -320,7 +321,7 @@
   "text20": {
     "container": "tabbedcontainer1",
     "subcontainer": "0",
-    "row": 14.8,
+    "row": 14.4,
     "col": 8,
     "height": 0.6,
     "width": 4
@@ -328,7 +329,7 @@
   "text21": {
     "container": "tabbedcontainer1",
     "subcontainer": "0",
-    "row": 15.4,
+    "row": 15,
     "col": 8,
     "height": 0.6,
     "width": 4
@@ -336,7 +337,7 @@
   "text22": {
     "container": "tabbedcontainer1",
     "subcontainer": "0",
-    "row": 14,
+    "row": 13.6,
     "col": 8,
     "height": 0.6,
     "width": 4
@@ -344,21 +345,21 @@
   "text23": {
     "container": "tabbedcontainer1",
     "subcontainer": "0",
-    "row": 17.6,
+    "row": 17.2,
     "col": 8,
     "height": 0.6
   },
   "text24": {
     "container": "tabbedcontainer1",
     "subcontainer": "0",
-    "row": 18.2,
+    "row": 17.8,
     "col": 8,
     "height": 0.6
   },
   "text25": {
     "container": "tabbedcontainer1",
     "subcontainer": "0",
-    "row": 7.6,
+    "row": 7,
     "col": 8,
     "height": 0.6,
     "width": 4
