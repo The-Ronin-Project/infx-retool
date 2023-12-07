@@ -1,0 +1,55 @@
+id: mapping_comments
+type: widget
+subtype: TextAreaWidget
+template:
+  ordered:
+    - spellCheck: false
+    - readOnly: false
+    - autoResize: true
+    - showCharacterCount: false
+    - autoComplete: false
+    - marginType: normal
+    - maxLength: null
+    - hidden: false
+    - customValidation: ''
+    - hideValidationMessage: false
+    - minLines: 2
+    - validationMessage: ''
+    - showInEditor: false
+    - pattern: ''
+    - tooltipText: ''
+    - labelAlign: left
+    - formDataKey: '{{ self.id }}'
+    - value: ''
+    - labelCaption: >-
+        Only for use when a target has been selected and a mapping will be
+        created. This will not comment on sources for no maps.
+    - labelWidth: '33'
+    - autoFill: ''
+    - placeholder: Enter value
+    - _disclosedFields:
+        array: []
+    - label: Mapping Comments
+    - _validate: false
+    - labelWidthUnit: '%'
+    - invalid: false
+    - minLength: null
+    - inputTooltip: ''
+    - events:
+        ordered: []
+    - autoCapitalize: none
+    - maxLines: null
+    - loading: false
+    - disabled: false
+    - labelPosition: top
+    - labelWrap: false
+    - maintainSpaceWhenHidden: false
+    - required: false
+style:
+  ordered: []
+position2:
+  position2:
+    row: 14.5999999999999
+    height: 1
+    width: 6
+createdAt: 2022-09-14T21:09:30.050Z

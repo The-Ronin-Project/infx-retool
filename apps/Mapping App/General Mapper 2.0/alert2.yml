@@ -1,0 +1,29 @@
+id: alert2
+type: widget
+subtype: AlertWidget
+template:
+  ordered:
+    - valueToCopy: ''
+    - internalUrlHashParams: ''
+    - hidden: '{{mapping_group_select.value != ''rejected''}}'
+    - exportFileType: csv
+    - buttonType: action
+    - url: ''
+    - newWindow: false
+    - exportQuery: ''
+    - action: ''
+    - internalUrlQuery: ''
+    - internalUrlPath: ''
+    - title: Reviewing Rejected Mappings
+    - type: warning
+    - exportFileName: ''
+    - description: See rejected mappings in Currently Mapped Targets section
+    - buttonText: ''
+style:
+  ordered: []
+position2:
+  position2:
+    row: 1
+    height: 1
+    width: 12
+createdAt: 2022-10-20T23:23:39.109Z

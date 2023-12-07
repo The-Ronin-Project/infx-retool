@@ -1,0 +1,28 @@
+id: alert1
+type: widget
+subtype: AlertWidget
+template:
+  ordered:
+    - valueToCopy: ''
+    - internalUrlHashParams: ''
+    - hidden: '{{mapping_queue.selectedRow.data != undefined}}'
+    - exportFileType: csv
+    - buttonType: action
+    - url: ''
+    - newWindow: false
+    - exportQuery: ''
+    - action: ''
+    - internalUrlQuery: ''
+    - internalUrlPath: ''
+    - title: Info
+    - type: info
+    - exportFileName: ''
+    - description: Select an item from mapping queue to get started
+    - buttonText: ''
+style:
+  ordered: []
+position2:
+  position2:
+    height: 1
+    width: 12
+createdAt: 2022-09-09T22:42:46.716Z
