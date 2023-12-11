@@ -32,7 +32,7 @@
           <Option id="acc2a" value="Tab 3" />
         </Tabs>
       </Header>
-      <View id="a2163" viewKey="Triage Errors">
+      <View id="a2163" viewKey="Triage Requests">
         <TableLegacy
           id="concept_map_overview_table"
           _columns={[
