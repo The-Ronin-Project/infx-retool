@@ -73,7 +73,7 @@
       hiddenByIndex=""
       iconByIndex=""
       imageByIndex=""
-      label="User"
+      label="Reviewer"
       labels="{{ item.first_last_name }}"
       overlayMaxHeight={375}
       placeholder="Select an option"
@@ -193,6 +193,43 @@
         method="trigger"
         params={{ ordered: [] }}
         pluginId="disapprove_all_query_part1"
+        type="datasource"
+        waitMs="0"
+        waitType="debounce"
+      />
+    </Button>
+    <Container
+      id="container1"
+      hidden="false"
+      showBody={true}
+      showHeader="false
+"
+    >
+      <View id="5949d" viewKey="View 1">
+        <Multiselect
+          id="mapper_selection"
+          data="{{ getUsers_mapper.data }}"
+          emptyMessage="No options"
+          label="Mapper"
+          labels="{{ item.first_last_name }}"
+          overlayMaxHeight={375}
+          placeholder="Select options"
+          showSelectionIndicator={true}
+          values="{{ item.user_uuid }}"
+          wrapTags={true}
+        />
+      </View>
+    </Container>
+    <Button
+      id="review_queue_trigger"
+      styleVariant="solid"
+      text="Populate Review Queue"
+    >
+      <Event
+        event="click"
+        method="trigger"
+        params={{ ordered: [] }}
+        pluginId="populate_review_queue"
         type="datasource"
         waitMs="0"
         waitType="debounce"
@@ -356,6 +393,7 @@
           { mapping_group: "" },
           { system: "" },
           { reason_for_no_map: "" },
+          { deleted_timestamp: "" },
           { source_code: "" },
           { target_concept_code: "" },
           { assigned_mapper: "" },
@@ -368,6 +406,7 @@
           { source_concept_uuid: "" },
           { reviewed_date: "" },
           { assigned_reviewer: "" },
+          { previous_mapping_context: "" },
           { model_run_time: "" },
           { additional_context: "" },
           { depends_on_system: "" },
@@ -381,6 +420,7 @@
           { uuid: "" },
           { concept_map_version_uuid: "" },
           { email: "" },
+          { deleted_by: "" },
           { target_concept_display: "" },
           { depends_on_property: "" },
           { source_display: "" },
@@ -524,22 +564,6 @@
       placeholder="Type in review comment before approving/rejecting all selected rows"
     />
     <Button
-      id="hold_button"
-      _disclosedFields={{ array: [] }}
-      styleVariant="solid"
-      text="Save for discussion All Selected"
-    >
-      <Event
-        event="click"
-        method="trigger"
-        params={{ ordered: [] }}
-        pluginId="save_all_for_discussion"
-        type="datasource"
-        waitMs="0"
-        waitType="debounce"
-      />
-    </Button>
-    <Button
       id="approve_2"
       _disclosedFields={{ array: [] }}
       disabled="{{load_metadata.data.status == 'active' || load_metadata.data.status == 'retired' }}"
@@ -568,6 +592,22 @@
         method="trigger"
         params={{ ordered: [] }}
         pluginId="disapprove_all_query_part2"
+        type="datasource"
+        waitMs="0"
+        waitType="debounce"
+      />
+    </Button>
+    <Button
+      id="hold_button"
+      _disclosedFields={{ array: [] }}
+      styleVariant="solid"
+      text="Save for discussion All Selected"
+    >
+      <Event
+        event="click"
+        method="trigger"
+        params={{ ordered: [] }}
+        pluginId="save_all_for_discussion"
         type="datasource"
         waitMs="0"
         waitType="debounce"
