@@ -1,0 +1,44 @@
+id: text2
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - marginType: normal
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - tooltipText: ''
+    - value: >-
+        This will create a new version of the concept map, based on the
+        **{{load_latest_version_query.data.version[0]}}**, the current highest
+        version.
+
+
+        The new concept map will map from the source value set
+        (**{{source_value_set_info.data.title}} version
+        {{source_value_set_info.data.version}}**) to the target value set
+        (**{{target_value_set_info.data.title}} version
+        {{target_value_set_info.data.version}}**).
+
+
+        Any existing mappings which are still valid for the most recent versions
+        of the target and source terminologies will be copied to the new
+        version.
+    - _disclosedFields:
+        array: []
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: concept_maps_version
+    subcontainer: '3'
+    row: 0.19999999999999996
+    height: 0.6
+    width: 12
+createdAt: 2023-02-08T21:45:27.048Z

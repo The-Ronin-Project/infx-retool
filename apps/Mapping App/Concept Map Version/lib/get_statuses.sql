@@ -1,1 +1,0 @@
-select * from project_management.status
