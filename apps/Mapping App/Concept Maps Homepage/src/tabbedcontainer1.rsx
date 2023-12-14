@@ -225,19 +225,7 @@
       ]}
       customButtonName=""
       data="{{load_concept_maps.data}}"
-      events={[
-        {
-          ordered: [
-            { event: "saveChanges" },
-            { type: "datasource" },
-            { method: "trigger" },
-            { pluginId: "tableBulkUpdateActionTrigger" },
-            { params: { ordered: [] } },
-            { waitType: "debounce" },
-            { waitMs: "0" },
-          ],
-        },
-      ]}
+      events={[]}
       overflowType="scroll"
       pageSize={19}
       showColumnBorders={true}
@@ -610,11 +598,24 @@
         "cm_description",
         "cmv_description",
         "concept_map_uuid",
+        "published_date",
+        "source_value_set_version_uuid",
+        "target_value_set_version_uuid",
+        "count_loaded_concepts",
+        "include_self_map",
+        "source_value_set_uuid",
+        "target_value_set_uuid",
+        "use_case_uuid",
+        "auto_advance_mapping",
+        "auto_fill_search",
+        "show_target_codes",
       ]}
       rowVisibility={{
         ordered: [
           { contact: true },
+          { include_self_map: true },
           { a: true },
+          { auto_advance_mapping: true },
           { b: true },
           { immutable: true },
           { c: true },
@@ -624,21 +625,30 @@
           { cm_description: true },
           { experimental: true },
           { cmv_description: true },
+          { source_value_set_uuid: true },
           { effective_start: true },
           { author: true },
           { name: false },
+          { source_value_set_version_uuid: true },
+          { use_case_uuid: true },
           { status: true },
+          { target_value_set_uuid: true },
+          { auto_fill_search: true },
           { comments: true },
           { concept_map_uuid: true },
+          { count_loaded_concepts: true },
           { vsv_description: true },
           { version: false },
           { title: false },
           { vs_description: true },
+          { show_target_codes: true },
           { type: false },
+          { target_value_set_version_uuid: true },
           { uuid: false },
           { publisher: false },
           { description: false },
           { purpose: true },
+          { published_date: true },
         ],
       }}
       style={{
