@@ -82,22 +82,6 @@
       tooltipByIndex=""
       values="{{ item.user_uuid }}"
     />
-    <Button
-      id="hold_button2"
-      _disclosedFields={{ array: [] }}
-      styleVariant="solid"
-      text="Save for discussion All Selected"
-    >
-      <Event
-        event="click"
-        method="trigger"
-        params={{ ordered: [] }}
-        pluginId="save_all_for_discussion"
-        type="datasource"
-        waitMs="0"
-        waitType="debounce"
-      />
-    </Button>
     <SplitButton
       id="relationship_splitButton"
       _colorByIndex={["", "", ""]}
@@ -198,6 +182,22 @@
         waitType="debounce"
       />
     </Button>
+    <Button
+      id="hold_button2"
+      _disclosedFields={{ array: [] }}
+      styleVariant="solid"
+      text="Save for discussion All Selected"
+    >
+      <Event
+        event="click"
+        method="trigger"
+        params={{ ordered: [] }}
+        pluginId="save_all_for_discussion"
+        type="datasource"
+        waitMs="0"
+        waitType="debounce"
+      />
+    </Button>
     <Container
       id="container1"
       hidden="false"
@@ -208,14 +208,14 @@
       <View id="5949d" viewKey="View 1">
         <Multiselect
           id="mapper_selection"
-          data="{{ getUsers_mapper.data }}"
+          data="{{ get_author.data }}"
           emptyMessage="No options"
           label="Mapper"
-          labels="{{ item.first_last_name }}"
+          labels=""
           overlayMaxHeight={375}
           placeholder="Select options"
           showSelectionIndicator={true}
-          values="{{ item.user_uuid }}"
+          values="{{ item.author }}"
           wrapTags={true}
         />
       </View>

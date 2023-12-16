@@ -602,4 +602,11 @@ return data"
 return data"
     warningCodes={[]}
   />
+  <SqlQueryUnified
+    id="get_author"
+    query={include("./lib/get_author.sql", "string")}
+    resourceDisplayName="Clinical Content PostgresSQL DB"
+    resourceName="dc8029bc-3980-4836-841e-776c64eeca49"
+    warningCodes={[]}
+  />
 </GlobalFunctions>

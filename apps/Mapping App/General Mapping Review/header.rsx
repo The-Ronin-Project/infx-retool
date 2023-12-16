@@ -1,4 +1,4 @@
-<Frame id="$header" sticky={true} type="header">
+<Frame id="$header" paddingType="normal" sticky={true} type="header">
   <Module
     id="conceptMapHeader1"
     name="Concept Map Header"

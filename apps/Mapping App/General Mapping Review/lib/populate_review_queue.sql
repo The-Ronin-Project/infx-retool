@@ -7,4 +7,4 @@ where source_concept.concept_map_version_uuid = {{urlparams.concept_map_version_
 and ({{select_user.value}}::uuid IS NULL or source_concept.assigned_reviewer = {{select_user.value}})
 and ((concept_relationship.review_status is null) or (concept_relationship.review_status = 'ready for review'))
 and ((source_concept.save_for_discussion = FALSE))
-and ((source_concept.assigned_mapper = any({{mapper_selection.value}})) or ({{mapper_selection.value.length == 0}}))
+and ((concept_relationship.author = any({{mapper_selection.value}})) or ({{mapper_selection.value.length == 0}}))
