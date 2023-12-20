@@ -4,6 +4,12 @@
   "pageUuid": "35347ac0-9bf4-11ec-bea5-53c1223dcd2f",
   "appTemplate": {
     "appMaxWidth": "1560px",
+    "experimentalFeatures": {
+      "object": {
+        "sourceControlTemplateDehydration": false,
+        "multiplayerEditingEnabled": false
+      }
+    },
     "experimentalPerfFeatures": {
       "object": {
         "batchCommitModelEnabled": false

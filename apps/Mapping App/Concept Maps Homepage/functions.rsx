@@ -207,20 +207,6 @@ return data"
       warningCodes={[]}
     />
     <SqlQueryUnified
-      id="mapset_view_edit_query"
-      actionType="BULK_UPDATE_BY_KEY"
-      bulkUpdatePrimaryKey="uuid"
-      editorMode="gui"
-      records="{{concept_map_metadata_table.recordUpdates}}"
-      resourceDisplayName="Clinical Content PostgresSQL DB"
-      resourceName="dc8029bc-3980-4836-841e-776c64eeca49"
-      runWhenModelUpdates={false}
-      tableName="concept_maps.concept_map"
-      transformer="// type your code here
-// example: return formatDataAsArray(data).filter(row => row.quantity > 20)
-return data"
-    />
-    <SqlQueryUnified
       id="source_and_target_value_sets"
       query={include("./lib/source_and_target_value_sets.sql", "string")}
       resourceDisplayName="Clinical Content PostgresSQL DB"
@@ -262,36 +248,6 @@ return data"
     />
   </Folder>
   <Folder id="valueset_queries">
-    <SqlQueryUnified
-      id="create_new_value_set"
-      actionType="INSERT"
-      changeset={
-        '[{"key":"title","value":"{{title_input.value}}"},{"key":"purpose","value":"{{purpose_text_input.value}}"},{"key":"experimental","value":"{{experimental_check_box.value}}"},{"key":"type","value":"{{type_dropdown.value}}"},{"key":"immutable","value":"false"},{"key":"contact","value":"{{author_text.value}}"},{"key":"uuid","value":"{{uuid.v1()}}"},{"key":"publisher","value":"{{publisher_text_input.value}}"},{"key":"description","value":"{{description_text_input.value}}"},{"key":"name","value":"{{name_input.value}}"}]'
-      }
-      editorMode="gui"
-      resourceDisplayName="Clinical Content PostgresSQL DB"
-      resourceName="dc8029bc-3980-4836-841e-776c64eeca49"
-      runWhenModelUpdates={false}
-      showSuccessConfetti={false}
-      showUpdateSetValueDynamicallyToggle={false}
-      tableName="value_sets.value_set"
-      transformer="// type your code here
-// example: return formatDataAsArray(data).filter(row => row.quantity > 20)
-return data"
-      triggersOnFailure={[]}
-      triggersOnSuccess={["load_value_sets"]}
-      updateSetValueDynamically={true}
-    >
-      <Event
-        event="success"
-        method="trigger"
-        params={{ ordered: [] }}
-        pluginId="load_value_sets"
-        type="datasource"
-        waitMs="0"
-        waitType="debounce"
-      />
-    </SqlQueryUnified>
     <SqlQueryUnified
       id="delete_synonym"
       query={include("./lib/delete_synonym.sql", "string")}
@@ -415,35 +371,6 @@ return data"
         method="trigger"
         params={{ ordered: [] }}
         pluginId="load_synonyms"
-        type="datasource"
-        waitMs="0"
-        waitType="debounce"
-      />
-    </SqlQueryUnified>
-    <SqlQueryUnified
-      id="tableBulkUpdateActionTrigger"
-      actionType="BULK_UPDATE_BY_KEY"
-      bulkUpdatePrimaryKey="uuid"
-      editorMode="gui"
-      records="{{concept_map_metadata_table.recordUpdates}}"
-      resourceDisplayName="Clinical Content PostgresSQL DB"
-      resourceName="dc8029bc-3980-4836-841e-776c64eeca49"
-      runWhenModelUpdates={false}
-      showSuccessConfetti={false}
-      showUpdateSetValueDynamicallyToggle={false}
-      tableName="value_sets.value_set"
-      transformer="// type your code here
-// example: return formatDataAsArray(data).filter(row => row.quantity > 20)
-return data"
-      triggersOnFailure={[]}
-      triggersOnSuccess={["load_value_sets"]}
-      updateSetValueDynamically={true}
-    >
-      <Event
-        event="success"
-        method="trigger"
-        params={{ ordered: [] }}
-        pluginId="load_value_sets"
         type="datasource"
         waitMs="0"
         waitType="debounce"
