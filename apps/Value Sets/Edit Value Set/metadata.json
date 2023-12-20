@@ -16,6 +16,12 @@
       }
     },
     "appMaxWidth": "1560px",
+    "experimentalFeatures": {
+      "object": {
+        "sourceControlTemplateDehydration": false,
+        "multiplayerEditingEnabled": false
+      }
+    },
     "experimentalPerfFeatures": {
       "object": {
         "batchCommitModelEnabled": false

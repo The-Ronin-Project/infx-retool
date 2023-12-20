@@ -1,0 +1,2 @@
+insert into value_sets.value_set_rule (value_set_version, uuid, property, value, description, include, terminology_version, operator, rule_group)
+values ({{ urlparams.uuid }}, {{uuid.v4()}}, {{dropdown2.value}}, {{textinput2.value}}, {{textinput1.value}}, {{type_select.value}}, {{version_select.value}}, {{dropdown3.value}}, '1')
