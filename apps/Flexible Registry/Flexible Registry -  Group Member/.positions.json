@@ -46,14 +46,12 @@
     "width": 12
   },
   "group_title": {
-    "row": 0,
     "height": 0.6,
     "width": 7
   },
   "group_title_input": {
     "container": "edit_title_container",
     "subcontainer": "df7c7",
-    "row": 0,
     "height": 1,
     "width": 8
   },
@@ -111,7 +109,6 @@
   },
   "text4": {
     "container": "edit_group_member_modal",
-    "row": 0,
     "height": 0.6,
     "width": 8
   },

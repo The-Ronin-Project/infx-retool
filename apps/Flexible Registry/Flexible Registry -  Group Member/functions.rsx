@@ -245,8 +245,9 @@ return formatDataAsArray(data)"
   />
   <RESTQuery
     id="value_set_query"
-    query="https:hashi.prod.projectronin.io/ValueSets/"
-    resourceName="REST-WithoutResource"
+    query="ValueSets/"
+    resourceDisplayName="INFX Internal Tools API"
+    resourceName="a00335cd-bd3b-4d98-8af4-7ff590ce95e8"
     resourceTypeOverride=""
     transformer="// Query results are available as the `data` variable
 return formatDataAsArray(data)"
