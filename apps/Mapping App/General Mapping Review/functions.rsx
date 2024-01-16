@@ -120,6 +120,15 @@ return data"
       />
       <Event
         event="success"
+        method="clearValue"
+        params={{ ordered: [] }}
+        pluginId="review_comment_all"
+        type="widget"
+        waitMs="0"
+        waitType="debounce"
+      />
+      <Event
+        event="success"
         method="trigger"
         params={{ ordered: [] }}
         pluginId="set_user_as_assigned_reviewer"

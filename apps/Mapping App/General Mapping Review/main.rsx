@@ -1,7 +1,7 @@
 <App>
   <Include src="./functions.rsx" />
   <Include src="./header.rsx" />
-  <Frame id="$main" paddingType="normal" sticky={false} type="main">
+  <Frame id="$main" sticky={false} type="main">
     <Include src="./src/tabbedContainer1.rsx" />
     <Module
       id="bugReporting1"
