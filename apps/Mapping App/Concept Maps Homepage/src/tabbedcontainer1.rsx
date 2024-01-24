@@ -105,7 +105,7 @@
         label="Title"
         placeholder="Enter value"
         position="center"
-        size={767}
+        size={690}
         summaryAggregationMode="none"
       />
       <Column
@@ -341,10 +341,10 @@
         formatOptions={{ automaticColors: true }}
         groupAggregationMode="none"
         key="tenant_array"
-        label="Tenants"
+        label="Tenants Using Map"
         placeholder="Select options"
         position="center"
-        size={100}
+        size={139}
         summaryAggregationMode="none"
       />
       <Action
