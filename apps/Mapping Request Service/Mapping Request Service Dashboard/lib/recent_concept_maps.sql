@@ -14,6 +14,6 @@ ON
     cm.uuid = cmv.concept_map_uuid
 WHERE
     cmv.created_date IS NOT NULL
-    AND cmv.count_loaded_concepts IS NOT NULL
+    -- AND cmv.count_loaded_concepts IS NOT NULL
 ORDER BY 
     cmv.created_date DESC;
