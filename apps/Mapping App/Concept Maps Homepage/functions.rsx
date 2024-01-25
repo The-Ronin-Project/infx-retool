@@ -367,26 +367,6 @@ return data"
       waitMs="0"
       waitType="debounce"
     />
-    <SqlQueryUnified
-      id="new_synonym"
-      query={include("./lib/new_synonym.sql", "string")}
-      resourceDisplayName="Clinical Content PostgresSQL DB"
-      resourceName="dc8029bc-3980-4836-841e-776c64eeca49"
-      runWhenModelUpdates={false}
-      transformer="// type your code here
-// example: return formatDataAsArray(data).filter(row => row.quantity > 20)
-return data"
-      warningCodes={[]}
-    >
-      <Event
-        event="success"
-        method="trigger"
-        params={{ ordered: [] }}
-        pluginId="load_synonyms"
-        type="datasource"
-        waitMs="0"
-        waitType="debounce"
-      />
     </SqlQueryUnified>
   </Folder>
 </GlobalFunctions>
