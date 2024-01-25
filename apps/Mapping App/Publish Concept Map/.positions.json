@@ -8,6 +8,11 @@
     "height": 0.4,
     "width": 12
   },
+  "metadata_table": {
+    "row": 5.2,
+    "height": 2,
+    "width": 12
+  },
   "publish": {
     "row": 1.8,
     "height": 1.6,
