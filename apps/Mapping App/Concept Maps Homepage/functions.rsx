@@ -185,20 +185,12 @@ return data"
     />
     <SqlQueryUnified
       id="load_concept_maps"
-      isMultiplayerEdited={false}
       query={include("./lib/load_concept_maps.sql", "string")}
       resourceDisplayName="Clinical Content PostgresSQL DB"
       resourceName="dc8029bc-3980-4836-841e-776c64eeca49"
       transformer="// type your code here
 // example: return formatDataAsArray(data).filter(row => row.quantity > 20)
-
-return formatDataAsArray(data).map(row => {
-    if (row.tenant_array) {
-      row.tenant_array = row.tenant_array.split(', '); 
-    }
-    return row
-  }
-)"
+return data"
       warningCodes={[]}
     />
     <SqlQueryUnified
@@ -318,54 +310,50 @@ return data"
       transformer="// type your code here
 // example: return formatDataAsArray(data).filter(row => row.quantity > 20)
 return data"
-    warningCodes={[]}
-  >
-    <Event
-      event="success"
-      method="trigger"
-      params={{ ordered: [] }}
-      pluginId="load_synonyms"
-      type="datasource"
-      waitMs="0"
-      waitType="debounce"
+      warningCodes={[]}
     />
-  </SqlQueryUnified>
-  <SqlQueryUnified
-    id="load_synonyms"
-    query={include("./lib/load_synonyms.sql", "string")}
-    resourceDisplayName="Clinical Content PostgresSQL DB"
-    resourceName="dc8029bc-3980-4836-841e-776c64eeca49"
-    transformer="// type your code here
+    <SqlQueryUnified
+      id="load_synonyms"
+      query={include("./lib/load_synonyms.sql", "string")}
+      resourceDisplayName="Clinical Content PostgresSQL DB"
+      resourceName="dc8029bc-3980-4836-841e-776c64eeca49"
+      transformer="// type your code here
 // example: return formatDataAsArray(data).filter(row => row.quantity > 20)
 return data"
-    warningCodes={[]}
-  />
-  <SqlQueryUnified
-    id="cm_registry_lookup"
-    query={include("./lib/cm_registry_lookup.sql", "string")}
-    resourceDisplayName="Clinical Content PostgresSQL DB"
-    resourceName="dc8029bc-3980-4836-841e-776c64eeca49"
-    warningCodes={[]}
-  />
-  <SqlQueryUnified
-    id="new_synonym"
-    query={include("./lib/new_synonym.sql", "string")}
-    resourceDisplayName="Clinical Content PostgresSQL DB"
-    resourceName="dc8029bc-3980-4836-841e-776c64eeca49"
-    runWhenModelUpdates={false}
-    transformer="// type your code here
+      warningCodes={[]}
+    />
+    <SqlQueryUnified
+      id="load_value_sets"
+      enableTransformer={true}
+      query={include("./lib/load_value_sets.sql", "string")}
+      queryTimeout="10001"
+      resourceDisplayName="Clinical Content PostgresSQL DB"
+      resourceName="dc8029bc-3980-4836-841e-776c64eeca49"
+      showSuccessConfetti={false}
+      transformer=""
+      triggersOnFailure={[]}
+      triggersOnSuccess={[]}
+      warningCodes={[]}
+    />
+    <SqlQueryUnified
+      id="load_versions_of_selected_value_set"
+      query={include("./lib/load_versions_of_selected_value_set.sql", "string")}
+      resourceDisplayName="Clinical Content PostgresSQL DB"
+      resourceName="dc8029bc-3980-4836-841e-776c64eeca49"
+      transformer="// type your code here
 // example: return formatDataAsArray(data).filter(row => row.quantity > 20)
 return data"
-    warningCodes={[]}
-  >
-    <Event
-      event="success"
-      method="trigger"
-      params={{ ordered: [] }}
-      pluginId="load_synonyms"
-      type="datasource"
-      waitMs="0"
-      waitType="debounce"
+      warningCodes={[]}
+    />
+    <SqlQueryUnified
+      id="load_vs_metadata"
+      query={include("./lib/load_vs_metadata.sql", "string")}
+      resourceDisplayName="Clinical Content PostgresSQL DB"
+      resourceName="dc8029bc-3980-4836-841e-776c64eeca49"
+      transformer="// type your code here
+// example: return formatDataAsArray(data).filter(row => row.quantity > 20)
+return data"
+      warningCodes={[]}
     />
     <SqlQueryUnified
       id="new_synonym"

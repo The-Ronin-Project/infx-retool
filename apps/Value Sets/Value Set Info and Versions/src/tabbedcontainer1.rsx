@@ -11,7 +11,12 @@
   showBody={true}
   showHeader={true}
   showInEditor={null}
-  style={{ ordered: [] }}
+  style={{
+    ordered: [
+      { background: "rgb(240, 244, 248)" },
+      { headerBackground: "rgb(217, 226, 236)" },
+    ],
+  }}
   styleContext={{ ordered: [{ textDark: "rgb(34, 34, 34)" }] }}
   transition="slide"
 >
@@ -199,7 +204,7 @@
     </Link>
     <Container
       id="edit_title_container"
-      hidden="true"
+      hidden=""
       showBody={true}
       style={{ ordered: [{ border: "rgba(245, 245, 245, 0)" }] }}
     >
@@ -275,7 +280,7 @@ Name is intended to be machine-readable, while title is intended to be human-rea
     </Link>
     <Container
       id="edit_name_container"
-      hidden="true"
+      hidden=""
       showBody={true}
       style={{ ordered: [{ border: "rgba(245, 245, 245, 0)" }] }}
     >
@@ -354,7 +359,7 @@ Name is intended to be machine-readable, while title is intended to be human-rea
     </Link>
     <Container
       id="edit_description_container"
-      hidden="true"
+      hidden=""
       showBody={true}
       style={{ ordered: [{ border: "rgba(245, 245, 245, 0)" }] }}
     >
@@ -429,7 +434,7 @@ Name is intended to be machine-readable, while title is intended to be human-rea
     </Link>
     <Container
       id="edit_purpose_container"
-      hidden="true"
+      hidden=""
       showBody={true}
       style={{ ordered: [{ border: "rgba(245, 245, 245, 0)" }] }}
     >
@@ -567,7 +572,7 @@ Use cases will usually connect a value set to a specific product feature or an i
     </Link>
     <Container
       id="edit_publisher_container"
-      hidden="true"
+      hidden=""
       showBody={true}
       style={{ ordered: [{ border: "rgba(245, 245, 245, 0)" }] }}
     >

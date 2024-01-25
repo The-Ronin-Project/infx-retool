@@ -11,8 +11,13 @@
   showBody={true}
   showHeader={true}
   showInEditor={null}
-  style={{ ordered: [] }}
-  styleContext={{ ordered: [] }}
+  style={{
+    ordered: [
+      { background: "rgb(240, 244, 248)" },
+      { headerBackground: "rgb(217, 226, 236)" },
+    ],
+  }}
+  styleContext={{ ordered: [{ textDark: "rgb(51, 78, 104)" }] }}
   transition="slide"
 >
   <Header>
@@ -56,561 +61,248 @@
       placeholder="Enter value"
       showClear={true}
     />
-    <Table
+    <TableLegacy
       id="concept_map_metadata_table"
-      cellSelection="none"
-      clearChangesetOnSave={true}
-      data="{{ load_concept_maps.data }}"
-      defaultSelectedRow={{ mode: "index", indexType: "display", index: 0 }}
-      enableSaveActions={true}
-      primaryKeyColumnId="d9e1e"
-      rowHeight="medium"
-      showBorder={true}
-      showFooter={true}
-      showHeader={true}
-      toolbarPosition="bottom"
-    >
-      <Column
-        id="d9e1e"
-        alignment="left"
-        format="string"
-        groupAggregationMode="none"
-        hidden="true"
-        key="uuid"
-        label="UUID"
-        placeholder="Enter value"
-        position="center"
-        size={100}
-        summaryAggregationMode="none"
-      />
-      <Column
-        id="d7c2a"
-        alignment="left"
-        format="string"
-        groupAggregationMode="none"
-        hidden="true"
-        key="name"
-        label="Name"
-        placeholder="Enter value"
-        position="center"
-        size={100}
-        summaryAggregationMode="none"
-      />
-      <Column
-        id="a1879"
-        alignment="left"
-        format="string"
-        groupAggregationMode="none"
-        key="title"
-        label="Title"
-        placeholder="Enter value"
-        position="center"
-        size={690}
-        summaryAggregationMode="none"
-      />
-      <Column
-        id="da317"
-        alignment="left"
-        format="tag"
-        formatOptions={{ automaticColors: true }}
-        groupAggregationMode="none"
-        hidden="true"
-        key="publisher"
-        label="Publisher"
-        placeholder="Select option"
-        position="center"
-        size={100}
-        summaryAggregationMode="none"
-        valueOverride="{{ _.startCase(item) }}"
-      />
-      <Column
-        id="cadf1"
-        alignment="left"
-        format="tag"
-        formatOptions={{ automaticColors: true }}
-        groupAggregationMode="none"
-        hidden="true"
-        key="author"
-        label="Author"
-        placeholder="Select option"
-        position="center"
-        size={100}
-        summaryAggregationMode="none"
-        valueOverride="{{ _.startCase(item) }}"
-      />
-      <Column
-        id="e5b34"
-        alignment="left"
-        format="string"
-        groupAggregationMode="none"
-        hidden="true"
-        key="purpose"
-        label="Purpose"
-        placeholder="Enter value"
-        position="center"
-        size={100}
-        summaryAggregationMode="none"
-      />
-      <Column
-        id="c9d75"
-        alignment="left"
-        format="string"
-        groupAggregationMode="none"
-        hidden="true"
-        key="description"
-        label="Description"
-        placeholder="Enter value"
-        position="center"
-        size={100}
-        summaryAggregationMode="none"
-      />
-      <Column
-        id="c17e1"
-        alignment="left"
-        format="string"
-        groupAggregationMode="none"
-        hidden="true"
-        key="created_date"
-        label="Created date"
-        placeholder="Enter value"
-        position="center"
-        size={100}
-        summaryAggregationMode="none"
-      />
-      <Column
-        id="f1c44"
-        alignment="left"
-        format="boolean"
-        groupAggregationMode="none"
-        hidden="true"
-        key="experimental"
-        label="Experimental"
-        placeholder="Enter value"
-        position="center"
-        size={100}
-        summaryAggregationMode="none"
-      />
-      <Column
-        id="9f43d"
-        alignment="left"
-        format="string"
-        groupAggregationMode="none"
-        hidden="true"
-        key="include_self_map"
-        label="Include self map"
-        placeholder="Enter value"
-        position="center"
-        size={100}
-        summaryAggregationMode="none"
-      />
-      <Column
-        id="bd64c"
-        alignment="left"
-        format="string"
-        groupAggregationMode="none"
-        hidden="true"
-        key="source_value_set_uuid"
-        label="Source value set UUID"
-        placeholder="Enter value"
-        position="center"
-        size={100}
-        summaryAggregationMode="none"
-      />
-      <Column
-        id="c1c39"
-        alignment="left"
-        format="string"
-        groupAggregationMode="none"
-        hidden="true"
-        key="target_value_set_uuid"
-        label="Target value set UUID"
-        placeholder="Enter value"
-        position="center"
-        size={100}
-        summaryAggregationMode="none"
-      />
-      <Column
-        id="2e6bb"
-        alignment="left"
-        format="string"
-        groupAggregationMode="none"
-        hidden="true"
-        key="use_case_uuid"
-        label="Use case UUID"
-        placeholder="Enter value"
-        position="center"
-        size={100}
-        summaryAggregationMode="none"
-      />
-      <Column
-        id="5439b"
-        alignment="left"
-        format="boolean"
-        groupAggregationMode="none"
-        hidden="true"
-        key="auto_advance_mapping"
-        label="Auto advance mapping"
-        placeholder="Enter value"
-        position="center"
-        size={100}
-        summaryAggregationMode="none"
-      />
-      <Column
-        id="d4f60"
-        alignment="left"
-        format="boolean"
-        groupAggregationMode="none"
-        hidden="true"
-        key="auto_fill_search"
-        label="Auto fill search"
-        placeholder="Enter value"
-        position="center"
-        size={100}
-        summaryAggregationMode="none"
-      />
-      <Column
-        id="dc2cb"
-        alignment="left"
-        format="boolean"
-        groupAggregationMode="none"
-        hidden="true"
-        key="show_target_codes"
-        label="Show target codes"
-        placeholder="Enter value"
-        position="center"
-        size={100}
-        summaryAggregationMode="none"
-      />
-      <Column
-        id="90322"
-        alignment="left"
-        format="string"
-        groupAggregationMode="none"
-        hidden="true"
-        key="formatted_created_date"
-        label="Formatted created date"
-        placeholder="Enter value"
-        position="center"
-        size={100}
-        summaryAggregationMode="none"
-      />
-      <Column
-        id="2ba09"
-        alignment="left"
-        format="string"
-        groupAggregationMode="none"
-        hidden="true"
-        key="source_value_set_title"
-        label="Source value set title"
-        placeholder="Enter value"
-        position="center"
-        size={100}
-        summaryAggregationMode="none"
-      />
-      <Column
-        id="b38dd"
-        alignment="left"
-        format="string"
-        groupAggregationMode="none"
-        hidden="true"
-        key="target_value_set_title"
-        label="Target value set title"
-        placeholder="Enter value"
-        position="center"
-        size={100}
-        summaryAggregationMode="none"
-      />
-      <Column
-        id="bc2e6"
-        alignment="left"
-        format="string"
-        groupAggregationMode="none"
-        hidden="true"
-        key="use_case_array"
-        label="Use case array"
-        placeholder="Enter value"
-        position="center"
-        size={100}
-        summaryAggregationMode="none"
-      />
-      <Column
-        id="e947b"
-        alignment="left"
-        cellTooltipMode="overflow"
-        format="tags"
-        formatOptions={{ automaticColors: true }}
-        groupAggregationMode="none"
-        key="tenant_array"
-        label="Tenants Using Map"
-        placeholder="Select options"
-        position="center"
-        size={139}
-        summaryAggregationMode="none"
-      />
-      <Action
-        id="5c069"
-        hidden="false"
-        icon="bold/interface-edit-pencil"
-        label="View/Edit"
-      >
-        <Event
-          event="clickAction"
-          method="openApp"
-          params={{
-            ordered: [
-              { uuid: "cdc1d7c0-9027-11ec-b0c3-ab01646c36a6" },
-              {
-                options: {
-                  ordered: [
-                    {
-                      queryParams: [
-                        {
-                          ordered: [
-                            { key: "uuid" },
-                            {
-                              value:
-                                "{{concept_map_metadata_table.selectedRow.uuid}}",
-                            },
-                          ],
-                        },
-                        { ordered: [{ key: "" }, { value: "" }] },
-                        { ordered: [{ key: "" }, { value: "" }] },
-                      ],
-                    },
-                    { newTab: true },
-                  ],
-                },
-              },
-            ],
-          }}
-          pluginId=""
-          type="util"
-          waitMs="0"
-          waitType="debounce"
-        />
-      </Action>
-      <ToolbarButton
-        id="1a"
-        icon="bold/interface-text-formatting-filter-2"
-        label="Filter"
-        type="filter"
-      />
-      <ToolbarButton
-        id="3c"
-        icon="bold/interface-download-button-2"
-        label="Download"
-        type="custom"
-      >
-        <Event
-          event="clickToolbar"
-          method="exportData"
-          pluginId="concept_map_metadata_table"
-          type="widget"
-          waitMs="0"
-          waitType="debounce"
-        />
-      </ToolbarButton>
-      <ToolbarButton
-        id="4d"
-        icon="bold/interface-arrows-round-left"
-        label="Refresh"
-        type="custom"
-      >
-        <Event
-          event="clickToolbar"
-          method="refresh"
-          pluginId="concept_map_metadata_table"
-          type="widget"
-          waitMs="0"
-          waitType="debounce"
-        />
-      </ToolbarButton>
-    </Table>
-    <Divider id="divider5" />
-    <Text
-      id="text8"
-      value="##### {{concept_map_metadata_table.selectedRow.title}}"
-      verticalAlign="center"
-    />
-    <Text
-      id="text9"
-      value="**{{concept_map_metadata_table.selectedRow.description}}**"
-      verticalAlign="center"
-    />
-    <Text id="text10" value="Source Value Set" verticalAlign="center" />
-    <Link
-      id="source_value_set_link"
-      showUnderline="hover"
-      text="{{concept_map_metadata_table.selectedRow.source_value_set_title}}"
-    >
-      <Event
-        event="click"
-        method="openApp"
-        params={{
+      _columns={[
+        "id",
+        "name",
+        "email",
+        "sales",
+        "uuid",
+        "url",
+        "identifier",
+        "title",
+        "publisher",
+        "contact",
+        "description",
+        "immutable",
+        "experimental",
+        "purpose",
+        "type",
+        "author",
+        "created_date",
+      ]}
+      _columnVisibility={{
+        ordered: [
+          { contact: false },
+          { include_self_map: false },
+          { auto_advance_mapping: false },
+          { immutable: false },
+          { created_date: false },
+          { experimental: false },
+          { identifier: false },
+          { source_value_set_uuid: false },
+          { author: true },
+          { name: false },
+          { sales: true },
+          { url: false },
+          { use_case_uuid: false },
+          { target_value_set_uuid: false },
+          { auto_fill_search: false },
+          { title: true },
+          { show_target_codes: false },
+          { type: false },
+          { id: true },
+          { uuid: false },
+          { publisher: false },
+          { email: true },
+          { description: false },
+          { purpose: false },
+        ],
+      }}
+      _unfilteredSelectedIndex=""
+      actionButtonPosition="right"
+      actionButtons={[
+        {
           ordered: [
-            { uuid: "4f31f1c8-2228-11ec-90d7-a387d41c775c" },
+            { actionButtonText: "View/Edit" },
+            { actionButtonType: "openInternalUrl" },
+            { actionButtonQuery: "" },
             {
-              options: {
-                ordered: [
-                  {
-                    queryParams: [
-                      {
-                        ordered: [
-                          { key: "uuid" },
-                          {
-                            value:
-                              "{{concept_map_metadata_table.selectedRow.source_value_set_uuid}}",
-                          },
-                        ],
-                      },
-                    ],
-                  },
-                  { newTab: true },
-                ],
-              },
+              actionButtonInternalUrlPath:
+                "cdc1d7c0-9027-11ec-b0c3-ab01646c36a6",
             },
-          ],
-        }}
-        pluginId=""
-        type="util"
-        waitMs="0"
-        waitType="debounce"
-      />
-    </Link>
-    <Text id="text11" value="Target Value Set" verticalAlign="center" />
-    <Link
-      id="link3"
-      showUnderline="hover"
-      text="{{concept_map_metadata_table.selectedRow.target_value_set_title}}"
-    >
-      <Event
-        event="click"
-        method="openApp"
-        params={{
-          ordered: [
-            { uuid: "4f31f1c8-2228-11ec-90d7-a387d41c775c" },
             {
-              options: {
-                ordered: [
-                  {
-                    queryParams: [
-                      {
-                        ordered: [
-                          { key: "uuid" },
-                          {
-                            value:
-                              "{{concept_map_metadata_table.selectedRow.target_value_set_uuid}}",
-                          },
-                        ],
-                      },
-                      { ordered: [{ key: "" }, { value: "" }] },
-                      { ordered: [{ key: "" }, { value: "" }] },
-                    ],
-                  },
-                  { newTab: true },
-                ],
-              },
+              actionButtonInternalUrlQuery:
+                '"[{\\"key\\":\\"uuid\\",\\"value\\":\\"{{concept_map_metadata_table.selectedRow.data.uuid}}\\"}]"',
             },
+            { actionButtonUrl: "" },
+            { actionButtonNewWindow: true },
+            { actionButtonDisabled: "" },
           ],
-        }}
-        pluginId=""
-        type="util"
-        waitMs="0"
-        waitType="debounce"
-      />
-    </Link>
-    <Text id="text12" value="Purpose" verticalAlign="center" />
-    <Text
-      id="text13"
-      value="**{{concept_map_metadata_table.selectedRow.purpose}}**"
-      verticalAlign="center"
+        },
+      ]}
+      applyDynamicSettingsToColumnOrder={false}
+      columnColors={{
+        ordered: [
+          { contact: "" },
+          { include_self_map: "" },
+          { auto_advance_mapping: "" },
+          { immutable: "" },
+          { created_date: "" },
+          { experimental: "" },
+          { identifier: "" },
+          { source_value_set_uuid: "" },
+          { author: "" },
+          { name: "" },
+          { url: "" },
+          { use_case_uuid: "" },
+          { target_value_set_uuid: "" },
+          { auto_fill_search: "" },
+          { title: "" },
+          { show_target_codes: "" },
+          { type: "" },
+          { uuid: "" },
+          { publisher: "" },
+          { description: "" },
+          { purpose: "" },
+        ],
+      }}
+      columnEditable={{
+        ordered: [
+          { name: false },
+          { contact: true },
+          { description: true },
+          { immutable: true },
+          { experimental: true },
+          { purpose: true },
+          { type: true },
+        ],
+      }}
+      columnHeaderNames={{
+        ordered: [{ title: "Title" }, { author: "Author" }],
+      }}
+      columns={[
+        "id",
+        "name",
+        "email",
+        "sales",
+        "uuid",
+        "url",
+        "identifier",
+        "title",
+        "publisher",
+        "contact",
+        "description",
+        "immutable",
+        "experimental",
+        "purpose",
+        "type",
+        "author",
+        "created_date",
+      ]}
+      columnVisibility={{
+        ordered: [
+          { contact: false },
+          { immutable: false },
+          { created_date: true },
+          { experimental: false },
+          { identifier: false },
+          { author: true },
+          { name: false },
+          { sales: true },
+          { url: false },
+          { title: true },
+          { type: false },
+          { id: true },
+          { uuid: false },
+          { publisher: false },
+          { email: true },
+          { description: false },
+          { purpose: false },
+        ],
+      }}
+      columnWidths={[
+        { object: { id: "contact", value: 77 } },
+        { object: { id: "immutable", value: 95 } },
+        { object: { id: "experimental", value: 108.75 } },
+        { object: { id: "name", value: 272.40625 } },
+        { object: { id: "description", value: 337.09375 } },
+        { object: { id: "created_date", value: 150 } },
+        { object: { id: "author", value: 222.765625 } },
+        { object: { id: "__retool__action_list", value: 154.09375 } },
+        { object: { id: "title", value: 442.71875 } },
+      ]}
+      customButtonName=""
+      data="{{load_concept_maps.data}}"
+      events={[]}
+      overflowType="scroll"
+      pageSize={19}
+      showColumnBorders={true}
+      style={{
+        ordered: [
+          { headerBackground: "rgb(217, 226, 236)" },
+          { headerText: "rgb(130, 154, 177)" },
+        ],
+      }}
     />
-    <Text
-      id="text25"
-      value="Data Normalization Registry"
-      verticalAlign="center"
+    <KeyValueMap
+      id="concept_map_details"
+      data="{{concept_map_metadata_table.selectedRow.data}}"
+      prevRowFormats={{ ordered: [] }}
+      prevRowMappers={{ ordered: [] }}
+      rows={[
+        "a",
+        "b",
+        "c",
+        "title",
+        "name",
+        "description",
+        "purpose",
+        "identifier",
+        "url",
+        "publisher",
+        "contact",
+        "immutable",
+        "experimental",
+        "type",
+        "uuid",
+        "author",
+        "created_date",
+        "include_self_map",
+        "source_value_set_uuid",
+        "target_value_set_uuid",
+        "use_case_uuid",
+        "auto_advance_mapping",
+        "auto_fill_search",
+        "show_target_codes",
+      ]}
+      rowVisibility={{
+        ordered: [
+          { contact: true },
+          { include_self_map: true },
+          { a: true },
+          { auto_advance_mapping: true },
+          { b: true },
+          { immutable: true },
+          { c: true },
+          { created_date: true },
+          { experimental: true },
+          { identifier: true },
+          { source_value_set_uuid: true },
+          { author: true },
+          { name: true },
+          { url: false },
+          { use_case_uuid: true },
+          { target_value_set_uuid: true },
+          { auto_fill_search: true },
+          { title: true },
+          { show_target_codes: true },
+          { type: true },
+          { uuid: true },
+          { publisher: true },
+          { description: true },
+          { purpose: true },
+        ],
+      }}
+      style={{
+        ordered: [
+          { "primary-background": "rgb(217, 226, 236)" },
+          { "primary-text": "rgb(51, 78, 104)" },
+          { "primary-foreground": "rgb(130, 154, 177)" },
+        ],
+      }}
     />
-    <ListView
-      id="listView1"
-      instances="{{cm_registry_lookup.data.data_element.length}}"
-      paddingType="none"
-      showBorder={false}
-      showDropShadow={false}
-    >
-      <Text
-        id="text26"
-        value="**{{cm_registry_lookup.data.data_element[i]}}** for **{{cm_registry_lookup.data.tenant_id[i]}}**"
-        verticalAlign="center"
-      />
-    </ListView>
-    <Text id="text15" value="Created Date" verticalAlign="center" />
-    <Text
-      id="text22"
-      value="**{{concept_map_metadata_table.selectedRow.formatted_created_date}}**"
-      verticalAlign="center"
-    />
-    <Text id="text20" value="Name" verticalAlign="center" />
-    <Text
-      id="text21"
-      value="**{{concept_map_metadata_table.selectedRow.name}}**"
-      verticalAlign="center"
-    />
-    <Text id="text16" value="UUID" verticalAlign="center" />
-    <Text
-      id="text17"
-      value="**{{concept_map_metadata_table.selectedRow.uuid}}**"
-      verticalAlign="center"
-    />
-    <Text
-      id="text23"
-      value="Experimental (Test) Content"
-      verticalAlign="center"
-    />
-    <Text
-      id="text24"
-      value="**{{concept_map_metadata_table.selectedRow.experimental}}**"
-      verticalAlign="center"
-    />
-    <Button
-      id="button4"
-      styleVariant="solid"
-      text="View/Edit {{concept_map_metadata_table.selectedRow.title}}"
-    >
-      <Event
-        event="click"
-        method="openApp"
-        params={{
-          ordered: [
-            { uuid: "cdc1d7c0-9027-11ec-b0c3-ab01646c36a6" },
-            {
-              options: {
-                ordered: [
-                  {
-                    queryParams: [
-                      {
-                        ordered: [
-                          { key: "uuid" },
-                          {
-                            value:
-                              "{{concept_map_metadata_table.selectedRow.uuid}}",
-                          },
-                        ],
-                      },
-                      { ordered: [{ key: "" }, { value: "" }] },
-                    ],
-                  },
-                  { newTab: true },
-                ],
-              },
-            },
-          ],
-        }}
-        pluginId=""
-        type="util"
-        waitMs="0"
-        waitType="debounce"
-      />
-    </Button>
     <Include src="./modal1.rsx" />
   </View>
   <View id="1" label="Create A New Concept Map" viewKey={1}>
