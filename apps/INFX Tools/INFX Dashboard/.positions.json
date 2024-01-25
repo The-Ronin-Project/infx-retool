@@ -32,7 +32,6 @@
   "button32": {
     "container": "container26",
     "rowGroup": "header",
-    "row": 0,
     "height": 1,
     "width": 2
   },
@@ -51,7 +50,6 @@
   "button8": {
     "container": "container7",
     "rowGroup": "header",
-    "row": 0,
     "height": 1,
     "width": 2
   },
@@ -199,7 +197,6 @@
   "text10": {
     "container": "container7",
     "subcontainer": "e47d5",
-    "row": 0,
     "height": 0.6,
     "width": 10
   },
@@ -214,7 +211,6 @@
   "text25": {
     "container": "container14",
     "subcontainer": "e47d5",
-    "row": 0,
     "height": 1.6,
     "width": 12
   },
@@ -234,7 +230,6 @@
   "text46": {
     "container": "container24",
     "subcontainer": "e47d5",
-    "row": 0,
     "height": 1.6,
     "width": 12
   },
@@ -260,7 +255,6 @@
   "text56": {
     "container": "container28",
     "subcontainer": "e47d5",
-    "row": 0,
     "height": 1.6,
     "width": 12
   },
@@ -275,14 +269,12 @@
   "text58": {
     "container": "container29",
     "subcontainer": "e47d5",
-    "row": 0,
     "height": 1.6,
     "width": 12
   },
   "text59": {
     "container": "container29",
     "rowGroup": "header",
-    "row": 0,
     "col": 2,
     "height": 0.6,
     "width": 10
@@ -312,7 +304,6 @@
     "width": 10
   },
   "text64": {
-    "row": 0,
     "height": 0.8,
     "width": 6
   },
@@ -329,7 +320,6 @@
   "text67": {
     "container": "container26",
     "rowGroup": "header",
-    "row": 0,
     "col": 2,
     "height": 0.6,
     "width": 10

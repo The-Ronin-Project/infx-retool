@@ -249,7 +249,7 @@ return data"
     id="save_concept_map_metadata_changes"
     actionType="BULK_UPDATE_BY_KEY"
     bulkUpdatePrimaryKey="uuid"
-    editorMode="gui"
+    query={include("./lib/save_concept_map_metadata_changes.sql", "string")}
     records="{{edit_metadata.recordUpdates.map(row => ({uuid: row.uuid, name: row.name, title: row.title, publisher: row.publisher, description: row.description, experimental: row.experimental, purpose: row.purpose, author: row.author}) ) }}"
     resourceDisplayName="Clinical Content PostgresSQL DB"
     resourceName="dc8029bc-3980-4836-841e-776c64eeca49"
@@ -258,36 +258,13 @@ return data"
     transformer="// type your code here
 // example: return formatDataAsArray(data).filter(row => row.quantity > 20)
 return data"
+    warningCodes={[]}
   >
     <Event
       event="success"
       method="trigger"
       params={{ ordered: [] }}
       pluginId="load_concept_map_version_metadata"
-      type="datasource"
-      waitMs="0"
-      waitType="debounce"
-    />
-  </SqlQueryUnified>
-  <SqlQueryUnified
-    id="save_versions_table_changes"
-    actionType="BULK_UPDATE_BY_KEY"
-    bulkUpdatePrimaryKey="uuid"
-    editorMode="gui"
-    records="{{versions_table.recordUpdates.map(row => ({uuid: row.uuid, effective_start: row.effective_start, effective_end: row.effective_end, status: row.status, description: row.description, comments: row.comments}) ) }}"
-    resourceDisplayName="Clinical Content PostgresSQL DB"
-    resourceName="dc8029bc-3980-4836-841e-776c64eeca49"
-    runWhenModelUpdates={false}
-    tableName="concept_maps.concept_map_version"
-    transformer="// type your code here
-// example: return formatDataAsArray(data).filter(row => row.quantity > 20)
-return data"
-  >
-    <Event
-      event="success"
-      method="trigger"
-      params={{ ordered: [] }}
-      pluginId="select_concept_map_version"
       type="datasource"
       waitMs="0"
       waitType="debounce"

@@ -92,70 +92,6 @@
       />
     </Modal>
     <TableLegacy
-      id="concepts_to_review_table"
-      _columns={["Custom Column 1", "count", "title"]}
-      _columnSummaryTypes={{ ordered: [{ "Custom Column 1": "" }] }}
-      _columnSummaryValues={{ ordered: [{ "Custom Column 1": "" }] }}
-      _columnVisibility={{ ordered: [{ version_uuid: false }] }}
-      _compatibilityMode={false}
-      actionButtonColumnName="Go Review"
-      calculatedColumns={["Custom Column 1"]}
-      columnAlignment={{ ordered: [{ "Custom Column 1": "left" }] }}
-      columnColors={{
-        ordered: [
-          { count: "" },
-          { title: "" },
-          { version_uuid: "" },
-          { "Custom Column 1": "" },
-          { uuid: "" },
-        ],
-      }}
-      columnEditable={{ ordered: [{ "Custom Column 1": false }] }}
-      columnFormats={{ ordered: [{ "Custom Column 1": "button" }] }}
-      columnHeaderNames={{
-        ordered: [
-          { title: "Project Title" },
-          { count: "Review Count" },
-          { "Custom Column 1": "Go Review" },
-        ],
-      }}
-      columnMappers={{ ordered: [{ "Custom Column 1": "Go" }] }}
-      columnTypeProperties={{
-        ordered: [{ "Custom Column 1": { ordered: [{ openInNewTab: true }] } }],
-      }}
-      columnTypeSpecificExtras={{
-        ordered: [
-          {
-            "Custom Column 1": {
-              ordered: [
-                { buttonType: "internal-url" },
-                { internalUrlPath: "afb4d380-50cb-11ed-b76c-ffbcb400100c" },
-                {
-                  internalUrlQuery:
-                    '"[{\\"key\\":\\"concept_map_version_uuid\\",\\"value\\":\\"{{currentRow.version_uuid}}\\"}]"',
-                },
-              ],
-            },
-          },
-        ],
-      }}
-      columnWidths={[
-        { object: { id: "__retool__action_list", value: 64 } },
-        { object: { id: "title", value: 331.8359375 } },
-        { object: { id: "Custom Column 1", value: 86 } },
-        { object: { id: "count", value: 103.1640625 } },
-      ]}
-      customButtonName=""
-      data="{{ concept_map_reviewer_counts.data }}"
-      doubleClickToEdit={true}
-      overflowType="scroll"
-      showBoxShadow={false}
-      showDownloadButton={false}
-      showFilterButton={false}
-      showRefreshButton={false}
-      style={{ ordered: [{ headerBackground: "rgba(241, 243, 246, 0.9)" }] }}
-    />
-    <TableLegacy
       id="concepts_to_map_table"
       _columns={["Custom Column 1", "count", "title"]}
       _columnSummaryTypes={{ ordered: [{ "Custom Column 1": "" }] }}
@@ -215,6 +151,70 @@
       ]}
       customButtonName=""
       data="{{ concept_map_mapper_counts.data }}"
+      doubleClickToEdit={true}
+      overflowType="scroll"
+      showBoxShadow={false}
+      showDownloadButton={false}
+      showFilterButton={false}
+      showRefreshButton={false}
+      style={{ ordered: [{ headerBackground: "rgba(241, 243, 246, 0.9)" }] }}
+    />
+    <TableLegacy
+      id="concepts_to_review_table"
+      _columns={["Custom Column 1", "count", "title"]}
+      _columnSummaryTypes={{ ordered: [{ "Custom Column 1": "" }] }}
+      _columnSummaryValues={{ ordered: [{ "Custom Column 1": "" }] }}
+      _columnVisibility={{ ordered: [{ version_uuid: false }] }}
+      _compatibilityMode={false}
+      actionButtonColumnName="Go Review"
+      calculatedColumns={["Custom Column 1"]}
+      columnAlignment={{ ordered: [{ "Custom Column 1": "left" }] }}
+      columnColors={{
+        ordered: [
+          { count: "" },
+          { title: "" },
+          { version_uuid: "" },
+          { "Custom Column 1": "" },
+          { uuid: "" },
+        ],
+      }}
+      columnEditable={{ ordered: [{ "Custom Column 1": false }] }}
+      columnFormats={{ ordered: [{ "Custom Column 1": "button" }] }}
+      columnHeaderNames={{
+        ordered: [
+          { title: "Project Title" },
+          { count: "Review Count" },
+          { "Custom Column 1": "Go Review" },
+        ],
+      }}
+      columnMappers={{ ordered: [{ "Custom Column 1": "Go" }] }}
+      columnTypeProperties={{
+        ordered: [{ "Custom Column 1": { ordered: [{ openInNewTab: true }] } }],
+      }}
+      columnTypeSpecificExtras={{
+        ordered: [
+          {
+            "Custom Column 1": {
+              ordered: [
+                { buttonType: "internal-url" },
+                { internalUrlPath: "afb4d380-50cb-11ed-b76c-ffbcb400100c" },
+                {
+                  internalUrlQuery:
+                    '"[{\\"key\\":\\"concept_map_version_uuid\\",\\"value\\":\\"{{currentRow.version_uuid}}\\"}]"',
+                },
+              ],
+            },
+          },
+        ],
+      }}
+      columnWidths={[
+        { object: { id: "__retool__action_list", value: 64 } },
+        { object: { id: "title", value: 331.8359375 } },
+        { object: { id: "Custom Column 1", value: 86 } },
+        { object: { id: "count", value: 103.1640625 } },
+      ]}
+      customButtonName=""
+      data="{{ concept_map_reviewer_counts.data }}"
       doubleClickToEdit={true}
       overflowType="scroll"
       showBoxShadow={false}
@@ -999,7 +999,7 @@
               { links: "" },
             ],
           }}
-          value="#### **Error Validation**"
+          value="#### **Mapping Requests**"
           verticalAlign="center"
         />
       </Header>
@@ -1009,7 +1009,7 @@
           _defaultValue=""
           _disclosedFields={{ array: [] }}
           style={{ ordered: [{ color: "rgba(36, 59, 83, 0.9)" }] }}
-          value="<p>View outstanding errors and create new map. </p>"
+          value="<p>View outstanding mapping requests, load outstanding codes, create new maps. </p>"
           verticalAlign="center"
         />
         <Link

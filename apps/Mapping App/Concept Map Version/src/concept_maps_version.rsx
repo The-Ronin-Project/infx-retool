@@ -316,19 +316,7 @@
       ]}
       customButtonName=""
       data="{{ select_concept_map_version.data }}"
-      events={[
-        {
-          ordered: [
-            { event: "saveChanges" },
-            { type: "datasource" },
-            { method: "trigger" },
-            { pluginId: "save_versions_table_changes" },
-            { params: { ordered: [] } },
-            { waitType: "debounce" },
-            { waitMs: "0" },
-          ],
-        },
-      ]}
+      events={[]}
       pageSize={10}
       showColumnBorders={true}
       sortByRawValue={{ ordered: [{ "Custom Column 1": false }] }}
@@ -362,6 +350,7 @@
           "published_date",
           "source_value_set_version_uuid",
           "target_value_set_version_uuid",
+          "count_loaded_concepts",
         ]}
         rowVisibility={{
           ordered: [
@@ -378,6 +367,7 @@
             { status: true },
             { comments: true },
             { concept_map_uuid: true },
+            { count_loaded_concepts: true },
             { version: true },
             { title: true },
             { target_value_set_version_uuid: true },
@@ -447,21 +437,35 @@
         "type",
         "author",
         "created_date",
+        "include_self_map",
+        "source_value_set_uuid",
+        "target_value_set_uuid",
+        "use_case_uuid",
+        "auto_advance_mapping",
+        "auto_fill_search",
+        "show_target_codes",
       ]}
       rowVisibility={{
         ordered: [
           { contact: true },
+          { include_self_map: true },
           { a: true },
+          { auto_advance_mapping: true },
           { b: true },
           { immutable: true },
           { c: true },
           { created_date: true },
           { experimental: true },
           { identifier: true },
+          { source_value_set_uuid: true },
           { author: true },
           { name: true },
           { url: true },
+          { use_case_uuid: true },
+          { target_value_set_uuid: true },
+          { auto_fill_search: true },
           { title: true },
+          { show_target_codes: true },
           { type: true },
           { uuid: true },
           { publisher: true },

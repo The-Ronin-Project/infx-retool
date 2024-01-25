@@ -26,7 +26,7 @@ return data"
     changeset={
       '[{"key":"value_set_version","value":"{{urlparams.uuid}}"},{"key":"uuid","value":"{{uuid.v1()}}"},{"key":"property","value":"{{dropdown2.value}}"},{"key":"value","value":"{{textinput2.value}}"},{"key":"description","value":"{{textinput1.value}}"},{"key":"include","value":"{{type_select.value}}"},{"key":"terminology_version","value":"{{version_select.value}}"},{"key":"operator","value":"{{dropdown3.value}}"},{"key":"rule_group","value":"1"}]'
     }
-    editorMode="gui"
+    query={include("./lib/add_rule.sql", "string")}
     resourceDisplayName="Clinical Content PostgresSQL DB"
     resourceName="dc8029bc-3980-4836-841e-776c64eeca49"
     runWhenModelUpdates={false}
@@ -39,6 +39,7 @@ return data"
     triggersOnFailure={[]}
     triggersOnSuccess={["load_rules"]}
     updateSetValueDynamically={true}
+    warningCodes={[]}
   >
     <Event
       event="success"
@@ -54,7 +55,7 @@ return data"
     id="bulk_update_values"
     actionType="BULK_UPDATE_BY_KEY"
     bulkUpdatePrimaryKey="uuid"
-    editorMode="gui"
+    query={include("./lib/bulk_update_values.sql", "string")}
     queryDisabled="{{version_metadata.data.status[0]=='active'}}"
     records={
       '{{ rules_table.recordUpdates.map(row => _.pick(row, ["uuid","value","rule_group"]) ) }}'
@@ -71,6 +72,7 @@ return data"
     triggersOnFailure={[]}
     triggersOnSuccess={["load_rules"]}
     updateSetValueDynamically={true}
+    warningCodes={[]}
   >
     <Event
       event="success"

@@ -124,7 +124,7 @@ return data"
     changeset={
       '[{"key":"value_set_uuid","value":"{{urlparams.uuid}}"},{"key":"effective_start","value":"{{effective_dates.startValue}}"},{"key":"effective_end","value":"{{effective_dates.endValue}}"},{"key":"description","value":"{{textinput2.value}}"},{"key":"version","value":"{{textinput3.value}}"},{"key":"uuid","value":"{{textInput4.value}}"},{"key":"status","value":"{{dropdown1.value}}"}]'
     }
-    editorMode="gui"
+    query={include("./lib/new_value_set_version.sql", "string")}
     resourceDisplayName="Clinical Content PostgresSQL DB"
     resourceName="dc8029bc-3980-4836-841e-776c64eeca49"
     runWhenModelUpdates={false}
@@ -140,6 +140,7 @@ return data"
       "value_set_versions",
     ]}
     updateSetValueDynamically={true}
+    warningCodes={[]}
   >
     <Event
       event="success"
@@ -385,7 +386,7 @@ return data"
     id="tableBulkUpdateQuery"
     actionType="BULK_UPDATE_BY_KEY"
     bulkUpdatePrimaryKey="uuid"
-    editorMode="gui"
+    query={include("./lib/tableBulkUpdateQuery.sql", "string")}
     records="{{table1.recordUpdates}}"
     resourceDisplayName="Clinical Content PostgresSQL DB"
     resourceName="dc8029bc-3980-4836-841e-776c64eeca49"
@@ -399,6 +400,7 @@ return data"
     triggersOnFailure={[]}
     triggersOnSuccess={["value_set_versions", "load_vs_metadata"]}
     updateSetValueDynamically={true}
+    warningCodes={[]}
   >
     <Event
       event="success"
@@ -414,44 +416,6 @@ return data"
       method="trigger"
       params={{ ordered: [] }}
       pluginId="load_vs_metadata"
-      type="datasource"
-      waitMs="0"
-      waitType="debounce"
-    />
-  </SqlQueryUnified>
-  <SqlQueryUnified
-    id="tableBulkUpdateTriggerAction"
-    actionType="BULK_UPDATE_BY_KEY"
-    bulkUpdatePrimaryKey="uuid"
-    editorMode="gui"
-    records="{{table2.recordUpdates}}"
-    resourceDisplayName="Clinical Content PostgresSQL DB"
-    resourceName="dc8029bc-3980-4836-841e-776c64eeca49"
-    runWhenModelUpdates={false}
-    showSuccessConfetti={false}
-    showUpdateSetValueDynamicallyToggle={false}
-    tableName="value_sets.value_set"
-    transformer="// type your code here
-// example: return formatDataAsArray(data).filter(row => row.quantity > 20)
-return data"
-    triggersOnFailure={[]}
-    triggersOnSuccess={["load_vs_metadata", "value_set_versions"]}
-    updateSetValueDynamically={true}
-  >
-    <Event
-      event="success"
-      method="trigger"
-      params={{ ordered: [] }}
-      pluginId="load_vs_metadata"
-      type="datasource"
-      waitMs="0"
-      waitType="debounce"
-    />
-    <Event
-      event="success"
-      method="trigger"
-      params={{ ordered: [] }}
-      pluginId="value_set_versions"
       type="datasource"
       waitMs="0"
       waitType="debounce"

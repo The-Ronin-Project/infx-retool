@@ -120,15 +120,6 @@ return data"
       />
       <Event
         event="success"
-        method="clearValue"
-        params={{ ordered: [] }}
-        pluginId="review_comment_all"
-        type="widget"
-        waitMs="0"
-        waitType="debounce"
-      />
-      <Event
-        event="success"
         method="trigger"
         params={{ ordered: [] }}
         pluginId="set_user_as_assigned_reviewer"
@@ -242,6 +233,7 @@ return data"
       queryTimeout="10001"
       resourceDisplayName="Clinical Content PostgresSQL DB"
       resourceName="dc8029bc-3980-4836-841e-776c64eeca49"
+      runWhenModelUpdates={false}
       transformer="// type your code here
 // example: return formatDataAsArray(data).filter(row => row.quantity > 20)
 return data"

@@ -253,6 +253,20 @@
             label="valueCodeableConcept"
             value="{{ resource_type_select.value }}.valueCodeableConcept"
           />
+          <Option
+            id="9ae56"
+            disabled={false}
+            hidden={false}
+            label="interpretation"
+            value="{{ resource_type_select.value }}.interpretation"
+          />
+          <Option
+            id="1f04b"
+            disabled={false}
+            hidden={false}
+            label="component.interpretation"
+            value="{{ resource_type_select.value }}.component.interpretation"
+          />
         </Select>
         <Select
           id="tenant_id_select"
