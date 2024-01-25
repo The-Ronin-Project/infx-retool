@@ -20,12 +20,12 @@
     "height": 1,
     "width": 4
   },
-  "concept_map_details": {
+  "button4": {
     "container": "tabbedcontainer1",
     "subcontainer": "0",
-    "row": 1,
+    "row": 18.6,
     "col": 8,
-    "height": 16.2,
+    "height": 1,
     "width": 4
   },
   "concept_map_drop_down_select": {
@@ -39,7 +39,7 @@
     "container": "tabbedcontainer1",
     "subcontainer": "0",
     "row": 1,
-    "height": 22.8,
+    "height": 21.8,
     "width": 8
   },
   "contact_input": {
@@ -62,11 +62,6 @@
     "height": 1,
     "width": 12
   },
-  "divider1": {
-    "col": 7,
-    "height": 0.2,
-    "width": 4
-  },
   "divider2": {
     "container": "form1",
     "col": 5,
@@ -84,6 +79,14 @@
     "row": 12.8,
     "height": 0.2,
     "width": 2
+  },
+  "divider5": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "0",
+    "row": 1,
+    "col": 8,
+    "height": 0.2,
+    "width": 4
   },
   "effective_date_input": {
     "container": "tabbedcontainer1",
@@ -134,10 +137,26 @@
     "height": 0.6,
     "width": 1
   },
+  "link3": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "0",
+    "row": 4.8,
+    "col": 8,
+    "height": 0.6,
+    "width": 4
+  },
+  "listView1": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "0",
+    "row": 7.6,
+    "col": 8,
+    "height": 5.2,
+    "width": 4
+  },
   "modal1": {
     "container": "tabbedcontainer1",
     "subcontainer": "0",
-    "row": 22.8,
+    "row": 36.4,
     "col": 9,
     "height": 1
   },
@@ -188,6 +207,14 @@
     "col": 9,
     "height": 1
   },
+  "source_value_set_link": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "0",
+    "row": 3.4,
+    "col": 8,
+    "height": 0.6,
+    "width": 4
+  },
   "synonym_context_input": {
     "container": "modal1",
     "row": 1.8,
@@ -201,8 +228,7 @@
     "width": 12
   },
   "tabbedcontainer1": {
-    "row": 1,
-    "height": 27.4,
+    "height": 24.6,
     "width": 12
   },
   "tabs1": {
@@ -224,17 +250,124 @@
     "col": 9,
     "height": 1
   },
+  "test_content_switch": {
+    "row": 24.6,
+    "height": 0.6
+  },
   "text1": {
     "container": "tabbedcontainer1",
     "subcontainer": "2",
     "height": 0.6,
     "width": 12
   },
+  "text10": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "0",
+    "row": 2.8,
+    "col": 8,
+    "height": 0.6
+  },
+  "text11": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "0",
+    "row": 4.2,
+    "col": 8,
+    "height": 0.6
+  },
+  "text12": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "0",
+    "row": 5.6,
+    "col": 8,
+    "height": 0.6,
+    "width": 4
+  },
+  "text13": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "0",
+    "row": 6.2,
+    "col": 8,
+    "height": 0.6,
+    "width": 4
+  },
+  "text15": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "0",
+    "row": 13,
+    "col": 8,
+    "height": 0.6
+  },
+  "text16": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "0",
+    "row": 15.8,
+    "col": 8,
+    "height": 0.6
+  },
+  "text17": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "0",
+    "row": 16.4,
+    "col": 8,
+    "height": 0.6,
+    "width": 4
+  },
   "text2": {
     "container": "tabbedcontainer1",
     "subcontainer": "2",
     "row": 2.6,
     "height": 0.6
+  },
+  "text20": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "0",
+    "row": 14.4,
+    "col": 8,
+    "height": 0.6,
+    "width": 4
+  },
+  "text21": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "0",
+    "row": 15,
+    "col": 8,
+    "height": 0.6,
+    "width": 4
+  },
+  "text22": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "0",
+    "row": 13.6,
+    "col": 8,
+    "height": 0.6,
+    "width": 4
+  },
+  "text23": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "0",
+    "row": 17.2,
+    "col": 8,
+    "height": 0.6
+  },
+  "text24": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "0",
+    "row": 17.8,
+    "col": 8,
+    "height": 0.6
+  },
+  "text25": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "0",
+    "row": 7,
+    "col": 8,
+    "height": 0.6,
+    "width": 4
+  },
+  "text26": {
+    "container": "listView1",
+    "height": 0.6,
+    "width": 12
   },
   "text3": {
     "container": "tabbedcontainer1",
@@ -255,6 +388,22 @@
     "container": "form1",
     "row": 12.2,
     "height": 0.6
+  },
+  "text8": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "0",
+    "row": 1.2,
+    "col": 8,
+    "height": 0.6,
+    "width": 4
+  },
+  "text9": {
+    "container": "tabbedcontainer1",
+    "subcontainer": "0",
+    "row": 1.8,
+    "col": 8,
+    "height": 0.6,
+    "width": 4
   },
   "title_input": {
     "container": "form1",
