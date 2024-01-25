@@ -278,8 +278,8 @@ return data"
       />
     </SqlQueryUnified>
     <SqlQueryUnified
-      id="duplicate_copy_version_contents"
-      query={include("./lib/duplicate_copy_version_contents.sql", "string")}
+      id="duplicate_copy_concept_map_version_contents"
+      query={include("./lib/duplicate_copy_concept_map_version_contents.sql", "string")}
       resourceDisplayName="Clinical Content PostgresSQL DB"
       resourceName="dc8029bc-3980-4836-841e-776c64eeca49"
       runWhenModelUpdates={false}
@@ -288,48 +288,6 @@ return data"
 return data"
       warningCodes={[]}
     />
-    <SqlQueryUnified
-      id="duplicate_create_vs"
-      query={include("./lib/duplicate_create_vs.sql", "string")}
-      resourceDisplayName="Clinical Content PostgresSQL DB"
-      resourceName="dc8029bc-3980-4836-841e-776c64eeca49"
-      runWhenModelUpdates={false}
-      transformer="// type your code here
-// example: return formatDataAsArray(data).filter(row => row.quantity > 20)
-return data"
-      warningCodes={[]}
-    />
-    <SqlQueryUnified
-      id="duplicate_create_vs_version"
-      query={include("./lib/duplicate_create_vs_version.sql", "string")}
-      resourceDisplayName="Clinical Content PostgresSQL DB"
-      resourceName="dc8029bc-3980-4836-841e-776c64eeca49"
-      runWhenModelUpdates={false}
-      transformer="// type your code here
-// example: return formatDataAsArray(data).filter(row => row.quantity > 20)
-return data"
-      warningCodes={[]}
-    />
-    <SqlQueryUnified
-      id="load_all_value_sets"
-      query={include("./lib/load_all_value_sets.sql", "string")}
-      resourceDisplayName="Clinical Content PostgresSQL DB"
-      resourceName="dc8029bc-3980-4836-841e-776c64eeca49"
-      transformer="// type your code here
-// example: return formatDataAsArray(data).filter(row => row.quantity > 20)
-return data"
-    warningCodes={[]}
-  >
-    <Event
-      event="success"
-      method="trigger"
-      params={{ ordered: [] }}
-      pluginId="load_synonyms"
-      type="datasource"
-      waitMs="0"
-      waitType="debounce"
-    />
-  </SqlQueryUnified>
   <SqlQueryUnified
     id="load_synonyms"
     query={include("./lib/load_synonyms.sql", "string")}
