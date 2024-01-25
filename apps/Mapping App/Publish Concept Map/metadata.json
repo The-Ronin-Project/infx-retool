@@ -4,6 +4,19 @@
   "pageUuid": "8c727660-4690-11ed-8fd4-0f8700d37ab7",
   "appTemplate": {
     "appMaxWidth": "1560px",
+    "experimentalFeatures": {
+      "object": {
+        "sourceControlTemplateDehydration": false,
+        "multiplayerEditingEnabled": false
+      }
+    },
+    "experimentalPerfFeatures": {
+      "object": {
+        "serverDepGraphEnabled": false,
+        "useRuntimeV2": false,
+        "runtimeV2OptOut": false
+      }
+    },
     "version": "3.16.1"
   }
 }

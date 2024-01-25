@@ -28,4 +28,15 @@ Once published, a concept map can only be updated by creating a new version."
 return data"
     type="POST"
   />
+  <SqlQueryUnified
+    id="fetch_source_fhir_uri"
+    isMultiplayerEdited={false}
+    query={include("./lib/fetch_source_fhir_uri.sql", "string")}
+    queryTimeout="10001"
+    resourceDisplayName="Clinical Content PostgresSQL DB"
+    resourceName="dc8029bc-3980-4836-841e-776c64eeca49"
+    transformer="data.selectedRow ? data.selectedRow.uuid : null;
+"
+    warningCodes={[]}
+  />
 </GlobalFunctions>
