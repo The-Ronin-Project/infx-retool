@@ -7,6 +7,7 @@
   <Include src="./header.rsx" />
   <Frame
     id="$main"
+    paddingType="normal"
     sticky={false}
     style={{ ordered: [{ canvas: "rgb(240, 244, 248)" }] }}
     type="main"
@@ -34,15 +35,6 @@
       id="text8"
       _disclosedFields={{ array: [] }}
       value="**Currently Mapping**"
-      verticalAlign="center"
-    />
-    <Text
-      id="text9"
-      _disclosedFields={{ array: [] }}
-      heightType="fixed"
-      imageWidth="fill"
-      style={{ ordered: [{ color: "rgb(16, 42, 67)" }] }}
-      value="{{mapping_queue.selectedRow.data[0].code.replace(/</g, '&lt;').replace(/>/g, '&gt;')}}"
       verticalAlign="center"
     />
     <Select
@@ -77,6 +69,15 @@
       showClear={true}
       showSelectionIndicator={true}
       values="{{ item.mapping_group }}"
+    />
+    <Text
+      id="text9"
+      _disclosedFields={{ array: [] }}
+      heightType="fixed"
+      imageWidth="fill"
+      style={{ ordered: [{ color: "rgb(16, 42, 67)" }] }}
+      value="{{mapping_queue.selectedRow.data[0].code.replace(/</g, '&lt;').replace(/>/g, '&gt;')}}"
+      verticalAlign="center"
     />
     <TableLegacy
       id="mapping_queue"
@@ -437,6 +438,13 @@
         />
       </View>
     </Container>
+    <Text
+      id="textbox"
+      _disclosedFields={{ array: [] }}
+      tooltipText="Other will only be an option once a mapping comment is present."
+      value="**Source Actions**"
+      verticalAlign="center"
+    />
     <SplitButton
       id="no_map"
       _colorByIndex={["", "", "", "", ""]}
@@ -608,13 +616,6 @@
         waitType="debounce"
       />
     </SplitButton>
-    <Text
-      id="textbox"
-      _disclosedFields={{ array: [] }}
-      tooltipText="Other will only be an option once a mapping comment is present."
-      value="**Source Actions**"
-      verticalAlign="center"
-    />
     <Divider id="divider2" _disclosedFields={{ array: [] }} />
     <Container
       id="current_mappings"
@@ -624,15 +625,19 @@
       showHeader={true}
     >
       <Header>
-        <Text
-          id="container_title"
-          _disclosedFields={{ array: [] }}
-          value="Currently Mapped Targets
-"
-          verticalAlign="center"
-        />
+        <Tabs
+          id="tabs1"
+          itemMode="static"
+          navigateContainer={true}
+          targetContainerId="current_mappings"
+          value="{{ self.values[0] }}"
+        >
+          <Option id="c4fa4" value="Tab 1" />
+          <Option id="8f58d" value="Tab 2" />
+          <Option id="c51b8" value="Tab 3" />
+        </Tabs>
       </Header>
-      <View id="a319d" viewKey="View 1">
+      <View id="a319d" viewKey="Currently Mapped Targets">
         <TableLegacy
           id="mapped_targets"
           _columns={[
@@ -677,6 +682,7 @@
               { mapping_group: false },
               { system: false },
               { reason_for_no_map: true },
+              { deleted_timestamp: false },
               { assigned_mapper: false },
               { target_concept_system: false },
               { map_status: false },
@@ -687,6 +693,7 @@
               { additional_context: false },
               { uuid: false },
               { concept_map_version_uuid: false },
+              { deleted_by: false },
               { no_map: false },
               { reviewed_by: false },
             ],
@@ -776,6 +783,386 @@
           doubleClickToEdit={true}
           showBoxShadow={false}
         />
+      </View>
+      <View id="35d58" viewKey="Previously Mapped Targets">
+        <Table
+          id="previously_mapped_table"
+          cellSelection="none"
+          clearChangesetOnSave={true}
+          data="{{ load_previously_mapped_targets.data }}"
+          defaultSelectedRow={{ mode: "index", indexType: "display", index: 0 }}
+          enableSaveActions={true}
+          rowHeight="medium"
+          showBorder={true}
+          showFooter={true}
+          showHeader={true}
+          toolbarPosition="bottom"
+        >
+          <Column
+            id="a5238"
+            alignment="left"
+            format="string"
+            groupAggregationMode="none"
+            key="review_status"
+            label="Review status"
+            placeholder="Enter value"
+            position="center"
+            size={97.21875}
+            summaryAggregationMode="none"
+          />
+          <Column
+            id="5fae2"
+            alignment="left"
+            format="string"
+            groupAggregationMode="none"
+            hidden="true"
+            key="mapping_comments"
+            label="Mapping comments"
+            placeholder="Enter value"
+            position="center"
+            size={130.875}
+            summaryAggregationMode="none"
+          />
+          <Column
+            id="8ce8d"
+            alignment="left"
+            format="string"
+            groupAggregationMode="none"
+            hidden="true"
+            key="uuid"
+            label="UUID"
+            placeholder="Enter value"
+            position="center"
+            size={267.734375}
+            summaryAggregationMode="none"
+          />
+          <Column
+            id="e41a7"
+            alignment="left"
+            format="string"
+            groupAggregationMode="none"
+            key="display"
+            label="Relationship"
+            placeholder="Enter value"
+            position="center"
+            size={74.734375}
+            summaryAggregationMode="none"
+          />
+          <Column
+            id="48387"
+            alignment="left"
+            format="string"
+            groupAggregationMode="none"
+            key="target_concept_code"
+            label="Target concept code"
+            placeholder="Enter value"
+            position="center"
+            size={136.03125}
+            summaryAggregationMode="none"
+          />
+          <Column
+            id="3770f"
+            alignment="left"
+            format="string"
+            groupAggregationMode="none"
+            key="target_concept_display"
+            label="Target concept display"
+            placeholder="Enter value"
+            position="center"
+            size={276.359375}
+            summaryAggregationMode="none"
+          />
+          <Column
+            id="ee8f2"
+            alignment="left"
+            format="string"
+            groupAggregationMode="none"
+            hidden="true"
+            key="target_concept_system"
+            label="Target concept system"
+            placeholder="Enter value"
+            position="center"
+            size={149.578125}
+            summaryAggregationMode="none"
+          />
+          <Column
+            id="c4aa5"
+            alignment="left"
+            format="datetime"
+            groupAggregationMode="none"
+            hidden="true"
+            key="created_date"
+            label="Created date"
+            placeholder="Enter value"
+            position="center"
+            size={152.359375}
+            summaryAggregationMode="none"
+          />
+          <Column
+            id="801bd"
+            alignment="left"
+            format="string"
+            groupAggregationMode="none"
+            hidden="true"
+            key="reviewed_date"
+            label="Reviewed date"
+            placeholder="Enter value"
+            position="center"
+            size={101.28125}
+            summaryAggregationMode="none"
+          />
+          <Column
+            id="8212e"
+            alignment="left"
+            format="string"
+            groupAggregationMode="none"
+            key="author"
+            label="Author"
+            placeholder="Enter value"
+            position="center"
+            size={104.71875}
+            summaryAggregationMode="none"
+          />
+          <Column
+            id="627c3"
+            alignment="left"
+            format="string"
+            groupAggregationMode="none"
+            hidden="true"
+            key="source_concept_uuid"
+            label="Source concept UUID"
+            placeholder="Enter value"
+            position="center"
+            size={266.71875}
+            summaryAggregationMode="none"
+          />
+          <Column
+            id="658e0"
+            alignment="left"
+            format="string"
+            groupAggregationMode="none"
+            hidden="true"
+            key="relationship_code_uuid"
+            label="Relationship code UUID"
+            placeholder="Enter value"
+            position="center"
+            size={265.0625}
+            summaryAggregationMode="none"
+          />
+          <Column
+            id="a7206"
+            alignment="left"
+            format="string"
+            groupAggregationMode="none"
+            hidden="true"
+            key="target_concept_system_version_uuid"
+            label="Target concept system version UUID"
+            placeholder="Enter value"
+            position="center"
+            size={271.515625}
+            summaryAggregationMode="none"
+          />
+          <Column
+            id="5858e"
+            alignment="left"
+            format="string"
+            groupAggregationMode="none"
+            key="review_comment"
+            label="Review comment"
+            placeholder="Enter value"
+            position="center"
+            size={224.484375}
+            summaryAggregationMode="none"
+          />
+          <Column
+            id="57d07"
+            alignment="left"
+            format="string"
+            groupAggregationMode="none"
+            key="reviewed_by"
+            label="Reviewed by"
+            placeholder="Enter value"
+            position="center"
+            size={104.71875}
+            summaryAggregationMode="none"
+          />
+          <Column
+            id="4cc73"
+            alignment="left"
+            format="string"
+            groupAggregationMode="none"
+            hidden="true"
+            key="model_name"
+            label="Model name"
+            placeholder="Enter value"
+            position="center"
+            size={87}
+            summaryAggregationMode="none"
+          />
+          <Column
+            id="ed07b"
+            alignment="left"
+            format="string"
+            groupAggregationMode="none"
+            hidden="true"
+            key="model_run_time"
+            label="Model run time"
+            placeholder="Enter value"
+            position="center"
+            size={102.828125}
+            summaryAggregationMode="none"
+          />
+          <Column
+            id="840c4"
+            alignment="left"
+            format="string"
+            groupAggregationMode="none"
+            hidden="true"
+            key="model_version"
+            label="Model version"
+            placeholder="Enter value"
+            position="center"
+            size={97.78125}
+            summaryAggregationMode="none"
+          />
+          <Column
+            id="5e4b1"
+            alignment="left"
+            format="string"
+            groupAggregationMode="none"
+            hidden="true"
+            key="model_output_score"
+            label="Model output score"
+            placeholder="Enter value"
+            position="center"
+            size={128.78125}
+            summaryAggregationMode="none"
+          />
+          <Column
+            id="d450c"
+            alignment="left"
+            format="string"
+            groupAggregationMode="none"
+            key="deleted_timestamp"
+            label="Deleted timestamp"
+            placeholder="Enter value"
+            position="center"
+            size={142.578125}
+            summaryAggregationMode="none"
+          />
+          <Column
+            id="abad4"
+            alignment="left"
+            format="string"
+            groupAggregationMode="none"
+            key="deleted_by"
+            label="Deleted by"
+            placeholder="Enter value"
+            position="center"
+            size={104.71875}
+            summaryAggregationMode="none"
+          />
+          <Column
+            id="8d9c5"
+            alignment="left"
+            format="string"
+            groupAggregationMode="none"
+            hidden="true"
+            key="assigned_reviewer"
+            label="Assigned reviewer"
+            placeholder="Enter value"
+            position="center"
+            size={277.359375}
+            summaryAggregationMode="none"
+          />
+          <Column
+            id="73c68"
+            alignment="left"
+            format="string"
+            groupAggregationMode="none"
+            hidden="true"
+            key="reason_for_no_map"
+            label="Reason for no map"
+            placeholder="Enter value"
+            position="center"
+            size={123.90625}
+            summaryAggregationMode="none"
+          />
+          <Column
+            id="2e170"
+            alignment="left"
+            format="string"
+            groupAggregationMode="none"
+            key="reviewer_name"
+            label="Reviewer name"
+            placeholder="Enter value"
+            position="center"
+            size={104.71875}
+            summaryAggregationMode="none"
+          />
+          <Column
+            id="87b2e"
+            alignment="left"
+            format="string"
+            groupAggregationMode="none"
+            hidden="true"
+            key="cr_uuid"
+            label="Cr UUID"
+            placeholder="Enter value"
+            position="center"
+            size={267.734375}
+            summaryAggregationMode="none"
+          />
+          <Column
+            id="949df"
+            alignment="left"
+            format="string"
+            groupAggregationMode="none"
+            hidden="true"
+            key="concept_map_version_uuid"
+            label="Concept map version UUID"
+            placeholder="Enter value"
+            position="center"
+            size={172.140625}
+            summaryAggregationMode="none"
+          />
+          <ToolbarButton
+            id="1a"
+            icon="bold/interface-text-formatting-filter-2"
+            label="Filter"
+            type="filter"
+          />
+          <ToolbarButton
+            id="3c"
+            icon="bold/interface-download-button-2"
+            label="Download"
+            type="custom"
+          >
+            <Event
+              event="clickToolbar"
+              method="exportData"
+              pluginId="previously_mapped_table"
+              type="widget"
+              waitMs="0"
+              waitType="debounce"
+            />
+          </ToolbarButton>
+          <ToolbarButton
+            id="4d"
+            icon="bold/interface-arrows-round-left"
+            label="Refresh"
+            type="custom"
+          >
+            <Event
+              event="clickToolbar"
+              method="refresh"
+              pluginId="previously_mapped_table"
+              type="widget"
+              waitMs="0"
+              waitType="debounce"
+            />
+          </ToolbarButton>
+        </Table>
       </View>
     </Container>
     <Module

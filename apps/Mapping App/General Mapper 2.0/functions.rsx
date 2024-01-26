@@ -74,6 +74,7 @@ return data"
   </SqlQueryUnified>
   <SqlQueryUnified
     id="delete_mapping"
+    isMultiplayerEdited={false}
     query={include("./lib/delete_mapping.sql", "string")}
     resourceDisplayName="Clinical Content PostgresSQL DB"
     resourceName="dc8029bc-3980-4836-841e-776c64eeca49"
@@ -148,6 +149,20 @@ return data"
     }
     paginationLimit=""
     query={include("./lib/load_mapped_targets.sql", "string")}
+    resourceDisplayName="Clinical Content PostgresSQL DB"
+    resourceName="dc8029bc-3980-4836-841e-776c64eeca49"
+    transformer="// type your code here
+// example: return formatDataAsArray(data).filter(row => row.quantity > 20)
+return data"
+    warningCodes={[]}
+  />
+  <SqlQueryUnified
+    id="load_previously_mapped_targets"
+    body={
+      '[{"key":"source_concept_uuid","value":"{{mapping_queue.selectedRow.data.uuid}}"},{"key":"relationship_code_uuid","value":"{{select_rel.value}}"},{"key":"target_concept_code","value":"{{search_results_table.selectedRow.data.code}}"},{"key":"target_concept_display","value":"{{search_results_table.selectedRow.data.display}}"},{"key":"target_concept_terminology_version_uuid","value":"{{search_results_table.selectedRow.data.terminology_version_uuid}}"},{"key":"mapping_comments","value":"{{mapping_comments.value}}"},{"key":"author","value":"{{user_select.selectedLabel}}"}]'
+    }
+    paginationLimit=""
+    query={include("./lib/load_previously_mapped_targets.sql", "string")}
     resourceDisplayName="Clinical Content PostgresSQL DB"
     resourceName="dc8029bc-3980-4836-841e-776c64eeca49"
     transformer="// type your code here
