@@ -39,6 +39,12 @@
     showClear={true}
   />
   <TextInput
+    id="product_item_long_label_input"
+    hidden="{{registry_metadata.data.registry_type != 'observation_interpretation'}}"
+    label="Product Item Long Label"
+    placeholder="Enter value"
+  />
+  <TextInput
     id="ref_range_high_input"
     hidden="{{registry_metadata.data.registry_type!='vitals'}}"
     label="Reference range high"
