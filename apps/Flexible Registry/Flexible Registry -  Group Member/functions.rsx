@@ -2,7 +2,7 @@
   <RESTQuery
     id="add_group_member"
     body={
-      '[{"key":"value_set_uuid","value":"{{value_set_select.selectedItem.uuid}}"},{"key":"title","value":"{{product_label_input.value}}"},{"key":"ref_range_high","value":"{{transformerRefHigh.value}}"},{"key":"ref_range_low","value":"{{transformerRefHigh.value}}"},{"key":"ucum_ref_units","value":"{{transformerUCUM.value}}"}]'
+      '[{"key":"value_set_uuid","value":"{{value_set_select.selectedItem.uuid}}"},{"key":"title","value":"{{product_label_input.value}}"},{"key":"ref_range_high","value":"{{transformerRefHigh.value}}"},{"key":"ref_range_low","value":"{{transformerRefHigh.value}}"},{"key":"ucum_ref_units","value":"{{transformerUCUM.value}}"},{"key":"product_item_long_label","value":"{{product_item_long_label_input.value}}"}]'
     }
     bodyType="json"
     cookies={'[{"key":"","value":""},{"key":"","value":""}]'}
@@ -38,6 +38,15 @@ return formatDataAsArray(data)"
       method="clearValue"
       params={{ ordered: [] }}
       pluginId="product_label_input"
+      type="widget"
+      waitMs="0"
+      waitType="debounce"
+    />
+    <Event
+      event="success"
+      method="clearValue"
+      params={{ ordered: [] }}
+      pluginId="product_item_long_label_input"
       type="widget"
       waitMs="0"
       waitType="debounce"
