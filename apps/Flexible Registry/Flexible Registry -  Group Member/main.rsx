@@ -115,6 +115,18 @@
         size={279.8125}
       />
       <Column
+        id="7c2d5"
+        alignment="left"
+        format="string"
+        groupAggregationMode="none"
+        key="product_item_long_label"
+        label="Product item long label"
+        placeholder="Enter value"
+        position="center"
+        size={166}
+        summaryAggregationMode="none"
+      />
+      <Column
         id="b4a2c"
         alignment="left"
         editable={false}
