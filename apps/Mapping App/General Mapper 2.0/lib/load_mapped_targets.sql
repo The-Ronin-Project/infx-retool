@@ -7,4 +7,4 @@ ON cr.relationship_code_uuid = rc.uuid
 left JOIN project_management."user" u
 ON sc.assigned_reviewer = u.uuid
 where source_concept_uuid = {{mapping_queue.selectedRow.data[0].uuid}}
-and cr.review_status !='deleted'
+AND cr.review_status IS DISTINCT FROM 'deleted'
