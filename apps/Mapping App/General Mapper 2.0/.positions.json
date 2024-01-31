@@ -47,7 +47,7 @@
     "width": 5
   },
   "jsonExplorer1": {
-    "row": 6.6,
+    "row": 9.6,
     "col": 6,
     "height": 6,
     "width": 6
@@ -79,6 +79,12 @@
     "height": 11,
     "width": 6
   },
+  "medicationAdditionalContext1": {
+    "row": 6.6,
+    "col": 6,
+    "height": 3,
+    "width": 6
+  },
   "no_map": {
     "row": 15.6,
     "col": 1,
@@ -97,7 +103,7 @@
     "width": 4
   },
   "search_results_container": {
-    "row": 14.6,
+    "row": 17.6,
     "col": 6,
     "height": 0.2,
     "width": 6
@@ -109,13 +115,13 @@
     "width": 12
   },
   "search_text_input": {
-    "row": 13.6,
+    "row": 16.6,
     "col": 6,
     "height": 1,
     "width": 6
   },
   "select_rel": {
-    "row": 12.6,
+    "row": 15.6,
     "col": 6,
     "height": 1,
     "width": 6
