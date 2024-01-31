@@ -239,6 +239,9 @@
     <Divider id="divider3" _disclosedFields={{ array: [] }} />
     <Module
       id="medicationAdditionalContext1"
+      hidden={
+        '{{load_metadata.dataArray[0].target_value_set_uuid!="cf7f9f1a-cb07-49d1-a34d-b7ced26d8ef8"}}'
+      }
       name="Medication Additional Context"
       pageUuid="8f778080-befd-11ee-8ba3-df9a2fb4e074"
     />
