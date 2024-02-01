@@ -1,5 +1,5 @@
 select * from concept_maps.source_concept sc 
-where sc.assigned_mapper={{user_select.value}}
+where (sc.assigned_mapper={{user_select.value}}::uuid IS NULL or sc.assigned_mapper = {{user_select.value}})
 and sc.concept_map_version_uuid={{urlparams.concept_map_version_uuid}}
 and sc.map_status = 'pending'
 and sc.save_for_discussion = FALSE
