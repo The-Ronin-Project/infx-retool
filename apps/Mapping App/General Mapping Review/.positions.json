@@ -133,6 +133,7 @@
     "height": 1
   },
   "tabbedContainer1": {
+    "row": 0,
     "height": 0.2,
     "width": 12
   },
@@ -152,6 +153,7 @@
   "text1": {
     "container": "tabbedContainer1",
     "subcontainer": "d4435",
+    "row": 0,
     "height": 0.6,
     "width": 4
   },
