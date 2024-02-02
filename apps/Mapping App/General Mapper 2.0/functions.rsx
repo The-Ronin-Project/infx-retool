@@ -527,4 +527,11 @@ return data"
       waitType="debounce"
     />
   </RESTQuery>
+  <SqlQueryUnified
+    id="load_depends_on_data"
+    query={include("./lib/load_depends_on_data.sql", "string")}
+    resourceDisplayName="Clinical Content PostgresSQL DB"
+    resourceName="dc8029bc-3980-4836-841e-776c64eeca49"
+    warningCodes={[]}
+  />
 </GlobalFunctions>
