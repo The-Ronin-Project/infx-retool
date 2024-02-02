@@ -244,11 +244,12 @@
       }
       name="Medication Additional Context"
       pageUuid="8f778080-befd-11ee-8ba3-df9a2fb4e074"
+      source_code="{{mapping_queue.selectedRow.data[0].code.replace(/</g, '&lt;').replace(/>/g, '&gt;')}}"
     />
+    <Text id="text10" value="**Depends On Data**" verticalAlign="center" />
     <JSONExplorer
-      id="jsonExplorer1"
-      hidden=""
-      value="{{source_term_additional_info.data.additional_data[0]}}"
+      id="jsonExplorer2"
+      value="{{load_depends_on_data.data.json_result[0]}}"
     />
     <TextArea
       id="mapping_comments"
@@ -260,6 +261,7 @@
       minLines={2}
       placeholder="Enter value"
     />
+    <Text id="text11" value="**Additional Info**" verticalAlign="center" />
     <Text
       id="textbox"
       _disclosedFields={{ array: [] }}
@@ -438,193 +440,12 @@
         waitType="debounce"
       />
     </SplitButton>
-    <Select
-      id="select_rel"
-      captionByIndex=""
-      colorByIndex=""
-      data="{{ relationship_choices.data }}"
-      disabledByIndex=""
-      fallbackTextByIndex=""
-      hiddenByIndex=""
-      iconByIndex=""
-      imageByIndex=""
-      label="Select Relationship"
-      labels="{{ item.display }}"
-      overlayMaxHeight={375}
-      placeholder="Select an option"
-      showSelectionIndicator={true}
-      tooltipByIndex=""
-      values="{{ item.uuid }}"
-    >
-      <Option id="328c5" value="Equivalent" />
-      <Option id="8f593" value="Broader" />
-      <Option id="f4afc" value="Narrower" />
-    </Select>
-    <Divider id="divider2" _disclosedFields={{ array: [] }} />
-    <TextInput
-      id="search_text_input"
-      _disclosedFields={{ array: [] }}
-      label="Search Target Concept"
-      placeholder="Enter value"
-      showClear={true}
-      value={
-        '{{load_settings.data.auto_fill_search[0] ? mapping_queue.selectedRow.data[0].display : ""}}'
-      }
+    <JSONExplorer
+      id="jsonExplorer1"
+      hidden=""
+      value="{{source_term_additional_info.data.additional_data[0]}}"
     />
-    <Container
-      id="search_results_container"
-      currentViewKey="{{ self.viewKeys[0] }}"
-      hoistFetching={true}
-      showBody={true}
-      showHeader={true}
-    >
-      <View
-        id="92fd1"
-        disabled={false}
-        hidden={false}
-        iconPosition="left"
-        label="Branded Pack ({{search_rxnorm.data.results.BPCK.length}})"
-        viewKey="Branded Pack"
-      >
-        <TableLegacy
-          id="search_results_table"
-          _columns={[
-            "rxcui",
-            "language",
-            "name",
-            "suppress",
-            "synonym",
-            "tty",
-            "umlscui",
-          ]}
-          _columnSummaryTypes={{
-            ordered: [{ rxcui: "" }, { tags: "" }, { code: "" }],
-          }}
-          _columnSummaryValues={{
-            ordered: [{ rxcui: "" }, { tags: "" }, { code: "" }],
-          }}
-          _columnVisibility={{
-            ordered: [
-              { strength: false },
-              { rxtermsDoseForm: false },
-              { rxnormDoseForm: false },
-              { termType: false },
-              { route: false },
-              { code: true },
-              { displayName: false },
-              { terminology_version_uuid: false },
-              { brandName: false },
-              { fullGenericName: false },
-              { suppress: false },
-              { language: false },
-              { umlscui: false },
-              { tty: false },
-              { fullName: false },
-              { genericRxcui: false },
-              { synonym: false },
-              { concept_map_version_uuid: false },
-            ],
-          }}
-          _compatibilityMode={false}
-          actionButtons={[
-            {
-              ordered: [
-                { actionButtonText: "Map {{select_rel.selectedLabel}} " },
-                { actionButtonType: "runQuery" },
-                { actionButtonQuery: "map_it" },
-                { actionButtonInternalUrlPath: "" },
-                { actionButtonInternalUrlQuery: "" },
-                { actionButtonUrl: "" },
-                { actionButtonNewWindow: false },
-                {
-                  actionButtonDisabled:
-                    "{{select_rel.value == null || load_mapped_targets.dataArray.filter(x => x.review_status[0] === null).map(x => x.target_concept_code[0]).includes(currentRow.code) || currentRow.code === 'No map'}}",
-                },
-              ],
-            },
-          ]}
-          columnAlignment={{
-            ordered: [{ rxcui: "left" }, { tags: "left" }, { code: "left" }],
-          }}
-          columnColors={{
-            ordered: [
-              { strength: "" },
-              { rxtermsDoseForm: "" },
-              { display: "" },
-              { rxnormDoseForm: "" },
-              { termType: "" },
-              { route: "" },
-              { name: "" },
-              { code: "" },
-              { displayName: "" },
-              { terminology_version_uuid: "" },
-              {
-                rxcui:
-                  "{{search_rxnorm.data.top_rxcui == self ? '#C1E1C1' : 'white'}}",
-              },
-              { brandName: "" },
-              { fullGenericName: "" },
-              { suppress: "" },
-              { language: "" },
-              { umlscui: "" },
-              { tags: "" },
-              { tty: "" },
-              { fullName: "" },
-              { genericRxcui: "" },
-              { synonym: "" },
-              { concept_map_version_uuid: "" },
-            ],
-          }}
-          columnEditable={{ ordered: [{ tags: false }] }}
-          columnFormats={{
-            ordered: [
-              { rxcui: "TextDataCell" },
-              { tags: "SingleTagDataCell" },
-              { code: "TextDataCell" },
-            ],
-          }}
-          columnMappers={{ ordered: [{ tags: "" }] }}
-          columnTypeProperties={{
-            ordered: [
-              { rxcui: { ordered: [] } },
-              {
-                tags: {
-                  ordered: [
-                    { optionData: "{{ currentColumn }}" },
-                    { colorMode: "auto" },
-                    { allowCustomValue: true },
-                    { optionLabels: "" },
-                    { optionColors: { array: [] } },
-                    { optionValues: { array: [] } },
-                  ],
-                },
-              },
-              { code: { ordered: [] } },
-            ],
-          }}
-          columnWidths={[
-            { object: { id: "rxcui", value: 93.390625 } },
-            { object: { id: "__retool__action_list", value: 141.875 } },
-            { object: { id: "code", value: 167.5625 } },
-            { object: { id: "display", value: 479.78125 } },
-          ]}
-          customButtonName=""
-          data="{{aggregate_search.data.hits.hits.map(hit => hit['_source'])}}"
-          defaultSelectedRow="none"
-          doubleClickToEdit={true}
-          events={[]}
-          overflowType="scroll"
-          showBoxShadow={false}
-          style={{
-            ordered: [
-              { alternateRowBackground: "rgba(255, 255, 255, 1)" },
-              { background: "surfacePrimary" },
-              { summaryBackground: "surfacePrimary" },
-            ],
-          }}
-        />
-      </View>
-    </Container>
+    <Divider id="divider2" _disclosedFields={{ array: [] }} />
     <Container
       id="current_mappings"
       heightType="fixed"
@@ -1171,6 +992,192 @@
             />
           </ToolbarButton>
         </Table>
+      </View>
+    </Container>
+    <Select
+      id="select_rel"
+      captionByIndex=""
+      colorByIndex=""
+      data="{{ relationship_choices.data }}"
+      disabledByIndex=""
+      fallbackTextByIndex=""
+      hiddenByIndex=""
+      iconByIndex=""
+      imageByIndex=""
+      label="Select Relationship"
+      labels="{{ item.display }}"
+      overlayMaxHeight={375}
+      placeholder="Select an option"
+      showSelectionIndicator={true}
+      tooltipByIndex=""
+      values="{{ item.uuid }}"
+    >
+      <Option id="328c5" value="Equivalent" />
+      <Option id="8f593" value="Broader" />
+      <Option id="f4afc" value="Narrower" />
+    </Select>
+    <TextInput
+      id="search_text_input"
+      _disclosedFields={{ array: [] }}
+      label="Search Target Concept"
+      placeholder="Enter value"
+      showClear={true}
+      value={
+        '{{load_settings.data.auto_fill_search[0] ? mapping_queue.selectedRow.data[0].display : ""}}'
+      }
+    />
+    <Container
+      id="search_results_container"
+      currentViewKey="{{ self.viewKeys[0] }}"
+      hoistFetching={true}
+      showBody={true}
+      showHeader={true}
+    >
+      <View
+        id="92fd1"
+        disabled={false}
+        hidden={false}
+        iconPosition="left"
+        label="Branded Pack ({{search_rxnorm.data.results.BPCK.length}})"
+        viewKey="Branded Pack"
+      >
+        <TableLegacy
+          id="search_results_table"
+          _columns={[
+            "rxcui",
+            "language",
+            "name",
+            "suppress",
+            "synonym",
+            "tty",
+            "umlscui",
+          ]}
+          _columnSummaryTypes={{
+            ordered: [{ rxcui: "" }, { tags: "" }, { code: "" }],
+          }}
+          _columnSummaryValues={{
+            ordered: [{ rxcui: "" }, { tags: "" }, { code: "" }],
+          }}
+          _columnVisibility={{
+            ordered: [
+              { strength: false },
+              { rxtermsDoseForm: false },
+              { rxnormDoseForm: false },
+              { termType: false },
+              { route: false },
+              { code: true },
+              { displayName: false },
+              { terminology_version_uuid: false },
+              { brandName: false },
+              { fullGenericName: false },
+              { suppress: false },
+              { language: false },
+              { umlscui: false },
+              { tty: false },
+              { fullName: false },
+              { genericRxcui: false },
+              { synonym: false },
+              { concept_map_version_uuid: false },
+            ],
+          }}
+          _compatibilityMode={false}
+          actionButtons={[
+            {
+              ordered: [
+                { actionButtonText: "Map {{select_rel.selectedLabel}} " },
+                { actionButtonType: "runQuery" },
+                { actionButtonQuery: "map_it" },
+                { actionButtonInternalUrlPath: "" },
+                { actionButtonInternalUrlQuery: "" },
+                { actionButtonUrl: "" },
+                { actionButtonNewWindow: false },
+                {
+                  actionButtonDisabled:
+                    "{{select_rel.value == null || load_mapped_targets.dataArray.filter(x => x.review_status[0] === null).map(x => x.target_concept_code[0]).includes(currentRow.code) || currentRow.code === 'No map'}}",
+                },
+              ],
+            },
+          ]}
+          columnAlignment={{
+            ordered: [{ rxcui: "left" }, { tags: "left" }, { code: "left" }],
+          }}
+          columnColors={{
+            ordered: [
+              { strength: "" },
+              { rxtermsDoseForm: "" },
+              { display: "" },
+              { rxnormDoseForm: "" },
+              { termType: "" },
+              { route: "" },
+              { name: "" },
+              { code: "" },
+              { displayName: "" },
+              { terminology_version_uuid: "" },
+              {
+                rxcui:
+                  "{{search_rxnorm.data.top_rxcui == self ? '#C1E1C1' : 'white'}}",
+              },
+              { brandName: "" },
+              { fullGenericName: "" },
+              { suppress: "" },
+              { language: "" },
+              { umlscui: "" },
+              { tags: "" },
+              { tty: "" },
+              { fullName: "" },
+              { genericRxcui: "" },
+              { synonym: "" },
+              { concept_map_version_uuid: "" },
+            ],
+          }}
+          columnEditable={{ ordered: [{ tags: false }] }}
+          columnFormats={{
+            ordered: [
+              { rxcui: "TextDataCell" },
+              { tags: "SingleTagDataCell" },
+              { code: "TextDataCell" },
+            ],
+          }}
+          columnMappers={{ ordered: [{ tags: "" }] }}
+          columnTypeProperties={{
+            ordered: [
+              { rxcui: { ordered: [] } },
+              {
+                tags: {
+                  ordered: [
+                    { optionData: "{{ currentColumn }}" },
+                    { colorMode: "auto" },
+                    { allowCustomValue: true },
+                    { optionLabels: "" },
+                    { optionColors: { array: [] } },
+                    { optionValues: { array: [] } },
+                  ],
+                },
+              },
+              { code: { ordered: [] } },
+            ],
+          }}
+          columnWidths={[
+            { object: { id: "rxcui", value: 93.390625 } },
+            { object: { id: "__retool__action_list", value: 141.875 } },
+            { object: { id: "code", value: 167.5625 } },
+            { object: { id: "display", value: 479.78125 } },
+          ]}
+          customButtonName=""
+          data="{{aggregate_search.data.hits.hits.map(hit => hit['_source'])}}"
+          defaultSelectedRow="none"
+          doubleClickToEdit={true}
+          events={[]}
+          overflowType="scroll"
+          showBoxShadow={false}
+          style={{
+            ordered: [
+              { alternateRowBackground: "rgba(255, 255, 255, 1)" },
+              { background: "surfacePrimary" },
+              { summaryBackground: "surfacePrimary" },
+            ],
+          }}
+        />
       </View>
     </Container>
     <Module
