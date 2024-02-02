@@ -137,12 +137,6 @@
     "height": 4,
     "width": 4
   },
-  "tabs1": {
-    "container": "current_mappings",
-    "rowGroup": "header",
-    "height": 0.8,
-    "width": 12
-  },
   "text1": {
     "row": 2,
     "height": 0.6,

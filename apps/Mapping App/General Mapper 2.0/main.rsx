@@ -454,19 +454,6 @@
       showBody={true}
       showHeader={true}
     >
-      <Header>
-        <Tabs
-          id="tabs1"
-          itemMode="static"
-          navigateContainer={true}
-          targetContainerId="current_mappings"
-          value="{{ self.values[0] }}"
-        >
-          <Option id="c4fa4" value="Tab 1" />
-          <Option id="8f58d" value="Tab 2" />
-          <Option id="c51b8" value="Tab 3" />
-        </Tabs>
-      </Header>
       <View id="a319d" viewKey="Currently Mapped Targets">
         <TableLegacy
           id="mapped_targets"
