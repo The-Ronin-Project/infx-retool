@@ -552,6 +552,7 @@
     </TableLegacy>
     <JSONExplorer
       id="jsonExplorer1"
+      hidden="{{!(review_queue.selectedRow && review_queue.selectedRow.data[0]?.additional_data && Object.keys(review_queue.selectedRow.data[0].additional_data).length > 0)}}"
       value="{{review_queue.selectedRow.data[0].additional_data}}"
     />
     <TextArea
@@ -627,14 +628,15 @@
         "code",
         "display",
         "additional_data",
-        "comments",
+        "mapping_comments",
         "review_comment",
-        "mapper",
         "uuid",
         "additional_context",
         "target_concept_code",
         "target_concept_display",
         "count_of_resources_affected",
+        "author",
+        "assigned_mapper",
       ]}
       _columnSummaryTypes={{
         ordered: [
@@ -654,7 +656,7 @@
           { mapping_group: false },
           { system: false },
           { assigned_mapper: false },
-          { comments: true },
+          { comments: false },
           { last_name: false },
           { map_status: false },
           { assigned_reviewer: false },
@@ -727,6 +729,7 @@
           { mapper: "" },
           { display: "" },
           { additional_data: "" },
+          { mapping_comments: "" },
           { first_last_name: "" },
           { count_of_resources_affected: "" },
           { author: "" },
@@ -762,6 +765,7 @@
           { mapper: "Mapper" },
           { display: "Source Display" },
           { additional_data: "ℹ️" },
+          { mapping_comments: "Mapping Comment" },
           { first_last_name: "Mapper" },
           { count_of_resources_affected: "Resource Count" },
           { author: "Mapper" },
