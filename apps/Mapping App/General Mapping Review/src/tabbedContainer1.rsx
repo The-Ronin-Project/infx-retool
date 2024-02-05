@@ -806,16 +806,17 @@
       }}
       columnWidths={[
         { object: { id: "code", value: 192.6640625 } },
-        { object: { id: "additional_data", value: 42.5390625 } },
         { object: { id: "__retool__action_list", value: 211 } },
         { object: { id: "target_concept_display", value: 217 } },
         { object: { id: "count_of_resources_affected", value: 117 } },
         { object: { id: "target_concept_code", value: 159 } },
-        { object: { id: "display", value: 417.0390625 } },
         { object: { id: "comments", value: 367 } },
         { object: { id: "review_comment", value: 151 } },
         { object: { id: "additional_context", value: 146 } },
         { object: { id: "assigned_mapper", value: 144 } },
+        { object: { id: "mapping_comments", value: 120.01736450195312 } },
+        { object: { id: "display", value: 383.0312805175781 } },
+        { object: { id: "additional_data", value: 48.99652862548828 } },
       ]}
       customButtonName=""
       data="{{ discussion_concepts.data}}"
