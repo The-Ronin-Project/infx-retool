@@ -552,6 +552,7 @@
     </TableLegacy>
     <JSONExplorer
       id="jsonExplorer1"
+      hidden="{{!(review_queue.selectedRow && review_queue.selectedRow.data[0]?.additional_data && Object.keys(review_queue.selectedRow.data[0].additional_data).length > 0)}}"
       value="{{review_queue.selectedRow.data[0].additional_data}}"
     />
     <TextArea
@@ -627,14 +628,15 @@
         "code",
         "display",
         "additional_data",
-        "comments",
+        "mapping_comments",
         "review_comment",
-        "mapper",
         "uuid",
         "additional_context",
         "target_concept_code",
         "target_concept_display",
         "count_of_resources_affected",
+        "author",
+        "assigned_mapper",
       ]}
       _columnSummaryTypes={{
         ordered: [
@@ -654,7 +656,7 @@
           { mapping_group: false },
           { system: false },
           { assigned_mapper: false },
-          { comments: true },
+          { comments: false },
           { last_name: false },
           { map_status: false },
           { assigned_reviewer: false },
@@ -727,6 +729,7 @@
           { mapper: "" },
           { display: "" },
           { additional_data: "" },
+          { mapping_comments: "" },
           { first_last_name: "" },
           { count_of_resources_affected: "" },
           { author: "" },
@@ -762,6 +765,7 @@
           { mapper: "Mapper" },
           { display: "Source Display" },
           { additional_data: "ℹ️" },
+          { mapping_comments: "Mapping Comment" },
           { first_last_name: "Mapper" },
           { count_of_resources_affected: "Resource Count" },
           { author: "Mapper" },
@@ -802,16 +806,17 @@
       }}
       columnWidths={[
         { object: { id: "code", value: 192.6640625 } },
-        { object: { id: "additional_data", value: 42.5390625 } },
         { object: { id: "__retool__action_list", value: 211 } },
         { object: { id: "target_concept_display", value: 217 } },
         { object: { id: "count_of_resources_affected", value: 117 } },
         { object: { id: "target_concept_code", value: 159 } },
-        { object: { id: "display", value: 417.0390625 } },
         { object: { id: "comments", value: 367 } },
         { object: { id: "review_comment", value: 151 } },
         { object: { id: "additional_context", value: 146 } },
         { object: { id: "assigned_mapper", value: 144 } },
+        { object: { id: "mapping_comments", value: 120.01736450195312 } },
+        { object: { id: "display", value: 383.0312805175781 } },
+        { object: { id: "additional_data", value: 48.99652862548828 } },
       ]}
       customButtonName=""
       data="{{ discussion_concepts.data}}"
