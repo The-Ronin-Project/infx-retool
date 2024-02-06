@@ -480,6 +480,7 @@ return formatDataAsArray(data)"
     query={include("./lib/source_term_additional_info.sql", "string")}
     resourceDisplayName="Clinical Content PostgresSQL DB"
     resourceName="dc8029bc-3980-4836-841e-776c64eeca49"
+    runWhenModelUpdates={false}
     transformer="// type your code here
 // example: return formatDataAsArray(data).filter(row => row.quantity > 20)
 return data"
@@ -532,6 +533,7 @@ return data"
     query={include("./lib/load_depends_on_data.sql", "string")}
     resourceDisplayName="Clinical Content PostgresSQL DB"
     resourceName="dc8029bc-3980-4836-841e-776c64eeca49"
+    runWhenModelUpdates={false}
     warningCodes={[]}
   />
 </GlobalFunctions>
