@@ -51,7 +51,6 @@
       labels="{{ item.first_last_name }}"
       overlayMaxHeight={375}
       placeholder="Select User"
-      showClear={true}
       showSelectionIndicator={true}
       tooltipByIndex=""
       value="{{getUserMatch.data.uuid[0]}}"
