@@ -2,7 +2,7 @@
   "approve_2": {
     "container": "tabbedContainer1",
     "subcontainer": "2e213",
-    "row": 30.8,
+    "row": 43.2,
     "col": 6,
     "height": 1,
     "width": 2
@@ -16,7 +16,7 @@
     "width": 2
   },
   "bugReporting1": {
-    "row": 0.2,
+    "row": 53,
     "col": 3,
     "height": 2.4,
     "width": 9
@@ -36,7 +36,7 @@
   "disapprove_2": {
     "container": "tabbedContainer1",
     "subcontainer": "2e213",
-    "row": 30.8,
+    "row": 43.2,
     "col": 8,
     "height": 1,
     "width": 2
@@ -59,7 +59,7 @@
   "hold_button": {
     "container": "tabbedContainer1",
     "subcontainer": "2e213",
-    "row": 30.8,
+    "row": 43.2,
     "col": 10,
     "height": 1,
     "width": 2
@@ -75,14 +75,28 @@
   "jsonExplorer1": {
     "container": "tabbedContainer1",
     "subcontainer": "2e213",
-    "row": 15,
+    "row": 19.4,
     "height": 13,
+    "width": 12
+  },
+  "jsonExplorer2": {
+    "container": "tabbedContainer1",
+    "subcontainer": "2e213",
+    "row": 14.2,
+    "height": 2,
     "width": 12
   },
   "mapper_selection": {
     "container": "container1",
     "subcontainer": "5949d",
     "height": 1,
+    "width": 12
+  },
+  "medicationAdditionalContext1": {
+    "container": "tabbedContainer1",
+    "subcontainer": "2e213",
+    "row": 16.2,
+    "height": 3.2,
     "width": 12
   },
   "note": {
@@ -108,14 +122,14 @@
   "review_comment_all": {
     "container": "tabbedContainer1",
     "subcontainer": "2e213",
-    "row": 28.6,
+    "row": 42.2,
     "height": 1,
     "width": 12
   },
   "review_queue": {
     "container": "tabbedContainer1",
     "subcontainer": "2e213",
-    "row": 4.8,
+    "row": 4.2,
     "height": 10,
     "width": 12
   },

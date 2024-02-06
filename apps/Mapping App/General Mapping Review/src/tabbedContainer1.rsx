@@ -476,7 +476,6 @@
         { object: { id: "display", value: 436 } },
         { object: { id: "__retool__action_list", value: 124 } },
         { object: { id: "count_of_resources_affected", value: 119 } },
-        { object: { id: "source_display", value: 739.15625 } },
         { object: { id: "source_code", value: 253 } },
         { object: { id: "author", value: 138 } },
         { object: { id: "mapping_comments", value: 217.5 } },
@@ -487,6 +486,7 @@
         { object: { id: "assigned_reviewer", value: 145 } },
         { object: { id: "additional_data", value: 335 } },
         { object: { id: "reason_for_no_map", value: 137 } },
+        { object: { id: "source_display", value: 539.15625 } },
       ]}
       customButtonName=""
       data="{{populate_review_queue.data}}"
@@ -550,6 +550,22 @@
         showBoxShadow={false}
       />
     </TableLegacy>
+    <JSONExplorer
+      id="jsonExplorer2"
+      hidden={
+        '{{load_metadata.dataArray[0].target_value_set_uuid!="cf7f9f1a-cb07-49d1-a34d-b7ced26d8ef8"}}'
+      }
+      value="{{load_depends_on_data.data.json_result[0]}}"
+    />
+    <Module
+      id="medicationAdditionalContext1"
+      hidden={
+        '{{load_metadata.dataArray[0].target_value_set_uuid!="cf7f9f1a-cb07-49d1-a34d-b7ced26d8ef8"}}'
+      }
+      name="Medication Additional Context"
+      pageUuid="8f778080-befd-11ee-8ba3-df9a2fb4e074"
+      source_code="{{review_queue.selectedRow.data[0].code.replace(/</g, '&lt;').replace(/>/g, '&gt;')}}"
+    />
     <JSONExplorer
       id="jsonExplorer1"
       hidden="{{!(review_queue.selectedRow && review_queue.selectedRow.data[0]?.additional_data && Object.keys(review_queue.selectedRow.data[0].additional_data).length > 0)}}"
