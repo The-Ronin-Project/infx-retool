@@ -833,7 +833,7 @@
               { links: "" },
             ],
           }}
-          value="#### **Manage Terminology Versions**"
+          value="#### **Manage Terminology Versions Legacy**"
           verticalAlign="center"
         />
       </Header>
@@ -1019,6 +1019,86 @@
             method="openApp"
             params={{
               ordered: [{ uuid: "3890c4c0-0a9b-11ec-902a-57202d4ce0d0" }],
+            }}
+            pluginId=""
+            type="util"
+            waitMs="0"
+            waitType="debounce"
+          />
+        </Link>
+      </View>
+    </Container>
+    <Container
+      id="container35"
+      heightType="fixed"
+      hoistFetching={true}
+      showBody={true}
+      showHeader={true}
+      style={{ ordered: [{ headerBackground: "rgb(240, 244, 248)" }] }}
+    >
+      <Header>
+        <Button
+          id="button37"
+          _disclosedFields={{ array: [] }}
+          horizontalAlign="left"
+          iconBefore="bold/interface-file-folder"
+          style={{
+            ordered: [
+              { background: "rgba(64, 152, 215, 0.09)" },
+              { label: "rgb(64, 152, 215)" },
+            ],
+          }}
+          styleVariant="solid"
+        >
+          <Event
+            event="click"
+            method="openApp"
+            params={{
+              ordered: [{ uuid: "39347700-aacd-11ec-ae09-57783064a589" }],
+            }}
+            pluginId=""
+            type="util"
+            waitMs="0"
+            waitType="debounce"
+          />
+        </Button>
+        <Text
+          id="text77"
+          _defaultValue=""
+          _disclosedFields={{ array: [] }}
+          style={{
+            ordered: [
+              { color: "rgb(36, 59, 83)" },
+              { background: "" },
+              { links: "" },
+            ],
+          }}
+          value="#### **Manage Terminology Versions CMv5**"
+          verticalAlign="center"
+        />
+      </Header>
+      <View id="e47d5" viewKey="View 1">
+        <Text
+          id="text76"
+          _defaultValue=""
+          _disclosedFields={{ array: [] }}
+          style={{ ordered: [{ color: "rgba(36, 59, 83, 0.9)" }] }}
+          value="<p>Browse, edit, add version, or create new terminology. </p>"
+          verticalAlign="center"
+        />
+        <Link
+          id="link24"
+          _disclosedFields={{ array: [] }}
+          iconAfter="bold/interface-arrows-right-alternate"
+          showUnderline="never"
+          style={{ ordered: [{ text: "rgb(38, 128, 194)" }] }}
+          text="Open"
+        >
+          <Event
+            event="click"
+            method="openApp"
+            params={{
+              ordered: [{ uuid: "89c1636c-c6b0-11ee-829a-afcfe1c9dd09" }],
             }}
             pluginId=""
             type="util"
