@@ -4,6 +4,7 @@
   <Include src="./header.rsx" />
   <Frame
     id="$main"
+    paddingType="normal"
     sticky={false}
     style={{ ordered: [{ canvas: "#f5f5f5" }] }}
     type="main"
@@ -344,7 +345,7 @@
               { links: "" },
             ],
           }}
-          value="#### **Concept Mapping**"
+          value="#### **Concept Mapping Legacy**"
           verticalAlign="center"
         />
       </Header>
@@ -424,7 +425,7 @@
               { links: "" },
             ],
           }}
-          value="#### **Value Sets**"
+          value="#### **Value Sets Legacy**"
           verticalAlign="center"
         />
       </Header>
@@ -619,6 +620,166 @@
         </Link>
       </View>
     </Container>
+    <Container
+      id="container34"
+      heightType="fixed"
+      hoistFetching={true}
+      showBody={true}
+      showHeader={true}
+      style={{ ordered: [{ headerBackground: "rgb(240, 244, 248)" }] }}
+    >
+      <Header>
+        <Button
+          id="button36"
+          _disclosedFields={{ array: [] }}
+          horizontalAlign="left"
+          iconBefore="bold/health-medical-house"
+          style={{
+            ordered: [
+              { background: "rgba(64, 152, 215, 0.13)" },
+              { label: "rgb(64, 152, 215)" },
+            ],
+          }}
+          styleVariant="solid"
+        >
+          <Event
+            event="click"
+            method="openApp"
+            params={{
+              ordered: [{ uuid: "2e4206c4-2228-11ec-99aa-e782eefccea2" }],
+            }}
+            pluginId=""
+            type="util"
+            waitMs="0"
+            waitType="debounce"
+          />
+        </Button>
+        <Text
+          id="text75"
+          _defaultValue=""
+          _disclosedFields={{ array: [] }}
+          style={{
+            ordered: [
+              { color: "rgb(36, 59, 83)" },
+              { background: "" },
+              { links: "" },
+            ],
+          }}
+          value="#### **Value Sets CMv5**"
+          verticalAlign="center"
+        />
+      </Header>
+      <View id="e47d5" viewKey="View 1">
+        <Text
+          id="text74"
+          _defaultValue=""
+          _disclosedFields={{ array: [] }}
+          style={{ ordered: [{ color: "rgba(36, 59, 83, 0.9)" }] }}
+          value="<p>Browse, create, duplicate value sets. Navigate to versions. Generate and view expansions. </p>"
+          verticalAlign="center"
+        />
+        <Link
+          id="link23"
+          _disclosedFields={{ array: [] }}
+          iconAfter="bold/interface-arrows-right-alternate"
+          showUnderline="never"
+          style={{ ordered: [{ text: "rgb(38, 128, 194)" }] }}
+          text="Open"
+        >
+          <Event
+            event="click"
+            method="openApp"
+            params={{
+              ordered: [{ uuid: "618808d6-c658-11ee-b657-a3a078b45c0d" }],
+            }}
+            pluginId=""
+            type="util"
+            waitMs="0"
+            waitType="debounce"
+          />
+        </Link>
+      </View>
+    </Container>
+    <Container
+      id="container33"
+      heightType="fixed"
+      hoistFetching={true}
+      showBody={true}
+      showHeader={true}
+      style={{ ordered: [{ headerBackground: "rgb(240, 244, 248)" }] }}
+    >
+      <Header>
+        <Button
+          id="button35"
+          _disclosedFields={{ array: [] }}
+          horizontalAlign="left"
+          iconBefore="bold/health-medical-house"
+          style={{
+            ordered: [
+              { background: "rgba(64, 152, 215, 0.13)" },
+              { label: "rgb(64, 152, 215)" },
+            ],
+          }}
+          styleVariant="solid"
+        >
+          <Event
+            event="click"
+            method="openApp"
+            params={{
+              ordered: [{ uuid: "35347ac0-9bf4-11ec-bea5-53c1223dcd2f" }],
+            }}
+            pluginId=""
+            type="util"
+            waitMs="0"
+            waitType="debounce"
+          />
+        </Button>
+        <Text
+          id="text73"
+          _defaultValue=""
+          _disclosedFields={{ array: [] }}
+          style={{
+            ordered: [
+              { color: "rgb(36, 59, 83)" },
+              { background: "" },
+              { links: "" },
+            ],
+          }}
+          value="#### **Concept Mapping CMv5**"
+          verticalAlign="center"
+        />
+      </Header>
+      <View id="e47d5" viewKey="View 1">
+        <Text
+          id="text72"
+          _defaultValue=""
+          _disclosedFields={{ array: [] }}
+          style={{ ordered: [{ color: "rgba(36, 59, 83, 0.9)" }] }}
+          value="<p>Browse, create, duplicate concept maps. Navigate to versions, manage assignmnets, map concepts, review mappings. </p>"
+          verticalAlign="center"
+        />
+        <Link
+          id="link22"
+          _disclosedFields={{ array: [] }}
+          iconAfter="bold/interface-arrows-right-alternate"
+          showUnderline="never"
+          style={{ ordered: [{ text: "rgb(38, 128, 194)" }] }}
+          text="Open"
+        >
+          <Event
+            event="click"
+            method="openApp"
+            params={{
+              ordered: [{ uuid: "602561f8-c655-11ee-be5b-4bf2ff6362e9" }],
+            }}
+            pluginId=""
+            type="util"
+            waitMs="0"
+            waitType="debounce"
+          />
+        </Link>
+      </View>
+    </Container>
     <Text
       id="text61"
       _defaultValue=""
@@ -672,7 +833,7 @@
               { links: "" },
             ],
           }}
-          value="#### **Manage Terminology Versions**"
+          value="#### **Manage Terminology Versions Legacy**"
           verticalAlign="center"
         />
       </Header>
@@ -858,6 +1019,86 @@
             method="openApp"
             params={{
               ordered: [{ uuid: "3890c4c0-0a9b-11ec-902a-57202d4ce0d0" }],
+            }}
+            pluginId=""
+            type="util"
+            waitMs="0"
+            waitType="debounce"
+          />
+        </Link>
+      </View>
+    </Container>
+    <Container
+      id="container35"
+      heightType="fixed"
+      hoistFetching={true}
+      showBody={true}
+      showHeader={true}
+      style={{ ordered: [{ headerBackground: "rgb(240, 244, 248)" }] }}
+    >
+      <Header>
+        <Button
+          id="button37"
+          _disclosedFields={{ array: [] }}
+          horizontalAlign="left"
+          iconBefore="bold/interface-file-folder"
+          style={{
+            ordered: [
+              { background: "rgba(64, 152, 215, 0.09)" },
+              { label: "rgb(64, 152, 215)" },
+            ],
+          }}
+          styleVariant="solid"
+        >
+          <Event
+            event="click"
+            method="openApp"
+            params={{
+              ordered: [{ uuid: "39347700-aacd-11ec-ae09-57783064a589" }],
+            }}
+            pluginId=""
+            type="util"
+            waitMs="0"
+            waitType="debounce"
+          />
+        </Button>
+        <Text
+          id="text77"
+          _defaultValue=""
+          _disclosedFields={{ array: [] }}
+          style={{
+            ordered: [
+              { color: "rgb(36, 59, 83)" },
+              { background: "" },
+              { links: "" },
+            ],
+          }}
+          value="#### **Manage Terminology Versions CMv5**"
+          verticalAlign="center"
+        />
+      </Header>
+      <View id="e47d5" viewKey="View 1">
+        <Text
+          id="text76"
+          _defaultValue=""
+          _disclosedFields={{ array: [] }}
+          style={{ ordered: [{ color: "rgba(36, 59, 83, 0.9)" }] }}
+          value="<p>Browse, edit, add version, or create new terminology. </p>"
+          verticalAlign="center"
+        />
+        <Link
+          id="link24"
+          _disclosedFields={{ array: [] }}
+          iconAfter="bold/interface-arrows-right-alternate"
+          showUnderline="never"
+          style={{ ordered: [{ text: "rgb(38, 128, 194)" }] }}
+          text="Open"
+        >
+          <Event
+            event="click"
+            method="openApp"
+            params={{
+              ordered: [{ uuid: "89c1636c-c6b0-11ee-829a-afcfe1c9dd09" }],
             }}
             pluginId=""
             type="util"
