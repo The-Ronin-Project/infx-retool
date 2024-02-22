@@ -36,19 +36,6 @@
       label="Show Filters"
     />
     <Select
-      id="sort_direction_select"
-      emptyMessage="No options"
-      hideLabel={true}
-      itemMode="static"
-      overlayMaxHeight={375}
-      placeholder="Select an option"
-      showSelectionIndicator={true}
-      value="ASC"
-    >
-      <Option id="c657b" label="Ascending" value="ASC" />
-      <Option id="c4dc0" label="Descending" value="DESC" />
-    </Select>
-    <Select
       id="sorting_column_select"
       allowDeselect={true}
       emptyMessage="No options"
@@ -125,6 +112,19 @@
         label="No Map Reason"
         value="reason_for_no_map"
       />
+    </Select>
+    <Select
+      id="sort_direction_select"
+      emptyMessage="No options"
+      hideLabel={true}
+      itemMode="static"
+      overlayMaxHeight={375}
+      placeholder="Select an option"
+      showSelectionIndicator={true}
+      value="ASC"
+    >
+      <Option id="c657b" label="Ascending" value="ASC" />
+      <Option id="c4dc0" label="Descending" value="DESC" />
     </Select>
     <TableLegacy
       id="mapped_concepts"
