@@ -64,7 +64,7 @@
                 { actionButtonInternalUrlQuery: "" },
                 { actionButtonUrl: "" },
                 { actionButtonNewWindow: false },
-                { actionButtonDisabled: "" },
+                { actionButtonDisabled: "true" },
               ],
             },
             {
