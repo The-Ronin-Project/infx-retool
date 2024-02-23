@@ -82,6 +82,22 @@
       tooltipByIndex=""
       values="{{ item.user_uuid }}"
     />
+    <Button
+      id="hold_button2"
+      _disclosedFields={{ array: [] }}
+      styleVariant="solid"
+      text="Save for discussion All Selected"
+    >
+      <Event
+        event="click"
+        method="trigger"
+        params={{ ordered: [] }}
+        pluginId="save_all_for_discussion"
+        type="datasource"
+        waitMs="0"
+        waitType="debounce"
+      />
+    </Button>
     <SplitButton
       id="relationship_splitButton"
       _colorByIndex={["", "", ""]}
@@ -177,22 +193,6 @@
         method="trigger"
         params={{ ordered: [] }}
         pluginId="disapprove_all_query_part1"
-        type="datasource"
-        waitMs="0"
-        waitType="debounce"
-      />
-    </Button>
-    <Button
-      id="hold_button2"
-      _disclosedFields={{ array: [] }}
-      styleVariant="solid"
-      text="Save for discussion All Selected"
-    >
-      <Event
-        event="click"
-        method="trigger"
-        params={{ ordered: [] }}
-        pluginId="save_all_for_discussion"
         type="datasource"
         waitMs="0"
         waitType="debounce"
@@ -476,6 +476,7 @@
         { object: { id: "display", value: 436 } },
         { object: { id: "__retool__action_list", value: 124 } },
         { object: { id: "count_of_resources_affected", value: 119 } },
+        { object: { id: "source_display", value: 739.15625 } },
         { object: { id: "source_code", value: 253 } },
         { object: { id: "author", value: 138 } },
         { object: { id: "mapping_comments", value: 217.5 } },
@@ -486,7 +487,6 @@
         { object: { id: "assigned_reviewer", value: 145 } },
         { object: { id: "additional_data", value: 335 } },
         { object: { id: "reason_for_no_map", value: 137 } },
-        { object: { id: "source_display", value: 539.15625 } },
       ]}
       customButtonName=""
       data="{{populate_review_queue.data}}"
@@ -551,24 +551,7 @@
       />
     </TableLegacy>
     <JSONExplorer
-      id="jsonExplorer2"
-      hidden={
-        '{{load_metadata.dataArray[0].target_value_set_uuid!="cf7f9f1a-cb07-49d1-a34d-b7ced26d8ef8"}}'
-      }
-      value="{{load_depends_on_data.data.json_result[0]}}"
-    />
-    <Module
-      id="medicationAdditionalContext1"
-      hidden={
-        '{{load_metadata.dataArray[0].target_value_set_uuid!="cf7f9f1a-cb07-49d1-a34d-b7ced26d8ef8"}}'
-      }
-      name="Medication Additional Context"
-      pageUuid="8f778080-befd-11ee-8ba3-df9a2fb4e074"
-      source_code="{{review_queue.selectedRow.data[0].code.replace(/</g, '&lt;').replace(/>/g, '&gt;')}}"
-    />
-    <JSONExplorer
       id="jsonExplorer1"
-      hidden="{{!(review_queue.selectedRow && review_queue.selectedRow.data[0]?.additional_data && Object.keys(review_queue.selectedRow.data[0].additional_data).length > 0)}}"
       value="{{review_queue.selectedRow.data[0].additional_data}}"
     />
     <TextArea
@@ -608,7 +591,7 @@
         event="click"
         method="trigger"
         params={{ ordered: [] }}
-        pluginId="disapprove_all_query_part1"
+        pluginId="disapprove_all_query_part2"
         type="datasource"
         waitMs="0"
         waitType="debounce"
@@ -644,15 +627,14 @@
         "code",
         "display",
         "additional_data",
-        "mapping_comments",
+        "comments",
         "review_comment",
+        "mapper",
         "uuid",
         "additional_context",
         "target_concept_code",
         "target_concept_display",
         "count_of_resources_affected",
-        "author",
-        "assigned_mapper",
       ]}
       _columnSummaryTypes={{
         ordered: [
@@ -672,7 +654,7 @@
           { mapping_group: false },
           { system: false },
           { assigned_mapper: false },
-          { comments: false },
+          { comments: true },
           { last_name: false },
           { map_status: false },
           { assigned_reviewer: false },
@@ -745,7 +727,6 @@
           { mapper: "" },
           { display: "" },
           { additional_data: "" },
-          { mapping_comments: "" },
           { first_last_name: "" },
           { count_of_resources_affected: "" },
           { author: "" },
@@ -781,7 +762,6 @@
           { mapper: "Mapper" },
           { display: "Source Display" },
           { additional_data: "ℹ️" },
-          { mapping_comments: "Mapping Comment" },
           { first_last_name: "Mapper" },
           { count_of_resources_affected: "Resource Count" },
           { author: "Mapper" },
@@ -822,17 +802,16 @@
       }}
       columnWidths={[
         { object: { id: "code", value: 192.6640625 } },
+        { object: { id: "additional_data", value: 42.5390625 } },
         { object: { id: "__retool__action_list", value: 211 } },
         { object: { id: "target_concept_display", value: 217 } },
         { object: { id: "count_of_resources_affected", value: 117 } },
         { object: { id: "target_concept_code", value: 159 } },
+        { object: { id: "display", value: 417.0390625 } },
         { object: { id: "comments", value: 367 } },
         { object: { id: "review_comment", value: 151 } },
         { object: { id: "additional_context", value: 146 } },
         { object: { id: "assigned_mapper", value: 144 } },
-        { object: { id: "mapping_comments", value: 120.01736450195312 } },
-        { object: { id: "display", value: 383.0312805175781 } },
-        { object: { id: "additional_data", value: 48.99652862548828 } },
       ]}
       customButtonName=""
       data="{{ discussion_concepts.data}}"

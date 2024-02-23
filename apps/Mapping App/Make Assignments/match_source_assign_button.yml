@@ -1,0 +1,42 @@
+id: match_source_assign_button
+type: widget
+subtype: ButtonWidget2
+template:
+  ordered:
+    - horizontalAlign: stretch
+    - clickable: false
+    - iconAfter: ''
+    - submitTargetId: null
+    - hidden: false
+    - text: Make Assignments
+    - showInEditor: false
+    - tooltipText: ''
+    - styleVariant: solid
+    - submit: false
+    - iconBefore: ''
+    - events:
+        - ordered:
+            - event: click
+            - type: datasource
+            - method: trigger
+            - pluginId: display_match_assign
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - loading: false
+    - loaderPosition: auto
+    - disabled: '{{mapper_select2.value == null || match_query.value == ''''}}'
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: assignment_groups_tabbedContainer
+    subcontainer: 73c59
+    row: 1.2
+    col: 7
+    height: 1
+    width: 5
+createdAt: 2022-12-21T22:01:25.610Z
