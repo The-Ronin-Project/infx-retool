@@ -240,7 +240,6 @@
       dynamicRowHeights={true}
       events={[]}
       overflowType="scroll"
-      showAddRowButton={true}
       showBoxShadow={false}
       showClearSelection={true}
     />
