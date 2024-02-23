@@ -83,11 +83,10 @@
       id="mapping_queue"
       _columns={[
         "uuid",
-        "code",
+        "code_simple",
+        "code_jsonb",
         "display",
-        "system",
         "comments",
-        "additional_context",
         "map_status",
         "concept_map_version_uuid",
         "assigned_mapper",
@@ -95,6 +94,11 @@
         "no_map",
         "reason_for_no_map",
         "mapping_group",
+        "code_schema",
+        "system_uuid",
+        "previous_version_context",
+        "custom_terminology_code_uuid",
+        "save_for_discussion",
       ]}
       _columnSummaryTypes={{
         ordered: [{ "Custom Column 2": "" }, { display: "" }, { code: "" }],
