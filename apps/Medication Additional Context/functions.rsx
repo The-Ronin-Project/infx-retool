@@ -8,6 +8,7 @@
     resourceDisplayName="INFX Internal Tools API"
     resourceName="a00335cd-bd3b-4d98-8af4-7ff590ce95e8"
     resourceTypeOverride=""
+    showFailureToaster={false}
     transformer="// Query results are available as the `data` variable
 return data
 "
