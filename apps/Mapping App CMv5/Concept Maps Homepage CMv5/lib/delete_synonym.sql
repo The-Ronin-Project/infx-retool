@@ -1,0 +1,1 @@
+delete from resource_synonyms where uuid={{synonym_table.selectedRow.data.uuid}}
