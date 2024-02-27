@@ -30,7 +30,6 @@
   },
   "conceptMapHeaderCMv1": {
     "subcontainer": "header",
-    "row": 0,
     "height": 0.8,
     "width": 12
   },
