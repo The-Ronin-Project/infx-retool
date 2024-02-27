@@ -1,0 +1,1 @@
+delete from value_sets.value_set_rule where uuid={{rules_table.selectedRow.data.uuid}}
