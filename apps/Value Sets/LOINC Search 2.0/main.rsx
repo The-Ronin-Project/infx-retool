@@ -1,6 +1,6 @@
 <App>
   <Include src="./functions.rsx" />
-  <Frame id="$main" sticky={false} type="main">
+  <Frame id="$main" paddingType="normal" sticky={false} type="main">
     <Select
       id="loinc_version_select"
       allowDeselect={true}
@@ -49,7 +49,7 @@
         showActions={true}
         showSelectionIndicator={true}
         value=""
-        values="{{ item }}"
+        values="{{ item.component }}"
       />
     </ContainerWidget>
     <ContainerWidget id="container3">

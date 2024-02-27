@@ -222,6 +222,7 @@ return data"
   />
   <JavascriptQuery
     id="search_component"
+    isMultiplayerEdited={false}
     query={include("./lib/search_component.js", "string")}
     queryFailureConditions="[]"
     resourceName="JavascriptQuery"
@@ -230,15 +231,20 @@ return data"
 // example: return formatDataAsArray(data).filter(row => row.quantity > 20)
 return data"
   />
-  <ElasticSearchQuery
+  <RESTQuery
     id="search_component_advanced"
+    body={
+      '[{"key":"query","value":"{bool: {        must: [          {            simple_query_string: {              fields: {{related_names.value ? [\\"component\\", \\"related_names\\"] : [\\"component\\"]}},              query: {{component_search.value}}            }          }        ],        filter: [          { \\"term\\":  { \\"terminology_version_uuid.keyword\\": {{loinc_version_select.value}} }}        ]      }}"}]'
+    }
+    bodyType="json"
     enableTransformer={true}
-    query={include("./lib/search_component_advanced.json5", "string")}
-    resourceDisplayName="ElasticSearch"
-    resourceName="3e68115b-9776-4956-86b4-f468d2d1f836"
-    transformer="// type your code here
-// example: return formatDataAsArray(data).filter(row => row.quantity > 20)
-return data.hits.hits.map(hit => hit['_source'].component)"
+    isMultiplayerEdited={false}
+    query="loinc_components/_search?size=500"
+    resourceDisplayName="OpenSearch API"
+    resourceName="cd5755b4-f1e3-43ed-9532-894ef58a329d"
+    resourceTypeOverride=""
+    transformer="// Query results are available as the `data` variable
+return data.hits.hits.map(hit => hit['_source']);"
   >
     <Event
       event="success"
@@ -249,16 +255,21 @@ return data.hits.hits.map(hit => hit['_source'].component)"
       waitMs="0"
       waitType="debounce"
     />
-  </ElasticSearchQuery>
-  <ElasticSearchQuery
+  </RESTQuery>
+  <RESTQuery
     id="search_component_basic"
+    body={
+      '[{"key":"query","value":"{ bool: {        must: [          {            multi_match: {              type: {{search_type.value == \'Prefix\'? \\"bool_prefix\\": \\"best_fields\\"}}, fields: {{related_names.value ? [\\"component\\", \\"related_names\\"] : [\\"component\\"]}},              query: {{component_search.value}}            }          }        ],        filter: [          { \\"term\\":  { \\"terminology_version_uuid.keyword\\": {{loinc_version_select.value}} }}        ]      }}"}]'
+    }
+    bodyType="json"
     enableTransformer={true}
-    query={include("./lib/search_component_basic.json5", "string")}
-    resourceDisplayName="ElasticSearch"
-    resourceName="3e68115b-9776-4956-86b4-f468d2d1f836"
-    transformer="// type your code here
-// example: return formatDataAsArray(data).filter(row => row.quantity > 20)
-return data.hits.hits.map(hit => hit['_source'].component)"
+    isMultiplayerEdited={false}
+    query="loinc_components/_search?size=500"
+    resourceDisplayName="OpenSearch API"
+    resourceName="cd5755b4-f1e3-43ed-9532-894ef58a329d"
+    resourceTypeOverride=""
+    transformer="// Query results are available as the `data` variable
+return data.hits.hits.map(hit => hit['_source']);"
   >
     <Event
       event="success"
@@ -269,7 +280,7 @@ return data.hits.hits.map(hit => hit['_source'].component)"
       waitMs="0"
       waitType="debounce"
     />
-  </ElasticSearchQuery>
+  </RESTQuery>
   <SqlQueryUnified
     id="system_options"
     query={include("./lib/system_options.sql", "string")}
