@@ -262,14 +262,22 @@
     />
     <Text id="text10" value="**Depends On Data**" verticalAlign="center" />
     <JSONExplorer
-      id="jsonExplorer2"
-      value="{{load_depends_on_data.data.json_result[0]}}"
+      id="depends_on_jsonExplorer"
+      hidden="{{  
+  get_depends_on.data.depends_on_property.length === 0 &&  
+  get_depends_on.data.depends_on_system.length === 0 &&  
+  get_depends_on.data.depends_on_display.length === 0 &&  
+  get_depends_on.data.depends_on_value_schema.length === 0 &&  
+  get_depends_on.data.depends_on_value_simple.length === 0 &&  
+  get_depends_on.data.depends_on_value_jsonb.length === 0  
+}} "
+      value="{{get_depends_on.data}}"
     />
     <Text id="text11" value="**Additional Info**" verticalAlign="center" />
     <JSONExplorer
-      id="jsonExplorer1"
-      hidden=""
-      value="{{source_term_additional_info.data.additional_data[0]}}"
+      id="additional_data_jsonExplorer"
+      hidden="{{!get_additional_data.data.additional_data[0] == null}}"
+      value="{{get_additional_data.data}}"
     />
     <TextArea
       id="mapping_comments"
