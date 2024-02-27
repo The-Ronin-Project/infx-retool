@@ -1,0 +1,1 @@
+select * from concept_maps.concept_map where uuid = {{urlparams.uuid}}
