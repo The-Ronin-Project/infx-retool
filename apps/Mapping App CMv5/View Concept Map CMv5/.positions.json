@@ -1,0 +1,264 @@
+{
+  "bugReporting1": {
+    "row": 44,
+    "col": 4,
+    "height": 2.4,
+    "width": 8
+  },
+  "button1": {
+    "row": 0.8,
+    "col": 9,
+    "height": 1
+  },
+  "conceptMapHeaderCMv1": {
+    "row": 0,
+    "height": 0.8,
+    "width": 12
+  },
+  "containerTitle1": {
+    "container": "filter_container",
+    "rowGroup": "header",
+    "height": 0.6,
+    "width": 12
+  },
+  "display_code_input": {
+    "container": "filter_container",
+    "subcontainer": "fef3f",
+    "row": 6.4,
+    "col": 3,
+    "height": 1
+  },
+  "divider1": {
+    "container": "filter_container",
+    "subcontainer": "fef3f",
+    "row": 3.2,
+    "col": 7,
+    "height": 0.2,
+    "width": 5
+  },
+  "divider2": {
+    "container": "filter_container",
+    "subcontainer": "fef3f",
+    "row": 7.6,
+    "height": 0.2,
+    "width": 6
+  },
+  "divider3": {
+    "container": "filter_container",
+    "subcontainer": "fef3f",
+    "row": 5.4,
+    "col": 7,
+    "height": 0.2,
+    "width": 5
+  },
+  "divider4": {
+    "container": "filter_container",
+    "subcontainer": "fef3f",
+    "row": 10.8,
+    "col": 7,
+    "height": 0.2,
+    "width": 5
+  },
+  "filter_container": {
+    "row": 1.8,
+    "height": 0.2,
+    "width": 12
+  },
+  "listbox1": {
+    "container": "filter_container",
+    "subcontainer": "fef3f",
+    "row": 0.6,
+    "height": 4
+  },
+  "listbox2": {
+    "container": "filter_container",
+    "subcontainer": "fef3f",
+    "row": 5.2,
+    "height": 1
+  },
+  "listbox3": {
+    "container": "filter_container",
+    "subcontainer": "fef3f",
+    "row": 2.8,
+    "height": 1
+  },
+  "listbox4": {
+    "container": "filter_container",
+    "subcontainer": "fef3f",
+    "row": 6.4,
+    "height": 1
+  },
+  "listbox5": {
+    "container": "filter_container",
+    "subcontainer": "fef3f",
+    "row": 1.6,
+    "height": 1
+  },
+  "map_status_select": {
+    "container": "filter_container",
+    "subcontainer": "fef3f",
+    "row": 1.2,
+    "col": 7,
+    "height": 1,
+    "width": 5
+  },
+  "mapped_concepts": {
+    "row": 3,
+    "height": 22.6,
+    "width": 12
+  },
+  "mapper_select": {
+    "container": "filter_container",
+    "subcontainer": "fef3f",
+    "row": 3.4,
+    "col": 7,
+    "height": 1,
+    "width": 5
+  },
+  "mapping_comments_input": {
+    "container": "filter_container",
+    "subcontainer": "fef3f",
+    "row": 7.6,
+    "col": 7,
+    "height": 1,
+    "width": 5
+  },
+  "mapping_group_select": {
+    "container": "filter_container",
+    "subcontainer": "fef3f",
+    "row": 5.6,
+    "col": 7,
+    "height": 1,
+    "width": 5
+  },
+  "no_map_reason_select": {
+    "container": "filter_container",
+    "subcontainer": "fef3f",
+    "row": 9.8,
+    "height": 1,
+    "width": 6
+  },
+  "relationship_filter_select": {
+    "container": "filter_container",
+    "subcontainer": "fef3f",
+    "row": 4,
+    "height": 1,
+    "width": 6
+  },
+  "review_comment_input": {
+    "container": "filter_container",
+    "subcontainer": "fef3f",
+    "row": 8.6,
+    "col": 7,
+    "height": 1,
+    "width": 5
+  },
+  "review_status_select": {
+    "container": "filter_container",
+    "subcontainer": "fef3f",
+    "row": 2.2,
+    "col": 7,
+    "height": 1,
+    "width": 5
+  },
+  "reviewer_select": {
+    "container": "filter_container",
+    "subcontainer": "fef3f",
+    "row": 4.4,
+    "col": 7,
+    "height": 1,
+    "width": 5
+  },
+  "show_filters": {
+    "row": 2,
+    "height": 0.6
+  },
+  "show_only_mapped": {
+    "container": "filter_container",
+    "subcontainer": "fef3f",
+    "row": 8.8,
+    "height": 0.6,
+    "width": 5
+  },
+  "show_only_unmapped": {
+    "container": "filter_container",
+    "subcontainer": "fef3f",
+    "row": 8,
+    "height": 0.6,
+    "width": 5
+  },
+  "sort_direction_select": {
+    "row": 2,
+    "col": 11,
+    "height": 1,
+    "width": 1
+  },
+  "sorting_column_select": {
+    "row": 2,
+    "col": 8,
+    "height": 1
+  },
+  "source_code_jsonb_filter_input": {
+    "container": "filter_container",
+    "subcontainer": "fef3f",
+    "row": 1.6,
+    "col": 3,
+    "height": 1
+  },
+  "source_code_simple_filter_input": {
+    "container": "filter_container",
+    "subcontainer": "fef3f",
+    "row": 0.6,
+    "col": 3,
+    "height": 1
+  },
+  "source_comments_input": {
+    "container": "filter_container",
+    "subcontainer": "fef3f",
+    "row": 9.6,
+    "col": 7,
+    "height": 1,
+    "width": 5
+  },
+  "source_display_filter_input": {
+    "container": "filter_container",
+    "subcontainer": "fef3f",
+    "row": 2.8,
+    "col": 3,
+    "height": 1
+  },
+  "target_code_input": {
+    "container": "filter_container",
+    "subcontainer": "fef3f",
+    "row": 5.2,
+    "col": 3,
+    "height": 1
+  },
+  "text17": {
+    "container": "filter_container",
+    "subcontainer": "fef3f",
+    "row": 6.6,
+    "col": 7,
+    "height": 1,
+    "width": 2
+  },
+  "text19": {
+    "container": "filter_container",
+    "subcontainer": "fef3f",
+    "col": 7,
+    "height": 0.6
+  },
+  "text20": {
+    "container": "filter_container",
+    "subcontainer": "fef3f",
+    "row": 0.6,
+    "col": 7,
+    "height": 0.6,
+    "width": 5
+  },
+  "text3": {
+    "container": "filter_container",
+    "subcontainer": "fef3f",
+    "height": 0.6
+  }
+}
