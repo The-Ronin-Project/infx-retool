@@ -1,0 +1,1 @@
+select * from value_sets.value_set where uuid={{urlparams.uuid}}
