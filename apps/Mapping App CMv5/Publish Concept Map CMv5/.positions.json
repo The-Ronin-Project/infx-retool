@@ -1,0 +1,27 @@
+{
+  "alert1": {
+    "height": 1.4,
+    "width": 12
+  },
+  "conceptMapHeaderCMv1": {
+    "subcontainer": "header",
+    "row": 0,
+    "height": 0.8,
+    "width": 12
+  },
+  "metadata_table": {
+    "row": 5.2,
+    "height": 2,
+    "width": 12
+  },
+  "publish": {
+    "row": 2.4,
+    "height": 1.6,
+    "width": 5
+  },
+  "text1": {
+    "row": 1.8,
+    "height": 0.6,
+    "width": 5
+  }
+}

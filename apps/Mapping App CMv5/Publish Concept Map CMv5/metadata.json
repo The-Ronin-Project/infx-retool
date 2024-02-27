@@ -1,0 +1,22 @@
+{
+  "toolscriptVersion": "1.0.0",
+  "version": "43.0.9",
+  "pageUuid": "ed4ff110-c655-11ee-9bef-93c6737e26b0",
+  "appTemplate": {
+    "appMaxWidth": "1560px",
+    "experimentalFeatures": {
+      "object": {
+        "sourceControlTemplateDehydration": false,
+        "multiplayerEditingEnabled": false
+      }
+    },
+    "experimentalPerfFeatures": {
+      "object": {
+        "serverDepGraphEnabled": false,
+        "useRuntimeV2": false,
+        "runtimeV2OptOut": false
+      }
+    },
+    "version": "3.16.1"
+  }
+}
