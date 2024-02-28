@@ -144,7 +144,26 @@ return data"
     triggersOnSuccess={[]}
     updateSetValueDynamically={true}
     warningCodes={[]}
-  />
+  >
+    <Event
+      event="success"
+      method="trigger"
+      params={{ ordered: [] }}
+      pluginId="has_code_jsonb"
+      type="datasource"
+      waitMs="0"
+      waitType="debounce"
+    />
+    <Event
+      event="success"
+      method="trigger"
+      params={{ ordered: [] }}
+      pluginId="has_code_simple"
+      type="datasource"
+      waitMs="0"
+      waitType="debounce"
+    />
+  </SqlQueryUnified>
   <SqlQueryUnified
     id="load_expansion_metadata"
     query={include("./lib/load_expansion_metadata.sql", "string")}
@@ -338,5 +357,15 @@ return data"
 // example: return formatDataAsArray(data).filter(row => row.quantity > 20)
 return data"
     warningCodes={[]}
+  />
+  <JavascriptQuery
+    id="has_code_simple"
+    query={include("./lib/has_code_simple.js", "string")}
+    resourceName="JavascriptQuery"
+  />
+  <JavascriptQuery
+    id="has_code_jsonb"
+    query={include("./lib/has_code_jsonb.js", "string")}
+    resourceName="JavascriptQuery"
   />
 </GlobalFunctions>

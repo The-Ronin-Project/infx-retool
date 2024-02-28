@@ -1,0 +1,1 @@
+return load_expansion.data.code_simple.some(element => element !== null);

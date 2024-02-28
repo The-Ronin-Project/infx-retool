@@ -493,11 +493,17 @@
         "custom_terminology_uuid",
         "fhir_terminology_uuid",
       ]}
-      _columnSummaryTypes={{ ordered: [{ code_schema: "" }] }}
-      _columnSummaryValues={{ ordered: [{ code_schema: "" }] }}
+      _columnSummaryTypes={{
+        ordered: [{ code_schema: "" }, { code_simple: "" }],
+      }}
+      _columnSummaryValues={{
+        ordered: [{ code_schema: "" }, { code_simple: "" }],
+      }}
       _columnVisibility={{
         ordered: [
           { display: true },
+          { code_simple: "{{has_code_simple.data}}" },
+          { code_jsonb: "{{has_code_jsonb.data}}" },
           { name: true },
           { sales: true },
           { code: true },
@@ -516,7 +522,11 @@
       _unfilteredSelectedIndex=""
       applyDynamicSettingsToColumnOrder={false}
       columnAlignment={{
-        ordered: [{ "Custom Column 1": "left" }, { code_schema: "left" }],
+        ordered: [
+          { "Custom Column 1": "left" },
+          { code_schema: "left" },
+          { code_simple: "left" },
+        ],
       }}
       columnAllowOverflow={{ ordered: [{ display: true }] }}
       columnColors={{
@@ -538,13 +548,14 @@
         ordered: [
           { "Custom Column 1": "button" },
           { code_schema: "SingleTagDataCell" },
+          { code_simple: "TextDataCell" },
         ],
       }}
       columnHeaderNames={{
         ordered: [
           { "Custom Column 1": "Action" },
-          { code_simple: "Source Code Simple" },
-          { code_jsonb: "Source Code jsonb" },
+          { code_simple: "Code Simple" },
+          { code_jsonb: "Code JSONB" },
         ],
       }}
       columnMappers={{
@@ -578,6 +589,7 @@
               ],
             },
           },
+          { code_simple: { ordered: [] } },
         ],
       }}
       columnTypeSpecificExtras={{
@@ -601,11 +613,11 @@
       columnWidths={[
         { object: { id: "code", value: 251.25 } },
         { object: { id: "code_schema", value: 167.5694580078125 } },
-        { object: { id: "code_simple", value: 168.59375 } },
         { object: { id: "system", value: 546.5538330078125 } },
         { object: { id: "code_jsonb", value: 242.18577575683594 } },
         { object: { id: "version", value: 151.97052001953125 } },
         { object: { id: "display", value: 693.5816040039062 } },
+        { object: { id: "code_simple", value: 277.59375 } },
       ]}
       customButtonName=""
       data="{{ load_expansion.data }}"
