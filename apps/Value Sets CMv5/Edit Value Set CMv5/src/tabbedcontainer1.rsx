@@ -613,11 +613,11 @@
       columnWidths={[
         { object: { id: "code", value: 251.25 } },
         { object: { id: "code_schema", value: 167.5694580078125 } },
-        { object: { id: "code_simple", value: 168.59375 } },
         { object: { id: "system", value: 546.5538330078125 } },
         { object: { id: "code_jsonb", value: 242.18577575683594 } },
         { object: { id: "version", value: 151.97052001953125 } },
         { object: { id: "display", value: 693.5816040039062 } },
+        { object: { id: "code_simple", value: 277.59375 } },
       ]}
       customButtonName=""
       data="{{ load_expansion.data }}"
