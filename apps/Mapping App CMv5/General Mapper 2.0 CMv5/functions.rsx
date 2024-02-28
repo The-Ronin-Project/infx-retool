@@ -145,7 +145,26 @@ return data"
 // example: return formatDataAsArray(data).filter(row => row.quantity > 20)
 return data"
     warningCodes={[]}
-  />
+  >
+    <Event
+      event="success"
+      method="trigger"
+      params={{ ordered: [] }}
+      pluginId="has_code_simple_targets"
+      type="datasource"
+      waitMs="0"
+      waitType="debounce"
+    />
+    <Event
+      event="success"
+      method="trigger"
+      params={{ ordered: [] }}
+      pluginId="has_code_jsonb_targets"
+      type="datasource"
+      waitMs="0"
+      waitType="debounce"
+    />
+  </SqlQueryUnified>
   <SqlQueryUnified
     id="load_previously_mapped_targets"
     body={
@@ -203,6 +222,24 @@ return data"
       waitMs="0"
       waitType="debounce"
     />
+    <Event
+      event="success"
+      method="trigger"
+      params={{ ordered: [] }}
+      pluginId="has_code_jsonb"
+      type="datasource"
+      waitMs="0"
+      waitType="debounce"
+    />
+    <Event
+      event="success"
+      method="trigger"
+      params={{ ordered: [] }}
+      pluginId="has_code_simple"
+      type="datasource"
+      waitMs="0"
+      waitType="debounce"
+    />
   </SqlQueryUnified>
   <SqlQueryUnified
     id="load_rejected_queue"
@@ -219,6 +256,24 @@ return data"
       method="trigger"
       params={{ ordered: [] }}
       pluginId="combined_queue_query"
+      type="datasource"
+      waitMs="0"
+      waitType="debounce"
+    />
+    <Event
+      event="success"
+      method="trigger"
+      params={{ ordered: [] }}
+      pluginId="has_code_simple"
+      type="datasource"
+      waitMs="0"
+      waitType="debounce"
+    />
+    <Event
+      event="success"
+      method="trigger"
+      params={{ ordered: [] }}
+      pluginId="has_code_jsonb"
       type="datasource"
       waitMs="0"
       waitType="debounce"
