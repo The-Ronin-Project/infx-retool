@@ -1,0 +1,1 @@
+return all_concepts.data.code_jsonb.some(element => element !== null);
