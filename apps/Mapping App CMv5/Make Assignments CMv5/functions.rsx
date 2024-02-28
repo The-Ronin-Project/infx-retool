@@ -69,7 +69,26 @@ return data"
 // example: return formatDataAsArray(data).filter(row => row.quantity > 20)
 return data"
     warningCodes={[]}
-  />
+  >
+    <Event
+      event="success"
+      method="trigger"
+      params={{ ordered: [] }}
+      pluginId="has_code_jsonb"
+      type="datasource"
+      waitMs="0"
+      waitType="debounce"
+    />
+    <Event
+      event="success"
+      method="trigger"
+      params={{ ordered: [] }}
+      pluginId="has_code_simple"
+      type="datasource"
+      waitMs="0"
+      waitType="debounce"
+    />
+  </SqlQueryUnified>
   <SqlQueryUnified
     id="get_users"
     query={include("./lib/get_users.sql", "string")}
@@ -128,7 +147,26 @@ return data"
 // example: return formatDataAsArray(data).filter(row => row.quantity > 20)
 return data"
     warningCodes={[]}
-  />
+  >
+    <Event
+      event="success"
+      method="trigger"
+      params={{ ordered: [] }}
+      pluginId="has_code_jsonb_matching"
+      type="datasource"
+      waitMs="0"
+      waitType="debounce"
+    />
+    <Event
+      event="success"
+      method="trigger"
+      params={{ ordered: [] }}
+      pluginId="has_code_simple_matching"
+      type="datasource"
+      waitMs="0"
+      waitType="debounce"
+    />
+  </SqlQueryUnified>
   <SqlQueryUnified
     id="project_metadata"
     importedQueryInputs={{
@@ -215,7 +253,26 @@ return data"
 // example: return formatDataAsArray(data).filter(row => row.quantity > 20)
 return data"
     warningCodes={[]}
-  />
+  >
+    <Event
+      event="success"
+      method="trigger"
+      params={{ ordered: [] }}
+      pluginId="has_code_jsonb_random"
+      type="datasource"
+      waitMs="0"
+      waitType="debounce"
+    />
+    <Event
+      event="success"
+      method="trigger"
+      params={{ ordered: [] }}
+      pluginId="has_code_simple_random"
+      type="datasource"
+      waitMs="0"
+      waitType="debounce"
+    />
+  </SqlQueryUnified>
   <SqlQueryUnified
     id="timestamp"
     query={include("./lib/timestamp.sql", "string")}
@@ -229,5 +286,35 @@ return data"
   <Function
     id="transform_query_match"
     funcBody={include("./lib/transform_query_match.js", "string")}
+  />
+  <JavascriptQuery
+    id="has_code_simple"
+    query={include("./lib/has_code_simple.js", "string")}
+    resourceName="JavascriptQuery"
+  />
+  <JavascriptQuery
+    id="has_code_jsonb"
+    query={include("./lib/has_code_jsonb.js", "string")}
+    resourceName="JavascriptQuery"
+  />
+  <JavascriptQuery
+    id="has_code_simple_matching"
+    query={include("./lib/has_code_simple_matching.js", "string")}
+    resourceName="JavascriptQuery"
+  />
+  <JavascriptQuery
+    id="has_code_jsonb_matching"
+    query={include("./lib/has_code_jsonb_matching.js", "string")}
+    resourceName="JavascriptQuery"
+  />
+  <JavascriptQuery
+    id="has_code_simple_random"
+    query={include("./lib/has_code_simple_random.js", "string")}
+    resourceName="JavascriptQuery"
+  />
+  <JavascriptQuery
+    id="has_code_jsonb_random"
+    query={include("./lib/has_code_jsonb_random.js", "string")}
+    resourceName="JavascriptQuery"
   />
 </GlobalFunctions>

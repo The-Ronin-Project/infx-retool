@@ -1,0 +1,1 @@
+return match_source_preview.data.code_simple.some(element => element !== null);
