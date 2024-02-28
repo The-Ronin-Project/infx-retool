@@ -615,6 +615,7 @@ return data"
   />
   <SqlQueryUnified
     id="get_depends_on"
+    isMultiplayerEdited={false}
     query={include("./lib/get_depends_on.sql", "string")}
     resourceDisplayName="Clinical Content PostgresSQL DB"
     resourceName="dc8029bc-3980-4836-841e-776c64eeca49"
