@@ -110,6 +110,8 @@
         ordered: [
           { previous_version_context: false },
           { save_for_discussion: false },
+          { code_simple: "{{has_code_simple.data}}" },
+          { code_jsonb: "{{has_code_jsonb.data}}" },
           { name: false },
           { system_uuid: false },
           { sales: false },
