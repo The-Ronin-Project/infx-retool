@@ -64,6 +64,17 @@
     "height": 1,
     "width": 2
   },
+  "discussion_additional_jsonExplorer": {
+    "row": 17.6,
+    "height": 6,
+    "width": 6
+  },
+  "discussion_depends_jsonExplorer": {
+    "row": 17.6,
+    "col": 6,
+    "height": 10,
+    "width": 6
+  },
   "discussion_table": {
     "container": "tabbedContainer1",
     "subcontainer": "d4435",
