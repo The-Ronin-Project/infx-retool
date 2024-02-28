@@ -633,11 +633,11 @@
               { mapper_name: "Mapper" },
               { author: "Mapper" },
               { reason_for_no_map: "No Map Reason" },
-              { target_concept_code: "Target Concept Code" },
+              { target_concept_code: "Target Code" },
               { review_comment: "Review Comment" },
               { review_status: "Review Status" },
               { review_comments: "Review Comments" },
-              { target_concept_display: "Target Concept Display" },
+              { target_concept_display: "Target Display" },
               { reviewed_by: "reviewed_by" },
             ],
           }}

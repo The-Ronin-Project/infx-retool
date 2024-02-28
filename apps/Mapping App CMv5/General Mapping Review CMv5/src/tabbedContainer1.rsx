@@ -510,10 +510,11 @@
           { reason_for_no_map: "No Map Reason" },
           { source_code: "Source Code" },
           { target_concept_code: "Target Code" },
+          { mapped_date_time: "Mapped Timestamp" },
           { assigned_reviewer: "Assigned Reviewer" },
           { "Custom Column 1": "Additional Data" },
           { relationship_display: "Relationship" },
-          { target_concept_display: "Target Concept Display" },
+          { target_concept_display: "Target Display" },
           { source_display: "Source Display" },
         ],
       }}
