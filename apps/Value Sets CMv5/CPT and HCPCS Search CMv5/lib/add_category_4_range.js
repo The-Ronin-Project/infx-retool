@@ -1,0 +1,1 @@
+selected_ranges.setValue(selected_ranges.value.concat([category_4_table.selectedRow.data]));
