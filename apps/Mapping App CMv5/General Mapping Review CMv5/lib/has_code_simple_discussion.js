@@ -1,0 +1,1 @@
+return populate_review_queue.data.code_simple.some(element => element !== null);
