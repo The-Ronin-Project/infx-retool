@@ -26,7 +26,6 @@
       _columns={[
         "code_id",
         "code_schema",
-        "Custom Column 1",
         "code_simple",
         "code_jsonb",
         "display",
@@ -55,8 +54,8 @@
         ordered: [
           { deduplication_hash: false },
           { sequence: false },
-          { code_simple: false },
-          { code_jsonb: false },
+          { code_simple: "{{has_code_simple.data}}" },
+          { code_jsonb: "{{has_code_jsonb.data}}" },
           { code_uuid: false },
           { terminology_version_uuid: false },
           { is_standard: false },
@@ -68,7 +67,6 @@
         ],
       }}
       _compatibilityMode={false}
-      calculatedColumns={["Custom Column 1"]}
       columnColors={{
         ordered: [
           { deduplication_hash: "" },
@@ -99,7 +97,6 @@
           { terminology: "" },
           { old_uuid: "" },
           { comments: "" },
-          { "Custom Column 1": "" },
           { action: "" },
           { depends_on_value_schema: "" },
           { depends_on_system: "" },
@@ -113,7 +110,6 @@
           { system_url: "" },
         ],
       }}
-      columnEditable={{ ordered: [{ "Custom Column 1": false }] }}
       columnHeaderNames={{ ordered: [{ "Custom Column 1": "Code" }] }}
       columnMappers={{
         ordered: [
