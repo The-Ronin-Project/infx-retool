@@ -1,0 +1,1 @@
+return combined_queue_query.data.code_jsonb.some(element => element !== null);
