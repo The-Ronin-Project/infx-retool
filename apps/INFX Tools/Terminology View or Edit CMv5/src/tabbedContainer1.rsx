@@ -34,8 +34,6 @@
         "terminology",
         "version",
         "fhir_uri",
-        "is_standard",
-        "fhir_terminology",
         "terminology_version_uuid",
         "deduplication_hash",
         "sequence",
@@ -48,25 +46,39 @@
         "created_date",
         "effective_start",
         "effective_end",
+        "is_standard",
+        "fhir_terminology",
         "code_uuid",
       ]}
+      _columnSummaryTypes={{
+        ordered: [
+          { is_standard: "checkedCount" },
+          { fhir_terminology: "checkedCount" },
+        ],
+      }}
+      _columnSummaryValues={{
+        ordered: [{ is_standard: "" }, { fhir_terminology: "" }],
+      }}
       _columnVisibility={{
         ordered: [
           { deduplication_hash: false },
           { sequence: false },
           { code_simple: "{{has_code_simple.data}}" },
           { code_jsonb: "{{has_code_jsonb.data}}" },
-          { code_uuid: false },
+          { code_uuid: true },
           { terminology_version_uuid: false },
-          { is_standard: false },
+          { is_standard: true },
           { terminology: false },
           { fhir_uri: false },
           { version: false },
           { uuid: false },
-          { fhir_terminology: false },
+          { fhir_terminology: true },
         ],
       }}
       _compatibilityMode={false}
+      columnAlignment={{
+        ordered: [{ is_standard: "center" }, { fhir_terminology: "center" }],
+      }}
       columnColors={{
         ordered: [
           { deduplication_hash: "" },
@@ -110,6 +122,12 @@
           { system_url: "" },
         ],
       }}
+      columnFormats={{
+        ordered: [
+          { is_standard: "CheckboxDataCell" },
+          { fhir_terminology: "CheckboxDataCell" },
+        ],
+      }}
       columnHeaderNames={{ ordered: [{ "Custom Column 1": "Code" }] }}
       columnMappers={{
         ordered: [
@@ -117,6 +135,12 @@
             "Custom Column 1":
               "{{currentRow.code_simple || currentRow.code_jsonb}}",
           },
+        ],
+      }}
+      columnTypeProperties={{
+        ordered: [
+          { is_standard: { ordered: [{ falseDisplayValue: "empty" }] } },
+          { fhir_terminology: { ordered: [{ falseDisplayValue: "empty" }] } },
         ],
       }}
       columnWidths={[
