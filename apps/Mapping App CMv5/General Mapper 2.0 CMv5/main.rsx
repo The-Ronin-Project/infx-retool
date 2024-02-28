@@ -83,10 +83,11 @@
       id="mapping_queue"
       _columns={[
         "uuid",
-        "code_simple",
-        "code_jsonb",
+        "code",
         "display",
+        "system",
         "comments",
+        "additional_context",
         "map_status",
         "concept_map_version_uuid",
         "assigned_mapper",
@@ -94,11 +95,6 @@
         "no_map",
         "reason_for_no_map",
         "mapping_group",
-        "code_schema",
-        "system_uuid",
-        "previous_version_context",
-        "custom_terminology_code_uuid",
-        "save_for_discussion",
       ]}
       _columnSummaryTypes={{
         ordered: [{ "Custom Column 2": "" }, { display: "" }, { code: "" }],
@@ -240,6 +236,7 @@
       dynamicRowHeights={true}
       events={[]}
       overflowType="scroll"
+      showAddRowButton={true}
       showBoxShadow={false}
       showClearSelection={true}
     />
@@ -262,22 +259,14 @@
     />
     <Text id="text10" value="**Depends On Data**" verticalAlign="center" />
     <JSONExplorer
-      id="depends_on_jsonExplorer"
-      hidden="{{  
-  get_depends_on.data.depends_on_property.length === 0 &&  
-  get_depends_on.data.depends_on_system.length === 0 &&  
-  get_depends_on.data.depends_on_display.length === 0 &&  
-  get_depends_on.data.depends_on_value_schema.length === 0 &&  
-  get_depends_on.data.depends_on_value_simple.length === 0 &&  
-  get_depends_on.data.depends_on_value_jsonb.length === 0  
-}} "
-      value="{{get_depends_on.data}}"
+      id="jsonExplorer2"
+      value="{{load_depends_on_data.data.json_result[0]}}"
     />
     <Text id="text11" value="**Additional Info**" verticalAlign="center" />
     <JSONExplorer
-      id="additional_data_jsonExplorer"
-      hidden="{{!get_additional_data.data.additional_data[0] == null}}"
-      value="{{get_additional_data.data}}"
+      id="jsonExplorer1"
+      hidden=""
+      value="{{source_term_additional_info.data.additional_data[0]}}"
     />
     <TextArea
       id="mapping_comments"
@@ -480,32 +469,29 @@
           id="mapped_targets"
           _columns={[
             "cr_uuid",
+            "concept_map_version_uuid",
             "reviewer_name",
             "display",
             "target_concept_code",
             "target_concept_display",
             "mapping_comments",
             "review_status",
-            "mapper_name",
-            "mapped_by",
-            "review_comments",
-            "reason_for_no_map",
             "uuid",
+            "target_concept_system",
+            "created_date",
+            "reviewed_date",
+            "author",
             "source_concept_uuid",
             "relationship_code_uuid",
+            "target_concept_system_version_uuid",
+            "review_comment",
             "assigned_reviewer",
             "reviewed_by",
-            "mapping_id",
-            "deduplication_hash",
-            "target_concept_terminology_version_uuid",
-            "mapped_date_time",
-            "reviewed_date_time",
-            "map_program_date_time",
-            "map_program_version",
-            "map_program_prediction_id",
-            "map_program_confidence_score",
-            "deleted_date_time",
-            "deleted_by",
+            "model_name",
+            "model_run_time",
+            "model_version",
+            "model_output_score",
+            "reason_for_no_map",
           ]}
           _columnSummaryTypes={{ ordered: [{ target_concept_code: "" }] }}
           _columnSummaryValues={{ ordered: [{ target_concept_code: "" }] }}
@@ -515,7 +501,6 @@
               { deduplication_hash: false },
               { model_name: false },
               { model_version: false },
-              { mapped_by: false },
               { created_date: false },
               { relationship_code_uuid: false },
               { rc_uuid: false },
@@ -580,7 +565,6 @@
               { created_date: "" },
               { relationship_code_uuid: "" },
               { rc_uuid: "" },
-              { mapper_name: "" },
               { model_output_score: "" },
               { cr_uuid: "" },
               { author: "" },
@@ -625,10 +609,9 @@
           columnHeaderNames={{
             ordered: [
               { display: "Display" },
-              { mapped_by: "mapped_by" },
+              { mapped_by: "Author" },
               { reviewer_name: "Reviewer" },
               { mapping_comments: "Mapping Comments" },
-              { mapper_name: "Mapper" },
               { author: "Mapper" },
               { reason_for_no_map: "No Map Reason" },
               { target_concept_code: "Target Concept Code" },

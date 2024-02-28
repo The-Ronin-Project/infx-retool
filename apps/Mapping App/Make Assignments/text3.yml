@@ -1,0 +1,29 @@
+id: text3
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - tooltipText: ''
+    - value: '### **{{project_metadata.data.title}}**'
+    - style:
+        ordered:
+          - color: rgb(16, 42, 67)
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: assignment_groups_tabbedContainer
+    rowGroup: header
+    row: 1.1102230246251565e-16
+    height: 0.6
+    width: 4
+createdAt: 2022-12-21T20:17:57.929Z

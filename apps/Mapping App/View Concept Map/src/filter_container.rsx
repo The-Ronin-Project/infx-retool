@@ -44,6 +44,17 @@
       value="Include assignment and status data"
       verticalAlign="center"
     />
+    <Multiselect
+      id="map_status_select"
+      data="{{ map_status_options.data }}"
+      emptyMessage="No options"
+      label="Map Status"
+      overlayMaxHeight={375}
+      placeholder="Select options"
+      showSelectionIndicator={true}
+      values="{{ item.map_status }}"
+      wrapTags={true}
+    />
     <Select
       id="listbox1"
       emptyMessage="No options"
@@ -66,16 +77,12 @@
       labelPosition="top"
       placeholder="Source code filter value"
     />
-    <Multiselect
-      id="map_status_select"
-      data="{{ map_status_options.data }}"
-      emptyMessage="No options"
-      label="Map Status"
-      overlayMaxHeight={375}
-      placeholder="Select options"
-      showSelectionIndicator={true}
-      values="{{ item.map_status }}"
-      wrapTags={true}
+    <TextInput
+      id="source_display_filter_input"
+      _disclosedFields={{ array: [] }}
+      hideLabel={true}
+      labelPosition="top"
+      placeholder="Source display filter value"
     />
     <Select
       id="listbox3"
@@ -93,13 +100,6 @@
       <Option id="d39ed" value="=" />
       <Option id="2e35a" value="contains" />
     </Select>
-    <TextInput
-      id="source_display_filter_input"
-      _disclosedFields={{ array: [] }}
-      hideLabel={true}
-      labelPosition="top"
-      placeholder="Source display filter value"
-    />
     <Multiselect
       id="review_status_select"
       data="{{ review_status_options.data }}"
