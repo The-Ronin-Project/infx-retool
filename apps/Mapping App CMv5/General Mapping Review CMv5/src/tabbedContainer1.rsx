@@ -623,7 +623,9 @@
     />
     <JSONExplorer
       id="additional_data_jsonExplorer"
+
       hidden="{{get_additional_data.data.additional_data[0] == null}}  
+
 "
       value="{{get_additional_data.data}}"
     />
