@@ -26,6 +26,7 @@
       _columns={[
         "code_id",
         "code_schema",
+        "Custom Column 1",
         "code_simple",
         "code_jsonb",
         "display",
@@ -54,6 +55,8 @@
         ordered: [
           { deduplication_hash: false },
           { sequence: false },
+          { code_simple: false },
+          { code_jsonb: false },
           { code_uuid: false },
           { terminology_version_uuid: false },
           { is_standard: false },
@@ -65,6 +68,7 @@
         ],
       }}
       _compatibilityMode={false}
+      calculatedColumns={["Custom Column 1"]}
       columnColors={{
         ordered: [
           { deduplication_hash: "" },
@@ -95,6 +99,7 @@
           { terminology: "" },
           { old_uuid: "" },
           { comments: "" },
+          { "Custom Column 1": "" },
           { action: "" },
           { depends_on_value_schema: "" },
           { depends_on_system: "" },
@@ -108,9 +113,21 @@
           { system_url: "" },
         ],
       }}
+      columnEditable={{ ordered: [{ "Custom Column 1": false }] }}
+      columnHeaderNames={{ ordered: [{ "Custom Column 1": "Code" }] }}
+      columnMappers={{
+        ordered: [
+          {
+            "Custom Column 1":
+              "{{currentRow.code_simple || currentRow.code_jsonb}}",
+          },
+        ],
+      }}
       columnWidths={[
         { object: { id: "terminology", value: 136 } },
         { object: { id: "terminology_version_uuid", value: 328 } },
+        { object: { id: "Custom Column 1", value: 202 } },
+        { object: { id: "display", value: 227 } },
       ]}
       customButtonName=""
       data="{{view_terminology.data}}"
