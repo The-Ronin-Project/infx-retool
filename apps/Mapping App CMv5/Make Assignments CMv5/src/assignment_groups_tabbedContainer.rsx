@@ -92,6 +92,7 @@
         "source_code_simple",
         "source_code_jsonb",
         "source_display",
+        "depends_on_value_jsonb",
         "comments",
         "map_status",
         "concept_map_version_uuid",
@@ -103,7 +104,6 @@
         "source_uuid",
         "mapper_uuid",
         "reviewer_uuid",
-        "count_of_resources_affected",
         "code_schema",
         "code_simple",
         "code_jsonb",
@@ -111,6 +111,11 @@
         "previous_version_context",
         "custom_terminology_code_uuid",
         "save_for_discussion",
+        "depends_on_property",
+        "depends_on_system",
+        "depends_on_display",
+        "depends_on_value_schema",
+        "depends_on_value_simple",
       ]}
       _columnSummaryTypes={{
         ordered: [{ count_of_resources_affected: "sum" }],
@@ -227,14 +232,20 @@
       }}
       columnHeaderNames={{
         ordered: [
-          { source_code_simple: "Source Code Simple" },
+          { source_code_simple: "Source Code" },
           { display: "Source Display" },
+          { depends_on_value_jsonb: "Depends on Value jsonb" },
           { count_of_resources_affected: "Resource Count" },
-          { source_code_jsonb: "Source Code Jsonb" },
+          { depends_on_value_simple: "Depends on Value Simple" },
+          { source_code_jsonb: "Source Code" },
           { code: "Source Code" },
           { source_code: "Source Code" },
           { assigned_mapper: "Mapper" },
           { assigned_reviewer: "Reviewer" },
+          { depends_on_value_schema: "Depends on Value Schema" },
+          { depends_on_system: "Depends on System" },
+          { depends_on_display: "Depends on Display" },
+          { depends_on_property: "Depends on Property" },
           { source_display: "Source Display" },
           { resource_count: "Resource Count" },
         ],
@@ -445,9 +456,9 @@
       columnHeaderNames={{
         ordered: [
           { display: "Source Display" },
-          { code_simple: "Source Code Simple" },
+          { code_simple: "Source Code" },
           { count_of_resources_affected: "Resource Count" },
-          { code_jsonb: "Source Code jsonb" },
+          { code_jsonb: "Source Code" },
           { code: "Source Code" },
           { assigned_mapper: "Mapper" },
           { map_status: "Map Status" },
@@ -659,8 +670,8 @@
           { display: "Source Display" },
           { additional_context: "Additional Context" },
           { count_of_resources_affected: "Resource Count" },
-          { code_simple: "Source Code Simple" },
-          { code_jsonb: "Source Code jsonb" },
+          { code_simple: "Source Code" },
+          { code_jsonb: "Source Code" },
         ],
       }}
       columnTypeProperties={{
