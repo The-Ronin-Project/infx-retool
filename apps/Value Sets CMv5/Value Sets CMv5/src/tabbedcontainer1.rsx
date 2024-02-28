@@ -242,7 +242,7 @@
       showColumnBorders={true}
       style={{
         ordered: [
-          { headerBackground: "rgba(217, 226, 236, 0.5)" },
+          { headerBackground: "rgb(217, 226, 236)" },
           { headerText: "rgb(130, 154, 177)" },
           { toolbarText: "rgb(130, 154, 177)" },
         ],
