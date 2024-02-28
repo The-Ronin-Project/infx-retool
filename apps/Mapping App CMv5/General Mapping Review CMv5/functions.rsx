@@ -240,7 +240,26 @@ return data"
 // example: return formatDataAsArray(data).filter(row => row.quantity > 20)
 return data"
       warningCodes={[]}
-    />
+    >
+      <Event
+        event="success"
+        method="trigger"
+        params={{ ordered: [] }}
+        pluginId="has_code_json"
+        type="datasource"
+        waitMs="0"
+        waitType="debounce"
+      />
+      <Event
+        event="success"
+        method="trigger"
+        params={{ ordered: [] }}
+        pluginId="has_code_simple"
+        type="datasource"
+        waitMs="0"
+        waitType="debounce"
+      />
+    </SqlQueryUnified>
     <SqlQueryUnified
       id="ready_for_review_but_unassigned"
       query={include("./lib/ready_for_review_but_unassigned.sql", "string")}
@@ -468,7 +487,26 @@ return formatDataAsArray(data)"
 // example: return formatDataAsArray(data).filter(row => row.quantity > 20)
 return data"
       warningCodes={[]}
-    />
+    >
+      <Event
+        event="success"
+        method="trigger"
+        params={{ ordered: [] }}
+        pluginId="has_code_simple_discussion"
+        type="datasource"
+        waitMs="0"
+        waitType="debounce"
+      />
+      <Event
+        event="success"
+        method="trigger"
+        params={{ ordered: [] }}
+        pluginId="has_code_jsonb_discussion"
+        type="datasource"
+        waitMs="0"
+        waitType="debounce"
+      />
+    </SqlQueryUnified>
     <SqlQueryUnified
       id="discussion_return_to_mapper"
       query={include("./lib/discussion_return_to_mapper.sql", "string")}
@@ -643,5 +681,27 @@ return data"
     resourceDisplayName="Clinical Content PostgresSQL DB"
     resourceName="dc8029bc-3980-4836-841e-776c64eeca49"
     warningCodes={[]}
+  />
+  <JavascriptQuery
+    id="has_code_simple"
+    isMultiplayerEdited={false}
+    query={include("./lib/has_code_simple.js", "string")}
+    resourceName="JavascriptQuery"
+  />
+  <JavascriptQuery
+    id="has_code_json"
+    query={include("./lib/has_code_json.js", "string")}
+    resourceName="JavascriptQuery"
+  />
+  <JavascriptQuery
+    id="has_code_simple_discussion"
+    isMultiplayerEdited={false}
+    query={include("./lib/has_code_simple_discussion.js", "string")}
+    resourceName="JavascriptQuery"
+  />
+  <JavascriptQuery
+    id="has_code_jsonb_discussion"
+    query={include("./lib/has_code_jsonb_discussion.js", "string")}
+    resourceName="JavascriptQuery"
   />
 </GlobalFunctions>

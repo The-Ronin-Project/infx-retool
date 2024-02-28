@@ -331,10 +331,12 @@
           { additional_data: true },
           { mapped_by: false },
           { relationship_system_uuid: false },
+          { code_simple: "{{has_code_simple.data}}" },
           { created_date: false },
           { first_last_name: true },
           { relationship_code_uuid: false },
           { count_of_resources_affected: false },
+          { code_jsonb: "{{has_code_json.data}}" },
           { source_code_uuid: false },
           { author: true },
           { system_uuid: false },
@@ -623,7 +625,6 @@
     />
     <JSONExplorer
       id="additional_data_jsonExplorer"
-
       hidden="{{get_additional_data.data.additional_data[0] == null}}  
 
 "
@@ -738,8 +739,10 @@
       }}
       _columnVisibility={{
         ordered: [
+          { code_simple: "{{has_code_simple_discussion.data}}" },
           { first_last_name: true },
           { count_of_resources_affected: false },
+          { code_jsonb: "{{has_code_jsonb_discussion.data}}" },
           { mapping_group: false },
           { system: false },
           { assigned_mapper: false },
@@ -914,6 +917,7 @@
         { object: { id: "mapping_comments", value: 120.01736450195312 } },
         { object: { id: "display", value: 383.0312805175781 } },
         { object: { id: "additional_data", value: 48.99652862548828 } },
+        { object: { id: "code_jsonb", value: 227.00000762939453 } },
       ]}
       customButtonName=""
       data="{{ discussion_concepts.data}}"
