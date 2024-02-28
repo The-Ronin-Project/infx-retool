@@ -1,0 +1,1 @@
+return view_terminology.data.code_simple.some(element => element !== null);

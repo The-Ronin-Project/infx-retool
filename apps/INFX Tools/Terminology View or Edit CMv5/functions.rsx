@@ -54,7 +54,26 @@ return data"
 // example: return formatDataAsArray(data).filter(row => row.quantity > 20)
 return data"
     warningCodes={[]}
-  />
+  >
+    <Event
+      event="success"
+      method="trigger"
+      params={{ ordered: [] }}
+      pluginId="has_code_jsonb"
+      type="datasource"
+      waitMs="0"
+      waitType="debounce"
+    />
+    <Event
+      event="success"
+      method="trigger"
+      params={{ ordered: [] }}
+      pluginId="has_code_simple"
+      type="datasource"
+      waitMs="0"
+      waitType="debounce"
+    />
+  </SqlQueryUnified>
   <SqlQueryUnified
     id="terminology_metadata"
     query={include("./lib/terminology_metadata.sql", "string")}
@@ -74,5 +93,15 @@ return data"
     resourceName="a00335cd-bd3b-4d98-8af4-7ff590ce95e8"
     runWhenModelUpdates={false}
     type="POST"
+  />
+  <JavascriptQuery
+    id="has_code_simple"
+    query={include("./lib/has_code_simple.js", "string")}
+    resourceName="JavascriptQuery"
+  />
+  <JavascriptQuery
+    id="has_code_jsonb"
+    query={include("./lib/has_code_jsonb.js", "string")}
+    resourceName="JavascriptQuery"
   />
 </GlobalFunctions>
