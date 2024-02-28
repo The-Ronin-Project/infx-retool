@@ -4,4 +4,4 @@ SELECT
 FROM custom_terminologies.code_depends_on cdo  
 INNER JOIN custom_terminologies.code_data cd  
   ON cdo.code_uuid = cd.uuid  
-WHERE cd.uuid = {{ review_queue.selectedRow.data[0].custom_terminology_code_uuid }};  
+WHERE cd.uuid = {{ discussion_table.selectedRow.data.custom_terminology_code_uuid }};  

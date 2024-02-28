@@ -623,7 +623,7 @@
     />
     <JSONExplorer
       id="additional_data_jsonExplorer"
-      hidden="{{!get_additional_data.data.additional_data[0] == null}}  
+      hidden="{{get_additional_data.data.additional_data[0] == null}}  
 "
       value="{{get_additional_data.data}}"
     />
@@ -741,6 +741,7 @@
           { mapping_group: false },
           { system: false },
           { assigned_mapper: false },
+          { custom_terminology_code_uuid: false },
           { comments: false },
           { last_name: false },
           { map_status: false },
@@ -814,9 +815,12 @@
           { mapper: "" },
           { display: "" },
           { additional_data: "" },
+          { mapped_by: "" },
+          { code_simple: "" },
           { mapping_comments: "" },
           { first_last_name: "" },
           { count_of_resources_affected: "" },
+          { code_jsonb: "" },
           { author: "" },
           { code: "" },
           { mapping_group: "" },
@@ -824,6 +828,7 @@
           { reason_for_no_map: "" },
           { target_concept_code: "" },
           { assigned_mapper: "" },
+          { custom_terminology_code_uuid: "" },
           { comments: "" },
           { last_name: "" },
           { map_status: "" },
@@ -832,6 +837,7 @@
           { review_comment: "" },
           { review_status: "" },
           { first_name: "" },
+          { review_comments: "" },
           { uuid: "" },
           { concept_map_version_uuid: "" },
           { target_concept_display: "" },

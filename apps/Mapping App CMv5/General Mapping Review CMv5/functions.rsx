@@ -460,6 +460,7 @@ return formatDataAsArray(data)"
     </SqlQueryUnified>
     <SqlQueryUnified
       id="discussion_concepts"
+      isMultiplayerEdited={false}
       query={include("./lib/discussion_concepts.sql", "string")}
       resourceDisplayName="Clinical Content PostgresSQL DB"
       resourceName="dc8029bc-3980-4836-841e-776c64eeca49"
@@ -622,6 +623,22 @@ return data"
   <SqlQueryUnified
     id="get_additional_data"
     query={include("./lib/get_additional_data.sql", "string")}
+    resourceDisplayName="Clinical Content PostgresSQL DB"
+    resourceName="dc8029bc-3980-4836-841e-776c64eeca49"
+    warningCodes={[]}
+  />
+  <SqlQueryUnified
+    id="discussion_get_depends_on"
+    isMultiplayerEdited={false}
+    query={include("./lib/discussion_get_depends_on.sql", "string")}
+    resourceDisplayName="Clinical Content PostgresSQL DB"
+    resourceName="dc8029bc-3980-4836-841e-776c64eeca49"
+    warningCodes={[]}
+  />
+  <SqlQueryUnified
+    id="discussion_get_additional_data"
+    isMultiplayerEdited={false}
+    query={include("./lib/discussion_get_additional_data.sql", "string")}
     resourceDisplayName="Clinical Content PostgresSQL DB"
     resourceName="dc8029bc-3980-4836-841e-776c64eeca49"
     warningCodes={[]}
