@@ -1,4 +1,4 @@
-<Frame id="$header" sticky={true} type="header">
+<Frame id="$header" paddingType="normal" sticky={true} type="header">
   <Text
     id="text3"
     _disclosedFields={{ array: [] }}

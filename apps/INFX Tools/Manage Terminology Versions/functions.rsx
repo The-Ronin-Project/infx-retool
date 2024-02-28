@@ -19,7 +19,7 @@ return data"
       event="success"
       method="clearValue"
       params={{ ordered: [] }}
-      pluginId="new_name"
+      pluginId="new_nameOLD"
       type="widget"
       waitMs="0"
       waitType="debounce"
@@ -28,7 +28,7 @@ return data"
       event="success"
       method="clearValue"
       params={{ ordered: [] }}
-      pluginId="date_range"
+      pluginId="date_rangeOLD"
       type="widget"
       waitMs="0"
       waitType="debounce"
@@ -37,7 +37,7 @@ return data"
       event="success"
       method="setValue"
       params={{ ordered: [] }}
-      pluginId="fhir_uri"
+      pluginId="fhir_uriOLD"
       type="widget"
       waitMs="0"
       waitType="debounce"
@@ -88,7 +88,7 @@ return data"
       params={{
         ordered: [
           {
-            src: "select_terminology.clearValue\nversion.clearValue\ndate_range.clearValue\nfhir_uri.clearValue\nis_standard.clearValue\nis_fhir.clearValue",
+            src: "select_terminology.clearValue\nversionOLD.clearValue\ndate_rangeOLD.clearValue\nfhir_uriOLD.clearValue\nis_standardOLD.clearValue\nis_fhirOLD.clearValue",
           },
         ],
       }}
@@ -161,5 +161,53 @@ return data"
     transformer="// type your code here
 // example: return formatDataAsArray(data).filter(row => row.quantity > 20)
 return data"
+  />
+  <SqlQueryUnified
+    id="fhir_elementChangeHandler"
+    resourceDisplayName="Clinical Content PostgresSQL DB"
+    resourceName="dc8029bc-3980-4836-841e-776c64eeca49"
+  />
+  <RESTQuery
+    id="get_resource_types"
+    enableTransformer={true}
+    headers={
+      '[{"key":"Authorization","value":"Bearer {{get_simplifier_token.data.token}}"},{"key":"Accept","value":"application/fhir+json"},{"key":"Content-Type","value":"application/fhir+json"}]'
+    }
+    isMultiplayerEdited={false}
+    query="StructureDefinition?_count=500"
+    resourceDisplayName="FHIRRoninCommonModel"
+    resourceName="3613b0ef-8f05-48f6-9c3c-d5a8bd47c43c"
+    transformer="function getOrderedSet(set) {
+  const orderedArray = Array.from(set);
+  orderedArray.sort();
+  return orderedArray;
+}
+
+let resourceTypes = [];
+for (let [key, value] of Object.entries(data)) {
+  if (key === 'entry') {
+    let resources = value;
+    for (let i = 0; i < resources.length; i++) {
+      if (resources[i].resource && resources[i].resource.type !== null) {
+        resourceTypes.push(resources[i].resource.type);
+      }
+    }
+  }
+}
+const resourceTypesSet = new Set(resourceTypes);
+const orderedResourceTypes = getOrderedSet(resourceTypesSet);
+return orderedResourceTypes;"
+  />
+  <RESTQuery
+    id="get_simplifier_token"
+    body={
+      '[{"key":"Email","value":"\\"retooluser@projectronin.com\\""},{"key":"Password","value":"\\"projectronin2022\\""}]'
+    }
+    bodyType="json"
+    query="https://api.simplifier.net/token"
+    resourceName="REST-WithoutResource"
+    resourceTypeOverride=""
+    runWhenPageLoads={true}
+    type="POST"
   />
 </GlobalFunctions>

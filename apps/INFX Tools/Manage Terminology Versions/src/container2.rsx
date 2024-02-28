@@ -1,18 +1,18 @@
 <Container
-  id="container1"
+  id="container2"
   hoistFetching={true}
   showBody={true}
   showHeader={true}
 >
   <Header>
     <Text
-      id="containerTitle1"
+      id="containerTitle2"
       _disclosedFields={{ array: [] }}
       value="#### Create New Terminology or Code System"
       verticalAlign="center"
     />
     <TextInput
-      id="new_name"
+      id="new_name2"
       _disclosedFields={{ array: [] }}
       hideLabel={false}
       label="Terminology"
@@ -21,7 +21,7 @@
       showClear={true}
     />
     <TextInput
-      id="version"
+      id="version2"
       _disclosedFields={{ array: [] }}
       hideLabel={false}
       label="Version"
@@ -30,7 +30,7 @@
       value="1.0"
     />
     <DateRange
-      id="date_range"
+      id="date_range2"
       _disclosedFields={{ array: [] }}
       dateFormat="MMM d, yyyy"
       endPlaceholder="Effective End"
@@ -42,20 +42,20 @@
       value={{ ordered: [{ start: "" }, { end: "" }] }}
     />
     <TextInput
-      id="fhir_uri"
+      id="fhir_uri2"
       _disclosedFields={{ array: [] }}
       label="FHIR uri*"
       placeholder="Enter http://"
     />
     <Text
-      id="text5"
+      id="text7"
       _disclosedFields={{ array: [] }}
       style={{ ordered: [{ color: "rgba(38, 38, 38, 0.37)" }] }}
       value="//projectronin.io/fhir/CodeSystem/{tenant ID}/{data model element}"
       verticalAlign="center"
     />
     <Link
-      id="organization_id_link"
+      id="organization_id_link3"
       _disclosedFields={{ array: [] }}
       text="Link: Organization IDs"
     >
@@ -77,22 +77,22 @@
       />
     </Link>
     <Checkbox
-      id="is_fhir"
-      _disclosedFields={{ array: [] }}
-      label="FHIR Terminology"
-    />
-    <Checkbox
-      id="is_standard"
+      id="is_standard3"
       _disclosedFields={{ array: [] }}
       label="Standard Terminology"
+    />
+    <Checkbox
+      id="is_fhir3"
+      _disclosedFields={{ array: [] }}
+      label="FHIR Terminology"
     />
   </Header>
   <View id="aa62f" viewKey="View 1">
     <Button
-      id="add_version"
+      id="add_version2"
       _disclosedFields={{ array: [] }}
       disabled={
-        '{{fhir_uri.value == "" || date_range.value == "" || check_existing_row_fhir_uri_and_version.data.count[0] > 0}}\n\n\n'
+        '{{fhir_uri2.value == "" || date_rangeOLD.value == "" || check_existing_row_fhir_uri_and_version.data.count[0] > 0}}\n\n\n'
       }
       styleVariant="solid"
       submitTargetId=""
