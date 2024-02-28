@@ -91,7 +91,26 @@ return data"
 // example: return formatDataAsArray(data).filter(row => row.quantity > 20)
 return data"
     warningCodes={[]}
-  />
+  >
+    <Event
+      event="success"
+      method="trigger"
+      params={{ ordered: [] }}
+      pluginId="has_code_jsonb"
+      type="datasource"
+      waitMs="0"
+      waitType="debounce"
+    />
+    <Event
+      event="success"
+      method="trigger"
+      params={{ ordered: [] }}
+      pluginId="has_code_simple"
+      type="datasource"
+      waitMs="0"
+      waitType="debounce"
+    />
+  </SqlQueryUnified>
   <SqlQueryUnified
     id="count_all_concepts"
     query={include("./lib/count_all_concepts.sql", "string")}
@@ -210,5 +229,17 @@ return data"
     transformer="// Query results are available as the `data` variable
 return formatDataAsArray(data)"
     warningCodes={[]}
+  />
+  <JavascriptQuery
+    id="has_code_simple"
+    isMultiplayerEdited={false}
+    query={include("./lib/has_code_simple.js", "string")}
+    resourceName="JavascriptQuery"
+  />
+  <JavascriptQuery
+    id="has_code_jsonb"
+    isMultiplayerEdited={false}
+    query={include("./lib/has_code_jsonb.js", "string")}
+    resourceName="JavascriptQuery"
   />
 </GlobalFunctions>

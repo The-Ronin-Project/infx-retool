@@ -71,13 +71,6 @@
       values="{{ item.map_status }}"
       wrapTags={true}
     />
-    <TextInput
-      id="source_code_jsonb_filter_input"
-      _disclosedFields={{ array: [] }}
-      hideLabel={true}
-      labelPosition="top"
-      placeholder="Source code filter value"
-    />
     <Select
       id="listbox5"
       emptyMessage="No options"
@@ -93,6 +86,13 @@
       <Option id="d39ed" value="=" />
       <Option id="2e35a" value="contains" />
     </Select>
+    <TextInput
+      id="source_code_jsonb_filter_input"
+      _disclosedFields={{ array: [] }}
+      hideLabel={true}
+      labelPosition="top"
+      placeholder="Source code filter value"
+    />
     <Multiselect
       id="review_status_select"
       data="{{ review_status_options.data }}"
@@ -228,6 +228,7 @@
       value="**Resource Count**"
       verticalAlign="center"
     />
+    <Divider id="divider2" _disclosedFields={{ array: [] }} />
     <TextInput
       id="mapping_comments_input"
       _disclosedFields={{ array: [] }}
@@ -235,7 +236,6 @@
       label="Mapping Comments Contains"
       placeholder="Enter value"
     />
-    <Divider id="divider2" _disclosedFields={{ array: [] }} />
     <Switch
       id="show_only_unmapped"
       _disclosedFields={{ array: [] }}
