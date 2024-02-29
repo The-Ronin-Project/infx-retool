@@ -1,0 +1,271 @@
+{
+  "add_version": {
+    "container": "create_new_terminology",
+    "row": 1.8,
+    "col": 2,
+    "height": 1.4,
+    "width": 8
+  },
+  "add_version2": {
+    "container": "container2",
+    "subcontainer": "aa62f",
+    "row": 0.4,
+    "height": 1.2,
+    "width": 12
+  },
+  "container2": {
+    "container": "create_new_terminology2",
+    "row": 0.4,
+    "height": 0.2,
+    "width": 12
+  },
+  "containerTitle2": {
+    "container": "container2",
+    "rowGroup": "header",
+    "height": 0.6,
+    "width": 12
+  },
+  "containerTitle3": {
+    "container": "fhir_uri_selectable_components",
+    "rowGroup": "header",
+    "height": 0.6,
+    "width": 12
+  },
+  "containerTitle4": {
+    "container": "uri_preview",
+    "rowGroup": "header",
+    "height": 0.6,
+    "width": 12
+  },
+  "containerTitle5": {
+    "container": "terminology_required_parts",
+    "rowGroup": "header",
+    "height": 0.6,
+    "width": 12
+  },
+  "create_new_terminology": {
+    "col": 9,
+    "height": 1
+  },
+  "create_new_terminology2": {
+    "container": "create_new_terminology",
+    "row": 3.2,
+    "height": 1,
+    "width": 12
+  },
+  "create_new_terminology_title": {
+    "container": "create_new_terminology",
+    "height": 0.6,
+    "width": 12
+  },
+  "date_range": {
+    "container": "terminology_required_parts",
+    "subcontainer": "cdab7",
+    "row": 2,
+    "height": 1,
+    "width": 12
+  },
+  "date_range2": {
+    "container": "container2",
+    "rowGroup": "header",
+    "row": 2.6,
+    "height": 1,
+    "width": 12
+  },
+  "fhir_element": {
+    "container": "fhir_uri_selectable_components",
+    "subcontainer": "7e5e0",
+    "row": 2.6,
+    "height": 1,
+    "width": 12
+  },
+  "fhir_resource": {
+    "container": "fhir_uri_selectable_components",
+    "subcontainer": "7e5e0",
+    "row": 1.6,
+    "height": 1,
+    "width": 12
+  },
+  "fhir_uri": {
+    "container": "uri_preview",
+    "subcontainer": "7e5e0",
+    "height": 0.8,
+    "width": 12
+  },
+  "fhir_uri2": {
+    "container": "container2",
+    "rowGroup": "header",
+    "row": 3.6,
+    "height": 1,
+    "width": 12
+  },
+  "fhir_uri_selectable_components": {
+    "container": "create_new_terminology",
+    "row": 0.8,
+    "height": 0.2,
+    "width": 12
+  },
+  "form1": {
+    "container": "terminologies",
+    "subcontainer": "Custom Column 1",
+    "height": 0.2,
+    "width": 12
+  },
+  "formTitle1": {
+    "container": "form1",
+    "rowGroup": "header",
+    "height": 0.6,
+    "width": 12
+  },
+  "is_fhir": {
+    "container": "create_new_terminology",
+    "row": 1.2,
+    "col": 7,
+    "height": 0.6
+  },
+  "is_fhir3": {
+    "container": "container2",
+    "rowGroup": "header",
+    "row": 5.8,
+    "col": 6,
+    "height": 0.6,
+    "width": 5
+  },
+  "is_standard": {
+    "container": "create_new_terminology",
+    "row": 1.2,
+    "col": 2,
+    "height": 0.6
+  },
+  "is_standard3": {
+    "container": "container2",
+    "rowGroup": "header",
+    "row": 5.8,
+    "height": 0.6,
+    "width": 5
+  },
+  "new_name": {
+    "container": "terminology_required_parts",
+    "subcontainer": "cdab7",
+    "height": 1,
+    "width": 12
+  },
+  "new_name2": {
+    "container": "container2",
+    "rowGroup": "header",
+    "row": 0.6,
+    "height": 1,
+    "width": 12
+  },
+  "new_version": {
+    "container": "form1",
+    "row": 0.6,
+    "height": 1,
+    "width": 12
+  },
+  "organization_id_link2": {
+    "container": "fhir_uri_selectable_components",
+    "subcontainer": "7e5e0",
+    "row": 1,
+    "col": 4,
+    "height": 0.6,
+    "width": 7
+  },
+  "organization_id_link3": {
+    "container": "container2",
+    "rowGroup": "header",
+    "row": 5.2,
+    "height": 0.6,
+    "width": 12
+  },
+  "search": {
+    "height": 1,
+    "width": 6
+  },
+  "submit_version": {
+    "container": "form1",
+    "rowGroup": "footer",
+    "col": 8,
+    "height": 1,
+    "width": 4
+  },
+  "tenant_id": {
+    "container": "fhir_uri_selectable_components",
+    "subcontainer": "7e5e0",
+    "height": 1,
+    "width": 12
+  },
+  "terminologies": {
+    "row": 1,
+    "height": 17.2,
+    "width": 12
+  },
+  "terminology_required_parts": {
+    "container": "create_new_terminology",
+    "row": 0.6,
+    "height": 0.2,
+    "width": 12
+  },
+  "text1": {
+    "container": "form1",
+    "height": 0.6,
+    "width": 4
+  },
+  "text2": {
+    "container": "form1",
+    "col": 4,
+    "height": 0.6,
+    "width": 8
+  },
+  "text3": {
+    "subcontainer": "header",
+    "height": 0.6,
+    "width": 11
+  },
+  "text4": {
+    "container": "form1",
+    "row": 1.6,
+    "height": 0.6,
+    "width": 12
+  },
+  "text7": {
+    "container": "container2",
+    "rowGroup": "header",
+    "row": 4.6,
+    "height": 0.6,
+    "width": 12
+  },
+  "uri_preview": {
+    "container": "create_new_terminology",
+    "row": 1,
+    "height": 0.2,
+    "width": 12
+  },
+  "uri_preview_instructions": {
+    "container": "uri_preview",
+    "subcontainer": "7e5e0",
+    "row": 0.8,
+    "height": 0.6,
+    "width": 12
+  },
+  "version": {
+    "container": "terminology_required_parts",
+    "subcontainer": "cdab7",
+    "row": 1,
+    "height": 1,
+    "width": 12
+  },
+  "version2": {
+    "container": "container2",
+    "rowGroup": "header",
+    "row": 1.6,
+    "height": 1,
+    "width": 12
+  },
+  "version_dates": {
+    "container": "form1",
+    "row": 2.6,
+    "height": 1,
+    "width": 12
+  }
+}
