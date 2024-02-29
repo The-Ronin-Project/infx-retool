@@ -1054,7 +1054,7 @@
             event="click"
             method="openApp"
             params={{
-              ordered: [{ uuid: "89c1636c-c6b0-11ee-829a-afcfe1c9dd09" }],
+              ordered: [{ uuid: "cfc248fe-d731-11ee-9235-7fac68bed02b" }],
             }}
             pluginId=""
             type="util"
@@ -1098,7 +1098,7 @@
             event="click"
             method="openApp"
             params={{
-              ordered: [{ uuid: "89c1636c-c6b0-11ee-829a-afcfe1c9dd09" }],
+              ordered: [{ uuid: "cfc248fe-d731-11ee-9235-7fac68bed02b" }],
             }}
             pluginId=""
             type="util"
