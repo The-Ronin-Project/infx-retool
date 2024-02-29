@@ -1,1 +1,1 @@
-return populate_review_queue.data.code_simple.some(element => element !== null);
+return populate_review_queue.data.source_code_simple.some(element => element !== null);

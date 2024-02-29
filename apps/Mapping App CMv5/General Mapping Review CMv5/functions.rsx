@@ -245,7 +245,7 @@ return data"
         event="success"
         method="trigger"
         params={{ ordered: [] }}
-        pluginId="has_code_json"
+        pluginId="has_code_jsonb"
         type="datasource"
         waitMs="0"
         waitType="debounce"
@@ -689,8 +689,8 @@ return data"
     resourceName="JavascriptQuery"
   />
   <JavascriptQuery
-    id="has_code_json"
-    query={include("./lib/has_code_json.js", "string")}
+    id="has_code_jsonb"
+    query={include("./lib/has_code_jsonb.js", "string")}
     resourceName="JavascriptQuery"
   />
   <JavascriptQuery

@@ -1,0 +1,1 @@
+return populate_review_queue.data.source_code_jsonb.some(element => element !== null);
