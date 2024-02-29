@@ -1,7 +1,7 @@
 <App>
   <Include src="./functions.rsx" />
   <Include src="./header.rsx" />
-  <Frame id="$main" sticky={false} type="main">
+  <Frame id="$main" paddingType="normal" sticky={false} type="main">
     <TextInput
       id="search"
       _disclosedFields={{ array: [] }}
@@ -10,9 +10,7 @@
       placeholder="Enter term"
       showClear={true}
     />
-    <Modal id="create_new_terminology" buttonText="Create New Terminology">
-      <Include src="./src/container1.rsx" />
-    </Modal>
+    <Include src="./src/create_new_terminology.rsx" />
     <TableLegacy
       id="terminologies"
       _columns={[
@@ -162,13 +160,13 @@
       }}
       columnWidths={[
         { object: { id: "uuid", value: 290 } },
-        { object: { id: "terminology", value: 269 } },
         { object: { id: "version", value: 93.578125 } },
-        { object: { id: "effective_start", value: 108.40625 } },
-        { object: { id: "effective_end", value: 117 } },
-        { object: { id: "fhir_uri", value: 306 } },
         { object: { id: "is_standard", value: 92 } },
         { object: { id: "Custom Column 1", value: 96.3359375 } },
+        { object: { id: "effective_end", value: 144 } },
+        { object: { id: "effective_start", value: 165.40625 } },
+        { object: { id: "fhir_uri", value: 381 } },
+        { object: { id: "terminology", value: 459 } },
       ]}
       customButtonName=""
       data="{{load_terminologies.data}}"
