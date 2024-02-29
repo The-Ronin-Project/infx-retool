@@ -2,6 +2,8 @@
   id="tabbedContainer1"
   currentViewKey="{{ self.viewKeys[0] }}"
   hoistFetching={true}
+  marginType="none"
+  paddingType="none"
   showBody={true}
   showHeader={true}
   style={{
@@ -242,19 +244,23 @@
         "code_simple",
         "code_jsonb",
         "source_display",
-        "display",
         "relationship_display",
         "target_concept_code",
         "target_concept_display",
+        "additional_data",
+        "mapping_comments",
+        "reason_for_no_map",
+        "mapper",
+        "first_last_name",
+        "mapped_date_time",
+        "previous_version_context",
+        "display",
         "review_status",
         "relationship_system_uuid",
         "special_use",
-        "mapping_comments",
-        "reason_for_no_map",
         "source_comments",
         "uuid",
         "created_date",
-        "additional_data",
         "source_concept_uuid",
         "relationship_code_uuid",
         "code",
@@ -280,10 +286,6 @@
         "mapping_id",
         "deduplication_hash",
         "target_concept_terminology_version_uuid",
-        "mapper",
-        "mapped_date_time",
-        "previous_version_context",
-        "first_last_name",
         "mapped_by",
         "reviewed_date_time",
         "review_comments",
@@ -501,11 +503,11 @@
           { mapper: "Mapper" },
           { display: "source display" },
           { additional_data: "ℹ️" },
-          { code_simple: "Source Code Simple" },
+          { code_simple: "Source Code" },
           { mapping_comments: "Mapping Comments" },
           { first_last_name: "Assigned Reviewer" },
           { count_of_resources_affected: "Resource Count" },
-          { code_jsonb: "Source Code jsonb" },
+          { code_jsonb: "Source Code" },
           { author: "Mapper" },
           { reason_for_no_map: "No Map Reason" },
           { source_code: "Source Code" },
@@ -513,7 +515,7 @@
           { assigned_reviewer: "Assigned Reviewer" },
           { "Custom Column 1": "Additional Data" },
           { relationship_display: "Relationship" },
-          { target_concept_display: "Target Concept Display" },
+          { target_concept_display: "Target Display" },
           { source_display: "Source Display" },
         ],
       }}
@@ -544,6 +546,7 @@
         { object: { id: "additional_data", value: 335 } },
         { object: { id: "reason_for_no_map", value: 137 } },
         { object: { id: "source_display", value: 539.15625 } },
+        { object: { id: "code_jsonb", value: 348.00000762939453 } },
       ]}
       customButtonName=""
       data="{{populate_review_queue.data}}"
@@ -625,9 +628,7 @@
     />
     <JSONExplorer
       id="additional_data_jsonExplorer"
-      hidden="{{get_additional_data.data.additional_data[0] == null}}  
-
-"
+      hidden="{{ get_additional_data.data.additional_data[0] == null }} "
       value="{{get_additional_data.data}}"
     />
     <JSONExplorer
@@ -715,15 +716,16 @@
         "code_simple",
         "code_jsonb",
         "display",
-        "additional_data",
-        "mapping_comments",
-        "uuid",
+        "relationship_display",
         "target_concept_code",
         "target_concept_display",
+        "mapping_comments",
+        "uuid",
         "count_of_resources_affected",
         "assigned_mapper",
         "mapped_by",
         "review_comments",
+        "custom_terminology_code_uuid",
       ]}
       _columnSummaryTypes={{
         ordered: [
@@ -842,6 +844,7 @@
           { review_comment: "" },
           { review_status: "" },
           { first_name: "" },
+          { relationship_display: "" },
           { review_comments: "" },
           { uuid: "" },
           { concept_map_version_uuid: "" },
@@ -858,15 +861,16 @@
       }}
       columnHeaderNames={{
         ordered: [
+          { previous_version_context: "Previous Version Context" },
           { mapper: "Mapper" },
           { display: "Source Display" },
           { additional_data: "ℹ️" },
           { mapped_by: "Mapper" },
-          { code_simple: "Source Code Simple" },
-          { mapping_comments: "Mapping Comment" },
+          { code_simple: "Source Code" },
+          { mapping_comments: "Mapping Comments" },
           { first_last_name: "Mapper" },
           { count_of_resources_affected: "Resource Count" },
-          { code_jsonb: "Source Code jsonb" },
+          { code_jsonb: "Source Code" },
           { author: "Mapper" },
           { code: "Source Code" },
           { target_concept_code: "Target Code" },
@@ -875,6 +879,7 @@
           { "Custom Column 1": "Send back to mapping queue" },
           { additional_context: "Additional Context" },
           { review_comment: "Review Comment" },
+          { relationship_display: "Relationship" },
           { review_comments: "Review Comments" },
           { target_concept_display: "Target Display" },
         ],
@@ -915,9 +920,12 @@
         { object: { id: "additional_context", value: 146 } },
         { object: { id: "assigned_mapper", value: 144 } },
         { object: { id: "mapping_comments", value: 120.01736450195312 } },
-        { object: { id: "display", value: 383.0312805175781 } },
         { object: { id: "additional_data", value: 48.99652862548828 } },
         { object: { id: "code_jsonb", value: 227.00000762939453 } },
+        { object: { id: "display", value: 262.029541015625 } },
+        {
+          object: { id: "previous_version_context", value: 153.4652862548828 },
+        },
       ]}
       customButtonName=""
       data="{{ discussion_concepts.data}}"

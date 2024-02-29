@@ -245,6 +245,24 @@ return data"
         event="success"
         method="trigger"
         params={{ ordered: [] }}
+        pluginId="get_additional_data"
+        type="datasource"
+        waitMs="0"
+        waitType="debounce"
+      />
+      <Event
+        event="success"
+        method="trigger"
+        params={{ ordered: [] }}
+        pluginId="get_depends_on"
+        type="datasource"
+        waitMs="0"
+        waitType="debounce"
+      />
+      <Event
+        event="success"
+        method="trigger"
+        params={{ ordered: [] }}
         pluginId="has_code_json"
         type="datasource"
         waitMs="0"
@@ -687,21 +705,30 @@ return data"
     isMultiplayerEdited={false}
     query={include("./lib/has_code_simple.js", "string")}
     resourceName="JavascriptQuery"
+    showFailureToaster={false}
+    showSuccessToaster={false}
   />
   <JavascriptQuery
     id="has_code_json"
     query={include("./lib/has_code_json.js", "string")}
     resourceName="JavascriptQuery"
+    showFailureToaster={false}
+    showSuccessToaster={false}
   />
   <JavascriptQuery
     id="has_code_simple_discussion"
     isMultiplayerEdited={false}
     query={include("./lib/has_code_simple_discussion.js", "string")}
     resourceName="JavascriptQuery"
+    showFailureToaster={false}
+    showSuccessToaster={false}
   />
   <JavascriptQuery
     id="has_code_jsonb_discussion"
     query={include("./lib/has_code_jsonb_discussion.js", "string")}
     resourceName="JavascriptQuery"
+    showFailureToaster={false}
+    showSuccessToaster={false}
   />
+  <State id="selectedTab" value="0" />
 </GlobalFunctions>

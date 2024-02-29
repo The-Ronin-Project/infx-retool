@@ -5,7 +5,7 @@
     <Include src="./src/tabbedContainer1.rsx" />
     <JSONExplorer
       id="discussion_additional_jsonExplorer"
-      hidden="{{discussion_get_additional_data.data.additional_data == null}}  "
+      hidden="{{discussion_get_additional_data.data.additional_data == null }}  "
       value="{{discussion_get_additional_data.data}}"
     />
     <JSONExplorer

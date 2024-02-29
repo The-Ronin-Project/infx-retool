@@ -3,13 +3,13 @@
     "container": "tabbedContainer1",
     "subcontainer": "2e213",
     "row": 19.4,
-    "height": 13,
+    "height": 8.8,
     "width": 6
   },
   "approve_2": {
     "container": "tabbedContainer1",
     "subcontainer": "2e213",
-    "row": 33.4,
+    "row": 47.6,
     "col": 6,
     "height": 1,
     "width": 2
@@ -51,7 +51,7 @@
   "disapprove_2": {
     "container": "tabbedContainer1",
     "subcontainer": "2e213",
-    "row": 33.4,
+    "row": 47.6,
     "col": 8,
     "height": 1,
     "width": 2
@@ -65,12 +65,12 @@
     "width": 2
   },
   "discussion_additional_jsonExplorer": {
-    "row": 17.6,
+    "row": 0.2,
     "height": 6,
     "width": 6
   },
   "discussion_depends_jsonExplorer": {
-    "row": 17.6,
+    "row": 0.2,
     "col": 6,
     "height": 10,
     "width": 6
@@ -85,7 +85,7 @@
   "hold_button": {
     "container": "tabbedContainer1",
     "subcontainer": "2e213",
-    "row": 33.4,
+    "row": 47.6,
     "col": 10,
     "height": 1,
     "width": 2
@@ -141,7 +141,7 @@
   "review_comment_all": {
     "container": "tabbedContainer1",
     "subcontainer": "2e213",
-    "row": 32.4,
+    "row": 35.2,
     "height": 1,
     "width": 12
   },
