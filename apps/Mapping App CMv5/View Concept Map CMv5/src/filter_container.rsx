@@ -35,6 +35,7 @@
     <Select
       id="listbox1"
       emptyMessage="No options"
+      hidden="true"
       hideLabel={false}
       itemMode="static"
       label="Source Code Simple"
@@ -50,6 +51,7 @@
     <TextInput
       id="source_code_simple_filter_input"
       _disclosedFields={{ array: [] }}
+      hidden="true"
       hideLabel={true}
       labelPosition="top"
       placeholder="Source code filter value"
@@ -220,13 +222,6 @@
       hideLabel={true}
       labelPosition="top"
       placeholder="Target display filter value"
-    />
-    <Text
-      id="text17"
-      _disclosedFields={{ array: [] }}
-      heightType="fixed"
-      value="**Resource Count**"
-      verticalAlign="center"
     />
     <Divider id="divider2" _disclosedFields={{ array: [] }} />
     <TextInput

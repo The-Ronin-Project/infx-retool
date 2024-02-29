@@ -47,13 +47,6 @@
       placeholder="Select an option"
       showSelectionIndicator={true}
     >
-      <Option
-        id="d4b06"
-        disabled={false}
-        hidden={false}
-        label="Source Code"
-        value="source_code"
-      />
       <Option id="c657b" label="Relationship" value="relationship" />
       <Option
         id="7d013"
@@ -86,13 +79,6 @@
         value="mapping_group"
       />
       <Option
-        id="46f39"
-        disabled={false}
-        hidden={false}
-        label="Resource Count"
-        value="resource_count"
-      />
-      <Option
         id="710f6"
         disabled={false}
         hidden={false}
@@ -103,7 +89,7 @@
         id="e53f9"
         disabled={false}
         hidden={false}
-        label="Review Comment"
+        label="Review Comments"
         value="review_comment"
       />
       <Option
