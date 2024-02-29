@@ -76,7 +76,7 @@
       heightType="fixed"
       imageWidth="fill"
       style={{ ordered: [{ color: "rgb(16, 42, 67)" }] }}
-      value="{{mapping_queue.selectedRow.data[0].code.replace(/</g, '&lt;').replace(/>/g, '&gt;')}}"
+      value="{{mapping_queue.selectedRow.data[0].code_jsonb.replace(/</g, '&lt;').replace(/>/g, '&gt;')}}"
       verticalAlign="center"
     />
     <TableLegacy
@@ -233,13 +233,12 @@
       columnWidths={[
         { object: { id: "code", value: 204 } },
         { object: { id: "display", value: 309.6614685058594 } },
-        { object: { id: "code_jsonb", value: 249.08334350585938 } },
+        { object: { id: "code_jsonb", value: 385.0798797607422 } },
       ]}
       customButtonName=""
       data="{{combined_queue_query.data}}"
       defaultSelectedRow="none"
       doubleClickToEdit={true}
-      dynamicRowHeights={true}
       events={[]}
       overflowType="scroll"
       showBoxShadow={false}
@@ -278,7 +277,7 @@
     <Text id="text11" value="**Additional Info**" verticalAlign="center" />
     <JSONExplorer
       id="additional_data_jsonExplorer"
-      hidden="{{!get_additional_data.data.additional_data[0] == null}}"
+      hidden="{{get_additional_data.data.additional_data[0] == null}}"
       value="{{get_additional_data.data}}"
     />
     <TextArea
