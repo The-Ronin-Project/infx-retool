@@ -7,10 +7,15 @@ select
   sc.code_jsonb as source_code_jsonb,
   sc.system_uuid as source_system, 
   sc.comments as source_comments, 
+  cr.target_concept_code,
+  cr.target_concept_display,
+  cr.mapping_comments,
+  sc.reason_for_no_map,
   ctc.additional_data, 
   ctc.additional_data->>'count_of_resources_affected' as count_of_resources_affected, 
   pmu.first_last_name AS mapper,
-  * 
+  sc.previous_version_context,
+  cr.mapped_date_time
 from concept_maps.concept_relationship_data cr
 join concept_maps.source_concept_data sc on sc.uuid = cr.source_concept_uuid
 left join project_management.user pmu on sc.assigned_mapper=pmu.uuid
